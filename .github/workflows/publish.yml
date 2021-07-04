@@ -1,0 +1,35 @@
+name: Publish JD
+on: ["pull_request", "push"]
+
+env:
+  DEST_DIR: _out
+  PYTHON_VERSION: 3.9
+
+jobs:
+  build:
+    # Only run on PRs if the source branch is on someone else's repo
+    if: "${{ github.event_name != 'pull_request' || github.repository != github.event.pull_request.head.repo.full_name }}"
+    runs-on: "ubuntu-20.04"
+    steps:
+      - name: "checkout repository"
+        uses: "actions/checkout@v2"
+      - name: "setup python ${{ env.PYTHON_VERSION }}"
+        uses: "actions/setup-python@v2"
+        with:
+          python-version: "${{ env.PYTHON_VERSION }}"
+      - name: "install dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r _generator/requirements.txt
+      - name: "generate site"
+        run: |
+          python _generator/generate.py $DEST_DIR
+      - name: "publish"
+        if: "${{ github.event_name == 'push' && github.ref == 'refs/heads/data' }}"
+        uses: "JamesIves/github-pages-deploy-action@4.1.4"
+        with:
+          branch: "gh-pages"
+          folder: "${{ env.DEST_DIR }}"
+          single-commit: true
+
+

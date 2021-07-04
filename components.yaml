@@ -1,0 +1,13 @@
+# Extra component metadata
+# Format:
+#
+#    directoryname:
+#        name: User-readable Name
+#        url: A URL to link to in the module info
+#        group: Module group for display -- empty string to display at top level
+#        snapshot-regex: (optional): regex to use to determine if a version should be considered a snapshot. Default `-SNAPSHOT$`
+
+spongeapi:
+    name: SpongeAPI
+    url: https://github.com/SpongePowered/SpongeAPI
+    group: ""

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Sponge Javadocs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="title">Sponge Javadocs</div>
+<div id="listContainer">
+    {% for module in module_versions %}
+    <div>
+        {% set module_title = module.display_name if module.display_name else module.name %}
+        {% if module.url %}
+        <div class="header"><a href="{{ module.url }}">{{ module_title }}</a></div>
+        {% else %}
+        <div class="header">{{ module_title }}</div>
+        {% endif %}
+        <ul>
+            {% for version in module.versions | reverse %}
+            <li><a href="/{{ module.name }}/{{ version }}/">{{ version }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
