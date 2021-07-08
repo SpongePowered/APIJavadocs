@@ -182,6 +182,7 @@ org.spongepowered.api.spawner
 org.spongepowered.api.sql
 org.spongepowered.api.state
 org.spongepowered.api.statistic
+org.spongepowered.api.tag
 org.spongepowered.api.user
 org.spongepowered.api.util
 org.spongepowered.api.util.annotation
