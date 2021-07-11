@@ -298,11 +298,12 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addScore(org.spongepowered.api.scoreboard.Score,org.spongepowered.api.util.Range)">addScore</a></span>&#8203;(<a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard">Score</a>&nbsp;score,
-        <a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;range)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addObjective(org.spongepowered.api.scoreboard.objective.Objective,org.spongepowered.api.util.Range)">addObjective</a></span>&#8203;(<a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective">Objective</a>&nbsp;objective,
+            <a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;range)</code></th>
 <td class="colLast">
-<div class="block">Adds a <a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard"><code>Score</code></a> constraint to the selector, requiring that
- players have a given score in a given range (inclusive).</div>
+<div class="block">Adds an <a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective"><code>Objective</code></a> constraint to the selector, requiring that
+ players have a given score in an objective in a given range
+ (inclusive).</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
@@ -966,19 +967,20 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </dl>
 </li>
 </ul>
-<a id="addScore(org.spongepowered.api.scoreboard.Score,org.spongepowered.api.util.Range)">
+<a id="addObjective(org.spongepowered.api.scoreboard.objective.Objective,org.spongepowered.api.util.Range)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addScore</h4>
-<pre class="methodSignature"><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a>&nbsp;addScore&#8203;(<a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard">Score</a>&nbsp;score,
-                          <a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;range)</pre>
-<div class="block">Adds a <a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard"><code>Score</code></a> constraint to the selector, requiring that
- players have a given score in a given range (inclusive).</div>
+<h4>addObjective</h4>
+<pre class="methodSignature"><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a>&nbsp;addObjective&#8203;(<a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective">Objective</a>&nbsp;objective,
+                              <a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;range)</pre>
+<div class="block">Adds an <a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective"><code>Objective</code></a> constraint to the selector, requiring that
+ players have a given score in an objective in a given range
+ (inclusive).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>score</code> - The score</dd>
+<dd><code>objective</code> - The objective to check against</dd>
 <dd><code>range</code> - The range</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This builder, for chaining</dd>
