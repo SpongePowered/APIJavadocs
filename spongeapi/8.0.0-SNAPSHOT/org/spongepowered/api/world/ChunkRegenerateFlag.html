@@ -87,7 +87,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -137,29 +137,6 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<section role="region">
-<ul class="blockList">
-<li class="blockList"><a id="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Interface</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="ChunkRegenerateFlag.Factory.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag.Factory</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-</section>
 <!-- ========== METHOD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -187,9 +164,9 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <td class="colFirst"><code><a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#andNotFlag(org.spongepowered.api.world.ChunkRegenerateFlag)">andNotFlag</a></span>&#8203;(<a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</code></th>
 <td class="colLast">
-<div class="block">Gets the equivalent <a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world"><code>ChunkRegenerateFlag</code></a> of this flag with the
- <code>true</code>s set for this flag and the provided <code>flag</code>, such that
- only if both flags have the same <code>true</code> flags set will persist.</div>
+<div class="block">Gets the equivalent <a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world"><code>ChunkRegenerateFlag</code></a> of this flag where the
+ provided <code>flag</code> has its values inverted before performing an
+ and operation between this flag and the provided flag.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -350,18 +327,14 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <li class="blockList">
 <h4>andNotFlag</h4>
 <pre class="methodSignature"><a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;andNotFlag&#8203;(<a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</pre>
-<div class="block">Gets the equivalent <a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world"><code>ChunkRegenerateFlag</code></a> of this flag with the
- <code>true</code>s set for this flag and the provided <code>flag</code>, such that
- only if both flags have the same <code>true</code> flags set will persist.
-
- <p>For example, if this flag has <a href="#create()"><code>create()</code></a> and the incoming flag
- has <a href="#create()"><code>create()</code></a> returning <code>true</code>, the resulting flag will
- have <a href="#create()"><code>create()</code></a> return <code>true</code> as well. The inverse is also
- true. If either has differing flags for any of the above methods, the
- resulting flag will have a <code>false</code> value.</p></div>
+<div class="block">Gets the equivalent <a href="ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world"><code>ChunkRegenerateFlag</code></a> of this flag where the
+ provided <code>flag</code> has its values inverted before performing an
+ and operation between this flag and the provided flag. Therefore, the
+ returned flag will only have <code>true</code> for a value if the value is
+ <code>true</code> for this flag and <code>false</code> for the provided flag.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flag</code> - The incoming flag to and with this flag</dd>
+<dd><code>flag</code> - The incoming flag to compare against</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The resulting flag with matched values</dd>
 </dl>
@@ -418,7 +391,7 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
