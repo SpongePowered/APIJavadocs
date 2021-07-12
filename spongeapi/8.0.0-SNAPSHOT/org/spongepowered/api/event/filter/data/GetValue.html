@@ -117,6 +117,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation" class="externalLink">PARAMETER</a>)
 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation" class="externalLink">RUNTIME</a>)
 public @interface <span class="memberNameLabel">GetValue</span></pre>
+<div class="block">A parameter source annotation that gets a value for a certain data key.
+
+ <p>This value can be taken from the event cause's first <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>,
+ or any preceding parameter that inherits from <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</p></div>
 </li>
 </ul>
 </div>
@@ -140,7 +144,9 @@ public @interface <span class="memberNameLabel">GetValue</span></pre>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#value()">value</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The name of the field in <a href="#container()"><code>container()</code></a> providing this key.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -163,7 +169,9 @@ public @interface <span class="memberNameLabel">GetValue</span></pre>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#container()">container</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The holder class to fetch keys from.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -189,6 +197,13 @@ public @interface <span class="memberNameLabel">GetValue</span></pre>
 <li class="blockList">
 <h4>value</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value</pre>
+<div class="block">The name of the field in <a href="#container()"><code>container()</code></a> providing this key.
+
+ <p>This field must be static and have a value of type <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a></p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the key field to require</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -204,6 +219,11 @@ public @interface <span class="memberNameLabel">GetValue</span></pre>
 <li class="blockList">
 <h4>container</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;container</pre>
+<div class="block">The holder class to fetch keys from.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the key container, by default <a href="../../../data/Keys.html" title="class in org.spongepowered.api.data"><code>Keys</code></a></dd>
+</dl>
 <dl>
 <dt>Default:</dt>
 <dd>org.spongepowered.api.data.Keys.class</dd>
