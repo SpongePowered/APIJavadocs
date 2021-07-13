@@ -120,7 +120,11 @@ public @interface <span class="memberNameLabel">GetValue</span></pre>
 <div class="block">A parameter source annotation that gets a value for a certain data key.
 
  <p>This value can be taken from the event cause's first <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>,
- or any preceding parameter that inherits from <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</p></div>
+ or any preceding parameter that inherits from <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</p>
+
+ <p>When looking for a value, searching will start from the parameter
+ immediately before the annotated one, moving backwards and checking the first
+ <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> in the event cause last.</p></div>
 </li>
 </ul>
 </div>
