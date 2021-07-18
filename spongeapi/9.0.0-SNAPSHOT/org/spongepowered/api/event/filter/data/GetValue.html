@@ -73,6 +73,14 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/annotation/Target.html" title="class or interface in java.lang.annotation" class="external-link">@Target</a>(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/annotation/ElementType.html#PARAMETER" title="class or interface in java.lang.annotation" class="external-link">PARAMETER</a>)
 <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/annotation/Retention.html" title="class or interface in java.lang.annotation" class="external-link">@Retention</a>(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#RUNTIME" title="class or interface in java.lang.annotation" class="external-link">RUNTIME</a>)
 </span><span class="modifiers">public @interface </span><span class="element-name type-name-label">GetValue</span></div>
+<div class="block">A parameter source annotation that gets a value for a certain data key.
+
+ <p>This value can be taken from the event cause's first <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>,
+ or any preceding parameter that inherits from <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</p>
+
+ <p>When looking for a value, searching will start from the parameter
+ immediately before the annotated one, moving backwards and checking the first
+ <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> in the event cause last.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -87,7 +95,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#value()">value</a></span></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The name of the field in <a href="#container()"><code>container()</code></a> providing this key.</div>
+</div>
 </div>
 </section>
 </li>
@@ -102,7 +112,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#container()">container</a></span></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The holder class to fetch keys from.</div>
+</div>
 </div>
 </section>
 </li>
@@ -119,6 +131,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="value()">
 <h3>value</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">value</span></div>
+<div class="block">The name of the field in <a href="#container()"><code>container()</code></a> providing this key.
+
+ <p>This field must be static and have a value of type <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a></p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the name of the key field to require</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -132,6 +151,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="container()">
 <h3>container</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;</span>&nbsp;<span class="element-name">container</span></div>
+<div class="block">The holder class to fetch keys from.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the key container, by default <a href="../../../data/Keys.html" title="class in org.spongepowered.api.data"><code>Keys</code></a></dd>
+</dl>
 <dl class="notes">
 <dt>Default:</dt>
 <dd>org.spongepowered.api.data.Keys.class</dd>

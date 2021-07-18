@@ -45,7 +45,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -87,21 +87,6 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 </section>
 <section class="summary">
 <ul class="summary-list">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<li>
-<section class="nested-class-summary" id="nested.class.summary">
-<h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Interface</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><span class="member-name-link"><a href="Orientation.Factory.html" title="interface in org.spongepowered.api.util.orientation">Orientation.Factory</a></span></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-</div>
-</section>
-</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method.summary">
@@ -113,15 +98,15 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>int</code></div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="../Angle.html" title="class in org.spongepowered.api.util">Angle</a></code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#angle()">angle</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">The angle in degrees.</div>
+<div class="block">The <a href="../Angle.html" title="class in org.spongepowered.api.util"><code>Angle</code></a> this orientation represents.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table-tab1 method-summary-table"><code>static <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation">Orientation</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table"><code><span class="member-name-link"><a href="#fromDegrees(int)">fromDegrees</a></span>&#8203;(int&nbsp;degrees)</code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table"><code><span class="member-name-link"><a href="#fromAngle(org.spongepowered.api.util.Angle)">fromAngle</a></span>&#8203;(<a href="../Angle.html" title="class in org.spongepowered.api.util">Angle</a>&nbsp;angle)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab1 method-summary-table">
-<div class="block">Gets the <a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation"><code>Orientation</code></a> with the provided degrees.</div>
+<div class="block">Gets the <a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation"><code>Orientation</code></a> that represents the provided <a href="../Angle.html" title="class in org.spongepowered.api.util"><code>Angle</code></a>.</div>
 </div>
 </div>
 </div>
@@ -141,26 +126,27 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="fromDegrees(int)">
-<h3>fromDegrees</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation">Orientation</a>&gt;</span>&nbsp;<span class="element-name">fromDegrees</span>&#8203;<span class="parameters">(int&nbsp;degrees)</span></div>
-<div class="block">Gets the <a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation"><code>Orientation</code></a> with the provided degrees.</div>
+<section class="detail" id="fromAngle(org.spongepowered.api.util.Angle)">
+<h3>fromAngle</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation">Orientation</a>&gt;</span>&nbsp;<span class="element-name">fromAngle</span>&#8203;<span class="parameters">(<a href="../Angle.html" title="class in org.spongepowered.api.util">Angle</a>&nbsp;angle)</span></div>
+<div class="block">Gets the <a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation"><code>Orientation</code></a> that represents the provided <a href="../Angle.html" title="class in org.spongepowered.api.util"><code>Angle</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>degrees</code> - The degrees of the rotation</dd>
+<dd><code>angle</code> - The <a href="../Angle.html" title="class in org.spongepowered.api.util"><code>Angle</code></a></dd>
 <dt>Returns:</dt>
-<dd>The <a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation"><code>Orientation</code></a> with the given degrees or <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> if not found</dd>
+<dd>The <a href="Orientation.html" title="interface in org.spongepowered.api.util.orientation"><code>Orientation</code></a> with the given <a href="../Angle.html" title="class in org.spongepowered.api.util"><code>Angle</code></a>, if it
+         exists</dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="angle()">
 <h3>angle</h3>
-<div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">angle</span>()</div>
-<div class="block">The angle in degrees.</div>
+<div class="member-signature"><span class="return-type"><a href="../Angle.html" title="class in org.spongepowered.api.util">Angle</a></span>&nbsp;<span class="element-name">angle</span>()</div>
+<div class="block">The <a href="../Angle.html" title="class in org.spongepowered.api.util"><code>Angle</code></a> this orientation represents.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>The angle in degrees</dd>
+<dd>The angle</dd>
 </dl>
 </section>
 </li>

@@ -77,7 +77,10 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">UserManager</span></div>
-<div class="block">Stores the persistent <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data of a <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a>.</div>
+<div class="block">Stores the persistent <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data of a <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a>.
+
+ <p>Any <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>s retrieved from this manager should not be stored, as
+ they may become invalid at any time.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -92,53 +95,62 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#all()">all</a></span>()</code></div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#delete(java.util.UUID)">delete</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Gets the collection of all <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s with stored <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>
- data.</div>
+<div class="block">Deletes the data associated with a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>, if the player is
+ offline.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#delete(org.spongepowered.api.entity.living.player.User)">delete</a></span>&#8203;(<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&nbsp;user)</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#exists(java.util.UUID)">exists</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;playerUuid)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Deletes the data associated with a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.</div>
+<div class="block">Returns whether data to create a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> exists for a given
+ player with a specified <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#delete(org.spongepowered.api.profile.GameProfile)">delete</a></span>&#8203;(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</code></div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#forceSave(java.util.UUID)">forceSave</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Deletes the data associated with a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.</div>
+<div class="block">If the implementation supports caching user objects, this will hint
+ to the implementation that the user with the given UUID should be saved
+ to the disk immediately.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#find(java.lang.String)">find</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;lastKnownName)</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#load(java.lang.String)">load</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;lastKnownName)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets the data of a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> by their last known user name
  (case-insensitive).</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#find(java.util.UUID)">find</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</code></div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#load(java.util.UUID)">load</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets the data of a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> by their unique id.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#find(org.spongepowered.api.profile.GameProfile)">find</a></span>&#8203;(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#load(org.spongepowered.api.profile.GameProfile)">load</a></span>&#8203;(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets the data of a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> by their <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#findOrCreate(org.spongepowered.api.profile.GameProfile)">findOrCreate</a></span>&#8203;(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</code></div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#loadOrCreate(java.util.UUID)">loadOrCreate</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Gets or creates a persistent <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> associated with the given
- <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.</div>
+<div class="block">Gets or creates a persistent <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> with the given UUID.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#streamAll()">streamAll</a></span>()</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#removeFromCache(java.util.UUID)">removeFromCache</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="block">If the implementation supports caching user objects, this will hint
+ to the implementation that the user with the given UUID should no
+ longer be cached.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#streamAll()">streamAll</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> that returns a <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a> for each stored
  <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>s.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#streamOfMatches(java.lang.String)">streamOfMatches</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;lastKnownName)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#streamOfMatches(java.lang.String)">streamOfMatches</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;lastKnownName)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> that returns a <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a> for each stored
  <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> whose last known user names start with the given string
  (case-insensitive).</div>
@@ -158,9 +170,9 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="find(java.util.UUID)">
-<h3>find</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</span>&nbsp;<span class="element-name">find</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</span></div>
+<section class="detail" id="load(java.util.UUID)">
+<h3>load</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</span>&nbsp;<span class="element-name">load</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</span></div>
 <div class="block">Gets the data of a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> by their unique id.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -171,9 +183,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="find(java.lang.String)">
-<h3>find</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</span>&nbsp;<span class="element-name">find</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;lastKnownName)</span></div>
+<section class="detail" id="load(java.lang.String)">
+<h3>load</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</span>&nbsp;<span class="element-name">load</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;lastKnownName)</span></div>
 <div class="block">Gets the data of a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> by their last known user name
  (case-insensitive).
 
@@ -188,9 +200,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="find(org.spongepowered.api.profile.GameProfile)">
-<h3>find</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</span>&nbsp;<span class="element-name">find</span>&#8203;<span class="parameters">(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</span></div>
+<section class="detail" id="load(org.spongepowered.api.profile.GameProfile)">
+<h3>load</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</span>&nbsp;<span class="element-name">load</span>&#8203;<span class="parameters">(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</span></div>
 <div class="block">Gets the data of a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> by their <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -201,54 +213,88 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="findOrCreate(org.spongepowered.api.profile.GameProfile)">
-<h3>findOrCreate</h3>
-<div class="member-signature"><span class="return-type"><a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a></span>&nbsp;<span class="element-name">findOrCreate</span>&#8203;<span class="parameters">(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</span></div>
-<div class="block">Gets or creates a persistent <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> associated with the given
- <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.
-
- <p>To obtain a <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>, use the <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a>.
- </p></div>
+<section class="detail" id="loadOrCreate(java.util.UUID)">
+<h3>loadOrCreate</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;</span>&nbsp;<span class="element-name">loadOrCreate</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">Gets or creates a persistent <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> with the given UUID.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>profile</code> - The profile</dd>
+<dd><code>uuid</code> - The <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> of the player to load or create.</dd>
 <dt>Returns:</dt>
 <dd>The user object</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="all()">
-<h3>all</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&gt;</span>&nbsp;<span class="element-name">all</span>()</div>
-<div class="block">Gets the collection of all <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s with stored <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>
- data.
-
- <p>This method may be resource intensive, particularly for servers that
- have a large number of <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>s. If you require a subset of this
- <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link"><code>Collection</code></a>, use <a href="#streamOfMatches(java.lang.String)"><code>streamOfMatches(String)</code></a> or
- <a href="#streamAll()"><code>streamAll()</code></a> and use <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> operations for your queries
- instead.</p>
-
- <p>This <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> may contain profiles that only hold a result for
- <a href="../util/Identifiable.html#uniqueId()"><code>Identifiable.uniqueId()</code></a>, that is, do not return a user's name.
- Such profiles should thus be treated as incomplete and are no more than
- an indicator that a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> associated with the given <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a>
- exists.</p>
-
- <p>Similarly, for <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s that are filled and thus contain
- name data, the profile information is based on the latest information
- the server holds and no attempt is made to update this information.</p>
-
- <p>If you require up to date <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s, use the appropriate
- methods on the <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a> and/or its associated
- <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a>.</p>
-
- <p>Use <a href="#find(org.spongepowered.api.profile.GameProfile)"><code>find(GameProfile)</code></a> to load the <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data associated
- with the associated <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.</p></div>
+<section class="detail" id="delete(java.util.UUID)">
+<h3>delete</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">delete</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">Deletes the data associated with a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>, if the player is
+ offline.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The uuid of the user to delete</dd>
 <dt>Returns:</dt>
-<dd>A <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s</dd>
+<dd>true if the deletion was successful</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="removeFromCache(java.util.UUID)">
+<h3>removeFromCache</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">removeFromCache</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">If the implementation supports caching user objects, this will hint
+ to the implementation that the user with the given UUID should no
+ longer be cached. Any <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> objects held that this point
+ will become invalid (though developers should not be storing
+ users).
+
+ <p>Be aware, any changes that have been made to the user may not
+ be saved.</p>
+
+ <p>Users that are online will not be affected by this call.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The UUID of the user to save.</dd>
+<dt>Returns:</dt>
+<dd><code>true</code> if the user was removed from a cache.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="forceSave(java.util.UUID)">
+<h3>forceSave</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">forceSave</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">If the implementation supports caching user objects, this will hint
+ to the implementation that the user with the given UUID should be saved
+ to the disk immediately.
+
+ <p>If an exception is encountered during save, the completed future
+ will be exceptional and the boolean will be <code>null</code>. It is therefore
+ recommended that you check for any exceptions this future holds.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The user to attempt to save.</dd>
+<dt>Returns:</dt>
+<dd>A completed future that returns <code>true</code> if the implementation
+         saved the user.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="exists(java.util.UUID)">
+<h3>exists</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">exists</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;playerUuid)</span></div>
+<div class="block">Returns whether data to create a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> exists for a given
+ player with a specified <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a>.
+
+ <p>If this is <code>false</code>, then <a href="#load(java.util.UUID)"><code>load(UUID)</code></a> will return
+ an <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link">empty optional</a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>playerUuid</code> - The <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> of the player to check.</dd>
+<dt>Returns:</dt>
+<dd>If the player has existing user data that can be loaded.</dd>
 </dl>
 </section>
 </li>
@@ -273,41 +319,11 @@ loadScripts(document, 'script');</script>
  methods on the <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a> and/or its associated
  <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a>.</p>
 
- <p>Use <a href="#find(org.spongepowered.api.profile.GameProfile)"><code>find(GameProfile)</code></a> to load the <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data associated
+ <p>Use <a href="#load(org.spongepowered.api.profile.GameProfile)"><code>load(GameProfile)</code></a> to load the <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data associated
  with the associated <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>A <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="delete(org.spongepowered.api.profile.GameProfile)">
-<h3>delete</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">delete</span>&#8203;<span class="parameters">(<a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</span></div>
-<div class="block">Deletes the data associated with a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.
-
- <p>This may not work if the user is logged in.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>profile</code> - The profile of the user to delete</dd>
-<dt>Returns:</dt>
-<dd>true if the deletion was successful</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="delete(org.spongepowered.api.entity.living.player.User)">
-<h3>delete</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">delete</span>&#8203;<span class="parameters">(<a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&nbsp;user)</span></div>
-<div class="block">Deletes the data associated with a <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.
-
- <p>This may not work if the user is logged in.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - The user to delete</dd>
-<dt>Returns:</dt>
-<dd>true if the deletion was successful</dd>
 </dl>
 </section>
 </li>
@@ -327,7 +343,7 @@ loadScripts(document, 'script');</script>
  methods on the <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a> and/or its associated
  <a href="../profile/GameProfileManager.html" title="interface in org.spongepowered.api.profile"><code>GameProfileManager</code></a>.</p>
 
- <p>Use <a href="#find(org.spongepowered.api.profile.GameProfile)"><code>find(GameProfile)</code></a> to load associated <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data.
+ <p>Use <a href="#load(org.spongepowered.api.profile.GameProfile)"><code>load(GameProfile)</code></a> to load associated <a href="../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> data.
  </p></div>
 <dl class="notes">
 <dt>Parameters:</dt>

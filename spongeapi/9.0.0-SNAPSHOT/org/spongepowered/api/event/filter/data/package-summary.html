@@ -54,7 +54,15 @@ loadScripts(document, 'script');</script>
 <h1 title="Package" class="title">Package&nbsp;org.spongepowered.api.event.filter.data</h1>
 </div>
 <hr>
-<div class="package-signature">package <span class="element-name">org.spongepowered.api.event.filter.data</span></div>
+<div class="package-signature"><span class="annotations">@DefaultQualifier(org.checkerframework.checker.nullness.qual.NonNull.class)
+</span>package <span class="element-name">org.spongepowered.api.event.filter.data</span></div>
+<section class="package-description" id="package.description">
+<div class="block">Event filter annotations working on
+ <a href="../../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> parameters.
+
+ <p>These annotations can be applied to existing parameters to filter based on
+ data <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>s.</p></div>
+</section>
 <section class="summary">
 <ul class="summary-list">
 <li>
@@ -63,11 +71,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Annotation Interface</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><a href="GetValue.html" title="annotation in org.spongepowered.api.event.filter.data">GetValue</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">A parameter source annotation that gets a value for a certain data key.</div>
+</div>
 <div class="col-first odd-row-color"><a href="Has.html" title="annotation in org.spongepowered.api.event.filter.data">Has</a></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Filters a parameter in an event <a href="../../Listener.html" title="annotation in org.spongepowered.api.event"><code>@Listener</code></a> method to only
+ one that has a value for certain data.</div>
+</div>
 <div class="col-first even-row-color"><a href="Supports.html" title="annotation in org.spongepowered.api.event.filter.data">Supports</a></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Filters a parameter in an event <a href="../../Listener.html" title="annotation in org.spongepowered.api.event"><code>@Listener</code></a> method to only
+ one that supports certain data.</div>
+</div>
 </div>
 </li>
 </ul>

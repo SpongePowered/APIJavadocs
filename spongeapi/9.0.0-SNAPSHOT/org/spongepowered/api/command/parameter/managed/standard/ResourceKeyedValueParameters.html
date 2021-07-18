@@ -274,11 +274,17 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Require an argument to be a URL.</div>
 </div>
-<div class="col-first odd-row-color"><code>static <a href="../../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResourceKeyedValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed.standard">ResourceKeyedValueParameter</a>&lt;<a href="../../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</code></div>
+<div class="col-first odd-row-color"><code>static <a href="../../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResourceKeyedValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed.standard">ResourceKeyedValueParameter</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><span class="member-name-link"><a href="#USER">USER</a></span></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Expect an argument to represent a player who has been online at some
- point, as a <a href="../../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.</div>
+<div class="block">Expect an argument to represent the UUID of a player who has been online
+ at some point - that is, a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> where either:
+
+ 
+     The player is online; or
+     The user with the returned <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> has user data available
+     in the <a href="../../../../user/UserManager.html" title="interface in org.spongepowered.api.user"><code>UserManager</code></a> (that is, for this UUID,
+     <a href="../../../../user/UserManager.html#exists(java.util.UUID)"><code>UserManager.exists(java.util.UUID)</code></a> will return <code>true</code>).</div>
 </div>
 <div class="col-first even-row-color"><code>static <a href="../../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResourceKeyedValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed.standard">ResourceKeyedValueParameter</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#UUID">UUID</a></span></code></div>
@@ -724,13 +730,26 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="USER">
 <h3>USER</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResourceKeyedValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed.standard">ResourceKeyedValueParameter</a>&lt;<a href="../../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player">User</a>&gt;&gt;</span>&nbsp;<span class="element-name">USER</span></div>
-<div class="block">Expect an argument to represent a player who has been online at some
- point, as a <a href="../../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResourceKeyedValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed.standard">ResourceKeyedValueParameter</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;&gt;</span>&nbsp;<span class="element-name">USER</span></div>
+<div class="block">Expect an argument to represent the UUID of a player who has been online
+ at some point - that is, a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> where either:
+
+ <ul>
+     <li>The player is online; or</li>
+     <li>The user with the returned <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> has user data available
+     in the <a href="../../../../user/UserManager.html" title="interface in org.spongepowered.api.user"><code>UserManager</code></a> (that is, for this UUID,
+     <a href="../../../../user/UserManager.html#exists(java.util.UUID)"><code>UserManager.exists(java.util.UUID)</code></a> will return <code>true</code>).
+     </li>
+ </ul>
+
+ <p>As <a href="../../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> objects are potentially slow to load, they are not
+ created or returned here. In general, you will want to run
+ <a href="../../../../user/UserManager.html#load(java.util.UUID)"><code>UserManager.load(java.util.UUID)</code></a> on the returned UUID to actually
+ obtain the user.</p>
 
  <p>This parameter accepts selectors (to obtain players).</p>
 
- <p>Returns a <a href="../../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>.</p></div>
+ <p>Returns a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a>.</p></div>
 </section>
 </li>
 <li>

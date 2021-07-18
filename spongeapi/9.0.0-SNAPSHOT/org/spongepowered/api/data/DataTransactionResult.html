@@ -177,11 +177,23 @@ loadScripts(document, 'script');</script>
  collection will return any <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a>s which were rejected
  by the target <a href="DataHolder.html" title="interface in org.spongepowered.api.data"><code>DataHolder</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#replacedData()">replacedData</a></span>()</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code>&lt;T,&#8203;
+V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rejectedValue(org.spongepowered.api.data.Key)">rejectedValue</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
+<div class="block">Gets the rejected <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> based on the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#replacedData()">replacedData</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
 <div class="block">If the operation replaced any <a href="value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Mutable</code></a>s, this returns a collection
  of the replaced <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a>s.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code>&lt;T,&#8203;
+V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#replacedValue(org.spongepowered.api.data.Key)">replacedValue</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
+<div class="block">Gets the replaced <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> based on the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successfulData()">successfulData</a></span>()</code></div>
@@ -189,57 +201,63 @@ loadScripts(document, 'script');</script>
 <div class="block">If any <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s applied onto a <a href="DataHolder.html" title="interface in org.spongepowered.api.data"><code>DataHolder</code></a> were
  successful, they'll be stored in the given list.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successNoData()">successNoData</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code>&lt;T,&#8203;
+V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successfulValue(org.spongepowered.api.data.Key)">successfulValue</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
+<div class="block">Gets the successfully applied <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> based on the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successNoData()">successNoData</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
 <div class="block">Creates a <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with no data successfully added,
  removed, or rejected, and with the
  <a href="DataTransactionResult.Type.html" title="enum class in org.spongepowered.api.data"><code>DataTransactionResult.Type</code></a> of
  <a href="DataTransactionResult.Type.html#SUCCESS"><code>DataTransactionResult.Type.SUCCESS</code></a>
  result type.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successRemove(java.util.Collection)">successRemove</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;&nbsp;removed)</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successRemove(java.util.Collection)">successRemove</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;&nbsp;removed)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
 <div class="block">Creates a <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with the provided
  <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a>s being successfully removed.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successRemove(org.spongepowered.api.data.value.Value.Immutable)">successRemove</a></span>&#8203;(<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;removed)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successRemove(org.spongepowered.api.data.value.Value.Immutable)">successRemove</a></span>&#8203;(<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;removed)</code></div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
 <div class="block">Creates a <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with the provided
  <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> being successfully removed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successReplaceResult(java.util.Collection,java.util.Collection)">successReplaceResult</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;&nbsp;successful,
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successReplaceResult(java.util.Collection,java.util.Collection)">successReplaceResult</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;&nbsp;successful,
  <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;&nbsp;replaced)</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
 <div class="block">Creates a new <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with the provided
  <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a>s being the successful additions and
  the provided <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a>s that were replaced.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successReplaceResult(org.spongepowered.api.data.value.Value.Immutable,org.spongepowered.api.data.value.Value.Immutable)">successReplaceResult</a></span>&#8203;(<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;successful,
- <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;replaced)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
-<div class="block">Creates a new <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with the provided
- <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> being the successful addition.</div>
-</div>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successResult(org.spongepowered.api.data.value.Value.Immutable)">successResult</a></span>&#8203;(<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;value)</code></div>
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successReplaceResult(org.spongepowered.api.data.value.Value.Immutable,org.spongepowered.api.data.value.Value.Immutable)">successReplaceResult</a></span>&#8203;(<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;successful,
+ <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;replaced)</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
 <div class="block">Creates a new <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with the provided
  <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> being the successful addition.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#toString()">toString</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link">Collector</a>&lt;<a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a>,&#8203;<a href="DataTransactionResult.Builder.html" title="class in org.spongepowered.api.data">DataTransactionResult.Builder</a>,&#8203;<a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#toTransaction()">toTransaction</a></span>()</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="DataTransactionResult.Type.html" title="enum class in org.spongepowered.api.data">DataTransactionResult.Type</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#type()">type</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#successResult(org.spongepowered.api.data.value.Value.Immutable)">successResult</a></span>&#8203;(<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">Creates a new <a href="DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> with the provided
+ <a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> being the successful addition.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#toString()">toString</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collector.html" title="class or interface in java.util.stream" class="external-link">Collector</a>&lt;<a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a>,&#8203;<a href="DataTransactionResult.Builder.html" title="class in org.spongepowered.api.data">DataTransactionResult.Builder</a>,&#8203;<a href="DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#toTransaction()">toTransaction</a></span>()</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="DataTransactionResult.Type.html" title="enum class in org.spongepowered.api.data">DataTransactionResult.Type</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#type()">type</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
 <div class="block">Gets the type of result.</div>
 </div>
 </div>
@@ -483,6 +501,24 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="successfulValue(org.spongepowered.api.data.Key)">
+<h3>successfulValue</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T,&#8203;
+V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;</span>
+<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;T&gt;&gt;</span>&nbsp;<span class="element-name">successfulValue</span>&#8203;<span class="parameters">(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</span></div>
+<div class="block">Gets the successfully applied <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> based on the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - The data type</dd>
+<dd><code>V</code> - The value type</dd>
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key</dd>
+<dt>Returns:</dt>
+<dd>The value, if available</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="rejectedData()">
 <h3>rejectedData</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">rejectedData</span>()</div>
@@ -496,6 +532,24 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="rejectedValue(org.spongepowered.api.data.Key)">
+<h3>rejectedValue</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T,&#8203;
+V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;</span>
+<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;T&gt;&gt;</span>&nbsp;<span class="element-name">rejectedValue</span>&#8203;<span class="parameters">(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</span></div>
+<div class="block">Gets the rejected <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> based on the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - The data type</dd>
+<dd><code>V</code> - The value type</dd>
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key</dd>
+<dt>Returns:</dt>
+<dd>The value, if available</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="replacedData()">
 <h3>replacedData</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">replacedData</span>()</div>
@@ -504,6 +558,24 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>Any data that was replaced</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="replacedValue(org.spongepowered.api.data.Key)">
+<h3>replacedValue</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="type-parameters">&lt;T,&#8203;
+V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;</span>
+<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="value/Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;T&gt;&gt;</span>&nbsp;<span class="element-name">replacedValue</span>&#8203;<span class="parameters">(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</span></div>
+<div class="block">Gets the replaced <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> based on the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - The data type</dd>
+<dd><code>V</code> - The value type</dd>
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key</dd>
+<dt>Returns:</dt>
+<dd>The value, if available</dd>
 </dl>
 </section>
 </li>

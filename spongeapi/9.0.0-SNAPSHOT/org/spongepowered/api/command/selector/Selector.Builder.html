@@ -211,11 +211,12 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
  players are not in a specific team</div>
 </div>
 <div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#addScore(org.spongepowered.api.scoreboard.Score,org.spongepowered.api.util.Range)">addScore</a></span>&#8203;(<a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard">Score</a>&nbsp;score,
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#addObjective(org.spongepowered.api.scoreboard.objective.Objective,org.spongepowered.api.util.Range)">addObjective</a></span>&#8203;(<a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective">Objective</a>&nbsp;objective,
  <a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;range)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Adds a <a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard"><code>Score</code></a> constraint to the selector, requiring that
- players have a given score in a given range (inclusive).</div>
+<div class="block">Adds an <a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective"><code>Objective</code></a> constraint to the selector, requiring that
+ players have a given score in an objective in a given range
+ (inclusive).</div>
 </div>
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#addTag(java.lang.String)">addTag</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;tag)</code></div>
@@ -754,15 +755,16 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </section>
 </li>
 <li>
-<section class="detail" id="addScore(org.spongepowered.api.scoreboard.Score,org.spongepowered.api.util.Range)">
-<h3>addScore</h3>
-<div class="member-signature"><span class="return-type"><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a></span>&nbsp;<span class="element-name">addScore</span>&#8203;<span class="parameters">(<a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard">Score</a>&nbsp;score,
+<section class="detail" id="addObjective(org.spongepowered.api.scoreboard.objective.Objective,org.spongepowered.api.util.Range)">
+<h3>addObjective</h3>
+<div class="member-signature"><span class="return-type"><a href="Selector.Builder.html" title="interface in org.spongepowered.api.command.selector">Selector.Builder</a></span>&nbsp;<span class="element-name">addObjective</span>&#8203;<span class="parameters">(<a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective">Objective</a>&nbsp;objective,
  <a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;range)</span></div>
-<div class="block">Adds a <a href="../../scoreboard/Score.html" title="interface in org.spongepowered.api.scoreboard"><code>Score</code></a> constraint to the selector, requiring that
- players have a given score in a given range (inclusive).</div>
+<div class="block">Adds an <a href="../../scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective"><code>Objective</code></a> constraint to the selector, requiring that
+ players have a given score in an objective in a given range
+ (inclusive).</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>score</code> - The score</dd>
+<dd><code>objective</code> - The objective to check against</dd>
 <dd><code>range</code> - The range</dd>
 <dt>Returns:</dt>
 <dd>This builder, for chaining</dd>
