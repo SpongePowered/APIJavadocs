@@ -188,15 +188,12 @@ loadScripts(document, 'script');</script>
 <div class="block">Registers <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> methods annotated with @<a href="Listener.html" title="annotation in org.spongepowered.api.event"><code>Listener</code></a> in the
  specified object.
 
- <p>Only methods that are public will be registered and the class must be
- public as well.</p></div>
+ <p>This will not include any methods declared in supertypes, but will
+ test for private and package-private listener methods.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>plugin</code> - The plugin instance</dd>
+<dd><code>plugin</code> - The plugin container</dd>
 <dd><code>obj</code> - The object</dd>
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - Thrown if <code>plugin</code> is not a plugin
-         instance</dd>
 </dl>
 </section>
 </li>
