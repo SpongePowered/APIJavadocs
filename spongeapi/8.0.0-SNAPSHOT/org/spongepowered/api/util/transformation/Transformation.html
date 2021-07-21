@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
+var data = {"i0":1,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -241,13 +241,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="Transformation.html" title="interface in org.spongepowered.api.util.transformation">Transformation</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#then(org.spongepowered.api.util.transformation.Transformation)">then</a></span>&#8203;(<a href="Transformation.html" title="interface in org.spongepowered.api.util.transformation">Transformation</a>&nbsp;transformation)</code></th>
+<td class="colLast">
+<div class="block">Returns are new Transformation which represents the combination of this
+ transformation, followed by the supplied transformation.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="Transformation.Builder.html" title="interface in org.spongepowered.api.util.transformation">Transformation.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toBuilder()">toBuilder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates a <a href="Transformation.Builder.html" title="interface in org.spongepowered.api.util.transformation"><code>Transformation.Builder</code></a> that represents this transformation.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>org.spongepowered.math.vector.Vector3d</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformDirection(org.spongepowered.math.vector.Vector3d)">transformDirection</a></span>&#8203;(org.spongepowered.math.vector.Vector3d&nbsp;originalDirection)</code></th>
 <td class="colLast">
@@ -255,7 +263,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  transformation this object represents.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>org.spongepowered.math.vector.Vector3d</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformPosition(org.spongepowered.math.vector.Vector3d)">transformPosition</a></span>&#8203;(org.spongepowered.math.vector.Vector3d&nbsp;original)</code></th>
 <td class="colLast">
@@ -474,7 +482,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="toBuilder()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toBuilder</h4>
 <pre class="methodSignature"><a href="Transformation.Builder.html" title="interface in org.spongepowered.api.util.transformation">Transformation.Builder</a>&nbsp;toBuilder()</pre>
@@ -482,6 +490,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The builder.</dd>
+</dl>
+</li>
+</ul>
+<a id="then(org.spongepowered.api.util.transformation.Transformation)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>then</h4>
+<pre class="methodSignature"><a href="Transformation.html" title="interface in org.spongepowered.api.util.transformation">Transformation</a>&nbsp;then&#8203;(<a href="Transformation.html" title="interface in org.spongepowered.api.util.transformation">Transformation</a>&nbsp;transformation)</pre>
+<div class="block">Returns are new Transformation which represents the combination of this
+ transformation, followed by the supplied transformation.
+
+ <p><strong>You must not assume that the second transformation origin is
+ relative to the first.</strong> Each transformation is assumed to operate in
+ <strong>untransformed</strong> and each is assumed to operate around the
+ origin specified in <em>that</em> transformation. For example, if the
+ first transformation operates around (1, 1, 1), and the second operates
+ around (2, 2, 2), this will still be the case, the second won't operate
+ around (3, 3, 3). As a result, <a href="#origin()"><code>origin()</code></a> will return
+ <code>Vector3d.ZERO</code> unless the two origins are equal to each other.
+ </p>
+
+ <p>The resultant transformation will set <a href="#performsRounding()"><code>performsRounding()</code></a>
+ to the value of <strong>this</strong> transformation.</p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>transformation</code> - The transformation to perform after this one</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new, combined, transformation</dd>
 </dl>
 </li>
 </ul>
