@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":18,"i4":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -171,7 +171,7 @@ extends <a href="../data/SerializableDataHolderBuilder.Mutable.html" title="inte
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -199,13 +199,6 @@ extends <a href="../data/SerializableDataHolderBuilder.Mutable.html" title="inte
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>default <a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type(java.util.function.Supplier)">type</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&nbsp;type)</code></th>
-<td class="colLast">
-<div class="block">Sets the desired <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> of the produced <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type(org.spongepowered.api.entity.EntityType)">type</a></span>&#8203;(<a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&nbsp;type)</code></th>
 <td class="colLast">
@@ -254,22 +247,6 @@ extends <a href="../data/SerializableDataHolderBuilder.Mutable.html" title="inte
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>entity</code> - The entity to get information from</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</li>
-</ul>
-<a id="type(java.util.function.Supplier)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>type</h4>
-<pre class="methodSignature">default&nbsp;<a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a>&nbsp;type&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&nbsp;type)</pre>
-<div class="block">Sets the desired <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> of the produced <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>type</code> - The type of entity type</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This builder, for chaining</dd>
 </dl>

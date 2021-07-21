@@ -194,6 +194,7 @@ org.spongepowered.api.util.metric
 org.spongepowered.api.util.mirror
 org.spongepowered.api.util.orientation
 org.spongepowered.api.util.rotation
+org.spongepowered.api.util.transformation
 org.spongepowered.api.util.weighted
 org.spongepowered.api.world
 org.spongepowered.api.world.biome
@@ -227,4 +228,5 @@ org.spongepowered.api.world.volume.block.entity
 org.spongepowered.api.world.volume.entity
 org.spongepowered.api.world.volume.game
 org.spongepowered.api.world.volume.stream
+org.spongepowered.api.world.volume.virtual
 org.spongepowered.api.world.weather

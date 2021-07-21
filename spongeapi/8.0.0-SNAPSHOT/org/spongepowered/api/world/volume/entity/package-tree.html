@@ -102,15 +102,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region">
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.EntityVolumeFactory.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.EntityVolumeFactory</span></a></li>
 <li class="circle">org.spongepowered.api.world.volume.<a href="../Volume.html" title="interface in org.spongepowered.api.world.volume"><span class="typeNameLink">Volume</span></a>
 <ul>
 <li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume</span></a>
 <ul>
 <li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume.Streamable</span></a>&lt;B&gt;
 <ul>
-<li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume.Mutable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)
+<li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume.Modifiable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)
 <ul>
-<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Streamable</a>&lt;E&gt;, org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)</li>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Modifiable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Streamable</a>&lt;E&gt;, org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)
+<ul>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Unmodifiable.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume.Unmodifiable</span></a>&lt;U&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume</a>, org.spongepowered.api.world.volume.<a href="../UnmodifiableVolume.html" title="interface in org.spongepowered.api.world.volume">UnmodifiableVolume</a>)
@@ -139,7 +144,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Streamable</span></a>&lt;E&gt;
 <ul>
-<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Mutable</a>&lt;M&gt;, org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)</li>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Modifiable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Modifiable</a>&lt;M&gt;, org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)
+<ul>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a></li>
+</ul>
+</li>
 <li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Unmodifiable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Unmodifiable</span></a>&lt;U&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Unmodifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Unmodifiable</a>&lt;U&gt;, org.spongepowered.api.world.volume.entity.<a href="EntityVolume.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume</a>, org.spongepowered.api.world.volume.<a href="../UnmodifiableVolume.html" title="interface in org.spongepowered.api.world.volume">UnmodifiableVolume</a>)
 <ul>
 <li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Immutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Immutable</span></a> (also extends org.spongepowered.api.world.volume.<a href="../ImmutableVolume.html" title="interface in org.spongepowered.api.world.volume">ImmutableVolume</a>)</li>
@@ -156,12 +165,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="circle">org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume"><span class="typeNameLink">MutableVolume</span></a>
 <ul>
-<li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume.Mutable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Streamable</a>&lt;B&gt;)
+<li class="circle">org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block"><span class="typeNameLink">BlockVolume.Modifiable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Streamable</a>&lt;B&gt;)
 <ul>
-<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Streamable</a>&lt;E&gt;, org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)</li>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Modifiable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Streamable</a>&lt;E&gt;, org.spongepowered.api.world.volume.<a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>)
+<ul>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a></li>
 </ul>
 </li>
-<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Mutable</a>&lt;M&gt;, org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Streamable</a>&lt;E&gt;)</li>
+</ul>
+</li>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Modifiable</span></a>&lt;M&gt; (also extends org.spongepowered.api.world.volume.block.<a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Modifiable</a>&lt;M&gt;, org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Streamable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Streamable</a>&lt;E&gt;)
+<ul>
+<li class="circle">org.spongepowered.api.world.volume.entity.<a href="EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity"><span class="typeNameLink">EntityVolume.Mutable</span></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.world.volume.<a href="../UnmodifiableVolume.html" title="interface in org.spongepowered.api.world.volume"><span class="typeNameLink">UnmodifiableVolume</span></a>

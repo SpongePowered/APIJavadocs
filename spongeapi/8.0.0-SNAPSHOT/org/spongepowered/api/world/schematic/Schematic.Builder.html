@@ -295,7 +295,11 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <li class="blockList">
 <h4>blocks</h4>
 <pre class="methodSignature"><a href="Schematic.Builder.html" title="interface in org.spongepowered.api.world.schematic">Schematic.Builder</a>&nbsp;blocks&#8203;(<a href="../volume/block/BlockVolume.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume</a>&nbsp;volume)</pre>
-<div class="block">Specifies an archetype volume for the world data of the schematic.</div>
+<div class="block">Specifies an archetype volume for the world data of the schematic.
+ This is to take part of the schematic, so it should not be referenced
+ outside of the schematic, less modifications are going to be made
+ also affecting <a href="#blockEntities(org.spongepowered.api.world.volume.block.entity.BlockEntityVolume)"><code>the block
+ entity volume</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>volume</code> - The archetype volume</dd>

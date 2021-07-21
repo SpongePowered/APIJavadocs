@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":6};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,6 +165,15 @@ public interface <span class="typeNameLabel">VolumePredicate&lt;V extends <a hre
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#test(V,java.util.function.Supplier,double,double,double)">test</a></span>&#8203;(<a href="VolumePredicate.html" title="type parameter in VolumePredicate">V</a>&nbsp;volume,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="VolumePredicate.html" title="type parameter in VolumePredicate">T</a>&gt;&nbsp;element,
+    double&nbsp;x,
+    double&nbsp;y,
+    double&nbsp;z)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#test(V,java.util.function.Supplier,int,int,int)">test</a></span>&#8203;(<a href="VolumePredicate.html" title="type parameter in VolumePredicate">V</a>&nbsp;volume,
     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="VolumePredicate.html" title="type parameter in VolumePredicate">T</a>&gt;&nbsp;element,
     int&nbsp;x,
@@ -189,6 +198,21 @@ public interface <span class="typeNameLabel">VolumePredicate&lt;V extends <a hre
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="test(org.spongepowered.api.world.volume.Volume,java.util.function.Supplier,double,double,double)">
+<!--   -->
+</a><a id="test(V,java.util.function.Supplier,double,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>test</h4>
+<pre class="methodSignature">boolean&nbsp;test&#8203;(<a href="VolumePredicate.html" title="type parameter in VolumePredicate">V</a>&nbsp;volume,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="VolumePredicate.html" title="type parameter in VolumePredicate">T</a>&gt;&nbsp;element,
+             double&nbsp;x,
+             double&nbsp;y,
+             double&nbsp;z)</pre>
+</li>
+</ul>
 <a id="test(org.spongepowered.api.world.volume.Volume,java.util.function.Supplier,int,int,int)">
 <!--   -->
 </a><a id="test(V,java.util.function.Supplier,int,int,int)">
@@ -197,11 +221,11 @@ public interface <span class="typeNameLabel">VolumePredicate&lt;V extends <a hre
 <ul class="blockList">
 <li class="blockList">
 <h4>test</h4>
-<pre class="methodSignature">boolean&nbsp;test&#8203;(<a href="VolumePredicate.html" title="type parameter in VolumePredicate">V</a>&nbsp;volume,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="VolumePredicate.html" title="type parameter in VolumePredicate">T</a>&gt;&nbsp;element,
-             int&nbsp;x,
-             int&nbsp;y,
-             int&nbsp;z)</pre>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;test&#8203;(<a href="VolumePredicate.html" title="type parameter in VolumePredicate">V</a>&nbsp;volume,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="VolumePredicate.html" title="type parameter in VolumePredicate">T</a>&gt;&nbsp;element,
+                     int&nbsp;x,
+                     int&nbsp;y,
+                     int&nbsp;z)</pre>
 </li>
 </ul>
 <a id="and(org.spongepowered.api.world.volume.stream.VolumePredicate)">

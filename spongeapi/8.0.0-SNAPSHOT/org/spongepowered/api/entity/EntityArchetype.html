@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6,"i2":6,"i3":1,"i4":1,"i5":6,"i6":6};
+var data = {"i0":1,"i1":6,"i2":6,"i3":1,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -213,19 +213,12 @@ extends <a href="../world/Archetype.html" title="interface in org.spongepowered.
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&nbsp;type)</code></th>
-<td class="colLast">
-<div class="block">Creates a new <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> with the specified <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a>.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.entity.EntityType)">of</a></span>&#8203;(<a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> with the specified <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRawData(org.spongepowered.api.data.persistence.DataView)">setRawData</a></span>&#8203;(<a href="../data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;container)</code></th>
 <td class="colLast">
@@ -233,7 +226,7 @@ extends <a href="../world/Archetype.html" title="interface in org.spongepowered.
  <a href="../data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s held information.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type()">type</a></span>()</code></th>
 <td class="colLast">
@@ -303,22 +296,6 @@ extends <a href="../world/Archetype.html" title="interface in org.spongepowered.
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The new builder</dd>
-</dl>
-</li>
-</ul>
-<a id="of(java.util.function.Supplier)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&nbsp;type)</pre>
-<div class="block">Creates a new <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> with the specified <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>type</code> - Type of the entity</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>An archetype of the given entity type</dd>
 </dl>
 </li>
 </ul>

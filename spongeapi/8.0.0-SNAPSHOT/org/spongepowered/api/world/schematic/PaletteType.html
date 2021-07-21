@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6,"i2":6,"i3":6};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":1,"i1":6,"i2":18,"i3":6,"i4":6};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -166,7 +166,7 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -179,16 +179,21 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Palette.html" title="interface in org.spongepowered.api.world.schematic">Palette</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>,&#8203;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(org.spongepowered.api.registry.Registry)">create</a></span>&#8203;(<a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;registry)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="Palette.html" title="interface in org.spongepowered.api.world.schematic">Palette</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>,&#8203;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(org.spongepowered.api.registry.RegistryHolder,org.spongepowered.api.registry.RegistryType)">create</a></span>&#8203;(<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder,
       <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;registryType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolver()">resolver</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;,&#8203;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stringifier()">stringifier</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -232,8 +237,17 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre class="methodSignature"><a href="Palette.html" title="interface in org.spongepowered.api.world.schematic">Palette</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>,&#8203;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;create&#8203;(<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder,
-                          <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;registryType)</pre>
+<pre class="methodSignature">default&nbsp;<a href="Palette.html" title="interface in org.spongepowered.api.world.schematic">Palette</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>,&#8203;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;create&#8203;(<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder,
+                                  <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;registryType)</pre>
+</li>
+</ul>
+<a id="create(org.spongepowered.api.registry.Registry)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre class="methodSignature"><a href="Palette.html" title="interface in org.spongepowered.api.world.schematic">Palette</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">T</a>,&#8203;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;create&#8203;(<a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;<a href="PaletteType.html" title="type parameter in PaletteType">R</a>&gt;&nbsp;registry)</pre>
 </li>
 </ul>
 <a id="resolver()">
