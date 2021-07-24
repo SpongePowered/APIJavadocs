@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,75 +148,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#post(org.spongepowered.api.event.Event)">post</a></span>&#8203;(<a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&nbsp;event)</code></th>
 <td class="colLast">
-<div class="block">Calls a <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> to all listeners that listen to it.</div>
+<div class="block">Calls an <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> to all listeners that listen to it.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.plugin.PluginContainer,io.leangen.geantyref.TypeToken,org.spongepowered.api.event.EventListener)">registerListener</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;eventType,
-                <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</code></th>
+<td class="colFirst"><code>&lt;E extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.api.event.EventListenerRegistration)">registerListener</a></span>&#8203;(<a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event">EventListenerRegistration</a>&lt;E&gt;&nbsp;registration)</code></th>
 <td class="colLast">
-<div class="block">Registers an event listener for a specific event <code>TypeToken</code>.</div>
+<div class="block">Submits a new <a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event"><code>listener registration</code></a> to this manager.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.plugin.PluginContainer,io.leangen.geantyref.TypeToken,org.spongepowered.api.event.Order,boolean,org.spongepowered.api.event.EventListener)">registerListener</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;eventType,
-                <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                boolean&nbsp;beforeModifications,
-                <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</code></th>
-<td class="colLast">
-<div class="block">Registers an event listener with the specified order for a specific event
- class.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.plugin.PluginContainer,io.leangen.geantyref.TypeToken,org.spongepowered.api.event.Order,org.spongepowered.api.event.EventListener)">registerListener</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;eventType,
-                <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</code></th>
-<td class="colLast">
-<div class="block">Registers an event listener with the specified order for a specific event
- <code>TypeToken</code>.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.plugin.PluginContainer,java.lang.Class,org.spongepowered.api.event.EventListener)">registerListener</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;eventClass,
-                <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</code></th>
-<td class="colLast">
-<div class="block">Registers an event listener for a specific event class.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.plugin.PluginContainer,java.lang.Class,org.spongepowered.api.event.Order,boolean,org.spongepowered.api.event.EventListener)">registerListener</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;eventClass,
-                <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                boolean&nbsp;beforeModifications,
-                <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</code></th>
-<td class="colLast">
-<div class="block">Registers an event listener with the specified order for a specific event
- class.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListener(org.spongepowered.plugin.PluginContainer,java.lang.Class,org.spongepowered.api.event.Order,org.spongepowered.api.event.EventListener)">registerListener</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;eventClass,
-                <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</code></th>
-<td class="colLast">
-<div class="block">Registers an event listener with the specified order for a specific event
- class.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)">registerListeners</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">
@@ -224,18 +167,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  specified object.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unregisterListeners(java.lang.Object)">unregisterListeners</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Un-registers an object from receiving <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unregisterPluginListeners(org.spongepowered.plugin.PluginContainer)">unregisterPluginListeners</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></th>
-<td class="colLast">
-<div class="block">Un-registers all event listeners of a plugin.</div>
 </td>
 </tr>
 </table>
@@ -255,14 +191,32 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="registerListener(org.spongepowered.api.event.EventListenerRegistration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerListener</h4>
+<pre class="methodSignature">&lt;E extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;<a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a>&nbsp;registerListener&#8203;(<a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event">EventListenerRegistration</a>&lt;E&gt;&nbsp;registration)</pre>
+<div class="block">Submits a new <a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event"><code>listener registration</code></a> to this manager.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>E</code> - The event type</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>registration</code> - The registration</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This manager, for fluency</dd>
+</dl>
+</li>
+</ul>
 <a id="registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerListeners</h4>
-<pre class="methodSignature">void&nbsp;registerListeners&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
+<pre class="methodSignature"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a>&nbsp;registerListeners&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
 <div class="block">Registers <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> methods annotated with @<a href="Listener.html" title="annotation in org.spongepowered.api.event"><code>Listener</code></a> in the
  specified object.
 
@@ -272,177 +226,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>plugin</code> - The plugin instance</dd>
 <dd><code>obj</code> - The object</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - Thrown if <code>plugin</code> is not a plugin
-         instance</dd>
-</dl>
-</li>
-</ul>
-<a id="registerListener(org.spongepowered.plugin.PluginContainer,java.lang.Class,org.spongepowered.api.event.EventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerListener</h4>
-<pre class="methodSignature">&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;void&nbsp;registerListener&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;eventClass,
-                                        <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</pre>
-<div class="block">Registers an event listener for a specific event class.
-
- <p>Normally, the annotation-based way in
- <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)"><code>registerListeners(PluginContainer, Object)</code></a> should be preferred over this way. This
- method exists primarily to support dynamic event registration like needed
- in scripting plugins.</p></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The type of the event</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
-<dd><code>eventClass</code> - The event to listen to</dd>
-<dd><code>listener</code> - The listener to receive the events</dd>
-</dl>
-</li>
-</ul>
-<a id="registerListener(org.spongepowered.plugin.PluginContainer,io.leangen.geantyref.TypeToken,org.spongepowered.api.event.EventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerListener</h4>
-<pre class="methodSignature">&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;void&nbsp;registerListener&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                                        io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;eventType,
-                                        <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</pre>
-<div class="block">Registers an event listener for a specific event <code>TypeToken</code>.
-
- <p>Normally, the annotation-based way in
- <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)"><code>registerListeners(PluginContainer, Object)</code></a> should be preferred over this way. This
- method exists primarily to support dynamic event registration like needed
- in scripting plugins.</p></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The type of the event</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
-<dd><code>eventType</code> - The event to listen to</dd>
-<dd><code>listener</code> - The listener to receive the events</dd>
-</dl>
-</li>
-</ul>
-<a id="registerListener(org.spongepowered.plugin.PluginContainer,java.lang.Class,org.spongepowered.api.event.Order,org.spongepowered.api.event.EventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerListener</h4>
-<pre class="methodSignature">&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;void&nbsp;registerListener&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;eventClass,
-                                        <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                                        <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</pre>
-<div class="block">Registers an event listener with the specified order for a specific event
- class.
-
- <p>Normally, the annotation-based way in
- <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)"><code>registerListeners(PluginContainer, Object)</code></a> should be preferred over this way. This
- method exists primarily to support dynamic event registration like needed
- in scripting plugins.</p></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The type of the event</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
-<dd><code>eventClass</code> - The event to listen to</dd>
-<dd><code>order</code> - The order the listener will get called at</dd>
-<dd><code>listener</code> - The listener to receive the events</dd>
-</dl>
-</li>
-</ul>
-<a id="registerListener(org.spongepowered.plugin.PluginContainer,io.leangen.geantyref.TypeToken,org.spongepowered.api.event.Order,org.spongepowered.api.event.EventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerListener</h4>
-<pre class="methodSignature">&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;void&nbsp;registerListener&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                                        io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;eventType,
-                                        <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                                        <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</pre>
-<div class="block">Registers an event listener with the specified order for a specific event
- <code>TypeToken</code>.
-
- <p>Normally, the annotation-based way in
- <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)"><code>registerListeners(PluginContainer, Object)</code></a> should be preferred over this way. This
- method exists primarily to support dynamic event registration like needed
- in scripting plugins.</p></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The type of the event</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
-<dd><code>eventType</code> - The event to listen to</dd>
-<dd><code>order</code> - The order the listener will get called at</dd>
-<dd><code>listener</code> - The listener to receive the events</dd>
-</dl>
-</li>
-</ul>
-<a id="registerListener(org.spongepowered.plugin.PluginContainer,java.lang.Class,org.spongepowered.api.event.Order,boolean,org.spongepowered.api.event.EventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerListener</h4>
-<pre class="methodSignature">&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;void&nbsp;registerListener&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;eventClass,
-                                        <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                                        boolean&nbsp;beforeModifications,
-                                        <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</pre>
-<div class="block">Registers an event listener with the specified order for a specific event
- class.
-
- <p>Normally, the annotation-based way in
- <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)"><code>registerListeners(PluginContainer, Object)</code></a> should be preferred over this way. This
- method exists primarily to support dynamic event registration like needed
- in scripting plugins.</p></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The type of the event</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
-<dd><code>eventClass</code> - The event to listen to</dd>
-<dd><code>order</code> - The order the listener will get called at</dd>
-<dd><code>beforeModifications</code> - Whether to call the listener before other
-      server modifications</dd>
-<dd><code>listener</code> - The listener to receive the events</dd>
-</dl>
-</li>
-</ul>
-<a id="registerListener(org.spongepowered.plugin.PluginContainer,io.leangen.geantyref.TypeToken,org.spongepowered.api.event.Order,boolean,org.spongepowered.api.event.EventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerListener</h4>
-<pre class="methodSignature">&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;&nbsp;void&nbsp;registerListener&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                                        io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;eventType,
-                                        <a href="Order.html" title="enum in org.spongepowered.api.event">Order</a>&nbsp;order,
-                                        boolean&nbsp;beforeModifications,
-                                        <a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;? super T&gt;&nbsp;listener)</pre>
-<div class="block">Registers an event listener with the specified order for a specific event
- class.
-
- <p>Normally, the annotation-based way in
- <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)"><code>registerListeners(PluginContainer, Object)</code></a> should be preferred over this way. This
- method exists primarily to support dynamic event registration like needed
- in scripting plugins.</p></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The type of the event</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
-<dd><code>eventType</code> - The event to listen to</dd>
-<dd><code>order</code> - The order the listener will get called at</dd>
-<dd><code>beforeModifications</code> - Whether to call the listener before other
-      server modifications</dd>
-<dd><code>listener</code> - The listener to receive the events</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This manager, for fluency</dd>
 </dl>
 </li>
 </ul>
@@ -452,25 +237,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>unregisterListeners</h4>
-<pre class="methodSignature">void&nbsp;unregisterListeners&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
-<div class="block">Un-registers an object from receiving <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s.</div>
+<pre class="methodSignature"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a>&nbsp;unregisterListeners&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
+<div class="block">Un-registers an object from receiving <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s.
+
+ <p>If the provided object is a <code>plugin</code>, all events associated
+ with that plugin will be unregistered.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>obj</code> - The object</dd>
-</dl>
-</li>
-</ul>
-<a id="unregisterPluginListeners(org.spongepowered.plugin.PluginContainer)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>unregisterPluginListeners</h4>
-<pre class="methodSignature">void&nbsp;unregisterPluginListeners&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</pre>
-<div class="block">Un-registers all event listeners of a plugin.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>plugin</code> - The plugin instance</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This manager, for fluency</dd>
 </dl>
 </li>
 </ul>
@@ -481,7 +257,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>post</h4>
 <pre class="methodSignature">boolean&nbsp;post&#8203;(<a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&nbsp;event)</pre>
-<div class="block">Calls a <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> to all listeners that listen to it.</div>
+<div class="block">Calls an <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> to all listeners that listen to it.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>event</code> - The event</dd>
