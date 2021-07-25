@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></code>, <code><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></code>, <code><a href="../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code></dd>
+<dd><code><a href="../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></code>, <code><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></code>, <code><a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code>, <code><a href="../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public static interface <span class="typeNameLabel">ChunkEvent.Save.Pre</span>
 extends <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a>, <a href="../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></pre>
-<div class="block">Called before the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> is saved. Cancelling this will prevent any of
+<div class="block">Called before the <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> is saved. Cancelling this will prevent any of
  the chunk's data being written to it's storage container.</div>
 </li>
 </ul>
@@ -152,7 +152,7 @@ extends <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.event.world.chunk.<a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></h3>
-<code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a>, <a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a>, <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a>, <a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a></code></li>
+<code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a>, <a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a>, <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a>, <a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a>, <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="nested.classes.inherited.from.class.org.spongepowered.api.event.world.chunk.ChunkEvent.Save">
@@ -179,10 +179,10 @@ extends <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk">Chunk</a></code></td>
+<td class="colFirst"><code><a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#targetChunk()">targetChunk</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> being changed.</div>
+<div class="block">Gets the <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> being changed.</div>
 </td>
 </tr>
 </table>
@@ -198,7 +198,14 @@ extends <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.spongepowered.api.event.world.chunk.<a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></h3>
-<code><a href="ChunkEvent.html#chunkPosition()">chunkPosition</a>, <a href="ChunkEvent.html#chunkWorld()">chunkWorld</a></code></li>
+<code><a href="ChunkEvent.html#chunkPosition()">chunkPosition</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.world.chunk.ChunkEvent.WorldScoped">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.spongepowered.api.event.world.chunk.<a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></h3>
+<code><a href="ChunkEvent.WorldScoped.html#worldKey()">worldKey</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.Event">
@@ -229,8 +236,8 @@ extends <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api
 <ul class="blockListLast">
 <li class="blockList">
 <h4>targetChunk</h4>
-<pre class="methodSignature"><a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk">Chunk</a>&nbsp;targetChunk()</pre>
-<div class="block">Gets the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> being changed.</div>
+<pre class="methodSignature"><a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&nbsp;targetChunk()</pre>
+<div class="block">Gets the <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> being changed.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The Chunk</dd>

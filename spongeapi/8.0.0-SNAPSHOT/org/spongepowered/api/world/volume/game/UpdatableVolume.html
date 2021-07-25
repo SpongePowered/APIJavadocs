@@ -127,7 +127,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk">Chunk</a></code>, <code><a href="../../client/ClientWorld.html" title="interface in org.spongepowered.api.world.client">ClientWorld</a></code>, <code><a href="../../generation/GenerationRegion.html" title="interface in org.spongepowered.api.world.generation">GenerationRegion</a></code>, <code><a href="../../generation/PrimitiveChunk.html" title="interface in org.spongepowered.api.world.generation">PrimitiveChunk</a></code>, <code><a href="../../chunk/ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk">ProtoChunk</a>&lt;P&gt;</code>, <code><a href="../../ProtoWorld.html" title="interface in org.spongepowered.api.world">ProtoWorld</a>&lt;P&gt;</code>, <code><a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code>, <code><a href="../../World.html" title="interface in org.spongepowered.api.world">World</a>&lt;W,&#8203;L&gt;</code></dd>
+<dd><code><a href="../../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk">Chunk</a>&lt;P&gt;</code>, <code><a href="../../client/ClientWorld.html" title="interface in org.spongepowered.api.world.client">ClientWorld</a></code>, <code><a href="../../generation/GenerationChunk.html" title="interface in org.spongepowered.api.world.generation">GenerationChunk</a></code>, <code><a href="../../generation/GenerationRegion.html" title="interface in org.spongepowered.api.world.generation">GenerationRegion</a></code>, <code><a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code>, <code><a href="../../World.html" title="interface in org.spongepowered.api.world">World</a>&lt;W,&#8203;L&gt;</code>, <code><a href="../../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code>, <code><a href="../../WorldLike.html" title="interface in org.spongepowered.api.world">WorldLike</a>&lt;P&gt;</code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UpdatableVolume</span>
@@ -192,7 +192,7 @@ extends <a href="../block/BlockVolume.html" title="interface in org.spongepowere
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.spongepowered.api.world.volume.<a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a></h3>
-<code><a href="../Volume.html#blockMax()">blockMax</a>, <a href="../Volume.html#blockMin()">blockMin</a>, <a href="../Volume.html#blockSize()">blockSize</a>, <a href="../Volume.html#containsBlock(int,int,int)">containsBlock</a>, <a href="../Volume.html#containsBlock(org.spongepowered.math.vector.Vector3i)">containsBlock</a>, <a href="../Volume.html#isAreaAvailable(int,int,int)">isAreaAvailable</a>, <a href="../Volume.html#isAreaAvailable(org.spongepowered.math.vector.Vector3i)">isAreaAvailable</a></code></li>
+<code><a href="../Volume.html#available(org.spongepowered.math.vector.Vector3i)">available</a>, <a href="../Volume.html#contains(int,int,int)">contains</a>, <a href="../Volume.html#contains(org.spongepowered.math.vector.Vector3i)">contains</a>, <a href="../Volume.html#isAreaAvailable(int,int,int)">isAreaAvailable</a>, <a href="../Volume.html#max()">max</a>, <a href="../Volume.html#min()">min</a>, <a href="../Volume.html#size()">size</a></code></li>
 </ul>
 </li>
 </ul>

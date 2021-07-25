@@ -153,7 +153,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PORTAL">PORTAL</a></span></code></th>
 <td class="colLast">
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
  accept <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that travel through it.</div>
 </td>
 </tr>
@@ -162,7 +162,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#POST_TELEPORT">POST_TELEPORT</a></span></code></th>
 <td class="colLast">
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
  teleportation.</div>
 </td>
 </tr>
@@ -171,7 +171,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STANDARD">STANDARD</a></span></code></th>
 <td class="colLast">
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that ensures the target
- <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
+ <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
  any time in the future, that is, the lifetime of such a ticket is
  effectively one <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util"><code>tick</code></a>.</div>
 </td>
@@ -218,7 +218,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>STANDARD</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt; STANDARD</pre>
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that ensures the target
- <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
+ <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
  any time in the future, that is, the lifetime of such a ticket is
  effectively one <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util"><code>tick</code></a>.
 
@@ -236,7 +236,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>PORTAL</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt; PORTAL</pre>
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
  accept <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that travel through it.
 
  <p>The position represented by the <code>Vector3i</code> is a <strong>block
@@ -255,7 +255,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>POST_TELEPORT</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt; POST_TELEPORT</pre>
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
  teleportation.</div>
 </li>
 </ul>

@@ -150,7 +150,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BIOMES">BIOMES</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is having its <a href="../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>biomes</code></a>
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is having its <a href="../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>biomes</code></a>
  assigned.</div>
 </td>
 </tr>
@@ -158,7 +158,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CARVERS">CARVERS</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is being "carved out" for general terrain
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is being "carved out" for general terrain
  features that require things like "caves" or "canyons".</div>
 </td>
 </tr>
@@ -166,7 +166,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DECORATED">DECORATED</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is being populated by world generation,
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is being populated by world generation,
  usually provided by <a href="../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>Biome</code></a>s.</div>
 </td>
 </tr>
@@ -174,14 +174,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EMPTY">EMPTY</a></span></code></th>
 <td class="colLast">
-<div class="block">Identifies a <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is considered empty.</div>
+<div class="block">Identifies a <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is considered empty.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FEATURES">FEATURES</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> has been carved out, and is now being decorated with
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> has been carved out, and is now being decorated with
  features, such as leaves and tall grass.</div>
 </td>
 </tr>
@@ -189,7 +189,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FULL">FULL</a></span></code></th>
 <td class="colLast">
-<div class="block">State for a <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> marking it being used by a world, and not
+<div class="block">State for a <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> marking it being used by a world, and not
  in the process of either world generation, or deserialization from
  storage.</div>
 </td>
@@ -198,7 +198,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HEIGHTMAPS">HEIGHTMAPS</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is "cleaning" up remnant objects of a
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is "cleaning" up remnant objects of a
  chunk in process of world generation.</div>
 </td>
 </tr>
@@ -206,15 +206,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LIGHT">LIGHT</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that has yet been processed with lighting in
- respects to the <a href="../ProtoWorld.html" title="interface in org.spongepowered.api.world"><code>ProtoWorld</code></a> that contains it.</div>
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that has yet been processed with lighting in
+ respects to the <a href="../WorldLike.html" title="interface in org.spongepowered.api.world"><code>WorldLike</code></a> that contains it.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LIQUID_CARVERS">LIQUID_CARVERS</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is being "carved" with liquid cave
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is being "carved" with liquid cave
  features, such as underwater ravines, underwater caves, etc.</div>
 </td>
 </tr>
@@ -222,7 +222,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NOISE">NOISE</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> where the <a href="../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>block states</code></a> are being
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> where the <a href="../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>block states</code></a> are being
  set and structure locations are set.</div>
 </td>
 </tr>
@@ -230,14 +230,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SPAWN">SPAWN</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is being used for entity spawning.</div>
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is being used for entity spawning.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STRUCTURE_REFERENCES">STRUCTURE_REFERENCES</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> where final validity checks are being performed on
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> where final validity checks are being performed on
  structures that are primed to be placed in the chunk.</div>
 </td>
 </tr>
@@ -245,7 +245,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STRUCTURE_STARTS">STRUCTURE_STARTS</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> where the structures to be placed in the chunk are
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> where the structures to be placed in the chunk are
  being determined and primed for placement.</div>
 </td>
 </tr>
@@ -253,7 +253,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SURFACE">SURFACE</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is at this state means that it is being
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is at this state means that it is being
  generated with a "base" layer of terrain.</div>
 </td>
 </tr>
@@ -298,7 +298,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>BIOMES</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; BIOMES</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is having its <a href="../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>biomes</code></a>
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is having its <a href="../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>biomes</code></a>
  assigned.</div>
 </li>
 </ul>
@@ -309,7 +309,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>CARVERS</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; CARVERS</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is being "carved out" for general terrain
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is being "carved out" for general terrain
  features that require things like "caves" or "canyons".</div>
 </li>
 </ul>
@@ -320,7 +320,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>DECORATED</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; DECORATED</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is being populated by world generation,
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is being populated by world generation,
  usually provided by <a href="../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>Biome</code></a>s.</div>
 </li>
 </ul>
@@ -331,8 +331,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>EMPTY</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; EMPTY</pre>
-<div class="block">Identifies a <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is considered empty. The method
- <a href="ProtoChunk.html#isEmpty()"><code>ProtoChunk.isEmpty()</code></a> would return <code>true</code>. Identifies the
+<div class="block">Identifies a <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is considered empty. The method
+ <a href="Chunk.html#isEmpty()"><code>Chunk.isEmpty()</code></a> would return <code>true</code>. Identifies the
  chunk has nothing contained within it, but can be used as a dummy chunk
  in some regards for world generation.</div>
 </li>
@@ -344,7 +344,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>FEATURES</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; FEATURES</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> has been carved out, and is now being decorated with
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> has been carved out, and is now being decorated with
  features, such as leaves and tall grass.</div>
 </li>
 </ul>
@@ -355,10 +355,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>FULL</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; FULL</pre>
-<div class="block">State for a <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> marking it being used by a world, and not
+<div class="block">State for a <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> marking it being used by a world, and not
  in the process of either world generation, or deserialization from
- storage. Only <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>s should provide this state, other
- <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a>s would be invalid with this state.</div>
+ storage. Only <a href="WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a>s should provide this state, other
+ <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>s would be invalid with this state.</div>
 </li>
 </ul>
 <a id="HEIGHTMAPS">
@@ -368,7 +368,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>HEIGHTMAPS</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; HEIGHTMAPS</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is "cleaning" up remnant objects of a
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is "cleaning" up remnant objects of a
  chunk in process of world generation. Generally, height maps are being
  calculated at this point as entity spawning can affect block placement.</div>
 </li>
@@ -380,7 +380,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>LIQUID_CARVERS</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; LIQUID_CARVERS</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is being "carved" with liquid cave
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is being "carved" with liquid cave
  features, such as underwater ravines, underwater caves, etc.</div>
 </li>
 </ul>
@@ -391,8 +391,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>LIGHT</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; LIGHT</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that has yet been processed with lighting in
- respects to the <a href="../ProtoWorld.html" title="interface in org.spongepowered.api.world"><code>ProtoWorld</code></a> that contains it. This is the second
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that has yet been processed with lighting in
+ respects to the <a href="../WorldLike.html" title="interface in org.spongepowered.api.world"><code>WorldLike</code></a> that contains it. This is the second
  to last step in the world generation pipeline for a chunk to be marked
  as ready for being added to a <a href="../World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>.</div>
 </li>
@@ -404,7 +404,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>NOISE</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; NOISE</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> where the <a href="../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>block states</code></a> are being
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> where the <a href="../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>block states</code></a> are being
  set and structure locations are set.</div>
 </li>
 </ul>
@@ -415,7 +415,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>SPAWN</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; SPAWN</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> state that is being used for entity spawning.
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> state that is being used for entity spawning.
  Generally requires that the neighboring chunks are adequately populated,
  and requires that this chunk has proper lighting, for mob placement
  logic.</div>
@@ -428,7 +428,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>STRUCTURE_STARTS</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; STRUCTURE_STARTS</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> where the structures to be placed in the chunk are
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> where the structures to be placed in the chunk are
  being determined and primed for placement.</div>
 </li>
 </ul>
@@ -439,7 +439,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>STRUCTURE_REFERENCES</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; STRUCTURE_REFERENCES</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> where final validity checks are being performed on
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> where final validity checks are being performed on
  structures that are primed to be placed in the chunk.</div>
 </li>
 </ul>
@@ -450,11 +450,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>SURFACE</h4>
 <pre>public static final&nbsp;<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&gt; SURFACE</pre>
-<div class="block">A <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that is at this state means that it is being
+<div class="block">A <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that is at this state means that it is being
  generated with a "base" layer of terrain.
 
  <p>The chunk should not have any <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> instances or
- <a href="../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> instances and may have a valid <a href="../ProtoWorld.html" title="interface in org.spongepowered.api.world"><code>ProtoWorld</code></a>
+ <a href="../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> instances and may have a valid <a href="../WorldLike.html" title="interface in org.spongepowered.api.world"><code>WorldLike</code></a>
  used for world generation.</p></div>
 </li>
 </ul>
