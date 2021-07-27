@@ -107,7 +107,7 @@ extends <a href="../data/SerializableDataHolderBuilder.Mutable.html" title="inte
 <section class="method-summary" id="method.summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
@@ -128,14 +128,9 @@ extends <a href="../data/SerializableDataHolderBuilder.Mutable.html" title="inte
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Sets all possible bits of information from the provided <a href="Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#type(java.util.function.Supplier)">type</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&nbsp;type)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
-<div class="block">Sets the desired <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> of the produced <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>.</div>
-</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#type(org.spongepowered.api.entity.EntityType)">type</a></span>&#8203;(<a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&nbsp;type)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#type(org.spongepowered.api.entity.EntityType)">type</a></span>&#8203;(<a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&nbsp;type)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Sets the desired <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> of the produced <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>.</div>
 </div>
 </div>
@@ -166,19 +161,6 @@ extends <a href="../data/SerializableDataHolderBuilder.Mutable.html" title="inte
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>entity</code> - The entity to get information from</dd>
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="type(java.util.function.Supplier)">
-<h3>type</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="EntityArchetype.Builder.html" title="interface in org.spongepowered.api.entity">EntityArchetype.Builder</a></span>&nbsp;<span class="element-name">type</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&nbsp;type)</span></div>
-<div class="block">Sets the desired <a href="EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> of the produced <a href="EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>type</code> - The type of entity type</dd>
 <dt>Returns:</dt>
 <dd>This builder, for chaining</dd>
 </dl>

@@ -78,7 +78,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="annotations"><a href="../../util/annotation/DoNotStore.html" title="annotation in org.spongepowered.api.util.annotation">@DoNotStore</a>
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">ChunkManager</span></div>
-<div class="block">Manages <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> for a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a>.</div>
+<div class="block">Manages <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> for a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a>.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,6 +104,32 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets all currently active <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are of the
  provided <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#regenerateChunk(int,int,int)">regenerateChunk</a></span>&#8203;(int&nbsp;cx,
+ int&nbsp;cy,
+ int&nbsp;cz)</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
+<div class="block">Regenerates a chunk at the given chunk coordinates.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#regenerateChunk(int,int,int,org.spongepowered.api.world.ChunkRegenerateFlag)">regenerateChunk</a></span>&#8203;(int&nbsp;cx,
+ int&nbsp;cy,
+ int&nbsp;cz,
+ <a href="../ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="block">Regenerates a chunk at the given chunk coordinates.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#regenerateChunk(org.spongepowered.math.vector.Vector3i)">regenerateChunk</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition)</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
+<div class="block">Regenerates a chunk at the given chunk coordinate position.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#regenerateChunk(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.ChunkRegenerateFlag)">regenerateChunk</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition,
+ <a href="../ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
+<div class="block">Regenerates a chunk at the given chunk coordinate position.</div>
 </div>
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#releaseTicket(org.spongepowered.api.world.server.Ticket)">releaseTicket</a></span>&#8203;(<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;?&gt;&nbsp;ticket)</code></div>
@@ -226,7 +252,7 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>type</code> - The type of ticket to request.</dd>
-<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>
+<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a>
                     affected by this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a></dd>
 <dd><code>radius</code> - The radius of the area, in chunks, that this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a>
                affects.</dd>
@@ -246,7 +272,7 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>type</code> - The type of ticket to request.</dd>
-<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>
+<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a>
                     affected by this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a></dd>
 <dd><code>radius</code> - The radius of the area, in chunks, that this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a>
                affects.</dd>
@@ -268,7 +294,7 @@ loadScripts(document, 'script');</script>
 <dd><code>T</code> - The type of the supplied <code>value</code>.</dd>
 <dt>Parameters:</dt>
 <dd><code>type</code> - The type of ticket to request.</dd>
-<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>
+<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a>
                     affected by this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a></dd>
 <dd><code>value</code> - The value to register the ticket with.</dd>
 <dd><code>radius</code> - The radius of the area, in chunks, that this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a>
@@ -291,7 +317,7 @@ loadScripts(document, 'script');</script>
 <dd><code>T</code> - The type of the supplied <code>value</code>.</dd>
 <dt>Parameters:</dt>
 <dd><code>type</code> - The type of ticket to request.</dd>
-<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>
+<dd><code>chunkOrigin</code> - The chunk co-ordinates of the central <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a>
                     affected by this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a></dd>
 <dd><code>value</code> - The value to register the ticket with.</dd>
 <dd><code>radius</code> - The radius of the area, in chunks, that this <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a>
@@ -360,6 +386,98 @@ loadScripts(document, 'script');</script>
 <dd><code>type</code> - The <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a> to retrieve tickets for</dd>
 <dt>Returns:</dt>
 <dd>A <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link"><code>Collection</code></a> of <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="regenerateChunk(org.spongepowered.math.vector.Vector3i)">
+<h3>regenerateChunk</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">regenerateChunk</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition)</span></div>
+<div class="block">Regenerates a chunk at the given chunk coordinate position.
+
+ <p>Care should be taken to check the result of the future, as an
+ exception may be provided if the regeneration was not successful.</p>
+
+ <p><strong>Users must not use <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()" title="class or interface in java.util.concurrent" class="external-link"><code>get</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()" title="class or interface in java.util.concurrent" class="external-link"><code>join</code></a> on this future.</strong> Doing so
+ may end up causing a deadlock on the server.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>chunkPosition</code> - The chunk position to regenerate</dd>
+<dt>Returns:</dt>
+<dd>The regenerated chunk, if available</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="regenerateChunk(int,int,int)">
+<h3>regenerateChunk</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">regenerateChunk</span>&#8203;<span class="parameters">(int&nbsp;cx,
+ int&nbsp;cy,
+ int&nbsp;cz)</span></div>
+<div class="block">Regenerates a chunk at the given chunk coordinates.
+
+ <p>Care should be taken to check the result of the future, as an
+ exception may be provided if the regeneration was not successful.</p>
+
+ <p><strong>Users must not use <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()" title="class or interface in java.util.concurrent" class="external-link"><code>get</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()" title="class or interface in java.util.concurrent" class="external-link"><code>join</code></a> on this future.</strong> Doing so
+ may end up causing a deadlock on the server.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cx</code> - The chunk x coordinate</dd>
+<dd><code>cy</code> - The chunk y coordinate</dd>
+<dd><code>cz</code> - The chunk z coordinate</dd>
+<dt>Returns:</dt>
+<dd>The regenerated chunk, if available</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="regenerateChunk(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.ChunkRegenerateFlag)">
+<h3>regenerateChunk</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">regenerateChunk</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition,
+ <a href="../ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</span></div>
+<div class="block">Regenerates a chunk at the given chunk coordinate position.
+
+ <p>Care should be taken to check the result of the future, as an
+ exception may be provided if the regeneration was not successful.</p>
+
+ <p><strong>Users must not use <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()" title="class or interface in java.util.concurrent" class="external-link"><code>get</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()" title="class or interface in java.util.concurrent" class="external-link"><code>join</code></a> on this future.</strong> Doing so
+ may end up causing a deadlock on the server.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>chunkPosition</code> - The chunk position to regenerate</dd>
+<dd><code>flag</code> - The chunk regenerate flag to use</dd>
+<dt>Returns:</dt>
+<dd>The regenerated chunk, if available</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="regenerateChunk(int,int,int,org.spongepowered.api.world.ChunkRegenerateFlag)">
+<h3>regenerateChunk</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">regenerateChunk</span>&#8203;<span class="parameters">(int&nbsp;cx,
+ int&nbsp;cy,
+ int&nbsp;cz,
+ <a href="../ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</span></div>
+<div class="block">Regenerates a chunk at the given chunk coordinates.
+
+ <p>Care should be taken to check the result of the future, as an
+ exception may be provided if the regeneration was not successful.</p>
+
+ <p><strong>Users must not use <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()" title="class or interface in java.util.concurrent" class="external-link"><code>get</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()" title="class or interface in java.util.concurrent" class="external-link"><code>join</code></a> on this future.</strong> Doing so
+ may end up causing a deadlock on the server.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cx</code> - The chunk x coordinate</dd>
+<dd><code>cy</code> - The chunk y coordinate</dd>
+<dd><code>cz</code> - The chunk z coordinate</dd>
+<dd><code>flag</code> - The chunk regenerate flag to use</dd>
+<dt>Returns:</dt>
+<dd>The regenerated chunk, if available</dd>
 </dl>
 </section>
 </li>

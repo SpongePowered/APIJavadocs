@@ -95,21 +95,21 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#PORTAL">PORTAL</a></span></code></div>
 <div class="col-last even-row-color">
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
  accept <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that travel through it.</div>
 </div>
 <div class="col-first odd-row-color"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><span class="member-name-link"><a href="#POST_TELEPORT">POST_TELEPORT</a></span></code></div>
 <div class="col-last odd-row-color">
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
  teleportation.</div>
 </div>
 <div class="col-first even-row-color"><code>static <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#STANDARD">STANDARD</a></span></code></div>
 <div class="col-last even-row-color">
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that ensures the target
- <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
+ <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
  any time in the future, that is, the lifetime of such a ticket is
  effectively one <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util"><code>tick</code></a>.</div>
 </div>
@@ -139,7 +139,7 @@ loadScripts(document, 'script');</script>
 <h3>STANDARD</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;</span>&nbsp;<span class="element-name">STANDARD</span></div>
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that ensures the target
- <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
+ <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> are loaded, but are not guaranteed to be loaded at
  any time in the future, that is, the lifetime of such a ticket is
  effectively one <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util"><code>tick</code></a>.
 
@@ -154,7 +154,7 @@ loadScripts(document, 'script');</script>
 <h3>PORTAL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;</span>&nbsp;<span class="element-name">PORTAL</span></div>
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around a <a href="../portal/Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> are loaded, ready to
  accept <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that travel through it.
 
  <p>The position represented by the <code>Vector3i</code> is a <strong>block
@@ -170,7 +170,7 @@ loadScripts(document, 'script');</script>
 <h3>POST_TELEPORT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</span>&nbsp;<span class="element-name">POST_TELEPORT</span></div>
 <div class="block">Represents <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>tickets</code></a> that are intended to ensure that the
- target <a href="../chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
+ target <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunks</code></a> around an <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> are loaded after
  teleportation.</div>
 </section>
 </li>

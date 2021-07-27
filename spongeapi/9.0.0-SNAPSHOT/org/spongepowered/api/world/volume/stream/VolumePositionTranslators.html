@@ -46,13 +46,13 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -84,6 +84,21 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- =========== FIELD SUMMARY =========== -->
+<li>
+<section class="field-summary" id="field.summary">
+<h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static org.spongepowered.math.vector.Vector3d</code></div>
+<div class="col-second even-row-color"><code><span class="member-name-link"><a href="#BLOCK_OFFSET">BLOCK_OFFSET</a></span></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method.summary">
@@ -101,39 +116,36 @@ E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongep
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#offset(org.spongepowered.math.vector.Vector3i)">offset</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;min)</code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#offset(org.spongepowered.math.vector.Vector3d)">offset</a></span>&#8203;(org.spongepowered.math.vector.Vector3d&nbsp;min)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#offsetPosition(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3i)">offsetPosition</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;origin,
- org.spongepowered.math.vector.Vector3i&nbsp;originalOrigin)</code></div>
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#offset(org.spongepowered.math.vector.Vector3i)">offset</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;min)</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#position(java.util.function.Function)">position</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;org.spongepowered.math.vector.Vector3i,&#8203;org.spongepowered.math.vector.Vector3i&gt;&nbsp;func)</code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#position(java.util.function.Function)">position</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;org.spongepowered.math.vector.Vector3d,&#8203;org.spongepowered.math.vector.Vector3d&gt;&nbsp;func)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#relativeTo(org.spongepowered.math.vector.Vector3i)">relativeTo</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;newOrigin)</code></div>
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#relativeTo(org.spongepowered.math.vector.Vector3d)">relativeTo</a></span>&#8203;(org.spongepowered.math.vector.Vector3d&nbsp;newOrigin)</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rotateBlockEntitiesOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation)">rotateBlockEntitiesOn</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;center,
- <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
+E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#relativeTo(org.spongepowered.math.vector.Vector3i)">relativeTo</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;newOrigin)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rotateBlocksOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation)">rotateBlocksOn</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;center,
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rotateBlocksOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3d,org.spongepowered.api.util.rotation.Rotation)">rotateBlocksOn</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;start,
+ org.spongepowered.math.vector.Vector3d&nbsp;center,
  <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rotateEntitiesOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation)">rotateEntitiesOn</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;center,
- <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rotateOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation,java.util.function.Function)">rotateOn</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;center,
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#rotateOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3d,org.spongepowered.api.util.rotation.Rotation,java.util.function.BiFunction)">rotateOn</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;start,
+ org.spongepowered.math.vector.Vector3d&nbsp;center,
  <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation,
- <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;E,&#8203;E&gt;&nbsp;elementRotation)</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/BiFunction.html" title="class or interface in java.util.function" class="external-link">BiFunction</a>&lt;org.spongepowered.math.vector.Vector3d,&#8203;E,&#8203;E&gt;&nbsp;elementRotation)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -146,6 +158,20 @@ E&gt;<br><a href="VolumePositionTranslator.html" title="interface in org.spongep
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field.detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="BLOCK_OFFSET">
+<h3>BLOCK_OFFSET</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">org.spongepowered.math.vector.Vector3d</span>&nbsp;<span class="element-name">BLOCK_OFFSET</span></div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method.detail">
@@ -160,37 +186,23 @@ E&gt;</span>
 </section>
 </li>
 <li>
-<section class="detail" id="rotateBlocksOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation)">
+<section class="detail" id="rotateBlocksOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3d,org.spongepowered.api.util.rotation.Rotation)">
 <h3>rotateBlocksOn</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>&gt;</span>
-<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;</span>&nbsp;<span class="element-name">rotateBlocksOn</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;center,
+<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;</span>&nbsp;<span class="element-name">rotateBlocksOn</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;start,
+ org.spongepowered.math.vector.Vector3d&nbsp;center,
  <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</span></div>
 </section>
 </li>
 <li>
-<section class="detail" id="rotateEntitiesOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation)">
-<h3>rotateEntitiesOn</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>&gt;</span>
-<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</span>&nbsp;<span class="element-name">rotateEntitiesOn</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;center,
- <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="rotateBlockEntitiesOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation)">
-<h3>rotateBlockEntitiesOn</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>&gt;</span>
-<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;<a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;</span>&nbsp;<span class="element-name">rotateBlockEntitiesOn</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;center,
- <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="rotateOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.util.rotation.Rotation,java.util.function.Function)">
+<section class="detail" id="rotateOn(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3d,org.spongepowered.api.util.rotation.Rotation,java.util.function.BiFunction)">
 <h3>rotateOn</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;</span>
-<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">rotateOn</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;center,
+<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">rotateOn</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;start,
+ org.spongepowered.math.vector.Vector3d&nbsp;center,
  <a href="../../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation,
- <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;E,&#8203;E&gt;&nbsp;elementRotation)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/BiFunction.html" title="class or interface in java.util.function" class="external-link">BiFunction</a>&lt;org.spongepowered.math.vector.Vector3d,&#8203;E,&#8203;E&gt;&nbsp;elementRotation)</span></div>
 </section>
 </li>
 <li>
@@ -202,6 +214,14 @@ E&gt;</span>
 </section>
 </li>
 <li>
+<section class="detail" id="relativeTo(org.spongepowered.math.vector.Vector3d)">
+<h3>relativeTo</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
+E&gt;</span>
+<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">relativeTo</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3d&nbsp;newOrigin)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="offset(org.spongepowered.math.vector.Vector3i)">
 <h3>offset</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
@@ -210,20 +230,19 @@ E&gt;</span>
 </section>
 </li>
 <li>
+<section class="detail" id="offset(org.spongepowered.math.vector.Vector3d)">
+<h3>offset</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
+E&gt;</span>
+<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">offset</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3d&nbsp;min)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="position(java.util.function.Function)">
 <h3>position</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
 E&gt;</span>
-<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">position</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;org.spongepowered.math.vector.Vector3i,&#8203;org.spongepowered.math.vector.Vector3i&gt;&nbsp;func)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="offsetPosition(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3i)">
-<h3>offsetPosition</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;W extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;
-E&gt;</span>
-<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">offsetPosition</span>&#8203;<span class="parameters">(org.spongepowered.math.vector.Vector3i&nbsp;origin,
- org.spongepowered.math.vector.Vector3i&nbsp;originalOrigin)</span></div>
+<span class="return-type"><a href="VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a>&lt;W,&#8203;E&gt;</span>&nbsp;<span class="element-name">position</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;org.spongepowered.math.vector.Vector3d,&#8203;org.spongepowered.math.vector.Vector3d&gt;&nbsp;func)</span></div>
 </section>
 </li>
 </ul>

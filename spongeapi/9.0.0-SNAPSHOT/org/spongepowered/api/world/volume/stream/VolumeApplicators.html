@@ -81,6 +81,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">VolumeApplicators</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">A collection of default implemented <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a>s for various
+ "traditional" use cases.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -95,44 +97,84 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../biome/BiomeVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.biome">BiomeVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../biome/Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../biome/BiomeVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.biome">BiomeVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../biome/Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyBiomes()">applyBiomes</a></span>()</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/entity/BlockEntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>Biome</code></a> onto a target <a href="../biome/BiomeVolume.html" title="interface in org.spongepowered.api.world.volume.biome"><code>BiomeVolume</code></a>,
+ returning <code>boolean</code> whether the biome was successfully set.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/entity/BlockEntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyBlockEntities()">applyBlockEntities</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;?,&#8203;
-? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt; &amp; <a href="../block/entity/BlockEntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;&gt;</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A generic applicator to add a <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> to a target <a href="../block/entity/BlockEntityVolume.html" title="interface in org.spongepowered.api.world.volume.block.entity"><code>volume</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/entity/BlockEntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Modifiable</a>&lt;M&gt; &amp; <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;@NonNull ?,&#8203;
+? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyBlockEntityArchetype()">applyBlockEntityArchetype</a></span>()</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../archetype/block/entity/BlockEntityArchetypeVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.archetype.block.entity">BlockEntityArchetypeVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> onto a target <a href="../block/entity/BlockEntityVolume.html" title="interface in org.spongepowered.api.world.volume.block.entity"><code>BlockEntityVolume</code></a>,
+ optionally returning a newly placed <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../archetype/block/entity/BlockEntityArchetypeVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.archetype.block.entity">BlockEntityArchetypeVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyBlockEntityArchetypes()">applyBlockEntityArchetypes</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> onto a target <a href="../block/entity/BlockEntityVolume.html" title="interface in org.spongepowered.api.world.volume.block.entity"><code>BlockEntityVolume</code></a>,
+ optionally returning a newly placed <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyBlocks()">applyBlocks</a></span>()</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A standard <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that applies a <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> to
+ any <a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block"><code>BlockVolume.Modifiable</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/PhysicsAwareMutableBlockVolume.html" title="interface in org.spongepowered.api.world.volume.block">PhysicsAwareMutableBlockVolume</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyBlocks(org.spongepowered.api.world.BlockChangeFlag)">applyBlocks</a></span>&#8203;(<a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../entity/EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">Creates a "physics aware" variation of a <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that
+ applies <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockStates</code></a> with side effects in accordance
+ with the passed in <a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyEntities()">applyEntities</a></span>()</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;?,&#8203;
-? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt; &amp; <a href="../entity/EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</code></div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> onto a target <a href="../entity/EntityVolume.html" title="interface in org.spongepowered.api.world.volume.entity"><code>EntityVolume</code></a>,
+ returning <code>boolean</code> whether the entity was successfully spawned.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a>&lt;M&gt; &amp; <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;@NonNull ?,&#8203;
+? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyEntityArchetype()">applyEntityArchetype</a></span>()</code></div>
 <div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../archetype/entity/EntityArchetypeVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.archetype.entity">EntityArchetypeVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../archetype/entity/EntityArchetypeVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.archetype.entity">EntityArchetypeVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyEntityArchetypes()">applyEntityArchetypes</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/entity/BlockEntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/entity/BlockEntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyOrRemoveBlockEntities()">applyOrRemoveBlockEntities</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Mutable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that conditionally adds or
+ removes a <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>/<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> based on the element's
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a> state of being <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#isPresent()" title="class or interface in java.util" class="external-link"><code>Optional.isPresent()</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Modifiable</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyOrRemoveBlockState()">applyOrRemoveBlockState</a></span>()</code></div>
-<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that conditionally adds or
+ removes a <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> based on the element's
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a> state of being <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#isPresent()" title="class or interface in java.util" class="external-link"><code>Optional.isPresent()</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static &lt;M extends <a href="../block/PhysicsAwareMutableBlockVolume.html" title="interface in org.spongepowered.api.world.volume.block">PhysicsAwareMutableBlockVolume</a>&lt;M&gt;&gt;<br><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#applyOrRemoveBlockState(org.spongepowered.api.world.BlockChangeFlag)">applyOrRemoveBlockState</a></span>&#8203;(<a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that conditionally adds or
+ removes a <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> based on the element's
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a> state of being <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#isPresent()" title="class or interface in java.util" class="external-link"><code>Optional.isPresent()</code></a>.</div>
+</div>
 </div>
 </div>
 </div>
@@ -153,8 +195,24 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="applyBlocks()">
 <h3>applyBlocks</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyBlocks</span>()</div>
+<div class="block">A standard <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that applies a <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> to
+ any <a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block"><code>BlockVolume.Modifiable</code></a>.
+
+ <p>Note that this has a different side
+ effect compared to <a href="#applyBlocks(org.spongepowered.api.world.BlockChangeFlag)"><code>applyBlocks(BlockChangeFlag)</code></a> if the target
+ <a href="../block/BlockVolume.html" title="interface in org.spongepowered.api.world.volume.block"><code>volume</code></a> is a <a href="../block/PhysicsAwareMutableBlockVolume.html" title="interface in org.spongepowered.api.world.volume.block"><code>PhysicsAwareMutableBlockVolume</code></a>
+ due to the nature of applying blocks with a <a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a>. It
+ can be expected that applying blocks directly with this applicator will
+ likely result in side effects playing out to their full extent per block
+ changed.</p></div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of modifiable block volume</dd>
+<dt>Returns:</dt>
+<dd>A blockstate based VolumeApplicator</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -162,27 +220,69 @@ loadScripts(document, 'script');</script>
 <h3>applyBlocks</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/PhysicsAwareMutableBlockVolume.html" title="interface in org.spongepowered.api.world.volume.block">PhysicsAwareMutableBlockVolume</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyBlocks</span>&#8203;<span class="parameters">(<a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</span></div>
+<div class="block">Creates a "physics aware" variation of a <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that
+ applies <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockStates</code></a> with side effects in accordance
+ with the passed in <a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The target volume type that accepts a BlockChangeFlag</dd>
+<dt>Parameters:</dt>
+<dd><code>flag</code> - The respective change flag to signal what side effects to
+      play out on application</dd>
+<dt>Returns:</dt>
+<dd>A blockstate based VolumeApplicator</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyBlockEntities()">
 <h3>applyBlockEntities</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/entity/BlockEntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/entity/BlockEntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyBlockEntities</span>()</div>
+<div class="block">A generic applicator to add a <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> to a target <a href="../block/entity/BlockEntityVolume.html" title="interface in org.spongepowered.api.world.volume.block.entity"><code>volume</code></a>.
+ This does have the best intention of attempting to set the target's
+ container <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> prior to adding the <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of modifiable volume</dd>
+<dt>Returns:</dt>
+<dd>An applicator to add block entities</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyOrRemoveBlockEntities()">
 <h3>applyOrRemoveBlockEntities</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/entity/BlockEntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/entity/BlockEntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyOrRemoveBlockEntities</span>()</div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that conditionally adds or
+ removes a <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>/<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> based on the element's
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a> state of being <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#isPresent()" title="class or interface in java.util" class="external-link"><code>Optional.isPresent()</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of modifiable block entity volume</dd>
+<dt>Returns:</dt>
+<dd>An applicator that conditionally adds block entities or removes
+   blocks</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyOrRemoveBlockState()">
 <h3>applyOrRemoveBlockState</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/BlockVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/BlockVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block">BlockVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyOrRemoveBlockState</span>()</div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that conditionally adds or
+ removes a <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> based on the element's
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a> state of being <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#isPresent()" title="class or interface in java.util" class="external-link"><code>Optional.isPresent()</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of modifiable block volume</dd>
+<dt>Returns:</dt>
+<dd>An applicator that conditionally sets a block or removes a block</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -190,49 +290,95 @@ loadScripts(document, 'script');</script>
 <h3>applyOrRemoveBlockState</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../block/PhysicsAwareMutableBlockVolume.html" title="interface in org.spongepowered.api.world.volume.block">PhysicsAwareMutableBlockVolume</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyOrRemoveBlockState</span>&#8203;<span class="parameters">(<a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</span></div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that conditionally adds or
+ removes a <a href="../../../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> based on the element's
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link"><code>Optional</code></a> state of being <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> or
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html#isPresent()" title="class or interface in java.util" class="external-link"><code>Optional.isPresent()</code></a>. The added change being the flag</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of modifiable block volume</dd>
+<dt>Returns:</dt>
+<dd>An applicator that conditionally sets a block or removes a block</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyBlockEntityArchetype()">
 <h3>applyBlockEntityArchetype</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters-long">&lt;M extends <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;?,&#8203;
-? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt; &amp; <a href="../block/entity/BlockEntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters-long">&lt;M extends <a href="../block/entity/BlockEntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.block.entity">BlockEntityVolume.Modifiable</a>&lt;M&gt; &amp; <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;@NonNull ?,&#8203;
+? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;&gt;</span>&nbsp;<span class="element-name">applyBlockEntityArchetype</span>()</div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> onto a target <a href="../block/entity/BlockEntityVolume.html" title="interface in org.spongepowered.api.world.volume.block.entity"><code>BlockEntityVolume</code></a>,
+ optionally returning a newly placed <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of block entity</dd>
+<dt>Returns:</dt>
+<dd>A volume applicator that applies block entity archetypes</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyBlockEntityArchetypes()">
 <h3>applyBlockEntityArchetypes</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../archetype/block/entity/BlockEntityArchetypeVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.archetype.block.entity">BlockEntityArchetypeVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters-long">&lt;M extends <a href="../archetype/block/entity/BlockEntityArchetypeVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.archetype.block.entity">BlockEntityArchetypeVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyBlockEntityArchetypes</span>()</div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../../block/entity/BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> onto a target <a href="../block/entity/BlockEntityVolume.html" title="interface in org.spongepowered.api.world.volume.block.entity"><code>BlockEntityVolume</code></a>,
+ optionally returning a newly placed <a href="../../../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of block entity</dd>
+<dt>Returns:</dt>
+<dd>A volume applicator that applies block entity archetypes</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyEntities()">
 <h3>applyEntities</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../entity/EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyEntities</span>()</div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> onto a target <a href="../entity/EntityVolume.html" title="interface in org.spongepowered.api.world.volume.entity"><code>EntityVolume</code></a>,
+ returning <code>boolean</code> whether the entity was successfully spawned.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of entity volume</dd>
+<dt>Returns:</dt>
+<dd>A volume applicator that applies entities to volumes</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyBiomes()">
 <h3>applyBiomes</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../biome/BiomeVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.biome">BiomeVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../biome/BiomeVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.biome">BiomeVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../biome/Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyBiomes</span>()</div>
+<div class="block">A potentially useful <a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeApplicator</code></a> that attempts to apply a
+ <a href="../../biome/Biome.html" title="interface in org.spongepowered.api.world.biome"><code>Biome</code></a> onto a target <a href="../biome/BiomeVolume.html" title="interface in org.spongepowered.api.world.volume.biome"><code>BiomeVolume</code></a>,
+ returning <code>boolean</code> whether the biome was successfully set.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>M</code> - The type of biome volume</dd>
+<dt>Returns:</dt>
+<dd>A volume applicator that applies biomes to volumes</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="applyEntityArchetype()">
 <h3>applyEntityArchetype</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters-long">&lt;M extends <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;?,&#8203;
-? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt; &amp; <a href="../entity/EntityVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters-long">&lt;M extends <a href="../entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a>&lt;M&gt; &amp; <a href="../../LocationCreator.html" title="interface in org.spongepowered.api.world">LocationCreator</a>&lt;@NonNull ?,&#8203;
+? extends <a href="../../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</span>&nbsp;<span class="element-name">applyEntityArchetype</span>()</div>
 </section>
 </li>
 <li>
 <section class="detail" id="applyEntityArchetypes()">
 <h3>applyEntityArchetypes</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../archetype/entity/EntityArchetypeVolume.Mutable.html" title="interface in org.spongepowered.api.world.volume.archetype.entity">EntityArchetypeVolume.Mutable</a>&lt;M&gt;&gt;</span>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;M extends <a href="../archetype/entity/EntityArchetypeVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.archetype.entity">EntityArchetypeVolume.Modifiable</a>&lt;M&gt;&gt;</span>
 <span class="return-type"><a href="VolumeApplicator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeApplicator</a>&lt;M,&#8203;<a href="../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">applyEntityArchetypes</span>()</div>
 </section>
 </li>

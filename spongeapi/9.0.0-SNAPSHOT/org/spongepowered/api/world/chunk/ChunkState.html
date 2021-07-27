@@ -83,11 +83,11 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="annotations"><a href="../../util/annotation/CatalogedBy.html" title="annotation in org.spongepowered.api.util.annotation">@CatalogedBy</a>(<a href="ChunkStates.html" title="class in org.spongepowered.api.world.chunk">ChunkStates.class</a>)
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">ChunkState</span><span class="extends-implements">
 extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></span></div>
-<div class="block">Represents the state of a <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> that can exist
+<div class="block">Represents the state of a <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> that can exist
  through various stages of the game, including but not limited to:
  <ul><li>Chunk in the process of being generated</li>
  <li>Chunk being deserialized from storage and being prepared for addition to a <a href="../World.html" title="interface in org.spongepowered.api.world"><code>World</code></a></li>
- <li><a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>s already existing and loaded in a <a href="../World.html" title="interface in org.spongepowered.api.world"><code>World</code></a></li>
+ <li><a href="WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a>s already existing and loaded in a <a href="../World.html" title="interface in org.spongepowered.api.world"><code>World</code></a></li>
  </ul></div>
 </section>
 <section class="summary">
@@ -132,8 +132,8 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isAfter</span>&#8203;<span class="parameters">(<a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk">ChunkState</a>&nbsp;state)</span></div>
 <div class="block">Checks whether this state is considered "after"
  the provided <a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk"><code>ChunkState</code></a>. Usually used as a check for
- whether the <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a> providing this state is
- considered "usable" for consumers of <a href="ProtoChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>ProtoChunk</code></a>s with
+ whether the <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a> providing this state is
+ considered "usable" for consumers of <a href="Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>s with
  a specific <a href="ChunkState.html" title="interface in org.spongepowered.api.world.chunk"><code>ChunkState</code></a> range.</div>
 <dl class="notes">
 <dt>Parameters:</dt>

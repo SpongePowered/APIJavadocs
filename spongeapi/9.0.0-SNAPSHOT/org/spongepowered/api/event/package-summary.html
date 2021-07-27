@@ -88,17 +88,26 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Represents a listener accepting <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s of a specified type.</div>
 </div>
-<div class="col-first odd-row-color"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></div>
+<div class="col-first odd-row-color"><a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event">EventListenerRegistration</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
 <div class="col-last odd-row-color">
+<div class="block">Represents the composition of a <a href="EventListener.html" title="interface in org.spongepowered.api.event"><code>listener</code></a> and the attributes that define it
+ to the system.</div>
+</div>
+<div class="col-first even-row-color"><a href="EventListenerRegistration.Builder.html" title="interface in org.spongepowered.api.event">EventListenerRegistration.Builder</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="EventListenerRegistration.Factory.html" title="interface in org.spongepowered.api.event">EventListenerRegistration.Factory</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></div>
+<div class="col-last even-row-color">
 <div class="block">Manages the registration of event listeners and the dispatching of events.</div>
 </div>
-<div class="col-first even-row-color"><a href="GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;</div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><a href="GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;</div>
+<div class="col-last odd-row-color">
 <div class="block">All <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s that require a generic type should implement this
  interface.</div>
 </div>
-<div class="col-first odd-row-color"><a href="TristateResult.html" title="interface in org.spongepowered.api.event">TristateResult</a></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><a href="TristateResult.html" title="interface in org.spongepowered.api.event">TristateResult</a></div>
+<div class="col-last even-row-color">
 <div class="block">Used for events that require a tri-state <a href="TristateResult.Result.html" title="enum class in org.spongepowered.api.event"><code>TristateResult.Result</code></a>.</div>
 </div>
 </div>
