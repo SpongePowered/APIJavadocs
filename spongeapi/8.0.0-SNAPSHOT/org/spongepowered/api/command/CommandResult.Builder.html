@@ -164,8 +164,8 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 <td class="colFirst"><code><a href="CommandResult.Builder.html" title="interface in org.spongepowered.api.command">CommandResult.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#error(net.kyori.adventure.text.Component)">error</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;errorMessage)</code></th>
 <td class="colLast">
-<div class="block">Sets or removes the error message to return to the user without
- throwing an exception.</div>
+<div class="block">Sets the built result to report an error, with an optional error
+ message.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -212,7 +212,8 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 
  <ul>
      <li>A positive value indicates successful execution,</li>
-     <li>Zero indicates the command didn't fulfil its task</li>
+     <li>Zero (generally) indicates the command didn't fulfil its
+     task, though that is not necessarily an error condition.</li>
      <li>A negative value is undefined in the API, if returned, the
      effects are implementation specific.</li>
  </ul></div>
@@ -231,11 +232,12 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 <li class="blockList">
 <h4>error</h4>
 <pre class="methodSignature"><a href="CommandResult.Builder.html" title="interface in org.spongepowered.api.command">CommandResult.Builder</a>&nbsp;error&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;errorMessage)</pre>
-<div class="block">Sets or removes the error message to return to the user without
- throwing an exception.
+<div class="block">Sets the built result to report an error, with an optional error
+ message.
 
  <p>If this is set, then the command parser will send this message to
- the command invoker.</p></div>
+ the command invoker. Otherwise, the parser will report an unknown
+ exception.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>errorMessage</code> - The message to send to the user.</dd>
