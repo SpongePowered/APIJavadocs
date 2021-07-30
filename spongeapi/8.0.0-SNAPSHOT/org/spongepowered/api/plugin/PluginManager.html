@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,20 +180,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLoaded(java.lang.String)">isLoaded</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
-<td class="colLast">
-<div class="block">Checks if a plugin is loaded based on its ID.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;org.spongepowered.plugin.PluginContainer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plugin(java.lang.String)">plugin</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Retrieves a <code>PluginContainer</code> based on its ID.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;org.spongepowered.plugin.PluginContainer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plugins()">plugins</a></span>()</code></th>
 <td class="colLast">
@@ -288,7 +281,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="plugins()">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>plugins</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;org.spongepowered.plugin.PluginContainer&gt;&nbsp;plugins()</pre>
@@ -296,23 +289,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The plugins</dd>
-</dl>
-</li>
-</ul>
-<a id="isLoaded(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>isLoaded</h4>
-<pre class="methodSignature">boolean&nbsp;isLoaded&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
-<div class="block">Checks if a plugin is loaded based on its ID.
- This may contain plugins/mods from other systems in some implementations.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>id</code> - the id of the <code>PluginContainer</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if loaded <code>false</code> if not loaded.</dd>
 </dl>
 </li>
 </ul>
