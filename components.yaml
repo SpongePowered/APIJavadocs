@@ -11,3 +11,11 @@ spongeapi:
     name: SpongeAPI
     url: https://github.com/SpongePowered/SpongeAPI
     group: ""
+noise:
+    name: Noise
+    url: https://github.com/SpongePowered/noise
+    group: libraries
+math:
+    name: Math
+    url: https://github.com/SpongePowered/math
+    group: libraries
