@@ -158,7 +158,7 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generatePortal(org.spongepowered.api.world.server.ServerLocation,org.spongepowered.api.util.Axis)">generatePortal</a></span>&#8203;(<a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location,
               <a href="../../util/Axis.html" title="enum in org.spongepowered.api.util">Axis</a>&nbsp;axis)</code></th>
 <td class="colLast">
@@ -204,8 +204,8 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>generatePortal</h4>
-<pre class="methodSignature">void&nbsp;generatePortal&#8203;(<a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location,
-                    <a href="../../util/Axis.html" title="enum in org.spongepowered.api.util">Axis</a>&nbsp;axis)</pre>
+<pre class="methodSignature">boolean&nbsp;generatePortal&#8203;(<a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location,
+                       <a href="../../util/Axis.html" title="enum in org.spongepowered.api.util">Axis</a>&nbsp;axis)</pre>
 <div class="block">Generates the portal at the <a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>location</code></a>.
 
  <p>It is left up to the discretion of the plugin developer on how this is implemented.
@@ -217,6 +217,8 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>location</code> - The location</dd>
 <dd><code>axis</code> - The axis</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if a portal could be generated</dd>
 </dl>
 </li>
 </ul>
