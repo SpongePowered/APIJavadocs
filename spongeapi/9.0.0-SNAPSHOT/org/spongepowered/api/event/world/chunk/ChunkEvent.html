@@ -81,7 +81,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a></code>, <code><a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a></code>, <code><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></code>, <code><a href="ChunkEvent.Save.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Post</a></code>, <code><a href="ChunkEvent.Save.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Pre</a></code>, <code><a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a></code>, <code><a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code></dd>
+<dd><code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a></code>, <code><a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a></code>, <code><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></code>, <code><a href="ChunkEvent.Save.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Post</a></code>, <code><a href="ChunkEvent.Save.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Pre</a></code>, <code><a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a></code>, <code><a href="ChunkEvent.Unload.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Post</a></code>, <code><a href="ChunkEvent.Unload.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Pre</a></code>, <code><a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ChunkEvent</span><span class="extends-implements">
@@ -101,27 +101,27 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a></span></code></div>
 <div class="col-last even-row-color">
-<div class="block">Called when a new <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> was generated.</div>
+<div class="block">Called when a new <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> was generated.</div>
 </div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><span class="member-name-link"><a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a></span></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> is done loading.</div>
+<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is done loading.</div>
 </div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></span></code></div>
 <div class="col-last even-row-color">
-<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> is performing a save.</div>
+<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is performing a save.</div>
 </div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><span class="member-name-link"><a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a></span></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> was unloaded.</div>
+<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> was unloaded.</div>
 </div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></span></code></div>
 <div class="col-last even-row-color">
-<div class="block">Represents an event that has knowledge about the <a href="../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a> that
+<div class="block">Represents an event that has knowledge about the <a href="../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> that
  is being operated upon.</div>
 </div>
 </div>
@@ -141,7 +141,7 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>org.spongepowered.math.vector.Vector3i</code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#chunkPosition()">chunkPosition</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Gets the position of the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>, in chunk co-ordinates.</div>
+<div class="block">Gets the position of the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a>, in chunk co-ordinates.</div>
 </div>
 </div>
 </div>
@@ -164,7 +164,7 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <section class="detail" id="chunkPosition()">
 <h3>chunkPosition</h3>
 <div class="member-signature"><span class="return-type">org.spongepowered.math.vector.Vector3i</span>&nbsp;<span class="element-name">chunkPosition</span>()</div>
-<div class="block">Gets the position of the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>Chunk</code></a>, in chunk co-ordinates.</div>
+<div class="block">Gets the position of the <a href="../../../world/chunk/Chunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a>, in chunk co-ordinates.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the position</dd>

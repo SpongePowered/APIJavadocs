@@ -81,7 +81,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a></code>, <code><a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a></code>, <code><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></code>, <code><a href="ChunkEvent.Save.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Post</a></code>, <code><a href="ChunkEvent.Save.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Pre</a></code>, <code><a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a></code></dd>
+<dd><code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a></code>, <code><a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a></code>, <code><a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a></code>, <code><a href="ChunkEvent.Save.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Post</a></code>, <code><a href="ChunkEvent.Save.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save.Pre</a></code>, <code><a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a></code>, <code><a href="ChunkEvent.Unload.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Post</a></code>, <code><a href="ChunkEvent.Unload.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Pre</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -90,7 +90,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChunkEvent.WorldScoped</span><span class="extends-implements">
 extends <a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></span></div>
-<div class="block">Represents an event that has knowledge about the <a href="../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a> that
+<div class="block">Represents an event that has knowledge about the <a href="../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> that
  is being operated upon.</div>
 </section>
 <section class="summary">
@@ -118,8 +118,8 @@ extends <a href="ChunkEvent.html" title="interface in org.spongepowered.api.even
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#worldKey()">worldKey</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Gets the <a href="../../../ResourceKey.html" title="interface in org.spongepowered.api"><code>ResourceKey</code></a> of the <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk"><code>ChunkEvent.WorldScoped</code></a> that the
- <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> resides in.</div>
+<div class="block">Gets the <a href="../../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> of the <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk"><code>ChunkEvent.WorldScoped</code></a> that the
+ <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> resides in.</div>
 </div>
 </div>
 </div>
@@ -145,15 +145,15 @@ extends <a href="ChunkEvent.html" title="interface in org.spongepowered.api.even
 <section class="detail" id="worldKey()">
 <h3>worldKey</h3>
 <div class="member-signature"><span class="return-type"><a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></span>&nbsp;<span class="element-name">worldKey</span>()</div>
-<div class="block">Gets the <a href="../../../ResourceKey.html" title="interface in org.spongepowered.api"><code>ResourceKey</code></a> of the <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk"><code>ChunkEvent.WorldScoped</code></a> that the
- <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> resides in.
+<div class="block">Gets the <a href="../../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> of the <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk"><code>ChunkEvent.WorldScoped</code></a> that the
+ <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> resides in.
 
- <p>Be careful when retrieving the <a href="../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a> within this
+ <p>Be careful when retrieving the <a href="../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> within this
  event as some events may not fire on the main thread and such world
  access is not thread safe.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>The world's <a href="../../../ResourceKey.html" title="interface in org.spongepowered.api"><code>ResourceKey</code></a></dd>
+<dd>The world's <a href="../../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a></dd>
 </dl>
 </section>
 </li>

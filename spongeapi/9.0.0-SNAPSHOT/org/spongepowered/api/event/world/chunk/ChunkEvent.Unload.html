@@ -76,13 +76,17 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></code>, <code><a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code>, <code><a href="../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code></dd>
 </dl>
 <dl class="notes">
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="ChunkEvent.Unload.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Post</a></code>, <code><a href="ChunkEvent.Unload.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Pre</a></code></dd>
+</dl>
+<dl class="notes">
 <dt>Enclosing interface:</dt>
 <dd><a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChunkEvent.Unload</span><span class="extends-implements">
 extends <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></span></div>
-<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> was unloaded.</div>
+<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> was unloaded.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -90,6 +94,22 @@ extends <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowe
 <li>
 <section class="nested-class-summary" id="nested.class.summary">
 <h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><span class="member-name-link"><a href="ChunkEvent.Unload.Post.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Post</a></span></code></div>
+<div class="col-last even-row-color">
+<div class="block">Called after the <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is unloaded.</div>
+</div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><span class="member-name-link"><a href="ChunkEvent.Unload.Pre.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload.Pre</a></span></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Called before the <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is unloaded.</div>
+</div>
+</div>
 <div class="inherited-list">
 <h2 id="nested.classes.inherited.from.class.org.spongepowered.api.event.world.chunk.ChunkEvent">Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.event.world.chunk.<a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></h2>
 <code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a>, <a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a>, <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a>, <a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a>, <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code></div>

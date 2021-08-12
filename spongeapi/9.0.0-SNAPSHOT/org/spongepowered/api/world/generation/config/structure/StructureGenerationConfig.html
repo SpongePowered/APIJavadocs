@@ -92,6 +92,9 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="StructureGenerationConfig.Builder.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig.Builder</a></span></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><span class="member-name-link"><a href="StructureGenerationConfig.Factory.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig.Factory</a></span></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -109,15 +112,24 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table"><code>static <a href="StructureGenerationConfig.Builder.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table"><code><span class="member-name-link"><a href="#builder()">builder</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="SpacedStructureConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">SpacedStructureConfig</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#stronghold()">stronghold</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="SeparatedStructureConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">SeparatedStructureConfig</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#structure(org.spongepowered.api.world.generation.structure.Structure)">structure</a></span>&#8203;(<a href="../../structure/Structure.html" title="interface in org.spongepowered.api.world.generation.structure">Structure</a>&nbsp;structure)</code></div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table"><code>static <a href="StructureGenerationConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table"><code><span class="member-name-link"><a href="#flat()">flat</a></span>()</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab1 method-summary-table"><code>static <a href="StructureGenerationConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab1 method-summary-table"><code><span class="member-name-link"><a href="#none()">none</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab1 method-summary-table">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table-tab1 method-summary-table"><code>static <a href="StructureGenerationConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab1 method-summary-table"><code><span class="member-name-link"><a href="#standard()">standard</a></span>()</code></div>
+<div class="col-last odd-row-color method-summary-table-tab1 method-summary-table">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="SpacedStructureConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">SpacedStructureConfig</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#stronghold()">stronghold</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../structure/Structure.html" title="interface in org.spongepowered.api.world.generation.structure">Structure</a>,&#8203;<a href="SeparatedStructureConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">SeparatedStructureConfig</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#structures()">structures</a></span>()</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="SeparatedStructureConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">SeparatedStructureConfig</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#structure(org.spongepowered.api.world.generation.structure.Structure)">structure</a></span>&#8203;(<a href="../../structure/Structure.html" title="interface in org.spongepowered.api.world.generation.structure">Structure</a>&nbsp;structure)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../structure/Structure.html" title="interface in org.spongepowered.api.world.generation.structure">Structure</a>,&#8203;<a href="SeparatedStructureConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">SeparatedStructureConfig</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#structures()">structures</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -132,6 +144,24 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method.detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="standard()">
+<h3>standard</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="StructureGenerationConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig</a></span>&nbsp;<span class="element-name">standard</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="flat()">
+<h3>flat</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="StructureGenerationConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig</a></span>&nbsp;<span class="element-name">flat</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="none()">
+<h3>none</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="StructureGenerationConfig.html" title="interface in org.spongepowered.api.world.generation.config.structure">StructureGenerationConfig</a></span>&nbsp;<span class="element-name">none</span>()</div>
+</section>
+</li>
 <li>
 <section class="detail" id="builder()">
 <h3>builder</h3>

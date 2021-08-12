@@ -103,7 +103,7 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Finds a <a href="Portal.html" title="interface in org.spongepowered.api.world.portal"><code>Portal</code></a> from a <a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>location</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>void</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#generatePortal(org.spongepowered.api.world.server.ServerLocation,org.spongepowered.api.util.Axis)">generatePortal</a></span>&#8203;(<a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location,
  <a href="../../util/Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&nbsp;axis)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
@@ -136,7 +136,7 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <li>
 <section class="detail" id="generatePortal(org.spongepowered.api.world.server.ServerLocation,org.spongepowered.api.util.Axis)">
 <h3>generatePortal</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">generatePortal</span>&#8203;<span class="parameters">(<a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location,
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">generatePortal</span>&#8203;<span class="parameters">(<a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location,
  <a href="../../util/Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&nbsp;axis)</span></div>
 <div class="block">Generates the portal at the <a href="../server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>location</code></a>.
 
@@ -149,6 +149,8 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <dt>Parameters:</dt>
 <dd><code>location</code> - The location</dd>
 <dd><code>axis</code> - The axis</dd>
+<dt>Returns:</dt>
+<dd>true if a portal could be generated</dd>
 </dl>
 </section>
 </li>
