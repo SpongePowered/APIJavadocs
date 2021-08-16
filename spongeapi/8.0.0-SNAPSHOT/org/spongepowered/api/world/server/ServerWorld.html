@@ -253,7 +253,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSnapshot(org.spongepowered.math.vector.Vector3i)">createSnapshot</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;position)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSnapshot(org.spongepowered.math.vector.Vector3i)">createSnapshot</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position)</code></th>
 <td class="colLast">
 <div class="block">Gets a snapshot of this block at the current point in time.</div>
 </td>
@@ -306,7 +306,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid">Raid</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#raidAt(org.spongepowered.math.vector.Vector3i)">raidAt</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;blockPosition)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#raidAt(org.spongepowered.math.vector.Vector3i)">raidAt</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;blockPosition)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid"><code>Raid</code></a> occurring at a position in the world.</div>
 </td>
@@ -342,7 +342,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreSnapshot(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.block.BlockSnapshot,boolean,org.spongepowered.api.world.BlockChangeFlag)">restoreSnapshot</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;position,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreSnapshot(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.block.BlockSnapshot,boolean,org.spongepowered.api.world.BlockChangeFlag)">restoreSnapshot</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
                <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;snapshot,
                boolean&nbsp;force,
                <a href="../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</code></th>
@@ -761,7 +761,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
  is the block position relative to the <a href="../chunk/Chunk.html#chunkPosition()"><code>Chunk.chunkPosition()</code></a>,
  and therefor is going to return a different chunk from <a href="../volume/game/ChunkVolume.html#chunk(org.spongepowered.math.vector.Vector3i)"><code>ChunkVolume.chunk(Vector3i)</code></a>.
  This is more usable from <a href="ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>s or a <a href="../Locatable.html" title="interface in org.spongepowered.api.world"><code>Locatable</code></a> that returns
- a <code>position</code> in relation to a <a href="../WorldLike.html" title="interface in org.spongepowered.api.world"><code>WorldLike</code></a>.
+ a <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink"><code>position</code></a> in relation to a <a href="../WorldLike.html" title="interface in org.spongepowered.api.world"><code>WorldLike</code></a>.
  This gets a guaranteed <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> at the desired block position; however,
  the <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> instance may be <a href="../chunk/Chunk.html#isEmpty()"><code>empty</code></a>, and
  likewise, may not be generated, valid, pre-existing. It is important to
@@ -790,7 +790,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <ul class="blockList">
 <li class="blockList">
 <h4>createSnapshot</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;createSnapshot&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;position)</pre>
+<pre class="methodSignature">default&nbsp;<a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;createSnapshot&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position)</pre>
 <div class="block">Gets a snapshot of this block at the current point in time.
 
  <p>A snapshot is disconnected from the <a href="../World.html" title="interface in org.spongepowered.api.world"><code>World</code></a> that it was taken
@@ -860,7 +860,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <ul class="blockList">
 <li class="blockList">
 <h4>restoreSnapshot</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;restoreSnapshot&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;position,
+<pre class="methodSignature">default&nbsp;boolean&nbsp;restoreSnapshot&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
                                 <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;snapshot,
                                 boolean&nbsp;force,
                                 <a href="../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</pre>
@@ -1036,7 +1036,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <ul class="blockList">
 <li class="blockList">
 <h4>raidAt</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid">Raid</a>&gt;&nbsp;raidAt&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;blockPosition)</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid">Raid</a>&gt;&nbsp;raidAt&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;blockPosition)</pre>
 <div class="block">Gets the <a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid"><code>Raid</code></a> occurring at a position in the world.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

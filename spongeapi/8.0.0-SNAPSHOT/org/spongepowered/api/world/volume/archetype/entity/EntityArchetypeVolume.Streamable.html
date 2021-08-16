@@ -179,13 +179,13 @@ extends <a href="EntityArchetypeVolume.html" title="interface in org.spongepower
 <td class="colLast">
 <div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a>&lt;<a href="EntityArchetypeEntry.html" title="interface in org.spongepowered.api.world.volume.archetype.entity"><code>EntityArchetypeEntry</code></a>&gt; from this
  volume such that possibly multiple <a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetypes</code></a>
- can exist at the same <code>coordinate</code> position.</div>
+ can exist at the same <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3d.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink"><code>coordinate</code></a> position.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="EntityArchetypeVolume.Streamable.html" title="type parameter in EntityArchetypeVolume.Streamable">B</a>,&#8203;<a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entityArchetypeStream(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.volume.stream.StreamOptions)">entityArchetypeStream</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;min,
-                     org.spongepowered.math.vector.Vector3i&nbsp;max,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entityArchetypeStream(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.volume.stream.StreamOptions)">entityArchetypeStream</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;min,
+                     <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;max,
                      <a href="../../stream/StreamOptions.html" title="interface in org.spongepowered.api.world.volume.stream">StreamOptions</a>&nbsp;options)</code></th>
 <td class="colLast">
 <div class="block">Gets a <a href="../../stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeStream</code></a>&lt;<code>B, </code><a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>&gt;
@@ -230,8 +230,8 @@ extends <a href="EntityArchetypeVolume.html" title="interface in org.spongepower
 <ul class="blockList">
 <li class="blockList">
 <h4>entityArchetypeStream</h4>
-<pre class="methodSignature"><a href="../../stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="EntityArchetypeVolume.Streamable.html" title="type parameter in EntityArchetypeVolume.Streamable">B</a>,&#8203;<a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;&nbsp;entityArchetypeStream&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;min,
-                                                            org.spongepowered.math.vector.Vector3i&nbsp;max,
+<pre class="methodSignature"><a href="../../stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="EntityArchetypeVolume.Streamable.html" title="type parameter in EntityArchetypeVolume.Streamable">B</a>,&#8203;<a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;&nbsp;entityArchetypeStream&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;min,
+                                                            <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;max,
                                                             <a href="../../stream/StreamOptions.html" title="interface in org.spongepowered.api.world.volume.stream">StreamOptions</a>&nbsp;options)</pre>
 <div class="block">Gets a <a href="../../stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeStream</code></a>&lt;<code>B, </code><a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a>&gt;
  from this volume such that the <code>min</code> and <code>max</code> are contained
@@ -255,7 +255,7 @@ extends <a href="EntityArchetypeVolume.html" title="interface in org.spongepower
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="EntityArchetypeEntry.html" title="interface in org.spongepowered.api.world.volume.archetype.entity">EntityArchetypeEntry</a>&gt;&nbsp;entitiesByPosition()</pre>
 <div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a>&lt;<a href="EntityArchetypeEntry.html" title="interface in org.spongepowered.api.world.volume.archetype.entity"><code>EntityArchetypeEntry</code></a>&gt; from this
  volume such that possibly multiple <a href="../../../../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetypes</code></a>
- can exist at the same <code>coordinate</code> position. A more precise
+ can exist at the same <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3d.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink"><code>coordinate</code></a> position. A more precise
  variation of <a href="#entityArchetypeStream(org.spongepowered.math.vector.Vector3i,org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.volume.stream.StreamOptions)"><code>entityArchetypeStream(Vector3i, Vector3i, StreamOptions)</code></a>
  that populates the entire stream of existing archetypes, regardless of position.
  <p>Note that it may be possible the archetypes are returned as copies in the case

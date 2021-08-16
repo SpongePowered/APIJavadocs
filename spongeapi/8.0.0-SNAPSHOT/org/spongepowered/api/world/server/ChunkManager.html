@@ -182,14 +182,14 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#regenerateChunk(org.spongepowered.math.vector.Vector3i)">regenerateChunk</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#regenerateChunk(org.spongepowered.math.vector.Vector3i)">regenerateChunk</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkPosition)</code></th>
 <td class="colLast">
 <div class="block">Regenerates a chunk at the given chunk coordinate position.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#regenerateChunk(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.ChunkRegenerateFlag)">regenerateChunk</a></span>&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#regenerateChunk(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.world.ChunkRegenerateFlag)">regenerateChunk</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkPosition,
                <a href="../ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</code></th>
 <td class="colLast">
 <div class="block">Regenerates a chunk at the given chunk coordinate position.</div>
@@ -212,9 +212,9 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requestTicket(org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.math.vector.Vector3i,int)">requestTicket</a></span>&#8203;(<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;&nbsp;type,
-             org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requestTicket(org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.math.vector.Vector3i,int)">requestTicket</a></span>&#8203;(<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&gt;&nbsp;type,
+             <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
              int&nbsp;radius)</code></th>
 <td class="colLast">
 <div class="block">Request a <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a> for a given <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a> that supports a
@@ -224,7 +224,7 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requestTicket(org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.math.vector.Vector3i,T,int)">requestTicket</a></span>&#8203;(<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;T&gt;&gt;&nbsp;type,
-             org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
+             <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
              T&nbsp;value,
              int&nbsp;radius)</code></th>
 <td class="colLast">
@@ -232,9 +232,9 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requestTicket(org.spongepowered.api.world.server.TicketType,org.spongepowered.math.vector.Vector3i,int)">requestTicket</a></span>&#8203;(<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&nbsp;type,
-             org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requestTicket(org.spongepowered.api.world.server.TicketType,org.spongepowered.math.vector.Vector3i,int)">requestTicket</a></span>&#8203;(<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&nbsp;type,
+             <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
              int&nbsp;radius)</code></th>
 <td class="colLast">
 <div class="block">Request a <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a> for a given <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a> that supports a
@@ -244,7 +244,7 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requestTicket(org.spongepowered.api.world.server.TicketType,org.spongepowered.math.vector.Vector3i,T,int)">requestTicket</a></span>&#8203;(<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;T&gt;&nbsp;type,
-             org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
+             <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
              T&nbsp;value,
              int&nbsp;radius)</code></th>
 <td class="colLast">
@@ -341,9 +341,9 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>requestTicket</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;&nbsp;requestTicket&#8203;(<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;&nbsp;type,
-                                                                               org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
-                                                                               int&nbsp;radius)</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&gt;&nbsp;requestTicket&#8203;(<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&gt;&nbsp;type,
+                                                 <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
+                                                 int&nbsp;radius)</pre>
 <div class="block">Request a <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a> for a given <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a> that supports a
  chunk position.</div>
 <dl>
@@ -364,9 +364,9 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>requestTicket</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&gt;&nbsp;requestTicket&#8203;(<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;org.spongepowered.math.vector.Vector3i&gt;&nbsp;type,
-                                                                               org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
-                                                                               int&nbsp;radius)</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&gt;&nbsp;requestTicket&#8203;(<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&gt;&nbsp;type,
+                                                 <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
+                                                 int&nbsp;radius)</pre>
 <div class="block">Request a <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a> for a given <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a> that supports a
  chunk position.</div>
 <dl>
@@ -390,7 +390,7 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <li class="blockList">
 <h4>requestTicket</h4>
 <pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;T&gt;&gt;&nbsp;requestTicket&#8203;(<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;T&gt;&nbsp;type,
-                                      org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
+                                      <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
                                       T&nbsp;value,
                                       int&nbsp;radius)</pre>
 <div class="block">Request a <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a> for the given <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a>.</div>
@@ -418,7 +418,7 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <li class="blockList">
 <h4>requestTicket</h4>
 <pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Ticket.html" title="interface in org.spongepowered.api.world.server">Ticket</a>&lt;T&gt;&gt;&nbsp;requestTicket&#8203;(<a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TicketType.html" title="interface in org.spongepowered.api.world.server">TicketType</a>&lt;T&gt;&gt;&nbsp;type,
-                                              org.spongepowered.math.vector.Vector3i&nbsp;chunkOrigin,
+                                              <a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkOrigin,
                                               T&nbsp;value,
                                               int&nbsp;radius)</pre>
 <div class="block">Request a <a href="Ticket.html" title="interface in org.spongepowered.api.world.server"><code>Ticket</code></a> for the given <a href="TicketType.html" title="interface in org.spongepowered.api.world.server"><code>TicketType</code></a>.</div>
@@ -517,7 +517,7 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>regenerateChunk</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;regenerateChunk&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition)</pre>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;regenerateChunk&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkPosition)</pre>
 <div class="block">Regenerates a chunk at the given chunk coordinate position.
 
  <p>Care should be taken to check the result of the future, as an
@@ -567,7 +567,7 @@ public interface <span class="typeNameLabel">ChunkManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>regenerateChunk</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;regenerateChunk&#8203;(org.spongepowered.math.vector.Vector3i&nbsp;chunkPosition,
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;regenerateChunk&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;chunkPosition,
                                                    <a href="../ChunkRegenerateFlag.html" title="interface in org.spongepowered.api.world">ChunkRegenerateFlag</a>&nbsp;flag)</pre>
 <div class="block">Regenerates a chunk at the given chunk coordinate position.
 
