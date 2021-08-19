@@ -121,6 +121,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="../Client.html" title="interface in org.spongepowered.api">Client</a></code>, <code><a href="../world/client/ClientWorld.html" title="interface in org.spongepowered.api.world.client">ClientWorld</a></code>, <code><a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a></code>, <code><a href="../Game.html" title="interface in org.spongepowered.api">Game</a></code>, <code><a href="../client/LocalServer.html" title="interface in org.spongepowered.api.client">LocalServer</a></code>, <code><a href="../Server.html" title="interface in org.spongepowered.api">Server</a></code>, <code><a href="../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code>, <code><a href="../world/World.html" title="interface in org.spongepowered.api.world">World</a>&lt;W,&#8203;L&gt;</code></dd>
+</dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">RegistryHolder</span></pre>
 <div class="block">A holder of <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a>.</div>
@@ -160,7 +164,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream(org.spongepowered.api.ResourceKey)">stream</a></span>&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#streamRegistries(org.spongepowered.api.ResourceKey)">streamRegistries</a></span>&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</code></th>
 <td class="colLast">
 <div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
 </td>
@@ -223,13 +227,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="stream(org.spongepowered.api.ResourceKey)">
+<a id="streamRegistries(org.spongepowered.api.ResourceKey)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>stream</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;&nbsp;stream&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</pre>
+<h4>streamRegistries</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;&nbsp;streamRegistries&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</pre>
 <div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

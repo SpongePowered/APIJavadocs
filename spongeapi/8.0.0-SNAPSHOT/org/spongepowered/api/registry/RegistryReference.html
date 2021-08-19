@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":6,"i3":1};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var data = {"i0":6,"i1":6,"i2":1};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -175,35 +175,27 @@ extends <a href="RegistryKey.html" title="interface in org.spongepowered.api.reg
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#find(org.spongepowered.api.registry.RegistryHolder)">find</a></span>&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#find(org.spongepowered.api.registry.RegistryHolder...)">find</a></span>&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>...&nbsp;holders)</code></th>
 <td class="colLast">
-<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holder</code></a>, if found.</div>
+<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holders</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="RegistryReference.html" title="type parameter in RegistryReference">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(org.spongepowered.api.registry.RegistryHolder)">get</a></span>&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(org.spongepowered.api.registry.RegistryHolder...)">get</a></span>&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>...&nbsp;holders)</code></th>
 <td class="colLast">
-<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holder</code></a>.</div>
+<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holders</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="RegistryReference.html" title="type parameter in RegistryReference">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(org.spongepowered.api.registry.RegistryHolder,java.util.Set)">get</a></span>&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&gt;&nbsp;alternatives)</code></th>
-<td class="colLast">
-<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holder</code></a> or alternatives on a first come basis.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="RegistryReference.html" title="interface in org.spongepowered.api.registry">RegistryReference</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#referenced(org.spongepowered.api.registry.RegistryHolder,org.spongepowered.api.registry.RegistryType,T)">referenced</a></span>&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder,
           <a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registry,
@@ -247,74 +239,46 @@ extends <a href="RegistryKey.html" title="interface in org.spongepowered.api.reg
                                            T&nbsp;value)</pre>
 </li>
 </ul>
-<a id="get(org.spongepowered.api.registry.RegistryHolder)">
+<a id="get(org.spongepowered.api.registry.RegistryHolder...)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature"><a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&nbsp;get&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</pre>
-<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holder</code></a>.
+<pre class="methodSignature"><a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&nbsp;get&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>...&nbsp;holders)</pre>
+<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holders</code></a>.
+
+ <p>Behavior wise, the first holder that has a type of <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registry</code></a> within
+ will be queried for this reference. If the registry is present, no additional holders will be
+ queried.</p>
 
  <p>Great care needs to be made in calling this method with any uncertainty as to
- if this reference will exist in the holder. Should this reference lack a value, a
- <a href="ValueNotFoundException.html" title="class in org.spongepowered.api.registry"><code>ValueNotFoundException</code></a></p> will be thrown. Therefore, it is advised to call
- <a href="#find(org.spongepowered.api.registry.RegistryHolder)"><code>find(RegistryHolder)</code></a> instead.
-
- <p>The contract leaves a large amount of flexibility in how this value is retrieved
- from the holder. As there are no defined rules, an implementation may choose to only
- query the passed in holder or may choose to run through various <a href="RegistryScope.html" title="enum in org.spongepowered.api.registry"><code>scopes</code></a>
- for retrieval. As such, no assumption should be made whatsoever that the returned value
- originated from the holder. If this is important to the consumer, consider using
- <a href="#get(org.spongepowered.api.registry.RegistryHolder,java.util.Set)"><code>get(RegistryHolder, Set)</code></a> with well defined holders instead.</p></div>
+ if this reference will exist in the holders. Should this reference lack a value, a
+ <a href="ValueNotFoundException.html" title="class in org.spongepowered.api.registry"><code>ValueNotFoundException</code></a></p> will be thrown. Therefore, it is advised
+ to call <a href="#find(org.spongepowered.api.registry.RegistryHolder...)"><code>find(RegistryHolder...)</code></a> instead.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>holder</code> - The holder</dd>
+<dd><code>holders</code> - The holders to look against</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The value</dd>
 </dl>
 </li>
 </ul>
-<a id="get(org.spongepowered.api.registry.RegistryHolder,java.util.Set)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>get</h4>
-<pre class="methodSignature"><a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&nbsp;get&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&gt;&nbsp;alternatives)</pre>
-<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holder</code></a> or alternatives on a first come basis.
-
- <p>Great care needs to be made in calling this method with any uncertainty as to
- if this reference will exist in the holder or the alternatives. Should this reference
- lack a value, a <a href="ValueNotFoundException.html" title="class in org.spongepowered.api.registry"><code>ValueNotFoundException</code></a></p> will be thrown. Therefore, it is advised
- to call <a href="#find(org.spongepowered.api.registry.RegistryHolder)"><code>find(RegistryHolder)</code></a> instead.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>holder</code> - The holder</dd>
-<dd><code>alternatives</code> - Alternatives holders to search</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The value</dd>
-</dl>
-</li>
-</ul>
-<a id="find(org.spongepowered.api.registry.RegistryHolder)">
+<a id="find(org.spongepowered.api.registry.RegistryHolder...)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>find</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&gt;&nbsp;find&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</pre>
-<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holder</code></a>, if found.
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryReference.html" title="type parameter in RegistryReference">T</a>&gt;&nbsp;find&#8203;(<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>...&nbsp;holders)</pre>
+<div class="block">Gets the value from the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holders</code></a>.
 
- <p>The contract leaves a large amount of flexibility in how this value is retrieved
- from the holder. As there are no defined rules, an implementation may choose to only
- query the passed in holder or may choose to run through various <a href="ScopedRegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>holders</code></a>
- for retrieval. As such, no assumption should be made whatsoever that the returned value
- originated from the holder.</p></div>
+ <p>Behavior wise, the first holder that has a type of <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registry</code></a> within
+ will be queried for this reference. If the registry is present, no additional holders will be
+ queried.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>holder</code> - The holder</dd>
+<dd><code>holders</code> - The holders to look against</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The value</dd>
 </dl>

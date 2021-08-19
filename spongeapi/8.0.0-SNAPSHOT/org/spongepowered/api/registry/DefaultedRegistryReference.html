@@ -205,7 +205,7 @@ extends <a href="RegistryReference.html" title="interface in org.spongepowered.a
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.spongepowered.api.registry.<a href="RegistryReference.html" title="interface in org.spongepowered.api.registry">RegistryReference</a></h3>
-<code><a href="RegistryReference.html#find(org.spongepowered.api.registry.RegistryHolder)">find</a>, <a href="RegistryReference.html#get(org.spongepowered.api.registry.RegistryHolder)">get</a>, <a href="RegistryReference.html#get(org.spongepowered.api.registry.RegistryHolder,java.util.Set)">get</a></code></li>
+<code><a href="RegistryReference.html#find(org.spongepowered.api.registry.RegistryHolder...)">find</a>, <a href="RegistryReference.html#get(org.spongepowered.api.registry.RegistryHolder...)">get</a></code></li>
 </ul>
 </li>
 </ul>
@@ -236,7 +236,7 @@ extends <a href="RegistryReference.html" title="interface in org.spongepowered.a
  <p>Great care needs to be made in calling this method with any uncertainty as to
  if this reference will exist in the holder. Should this reference lack a value, a
  <a href="ValueNotFoundException.html" title="class in org.spongepowered.api.registry"><code>ValueNotFoundException</code></a> will be thrown. Therefore, it is advised to call
- <a href="RegistryReference.html#find(org.spongepowered.api.registry.RegistryHolder)"><code>RegistryReference.find(RegistryHolder)</code></a> instead.</p></div>
+ <a href="RegistryReference.html#find(org.spongepowered.api.registry.RegistryHolder...)"><code>RegistryReference.find(RegistryHolder...)</code></a> instead.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true#get()" title="class or interface in java.util.function" class="externalLink">get</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="DefaultedRegistryReference.html" title="type parameter in DefaultedRegistryReference">T</a>&gt;</code></dd>
