@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="../../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="InteractContainerEvent.html" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent</a></code></dd>
+<dd><code><a href="../AffectItemStackEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectItemStackEvent</a></code>, <code><a href="../AffectSlotEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectSlotEvent</a></code>, <code><a href="../../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="../ChangeInventoryEvent.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent</a></code>, <code><a href="../../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="InteractContainerEvent.html" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent</a></code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public static interface <span class="typeNameLabel">InteractContainerEvent.Close</span>
-extends <a href="InteractContainerEvent.html" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent</a></pre>
+extends <a href="../ChangeInventoryEvent.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent</a>, <a href="InteractContainerEvent.html" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent</a></pre>
 <div class="block">The target container was closed.</div>
 </li>
 </ul>
@@ -140,6 +140,13 @@ extends <a href="InteractContainerEvent.html" title="interface in org.spongepowe
 <!--   -->
 </a>
 <h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="nested.classes.inherited.from.class.org.spongepowered.api.event.item.inventory.ChangeInventoryEvent">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.event.item.inventory.<a href="../ChangeInventoryEvent.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent</a></h3>
+<code><a href="../ChangeInventoryEvent.Drop.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent.Drop</a>, <a href="../ChangeInventoryEvent.Held.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent.Held</a>, <a href="../ChangeInventoryEvent.Pickup.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent.Pickup</a>, <a href="../ChangeInventoryEvent.SwapHand.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent.SwapHand</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a id="nested.classes.inherited.from.class.org.spongepowered.api.event.item.inventory.container.InteractContainerEvent">
 <!--   -->
@@ -158,11 +165,25 @@ extends <a href="InteractContainerEvent.html" title="interface in org.spongepowe
 </a>
 <h3>Method Summary</h3>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.item.inventory.AffectSlotEvent">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.spongepowered.api.event.item.inventory.<a href="../AffectSlotEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectSlotEvent</a></h3>
+<code><a href="../AffectSlotEvent.html#filter(java.util.function.Predicate)">filter</a>, <a href="../AffectSlotEvent.html#transactions()">transactions</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.Cancellable">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></h3>
 <code><a href="../../../Cancellable.html#isCancelled()">isCancelled</a>, <a href="../../../Cancellable.html#setCancelled(boolean)">setCancelled</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.item.inventory.ChangeInventoryEvent">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.spongepowered.api.event.item.inventory.<a href="../ChangeInventoryEvent.html" title="interface in org.spongepowered.api.event.item.inventory">ChangeInventoryEvent</a></h3>
+<code><a href="../ChangeInventoryEvent.html#inventory()">inventory</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.Event">
