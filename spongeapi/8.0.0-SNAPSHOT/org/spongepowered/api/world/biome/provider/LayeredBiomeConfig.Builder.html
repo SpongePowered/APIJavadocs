@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,6 +177,13 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#seed(long)">seed</a></span>&#8203;(long&nbsp;seed)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="LayeredBiomeConfig.Builder.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig.Builder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#seed(java.lang.String)">seed</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;seed)</code></th>
+<td class="colLast">
+<div class="block">Sets the seed</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.kyori.adventure.util.Buildable.Builder">
@@ -222,6 +229,25 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <li class="blockList">
 <h4>seed</h4>
 <pre class="methodSignature"><a href="LayeredBiomeConfig.Builder.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig.Builder</a>&nbsp;seed&#8203;(long&nbsp;seed)</pre>
+</li>
+</ul>
+<a id="seed(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>seed</h4>
+<pre class="methodSignature"><a href="LayeredBiomeConfig.Builder.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig.Builder</a>&nbsp;seed&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;seed)</pre>
+<div class="block">Sets the seed
+
+ <p>If the seed is a number value, it will be parsed as a <code>long</code>. Otherwise, the String's <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink"><code>String.hashCode()</code></a>
+ will be used.</p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>seed</code> - The seed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Fluent</dd>
+</dl>
 </li>
 </ul>
 <a id="addBiome(org.spongepowered.api.registry.RegistryReference)">

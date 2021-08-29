@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,21 +161,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;<br><a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noise(org.spongepowered.api.world.biome.provider.BiomeProvider,T)">noise</a></span>&#8203;(<a href="../biome/provider/BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a>&nbsp;provider,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noise(org.spongepowered.api.world.biome.provider.BiomeProvider,java.lang.String,T)">noise</a></span>&#8203;(<a href="../biome/provider/BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a>&nbsp;provider,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;seed,
      T&nbsp;config)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;<a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#overworld()">overworld</a></span>()</code></th>
+<td class="colFirst"><code>&lt;T extends <a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;<br><a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noise(org.spongepowered.api.world.biome.provider.BiomeProvider,T)">noise</a></span>&#8203;(<a href="../biome/provider/BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a>&nbsp;provider,
+     T&nbsp;config)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;<a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#theEnd()">theEnd</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#overworld()">overworld</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;<a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#theEnd()">theEnd</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;<a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#theNether()">theNether</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -230,6 +237,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>noise</h4>
 <pre class="methodSignature">&lt;T extends <a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;&nbsp;<a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;T&gt;&nbsp;noise&#8203;(<a href="../biome/provider/BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a>&nbsp;provider,
                                                                      long&nbsp;seed,
+                                                                     T&nbsp;config)</pre>
+</li>
+</ul>
+<a id="noise(org.spongepowered.api.world.biome.provider.BiomeProvider,java.lang.String,org.spongepowered.api.world.generation.config.NoiseGeneratorConfig)">
+<!--   -->
+</a><a id="noise(org.spongepowered.api.world.biome.provider.BiomeProvider,java.lang.String,T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>noise</h4>
+<pre class="methodSignature">&lt;T extends <a href="config/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">NoiseGeneratorConfig</a>&gt;&nbsp;<a href="ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ConfigurableChunkGenerator</a>&lt;T&gt;&nbsp;noise&#8203;(<a href="../biome/provider/BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a>&nbsp;provider,
+                                                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;seed,
                                                                      T&nbsp;config)</pre>
 </li>
 </ul>
