@@ -3737,7 +3737,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>CUSTOM_NAME</h4>
 <pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&gt; CUSTOM_NAME</pre>
-<div class="block">The custom name of an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> or <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+<div class="block">The custom name of an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> or <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.
+ <p>If no custom name is set the dataholder may still have a <a href="#DISPLAY_NAME"><code>DISPLAY_NAME</code></a></p></div>
 </li>
 </ul>
 <a id="DAMAGE_ABSORPTION">
@@ -3837,8 +3838,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&gt; DISPLAY_NAME</pre>
 <div class="block">The display name of an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> or <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.
 
- <p>On an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, this represents a combination of <a href="#CUSTOM_NAME"><code>CUSTOM_NAME</code></a> (if set), scoreboard info, and any click data. As such
- this is readonly.</p></div>
+ <p>To change a display name set a <a href="#CUSTOM_NAME"><code>CUSTOM_NAME</code></a> instead.</p>
+ <p>On an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, this represents a combination of <a href="#CUSTOM_NAME"><code>CUSTOM_NAME</code></a> (if set), scoreboard info, and any click data.</p>
+ <p>On an <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a>, this represents the <a href="#CUSTOM_NAME"><code>CUSTOM_NAME</code></a> or if not set the <a href="../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a>s translation.
+ <p>On a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>, this usually represents the name displayed in its <a href="../item/inventory/Container.html" title="interface in org.spongepowered.api.item.inventory"><code>Container</code></a></div>
 </li>
 </ul>
 <a id="DOMINANT_HAND">
