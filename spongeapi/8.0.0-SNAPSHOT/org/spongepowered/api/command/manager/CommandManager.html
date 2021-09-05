@@ -196,22 +196,22 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(org.spongepowered.api.service.permission.Subject,net.kyori.adventure.audience.Audience,java.lang.String)">complete</a></span>&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-        <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
+        <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Provides possible completions based on the input argument string,
  with a provided a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(T,java.lang.String)">complete</a></span>&#8203;(T&nbsp;subjectReceiver,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Provides possible completions based on the input argument string,
  with a provided object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission
- checks and a <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ checks and a <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -247,22 +247,22 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(org.spongepowered.api.service.permission.Subject,net.kyori.adventure.audience.Audience,java.lang.String)">process</a></span>&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-       <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
+       <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Executes a command based on the provided arguments, with a provided
  <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a provided
- <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
+<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(T,java.lang.String)">process</a></span>&#8203;(T&nbsp;subjectReceiver,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Executes a command based on the provided arguments, with a provided
  object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -388,17 +388,17 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>process</h4>
-<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(T&nbsp;subjectReceiver,
+<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(T&nbsp;subjectReceiver,
                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
                                               throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Executes a command based on the provided arguments, with a provided
  object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of receiver</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
+<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
 <dd><code>arguments</code> - The arguments to parse and execute</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="../CommandResult.html" title="interface in org.spongepowered.api.command"><code>CommandResult</code></a></dd>
@@ -415,16 +415,16 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <li class="blockList">
 <h4>process</h4>
 <pre class="methodSignature"><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-                      <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
+                      <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
                throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Executes a command based on the provided arguments, with a provided
  <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a provided
- <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>subject</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks</dd>
-<dd><code>channel</code> - The <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return messages to</dd>
+<dd><code>channel</code> - The <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return messages to</dd>
 <dd><code>arguments</code> - The arguments of the command</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="../CommandResult.html" title="interface in org.spongepowered.api.command"><code>CommandResult</code></a></dd>
@@ -458,16 +458,16 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(T&nbsp;subjectReceiver,
+<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(T&nbsp;subjectReceiver,
                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</pre>
 <div class="block">Provides possible completions based on the input argument string,
  with a provided object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission
- checks and a <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ checks and a <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of receiver</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
+<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
 <dd><code>arguments</code> - The arguments</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The completions</dd>
@@ -481,15 +481,15 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <li class="blockList">
 <h4>complete</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-                                 <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
+                                 <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</pre>
 <div class="block">Provides possible completions based on the input argument string,
  with a provided a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>subject</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a></dd>
-<dd><code>receiver</code> - The <a href="https://jd.adventure.kyori.net/api/4.8.1/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
+<dd><code>receiver</code> - The <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
 <dd><code>arguments</code> - The arguments</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The completions</dd>
