@@ -134,16 +134,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 extends <a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;C&gt;, <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a></pre>
 <div class="block">Lifecycle event to indicate when commands should be registered.
 
- <p>There are two types command that Sponge will always call an event for:</p>
+ <p>This event is generic and the type parameter is <strong>required</strong>.
+ This type parameter (<code>C</code>) will correspond to the base class or
+ interface that your command inherits from.</p>
+
+ <p>There are two types of command that Sponge will always call an event for:
+ </p>
 
  <ul>
-     <li>Where <a href="RegisterCommandEvent.html" title="interface in org.spongepowered.api.event.lifecycle"><code>RegisterCommandEvent</code></a> is <a href="../../command/Command.Raw.html" title="interface in org.spongepowered.api.command"><code>Command.Raw</code></a>; and</li>
-     <li>Where <a href="RegisterCommandEvent.html" title="interface in org.spongepowered.api.event.lifecycle"><code>RegisterCommandEvent</code></a> is <a href="../../command/Command.Parameterized.html" title="interface in org.spongepowered.api.command"><code>Command.Parameterized</code></a>.</li>
+     <li>Where <code>C</code> is <a href="../../command/Command.Raw.html" title="interface in org.spongepowered.api.command"><code>Command.Raw</code></a>; and</li>
+     <li>Where <code>C</code> is <a href="../../command/Command.Parameterized.html" title="interface in org.spongepowered.api.command"><code>Command.Parameterized</code></a>.</li>
  </ul>
 
- <p>Other plugins may provide a <a href="../../command/registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar"><code>CommandRegistrar</code></a> that allows for other
- types to be registered as commands. These types will be provided by these
- other plugins.</p>
+ <p>Commands that have been generated using <a href="../../command/Command.html#builder()"><code>Command.builder()</code></a> should
+ be registered during the <code>RegisterCommandEvent&lt;Command.Parameterized&gt;</code>
+ event.</p>
+
+ <p>Other plugins and platforms may provide a <a href="../../command/registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar"><code>CommandRegistrar</code></a> that
+ allows for other types to be registered as commands. These types will be
+ provided by these other plugins, consult their documentation for more
+ details.</p>
 
  <p>This event will be called whenever the game re-initializes commands, and
  does not guarantee that any specific engine is running.</p></div>
