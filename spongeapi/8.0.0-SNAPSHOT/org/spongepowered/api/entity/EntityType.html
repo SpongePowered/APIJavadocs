@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -158,20 +158,27 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="EntityCategory.html" title="interface in org.spongepowered.api.entity">EntityCategory</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#category()">category</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the <a href="EntityCategory.html" title="interface in org.spongepowered.api.entity"><code>EntityCategory</code></a> of this type.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFlammable()">isFlammable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">If true <a href="Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> of this type may be caught on fire.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSummonable()">isSummonable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">If true <a href="Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> of this type may be summoned naturally or via command.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTransient()">isTransient</a></span>()</code></th>
 <td class="colLast">
@@ -261,7 +268,7 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <a id="canSpawnAwayFromPlayer()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>canSpawnAwayFromPlayer</h4>
 <pre class="methodSignature">boolean&nbsp;canSpawnAwayFromPlayer()</pre>
@@ -269,6 +276,20 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>If the type can spawn far away from a player</dd>
+</dl>
+</li>
+</ul>
+<a id="category()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>category</h4>
+<pre class="methodSignature"><a href="EntityCategory.html" title="interface in org.spongepowered.api.entity">EntityCategory</a>&nbsp;category()</pre>
+<div class="block">Gets the <a href="EntityCategory.html" title="interface in org.spongepowered.api.entity"><code>EntityCategory</code></a> of this type.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The category of this type</dd>
 </dl>
 </li>
 </ul>
