@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public interface <span class="typeNameLabel">Scheduler</span></pre>
-<div class="block">Represents a scheduler for running <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a>s.</div>
+<div class="block">Represents a scheduler for running <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>tasks</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -146,9 +146,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="TaskExecutorService.html" title="interface in org.spongepowered.api.scheduler">TaskExecutorService</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createExecutor(org.spongepowered.plugin.PluginContainer)">createExecutor</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executor(org.spongepowered.plugin.PluginContainer)">executor</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>ExecutorService</code></a> that can be used to schedule
+<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>executor</code></a> that can be used to schedule
  tasks through the standard Java concurrency interfaces.</div>
 </td>
 </tr>
@@ -175,13 +175,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(org.spongepowered.api.scheduler.Task,java.lang.String)">submit</a></span>&#8203;(<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&nbsp;task,
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">
+<div class="block">Submit a <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a> with a specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>name</code></a> to this scheduler and returns the task
+ as a <a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler"><code>ScheduledTask</code></a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tasks()">tasks</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a set of all currently scheduled tasks.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tasks(org.spongepowered.plugin.PluginContainer)">tasks</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></th>
 <td class="colLast">
@@ -231,25 +240,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns a set of <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a>s that match the Regular Expression pattern.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pattern</code> - The regular expression pattern applied to the name of
-        tasks</dd>
+<dd><code>pattern</code> - The regular expression pattern applied to the name of tasks</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A set of <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a>s that have names that match the pattern,
-         the set will be empty if no names match</dd>
-</dl>
-</li>
-</ul>
-<a id="tasks()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>tasks</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&gt;&nbsp;tasks()</pre>
-<div class="block">Returns a set of all currently scheduled tasks.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>A set of scheduled tasks</dd>
+<dd>A set of <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a>s that have names that match the pattern, the
+ set will be empty if no names match</dd>
 </dl>
 </li>
 </ul>
@@ -269,35 +263,79 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="createExecutor(org.spongepowered.plugin.PluginContainer)">
+<a id="tasks()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>createExecutor</h4>
-<pre class="methodSignature"><a href="TaskExecutorService.html" title="interface in org.spongepowered.api.scheduler">TaskExecutorService</a>&nbsp;createExecutor&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</pre>
-<div class="block">Creates a new <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>ExecutorService</code></a> that can be used to schedule
+<h4>tasks</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&gt;&nbsp;tasks()</pre>
+<div class="block">Returns a set of all currently scheduled tasks.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A set of scheduled tasks</dd>
+</dl>
+</li>
+</ul>
+<a id="executor(org.spongepowered.plugin.PluginContainer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>executor</h4>
+<pre class="methodSignature"><a href="TaskExecutorService.html" title="interface in org.spongepowered.api.scheduler">TaskExecutorService</a>&nbsp;executor&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</pre>
+<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>executor</code></a> that can be used to schedule
  tasks through the standard Java concurrency interfaces.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>plugin</code> - The plugin that will own the created tasks</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A new executor service that can be used to execute tasks</dd>
+<dd>An executor that can be used to execute tasks</dd>
 </dl>
 </li>
 </ul>
 <a id="submit(org.spongepowered.api.scheduler.Task)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>submit</h4>
 <pre class="methodSignature"><a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&nbsp;submit&#8203;(<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&nbsp;task)</pre>
 <div class="block">Submit a <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a> to this scheduler and returns the task
+ as a <a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler"><code>ScheduledTask</code></a>.
+ <p>
+ The name of the task will be the form:<br> <code>PLUGIN_ID "-" ( "A-" | "S-" ) SERIAL_ID</code>
+ <p>
+ Examples of default Task names:<br>
+
+ <code>"FooPlugin-A-12"</code><br><code>"BarPlugin-S-4322"</code>
+ <p>
+ No two active tasks will have the same serial ID for the same
+ synchronisation type.<br>i.e <code>APlugin-A-15</code> and
+ <code>BPlugin-A-15</code> is not possible but <code>BPlugin-S-15</code>
+ is.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>task</code> - The task</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The scheduled task</dd>
+</dl>
+</li>
+</ul>
+<a id="submit(org.spongepowered.api.scheduler.Task,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>submit</h4>
+<pre class="methodSignature"><a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&nbsp;submit&#8203;(<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&nbsp;task,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<div class="block">Submit a <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a> with a specified <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>name</code></a> to this scheduler and returns the task
  as a <a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler"><code>ScheduledTask</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>task</code> - The task</dd>
+<dd><code>name</code> - The name</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The scheduled task</dd>
 </dl>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":6,"i5":18,"i6":6,"i7":18,"i8":18,"i9":6,"i10":6,"i11":6,"i12":6};
+var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":6,"i5":18,"i6":6,"i7":18,"i8":18,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -235,13 +235,6 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name(java.lang.String)">name</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
-<td class="colLast">
-<div class="block">Sets the name of the task, the name cannot be blank.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plugin(org.spongepowered.plugin.PluginContainer)">plugin</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></th>
 <td class="colLast">
@@ -493,37 +486,6 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 </dl>
 </li>
 </ul>
-<a id="name(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>name</h4>
-<pre class="methodSignature"><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&nbsp;name&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
-<div class="block">Sets the name of the task, the name cannot be blank.
-
- <p>If the name is not set in the builder, the name of the task
- will be the form:<br> <code>PLUGIN_ID "-" ( "A-" | "S-" ) SERIAL_ID</code>
- </p>
-
- <p>Examples of default Task names:<br>
-
- <code>"FooPlugin-A-12"</code><br><code>"BarPlugin-S-4322"</code></p>
-
- <p>No two active tasks will have the same serial ID for the same
- synchronisation type.<br>i.e <code>APlugin-A-15</code> and
- <code>BPlugin-A-15</code> is not possible but <code>BPlugin-S-15</code>
- is.</p></div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - The task name</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>This builder, for chaining</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the name is blank</dd>
-</dl>
-</li>
-</ul>
 <a id="plugin(org.spongepowered.plugin.PluginContainer)">
 <!--   -->
 </a>
@@ -531,13 +493,7 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 <li class="blockList">
 <h4>plugin</h4>
 <pre class="methodSignature"><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&nbsp;plugin&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</pre>
-<div class="block">Sets the plugin of the task.
-
- <p>If no plugin is set, one will be extracted from the
- <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event"><code>CauseStackManager</code></a> when the <a href="#build()"><code>build()</code></a> method
- is called from a main thread. If it's not called called
- from a main thread, a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a> will
- be thrown.</p></div>
+<div class="block">Sets the plugin of the task.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>plugin</code> - The plugin instance</dd>
@@ -562,10 +518,8 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A new instance of a <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - If the <a href="#execute(java.lang.Runnable)"><code>execute(Runnable)</code></a> isn't set. Or
-                               in case that <a href="#plugin(org.spongepowered.plugin.PluginContainer)"><code>plugin(PluginContainer)</code></a> isn't set and
-                               no <code>PluginContainer</code> could be extracted
-                               from the <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event"><code>CauseStackManager</code></a>.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - If the <a href="#execute(java.lang.Runnable)"><code>execute(Runnable)</code></a> isn't set or in the
+ case that <a href="#plugin(org.spongepowered.plugin.PluginContainer)"><code>plugin(PluginContainer)</code></a> isn't set.</dd>
 </dl>
 </li>
 </ul>

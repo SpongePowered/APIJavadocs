@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var data = {"i0":1,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,39 +177,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#consumer()">consumer</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Consumer</code></a>&gt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a>&lt; that this task is running.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#delay()">delay</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the delay that the task was scheduled to run after.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#interval()">interval</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the interval for repeating tasks.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name()">name</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the name of this task.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>org.spongepowered.plugin.PluginContainer</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#owner()">owner</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Returns the plugin that constructed this task.</div>
-</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plugin()">plugin</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -242,31 +226,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="name()">
+<a id="plugin()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>name</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name()</pre>
-<div class="block">Gets the name of this task.</div>
+<h4>plugin</h4>
+<pre class="methodSignature">org.spongepowered.plugin.PluginContainer&nbsp;plugin()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The name of the task</dd>
-</dl>
-</li>
-</ul>
-<a id="owner()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>owner</h4>
-<pre class="methodSignature">org.spongepowered.plugin.PluginContainer&nbsp;owner()</pre>
-<div class="block">Returns the plugin that constructed this task.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The plugin that constructed the task</dd>
+<dd>The <code>plugin</code></dd>
 </dl>
 </li>
 </ul>
@@ -288,7 +257,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="interval()">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>interval</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;interval()</pre>
@@ -297,20 +266,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The interval (period) duration</dd>
-</dl>
-</li>
-</ul>
-<a id="consumer()">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>consumer</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler">ScheduledTask</a>&gt;&nbsp;consumer()</pre>
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Consumer</code></a>&gt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a>&lt; that this task is running.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The consumer</dd>
 </dl>
 </li>
 </ul>
