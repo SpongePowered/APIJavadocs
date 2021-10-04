@@ -123,17 +123,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">ComponentLike</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">ComponentLike</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">PlaceholderComponent</span>
-extends <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">ComponentLike</a></pre>
-<div class="block">A <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>ComponentLike</code></a> that can be used in <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> building methods
+extends <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">ComponentLike</a></pre>
+<div class="block">A <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>ComponentLike</code></a> that can be used in <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> building methods
  that represents a placeholder in text.
 
  <p>A <a href="PlaceholderComponent.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderComponent</code></a> is the collection of a
  <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a> along with contextual data in the supplied
- <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a>, enabling its use in a <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object.
+ <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a>, enabling its use in a <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object.
  </p>
 
  <p>Such placeholders will generally be built from tokenized strings, however
@@ -143,8 +143,8 @@ extends <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/te
 
  <p>The <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a> is fixed when this object is created, but
  <a href="PlaceholderParser.html#parse(org.spongepowered.api.placeholder.PlaceholderContext)"><code>PlaceholderParser.parse(PlaceholderContext)</code></a> is not called until
- <a href="#asComponent()"><code>asComponent()</code></a> is called. Thus, any <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object that is
- created will reflect the time that the <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object was
+ <a href="#asComponent()"><code>asComponent()</code></a> is called. Thus, any <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object that is
+ created will reflect the time that the <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object was
  requested, and not when this object itself was created. It therefore follows
  that implementations must not cache the result of <a href="#asComponent()"><code>asComponent()</code></a>
  unless it is known that the supplied parser is <strong>not</strong> sensitive
@@ -195,10 +195,10 @@ extends <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/te
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default @NonNull <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
+<td class="colFirst"><code>default @NonNull <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asComponent()">asComponent</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Creates a <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> from the supplied <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a>
+<div class="block">Creates a <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> from the supplied <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a>
  in the context of the supplied <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a>.</div>
 </td>
 </tr>
@@ -214,7 +214,7 @@ extends <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/te
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#context()">context</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a> that is to be supplied to the
- <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a> to create the <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a>.</div>
+ <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a> to create the <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -263,7 +263,7 @@ extends <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/te
 <h4>context</h4>
 <pre class="methodSignature"><a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder">PlaceholderContext</a>&nbsp;context()</pre>
 <div class="block">Gets the <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a> that is to be supplied to the
- <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a> to create the <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a>.</div>
+ <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a> to create the <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a></dd>
@@ -290,18 +290,18 @@ extends <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/te
 <ul class="blockListLast">
 <li class="blockList">
 <h4>asComponent</h4>
-<pre class="methodSignature">default&nbsp;@NonNull <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;asComponent()</pre>
-<div class="block">Creates a <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> from the supplied <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a>
+<pre class="methodSignature">default&nbsp;@NonNull <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;asComponent()</pre>
+<div class="block">Creates a <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> from the supplied <a href="PlaceholderParser.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderParser</code></a>
  in the context of the supplied <a href="PlaceholderContext.html" title="interface in org.spongepowered.api.placeholder"><code>PlaceholderContext</code></a>.
 
- <p>This will always return a <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object, however, if the
+ <p>This will always return a <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> object, however, if the
  parser could not handle the provided context, this will be
- <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true#empty()" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component.empty()</code></a>.</p></div>
+ <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true#empty()" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component.empty()</code></a>.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/ComponentLike.html?is-external=true#asComponent()" title="class or interface in net.kyori.adventure.text" class="externalLink">asComponent</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">ComponentLike</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/ComponentLike.html?is-external=true#asComponent()" title="class or interface in net.kyori.adventure.text" class="externalLink">asComponent</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/ComponentLike.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">ComponentLike</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The parsed <a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a></dd>
+<dd>The parsed <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a></dd>
 </dl>
 </li>
 </ul>
