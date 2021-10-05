@@ -77,7 +77,7 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/util/Buildable.Builder.html" title="class or interface in net.kyori.adventure.util" class="external-link">Buildable.Builder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&gt;</code>, <code><a href="../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>,&#8203;<a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&gt;</code>, <code><a href="../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>,&#8203;<a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&gt;</code>, <code><a href="../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>,&#8203;<a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/util/Buildable.Builder.html" title="class or interface in net.kyori.adventure.util" class="external-link">Buildable.Builder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&gt;</code>, <code><a href="../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>,&#8203;<a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&gt;</code>, <code><a href="../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>,&#8203;<a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&gt;</code>, <code><a href="../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>,&#8203;<a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a>&gt;</code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -161,13 +161,8 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 <div class="block">Sets the interval in unit ticks between repetitions of the task.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#name(java.lang.String)">name</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#plugin(org.spongepowered.plugin.PluginContainer)">plugin</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
-<div class="block">Sets the name of the task, the name cannot be blank.</div>
-</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#plugin(org.spongepowered.plugin.PluginContainer)">plugin</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Sets the plugin of the task.</div>
 </div>
 </div>
@@ -375,44 +370,10 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 </section>
 </li>
 <li>
-<section class="detail" id="name(java.lang.String)">
-<h3>name</h3>
-<div class="member-signature"><span class="return-type"><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a></span>&nbsp;<span class="element-name">name</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
-<div class="block">Sets the name of the task, the name cannot be blank.
-
- <p>If the name is not set in the builder, the name of the task
- will be the form:<br> <code>PLUGIN_ID "-" ( "A-" | "S-" ) SERIAL_ID</code>
- </p>
-
- <p>Examples of default Task names:<br>
-
- <code>"FooPlugin-A-12"</code><br><code>"BarPlugin-S-4322"</code></p>
-
- <p>No two active tasks will have the same serial ID for the same
- synchronisation type.<br>i.e <code>APlugin-A-15</code> and
- <code>BPlugin-A-15</code> is not possible but <code>BPlugin-S-15</code>
- is.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>name</code> - The task name</dd>
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-<dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If the name is blank</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="plugin(org.spongepowered.plugin.PluginContainer)">
 <h3>plugin</h3>
 <div class="member-signature"><span class="return-type"><a href="Task.Builder.html" title="interface in org.spongepowered.api.scheduler">Task.Builder</a></span>&nbsp;<span class="element-name">plugin</span>&#8203;<span class="parameters">(org.spongepowered.plugin.PluginContainer&nbsp;plugin)</span></div>
-<div class="block">Sets the plugin of the task.
-
- <p>If no plugin is set, one will be extracted from the
- <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event"><code>CauseStackManager</code></a> when the <a href="#build()"><code>build()</code></a> method
- is called from a main thread. If it's not called called
- from a main thread, a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link"><code>IllegalStateException</code></a> will
- be thrown.</p></div>
+<div class="block">Sets the plugin of the task.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>plugin</code> - The plugin instance</dd>
@@ -430,14 +391,12 @@ extends <a href="../util/Builder.html" title="interface in org.spongepowered.api
 <div class="block">Builds the task.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/util/Buildable.Builder.html#build()" title="class or interface in net.kyori.adventure.util" class="external-link">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.9.0/net/kyori/adventure/util/Buildable.Builder.html" title="class or interface in net.kyori.adventure.util" class="external-link">Buildable.Builder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/util/Buildable.Builder.html#build()" title="class or interface in net.kyori.adventure.util" class="external-link">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/util/Buildable.Builder.html" title="class or interface in net.kyori.adventure.util" class="external-link">Buildable.Builder</a>&lt;<a href="Task.html" title="interface in org.spongepowered.api.scheduler">Task</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>A new instance of a <a href="Task.html" title="interface in org.spongepowered.api.scheduler"><code>Task</code></a></dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - If the <a href="#execute(java.lang.Runnable)"><code>execute(Runnable)</code></a> isn't set. Or
-                               in case that <a href="#plugin(org.spongepowered.plugin.PluginContainer)"><code>plugin(PluginContainer)</code></a> isn't set and
-                               no <code>PluginContainer</code> could be extracted
-                               from the <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event"><code>CauseStackManager</code></a>.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - If the <a href="#execute(java.lang.Runnable)"><code>execute(Runnable)</code></a> isn't set or in the
+ case that <a href="#plugin(org.spongepowered.plugin.PluginContainer)"><code>plugin(PluginContainer)</code></a> isn't set.</dd>
 </dl>
 </section>
 </li>
