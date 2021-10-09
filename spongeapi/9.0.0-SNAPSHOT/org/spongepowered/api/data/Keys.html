@@ -378,7 +378,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;<a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><span class="member-name-link"><a href="#CUSTOM_ATTACK_DAMAGE">CUSTOM_ATTACK_DAMAGE</a></span></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/DamagingProjectile.html" title="interface in org.spongepowered.api.entity.projectile"><code>DamagingProjectile</code></a>.</div>
+<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#CUSTOM_MODEL_DATA">CUSTOM_MODEL_DATA</a></span></code></div>
@@ -2032,7 +2032,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/ListValue.html" title="interface in org.spongepowered.api.data.value">ListValue</a>&lt;<a href="../item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><span class="member-name-link"><a href="#TRADE_OFFERS">TRADE_OFFERS</a></span></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Tge <a href="../item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>s offered by a <a href="../entity/living/trader/Trader.html" title="interface in org.spongepowered.api.entity.living.trader"><code>Trader</code></a>.</div>
+<div class="block">The <a href="../item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>s offered by a <a href="../entity/living/trader/Trader.html" title="interface in org.spongepowered.api.entity.living.trader"><code>Trader</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="#TRANSIENT">TRANSIENT</a></span></code></div>
@@ -2439,7 +2439,7 @@ loadScripts(document, 'script');</script>
 <h3>BOSS_BAR</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/bossbar/BossBar.html" title="class or interface in net.kyori.adventure.bossbar" class="external-link">BossBar</a>&gt;&gt;</span>&nbsp;<span class="element-name">BOSS_BAR</span></div>
 <div class="block">The <a href="https://jd.adventure.kyori.net/api/4.9.2/net/kyori/adventure/bossbar/BossBar.html" title="class or interface in net.kyori.adventure.bossbar" class="external-link"><code>BossBar</code></a> displayed to the client by a <a href="../entity/living/monster/boss/Boss.html" title="interface in org.spongepowered.api.entity.living.monster.boss"><code>Boss</code></a>.
- Readonly but mutable?</div>
+ TODO Readonly but mutable?</div>
 </section>
 </li>
 <li>
@@ -2655,11 +2655,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CUSTOM_ATTACK_DAMAGE">
 <h3>CUSTOM_ATTACK_DAMAGE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;<a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">CUSTOM_ATTACK_DAMAGE</span></div>
-<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/DamagingProjectile.html" title="interface in org.spongepowered.api.entity.projectile"><code>DamagingProjectile</code></a>.
+<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.
 
  <p>Note that in events, the damage defined for the provided
  <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> will take priority over the "default" damage as
- defined from <a href="../entity/projectile/DamagingProjectile.html#attackDamage()"><code>DamagingProjectile.attackDamage()</code></a>.</p>
+ defined from <a href="../entity/projectile/arrow/ArrowEntity.html#attackDamage()"><code>ArrowEntity.attackDamage()</code></a>.</p>
 
  <p>Types not present in this mapping will be
  dealt damage to according to <a href="#ATTACK_DAMAGE"><code>ATTACK_DAMAGE</code></a>.</p></div>
@@ -5297,7 +5297,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="TRADE_OFFERS">
 <h3>TRADE_OFFERS</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/ListValue.html" title="interface in org.spongepowered.api.data.value">ListValue</a>&lt;<a href="../item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;&gt;</span>&nbsp;<span class="element-name">TRADE_OFFERS</span></div>
-<div class="block">Tge <a href="../item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>s offered by a <a href="../entity/living/trader/Trader.html" title="interface in org.spongepowered.api.entity.living.trader"><code>Trader</code></a>.</div>
+<div class="block">The <a href="../item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>s offered by a <a href="../entity/living/trader/Trader.html" title="interface in org.spongepowered.api.entity.living.trader"><code>Trader</code></a>.</div>
 </section>
 </li>
 <li>
