@@ -3,7 +3,6 @@ org.spongepowered.api.advancement
 org.spongepowered.api.advancement.criteria
 org.spongepowered.api.advancement.criteria.trigger
 org.spongepowered.api.adventure
-org.spongepowered.api.asset
 org.spongepowered.api.block
 org.spongepowered.api.block.entity
 org.spongepowered.api.block.entity.carrier
@@ -162,6 +161,8 @@ org.spongepowered.api.profile.property
 org.spongepowered.api.projectile.source
 org.spongepowered.api.raid
 org.spongepowered.api.registry
+org.spongepowered.api.resource
+org.spongepowered.api.resource.pack
 org.spongepowered.api.resourcepack
 org.spongepowered.api.scheduler
 org.spongepowered.api.scoreboard

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":18,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":18,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":18,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":18,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -151,41 +151,34 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="asset/AssetManager.html" title="interface in org.spongepowered.api.asset">AssetManager</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assetManager()">assetManager</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the <a href="asset/AssetManager.html" title="interface in org.spongepowered.api.asset"><code>AssetManager</code></a>.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler">Scheduler</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asyncScheduler()">asyncScheduler</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the async <a href="scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler"><code>Scheduler</code></a>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="registry/BuilderProvider.html" title="interface in org.spongepowered.api.registry">BuilderProvider</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#builderProvider()">builderProvider</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieves the <a href="registry/BuilderProvider.html" title="interface in org.spongepowered.api.registry"><code>BuilderProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="network/channel/ChannelManager.html" title="interface in org.spongepowered.api.network.channel">ChannelManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#channelManager()">channelManager</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="network/channel/ChannelManager.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelManager</code></a> for creating network channels.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="Client.html" title="interface in org.spongepowered.api">Client</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#client()">client</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="Client.html" title="interface in org.spongepowered.api"><code>Client</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="config/ConfigManager.html" title="interface in org.spongepowered.api.config">ConfigManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#configManager()">configManager</a></span>()</code></th>
 <td class="colLast">
@@ -193,7 +186,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
  for plugins.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="data/DataManager.html" title="interface in org.spongepowered.api.data">DataManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataManager()">dataManager</a></span>()</code></th>
 <td class="colLast">
@@ -201,49 +194,49 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
  <a href="data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a>s, and get the related <a href="data/persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence"><code>DataBuilder</code></a>s.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="event/EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#eventManager()">eventManager</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="event/EventManager.html" title="interface in org.spongepowered.api.event"><code>EventManager</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="registry/FactoryProvider.html" title="interface in org.spongepowered.api.registry">FactoryProvider</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#factoryProvider()">factoryProvider</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieves the <a href="registry/FactoryProvider.html" title="interface in org.spongepowered.api.registry"><code>FactoryProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gameDirectory()">gameDirectory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the directory where the game's files are located.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isClientAvailable()">isClientAvailable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns if the <a href="Client.html" title="interface in org.spongepowered.api"><code>Client</code></a> is available for use.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isServerAvailable()">isServerAvailable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns if the <a href="Server.html" title="interface in org.spongepowered.api"><code>Server</code></a> is available for use.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#locale(java.lang.String)">locale</a></span>&#8203;(@NonNull <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;locale)</code></th>
 <td class="colLast">
 <div class="block">Gets a locale for the specified locale code, e.g.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="util/metric/MetricsConfigManager.html" title="interface in org.spongepowered.api.util.metric">MetricsConfigManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metricsConfigManager()">metricsConfigManager</a></span>()</code></th>
 <td class="colLast">
@@ -252,28 +245,28 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
  metrics.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="Platform.html" title="interface in org.spongepowered.api">Platform</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#platform()">platform</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the current platform, or implementation, this <a href="Game.html" title="interface in org.spongepowered.api"><code>Game</code></a> is running on.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="plugin/PluginManager.html" title="interface in org.spongepowered.api.plugin">PluginManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pluginManager()">pluginManager</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="plugin/PluginManager.html" title="interface in org.spongepowered.api.plugin"><code>PluginManager</code></a>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="Server.html" title="interface in org.spongepowered.api">Server</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#server()">server</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="Server.html" title="interface in org.spongepowered.api"><code>Server</code></a>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="service/ServiceProvider.GameScoped.html" title="interface in org.spongepowered.api.service">ServiceProvider.GameScoped</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serviceProvider()">serviceProvider</a></span>()</code></th>
 <td class="colLast">
@@ -281,14 +274,14 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
  services that plugins may provide.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="sql/SqlManager.html" title="interface in org.spongepowered.api.sql">SqlManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sqlManager()">sqlManager</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="sql/SqlManager.html" title="interface in org.spongepowered.api.sql"><code>SqlManager</code></a> for grabbing sql data sources.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="SystemSubject.html" title="interface in org.spongepowered.api">SystemSubject</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#systemSubject()">systemSubject</a></span>()</code></th>
 <td class="colLast">
@@ -523,20 +516,6 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The event manager</dd>
-</dl>
-</li>
-</ul>
-<a id="assetManager()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>assetManager</h4>
-<pre class="methodSignature"><a href="asset/AssetManager.html" title="interface in org.spongepowered.api.asset">AssetManager</a>&nbsp;assetManager()</pre>
-<div class="block">Gets the <a href="asset/AssetManager.html" title="interface in org.spongepowered.api.asset"><code>AssetManager</code></a>.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The asset manager</dd>
 </dl>
 </li>
 </ul>
