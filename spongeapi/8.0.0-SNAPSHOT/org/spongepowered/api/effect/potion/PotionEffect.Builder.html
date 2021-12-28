@@ -176,7 +176,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#duration(int)">duration</a></span>&#8203;(int&nbsp;duration)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#duration(org.spongepowered.api.util.Ticks)">duration</a></span>&#8203;(<a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration)</code></th>
 <td class="colLast">
 <div class="block">Sets the duration in ticks of the potion effect.</div>
 </td>
@@ -279,13 +279,13 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </dl>
 </li>
 </ul>
-<a id="duration(int)">
+<a id="duration(org.spongepowered.api.util.Ticks)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>duration</h4>
-<pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;duration&#8203;(int&nbsp;duration)
+<pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;duration&#8203;(<a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration)
                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Sets the duration in ticks of the potion effect.
 
@@ -310,7 +310,9 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Sets the amplifier power of the potion effect.
 
- <p>Amplifiers must be greater than or equal to zero.</p></div>
+ <p>Amplifiers must be greater than or equal to zero. See
+ <a href="PotionEffect.html#amplifier()"><code>PotionEffect.amplifier()</code></a> for an explanation of what the amplifier means.
+ </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>amplifier</code> - The amplifier power</dd>

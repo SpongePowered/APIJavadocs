@@ -194,7 +194,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>int</code></td>
+<td class="colFirst"><code><a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#duration()">duration</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the duration in ticks for which this potion effect
@@ -210,9 +210,9 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier,int,int)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&gt;&nbsp;type,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier,int,org.spongepowered.api.util.Ticks)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&gt;&nbsp;type,
   int&nbsp;amplifier,
-  int&nbsp;duration)</code></th>
+  <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a> with the provided
  <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>, the provided amplifier, and the provided
@@ -221,9 +221,9 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.effect.potion.PotionEffectType,int,int)">of</a></span>&#8203;(<a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&nbsp;type,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.effect.potion.PotionEffectType,int,org.spongepowered.api.util.Ticks)">of</a></span>&#8203;(<a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&nbsp;type,
   int&nbsp;amplifier,
-  int&nbsp;duration)</code></th>
+  <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a> with the provided
  <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>, the provided amplifier, and the provided
@@ -291,7 +291,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </dl>
 </li>
 </ul>
-<a id="of(org.spongepowered.api.effect.potion.PotionEffectType,int,int)">
+<a id="of(org.spongepowered.api.effect.potion.PotionEffectType,int,org.spongepowered.api.util.Ticks)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -299,7 +299,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a>&nbsp;of&#8203;(<a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&nbsp;type,
                        int&nbsp;amplifier,
-                       int&nbsp;duration)
+                       <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration)
                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Creates a new <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a> with the provided
  <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>, the provided amplifier, and the provided
@@ -316,7 +316,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </dl>
 </li>
 </ul>
-<a id="of(java.util.function.Supplier,int,int)">
+<a id="of(java.util.function.Supplier,int,org.spongepowered.api.util.Ticks)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -324,7 +324,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&gt;&nbsp;type,
                        int&nbsp;amplifier,
-                       int&nbsp;duration)
+                       <a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration)
                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Creates a new <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a> with the provided
  <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>, the provided amplifier, and the provided
@@ -361,7 +361,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>duration</h4>
-<pre class="methodSignature">int&nbsp;duration()</pre>
+<pre class="methodSignature"><a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;duration()</pre>
 <div class="block">Gets the duration in ticks for which this potion effect
  will apply for.</div>
 <dl>
@@ -378,7 +378,12 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <h4>amplifier</h4>
 <pre class="methodSignature">int&nbsp;amplifier()</pre>
 <div class="block">Gets the amplifier at which this potion effect
- will apply effects.</div>
+ will apply effects.
+
+ <p>A potion amplifier dictates the potion level <strong>as a zero based
+ index</strong>. An amplifier of zero will produce a potion effect of
+ level 1 (e.g. Strength I), while an amplifier of four will produce a
+ potion effect corresponding to a potion of level 4 (e.g. Strength V).</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The amplifier as a zero-indexed integer.</dd>
