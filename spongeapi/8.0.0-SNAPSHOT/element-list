@@ -109,6 +109,7 @@ org.spongepowered.api.event.impl
 org.spongepowered.api.event.impl.data
 org.spongepowered.api.event.impl.entity
 org.spongepowered.api.event.impl.entity.ai.goal
+org.spongepowered.api.event.impl.world
 org.spongepowered.api.event.item.inventory
 org.spongepowered.api.event.item.inventory.container
 org.spongepowered.api.event.lifecycle
