@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":18,"i3":6,"i4":6,"i5":18,"i6":18,"i7":6};
+var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":6,"i5":6,"i6":18,"i7":18,"i8":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -201,19 +201,27 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities()">entities</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets all the loaded entities in this entity volume, in no particular
+ order.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>default &lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities(java.lang.Class,org.spongepowered.api.util.AABB)">entities</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
         <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities(java.lang.Class,org.spongepowered.api.util.AABB,java.util.function.Predicate)">entities</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
         <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
         @Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;? super T&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities(org.spongepowered.api.util.AABB)">entities</a></span>&#8203;(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></th>
 <td class="colLast">
@@ -221,7 +229,7 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
  order.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities(org.spongepowered.api.util.AABB,java.util.function.Predicate)">entities</a></span>&#8203;(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;filter)</code></th>
@@ -230,7 +238,7 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
  order, as long as the pass the given filter test.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entity(java.util.UUID)">entity</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</code></th>
 <td class="colLast">
@@ -238,7 +246,7 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
  returning no entity if the entity is not loaded or non-existent.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nearbyEntities(org.spongepowered.math.vector.Vector3d,double)">nearbyEntities</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3d.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3d</a>&nbsp;location,
               double&nbsp;distance)</code></th>
@@ -247,7 +255,7 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
  of the specified location.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nearestPlayer(double,double,double,double,java.util.function.Predicate)">nearestPlayer</a></span>&#8203;(double&nbsp;x,
              double&nbsp;y,
@@ -256,7 +264,7 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
              @Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#players()">players</a></span>()</code></th>
 <td class="colLast">
@@ -320,6 +328,23 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
 <dd><code>uuid</code> - The unique id</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An entity, if available</dd>
+</dl>
+</li>
+</ul>
+<a id="entities()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>entities</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;entities()</pre>
+<div class="block">Gets all the loaded entities in this entity volume, in no particular
+ order.
+
+ <p>This collection is unmodifiable.</p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>All entities in this volume.</dd>
 </dl>
 </li>
 </ul>
