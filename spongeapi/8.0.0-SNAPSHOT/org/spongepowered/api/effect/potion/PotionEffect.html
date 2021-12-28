@@ -205,7 +205,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAmbient()">isAmbient</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets if the potion effect is an ambient effect.</div>
+<div class="block">Gets whether or not this potion effect is an ambient effect.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -299,17 +299,20 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a>&nbsp;of&#8203;(<a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&nbsp;type,
                        int&nbsp;amplifier,
-                       int&nbsp;duration)</pre>
+                       int&nbsp;duration)
+                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Creates a new <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a> with the provided
  <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>, the provided amplifier, and the provided
  duration in ticks.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - The potion type</dd>
-<dd><code>amplifier</code> - The amplifier</dd>
+<dd><code>amplifier</code> - The zero-indexed amplifier</dd>
 <dd><code>duration</code> - The duration in ticks</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The potion effect</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the amplifier is negative or the duration is not positive</dd>
 </dl>
 </li>
 </ul>
@@ -321,7 +324,8 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&gt;&nbsp;type,
                        int&nbsp;amplifier,
-                       int&nbsp;duration)</pre>
+                       int&nbsp;duration)
+                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Creates a new <a href="PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a> with the provided
  <a href="PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>, the provided amplifier, and the provided
  duration in ticks.</div>
@@ -332,6 +336,8 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <dd><code>duration</code> - The duration in ticks</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The potion effect</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the amplifier is negative or the duration is not positive</dd>
 </dl>
 </li>
 </ul>
@@ -360,7 +366,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
  will apply for.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The duration.</dd>
+<dd>The duration in ticks.</dd>
 </dl>
 </li>
 </ul>
@@ -375,7 +381,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
  will apply effects.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The amplifier.</dd>
+<dd>The amplifier as a zero-indexed integer.</dd>
 </dl>
 </li>
 </ul>
@@ -386,10 +392,11 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <li class="blockList">
 <h4>isAmbient</h4>
 <pre class="methodSignature">boolean&nbsp;isAmbient()</pre>
-<div class="block">Gets if the potion effect is an ambient effect.</div>
+<div class="block">Gets whether or not this potion effect is an ambient effect.
+ Ambient potions emit more translucent particles.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Gets if ambient.</dd>
+<dd>If the effect should be ambient.</dd>
 </dl>
 </li>
 </ul>

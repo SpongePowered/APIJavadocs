@@ -157,7 +157,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <td class="colFirst"><code><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ambient(boolean)">ambient</a></span>&#8203;(boolean&nbsp;ambient)</code></th>
 <td class="colLast">
-<div class="block">Sets the potion effect to be ambient or not.</div>
+<div class="block">Sets whether the potion effect is ambient.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -199,14 +199,14 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <td class="colFirst"><code><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showIcon(boolean)">showIcon</a></span>&#8203;(boolean&nbsp;showIcon)</code></th>
 <td class="colLast">
-<div class="block">Sets the potion effect to show its icon when applied or not.</div>
+<div class="block">Sets whether the potion effect should show its icon when applied.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showParticles(boolean)">showParticles</a></span>&#8203;(boolean&nbsp;showParticles)</code></th>
 <td class="colLast">
-<div class="block">Sets the potion effect to show particles when applied or not.</div>
+<div class="block">Sets whether the potion effect should show particles when applied.</div>
 </td>
 </tr>
 </table>
@@ -285,13 +285,18 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <ul class="blockList">
 <li class="blockList">
 <h4>duration</h4>
-<pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;duration&#8203;(int&nbsp;duration)</pre>
-<div class="block">Sets the duration in ticks of the potion effect.</div>
+<pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;duration&#8203;(int&nbsp;duration)
+                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+<div class="block">Sets the duration in ticks of the potion effect.
+
+ <p>The duration must be greater than zero ticks.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>duration</code> - The duration in ticks of this effect</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This builder, for chaining</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the duration is less than or equal to zero</dd>
 </dl>
 </li>
 </ul>
@@ -305,7 +310,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
 <div class="block">Sets the amplifier power of the potion effect.
 
- <p>Amplifiers must be above zero.</p></div>
+ <p>Amplifiers must be greater than or equal to zero.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>amplifier</code> - The amplifier power</dd>
@@ -323,7 +328,8 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <li class="blockList">
 <h4>ambient</h4>
 <pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;ambient&#8203;(boolean&nbsp;ambient)</pre>
-<div class="block">Sets the potion effect to be ambient or not.</div>
+<div class="block">Sets whether the potion effect is ambient.
+ Ambient potions emit more translucent particles.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ambient</code> - Whether the potion effect is ambient</dd>
@@ -339,7 +345,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <li class="blockList">
 <h4>showParticles</h4>
 <pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;showParticles&#8203;(boolean&nbsp;showParticles)</pre>
-<div class="block">Sets the potion effect to show particles when applied or not.</div>
+<div class="block">Sets whether the potion effect should show particles when applied.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>showParticles</code> - Whether the potion effect will show particles</dd>
@@ -355,7 +361,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <li class="blockList">
 <h4>showIcon</h4>
 <pre class="methodSignature"><a href="PotionEffect.Builder.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect.Builder</a>&nbsp;showIcon&#8203;(boolean&nbsp;showIcon)</pre>
-<div class="block">Sets the potion effect to show its icon when applied or not.</div>
+<div class="block">Sets whether the potion effect should show its icon when applied.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>showIcon</code> - Whether the potion effect will show its icon</dd>
