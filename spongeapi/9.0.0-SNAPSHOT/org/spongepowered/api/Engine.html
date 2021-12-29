@@ -117,9 +117,20 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Checks if the <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Thread.html#currentThread()" title="class or interface in java.lang" class="external-link"><code>current thread</code></a> is the main thread of the engine.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler">Scheduler</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#scheduler()">scheduler</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="resource/pack/PackRepository.html" title="interface in org.spongepowered.api.resource.pack">PackRepository</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#packRepository()">packRepository</a></span>()</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#reloadResources()">reloadResources</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="block">Rediscovers all <a href="resource/Resource.html" title="interface in org.spongepowered.api.resource"><code>resources</code></a> within all <a href="resource/pack/Pack.html" title="interface in org.spongepowered.api.resource.pack"><code>pack's</code></a> <a href="resource/pack/PackContents.html" title="interface in org.spongepowered.api.resource.pack"><code>contents</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="resource/ResourceManager.html" title="interface in org.spongepowered.api.resource">ResourceManager</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#resourceManager()">resourceManager</a></span>()</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler">Scheduler</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#scheduler()">scheduler</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets the <a href="scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler"><code>Scheduler</code></a> used to schedule sync tasks on this <a href="Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.</div>
 </div>
 </div>
@@ -163,6 +174,26 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 </section>
 </li>
 <li>
+<section class="detail" id="packRepository()">
+<h3>packRepository</h3>
+<div class="member-signature"><span class="return-type"><a href="resource/pack/PackRepository.html" title="interface in org.spongepowered.api.resource.pack">PackRepository</a></span>&nbsp;<span class="element-name">packRepository</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The <a href="resource/pack/PackRepository.html" title="interface in org.spongepowered.api.resource.pack"><code>pack repository</code></a></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="resourceManager()">
+<h3>resourceManager</h3>
+<div class="member-signature"><span class="return-type"><a href="resource/ResourceManager.html" title="interface in org.spongepowered.api.resource">ResourceManager</a></span>&nbsp;<span class="element-name">resourceManager</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The <a href="resource/ResourceManager.html" title="interface in org.spongepowered.api.resource"><code>resource manager</code></a></dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="scheduler()">
 <h3>scheduler</h3>
 <div class="member-signature"><span class="return-type"><a href="scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler">Scheduler</a></span>&nbsp;<span class="element-name">scheduler</span>()</div>
@@ -181,6 +212,19 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><code>true</code> if main thread, <code>false</code> if not</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="reloadResources()">
+<h3>reloadResources</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</span>&nbsp;<span class="element-name">reloadResources</span>()</div>
+<div class="block">Rediscovers all <a href="resource/Resource.html" title="interface in org.spongepowered.api.resource"><code>resources</code></a> within all <a href="resource/pack/Pack.html" title="interface in org.spongepowered.api.resource.pack"><code>pack's</code></a> <a href="resource/pack/PackContents.html" title="interface in org.spongepowered.api.resource.pack"><code>contents</code></a>.
+
+ <p>On the server, the future will always be completed.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A future that completes when reloading is complete</dd>
 </dl>
 </section>
 </li>

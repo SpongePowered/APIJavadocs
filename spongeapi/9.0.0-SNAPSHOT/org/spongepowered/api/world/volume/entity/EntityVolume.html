@@ -130,51 +130,57 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default &lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#entities(java.lang.Class,org.spongepowered.api.util.AABB)">entities</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entities()">entities</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="block">Gets all the loaded entities in this entity volume, in no particular
+ order.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default &lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends T&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#entities(java.lang.Class,org.spongepowered.api.util.AABB)">entities</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
  <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>&lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entities(java.lang.Class,org.spongepowered.api.util.AABB,java.util.function.Predicate)">entities</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>&lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entities(java.lang.Class,org.spongepowered.api.util.AABB,java.util.function.Predicate)">entities</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
  <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super T&gt;&nbsp;predicate)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#entities(org.spongepowered.api.util.AABB)">entities</a></span>&#8203;(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#entities(org.spongepowered.api.util.AABB)">entities</a></span>&#8203;(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
 <div class="block">Gets all the entities that intersect the bounding box, in no particular
  order.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entities(org.spongepowered.api.util.AABB,java.util.function.Predicate)">entities</a></span>&#8203;(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entities(org.spongepowered.api.util.AABB,java.util.function.Predicate)">entities</a></span>&#8203;(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
  <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;filter)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets all the entities that intersect the bounding box, in no particular
  order, as long as the pass the given filter test.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entity(java.util.UUID)">entity</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#entity(java.util.UUID)">entity</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets the entity whose <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> matches the provided id, possibly
  returning no entity if the entity is not loaded or non-existent.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#nearbyEntities(org.spongepowered.math.vector.Vector3d,double)">nearbyEntities</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;location,
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#nearbyEntities(org.spongepowered.math.vector.Vector3d,double)">nearbyEntities</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;location,
  double&nbsp;distance)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
 <div class="block">Return a collection of entities contained within <code>distance</code> blocks
  of the specified location.</div>
 </div>
-<div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#nearestPlayer(double,double,double,double,java.util.function.Predicate)">nearestPlayer</a></span>&#8203;(double&nbsp;x,
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;? extends <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#nearestPlayer(double,double,double,double,java.util.function.Predicate)">nearestPlayer</a></span>&#8203;(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z,
  double&nbsp;distance,
  @Nullable <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#players()">players</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#players()">players</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of available <a href="../../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>players</code></a> within this volume.</div>
 </div>
 </div>
@@ -221,6 +227,20 @@ extends <a href="../Volume.html" title="interface in org.spongepowered.api.world
 <dd><code>uuid</code> - The unique id</dd>
 <dt>Returns:</dt>
 <dd>An entity, if available</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="entities()">
+<h3>entities</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</span>&nbsp;<span class="element-name">entities</span>()</div>
+<div class="block">Gets all the loaded entities in this entity volume, in no particular
+ order.
+
+ <p>This collection is unmodifiable.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>All entities in this volume.</dd>
 </dl>
 </section>
 </li>

@@ -80,6 +80,10 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../entity/AffectEntityEvent.html" title="interface in org.spongepowered.api.event.entity">AffectEntityEvent</a></code>, <code><a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="ExplosionEvent.html" title="interface in org.spongepowered.api.event.world">ExplosionEvent</a></code></dd>
 </dl>
 <dl class="notes">
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../impl/world/AbstractDetonateEvent.html" title="class in org.spongepowered.api.event.impl.world">AbstractDetonateEvent</a></code></dd>
+</dl>
+<dl class="notes">
 <dt>Enclosing interface:</dt>
 <dd><a href="ExplosionEvent.html" title="interface in org.spongepowered.api.event.world">ExplosionEvent</a></dd>
 </dl>
@@ -108,7 +112,7 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <section class="method-summary" id="method.summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
@@ -120,9 +124,9 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <div class="block">Gets the list of calculated affected locations for blocks that will
  be removed due to the explosion.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code>default <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table"><code><span class="member-name-link"><a href="#filterAffectedLocations(java.util.function.Predicate)">filterAffectedLocations</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab5 method-summary-table">
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#filterAffectedLocations(java.util.function.Predicate)">filterAffectedLocations</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">Filters out <a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from
  <a href="#affectedLocations()"><code>affectedLocations()</code></a> to be affected by this event.</div>
 </div>
@@ -173,8 +177,8 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <h3>affectedLocations</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</span>&nbsp;<span class="element-name">affectedLocations</span>()</div>
 <div class="block">Gets the list of calculated affected locations for blocks that will
- be removed due to the explosion. Note that the list is mutable.
- However, adding new locations may cause unknown effects.</div>
+ be removed due to the explosion.
+ This list can only be modified using <a href="#filterAffectedLocations(java.util.function.Predicate)"><code>filterAffectedLocations(Predicate)</code></a>.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The list of blocks that will be affected by the explosion</dd>
@@ -184,7 +188,7 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <li>
 <section class="detail" id="filterAffectedLocations(java.util.function.Predicate)">
 <h3>filterAffectedLocations</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</span>&nbsp;<span class="element-name">filterAffectedLocations</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</span></div>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">filterAffectedLocations</span>&#8203;<span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</span></div>
 <div class="block">Filters out <a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from
  <a href="#affectedLocations()"><code>affectedLocations()</code></a> to be affected by this event.
 
@@ -193,8 +197,6 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>predicate</code> - The predicate to use for filtering</dd>
-<dt>Returns:</dt>
-<dd>The locations removed from <a href="#affectedLocations()"><code>affectedLocations()</code></a></dd>
 </dl>
 </section>
 </li>
