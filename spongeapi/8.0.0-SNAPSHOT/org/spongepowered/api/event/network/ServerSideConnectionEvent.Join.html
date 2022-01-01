@@ -132,11 +132,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public static interface <span class="typeNameLabel">ServerSideConnectionEvent.Join</span>
 extends <a href="ServerSideConnectionEvent.html" title="interface in org.spongepowered.api.event.network">ServerSideConnectionEvent</a>, <a href="../message/AudienceMessageEvent.html" title="interface in org.spongepowered.api.event.message">AudienceMessageEvent</a>, <a href="../message/MessageCancellable.html" title="interface in org.spongepowered.api.event.message">MessageCancellable</a></pre>
-<div class="block">Called when a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> joins the game within a <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> for the first
- time after initial connection.
-
- <p>The <a href="../entity/SpawnEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>SpawnEntityEvent</code></a> for the <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> is fired after the
- #Login event. This event is fired after both.</p></div>
+<div class="block">Called when a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> joins the game within a
+ <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> for the first time after initial connection.
+ Fired after <a href="ServerSideConnectionEvent.Login.html" title="interface in org.spongepowered.api.event.network"><code>ServerSideConnectionEvent.Login</code></a> once the <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> has been
+ properly added to the <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a>. If data is wanted to be
+ modified that could affect a player's representation (such as vanishing),
+ it's recommended to modify such data in the logging in
+ <a href="ServerSideConnectionEvent.Login.html#user()"><code>User</code></a> instead.</div>
 </li>
 </ul>
 </div>

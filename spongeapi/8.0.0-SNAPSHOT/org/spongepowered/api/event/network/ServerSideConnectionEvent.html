@@ -134,18 +134,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 extends <a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></pre>
 <div class="block">Represents an event fired during the login process.
 
- <p>Together with <a href="../entity/SpawnEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>SpawnEntityEvent</code></a>, these events represent the
- progression of a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> from first authenticating, to being fully
- loaded in the world.</p>
+ <p>These events represent the progression of a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a>
+ from first authenticating, to being fully loaded in the world.</p>
 
  <p>The events are fired in the following order:</p>
 
- <p>#Auth -&gt; #Handshake -&gt; #Login -&gt; <a href="../entity/SpawnEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>SpawnEntityEvent</code></a> -&gt; #Join</p>
+ <p>#Auth -&gt; #Handshake -&gt; #Login -&gt; #Join</p>
 
- <p><a href="../entity/SpawnEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>SpawnEntityEvent</code></a> is still fired for players, for consistency.
- However, the player is not at a well-defined state at that point. It's
- recommended to use the event's subinterfaces to interact with the player
- at well-defined moments during the connection process.</p></div>
+ <p>Traditionally one could consider a <a href="../entity/SpawnEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>SpawnEntityEvent</code></a> to be thrown,
+ but due to the nature of cancellations, a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> joining
+ a world after <a href="ServerSideConnectionEvent.Login.html" title="interface in org.spongepowered.api.event.network"><code>login</code></a> would be inadvisable to cancel due to the
+ inconsistent state of both the player and the player's client.</p></div>
 </li>
 </ul>
 </div>
@@ -193,8 +192,8 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="ServerSideConnectionEvent.Join.html" title="interface in org.spongepowered.api.event.network">ServerSideConnectionEvent.Join</a></span></code></th>
 <td class="colLast">
-<div class="block">Called when a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> joins the game within a <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> for the first
- time after initial connection.</div>
+<div class="block">Called when a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>player</code></a> joins the game within a
+ <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> for the first time after initial connection.</div>
 </td>
 </tr>
 <tr class="altColor">
