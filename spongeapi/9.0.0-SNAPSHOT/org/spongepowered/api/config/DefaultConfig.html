@@ -70,12 +70,14 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Retention.html" title="class or interface in java.lang.annotation" class="external-link">@Retention</a>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#RUNTIME" title="class or interface in java.lang.annotation" class="external-link">RUNTIME</a>)
 <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Target.html" title="class or interface in java.lang.annotation" class="external-link">@Target</a>({<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/ElementType.html#PARAMETER" title="class or interface in java.lang.annotation" class="external-link">PARAMETER</a>,<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/ElementType.html#FIELD" title="class or interface in java.lang.annotation" class="external-link">FIELD</a>})
 </span><span class="modifiers">public @interface </span><span class="element-name type-name-label">DefaultConfig</span></div>
-<div class="block">Provides an convenient injection for <a href="ConfigRoot.html#config()"><code>ConfigRoot.config()</code></a> or
+<div class="block">Provides a convenient injection for <a href="ConfigRoot.html#config()"><code>ConfigRoot.config()</code></a> or
  <a href="ConfigRoot.html#configPath()"><code>ConfigRoot.configPath()</code></a>.
 
- <p>Use this annotation on a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link"><code>File</code></a> or <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>Path</code></a> if you want the
+ <p>Use this annotation on a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>Path</code></a> if you want the
  pathname to the default configuration. Or instead, use this annotation on a
- <a href="https://configurate.aoeu.xyz/4.1.2/apidocs/org/spongepowered/configurate/loader/ConfigurationLoader.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link"><code>ConfigurationLoader</code></a> to get an instance of that. Remember that
+ <a href="https://configurate.aoeu.xyz/4.1.2/apidocs/org/spongepowered/configurate/loader/ConfigurationLoader.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link"><code>ConfigurationLoader&lt;CommentedConigurationNode&gt;</code></a>
+ or <a href="https://configurate.aoeu.xyz/4.1.2/apidocs/org/spongepowered/configurate/reference/ConfigurationReference.html" title="class or interface in org.spongepowered.configurate.reference" class="external-link"><code>ConfigurationReference&lt;CommentedConigurationNode&gt;</code></a>
+ to get a loader/reference for a HOCON based configuration file. Remember that
  <a href="https://google.github.io/guice/api-docs/5.0.1/javadoc/com/google/inject/Inject.html" title="class or interface in com.google.inject" class="external-link"><code>Inject</code></a> is also necessary.</p></div>
 <dl class="notes">
 <dt>See Also:</dt>

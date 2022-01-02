@@ -89,7 +89,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalInt.html" title="class or interface in java.util" class="external-link">OptionalInt</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cooldown(org.spongepowered.api.item.ItemType)" class="member-name-link">cooldown</a><wbr>(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the cooldown of the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> in ticks for the
@@ -115,8 +115,8 @@ loadScripts(document, 'script');</script>
  player.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setCooldown(org.spongepowered.api.item.ItemType,int)" class="member-name-link">setCooldown</a><wbr>(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type,
- int&nbsp;ticks)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setCooldown(org.spongepowered.api.item.ItemType,org.spongepowered.api.util.Ticks)" class="member-name-link">setCooldown</a><wbr>(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type,
+ <a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;ticks)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets the cooldown for the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> for the
  specified amount of ticks.</div>
@@ -152,7 +152,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="cooldown(org.spongepowered.api.item.ItemType)">
 <h3>cooldown</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalInt.html" title="class or interface in java.util" class="external-link">OptionalInt</a></span>&nbsp;<span class="element-name">cooldown</span><wbr><span class="parameters">(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type)</span></div>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;</span>&nbsp;<span class="element-name">cooldown</span><wbr><span class="parameters">(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type)</span></div>
 <div class="block">Gets the cooldown of the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> in ticks for the
  player, or empty if the the item type is currently not on cooldown.</div>
 <dl class="notes">
@@ -165,10 +165,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setCooldown(org.spongepowered.api.item.ItemType,int)">
+<section class="detail" id="setCooldown(org.spongepowered.api.item.ItemType,org.spongepowered.api.util.Ticks)">
 <h3>setCooldown</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">setCooldown</span><wbr><span class="parameters">(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type,
- int&nbsp;ticks)</span></div>
+ <a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;ticks)</span></div>
 <div class="block">Sets the cooldown for the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> for the
  specified amount of ticks.</div>
 <dl class="notes">
