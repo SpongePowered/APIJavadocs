@@ -145,7 +145,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a></code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cooldown(org.spongepowered.api.item.ItemType)">cooldown</a></span>&#8203;(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Gets the cooldown of the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> in ticks for the
@@ -179,8 +179,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCooldown(org.spongepowered.api.item.ItemType,int)">setCooldown</a></span>&#8203;(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type,
-           int&nbsp;ticks)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCooldown(org.spongepowered.api.item.ItemType,org.spongepowered.api.util.Ticks)">setCooldown</a></span>&#8203;(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type,
+           <a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;ticks)</code></th>
 <td class="colLast">
 <div class="block">Sets the cooldown for the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> for the
  specified amount of ticks.</div>
@@ -226,7 +226,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>cooldown</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a>&nbsp;cooldown&#8203;(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type)</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&nbsp;cooldown&#8203;(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type)</pre>
 <div class="block">Gets the cooldown of the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> in ticks for the
  player, or empty if the the item type is currently not on cooldown.</div>
 <dl>
@@ -238,14 +238,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="setCooldown(org.spongepowered.api.item.ItemType,int)">
+<a id="setCooldown(org.spongepowered.api.item.ItemType,org.spongepowered.api.util.Ticks)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setCooldown</h4>
 <pre class="methodSignature">boolean&nbsp;setCooldown&#8203;(<a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&nbsp;type,
-                    int&nbsp;ticks)</pre>
+                    <a href="../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;ticks)</pre>
 <div class="block">Sets the cooldown for the specified <a href="../../../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> for the
  specified amount of ticks.</div>
 <dl>
