@@ -2905,52 +2905,65 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VANISH">VANISH</a></span></code></th>
 <td class="colLast">
-<div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> is vanished.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a></div>
+</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VANISH_IGNORES_COLLISION">VANISH_IGNORES_COLLISION</a></span></code></th>
 <td class="colLast">
-<div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> ignores collision with other entities.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a></div>
+</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VANISH_PREVENTS_TARGETING">VANISH_PREVENTS_TARGETING</a></span></code></th>
 <td class="colLast">
-<div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> can be targeted for attack by another entity.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a></div>
+</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VANISH_STATE">VANISH_STATE</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="../effect/VanishState.html" title="interface in org.spongepowered.api.effect"><code>VanishState</code></a> of an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VEHICLE">VEHICLE</a></span></code></th>
 <td class="colLast">
 <div class="block">The vehicle an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> is riding.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3d.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3d</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VELOCITY">VELOCITY</a></span></code></th>
 <td class="colLast">
 <div class="block">The velocity of an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VIEW_DISTANCE">VIEW_DISTANCE</a></span></code></th>
 <td class="colLast">
 <div class="block">The client view distance of a <a href="../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/VillagerType.html" title="interface in org.spongepowered.api.data.type">VillagerType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VILLAGER_TYPE">VILLAGER_TYPE</a></span></code></th>
 <td class="colLast">
 <div class="block">The type of a <a href="../entity/living/trader/Villager.html" title="interface in org.spongepowered.api.entity.living.trader"><code>Villager</code></a> or <a href="../entity/living/monster/zombie/ZombieVillager.html" title="interface in org.spongepowered.api.entity.living.monster.zombie"><code>ZombieVillager</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WAIT_TIME">WAIT_TIME</a></span></code></th>
 <td class="colLast">
@@ -2958,21 +2971,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <a href="../entity/AreaEffectCloud.html" title="interface in org.spongepowered.api.entity"><code>AreaEffectCloud</code></a> will begin to apply its effect to entities.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WALKING_SPEED">WALKING_SPEED</a></span></code></th>
 <td class="colLast">
 <div class="block">The base speed at which a <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a> or <a href="../entity/living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> walks.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WILL_SHATTER">WILL_SHATTER</a></span></code></th>
 <td class="colLast">
 <div class="block">Whether a thrown <a href="../entity/projectile/EyeOfEnder.html" title="interface in org.spongepowered.api.entity.projectile"><code>EyeOfEnder</code></a> will shatter.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/WireAttachmentType.html" title="interface in org.spongepowered.api.data.type">WireAttachmentType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WIRE_ATTACHMENT_EAST">WIRE_ATTACHMENT_EAST</a></span></code></th>
 <td class="colLast">
@@ -2980,7 +2993,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  for its neighboring block to the <a href="../util/Direction.html#EAST"><code>Direction.EAST</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/WireAttachmentType.html" title="interface in org.spongepowered.api.data.type">WireAttachmentType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WIRE_ATTACHMENT_NORTH">WIRE_ATTACHMENT_NORTH</a></span></code></th>
 <td class="colLast">
@@ -2988,7 +3001,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  for its neighboring block to the <a href="../util/Direction.html#NORTH"><code>Direction.NORTH</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/WireAttachmentType.html" title="interface in org.spongepowered.api.data.type">WireAttachmentType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WIRE_ATTACHMENT_SOUTH">WIRE_ATTACHMENT_SOUTH</a></span></code></th>
 <td class="colLast">
@@ -2996,7 +3009,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  for its neighboring block to the <a href="../util/Direction.html#SOUTH"><code>Direction.SOUTH</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/WireAttachmentType.html" title="interface in org.spongepowered.api.data.type">WireAttachmentType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WIRE_ATTACHMENT_WEST">WIRE_ATTACHMENT_WEST</a></span></code></th>
 <td class="colLast">
@@ -3004,21 +3017,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  for its neighboring block to the <a href="../util/Direction.html#WEST"><code>Direction.WEST</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;<a href="../util/Direction.html" title="enum in org.spongepowered.api.util">Direction</a>,&#8203;<a href="type/WireAttachmentType.html" title="interface in org.spongepowered.api.data.type">WireAttachmentType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WIRE_ATTACHMENTS">WIRE_ATTACHMENTS</a></span></code></th>
 <td class="colLast">
 <div class="block">The <a href="type/WireAttachmentType.html" title="interface in org.spongepowered.api.data.type"><code>WireAttachmentType</code></a>s of a <a href="../block/BlockTypes.html#REDSTONE_WIRE"><code>BlockTypes.REDSTONE_WIRE</code></a> <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for its neighboring blocks.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/ListValue.html" title="interface in org.spongepowered.api.data.value">ListValue</a>&lt;<a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WITHER_TARGETS">WITHER_TARGETS</a></span></code></th>
 <td class="colLast">
 <div class="block">The entities targeted by the three <a href="../entity/living/monster/boss/Wither.html" title="interface in org.spongepowered.api.entity.living.monster.boss"><code>Wither</code></a> heads.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/living/animal/Sheep.html" title="interface in org.spongepowered.api.entity.living.animal">Sheep</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WOLOLO_TARGET">WOLOLO_TARGET</a></span></code></th>
 <td class="colLast">
@@ -5132,7 +5145,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> is currently invisible.
  This will only simply render the entity as vanished,
  but not prevent any entity updates being sent to clients.
- To fully "vanish" an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, use <a href="#VANISH"><code>VANISH</code></a>.</div>
+ To fully "vanish" an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a>.</div>
 </li>
 </ul>
 <a id="IS_IN_WATER">
@@ -7393,13 +7406,35 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  be reflected in an entitie's <a href="../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.</div>
 </li>
 </ul>
+<a id="VANISH_STATE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VANISH_STATE</h4>
+<pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a>&gt;&gt; VANISH_STATE</pre>
+<div class="block">The <a href="../effect/VanishState.html" title="interface in org.spongepowered.api.effect"><code>VanishState</code></a> of an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.
+
+ <p>The presence of a vanished entity will not be made known to a client;
+ no packets pertaining to this entity are sent. Client-side, this entity
+ will cease to exist. Server-side it may still be targeted by hostile
+ entities or collide with other entities.</p>
+
+ <p>Vanishing an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> ridden by other entities (see
+ <a href="#PASSENGERS"><code>PASSENGERS</code></a> will cause problems.</p></div>
+</li>
+</ul>
 <a id="VANISH">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>VANISH</h4>
-<pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt; VANISH</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt; VANISH</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a></div>
+</div>
 <div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> is vanished.
 
  <p>The presence of a vanished entity will not be made known to a client;
@@ -7417,7 +7452,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>VANISH_IGNORES_COLLISION</h4>
-<pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt; VANISH_IGNORES_COLLISION</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt; VANISH_IGNORES_COLLISION</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a></div>
+</div>
 <div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> ignores collision with other entities.
 
  <p>This state will be ignored if the <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> is not also
@@ -7430,7 +7469,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>VANISH_PREVENTS_TARGETING</h4>
-<pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt; VANISH_PREVENTS_TARGETING</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt; VANISH_PREVENTS_TARGETING</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">use <a href="#VANISH_STATE"><code>VANISH_STATE</code></a></div>
+</div>
 <div class="block">Whether an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> can be targeted for attack by another entity.
  This prevents neither <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a>s from attacking the entity nor
  will it be protected from untargeted damage like fire or explosions.

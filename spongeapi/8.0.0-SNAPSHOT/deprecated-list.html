@@ -112,24 +112,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/data/Keys.html#VANISH">org.spongepowered.api.data.Keys.VANISH</a></th>
+<td class="colLast">
+<div class="deprecationComment">use <a href="org/spongepowered/api/data/Keys.html#VANISH_STATE"><code>Keys.VANISH_STATE</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/data/Keys.html#VANISH_IGNORES_COLLISION">org.spongepowered.api.data.Keys.VANISH_IGNORES_COLLISION</a></th>
+<td class="colLast">
+<div class="deprecationComment">use <a href="org/spongepowered/api/data/Keys.html#VANISH_STATE"><code>Keys.VANISH_STATE</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/data/Keys.html#VANISH_PREVENTS_TARGETING">org.spongepowered.api.data.Keys.VANISH_PREVENTS_TARGETING</a></th>
+<td class="colLast">
+<div class="deprecationComment">use <a href="org/spongepowered/api/data/Keys.html#VANISH_STATE"><code>Keys.VANISH_STATE</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/event/EventContextKeys.html#LEAVES_DECAY">org.spongepowered.api.event.EventContextKeys.LEAVES_DECAY</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="org/spongepowered/api/block/transaction/BlockTransaction.html#operation()"><code>BlockTransaction.operation()</code></a> instead.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/event/EventContextKeys.html#LIQUID_BREAK">org.spongepowered.api.event.EventContextKeys.LIQUID_BREAK</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="org/spongepowered/api/block/transaction/BlockTransaction.html#operation()"><code>BlockTransaction.operation()</code></a> instead.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/event/EventContextKeys.html#LIQUID_FLOW">org.spongepowered.api.event.EventContextKeys.LIQUID_FLOW</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="org/spongepowered/api/block/transaction/BlockTransaction.html#operation()"><code>BlockTransaction.operation()</code></a> instead.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/event/EventContextKeys.html#LIQUID_MIX">org.spongepowered.api.event.EventContextKeys.LIQUID_MIX</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="org/spongepowered/api/block/transaction/BlockTransaction.html#operation()"><code>BlockTransaction.operation()</code></a> instead.</div>
@@ -151,6 +169,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/entity/Entity.html#vanish()">org.spongepowered.api.entity.Entity.vanish()</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="org/spongepowered/api/entity/Entity.html#vanishState()"><code>VanishState</code></a> instead</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/entity/Entity.html#vanishIgnoresCollision()">org.spongepowered.api.entity.Entity.vanishIgnoresCollision()</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="org/spongepowered/api/entity/Entity.html#vanishState()"><code>Entity.vanishState()</code></a> instead</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/entity/Entity.html#vanishPreventsTargeting()">org.spongepowered.api.entity.Entity.vanishPreventsTargeting()</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="org/spongepowered/api/entity/Entity.html#vanishState()"><code>Entity.vanishState()</code></a> instead</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/entity/living/player/User.html#vanish()">org.spongepowered.api.entity.living.player.User.vanish()</a></th>
+<td class="colLast"></td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/entity/living/player/User.html#vanishIgnoresCollision()">org.spongepowered.api.entity.living.player.User.vanishIgnoresCollision()</a></th>
+<td class="colLast"></td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/entity/living/player/User.html#vanishPreventsTargeting()">org.spongepowered.api.entity.living.player.User.vanishPreventsTargeting()</a></th>
+<td class="colLast"></td>
+</tr>
 <tr class="altColor">
 <th class="colDeprecatedItemName" scope="row"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#isSupportedBy(org.spongepowered.api.network.EngineConnection)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.isSupportedBy&#8203;(EngineConnection)</a></th>
 <td class="colLast">

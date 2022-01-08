@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":18,"i5":6,"i6":18,"i7":6,"i8":6,"i9":6,"i10":6,"i11":18,"i12":6,"i13":6,"i14":6,"i15":18,"i16":18,"i17":18,"i18":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":18,"i5":6,"i6":18,"i7":6,"i8":6,"i9":6,"i10":6,"i11":18,"i12":6,"i13":6,"i14":6,"i15":50,"i16":50,"i17":50,"i18":18,"i19":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -163,7 +163,7 @@ extends <a href="../../../data/DataHolder.Mutable.html" title="interface in org.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -281,24 +281,29 @@ extends <a href="../../../data/DataHolder.Mutable.html" title="interface in org.
 <td class="colFirst"><code>default <a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vanish()">vanish</a></span>()</code></th>
 <td class="colLast">
-<div class="block"><a href="../../../data/Keys.html#VANISH"><code>Keys.VANISH</code></a></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>default <a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vanishIgnoresCollision()">vanishIgnoresCollision</a></span>()</code></th>
 <td class="colLast">
-<div class="block"><a href="../../../data/Keys.html#VANISH_IGNORES_COLLISION"><code>Keys.VANISH_IGNORES_COLLISION</code></a></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>default <a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vanishPreventsTargeting()">vanishPreventsTargeting</a></span>()</code></th>
 <td class="colLast">
-<div class="block"><a href="../../../data/Keys.html#VANISH_PREVENTS_TARGETING"><code>Keys.VANISH_PREVENTS_TARGETING</code></a></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>default <a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="../../../effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vanishState()">vanishState</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#worldKey()">worldKey</a></span>()</code></th>
 <td class="colLast">
@@ -620,13 +625,24 @@ extends <a href="../../../data/DataHolder.Mutable.html" title="interface in org.
 </dl>
 </li>
 </ul>
+<a id="vanishState()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>vanishState</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="../../../effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a>&gt;&nbsp;vanishState()</pre>
+</li>
+</ul>
 <a id="vanish()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>vanish</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;vanish()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;vanish()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block"><a href="../../../data/Keys.html#VANISH"><code>Keys.VANISH</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -640,7 +656,9 @@ extends <a href="../../../data/DataHolder.Mutable.html" title="interface in org.
 <ul class="blockList">
 <li class="blockList">
 <h4>vanishIgnoresCollision</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;vanishIgnoresCollision()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;vanishIgnoresCollision()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block"><a href="../../../data/Keys.html#VANISH_IGNORES_COLLISION"><code>Keys.VANISH_IGNORES_COLLISION</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -654,7 +672,9 @@ extends <a href="../../../data/DataHolder.Mutable.html" title="interface in org.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>vanishPreventsTargeting</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;vanishPreventsTargeting()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+default&nbsp;<a href="../../../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;vanishPreventsTargeting()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block"><a href="../../../data/Keys.html#VANISH_PREVENTS_TARGETING"><code>Keys.VANISH_PREVENTS_TARGETING</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
