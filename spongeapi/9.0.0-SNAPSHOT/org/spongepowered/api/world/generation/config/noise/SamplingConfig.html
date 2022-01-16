@@ -74,6 +74,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">SamplingConfig</span></div>
+<div class="block">Specifies how noise is sampled.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -111,16 +112,24 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#xzFactor()" class="member-name-link">xzFactor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The noise smoothness in the horizontal axis.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#xzScale()" class="member-name-link">xzScale</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The noise scale on the x and z axis.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#yFactor()" class="member-name-link">yFactor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The noise smoothness in the vertical axis.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#yScale()" class="member-name-link">yScale</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The noise scale on the y axis.</div>
+</div>
 </div>
 </div>
 </div>
@@ -148,24 +157,45 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="xzScale()">
 <h3>xzScale</h3>
 <div class="member-signature"><span class="return-type">double</span>&nbsp;<span class="element-name">xzScale</span>()</div>
+<div class="block">The noise scale on the x and z axis. Higher values result in more intricate horizontal shapes.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the xz scale</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="xzFactor()">
 <h3>xzFactor</h3>
 <div class="member-signature"><span class="return-type">double</span>&nbsp;<span class="element-name">xzFactor</span>()</div>
+<div class="block">The noise smoothness in the horizontal axis.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the xz factor.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="yScale()">
 <h3>yScale</h3>
 <div class="member-signature"><span class="return-type">double</span>&nbsp;<span class="element-name">yScale</span>()</div>
+<div class="block">The noise scale on the y axis. Higher values result in more intricate vertical shapes.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the y scale</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="yFactor()">
 <h3>yFactor</h3>
 <div class="member-signature"><span class="return-type">double</span>&nbsp;<span class="element-name">yFactor</span>()</div>
+<div class="block">The noise smoothness in the vertical axis.
+ <p>The value can range from 0.001 to 1000.0</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the xz factor.</dd>
+</dl>
 </section>
 </li>
 </ul>

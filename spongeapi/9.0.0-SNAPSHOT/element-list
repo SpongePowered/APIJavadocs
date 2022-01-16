@@ -201,7 +201,6 @@ org.spongepowered.api.util.weighted
 org.spongepowered.api.world
 org.spongepowered.api.world.biome
 org.spongepowered.api.world.biome.provider
-org.spongepowered.api.world.biome.provider.multinoise
 org.spongepowered.api.world.border
 org.spongepowered.api.world.chunk
 org.spongepowered.api.world.client

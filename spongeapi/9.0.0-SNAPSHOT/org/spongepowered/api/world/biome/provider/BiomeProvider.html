@@ -83,6 +83,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BiomeProvider</span><span class="extends-implements">
 extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.world.biome">BiomeFinder</a></span></div>
+<div class="block">Provides available Biomes for world generation.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -114,37 +115,52 @@ extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="CheckerboardBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">CheckerboardBiomeConfig</a>&gt;<br><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#checkerboard(T)" class="member-name-link">checkerboard</a><wbr>(T&nbsp;config)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns a checkerboard-style biome provider based on a <a href="CheckerboardBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider"><code>CheckerboardBiomeConfig</code></a></div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#choices()" class="member-name-link">choices</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The list of biomes possible.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="EndStyleBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">EndStyleBiomeConfig</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#end()" class="member-name-link">end</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns the vanilla end biome provider.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="EndStyleBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">EndStyleBiomeConfig</a>&gt;<br><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#endStyle(T)" class="member-name-link">endStyle</a><wbr>(T&nbsp;config)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns a vanilla end-style biome provider based on a <a href="EndStyleBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider"><code>EndStyleBiomeConfig</code></a>.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#fixed(org.spongepowered.api.registry.RegistryReference)" class="member-name-link">fixed</a><wbr>(<a href="../../../registry/RegistryReference.html" title="interface in org.spongepowered.api.registry">RegistryReference</a>&lt;<a href="../Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>&gt;&nbsp;biome)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="LayeredBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig</a>&gt;<br><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#layered(T)" class="member-name-link">layered</a><wbr>(T&nbsp;config)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;<br><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#multiNoise(T)" class="member-name-link">multiNoise</a><wbr>(T&nbsp;config)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns a fixed biome provider base on a single <a href="../Biome.html" title="interface in org.spongepowered.api.world.biome"><code>Biome</code></a></div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;<br><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#multiNoise(T)" class="member-name-link">multiNoise</a><wbr>(T&nbsp;config)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns a multi-noise biome provider based on a <a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider"><code>MultiNoiseBiomeConfig</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#nether()" class="member-name-link">nether</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns the vanilla nether biome provider.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#nether()" class="member-name-link">nether</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="LayeredBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#overworld()" class="member-name-link">overworld</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="../Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#within(int,int,int,int)" class="member-name-link">within</a><wbr>(int&nbsp;x,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#overworld()" class="member-name-link">overworld</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Returns the vanilla overworld biome provider.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="../Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#within(int,int,int,int)" class="member-name-link">within</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z,
  int&nbsp;size)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The set of biomes within an area.</div>
+</div>
 </div>
 </div>
 </div>
@@ -163,16 +179,14 @@ extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="layered(T)">
-<h3 id="layered(org.spongepowered.api.world.biome.provider.LayeredBiomeConfig)">layered</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="LayeredBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig</a>&gt;</span>
-<span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</span>&nbsp;<span class="element-name">layered</span><wbr><span class="parameters">(T&nbsp;config)</span></div>
-</section>
-</li>
-<li>
 <section class="detail" id="overworld()">
 <h3>overworld</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="LayeredBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">LayeredBiomeConfig</a>&gt;</span>&nbsp;<span class="element-name">overworld</span>()</div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;</span>&nbsp;<span class="element-name">overworld</span>()</div>
+<div class="block">Returns the vanilla overworld biome provider.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the vanilla overworld biome provider.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -180,12 +194,26 @@ extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.
 <h3 id="multiNoise(org.spongepowered.api.world.biome.provider.MultiNoiseBiomeConfig)">multiNoise</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;</span>
 <span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</span>&nbsp;<span class="element-name">multiNoise</span><wbr><span class="parameters">(T&nbsp;config)</span></div>
+<div class="block">Returns a multi-noise biome provider based on a <a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider"><code>MultiNoiseBiomeConfig</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - the configuration type</dd>
+<dt>Parameters:</dt>
+<dd><code>config</code> - the configuration</dd>
+<dt>Returns:</dt>
+<dd>the configured BiomeProvider</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="nether()">
 <h3>nether</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="MultiNoiseBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">MultiNoiseBiomeConfig</a>&gt;</span>&nbsp;<span class="element-name">nether</span>()</div>
+<div class="block">Returns the vanilla nether biome provider.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the vanilla nether biome provider.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -193,12 +221,26 @@ extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.
 <h3 id="endStyle(org.spongepowered.api.world.biome.provider.EndStyleBiomeConfig)">endStyle</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="EndStyleBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">EndStyleBiomeConfig</a>&gt;</span>
 <span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</span>&nbsp;<span class="element-name">endStyle</span><wbr><span class="parameters">(T&nbsp;config)</span></div>
+<div class="block">Returns a vanilla end-style biome provider based on a <a href="EndStyleBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider"><code>EndStyleBiomeConfig</code></a>.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - the configuration type</dd>
+<dt>Parameters:</dt>
+<dd><code>config</code> - the configuration</dd>
+<dt>Returns:</dt>
+<dd>the configured BiomeProvider</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="end()">
 <h3>end</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;<a href="EndStyleBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">EndStyleBiomeConfig</a>&gt;</span>&nbsp;<span class="element-name">end</span>()</div>
+<div class="block">Returns the vanilla end biome provider.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the vanilla end biome provider.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -206,18 +248,39 @@ extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.
 <h3 id="checkerboard(org.spongepowered.api.world.biome.provider.CheckerboardBiomeConfig)">checkerboard</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="CheckerboardBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider">CheckerboardBiomeConfig</a>&gt;</span>
 <span class="return-type"><a href="ConfigurableBiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">ConfigurableBiomeProvider</a>&lt;T&gt;</span>&nbsp;<span class="element-name">checkerboard</span><wbr><span class="parameters">(T&nbsp;config)</span></div>
+<div class="block">Returns a checkerboard-style biome provider based on a <a href="CheckerboardBiomeConfig.html" title="interface in org.spongepowered.api.world.biome.provider"><code>CheckerboardBiomeConfig</code></a></div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - the configuration type</dd>
+<dt>Parameters:</dt>
+<dd><code>config</code> - the configuration</dd>
+<dt>Returns:</dt>
+<dd>the configured BiomeProvider</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="fixed(org.spongepowered.api.registry.RegistryReference)">
 <h3>fixed</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a></span>&nbsp;<span class="element-name">fixed</span><wbr><span class="parameters">(<a href="../../../registry/RegistryReference.html" title="interface in org.spongepowered.api.registry">RegistryReference</a>&lt;<a href="../Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>&gt;&nbsp;biome)</span></div>
+<div class="block">Returns a fixed biome provider base on a single <a href="../Biome.html" title="interface in org.spongepowered.api.world.biome"><code>Biome</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>biome</code> - the biome</dd>
+<dt>Returns:</dt>
+<dd>the configured BiomeProvider</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="choices()">
 <h3>choices</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Biome.html" title="interface in org.spongepowered.api.world.biome">Biome</a>&gt;</span>&nbsp;<span class="element-name">choices</span>()</div>
+<div class="block">The list of biomes possible.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the list of biomes possible.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -227,6 +290,16 @@ extends <a href="../BiomeFinder.html" title="interface in org.spongepowered.api.
  int&nbsp;y,
  int&nbsp;z,
  int&nbsp;size)</span></div>
+<div class="block">The set of biomes within an area.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - the center x coordinate</dd>
+<dd><code>y</code> - the center y coordinate</dd>
+<dd><code>z</code> - the center z coordinate</dd>
+<dd><code>size</code> - the square area radius</dd>
+<dt>Returns:</dt>
+<dd>the set of biomes.</dd>
+</dl>
 </section>
 </li>
 </ul>

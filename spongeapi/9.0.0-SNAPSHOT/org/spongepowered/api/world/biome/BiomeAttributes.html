@@ -74,6 +74,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BiomeAttributes</span></div>
+<div class="block">Attributes with which biomes are picked for during world generation.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -103,34 +104,46 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>float</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#altitude()" class="member-name-link">altitude</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#continentalness()" class="member-name-link">continentalness</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the altitude.</div>
+<div class="block">The continentalness.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>float</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#depth()" class="member-name-link">depth</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The depth.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#erosion()" class="member-name-link">erosion</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">The erosion.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#humidity()" class="member-name-link">humidity</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Get the humidity.</div>
+<div class="block">The humidity range.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BiomeAttributes.html" title="interface in org.spongepowered.api.world.biome">BiomeAttributes</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(float,float,float,float,float)" class="member-name-link">of</a><wbr>(float&nbsp;temperature,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(float,float,float,float,float,float,float)" class="member-name-link">of</a><wbr>(float&nbsp;temperature,
  float&nbsp;humidity,
- float&nbsp;altitude,
+ float&nbsp;continentalness,
+ float&nbsp;erosion,
+ float&nbsp;depth,
  float&nbsp;weirdness,
  float&nbsp;offset)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>float</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#offset()" class="member-name-link">offset</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the offset.</div>
+<div class="block">The offset.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>float</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#temperature()" class="member-name-link">temperature</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the temperature.</div>
+<div class="block">The temperature range.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>float</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#weirdness()" class="member-name-link">weirdness</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the weirdness.</div>
@@ -150,11 +163,13 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="of(float,float,float,float,float)">
+<section class="detail" id="of(float,float,float,float,float,float,float)">
 <h3>of</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="BiomeAttributes.html" title="interface in org.spongepowered.api.world.biome">BiomeAttributes</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(float&nbsp;temperature,
  float&nbsp;humidity,
- float&nbsp;altitude,
+ float&nbsp;continentalness,
+ float&nbsp;erosion,
+ float&nbsp;depth,
  float&nbsp;weirdness,
  float&nbsp;offset)</span></div>
 </section>
@@ -162,8 +177,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="temperature()">
 <h3>temperature</h3>
-<div class="member-signature"><span class="return-type">float</span>&nbsp;<span class="element-name">temperature</span>()</div>
-<div class="block">Gets the temperature.
+<div class="member-signature"><span class="return-type"><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">temperature</span>()</div>
+<div class="block">The temperature range.
 
  <p>In Vanilla Minecraft, this is capped between <code>-2</code> to <code>2</code>.</p></div>
 <dl class="notes">
@@ -175,8 +190,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="humidity()">
 <h3>humidity</h3>
-<div class="member-signature"><span class="return-type">float</span>&nbsp;<span class="element-name">humidity</span>()</div>
-<div class="block">Get the humidity.
+<div class="member-signature"><span class="return-type"><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">humidity</span>()</div>
+<div class="block">The humidity range.
 
  <p>In Vanilla Minecraft, this is capped between <code>-2</code> to <code>2</code>.</p></div>
 <dl class="notes">
@@ -186,22 +201,44 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="altitude()">
-<h3>altitude</h3>
-<div class="member-signature"><span class="return-type">float</span>&nbsp;<span class="element-name">altitude</span>()</div>
-<div class="block">Gets the altitude.
-
- <p>In Vanilla Minecraft, this is capped between <code>-2</code> to <code>2</code>.</p></div>
+<section class="detail" id="continentalness()">
+<h3>continentalness</h3>
+<div class="member-signature"><span class="return-type"><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">continentalness</span>()</div>
+<div class="block">The continentalness.
+ <p>Higher value when more inland. For low values oceans may generate.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>altitude</dd>
+<dd>continentalness</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="erosion()">
+<h3>erosion</h3>
+<div class="member-signature"><span class="return-type"><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">erosion</span>()</div>
+<div class="block">The erosion.
+ <p>Higher values result in flatter areas, low values result in mountainous areas.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>erosion</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="depth()">
+<h3>depth</h3>
+<div class="member-signature"><span class="return-type"><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">depth</span>()</div>
+<div class="block">The depth.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the depth.</dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="weirdness()">
 <h3>weirdness</h3>
-<div class="member-signature"><span class="return-type">float</span>&nbsp;<span class="element-name">weirdness</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="../../util/Range.html" title="interface in org.spongepowered.api.util">Range</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">weirdness</span>()</div>
 <div class="block">Gets the weirdness.
 
  <p>In Vanilla Minecraft, this is capped between <code>-2</code> to <code>2</code>.</p></div>
@@ -215,7 +252,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="offset()">
 <h3>offset</h3>
 <div class="member-signature"><span class="return-type">float</span>&nbsp;<span class="element-name">offset</span>()</div>
-<div class="block">Gets the offset.
+<div class="block">The offset.
 
  <p>In Vanilla Minecraft, this is capped between <code>0</code> to <code>1</code>.</p></div>
 <dl class="notes">
