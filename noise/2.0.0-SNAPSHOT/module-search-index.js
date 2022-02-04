@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"org.spongepowered.noise"}]
+moduleSearchIndex = [{"l":"org.spongepowered.noise"}];updateSearchResults();
