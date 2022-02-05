@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":6,"i3":6,"i4":18,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":18,"i16":6,"i17":6,"i18":18,"i19":6};
+var data = {"i0":6,"i1":18,"i2":18,"i3":6,"i4":6,"i5":18,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":18,"i17":6,"i18":6,"i19":18,"i20":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -236,13 +236,20 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunkAtBlock(org.spongepowered.math.vector.Vector3i)">chunkAtBlock</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;blockPosition)</code></th>
+<td class="colLast">
+<div class="block">Gets the loaded chunk at the given block coordinate position.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="ChunkManager.html" title="interface in org.spongepowered.api.world.server">ChunkManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunkManager()">chunkManager</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="ChunkManager.html" title="interface in org.spongepowered.api.world.server"><code>ChunkManager</code></a> for this world.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSnapshot(int,int,int)">createSnapshot</a></span>&#8203;(int&nbsp;x,
               int&nbsp;y,
@@ -251,14 +258,14 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <div class="block">Gets a snapshot of this block at the current point in time.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSnapshot(org.spongepowered.math.vector.Vector3i)">createSnapshot</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position)</code></th>
 <td class="colLast">
 <div class="block">Gets a snapshot of this block at the current point in time.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#directory()">directory</a></span>()</code></th>
 <td class="colLast">
@@ -266,52 +273,52 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
  is being stored.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../Server.html" title="interface in org.spongepowered.api">Server</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#engine()">engine</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> that simulates this world.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../generation/ChunkGenerator.html" title="interface in org.spongepowered.api.world.generation">ChunkGenerator</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generator()">generator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#key()">key</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#players()">players</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets an unmodifiable collection of <a href="../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>players</code></a> currently in this world.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#properties()">properties</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../storage/WorldProperties.html" title="interface in org.spongepowered.api.world.storage"><code>properties</code></a>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid">Raid</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#raidAt(org.spongepowered.math.vector.Vector3i)">raidAt</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;blockPosition)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid"><code>Raid</code></a> occurring at a position in the world.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid">Raid</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#raids()">raids</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all <a href="../../raid/Raid.html" title="interface in org.spongepowered.api.raid"><code>Raid</code></a>s occuring in this <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>ServerWorld</code></a>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreSnapshot(int,int,int,org.spongepowered.api.block.BlockSnapshot,boolean,org.spongepowered.api.world.BlockChangeFlag)">restoreSnapshot</a></span>&#8203;(int&nbsp;x,
                int&nbsp;y,
@@ -323,7 +330,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <div class="block">Restores the <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> at the given position.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreSnapshot(org.spongepowered.api.block.BlockSnapshot,boolean,org.spongepowered.api.world.BlockChangeFlag)">restoreSnapshot</a></span>&#8203;(<a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;snapshot,
                boolean&nbsp;force,
@@ -333,7 +340,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
  stored within the snapshot.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreSnapshot(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.block.BlockSnapshot,boolean,org.spongepowered.api.world.BlockChangeFlag)">restoreSnapshot</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
                <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;snapshot,
@@ -343,28 +350,28 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <div class="block">Restores the <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> at the given position.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#save()">save</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Instructs the world to save all data.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#triggerExplosion(org.spongepowered.api.world.explosion.Explosion)">triggerExplosion</a></span>&#8203;(<a href="../explosion/Explosion.html" title="interface in org.spongepowered.api.world.explosion">Explosion</a>&nbsp;explosion)</code></th>
 <td class="colLast">
 <div class="block">Causes an <a href="../explosion/Explosion.html" title="interface in org.spongepowered.api.world.explosion"><code>Explosion</code></a> in a world.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uniqueId()">uniqueId</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the unique ID for this object.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unloadChunk(org.spongepowered.api.world.chunk.WorldChunk)">unloadChunk</a></span>&#8203;(<a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&nbsp;chunk)</code></th>
 <td class="colLast">
@@ -629,7 +636,7 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.spongepowered.api.world.<a href="../World.html" title="interface in org.spongepowered.api.world">World</a></h3>
-<code><a href="../World.html#audiences()">audiences</a>, <a href="../World.html#chunk(int,int,int)">chunk</a>, <a href="../World.html#chunk(org.spongepowered.math.vector.Vector3i)">chunk</a>, <a href="../World.html#chunkAtBlock(org.spongepowered.math.vector.Vector3i)">chunkAtBlock</a>, <a href="../World.html#closestPlayer(int,int,int,double)">closestPlayer</a>, <a href="../World.html#closestPlayer(int,int,int,double,java.util.function.Predicate)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.api.entity.Entity,double)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.api.entity.Entity,double,java.util.function.Predicate)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.math.vector.Vector3i,double)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.math.vector.Vector3i,double,java.util.function.Predicate)">closestPlayer</a>, <a href="../World.html#isLoaded()">isLoaded</a>, <a href="../World.html#loadChunk(int,int,int,boolean)">loadChunk</a>, <a href="../World.html#loadChunk(org.spongepowered.math.vector.Vector3i,boolean)">loadChunk</a>, <a href="../World.html#loadedChunks()">loadedChunks</a>, <a href="../World.html#world()">world</a></code></li>
+<code><a href="../World.html#audiences()">audiences</a>, <a href="../World.html#chunk(int,int,int)">chunk</a>, <a href="../World.html#chunk(org.spongepowered.math.vector.Vector3i)">chunk</a>, <a href="../World.html#closestPlayer(int,int,int,double)">closestPlayer</a>, <a href="../World.html#closestPlayer(int,int,int,double,java.util.function.Predicate)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.api.entity.Entity,double)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.api.entity.Entity,double,java.util.function.Predicate)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.math.vector.Vector3i,double)">closestPlayer</a>, <a href="../World.html#closestPlayer(org.spongepowered.math.vector.Vector3i,double,java.util.function.Predicate)">closestPlayer</a>, <a href="../World.html#isLoaded()">isLoaded</a>, <a href="../World.html#loadChunk(int,int,int,boolean)">loadChunk</a>, <a href="../World.html#loadChunk(org.spongepowered.math.vector.Vector3i,boolean)">loadChunk</a>, <a href="../World.html#loadedChunks()">loadedChunks</a>, <a href="../World.html#world()">world</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.world.WorldLike">
@@ -737,6 +744,35 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <dd>The unique id</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../util/Identifiable.html#uniqueId()"><code>Identifiable.uniqueId()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="chunkAtBlock(org.spongepowered.math.vector.Vector3i)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chunkAtBlock</h4>
+<pre class="methodSignature">default&nbsp;<a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&nbsp;chunkAtBlock&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;blockPosition)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../World.html#chunkAtBlock(org.spongepowered.math.vector.Vector3i)">World</a></code></span></div>
+<div class="block">Gets the loaded chunk at the given block coordinate position.
+ This gets a guaranteed <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> at the desired block position; however,
+ the <a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>WorldChunk</code></a> instance may be <a href="../chunk/Chunk.html#isEmpty()"><code>empty</code></a>, and
+ likewise, may not be generated, valid, pre-existing. It is important to
+ check for these cases prior to attempting to modify the chunk.
+
+ <p>Note that this is still different from <a href="../World.html#chunk(org.spongepowered.math.vector.Vector3i)"><code>World.chunk(Vector3i)</code></a>
+ due to it being a relative block position which can vary depending on
+ implementation and other mods installed.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../volume/game/ChunkVolume.html#chunkAtBlock(org.spongepowered.math.vector.Vector3i)">chunkAtBlock</a></code>&nbsp;in interface&nbsp;<code><a href="../volume/game/ChunkVolume.html" title="interface in org.spongepowered.api.world.volume.game">ChunkVolume</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../World.html#chunkAtBlock(org.spongepowered.math.vector.Vector3i)">chunkAtBlock</a></code>&nbsp;in interface&nbsp;<code><a href="../World.html" title="interface in org.spongepowered.api.world">World</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>,&#8203;<a href="ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>blockPosition</code> - The block position to be transformed for relative chunk position</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The available chunk at that position</dd>
 </dl>
 </li>
 </ul>
