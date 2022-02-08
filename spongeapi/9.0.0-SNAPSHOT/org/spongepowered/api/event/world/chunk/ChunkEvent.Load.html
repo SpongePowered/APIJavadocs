@@ -83,7 +83,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChunkEvent.Load</span><span class="extends-implements">
 extends <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></span></div>
-<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is done loading.</div>
+<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is loaded. This can be called
+ outside the <a href="../../../world/WorldLike.html#engine()"><code>main</code></a> <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html" title="class or interface in java.lang" class="external-link"><code>Thread</code></a>. It is NOT safe
+ to perform modifications to the <a href="../../../world/World.html" title="interface in org.spongepowered.api.world"><code>World</code></a> or via
+ <a href="../../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a> as this could
+ result in a deadlock.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
