@@ -90,7 +90,7 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.Module)" class="member-name-link">Sphere</a><wbr>(<a href="../module/Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;module)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">Sphere</a><wbr>(<a href="../module/NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;module)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Constructor</div>
 </div>
@@ -108,19 +108,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../module/Module.html" title="class in org.spongepowered.noise.module">Module</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getModule()" class="member-name-link">getModule</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the noise module that is used to generate the output values.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getValue(double,double)" class="member-name-link">getValue</a><wbr>(double&nbsp;lat,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#get(double,double)" class="member-name-link">get</a><wbr>(double&nbsp;lat,
  double&nbsp;lon)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the output value from the noise module given the (latitude, longitude) coordinates of the specified input value located on the surface of the sphere.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../module/NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#module()" class="member-name-link">module</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the noise module that is used to generate the output values.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setModule(org.spongepowered.noise.module.Module)" class="member-name-link">setModule</a><wbr>(<a href="../module/Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;module)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setModule(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">setModule</a><wbr>(<a href="../module/NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;module)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the noise module that is used to generate the output values.</div>
 </div>
@@ -142,9 +142,9 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.Module)">
+<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.NoiseModule)">
 <h3>Sphere</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Sphere</span><wbr><span class="parameters">(<a href="../module/Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;module)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Sphere</span><wbr><span class="parameters">(<a href="../module/NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;module)</span></div>
 <div class="block">Constructor</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -161,16 +161,20 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getModule()">
-<h3>getModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../module/Module.html" title="class in org.spongepowered.noise.module">Module</a></span>&nbsp;<span class="element-name">getModule</span>()</div>
+<section class="detail" id="module()">
+<h3>module</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../module/NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span>&nbsp;<span class="element-name">module</span>()</div>
 <div class="block">Returns the noise module that is used to generate the output values.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the module used to generate output values</dd>
+</dl>
 </section>
 </li>
 <li>
-<section class="detail" id="setModule(org.spongepowered.noise.module.Module)">
+<section class="detail" id="setModule(org.spongepowered.noise.module.NoiseModule)">
 <h3>setModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setModule</span><wbr><span class="parameters">(<a href="../module/Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;module)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setModule</span><wbr><span class="parameters">(<a href="../module/NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;module)</span></div>
 <div class="block">Sets the noise module that is used to generate the output values.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -181,9 +185,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getValue(double,double)">
-<h3>getValue</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getValue</span><wbr><span class="parameters">(double&nbsp;lat,
+<section class="detail" id="get(double,double)">
+<h3>get</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">get</span><wbr><span class="parameters">(double&nbsp;lat,
  double&nbsp;lon)</span></div>
 <div class="block">Returns the output value from the noise module given the (latitude, longitude) coordinates of the specified input value located on the surface of the sphere.</div>
 <dl class="notes">

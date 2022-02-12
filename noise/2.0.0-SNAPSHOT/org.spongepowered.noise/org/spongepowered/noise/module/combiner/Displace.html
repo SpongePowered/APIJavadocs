@@ -72,14 +72,14 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Displace" class="title">Class Displace</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance"><a href="../Module.html" title="class in org.spongepowered.noise.module">org.spongepowered.noise.module.Module</a>
+<div class="inheritance"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">org.spongepowered.noise.module.NoiseModule</a>
 <div class="inheritance">org.spongepowered.noise.module.combiner.Displace</div>
 </div>
 </div>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Displace</span>
-<span class="extends-implements">extends <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span></div>
+<span class="extends-implements">extends <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span></div>
 <div class="block">Noise module that uses three source modules to displace each coordinate of
  the input value before returning the output value from a source module.
 
@@ -99,7 +99,7 @@ loadScripts(document, 'script');</script>
      input value.</dd>
  </dl>
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method modifies the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method modifies the
  <code>(x, y, z)</code> coordinates of the input value using the output values from
  the three displacement modules before retrieving the output value from the
  source module.</p>
@@ -116,8 +116,8 @@ loadScripts(document, 'script');</script>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-org.spongepowered.noise.module.Module">Fields inherited from class&nbsp;org.spongepowered.noise.module.<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></h3>
-<code><a href="../Module.html#sourceModule">sourceModule</a></code></div>
+<h3 id="fields-inherited-from-class-org.spongepowered.noise.module.NoiseModule">Fields inherited from class&nbsp;org.spongepowered.noise.module.<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></h3>
+<code><a href="../NoiseModule.html#sourceModule">sourceModule</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -130,10 +130,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">Displace</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module)" class="member-name-link">Displace</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;source,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;xDisplace,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;yDisplace,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;zDisplace)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule)" class="member-name-link">Displace</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;source,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;xDisplace,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;yDisplace,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;zDisplace)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Create a new Displace module with the source modules pre-configured.</div>
 </div>
@@ -152,56 +152,56 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getValue(double,double,double)" class="member-name-link">getValue</a><wbr>(double&nbsp;x,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#get(double,double,double)" class="member-name-link">get</a><wbr>(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Generates an output value given the coordinates of the specified input
  value.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getXDisplaceModule()" class="member-name-link">getXDisplaceModule</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDisplaceModules(org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule)" class="member-name-link">setDisplaceModules</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;x,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;y,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;z)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Set the <code>x</code>, <code>y</code>, and <code>z</code> displacement modules.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setXDisplaceModule(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">setXDisplaceModule</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;x)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the <code>x</code> displacement module.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setYDisplaceModule(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">setYDisplaceModule</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;y)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the <code>y</code> displacement module.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZDisplaceModule(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">setZDisplaceModule</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;z)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the <code>z</code> displacement module.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#xDisplaceModule()" class="member-name-link">xDisplaceModule</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the <code>x</code> displacement module.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getYDisplaceModule()" class="member-name-link">getYDisplaceModule</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#yDisplaceModule()" class="member-name-link">yDisplaceModule</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the <code>y</code> displacement module.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getZDisplaceModule()" class="member-name-link">getZDisplaceModule</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#zDisplaceModule()" class="member-name-link">zDisplaceModule</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the <code>z</code> displacement module.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDisplaceModules(org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module)" class="member-name-link">setDisplaceModules</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;x,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;y,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;z)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Set the <code>x</code>, <code>y</code>, and <code>z</code> displacement modules.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setXDisplaceModule(org.spongepowered.noise.module.Module)" class="member-name-link">setXDisplaceModule</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;x)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the <code>x</code> displacement module.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setYDisplaceModule(org.spongepowered.noise.module.Module)" class="member-name-link">setYDisplaceModule</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;y)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the <code>y</code> displacement module.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZDisplaceModule(org.spongepowered.noise.module.Module)" class="member-name-link">setZDisplaceModule</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;z)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the <code>z</code> displacement module.</div>
 </div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.spongepowered.noise.module.Module">Methods inherited from class&nbsp;org.spongepowered.noise.module.<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></h3>
-<code><a href="../Module.html#getSourceModule(int)">getSourceModule</a>, <a href="../Module.html#getSourceModuleCount()">getSourceModuleCount</a>, <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)">setSourceModule</a></code></div>
+<h3 id="methods-inherited-from-class-org.spongepowered.noise.module.NoiseModule">Methods inherited from class&nbsp;org.spongepowered.noise.module.<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></h3>
+<code><a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)">setSourceModule</a>, <a href="../NoiseModule.html#sourceModule(int)">sourceModule</a>, <a href="../NoiseModule.html#sourceModuleCount()">sourceModuleCount</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -223,12 +223,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module)">
+<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule)">
 <h3>Displace</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Displace</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;source,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;xDisplace,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;yDisplace,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;zDisplace)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Displace</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;source,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;xDisplace,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;yDisplace,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;zDisplace)</span></div>
 <div class="block">Create a new Displace module with the source modules pre-configured.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -248,12 +248,12 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getXDisplaceModule()">
-<h3>getXDisplaceModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span>&nbsp;<span class="element-name">getXDisplaceModule</span>()</div>
+<section class="detail" id="xDisplaceModule()">
+<h3>xDisplaceModule</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span>&nbsp;<span class="element-name">xDisplaceModule</span>()</div>
 <div class="block">Gets the <code>x</code> displacement module.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from this displacement module to
  the <code>x</code> coordinate of the input value before returning the output
  value from the source module.</p></div>
@@ -266,12 +266,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setXDisplaceModule(org.spongepowered.noise.module.Module)">
+<section class="detail" id="setXDisplaceModule(org.spongepowered.noise.module.NoiseModule)">
 <h3>setXDisplaceModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setXDisplaceModule</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;x)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setXDisplaceModule</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;x)</span></div>
 <div class="block">Sets the <code>x</code> displacement module.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from this displacement module to
  the <code>x</code> coordinate of the input value before returning the output
  value from the source module.</p>
@@ -279,7 +279,7 @@ loadScripts(document, 'script');</script>
  <p>This method assigns an index value of <code>1</code> to the <code>x</code>
  displacement module. Passing the displacement module to this method
  produces the same results as passing the displacement module to the
- <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method while assigning it an index
+ <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method while assigning it an index
  value of <code>1</code>.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -288,12 +288,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getYDisplaceModule()">
-<h3>getYDisplaceModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span>&nbsp;<span class="element-name">getYDisplaceModule</span>()</div>
+<section class="detail" id="yDisplaceModule()">
+<h3>yDisplaceModule</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span>&nbsp;<span class="element-name">yDisplaceModule</span>()</div>
 <div class="block">Gets the <code>y</code> displacement module.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from this displacement module to
  the <code>y</code> coordinate of the input value before returning the output
  value from the source module.</p></div>
@@ -306,12 +306,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setYDisplaceModule(org.spongepowered.noise.module.Module)">
+<section class="detail" id="setYDisplaceModule(org.spongepowered.noise.module.NoiseModule)">
 <h3>setYDisplaceModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setYDisplaceModule</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;y)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setYDisplaceModule</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;y)</span></div>
 <div class="block">Sets the <code>y</code> displacement module.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from this displacement module to
  the <code>y</code> coordinate of the input value before returning the output
  value from the source module.</p>
@@ -319,7 +319,7 @@ loadScripts(document, 'script');</script>
  <p>This method assigns an index value of <code>2</code> to the <code>y</code>
  displacement module. Passing the displacement module to this method
  produces the same results as passing the displacement module to the
- <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method while assigning it an index
+ <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method while assigning it an index
  value of <code>2</code>.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -328,12 +328,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getZDisplaceModule()">
-<h3>getZDisplaceModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span>&nbsp;<span class="element-name">getZDisplaceModule</span>()</div>
+<section class="detail" id="zDisplaceModule()">
+<h3>zDisplaceModule</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span>&nbsp;<span class="element-name">zDisplaceModule</span>()</div>
 <div class="block">Gets the <code>z</code> displacement module.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from this displacement module to
  the <code>z</code> coordinate of the input value before returning the output
  value from the source module.</p></div>
@@ -346,12 +346,12 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setZDisplaceModule(org.spongepowered.noise.module.Module)">
+<section class="detail" id="setZDisplaceModule(org.spongepowered.noise.module.NoiseModule)">
 <h3>setZDisplaceModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setZDisplaceModule</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;z)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setZDisplaceModule</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;z)</span></div>
 <div class="block">Sets the <code>z</code> displacement module.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from this displacement module to
  the <code>z</code> coordinate of the input value before returning the output
  value from the source module.</p>
@@ -359,7 +359,7 @@ loadScripts(document, 'script');</script>
  <p>This method assigns an index value of <code>3</code> to the <code>z</code>
  displacement module. Passing the displacement module to this method
  produces the same results as passing the displacement module to the
- <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method while assigning it an index
+ <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method while assigning it an index
  value of <code>3</code>.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -368,14 +368,14 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setDisplaceModules(org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module)">
+<section class="detail" id="setDisplaceModules(org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule)">
 <h3>setDisplaceModules</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setDisplaceModules</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;x,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;y,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;z)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setDisplaceModules</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;x,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;y,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;z)</span></div>
 <div class="block">Set the <code>x</code>, <code>y</code>, and <code>z</code> displacement modules.
 
- <p>The <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method displaces the
+ <p>The <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method displaces the
  input value by adding the output value from each of the displacement
  modules to the corresponding coordinates of the input value before
  returning the output value from the source module.</p>
@@ -393,25 +393,25 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getValue(double,double,double)">
-<h3>getValue</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getValue</span><wbr><span class="parameters">(double&nbsp;x,
+<section class="detail" id="get(double,double,double)">
+<h3>get</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">get</span><wbr><span class="parameters">(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../Module.html#getValue(double,double,double)">Module</a></code></span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../NoiseModule.html#get(double,double,double)">NoiseModule</a></code></span></div>
 <div class="block">Generates an output value given the coordinates of the specified input
  value.
 
  <p>All source modules required by this module must have been connected
- with the <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method. If these source
+ with the <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method. If these source
  modules are not connected, this method will throw
  a <a href="../../exception/NoModuleException.html" title="class in org.spongepowered.noise.exception"><code>NoModuleException</code></a>.</p>
 
  <p>To determine the number of source modules required by this noise
- module, call the <a href="../Module.html#getSourceModuleCount()"><code>Module.getSourceModuleCount()</code></a> method.</p></div>
+ module, call the <a href="../NoiseModule.html#sourceModuleCount()"><code>NoiseModule.sourceModuleCount()</code></a> method.</p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../Module.html#getValue(double,double,double)">getValue</a></code>&nbsp;in class&nbsp;<code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></dd>
+<dd><code><a href="../NoiseModule.html#get(double,double,double)">get</a></code>&nbsp;in class&nbsp;<code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>x</code> - the <code>x</code> coordinate of the input value</dd>
 <dd><code>y</code> - the <code>y</code> coordinate of the input value</dd>

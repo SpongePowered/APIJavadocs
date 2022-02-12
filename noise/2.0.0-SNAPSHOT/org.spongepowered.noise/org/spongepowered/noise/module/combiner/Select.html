@@ -72,14 +72,14 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Select" class="title">Class Select</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance"><a href="../Module.html" title="class in org.spongepowered.noise.module">org.spongepowered.noise.module.Module</a>
+<div class="inheritance"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">org.spongepowered.noise.module.NoiseModule</a>
 <div class="inheritance">org.spongepowered.noise.module.combiner.Select</div>
 </div>
 </div>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Select</span>
-<span class="extends-implements">extends <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span></div>
+<span class="extends-implements">extends <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span></div>
 <div class="block">Noise module that outputs the value selected from one of two source modules
  chosen by the output value from a control module.
 
@@ -102,8 +102,8 @@ loadScripts(document, 'script');</script>
  <a href="#setBounds(double,double)"><code>setBounds(double, double)</code></a> method.</p>
 
  <p>An application can pass the control module to the
- <a href="#setControlModule(org.spongepowered.noise.module.Module)"><code>setControlModule(Module)</code></a> method instead of the
- <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a>. This may make the application code
+ <a href="#setControlModule(org.spongepowered.noise.module.NoiseModule)"><code>setControlModule(NoiseModule)</code></a> method instead of the
+ <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a>. This may make the application code
  easier to read.</p>
 
  <p>by default, there is an abrupt transition between the output values from
@@ -142,8 +142,8 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-org.spongepowered.noise.module.Module">Fields inherited from class&nbsp;org.spongepowered.noise.module.<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></h3>
-<code><a href="../Module.html#sourceModule">sourceModule</a></code></div>
+<h3 id="fields-inherited-from-class-org.spongepowered.noise.module.NoiseModule">Fields inherited from class&nbsp;org.spongepowered.noise.module.<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></h3>
+<code><a href="../NoiseModule.html#sourceModule">sourceModule</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -156,9 +156,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">Select</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module)" class="member-name-link">Select</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;a,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;b,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;control)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule)" class="member-name-link">Select</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;a,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;b,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;control)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Create a new Select module with the source modules pre-configured.</div>
 </div>
@@ -176,56 +176,56 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getControlModule()" class="member-name-link">getControlModule</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#controlModule()" class="member-name-link">controlModule</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Get the control module.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getEdgeFalloff()" class="member-name-link">getEdgeFalloff</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#edgeFalloff()" class="member-name-link">edgeFalloff</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Get the falloff value at the edge transition.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLowerBound()" class="member-name-link">getLowerBound</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Get the lower bound of the selection range.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUpperBound()" class="member-name-link">getUpperBound</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Get the upper bound of the selection range.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getValue(double,double,double)" class="member-name-link">getValue</a><wbr>(double&nbsp;x,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#get(double,double,double)" class="member-name-link">get</a><wbr>(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Generates an output value given the coordinates of the specified input
  value.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBounds(double,double)" class="member-name-link">setBounds</a><wbr>(double&nbsp;upper,
- double&nbsp;lower)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#lowerBound()" class="member-name-link">lowerBound</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Set the lower and upper bounds of the selection range.</div>
+<div class="block">Get the lower bound of the selection range.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setControlModule(org.spongepowered.noise.module.Module)" class="member-name-link">setControlModule</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;m)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBounds(double,double)" class="member-name-link">setBounds</a><wbr>(double&nbsp;upper,
+ double&nbsp;lower)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Set the control module.</div>
+<div class="block">Set the lower and upper bounds of the selection range.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEdgeFalloff(double)" class="member-name-link">setEdgeFalloff</a><wbr>(double&nbsp;edgeFalloff)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setControlModule(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">setControlModule</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;m)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Set the control module.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEdgeFalloff(double)" class="member-name-link">setEdgeFalloff</a><wbr>(double&nbsp;edgeFalloff)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the falloff value at the edge transition.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#upperBound()" class="member-name-link">upperBound</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Get the upper bound of the selection range.</div>
 </div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.spongepowered.noise.module.Module">Methods inherited from class&nbsp;org.spongepowered.noise.module.<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></h3>
-<code><a href="../Module.html#getSourceModule(int)">getSourceModule</a>, <a href="../Module.html#getSourceModuleCount()">getSourceModuleCount</a>, <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)">setSourceModule</a></code></div>
+<h3 id="methods-inherited-from-class-org.spongepowered.noise.module.NoiseModule">Methods inherited from class&nbsp;org.spongepowered.noise.module.<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></h3>
+<code><a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)">setSourceModule</a>, <a href="../NoiseModule.html#sourceModule(int)">sourceModule</a>, <a href="../NoiseModule.html#sourceModuleCount()">sourceModuleCount</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -302,11 +302,11 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module,org.spongepowered.noise.module.Module)">
+<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule,org.spongepowered.noise.module.NoiseModule)">
 <h3>Select</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Select</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;a,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;b,
- <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;control)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Select</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;a,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;b,
+ <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;control)</span></div>
 <div class="block">Create a new Select module with the source modules pre-configured.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -325,15 +325,15 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getControlModule()">
-<h3>getControlModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span>&nbsp;<span class="element-name">getControlModule</span>()</div>
+<section class="detail" id="controlModule()">
+<h3>controlModule</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span>&nbsp;<span class="element-name">controlModule</span>()</div>
 <div class="block">Get the control module.
 
  <p>The control module determines the output value to select. If the
  output value from the control module is within a range of values known as
  the <em>selection range</em>, the
- <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method outputs the value from
+ <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method outputs the value from
  the source module with an index value of 1. Otherwise, this method
  outputs the value from the source module with an index value of 0.</p></div>
 <dl class="notes">
@@ -345,21 +345,21 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setControlModule(org.spongepowered.noise.module.Module)">
+<section class="detail" id="setControlModule(org.spongepowered.noise.module.NoiseModule)">
 <h3>setControlModule</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setControlModule</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;m)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setControlModule</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;m)</span></div>
 <div class="block">Set the control module.
 
  <p>The control module determines the output value to select. If the
  output value from the control module is within a range of values known as
  the <em>selection range</em>, the
- <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method outputs the value from
+ <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method outputs the value from
  the source module with an index value of 1. Otherwise, this method
  outputs the value from the source module with an index value of 0.</p>
 
  <p>This method assigns the control module an index value of 2. Passing
  the control module to this method produces the same results as passing
- the control module to the <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method
+ the control module to the <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method
  while assigning that noise module an index value of 2.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -368,9 +368,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getEdgeFalloff()">
-<h3>getEdgeFalloff</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getEdgeFalloff</span>()</div>
+<section class="detail" id="edgeFalloff()">
+<h3>edgeFalloff</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">edgeFalloff</span>()</div>
 <div class="block">Get the falloff value at the edge transition.
 
  <p>The falloff value is the width of the edge transition at either edge
@@ -397,7 +397,7 @@ loadScripts(document, 'script');</script>
  two source modules at the boundaries of the selection range.</p>
 
  <p>For example, if the selection range is 0.5 to 0.8, and the edge
- falloff value is 0.1, then the <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a>
+ falloff value is 0.1, then the <a href="#get(double,double,double)"><code>get(double, double, double)</code></a>
  method outputs:</p>
  <ul>
      <li>the output value from the source module with an index value of
@@ -423,13 +423,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getLowerBound()">
-<h3>getLowerBound</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getLowerBound</span>()</div>
+<section class="detail" id="lowerBound()">
+<h3>lowerBound</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">lowerBound</span>()</div>
 <div class="block">Get the lower bound of the selection range.
 
  <p>If the output value from the control module is within the selection
- range, the <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method outputs the
+ range, the <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method outputs the
  value from the source module with an index value of 1. Otherwise, this
  method outputs the value from the source module with an index
  value of 0.</p></div>
@@ -440,13 +440,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getUpperBound()">
-<h3>getUpperBound</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getUpperBound</span>()</div>
+<section class="detail" id="upperBound()">
+<h3>upperBound</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">upperBound</span>()</div>
 <div class="block">Get the upper bound of the selection range.
 
  <p>If the output value from the control module is within the selection
- range, the <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method outputs the
+ range, the <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method outputs the
  value from the source module with an index value of 1. Otherwise, this
  method outputs the value from the source module with an index
  value of 0.</p></div>
@@ -464,7 +464,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Set the lower and upper bounds of the selection range.
 
  <p>If the output value from the control module is within the selection
- range, the <a href="#getValue(double,double,double)"><code>getValue(double, double, double)</code></a> method outputs the
+ range, the <a href="#get(double,double,double)"><code>get(double, double, double)</code></a> method outputs the
  value from the source module with an index value of 1. Otherwise, this
  method outputs the value from the source module with an index
  value of 0.</p></div>
@@ -479,25 +479,25 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getValue(double,double,double)">
-<h3>getValue</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getValue</span><wbr><span class="parameters">(double&nbsp;x,
+<section class="detail" id="get(double,double,double)">
+<h3>get</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">get</span><wbr><span class="parameters">(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../Module.html#getValue(double,double,double)">Module</a></code></span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../NoiseModule.html#get(double,double,double)">NoiseModule</a></code></span></div>
 <div class="block">Generates an output value given the coordinates of the specified input
  value.
 
  <p>All source modules required by this module must have been connected
- with the <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method. If these source
+ with the <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method. If these source
  modules are not connected, this method will throw
  a <a href="../../exception/NoModuleException.html" title="class in org.spongepowered.noise.exception"><code>NoModuleException</code></a>.</p>
 
  <p>To determine the number of source modules required by this noise
- module, call the <a href="../Module.html#getSourceModuleCount()"><code>Module.getSourceModuleCount()</code></a> method.</p></div>
+ module, call the <a href="../NoiseModule.html#sourceModuleCount()"><code>NoiseModule.sourceModuleCount()</code></a> method.</p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../Module.html#getValue(double,double,double)">getValue</a></code>&nbsp;in class&nbsp;<code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></dd>
+<dd><code><a href="../NoiseModule.html#get(double,double,double)">get</a></code>&nbsp;in class&nbsp;<code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>x</code> - the <code>x</code> coordinate of the input value</dd>
 <dd><code>y</code> - the <code>y</code> coordinate of the input value</dd>

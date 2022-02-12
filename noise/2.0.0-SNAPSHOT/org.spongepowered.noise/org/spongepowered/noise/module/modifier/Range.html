@@ -72,14 +72,14 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Range" class="title">Class Range</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance"><a href="../Module.html" title="class in org.spongepowered.noise.module">org.spongepowered.noise.module.Module</a>
+<div class="inheritance"><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">org.spongepowered.noise.module.NoiseModule</a>
 <div class="inheritance">org.spongepowered.noise.module.modifier.Range</div>
 </div>
 </div>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Range</span>
-<span class="extends-implements">extends <a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></span></div>
+<span class="extends-implements">extends <a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></span></div>
 <div class="block">A modifier module to map a value from one range to another.
 
  <p>For example: 0.5 (-1 &lt; x &lt; 1) -&gt; 0.75 (0 &lt; x &lt; 1)</p></div>
@@ -110,8 +110,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-org.spongepowered.noise.module.Module">Fields inherited from class&nbsp;org.spongepowered.noise.module.<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></h3>
-<code><a href="../Module.html#sourceModule">sourceModule</a></code></div>
+<h3 id="fields-inherited-from-class-org.spongepowered.noise.module.NoiseModule">Fields inherited from class&nbsp;org.spongepowered.noise.module.<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></h3>
+<code><a href="../NoiseModule.html#sourceModule">sourceModule</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -124,7 +124,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">Range</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.Module)" class="member-name-link">Range</a><wbr>(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;source)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(org.spongepowered.noise.module.NoiseModule)" class="member-name-link">Range</a><wbr>(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;source)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Create a new Range module with the source modules pre-configured.</div>
 </div>
@@ -143,25 +143,25 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCurrentLowerBound()" class="member-name-link">getCurrentLowerBound</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#currentLowerBound()" class="member-name-link">currentLowerBound</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCurrentUpperBound()" class="member-name-link">getCurrentUpperBound</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#currentUpperBound()" class="member-name-link">currentUpperBound</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNewLowerBound()" class="member-name-link">getNewLowerBound</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNewUpperBound()" class="member-name-link">getNewUpperBound</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getValue(double,double,double)" class="member-name-link">getValue</a><wbr>(double&nbsp;x,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#get(double,double,double)" class="member-name-link">get</a><wbr>(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Generates an output value given the coordinates of the specified input
  value.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newLowerBound()" class="member-name-link">newLowerBound</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newUpperBound()" class="member-name-link">newUpperBound</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBounds(double,double,double,double)" class="member-name-link">setBounds</a><wbr>(double&nbsp;currentLower,
  double&nbsp;currentUpper,
@@ -174,8 +174,8 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.spongepowered.noise.module.Module">Methods inherited from class&nbsp;org.spongepowered.noise.module.<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></h3>
-<code><a href="../Module.html#getSourceModule(int)">getSourceModule</a>, <a href="../Module.html#getSourceModuleCount()">getSourceModuleCount</a>, <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)">setSourceModule</a></code></div>
+<h3 id="methods-inherited-from-class-org.spongepowered.noise.module.NoiseModule">Methods inherited from class&nbsp;org.spongepowered.noise.module.<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></h3>
+<code><a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)">setSourceModule</a>, <a href="../NoiseModule.html#sourceModule(int)">sourceModule</a>, <a href="../NoiseModule.html#sourceModuleCount()">sourceModuleCount</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -261,9 +261,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.Module)">
+<section class="detail" id="&lt;init&gt;(org.spongepowered.noise.module.NoiseModule)">
 <h3>Range</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Range</span><wbr><span class="parameters">(<a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a>&nbsp;source)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Range</span><wbr><span class="parameters">(<a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a>&nbsp;source)</span></div>
 <div class="block">Create a new Range module with the source modules pre-configured.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -280,27 +280,27 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getCurrentLowerBound()">
-<h3>getCurrentLowerBound</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getCurrentLowerBound</span>()</div>
+<section class="detail" id="currentLowerBound()">
+<h3>currentLowerBound</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">currentLowerBound</span>()</div>
 </section>
 </li>
 <li>
-<section class="detail" id="getCurrentUpperBound()">
-<h3>getCurrentUpperBound</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getCurrentUpperBound</span>()</div>
+<section class="detail" id="currentUpperBound()">
+<h3>currentUpperBound</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">currentUpperBound</span>()</div>
 </section>
 </li>
 <li>
-<section class="detail" id="getNewLowerBound()">
-<h3>getNewLowerBound</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getNewLowerBound</span>()</div>
+<section class="detail" id="newLowerBound()">
+<h3>newLowerBound</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">newLowerBound</span>()</div>
 </section>
 </li>
 <li>
-<section class="detail" id="getNewUpperBound()">
-<h3>getNewUpperBound</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getNewUpperBound</span>()</div>
+<section class="detail" id="newUpperBound()">
+<h3>newUpperBound</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">newUpperBound</span>()</div>
 </section>
 </li>
 <li>
@@ -321,25 +321,25 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getValue(double,double,double)">
-<h3>getValue</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getValue</span><wbr><span class="parameters">(double&nbsp;x,
+<section class="detail" id="get(double,double,double)">
+<h3>get</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">get</span><wbr><span class="parameters">(double&nbsp;x,
  double&nbsp;y,
  double&nbsp;z)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../Module.html#getValue(double,double,double)">Module</a></code></span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../NoiseModule.html#get(double,double,double)">NoiseModule</a></code></span></div>
 <div class="block">Generates an output value given the coordinates of the specified input
  value.
 
  <p>All source modules required by this module must have been connected
- with the <a href="../Module.html#setSourceModule(int,org.spongepowered.noise.module.Module)"><code>Module.setSourceModule(int, Module)</code></a> method. If these source
+ with the <a href="../NoiseModule.html#setSourceModule(int,org.spongepowered.noise.module.NoiseModule)"><code>NoiseModule.setSourceModule(int, NoiseModule)</code></a> method. If these source
  modules are not connected, this method will throw
  a <a href="../../exception/NoModuleException.html" title="class in org.spongepowered.noise.exception"><code>NoModuleException</code></a>.</p>
 
  <p>To determine the number of source modules required by this noise
- module, call the <a href="../Module.html#getSourceModuleCount()"><code>Module.getSourceModuleCount()</code></a> method.</p></div>
+ module, call the <a href="../NoiseModule.html#sourceModuleCount()"><code>NoiseModule.sourceModuleCount()</code></a> method.</p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../Module.html#getValue(double,double,double)">getValue</a></code>&nbsp;in class&nbsp;<code><a href="../Module.html" title="class in org.spongepowered.noise.module">Module</a></code></dd>
+<dd><code><a href="../NoiseModule.html#get(double,double,double)">get</a></code>&nbsp;in class&nbsp;<code><a href="../NoiseModule.html" title="class in org.spongepowered.noise.module">NoiseModule</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>x</code> - the <code>x</code> coordinate of the input value</dd>
 <dd><code>y</code> - the <code>y</code> coordinate of the input value</dd>
