@@ -128,7 +128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">PlayerChatEvent</span>
 extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowered.api.event.message">AudienceMessageEvent</a>, <a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></pre>
-<div class="block">Fired when the <a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> being sent to a <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> was
+<div class="block">Fired when the <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> being sent to a <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> was
  due to chatting.</div>
 </li>
 </ul>
@@ -158,7 +158,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
+<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#message()">message</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the chat message.</div>
@@ -172,7 +172,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
+<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#originalMessage()">originalMessage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the original chat message.</div>
@@ -187,7 +187,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMessage(net.kyori.adventure.text.Component)">setMessage</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMessage(net.kyori.adventure.text.Component)">setMessage</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Sets the chat message.</div>
 </td>
@@ -266,8 +266,8 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <h4>setChatFormatter</h4>
 <pre class="methodSignature">void&nbsp;setChatFormatter&#8203;(@Nullable <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player">PlayerChatFormatter</a>&nbsp;router)</pre>
 <div class="block">Sets the formatter for this message to go trough.
- <p>If the target audience is a <a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/audience/ForwardingAudience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>ForwardingAudience</code></a>
- the <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> will be applied to each of its <a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/audience/ForwardingAudience.html?is-external=true#audiences()" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>ForwardingAudience.audiences()</code></a></p></div>
+ <p>If the target audience is a <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/ForwardingAudience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>ForwardingAudience</code></a>
+ the <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> will be applied to each of its <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/ForwardingAudience.html?is-external=true#audiences()" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>ForwardingAudience.audiences()</code></a></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>router</code> - The router to set</dd>
@@ -280,7 +280,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <ul class="blockList">
 <li class="blockList">
 <h4>originalMessage</h4>
-<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;originalMessage()</pre>
+<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;originalMessage()</pre>
 <div class="block">Gets the original chat message.
 
  <p>This message is the original chat message, without any formatting
@@ -302,7 +302,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <ul class="blockList">
 <li class="blockList">
 <h4>message</h4>
-<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message()</pre>
+<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message()</pre>
 <div class="block">Gets the chat message.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -318,7 +318,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setMessage</h4>
-<pre class="methodSignature">void&nbsp;setMessage&#8203;(<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
+<pre class="methodSignature">void&nbsp;setMessage&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
 <div class="block">Sets the chat message.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
