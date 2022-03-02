@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -185,6 +185,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/flattener/ComponentFlattener.html?is-external=true" title="class or interface in net.kyori.adventure.text.flattener" class="externalLink">ComponentFlattener</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flattener()">flattener</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get a <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/flattener/ComponentFlattener.html?is-external=true" title="class or interface in net.kyori.adventure.text.flattener" class="externalLink"><code>ComponentFlattener</code></a> with access to server-specific information</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,net.kyori.adventure.audience.Audience,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)">resolve</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;component,
        <a href="../command/CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;senderContext,
@@ -195,7 +202,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Render a component for viewer-specific context.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)">resolve</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;component,
        <a href="../command/CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;senderContext,
@@ -280,7 +287,7 @@ public static&nbsp;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/
 <a id="resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>resolve</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SafeVarargs.html?is-external=true" title="class or interface in java.lang" class="externalLink">@SafeVarargs</a>
@@ -299,6 +306,22 @@ public static&nbsp;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/
 <dd><code>otherResolvers</code> - any other resolvers to apply</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the rendered component</dd>
+</dl>
+</li>
+</ul>
+<a id="flattener()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>flattener</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/flattener/ComponentFlattener.html?is-external=true" title="class or interface in net.kyori.adventure.text.flattener" class="externalLink">ComponentFlattener</a>&nbsp;flattener()</pre>
+<div class="block">Get a <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/flattener/ComponentFlattener.html?is-external=true" title="class or interface in net.kyori.adventure.text.flattener" class="externalLink"><code>ComponentFlattener</code></a> with access to server-specific information
+
+ <p>This flattener can be used for custom formats where translatable strings should be localized server-side.</p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The flattener</dd>
 </dl>
 </li>
 </ul>
