@@ -19,3 +19,11 @@ math:
     name: Math
     url: https://github.com/SpongePowered/math
     group: libraries
+collections:
+    name: Collections
+    url: https://github.com/SpongePowered/collections
+    group: libraries
+plugin-spi:
+    name: plugin-spi
+    url: https://github.com/SpongePowered/plugin-spi
+    group: libraries
