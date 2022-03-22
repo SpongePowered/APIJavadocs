@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":18,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":38,"i20":6,"i21":6};
+var data = {"i0":6,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":18,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,7 +155,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#defaultWorld()">defaultWorld</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>default world</code></a>.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#world(org.spongepowered.api.ResourceKey)"><code>world(ResourceKey)</code></a> with <a href="../DefaultWorldKeys.html#DEFAULT"><code>DefaultWorldKeys.DEFAULT</code></a> instead</div>
+</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -282,7 +284,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#worldKey(java.util.UUID)">worldKey</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uniqueId)</code></th>
 <td class="colLast">
-<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+<div class="block">Gets a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> by <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>unique id</code></a>.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
@@ -297,6 +299,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#worlds()">worlds</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all currently loaded <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a>.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#worldsOfType(org.spongepowered.api.world.WorldType)">worldsOfType</a></span>&#8203;(<a href="../WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;type)</code></th>
+<td class="colLast">
+<div class="block">Retrieves all <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a> that are of a particular <a href="../WorldType.html" title="interface in org.spongepowered.api.world"><code>type</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -371,7 +380,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>defaultWorld</h4>
-<pre class="methodSignature"><a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;defaultWorld()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;defaultWorld()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#world(org.spongepowered.api.ResourceKey)"><code>world(ResourceKey)</code></a> with <a href="../DefaultWorldKeys.html#DEFAULT"><code>DefaultWorldKeys.DEFAULT</code></a> instead</div>
+</div>
 <div class="block">Gets the <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>default world</code></a>.
 
  <p>If the default world isn't loaded, an <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a> will be thrown as this means the manager
@@ -468,15 +481,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>worldKey</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;&nbsp;worldKey&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uniqueId)</pre>
-<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;&nbsp;worldKey&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uniqueId)</pre>
 <div class="block">Gets a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> by <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>unique id</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uniqueId</code> - The unique id</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The key or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if not found</dd>
+</dl>
+</li>
+</ul>
+<a id="worldsOfType(org.spongepowered.api.world.WorldType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>worldsOfType</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;&nbsp;worldsOfType&#8203;(<a href="../WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;type)</pre>
+<div class="block">Retrieves all <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a> that are of a particular <a href="../WorldType.html" title="interface in org.spongepowered.api.world"><code>type</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - The type</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>worlds</code></a></dd>
 </dl>
 </li>
 </ul>
