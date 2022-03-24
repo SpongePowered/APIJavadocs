@@ -94,10 +94,12 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Copies world data under the provided <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> to a provided key.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#defaultWorld()" class="member-name-link">defaultWorld</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>default world</code></a>.</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#defaultWorld()" class="member-name-link">defaultWorld</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Use <a href="#world(org.spongepowered.api.ResourceKey)"><code>world(ResourceKey)</code></a> with <a href="../DefaultWorldKeys.html#DEFAULT"><code>DefaultWorldKeys.DEFAULT</code></a> instead</div>
+</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deleteWorld(org.spongepowered.api.ResourceKey)" class="member-name-link">deleteWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
@@ -185,10 +187,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets if a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> exists as an actual world, offline or online.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#worldKey(java.util.UUID)" class="member-name-link">worldKey</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldKey(java.util.UUID)" class="member-name-link">worldKey</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> by <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>unique id</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldKeys()" class="member-name-link">worldKeys</a>()</code></div>
@@ -199,6 +201,11 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets all currently loaded <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldsOfType(org.spongepowered.api.world.WorldType)" class="member-name-link">worldsOfType</a><wbr>(<a href="../WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;type)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Retrieves all <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a> that are of a particular <a href="../WorldType.html" title="interface in org.spongepowered.api.world"><code>type</code></a>.</div>
 </div>
 </div>
 </div>
@@ -257,7 +264,11 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="defaultWorld()">
 <h3>defaultWorld</h3>
-<div class="member-signature"><span class="return-type"><a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></span>&nbsp;<span class="element-name">defaultWorld</span>()</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="return-type"><a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></span>&nbsp;<span class="element-name">defaultWorld</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Use <a href="#world(org.spongepowered.api.ResourceKey)"><code>world(ResourceKey)</code></a> with <a href="../DefaultWorldKeys.html#DEFAULT"><code>DefaultWorldKeys.DEFAULT</code></a> instead</div>
+</div>
 <div class="block">Gets the <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>default world</code></a>.
 
  <p>If the default world isn't loaded, an <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link"><code>IllegalStateException</code></a> will be thrown as this means the manager
@@ -336,15 +347,26 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="worldKey(java.util.UUID)">
 <h3>worldKey</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</span>&nbsp;<span class="element-name">worldKey</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</span>&nbsp;<span class="element-name">worldKey</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</span></div>
 <div class="block">Gets a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> by <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>unique id</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>uniqueId</code> - The unique id</dd>
 <dt>Returns:</dt>
 <dd>The key or <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> if not found</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="worldsOfType(org.spongepowered.api.world.WorldType)">
+<h3>worldsOfType</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</span>&nbsp;<span class="element-name">worldsOfType</span><wbr><span class="parameters">(<a href="../WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;type)</span></div>
+<div class="block">Retrieves all <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a> that are of a particular <a href="../WorldType.html" title="interface in org.spongepowered.api.world"><code>type</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>type</code> - The type</dd>
+<dt>Returns:</dt>
+<dd>The <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link"><code>worlds</code></a></dd>
 </dl>
 </section>
 </li>

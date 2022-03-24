@@ -79,7 +79,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">PlayerChatEvent</span><span class="extends-implements">
 extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowered.api.event.message">AudienceMessageEvent</a>, <a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></span></div>
-<div class="block">Fired when the <a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link"><code>Component</code></a> being sent to a <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> was
+<div class="block">Fired when the <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link"><code>Component</code></a> being sent to a <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> was
  due to chatting.</div>
 </section>
 <section class="summary">
@@ -100,7 +100,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the current formatter that this message will be sent through.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#message()" class="member-name-link">message</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the chat message.</div>
@@ -110,7 +110,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the original formatter that this message will be sent through.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#originalMessage()" class="member-name-link">originalMessage</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the original chat message.</div>
@@ -121,7 +121,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <div class="block">Sets the formatter for this message to go trough.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setMessage(net.kyori.adventure.text.Component)" class="member-name-link">setMessage</a><wbr>(<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;message)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setMessage(net.kyori.adventure.text.Component)" class="member-name-link">setMessage</a><wbr>(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;message)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets the chat message.</div>
 </div>
@@ -175,8 +175,8 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <h3>setChatFormatter</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setChatFormatter</span><wbr><span class="parameters">(@Nullable <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player">PlayerChatFormatter</a>&nbsp;router)</span></div>
 <div class="block">Sets the formatter for this message to go trough.
- <p>If the target audience is a <a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/audience/ForwardingAudience.html" title="class or interface in net.kyori.adventure.audience" class="external-link"><code>ForwardingAudience</code></a>
- the <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> will be applied to each of its <a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/audience/ForwardingAudience.html#audiences()" title="class or interface in net.kyori.adventure.audience" class="external-link"><code>ForwardingAudience.audiences()</code></a></p></div>
+ <p>If the target audience is a <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/ForwardingAudience.html" title="class or interface in net.kyori.adventure.audience" class="external-link"><code>ForwardingAudience</code></a>
+ the <a href="../../entity/living/player/PlayerChatFormatter.html" title="interface in org.spongepowered.api.entity.living.player"><code>PlayerChatFormatter</code></a> will be applied to each of its <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/ForwardingAudience.html#audiences()" title="class or interface in net.kyori.adventure.audience" class="external-link"><code>ForwardingAudience.audiences()</code></a></p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>router</code> - The router to set</dd>
@@ -186,7 +186,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <li>
 <section class="detail" id="originalMessage()">
 <h3>originalMessage</h3>
-<div class="member-signature"><span class="return-type"><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></span>&nbsp;<span class="element-name">originalMessage</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></span>&nbsp;<span class="element-name">originalMessage</span>()</div>
 <div class="block">Gets the original chat message.
 
  <p>This message is the original chat message, without any formatting
@@ -205,7 +205,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <li>
 <section class="detail" id="message()">
 <h3>message</h3>
-<div class="member-signature"><span class="return-type"><a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></span>&nbsp;<span class="element-name">message</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></span>&nbsp;<span class="element-name">message</span>()</div>
 <div class="block">Gets the chat message.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
@@ -218,7 +218,7 @@ extends <a href="AudienceMessageEvent.html" title="interface in org.spongepowere
 <li>
 <section class="detail" id="setMessage(net.kyori.adventure.text.Component)">
 <h3>setMessage</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setMessage</span><wbr><span class="parameters">(<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;message)</span></div>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setMessage</span><wbr><span class="parameters">(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;message)</span></div>
 <div class="block">Sets the chat message.</div>
 <dl class="notes">
 <dt>Specified by:</dt>

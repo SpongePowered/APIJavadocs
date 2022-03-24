@@ -69,7 +69,9 @@ loadScripts(document, 'script');</script>
 <section class="hierarchy">
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
-<li class="circle">net.kyori.adventure.util.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/util/Buildable.Builder.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.util">Buildable.Builder</a>&lt;R&gt;
+<li class="circle">net.kyori.adventure.builder.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.builder">AbstractBuilder</a>&lt;R&gt;
+<ul>
+<li class="circle">net.kyori.adventure.util.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.util">Buildable.Builder</a>&lt;R&gt;
 <ul>
 <li class="circle">org.spongepowered.api.util.<a href="../../util/Builder.html" class="type-name-link" title="interface in org.spongepowered.api.util">Builder</a>&lt;T,<wbr>B&gt; (also extends org.spongepowered.api.util.<a href="../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;T,<wbr>B&gt;)
 <ul>
@@ -92,6 +94,8 @@ loadScripts(document, 'script');</script>
 </li>
 </ul>
 </li>
+</ul>
+</li>
 <li class="circle">org.spongepowered.api.item.inventory.<a href="Carrier.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">Carrier</a>
 <ul>
 <li class="circle">org.spongepowered.api.item.inventory.<a href="BlockCarrier.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">BlockCarrier</a> (also extends org.spongepowered.api.world.<a href="../../world/Locatable.html" title="interface in org.spongepowered.api.world">Locatable</a>)
@@ -102,9 +106,9 @@ loadScripts(document, 'script');</script>
 </li>
 </ul>
 </li>
-<li class="circle">net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/ComponentLike.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.text">ComponentLike</a>
+<li class="circle">net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/ComponentLike.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.text">ComponentLike</a>
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Mutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Mutable</a>)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;, org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Mutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Mutable</a>)</li>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.util.<a href="../../util/CopyableBuilder.html" class="type-name-link" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;T,<wbr>B&gt;
@@ -128,12 +132,12 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Immutable.html" class="type-name-link" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;I&gt; (also extends org.spongepowered.api.data.<a href="../../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;I&gt;)
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Mutable.html" class="type-name-link" title="interface in org.spongepowered.api.data">SerializableDataHolder.Mutable</a> (also extends org.spongepowered.api.data.<a href="../../data/DataHolder.Mutable.html" title="interface in org.spongepowered.api.data">DataHolder.Mutable</a>)
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>, net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
 </ul>
 </li>
 </ul>
@@ -155,8 +159,9 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackGenerator.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackGenerator</a></li>
 </ul>
 </li>
-<li class="circle">net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/event/HoverEventSource.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.text.event">HoverEventSource</a>&lt;V&gt;
+<li class="circle">net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" class="type-name-link external-link" title="class or interface in net.kyori.adventure.text.event">HoverEventSource</a>&lt;V&gt;
 <ul>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>, org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Mutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Mutable</a>)</li>
 <li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Immutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;I&gt;)</li>
 </ul>
 </li>
@@ -176,7 +181,7 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">org.spongepowered.api.util.<a href="../../util/ResettableBuilder.html" class="type-name-link" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;T,<wbr>B&gt;
 <ul>
-<li class="circle">org.spongepowered.api.util.<a href="../../util/Builder.html" class="type-name-link" title="interface in org.spongepowered.api.util">Builder</a>&lt;T,<wbr>B&gt; (also extends net.kyori.adventure.util.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/util/Buildable.Builder.html" title="class or interface in net.kyori.adventure.util" class="external-link">Buildable.Builder</a>&lt;R&gt;)
+<li class="circle">org.spongepowered.api.util.<a href="../../util/Builder.html" class="type-name-link" title="interface in org.spongepowered.api.util">Builder</a>&lt;T,<wbr>B&gt; (also extends net.kyori.adventure.util.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html" title="class or interface in net.kyori.adventure.util" class="external-link">Buildable.Builder</a>&lt;R&gt;)
 <ul>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/DataHolderBuilder.html" class="type-name-link" title="interface in org.spongepowered.api.data">DataHolderBuilder</a>&lt;H,<wbr>B&gt; (also extends org.spongepowered.api.util.<a href="../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;T,<wbr>B&gt;)
 <ul>
@@ -207,12 +212,12 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Immutable.html" class="type-name-link" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;I&gt; (also extends org.spongepowered.api.data.<a href="../../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;I&gt;)
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Mutable.html" class="type-name-link" title="interface in org.spongepowered.api.data">SerializableDataHolder.Mutable</a> (also extends org.spongepowered.api.data.<a href="../../data/DataHolder.Mutable.html" title="interface in org.spongepowered.api.data">DataHolder.Mutable</a>)
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>, net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
 </ul>
 </li>
 </ul>
@@ -223,7 +228,7 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Immutable.html" class="type-name-link" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;I&gt; (also extends org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.html" title="interface in org.spongepowered.api.data">SerializableDataHolder</a>)
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStackSnapshot.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a> (also extends net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
 </ul>
 </li>
 </ul>
@@ -232,7 +237,7 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.Mutable.html" class="type-name-link" title="interface in org.spongepowered.api.data">SerializableDataHolder.Mutable</a> (also extends org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.html" title="interface in org.spongepowered.api.data">SerializableDataHolder</a>)
 <ul>
-<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.9.3/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>)</li>
+<li class="circle">org.spongepowered.api.item.inventory.<a href="ItemStack.html" class="type-name-link" title="interface in org.spongepowered.api.item.inventory">ItemStack</a> (also extends net.kyori.adventure.text.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>, net.kyori.adventure.text.event.<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;V&gt;)</li>
 </ul>
 </li>
 </ul>
