@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,20 +169,27 @@ extends <a href="Inventory.html" title="interface in org.spongepowered.api.item.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="menu/InventoryMenu.html" title="interface in org.spongepowered.api.item.inventory.menu">InventoryMenu</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#currentMenu()">currentMenu</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the <a href="menu/InventoryMenu.html" title="interface in org.spongepowered.api.item.inventory.menu"><code>InventoryMenu</code></a> if this container has been opened by one.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cursor()">cursor</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the viewing players cursor item.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOpen()">isOpen</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns whether this Container is open.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isViewedSlot(org.spongepowered.api.item.inventory.Slot)">isViewedSlot</a></span>&#8203;(<a href="Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&nbsp;slot)</code></th>
 <td class="colLast">
@@ -190,28 +197,28 @@ extends <a href="Inventory.html" title="interface in org.spongepowered.api.item.
  but not part of the viewers own inventory.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCursor(org.spongepowered.api.item.inventory.ItemStack)">setCursor</a></span>&#8203;(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;item)</code></th>
 <td class="colLast">
 <div class="block">Sets the viewing players cursor item.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="ContainerType.html" title="interface in org.spongepowered.api.item.inventory">ContainerType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type()">type</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the <a href="ContainerType.html" title="interface in org.spongepowered.api.item.inventory"><code>ContainerType</code></a> of this container.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#viewed()">viewed</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the list of viewed inventories.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#viewer()">viewer</a></span>()</code></th>
 <td class="colLast">
@@ -349,7 +356,7 @@ extends <a href="Inventory.html" title="interface in org.spongepowered.api.item.
 <a id="type()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>type</h4>
 <pre class="methodSignature"><a href="ContainerType.html" title="interface in org.spongepowered.api.item.inventory">ContainerType</a>&nbsp;type()</pre>
@@ -357,6 +364,20 @@ extends <a href="Inventory.html" title="interface in org.spongepowered.api.item.
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the ContainerType of this container.</dd>
+</dl>
+</li>
+</ul>
+<a id="currentMenu()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>currentMenu</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="menu/InventoryMenu.html" title="interface in org.spongepowered.api.item.inventory.menu">InventoryMenu</a>&gt;&nbsp;currentMenu()</pre>
+<div class="block">Returns the <a href="menu/InventoryMenu.html" title="interface in org.spongepowered.api.item.inventory.menu"><code>InventoryMenu</code></a> if this container has been opened by one.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the current InventoryMenu if present</dd>
 </dl>
 </li>
 </ul>
