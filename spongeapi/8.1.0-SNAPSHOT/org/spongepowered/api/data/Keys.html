@@ -704,6 +704,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ENTITY_TO_SPAWN">ENTITY_TO_SPAWN</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> to spawn from any spawn egg, such as a
+ <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a> or <a href="../item/ItemTypes.html#CREEPER_SPAWN_EGG"><code>ItemTypes.CREEPER_SPAWN_EGG</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;? extends <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ENTITY_TYPE">ENTITY_TYPE</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>entity type</code></a> of a spawn egg, which may be one of
+ several based on <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a>, etc.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../item/inventory/equipment/EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EQUIPMENT_TYPE">EQUIPMENT_TYPE</a></span></code></th>
 <td class="colLast">
@@ -3969,6 +3985,39 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>END_GATEWAY_AGE</h4>
 <pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt; END_GATEWAY_AGE</pre>
 <div class="block">The age (in ticks) of an <a href="../block/entity/EndGateway.html" title="interface in org.spongepowered.api.block.entity"><code>EndGateway</code></a></div>
+</li>
+</ul>
+<a id="ENTITY_TYPE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ENTITY_TYPE</h4>
+<pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;? extends <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&gt; ENTITY_TYPE</pre>
+<div class="block">The <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>entity type</code></a> of a spawn egg, which may be one of
+ several based on <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a>, etc. It is not
+ guaranteed that the type of entity is the same as the one that will be
+ spawned when used. It is likely unable to change the type of entity on
+ an <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a>, but it is possible to change the
+ <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>archetype</code></a> by using <a href="#ENTITY_TO_SPAWN"><code>ENTITY_TO_SPAWN</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#ENTITY_TO_SPAWN"><code>ENTITY_TO_SPAWN</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="ENTITY_TO_SPAWN">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ENTITY_TO_SPAWN</h4>
+<pre>public static final&nbsp;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;&gt; ENTITY_TO_SPAWN</pre>
+<div class="block">The <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> to spawn from any spawn egg, such as a
+ <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a> or <a href="../item/ItemTypes.html#CREEPER_SPAWN_EGG"><code>ItemTypes.CREEPER_SPAWN_EGG</code></a>.
+ <p>The <a href="#ENTITY_TYPE"><code>ENTITY_TYPE</code></a> is not guaranteed to be the same as the
+ <a href="../entity/EntityArchetype.html#type()"><code>EntityArchetype.type()</code></a> returned, but the spawned entity will be
+ based on the <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> returned here.</div>
 </li>
 </ul>
 <a id="EQUIPMENT_TYPE">
