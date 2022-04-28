@@ -495,6 +495,18 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The age (in ticks) of an <a href="../block/entity/EndGateway.html" title="interface in org.spongepowered.api.block.entity"><code>EndGateway</code></a></div>
 </div>
+<div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#ENTITY_TO_SPAWN" class="member-name-link">ENTITY_TO_SPAWN</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> to spawn from any spawn egg, such as a
+ <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a> or <a href="../item/ItemTypes.html#CREEPER_SPAWN_EGG"><code>ItemTypes.CREEPER_SPAWN_EGG</code></a>.</div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#ENTITY_TYPE" class="member-name-link">ENTITY_TYPE</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>entity type</code></a> of a spawn egg, which may be one of
+ several based on <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a>, etc.</div>
+</div>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../item/inventory/equipment/EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#EQUIPMENT_TYPE" class="member-name-link">EQUIPMENT_TYPE</a></code></div>
 <div class="col-last odd-row-color">
@@ -2905,6 +2917,37 @@ loadScripts(document, 'script');</script>
 <h3>END_GATEWAY_AGE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt;</span>&nbsp;<span class="element-name">END_GATEWAY_AGE</span></div>
 <div class="block">The age (in ticks) of an <a href="../block/entity/EndGateway.html" title="interface in org.spongepowered.api.block.entity"><code>EndGateway</code></a></div>
+</section>
+</li>
+<li>
+<section class="detail" id="ENTITY_TYPE">
+<h3>ENTITY_TYPE</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;&gt;&gt;</span>&nbsp;<span class="element-name">ENTITY_TYPE</span></div>
+<div class="block">The <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>entity type</code></a> of a spawn egg, which may be one of
+ several based on <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a>, etc. It is not
+ guaranteed that the type of entity is the same as the one that will be
+ spawned when used. It is likely unable to change the type of entity on
+ an <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a>, but it is possible to change the
+ <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>archetype</code></a> by using <a href="#ENTITY_TO_SPAWN"><code>ENTITY_TO_SPAWN</code></a>.</div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="#ENTITY_TO_SPAWN"><code>ENTITY_TO_SPAWN</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="ENTITY_TO_SPAWN">
+<h3>ENTITY_TO_SPAWN</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity">EntityArchetype</a>&gt;&gt;</span>&nbsp;<span class="element-name">ENTITY_TO_SPAWN</span></div>
+<div class="block">The <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> to spawn from any spawn egg, such as a
+ <a href="../item/ItemTypes.html#ZOMBIE_SPAWN_EGG"><code>ItemTypes.ZOMBIE_SPAWN_EGG</code></a> or <a href="../item/ItemTypes.html#CREEPER_SPAWN_EGG"><code>ItemTypes.CREEPER_SPAWN_EGG</code></a>.
+ <p>The <a href="#ENTITY_TYPE"><code>ENTITY_TYPE</code></a> is not guaranteed to be the same as the
+ <a href="../entity/EntityArchetype.html#type()"><code>EntityArchetype.type()</code></a> returned, but the spawned entity will be
+ based on the <a href="../entity/EntityArchetype.html" title="interface in org.spongepowered.api.entity"><code>EntityArchetype</code></a> returned here.</div>
 </section>
 </li>
 <li>

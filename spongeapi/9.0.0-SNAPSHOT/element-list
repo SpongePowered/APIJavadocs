@@ -211,7 +211,6 @@ org.spongepowered.api.world.generation
 org.spongepowered.api.world.generation.config
 org.spongepowered.api.world.generation.config.flat
 org.spongepowered.api.world.generation.config.noise
-org.spongepowered.api.world.generation.config.structure
 org.spongepowered.api.world.generation.structure
 org.spongepowered.api.world.portal
 org.spongepowered.api.world.schematic

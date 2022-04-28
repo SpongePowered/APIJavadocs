@@ -124,58 +124,63 @@ extends <a href="../state/State.html" title="interface in org.spongepowered.api.
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BlockState.Builder.html" title="interface in org.spongepowered.api.block">BlockState.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#asString()" class="member-name-link">asString</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets a string representation of this block state, including the block type and the properties.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BlockState.Builder.html" title="interface in org.spongepowered.api.block">BlockState.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Creates a new <a href="BlockState.Builder.html" title="interface in org.spongepowered.api.block"><code>BlockState.Builder</code></a> for building <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a>s.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../fluid/FluidState.html" title="interface in org.spongepowered.api.fluid">FluidState</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#fluidState()" class="member-name-link">fluidState</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../fluid/FluidState.html" title="interface in org.spongepowered.api.fluid">FluidState</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#fluidState()" class="member-name-link">fluidState</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the associated <a href="../fluid/FluidState.html" title="interface in org.spongepowered.api.fluid"><code>FluidState</code></a> for this block state.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#fromString(java.lang.String)" class="member-name-link">fromString</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;id)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#fromString(java.lang.String)" class="member-name-link">fromString</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;id)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="../state/StateMatcher.Builder.html" title="interface in org.spongepowered.api.state">StateMatcher.Builder</a>&lt;<a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,<wbr><a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#matcher(java.util.function.Supplier)" class="member-name-link">matcher</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;&nbsp;type)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Constructs a new builder to construct a <a href="../state/StateMatcher.html" title="interface in org.spongepowered.api.state"><code>StateMatcher</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="../state/StateMatcher.Builder.html" title="interface in org.spongepowered.api.state">StateMatcher.Builder</a>&lt;<a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,<wbr><a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#matcher(java.util.function.Supplier)" class="member-name-link">matcher</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;&nbsp;type)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#matcher(org.spongepowered.api.block.BlockType)" class="member-name-link">matcher</a><wbr>(<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&nbsp;type)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Constructs a new builder to construct a <a href="../state/StateMatcher.html" title="interface in org.spongepowered.api.state"><code>StateMatcher</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="../state/StateMatcher.Builder.html" title="interface in org.spongepowered.api.state">StateMatcher.Builder</a>&lt;<a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,<wbr><a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#matcher(org.spongepowered.api.block.BlockType)" class="member-name-link">matcher</a><wbr>(<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&nbsp;type)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Constructs a new builder to construct a <a href="../state/StateMatcher.html" title="interface in org.spongepowered.api.state"><code>StateMatcher</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#mirror(java.util.function.Supplier)" class="member-name-link">mirror</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&gt;&nbsp;mirror)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#mirror(java.util.function.Supplier)" class="member-name-link">mirror</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&gt;&nbsp;mirror)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror"><code>Mirror</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mirror(org.spongepowered.api.util.mirror.Mirror)" class="member-name-link">mirror</a><wbr>(<a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&nbsp;mirror)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror"><code>Mirror</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#rotate(java.util.function.Supplier)" class="member-name-link">rotate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&gt;&nbsp;rotation)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rotate(org.spongepowered.api.util.rotation.Rotation)" class="member-name-link">rotate</a><wbr>(<a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#snapshotFor(org.spongepowered.api.world.server.ServerLocation)" class="member-name-link">snapshotFor</a><wbr>(<a href="../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mirror(org.spongepowered.api.util.mirror.Mirror)" class="member-name-link">mirror</a><wbr>(<a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&nbsp;mirror)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror"><code>Mirror</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#rotate(java.util.function.Supplier)" class="member-name-link">rotate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&gt;&nbsp;rotation)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rotate(org.spongepowered.api.util.rotation.Rotation)" class="member-name-link">rotate</a><wbr>(<a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#snapshotFor(org.spongepowered.api.world.server.ServerLocation)" class="member-name-link">snapshotFor</a><wbr>(<a href="../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates a new <a href="BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> with this current <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a>
  at the desired <a href="../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the base type of block.</div>
 </div>
 </div>
@@ -357,6 +362,18 @@ extends <a href="../state/State.html" title="interface in org.spongepowered.api.
 <dd><code>mirror</code> - The mirror</dd>
 <dt>Returns:</dt>
 <dd>The mirrored state if not this state</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="asString()">
+<h3>asString</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">asString</span>()</div>
+<div class="block">Gets a string representation of this block state, including the block type and the properties.
+ Do not confuse with <a href="../state/State.html#toString()"><code>State.toString()</code></a> which is implementation specific.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A string representation of this block state.</dd>
 </dl>
 </section>
 </li>
