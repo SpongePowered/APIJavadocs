@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6,"i2":1,"i3":1,"i4":1,"i5":18,"i6":6,"i7":18,"i8":6,"i9":6,"i10":6};
+var data = {"i0":6,"i1":1,"i2":6,"i3":1,"i4":1,"i5":1,"i6":18,"i7":6,"i8":18,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -200,67 +200,74 @@ extends <a href="../state/State.html" title="interface in org.spongepowered.api.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asString()">asString</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets a string representation of this block state, including the block type and the properties.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="BlockState.Builder.html" title="interface in org.spongepowered.api.block">BlockState.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#builder()">builder</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="BlockState.Builder.html" title="interface in org.spongepowered.api.block"><code>BlockState.Builder</code></a> for building <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a>s.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../fluid/FluidState.html" title="interface in org.spongepowered.api.fluid">FluidState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fluidState()">fluidState</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the associated <a href="../fluid/FluidState.html" title="interface in org.spongepowered.api.fluid"><code>FluidState</code></a> for this block state.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromString(java.lang.String)">fromString</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../state/StateMatcher.Builder.html" title="interface in org.spongepowered.api.state">StateMatcher.Builder</a>&lt;<a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matcher(java.util.function.Supplier)">matcher</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new builder to construct a <a href="../state/StateMatcher.html" title="interface in org.spongepowered.api.state"><code>StateMatcher</code></a>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../state/StateMatcher.Builder.html" title="interface in org.spongepowered.api.state">StateMatcher.Builder</a>&lt;<a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>,&#8203;<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matcher(org.spongepowered.api.block.BlockType)">matcher</a></span>&#8203;(<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new builder to construct a <a href="../state/StateMatcher.html" title="interface in org.spongepowered.api.state"><code>StateMatcher</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mirror(java.util.function.Supplier)">mirror</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&gt;&nbsp;mirror)</code></th>
 <td class="colLast">
 <div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror"><code>Mirror</code></a>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mirror(org.spongepowered.api.util.mirror.Mirror)">mirror</a></span>&#8203;(<a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&nbsp;mirror)</code></th>
 <td class="colLast">
 <div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror"><code>Mirror</code></a>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>default <a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rotate(java.util.function.Supplier)">rotate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&gt;&nbsp;rotation)</code></th>
 <td class="colLast">
 <div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rotate(org.spongepowered.api.util.rotation.Rotation)">rotate</a></span>&#8203;(<a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></th>
 <td class="colLast">
 <div class="block">Gets the appropriate <a href="BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> for the desired <a href="../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#snapshotFor(org.spongepowered.api.world.server.ServerLocation)">snapshotFor</a></span>&#8203;(<a href="../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&nbsp;location)</code></th>
 <td class="colLast">
@@ -268,7 +275,7 @@ extends <a href="../state/State.html" title="interface in org.spongepowered.api.
  at the desired <a href="../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type()">type</a></span>()</code></th>
 <td class="colLast">
@@ -506,7 +513,7 @@ extends <a href="../state/State.html" title="interface in org.spongepowered.api.
 <a id="mirror(java.util.function.Supplier)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>mirror</h4>
 <pre class="methodSignature">default&nbsp;<a href="BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&nbsp;mirror&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror">Mirror</a>&gt;&nbsp;mirror)</pre>
@@ -518,6 +525,21 @@ extends <a href="../state/State.html" title="interface in org.spongepowered.api.
 <dd><code>mirror</code> - The mirror</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The mirrored state if not this state</dd>
+</dl>
+</li>
+</ul>
+<a id="asString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>asString</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;asString()</pre>
+<div class="block">Gets a string representation of this block state, including the block type and the properties.
+ Do not confuse with <a href="../state/State.html#toString()"><code>State.toString()</code></a> which is implementation specific.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string representation of this block state.</dd>
 </dl>
 </li>
 </ul>
