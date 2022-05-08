@@ -15,11 +15,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
 </head>
 <body class="class-declaration-page">
-<script type="text/javascript">var evenRowColor = "even-row-color";
-var oddRowColor = "odd-row-color";
-var tableTab = "table-tab";
-var activeTableTab = "active-table-tab";
-var pathtoroot = "../../../../";
+<script type="text/javascript">var pathtoroot = "../../../../";
 loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -44,7 +40,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -74,11 +70,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code>, <code><a href="https://jd.adventure.kyori.net/key/4.10.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/key/4.10.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Tag&lt;T&gt;</span><span class="extends-implements">
-extends <a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></span></div>
+extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></span></div>
 <div class="block">A <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>resource keyed</code></a> collection of <a href="Taggable.html" title="interface in org.spongepowered.api.tag"><code>Taggable</code></a> values
  (of type <code>T</code>).
 
@@ -96,33 +92,37 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="Tag.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.tag">Tag.Factory</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
-<div id="method-summary-table.tabpanel" role="tabpanel">
-<div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
+<div class="caption"><span>Static Methods</span></div>
+<div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#contains(T)" class="member-name-link">contains</a><wbr>(<a href="Tag.html" title="type parameter in Tag">T</a>&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets whether this tag contains the supplied value.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#values()" class="member-name-link">values</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets all values that are associated with this tag.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T&gt;&nbsp;<a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of</a><wbr>(<a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
 </div>
 </div>
-</div>
-</div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.spongepowered.api.registry.DefaultedRegistryValue">Methods inherited from interface&nbsp;org.spongepowered.api.registry.<a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></h3>
-<code><a href="../registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)">asDefaultedReference</a>, <a href="../registry/DefaultedRegistryValue.html#findKey(org.spongepowered.api.registry.DefaultedRegistryType)">findKey</a>, <a href="../registry/DefaultedRegistryValue.html#key(org.spongepowered.api.registry.DefaultedRegistryType)">key</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.ResourceKeyed">Methods inherited from interface&nbsp;org.spongepowered.api.<a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></h3>
 <code><a href="../ResourceKeyed.html#key()">key</a></code></div>
@@ -138,27 +138,10 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="values()">
-<h3>values</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</span>&nbsp;<span class="element-name">values</span>()</div>
-<div class="block">Gets all values that are associated with this tag.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>All tag values</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="contains(T)">
-<h3 id="contains(java.lang.Object)">contains</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">contains</span><wbr><span class="parameters">(<a href="Tag.html" title="type parameter in Tag">T</a>&nbsp;value)</span></div>
-<div class="block">Gets whether this tag contains the supplied value.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>value</code> - Value to check</dd>
-<dt>Returns:</dt>
-<dd>Whether the value is contained in this tag.</dd>
-</dl>
+<section class="detail" id="of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)">
+<h3>of</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;T&gt;</span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
 </section>
 </li>
 </ul>

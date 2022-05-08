@@ -98,16 +98,21 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is</a><wbr>(<a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;&nbsp;tag)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns true when given tag is associated with this object</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registryType()" class="member-name-link">registryType</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the <a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry"><code>RegistryType</code></a> that holds the types of <a href="Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
+ that can be associated with this object.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tags()" class="member-name-link">tags</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets all <a href="Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a> that have been associated with this object.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="TagType.html" title="interface in org.spongepowered.api.tag">TagType</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tagType()" class="member-name-link">tagType</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the <a href="TagType.html" title="interface in org.spongepowered.api.tag"><code>TagType</code></a> that represents the types of <a href="Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
- that can be associated with this object.</div>
 </div>
 </div>
 </div>
@@ -127,14 +132,14 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="tagType()">
-<h3>tagType</h3>
-<div class="member-signature"><span class="return-type"><a href="TagType.html" title="interface in org.spongepowered.api.tag">TagType</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;</span>&nbsp;<span class="element-name">tagType</span>()</div>
-<div class="block">Gets the <a href="TagType.html" title="interface in org.spongepowered.api.tag"><code>TagType</code></a> that represents the types of <a href="Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
+<section class="detail" id="registryType()">
+<h3>registryType</h3>
+<div class="member-signature"><span class="return-type"><a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;</span>&nbsp;<span class="element-name">registryType</span>()</div>
+<div class="block">Gets the <a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry"><code>RegistryType</code></a> that holds the types of <a href="Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
  that can be associated with this object.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>The <a href="TagType.html" title="interface in org.spongepowered.api.tag"><code>TagType</code></a></dd>
+<dd>The <a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry"><code>RegistryType</code></a></dd>
 </dl>
 </section>
 </li>
@@ -146,6 +151,19 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link"><code>Collection</code></a> of <a href="Tag.html" title="interface in org.spongepowered.api.tag"><code>Tag</code></a>s.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="is(org.spongepowered.api.tag.Tag)">
+<h3>is</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">is</span><wbr><span class="parameters">(<a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="Taggable.html" title="type parameter in Taggable">T</a>&gt;&nbsp;tag)</span></div>
+<div class="block">Returns true when given tag is associated with this object</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>tag</code> - The tag</dd>
+<dt>Returns:</dt>
+<dd>true when given tag is associated with this object</dd>
 </dl>
 </section>
 </li>

@@ -108,13 +108,8 @@ extends <a href="../datapack/DataPackSerializable.html" title="interface in org.
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;&gt;<br><a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag">TagTemplate.Builder</a>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder(org.spongepowered.api.registry.DefaultedRegistryReference)" class="member-name-link">builder</a><wbr>(<a href="../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TagType.html" title="interface in org.spongepowered.api.tag">TagType</a>&lt;T&gt;&gt;&nbsp;reference)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder(org.spongepowered.api.registry.DefaultedRegistryType)" class="member-name-link">builder</a><wbr>(<a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;T&gt;&nbsp;registryType)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Returns a <a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate.Builder</code></a> that creates <a href="TagTemplate.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate</code></a>s.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T extends <a href="Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;&gt;<br><a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag">TagTemplate.Builder</a>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder(org.spongepowered.api.tag.TagType)" class="member-name-link">builder</a><wbr>(<a href="TagType.html" title="interface in org.spongepowered.api.tag">TagType</a>&lt;T&gt;&nbsp;tagType)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Returns a <a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate.Builder</code></a> that creates <a href="TagTemplate.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate</code></a>s.</div>
 </div>
 </div>
@@ -140,28 +135,14 @@ extends <a href="../datapack/DataPackSerializable.html" title="interface in org.
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="builder(org.spongepowered.api.registry.DefaultedRegistryReference)">
+<section class="detail" id="builder(org.spongepowered.api.registry.DefaultedRegistryType)">
 <h3>builder</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;&gt;</span>
-<span class="return-type"><a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag">TagTemplate.Builder</a>&lt;T&gt;</span>&nbsp;<span class="element-name">builder</span><wbr><span class="parameters">(<a href="../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="TagType.html" title="interface in org.spongepowered.api.tag">TagType</a>&lt;T&gt;&gt;&nbsp;reference)</span></div>
+<span class="return-type"><a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag">TagTemplate.Builder</a>&lt;T&gt;</span>&nbsp;<span class="element-name">builder</span><wbr><span class="parameters">(<a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;T&gt;&nbsp;registryType)</span></div>
 <div class="block">Returns a <a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate.Builder</code></a> that creates <a href="TagTemplate.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate</code></a>s.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>reference</code> - The <a href="TagType.html" title="interface in org.spongepowered.api.tag"><code>TagType</code></a> of the builder</dd>
-<dt>Returns:</dt>
-<dd>The builder.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="builder(org.spongepowered.api.tag.TagType)">
-<h3>builder</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;&gt;</span>
-<span class="return-type"><a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag">TagTemplate.Builder</a>&lt;T&gt;</span>&nbsp;<span class="element-name">builder</span><wbr><span class="parameters">(<a href="TagType.html" title="interface in org.spongepowered.api.tag">TagType</a>&lt;T&gt;&nbsp;tagType)</span></div>
-<div class="block">Returns a <a href="TagTemplate.Builder.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate.Builder</code></a> that creates <a href="TagTemplate.html" title="interface in org.spongepowered.api.tag"><code>TagTemplate</code></a>s.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>tagType</code> - The <a href="TagType.html" title="interface in org.spongepowered.api.tag"><code>TagType</code></a> of the builder</dd>
+<dd><code>registryType</code> - The <a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry"><code>DefaultedRegistryType</code></a> of the builder</dd>
 <dt>Returns:</dt>
 <dd>The builder.</dd>
 </dl>

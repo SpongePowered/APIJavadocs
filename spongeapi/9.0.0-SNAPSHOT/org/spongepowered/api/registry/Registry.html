@@ -140,6 +140,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of all <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entries</code></a> within.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;V&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#taggedValues(org.spongepowered.api.tag.Tag)" class="member-name-link">taggedValues</a><wbr>(<a href="../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;tag)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the registered types associated with given tag.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;V&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tags()" class="member-name-link">tags</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the tags associated with this registry.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -287,6 +297,30 @@ loadScripts(document, 'script');</script>
 <dd><code>key</code> - The key</dd>
 <dt>Returns:</dt>
 <dd>The value</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="taggedValues(org.spongepowered.api.tag.Tag)">
+<h3>taggedValues</h3>
+<div class="member-signature"><span class="type-parameters">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;V&gt;</span>&nbsp;<span class="element-name">taggedValues</span><wbr><span class="parameters">(<a href="../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;tag)</span></div>
+<div class="block">Returns the registered types associated with given tag.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>tag</code> - The tag</dd>
+<dt>Returns:</dt>
+<dd>The registered types associated with given tag</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="tags()">
+<h3>tags</h3>
+<div class="member-signature"><span class="type-parameters">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;V&gt;&gt;</span>&nbsp;<span class="element-name">tags</span>()</div>
+<div class="block">Gets the tags associated with this registry.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The tags associated with this registry</dd>
 </dl>
 </section>
 </li>
