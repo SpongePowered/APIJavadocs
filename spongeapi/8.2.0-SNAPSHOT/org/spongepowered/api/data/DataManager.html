@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,13 +230,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTranslator(java.lang.Class,org.spongepowered.api.data.persistence.DataTranslator)">registerTranslator</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass,
+                  <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&nbsp;translator)</code></th>
+<td class="colLast">
+<div class="block">Registers a <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the desired class.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translator(java.lang.Class)">translator</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass)</code></th>
 <td class="colLast">
 <div class="block">Gets the desired <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the provided class.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrappedContentUpdater(java.lang.Class,int,int)">wrappedContentUpdater</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
                      int&nbsp;fromVersion,
@@ -460,6 +468,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>objectClass</code> - The class of the object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The data translator, if available</dd>
+</dl>
+</li>
+</ul>
+<a id="registerTranslator(java.lang.Class,org.spongepowered.api.data.persistence.DataTranslator)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerTranslator</h4>
+<pre class="methodSignature">&lt;T&gt;&nbsp;void&nbsp;registerTranslator&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass,
+                            <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&nbsp;translator)</pre>
+<div class="block">Registers a <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the desired class.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - The type of object</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>objectClass</code> - The class of the object type being managed</dd>
+<dd><code>translator</code> - The translator for the desired class object</dd>
 </dl>
 </li>
 </ul>
