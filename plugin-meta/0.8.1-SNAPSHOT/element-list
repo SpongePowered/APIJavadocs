@@ -1,0 +1,5 @@
+org.spongepowered.plugin.metadata
+org.spongepowered.plugin.metadata.builtin
+org.spongepowered.plugin.metadata.builtin.model
+org.spongepowered.plugin.metadata.model
+org.spongepowered.plugin.metadata.util
