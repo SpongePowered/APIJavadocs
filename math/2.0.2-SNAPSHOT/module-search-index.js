@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"org.spongepowered.math"}]
+moduleSearchIndex = [{"l":"org.spongepowered.math"}];updateSearchResults();
