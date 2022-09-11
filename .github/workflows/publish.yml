@@ -9,7 +9,7 @@ jobs:
   build:
     # Only run on PRs if the source branch is on someone else's repo
     if: "${{ github.event_name != 'pull_request' || github.repository != github.event.pull_request.head.repo.full_name }}"
-    runs-on: "ubuntu-20.04"
+    runs-on: "ubuntu-22.04"
     steps:
       - name: "checkout repository"
         uses: "actions/checkout@v3"
@@ -28,10 +28,24 @@ jobs:
           poetry run generate-jd ../$DEST_DIR --metadata ../metadata.yaml --jd-root ..
       - name: "publish"
         if: "${{ github.event_name == 'push' && github.ref == 'refs/heads/data' }}"
-        uses: "JamesIves/github-pages-deploy-action@v4"
+        uses: "actions/upload-pages-artifact@v1"
         with:
-          branch: "gh-pages"
-          folder: "${{ env.DEST_DIR }}"
-          single-commit: true
+          path: "${{ env.DEST_DIR }}"
+  deploy:
+    if: "${{ github.event_name == 'push' && github.ref == 'refs/heads/data' }}"
+    needs: "build"
+    runs-on: "ubuntu-22.04"
+
+    permissions:
+      pages: "write"
+      id-token: "write"
+    environment:
+      name: "github-pages"
+      url: "${{ steps.deployment.outputs.page_url }}"
+
+    steps:
+      - name: "Deploy to GitHub pages"
+        id: "deployment"
+        uses: "actions/deploy-pages@v1"
 
 
