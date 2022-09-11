@@ -12,9 +12,9 @@ jobs:
     runs-on: "ubuntu-20.04"
     steps:
       - name: "checkout repository"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v3"
       - name: "setup python ${{ env.PYTHON_VERSION }}"
-        uses: "actions/setup-python@v2"
+        uses: "actions/setup-python@v4"
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
           cache: "poetry"
@@ -29,7 +29,7 @@ jobs:
           poetry run generate-jd ../$DEST_DIR --metadata ../metadata.yaml --jd-root ..
       - name: "publish"
         if: "${{ github.event_name == 'push' && github.ref == 'refs/heads/data' }}"
-        uses: "JamesIves/github-pages-deploy-action@4.1.4"
+        uses: "JamesIves/github-pages-deploy-action@v4"
         with:
           branch: "gh-pages"
           folder: "${{ env.DEST_DIR }}"
