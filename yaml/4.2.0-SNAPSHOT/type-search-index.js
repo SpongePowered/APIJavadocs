@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.spongepowered.configurate.yaml","l":"YamlConfigurationLoader.Builder"},{"p":"org.spongepowered.configurate.yaml","l":"NodeStyle"},{"p":"org.spongepowered.configurate.yaml","l":"YamlConfigurationFormat"},{"p":"org.spongepowered.configurate.yaml","l":"YamlConfigurationLoader"}]

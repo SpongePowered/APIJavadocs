@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.spongepowered.configurate.xml","l":"XmlConfigurationLoader.Builder"},{"p":"org.spongepowered.configurate.xml","l":"XmlConfigurationFormat"},{"p":"org.spongepowered.configurate.xml","l":"XmlConfigurationLoader"}]
