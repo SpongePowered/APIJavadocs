@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.spongepowered.collections"},{"l":"org.spongepowered.collections.graph"},{"l":"org.spongepowered.collections.inheritance"},{"l":"org.spongepowered.collections.multimap"}];updateSearchResults();

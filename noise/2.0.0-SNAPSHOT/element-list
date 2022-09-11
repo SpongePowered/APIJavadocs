@@ -1,0 +1,8 @@
+module:org.spongepowered.noise
+org.spongepowered.noise
+org.spongepowered.noise.exception
+org.spongepowered.noise.model
+org.spongepowered.noise.module
+org.spongepowered.noise.module.combiner
+org.spongepowered.noise.module.modifier
+org.spongepowered.noise.module.source

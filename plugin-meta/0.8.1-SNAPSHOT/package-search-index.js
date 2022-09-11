@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.spongepowered.plugin.metadata"},{"l":"org.spongepowered.plugin.metadata.builtin"},{"l":"org.spongepowered.plugin.metadata.builtin.model"},{"l":"org.spongepowered.plugin.metadata.model"},{"l":"org.spongepowered.plugin.metadata.util"}]

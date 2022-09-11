@@ -1,0 +1,5 @@
+org.spongepowered.plugin
+org.spongepowered.plugin.blackboard
+org.spongepowered.plugin.builtin
+org.spongepowered.plugin.builtin.jvm
+org.spongepowered.plugin.builtin.jvm.locator
