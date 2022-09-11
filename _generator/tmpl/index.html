@@ -13,7 +13,7 @@
     </div>
 </div>
 {% for group, modules in module_versions.items() %}
-<div class="group">
+<div class="group" {% if group != None %}id="{{ group }}"{% endif %}>
 {% if group != None %}
     <details open>
     <summary>
