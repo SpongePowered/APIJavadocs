@@ -1,0 +1,56 @@
+name: Sponge Javadoc
+
+# Extra component metadata
+# Format:
+#
+#    directoryname:
+#        name: User-readable Name
+#        url: A URL to link to in the module info
+#        group: Module group for display -- empty string to display at top level
+#        snapshot-regex: (optional): regex to use to determine if a version should be considered a snapshot. Default `.**-SNAPSHOT$`
+components:
+    spongeapi:
+        name: SpongeAPI
+        url: https://github.com/SpongePowered/SpongeAPI
+    noise:
+        name: Noise
+        url: https://github.com/SpongePowered/noise
+        group: libraries
+    math:
+        name: Math
+        url: https://github.com/SpongePowered/math
+        group: libraries
+    collections:
+        name: Collections
+        url: https://github.com/SpongePowered/collections
+        group: libraries
+    plugin-spi:
+        name: plugin-spi
+        url: https://github.com/SpongePowered/plugin-spi
+        group: libraries
+    mcmod-info:
+        group: plugin-meta
+    plugin-meta:
+        group: plugin-meta
+
+# Extra group metadata
+# Format:
+#   groupname:
+#     name: User-readable display name
+#     description: A short description of the group
+#     url: A URL to link the group name to
+#     from-directory: If subdirectories of a directory matching the group's name should be picked up as modules associated with the group
+
+groups:
+    libraries:
+        name: Libraries
+        description: Libraries supporting the Sponge project
+    configurate:
+        name: Configurate
+        description: Components of the Configurate configuration library
+        url: https://github.com/SpongePowered/Configurate
+        from-directory: true
+    plugin-meta:
+        name: Plugin Meta
+        description: Plugin metadata format implementations, including the Sponge plugin metadata spec
+        url: https://github.com/SpongePowered/plugin-meta

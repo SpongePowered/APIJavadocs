@@ -21,12 +21,31 @@ body {
   padding-top: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #99b8ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1.group a:hover {
+  text-decoration: none;
+}
+
+h1.group {
+  font-size: 30px;
+  width: 90%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #aaaaaa;
+}
+
 #listContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 15px;
-
 }
 
 #listContainer > div {
@@ -36,7 +55,16 @@ body {
   margin: 20px 10px;
 }
 
-a {
-  color: #99b8ff;
+details > summary {
+  list-style: none;
+  margin-left: 2em;
+}
+
+details:not([open]) > summary .toggle-open {
+    display: none;
+}
+
+details[open] > summary .toggle-closed {
+    display: none;
 }
 

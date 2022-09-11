@@ -2,27 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Sponge Javadocs</title>
+    <title>{{ name }}</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="title">Sponge Javadocs</div>
-<div id="listContainer">
-    {% for module in module_versions %}
-    <div>
-        {% set module_title = module.display_name if module.display_name else module.name %}
-        {% if module.url %}
-        <div class="header"><a href="{{ module.url }}">{{ module_title }}</a></div>
+<div class="title">{{ name }}</div>
+{% for group, modules in module_versions.items() %}
+<div class="group">
+{% if group != None %}
+    <details open>
+    <summary>
+    {% if group in groups %}
+        <!-- group names -->
+        {% set group_data = groups[group] %}
+        <h1 class="group">
+            <span class="toggle-open">&#x23f7;</span><span class="toggle-closed">&#x23f5;</span>
+        {% if 'url' in group_data %}
+            <a href="{{ group_data.url }}">{{ group_data.name | default(group) }}</a>
         {% else %}
-        <div class="header">{{ module_title }}</div>
+            {{ group_data.name | default(group) }}
         {% endif %}
-        <ul>
-            {% for version in module.versions | reverse %}
-            <li><a href="/{{ module.name }}/{{ version }}/">{{ version }}</a></li>
-            {% endfor %}
-        </ul>
+        </h1>
+        {% if 'description' in group_data %}
+            <p>{{ group_data.description }}</p>
+        {% endif %}
+    {% else %}
+        <h1 class="group">{{ group }}</h1>
+    {% endif %}
+    </summary>
+{% endif %}
+    <div id="listContainer">
+        {% for module in modules %}
+        <div>
+            {% set module_title = module.display_name if module.display_name else module.name %}
+            {% if module.url %}
+            <div class="header"><a href="{{ module.url }}">{{ module_title }}</a></div>
+            {% else %}
+            <div class="header">{{ module_title }}</div>
+            {% endif %}
+            <ul>
+                {% for version in module.versions | reverse %}
+                <li><a href="/{{ module.full_path | replace('\\', '/') }}/{{ version }}/">{{ version }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    </details>
 </div>
+{% endfor %}
 </body>
 </html>
