@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=./_generator/metadata.schema.json
+$schema: ./_generator/metadata.schema.json
 name: Sponge Javadoc
 
 # Extra component metadata

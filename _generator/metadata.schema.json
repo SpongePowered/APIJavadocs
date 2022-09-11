@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://jd.spongepowered.org/schema/metadata.schema.json",
+    "title": "Javadoc Index Metadata File",
+    "description": "A metdatadata file describing projects included in a generated Javadoc index.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "A title for the index page"
+        },
+        "$schema": true,
+        "components": {
+            "type": "object",
+            "description": "Metadata for a single component",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "A user-readable name"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "A URl to link the component name to"
+                    },
+                    "group": {
+                        "type": "string",
+                        "description": "A module group for display -- null for top level"
+                    },
+                    "snapshot-regex": {
+                        "type": "string",
+                        "description": "A regular expression to determine if a version should be considered a snapshot",
+                        "default": ".+-SNAPSHOT$"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "groups": {
+            "type": "object",
+            "description": "Metadata for groups of components",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "A display name for this group"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "A longer description for this project group"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "A URL to link the display name of the group to"
+                    },
+                    "from-directory": {
+                        "type": "boolean",
+                        "description": "If subdirectories of a directory matching the group's name should be picked up as modules associated with the group"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "components",
+        "groups"
+    ]
+}
