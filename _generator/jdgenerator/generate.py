@@ -50,7 +50,7 @@ def _populate_versions(result: dict[str, list[ModuleMetadata]], jd_root: Path, c
         if dirname.startswith(".") or dirname.startswith("_") or not module.is_dir():
             continue
 
-        if (not chosen_group) and dirname in group_metadata and group_metadata[dirname].get("from_directory", False):
+        if (not chosen_group) and dirname in group_metadata and group_metadata[dirname].get("from-directory", False):
             # contribute
             # treat every child project as part of the group
             _populate_versions(result, jd_root, module, module_metadata, group_metadata, dirname)
@@ -68,14 +68,17 @@ def _resolve_metadata(root_path: Path, module_path: Path, module_metadata: any, 
     versions.sort()
 
     dirname = module_path.name
-    return ModuleMetadata(
+    meta = ModuleMetadata(
             dirname,
             module_path.relative_to(root_path),
-            re.compile(module_metadata.get("snapshot_pattern", ".+-SNAPSHOT$")),
+            re.compile(module_metadata.get("snapshot-regex", ".+-SNAPSHOT$")),
             versions,
             module_metadata.get("name", None),
             module_metadata.get("url", None)
         )
+
+    meta.snapshot_regex.match(str(versions[0]))
+    return meta
 
 
 def _create_parser() -> argparse.ArgumentParser:
@@ -115,7 +118,6 @@ def _do_generate(dest: Path, jd_root: Path, metadata_file: Path, template_root: 
     tmpl_env.globals["name"] = metadata.get("name", "Javadocs")
     tmpl_env.globals["module_versions"] = module_versions
     tmpl_env.globals["groups"] = groups
-    # TODO: hide snapshot versions
 
     for tmpl in template_root.glob('**/*'):
         tmpl_out = dest / tmpl.relative_to(template_root)
@@ -123,6 +125,8 @@ def _do_generate(dest: Path, jd_root: Path, metadata_file: Path, template_root: 
         template = tmpl_env.get_template(str(tmpl.relative_to(template_root)))
         with tmpl_out.open(mode = 'wt') as fp:
             fp.write(template.render())
+
+    # TODO: group-specific index pages?
 
     # Copy static content
     for static in static_root.glob('**/*'):

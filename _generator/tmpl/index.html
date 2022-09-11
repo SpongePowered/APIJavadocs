@@ -6,7 +6,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="title">{{ name }}</div>
+<div class="title">{{ name }}
+    <div id="snapshot-toggle">
+        <label for="snapshots">Show Snapshots</label>
+        <input type="checkbox" name="snapshots" checked="true"/>
+    </div>
+</div>
 {% for group, modules in module_versions.items() %}
 <div class="group">
 {% if group != None %}
@@ -42,7 +47,7 @@
             {% endif %}
             <ul>
                 {% for version in module.versions | reverse %}
-                <li><a href="/{{ module.full_path | replace('\\', '/') }}/{{ version }}/">{{ version }}</a></li>
+                <li {% if module.snapshot_regex.match("{}".format(version)) %}class="snapshot"{% endif %}><a href="/{{ module.full_path | replace('\\', '/') }}/{{ version }}/">{{ version }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -51,5 +56,21 @@
     </details>
 </div>
 {% endfor %}
+<script>
+    let snapshotToggle = document.getElementsByName("snapshots")[0];
+    let extraStyle = document.createElement('style', {id: 'injected-style'});
+    document.head.appendChild(extraStyle)
+    snapshotToggle.addEventListener('change', (event) => {
+        if (snapshotToggle.checked) {
+            extraStyle.innerHTML = '';
+        } else {
+            extraStyle.innerHTML = `
+            .snapshot {
+                display: none;
+            }
+            `;
+        }
+    })
+</script>
 </body>
 </html>

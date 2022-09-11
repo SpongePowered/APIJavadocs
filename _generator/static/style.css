@@ -21,6 +21,12 @@ body {
   padding-top: 20px;
 }
 
+div#snapshot-toggle {
+    display: inline;
+    position: absolute;
+    right: 1em;
+}
+
 a {
   text-decoration: none;
   color: #99b8ff;
