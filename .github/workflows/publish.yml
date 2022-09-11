@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: "checkout repository"
         uses: "actions/checkout@v3"
+      - name: "install poetry"
+        run: pipx install poetry
       - name: "setup python ${{ env.PYTHON_VERSION }}"
         uses: "actions/setup-python@v4"
         with:
@@ -20,7 +22,6 @@ jobs:
           cache: "poetry"
       - name: "install dependencies"
         run: |
-          python -m pip install --upgrade poetry
           pushd _generator
           poetry install
       - name: "generate site"
