@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.spongepowered.configurate.gson","l":"GsonConfigurationLoader.Builder"},{"p":"org.spongepowered.configurate.gson","l":"GsonConfigurationFormat"},{"p":"org.spongepowered.configurate.gson","l":"GsonConfigurationLoader"}]

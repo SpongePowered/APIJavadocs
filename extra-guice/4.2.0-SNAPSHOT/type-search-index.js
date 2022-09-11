@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.spongepowered.configurate.objectmapping.guice","l":"GuiceObjectMapperProvider"}]
