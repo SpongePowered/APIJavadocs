@@ -19,7 +19,7 @@ jobs:
           python-version: "${{ env.PYTHON_VERSION }}"
       - name: "install dependencies"
         run: |
-          pipx install poetry
+          pip install poetry
           pushd _generator
           poetry install
       - name: "generate site"
