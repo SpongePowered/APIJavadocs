@@ -1,0 +1,5 @@
+module:org.spongepowered.math
+org.spongepowered.math
+org.spongepowered.math.imaginary
+org.spongepowered.math.matrix
+org.spongepowered.math.vector
