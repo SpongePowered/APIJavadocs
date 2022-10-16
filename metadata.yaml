@@ -56,3 +56,8 @@ groups:
         name: Plugin Meta
         description: Plugin metadata format implementations, including the Sponge plugin metadata spec
         url: https://github.com/SpongePowered/plugin-meta
+    spongegradle:
+        name: SpongeGradle
+        description: Gradle plugins for Sponge plugin (and internal) development
+        url: https://github.com/SpongePowered/SpongeGradle
+        from-directory: true
