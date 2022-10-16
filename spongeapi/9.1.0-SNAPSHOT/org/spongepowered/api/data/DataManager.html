@@ -160,16 +160,22 @@ B&gt;&gt;<br>void</code></div>
  <a href="DataRegistration.html" title="interface in org.spongepowered.api.data"><code>DataRegistration</code></a> from a plugin such that the custom data can
  be read by a plugin-data datastore.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#translator(java.lang.Class)" class="member-name-link">translator</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;objectClass)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerTranslator(java.lang.Class,org.spongepowered.api.data.persistence.DataTranslator)" class="member-name-link">registerTranslator</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;objectClass,
+ <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&nbsp;translator)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Registers a <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the desired class.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#translator(java.lang.Class)" class="member-name-link">translator</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;objectClass)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the desired <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the provided class.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#wrappedContentUpdater(java.lang.Class,int,int)" class="member-name-link">wrappedContentUpdater</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;clazz,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#wrappedContentUpdater(java.lang.Class,int,int)" class="member-name-link">wrappedContentUpdater</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;clazz,
  int&nbsp;fromVersion,
  int&nbsp;toVersion)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a wrapped fake <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a> that may wrap several
  <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a>s to translate versioned data from the desired
  <code>fromVersion</code> to the <code>toVersion</code>.</div>
@@ -363,6 +369,21 @@ B&gt;&gt;</span>
 <dd><code>objectClass</code> - The class of the object</dd>
 <dt>Returns:</dt>
 <dd>The data translator, if available</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="registerTranslator(java.lang.Class,org.spongepowered.api.data.persistence.DataTranslator)">
+<h3>registerTranslator</h3>
+<div class="member-signature"><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">registerTranslator</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;objectClass,
+ <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&nbsp;translator)</span></div>
+<div class="block">Registers a <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the desired class.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - The type of object</dd>
+<dt>Parameters:</dt>
+<dd><code>objectClass</code> - The class of the object type being managed</dd>
+<dd><code>translator</code> - The translator for the desired class object</dd>
 </dl>
 </section>
 </li>
