@@ -1,0 +1,5 @@
+org.spongepowered.gradle.ore
+org.spongepowered.gradle.ore.internal
+org.spongepowered.gradle.ore.internal.http
+org.spongepowered.gradle.ore.internal.model
+org.spongepowered.gradle.ore.task
