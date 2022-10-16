@@ -195,7 +195,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;? extends <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#blockEntity()">blockEntity</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the associated <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> on this block.</div>
@@ -287,7 +287,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onServer()">onServer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -397,7 +397,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i34" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Location.html" title="type parameter in Location">W</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="Location.html" title="type parameter in Location">W</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#worldIfAvailable()">worldIfAvailable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the underlying <a href="World.html" title="interface in org.spongepowered.api.world"><code>World</code></a> if it's available.</div>
@@ -448,7 +448,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>world</h4>
 <pre class="methodSignature"><a href="Location.html" title="type parameter in Location">W</a>&nbsp;world()</pre>
-<div class="block">Gets the underlying world. Throws a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a>
+<div class="block">Gets the underlying world. Throws a <code>IllegalStateException</code>
  if the world isn't available.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -464,7 +464,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>worldIfAvailable</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Location.html" title="type parameter in Location">W</a>&gt;&nbsp;worldIfAvailable()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="Location.html" title="type parameter in Location">W</a>&gt;&nbsp;worldIfAvailable()</pre>
 <div class="block">Gets the underlying <a href="World.html" title="interface in org.spongepowered.api.world"><code>World</code></a> if it's available. A <a href="World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>
  is available when it exists and is loaded.</div>
 <dl>
@@ -652,7 +652,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>onServer</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;onServer()</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;onServer()</pre>
 </li>
 </ul>
 <a id="inWorld(org.spongepowered.api.world.World)">
@@ -665,7 +665,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>inWorld</h4>
 <pre class="methodSignature">boolean&nbsp;inWorld&#8203;(<a href="Location.html" title="type parameter in Location">W</a>&nbsp;world)</pre>
 <div class="block">Returns true if this location is in the given world. This is implemented
- as an <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink"><code>Object.equals(Object)</code></a> check.</div>
+ as an <code>Object.equals(Object)</code> check.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>world</code> - The world to check</dd>
@@ -870,7 +870,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The location in that direction</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the direction is a
+<dd><code>java.lang.IllegalArgumentException</code> - If the direction is a
  <a href="../util/Direction.Division.html#SECONDARY_ORDINAL"><code>Direction.Division.SECONDARY_ORDINAL</code></a></dd>
 </dl>
 </li>
@@ -967,7 +967,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>blockEntity</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;&nbsp;blockEntity()</pre>
+<pre class="methodSignature">java.util.Optional&lt;? extends <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a>&gt;&nbsp;blockEntity()</pre>
 <div class="block">Gets the associated <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> on this block.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

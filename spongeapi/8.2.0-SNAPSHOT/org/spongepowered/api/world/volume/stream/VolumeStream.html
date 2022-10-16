@@ -128,9 +128,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">VolumeStream&lt;V extends <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume">Volume</a>,&#8203;T&gt;</span></pre>
-<div class="block">A specialized <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeElement</code></a>&lt;<a href="../Volume.html" title="interface in org.spongepowered.api.world.volume"><code>Volume</code></a>, <code>T</code>&gt;&gt;
+<div class="block">A specialized <code>Stream</code>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeElement</code></a>&lt;<a href="../Volume.html" title="interface in org.spongepowered.api.world.volume"><code>Volume</code></a>, <code>T</code>&gt;&gt;
  that is lazily evaluated and backed/populated by the particular <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume"><code>Volume</code></a>. Much like
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a>, there are intermediary operations that can be performed on the stream,
+ <code>Stream</code>, there are intermediary operations that can be performed on the stream,
  and terminal operations. While a <a href="../Volume.html" title="interface in org.spongepowered.api.world.volume"><code>Volume</code></a> has many applications, on occasion work
  is requested to be performed in "bulk" or given a specific "work area".
 
@@ -171,7 +171,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allMatch(java.util.function.Predicate)">allMatch</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allMatch(java.util.function.Predicate)">allMatch</a></span>&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -181,7 +181,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#anyMatch(java.util.function.Predicate)">anyMatch</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#anyMatch(java.util.function.Predicate)">anyMatch</a></span>&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -197,7 +197,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;W extends <a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>,&#8203;R&gt;<br>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#applyUntil(org.spongepowered.api.world.volume.stream.VolumeCollector,java.util.function.Predicate)">applyUntil</a></span>&#8203;(<a href="VolumeCollector.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeCollector</a>&lt;W,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>,&#8203;R&gt;&nbsp;collector,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;R&gt;&nbsp;predicate)</code></th>
+          java.util.function.Predicate&lt;R&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -207,7 +207,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default <a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(java.util.function.Predicate)">filter</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(java.util.function.Predicate)">filter</a></span>&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
@@ -216,28 +216,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findAny()">findAny</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findFirst()">findFirst</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>default <a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;mapper)</code></th>
+<td class="colFirst"><code>default <a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;java.util.Optional&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flatMap(java.util.function.Function)">flatMap</a></span>&#8203;(java.util.function.Function&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;java.util.Optional&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;mapper)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;java.util.Optional&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flatMap(org.spongepowered.api.world.volume.stream.VolumeFlatMapper)">flatMap</a></span>&#8203;(<a href="VolumeFlatMapper.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeFlatMapper</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&nbsp;mapper)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forEach(java.util.function.Consumer)">forEach</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;consumer)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forEach(java.util.function.Consumer)">forEach</a></span>&#8203;(java.util.function.Consumer&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;consumer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -247,7 +247,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>default &lt;Out&gt;&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;Out&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#map(java.util.function.Function)">map</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;? extends Out&gt;&nbsp;mapper)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#map(java.util.function.Function)">map</a></span>&#8203;(java.util.function.Function&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;? extends Out&gt;&nbsp;mapper)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
@@ -257,7 +257,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noneMatch(java.util.function.Predicate)">noneMatch</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noneMatch(java.util.function.Predicate)">noneMatch</a></span>&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
@@ -266,7 +266,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.stream.Stream&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toStream()">toStream</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -321,7 +321,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>filter</h4>
-<pre class="methodSignature">default&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&nbsp;filter&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&nbsp;filter&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
 </li>
 </ul>
 <a id="map(org.spongepowered.api.world.volume.stream.VolumeMapper)">
@@ -339,7 +339,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>map</h4>
-<pre class="methodSignature">default&nbsp;&lt;Out&gt;&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;Out&gt;&nbsp;map&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;? extends Out&gt;&nbsp;mapper)</pre>
+<pre class="methodSignature">default&nbsp;&lt;Out&gt;&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;Out&gt;&nbsp;map&#8203;(java.util.function.Function&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;? extends Out&gt;&nbsp;mapper)</pre>
 </li>
 </ul>
 <a id="flatMap(org.spongepowered.api.world.volume.stream.VolumeFlatMapper)">
@@ -348,7 +348,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>flatMap</h4>
-<pre class="methodSignature"><a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;flatMap&#8203;(<a href="VolumeFlatMapper.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeFlatMapper</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&nbsp;mapper)</pre>
+<pre class="methodSignature"><a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;java.util.Optional&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;flatMap&#8203;(<a href="VolumeFlatMapper.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeFlatMapper</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&nbsp;mapper)</pre>
 </li>
 </ul>
 <a id="flatMap(java.util.function.Function)">
@@ -357,7 +357,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>flatMap</h4>
-<pre class="methodSignature">default&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;flatMap&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;mapper)</pre>
+<pre class="methodSignature">default&nbsp;<a href="VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;java.util.Optional&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;flatMap&#8203;(java.util.function.Function&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;,&#8203;java.util.Optional&lt;? extends <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;mapper)</pre>
 </li>
 </ul>
 <a id="transform(org.spongepowered.api.world.volume.stream.VolumePositionTranslator)">
@@ -393,7 +393,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allMatch</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;allMatch&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;allMatch&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
 </li>
 </ul>
 <a id="noneMatch(org.spongepowered.api.world.volume.stream.VolumePredicate)">
@@ -411,7 +411,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>noneMatch</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;noneMatch&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;noneMatch&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
 </li>
 </ul>
 <a id="anyMatch(org.spongepowered.api.world.volume.stream.VolumePredicate)">
@@ -429,7 +429,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>anyMatch</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;anyMatch&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;anyMatch&#8203;(java.util.function.Predicate&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;? super <a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;predicate)</pre>
 </li>
 </ul>
 <a id="findFirst()">
@@ -438,7 +438,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>findFirst</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;findFirst()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;findFirst()</pre>
 </li>
 </ul>
 <a id="findAny()">
@@ -447,7 +447,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>findAny</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;findAny()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;findAny()</pre>
 </li>
 </ul>
 <a id="toStream()">
@@ -456,7 +456,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>toStream</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;toStream()</pre>
+<pre class="methodSignature">java.util.stream.Stream&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;toStream()</pre>
 </li>
 </ul>
 <a id="apply(org.spongepowered.api.world.volume.stream.VolumeCollector)">
@@ -475,7 +475,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>applyUntil</h4>
 <pre class="methodSignature">&lt;W extends <a href="../MutableVolume.html" title="interface in org.spongepowered.api.world.volume">MutableVolume</a>,&#8203;R&gt;&nbsp;void&nbsp;applyUntil&#8203;(<a href="VolumeCollector.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeCollector</a>&lt;W,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>,&#8203;R&gt;&nbsp;collector,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;R&gt;&nbsp;predicate)</pre>
+                                                  java.util.function.Predicate&lt;R&gt;&nbsp;predicate)</pre>
 </li>
 </ul>
 <a id="forEach(org.spongepowered.api.world.volume.stream.VolumeConsumer)">
@@ -493,7 +493,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>forEach</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;forEach&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;consumer)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;forEach&#8203;(java.util.function.Consumer&lt;<a href="VolumeElement.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeElement</a>&lt;<a href="VolumeStream.html" title="type parameter in VolumeStream">V</a>,&#8203;<a href="VolumeStream.html" title="type parameter in VolumeStream">T</a>&gt;&gt;&nbsp;consumer)</pre>
 </li>
 </ul>
 </li>

@@ -149,7 +149,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addHandler(java.lang.Class,org.spongepowered.api.network.channel.raw.play.RawPlayDataHandler)">addHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addHandler(java.lang.Class,org.spongepowered.api.network.channel.raw.play.RawPlayDataHandler)">addHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
           <a href="RawPlayDataHandler.html" title="interface in org.spongepowered.api.network.channel.raw.play">RawPlayDataHandler</a>&lt;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Adds a listener to this channel that is invoked every time data is
@@ -190,7 +190,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeHandler(java.lang.Class,org.spongepowered.api.network.channel.raw.play.RawPlayDataHandler)">removeHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeHandler(java.lang.Class,org.spongepowered.api.network.channel.raw.play.RawPlayDataHandler)">removeHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
              <a href="RawPlayDataHandler.html" title="interface in org.spongepowered.api.network.channel.raw.play">RawPlayDataHandler</a>&lt;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Removes the handler from handling data.</div>
@@ -212,24 +212,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendTo(org.spongepowered.api.entity.living.player.server.ServerPlayer,java.util.function.Consumer)">sendTo</a></span>&#8203;(<a href="../../../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&nbsp;player,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
+      java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
 <td class="colLast">
 <div class="block">Sends the raw payload to the player across this channel.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendTo(org.spongepowered.api.network.EngineConnection,java.util.function.Consumer)">sendTo</a></span>&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
+      java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
 <td class="colLast">
 <div class="block">Sends the raw payload to the player across this channel.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToAllPlayers(java.util.function.Consumer)">sendToAllPlayers</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToAllPlayers(java.util.function.Consumer)">sendToAllPlayers</a></span>&#8203;(java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
 <td class="colLast">
 <div class="block">Sends the raw payload to all players on the server.</div>
 </td>
@@ -237,14 +237,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToAllPlayersIn(org.spongepowered.api.world.server.ServerWorld,java.util.function.Consumer)">sendToAllPlayersIn</a></span>&#8203;(<a href="../../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
+                  java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
 <td class="colLast">
 <div class="block">Sends the <a href="../../packet/Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to all players in the given world.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToServer(java.util.function.Consumer)">sendToServer</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
+<td class="colFirst"><code>default java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToServer(java.util.function.Consumer)">sendToServer</a></span>&#8203;(java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
 <td class="colLast">
 <div class="block">Sends the raw payload to the server.</div>
 </td>
@@ -340,7 +340,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>addHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;void&nbsp;addHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;void&nbsp;addHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                              <a href="RawPlayDataHandler.html" title="interface in org.spongepowered.api.network.channel.raw.play">RawPlayDataHandler</a>&lt;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Adds a listener to this channel that is invoked every time data is
  sent to it on the given connection side.</div>
@@ -377,7 +377,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>removeHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;void&nbsp;removeHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;void&nbsp;removeHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                 <a href="RawPlayDataHandler.html" title="interface in org.spongepowered.api.network.channel.raw.play">RawPlayDataHandler</a>&lt;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Removes the handler from handling data.</div>
 <dl>
@@ -409,7 +409,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>sendToAllPlayers</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;sendToAllPlayers&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;sendToAllPlayers&#8203;(java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
 <div class="block">Sends the raw payload to all players on the server.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -424,7 +424,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>sendToAllPlayersIn</h4>
 <pre class="methodSignature">default&nbsp;void&nbsp;sendToAllPlayersIn&#8203;(<a href="../../../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
+                                java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
 <div class="block">Sends the <a href="../../packet/Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to all players in the given world.
 
  <p>A exception will be thrown if the specified packet type
@@ -443,8 +443,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>sendTo</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;sendTo&#8203;(<a href="../../../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&nbsp;player,
-                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
+<pre class="methodSignature">default&nbsp;java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;&nbsp;sendTo&#8203;(<a href="../../../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&nbsp;player,
+                                                                      java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
 <div class="block">Sends the raw payload to the player across this channel. The data may
  not be sent if the player doesn't have a registered handler.</div>
 <dl>
@@ -462,7 +462,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>sendToServer</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;sendToServer&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
+<pre class="methodSignature">default&nbsp;java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;&nbsp;sendToServer&#8203;(java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
 <div class="block">Sends the raw payload to the server. The data may not be sent if
  there is no registered handler. This <strong>must</strong> be called
  from the client side.</div>
@@ -480,8 +480,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendTo</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;sendTo&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;&nbsp;sendTo&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
+                                                              java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
 <div class="block">Sends the raw payload to the player across this channel. The data may
  not be sent if the player doesn't have a registered handler.</div>
 <dl>

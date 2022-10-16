@@ -121,12 +121,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Delayed.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Delayed</a>&gt;</code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Delayed.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Delayed</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Future</a>&lt;V&gt;</code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">RunnableFuture</a>&lt;V&gt;</code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableScheduledFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">RunnableScheduledFuture</a>&lt;V&gt;</code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledFuture</a>&lt;V&gt;</code>, <code><a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;V&gt;</code></dd>
+<dd><code>java.lang.Comparable&lt;java.util.concurrent.Delayed&gt;</code>, <code>java.util.concurrent.Delayed</code>, <code>java.util.concurrent.Future&lt;V&gt;</code>, <code>java.lang.Runnable</code>, <code>java.util.concurrent.RunnableFuture&lt;V&gt;</code>, <code>java.util.concurrent.RunnableScheduledFuture&lt;V&gt;</code>, <code>java.util.concurrent.ScheduledFuture&lt;V&gt;</code>, <code><a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;V&gt;</code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">ScheduledTaskFuture&lt;V&gt;</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableScheduledFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">RunnableScheduledFuture</a>&lt;V&gt;, <a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;V&gt;</pre>
-<div class="block">Represents a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableScheduledFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>RunnableScheduledFuture</code></a> of a <a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler"><code>ScheduledTask</code></a>.</div>
+extends java.util.concurrent.RunnableScheduledFuture&lt;V&gt;, <a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;V&gt;</pre>
+<div class="block">Represents a <code>RunnableScheduledFuture</code> of a <a href="ScheduledTask.html" title="interface in org.spongepowered.api.scheduler"><code>ScheduledTask</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -144,36 +144,36 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Comparable">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang" class="externalLink">compareTo</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.lang.Comparable</h3>
+<code>compareTo</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.util.concurrent.Delayed">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.concurrent.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Delayed.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Delayed</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Delayed.html?is-external=true#getDelay(java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">getDelay</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.concurrent.Delayed</h3>
+<code>getDelay</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.util.concurrent.Future">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.concurrent.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Future</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true#cancel(boolean)" title="class or interface in java.util.concurrent" class="externalLink">cancel</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true#get()" title="class or interface in java.util.concurrent" class="externalLink">get</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true#get(long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">get</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true#isCancelled()" title="class or interface in java.util.concurrent" class="externalLink">isCancelled</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true#isDone()" title="class or interface in java.util.concurrent" class="externalLink">isDone</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.concurrent.Future</h3>
+<code>cancel, get, get, isCancelled, isDone</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.util.concurrent.RunnableFuture">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.concurrent.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">RunnableFuture</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableFuture.html?is-external=true#run()" title="class or interface in java.util.concurrent" class="externalLink">run</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.concurrent.RunnableFuture</h3>
+<code>run</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.util.concurrent.RunnableScheduledFuture">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.concurrent.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableScheduledFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">RunnableScheduledFuture</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RunnableScheduledFuture.html?is-external=true#isPeriodic()" title="class or interface in java.util.concurrent" class="externalLink">isPeriodic</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.concurrent.RunnableScheduledFuture</h3>
+<code>isPeriodic</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.scheduler.TaskFuture">

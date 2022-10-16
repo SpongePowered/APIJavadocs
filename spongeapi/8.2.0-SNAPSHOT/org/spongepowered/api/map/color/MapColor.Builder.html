@@ -162,7 +162,7 @@ extends <a href="../../util/ResettableBuilder.html" title="interface in org.spon
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default <a href="MapColor.Builder.html" title="interface in org.spongepowered.api.map.color">MapColor.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#baseColor(java.util.function.Supplier)">baseColor</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#baseColor(java.util.function.Supplier)">baseColor</a></span>&#8203;(java.util.function.Supplier&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</code></th>
 <td class="colLast">
 <div class="block">Method to ease using <a href="MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a> enumerations.</div>
 </td>
@@ -348,7 +348,7 @@ extends <a href="../../util/ResettableBuilder.html" title="interface in org.spon
 <ul class="blockList">
 <li class="blockList">
 <h4>baseColor</h4>
-<pre class="methodSignature">default&nbsp;<a href="MapColor.Builder.html" title="interface in org.spongepowered.api.map.color">MapColor.Builder</a>&nbsp;baseColor&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</pre>
+<pre class="methodSignature">default&nbsp;<a href="MapColor.Builder.html" title="interface in org.spongepowered.api.map.color">MapColor.Builder</a>&nbsp;baseColor&#8203;(java.util.function.Supplier&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</pre>
 <div class="block">Method to ease using <a href="MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a> enumerations. Unwraps
  then calls <a href="#baseColor(org.spongepowered.api.map.color.MapColorType)"><code>baseColor(MapColorType)</code></a></div>
 <dl>
@@ -368,7 +368,7 @@ extends <a href="../../util/ResettableBuilder.html" title="interface in org.spon
 <pre class="methodSignature"><a href="MapColor.Builder.html" title="interface in org.spongepowered.api.map.color">MapColor.Builder</a>&nbsp;from&#8203;(<a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a>&nbsp;mapColor)</pre>
 <div class="block">Copies all data from the given <a href="MapColor.html" title="interface in org.spongepowered.api.map.color"><code>MapColor</code></a> and applies it to this
  builder. Therefore, if <a href="#build()"><code>build()</code></a> is called directly after, the
- result of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html?is-external=true#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="externalLink"><code>Objects.equals(Object, Object)</code></a> between them will be <code>true</code>.
+ result of <code>Objects.equals(Object, Object)</code> between them will be <code>true</code>.
  Any aspect of this builder could then be modified to produce similar but
  not identical MapColors.</div>
 <dl>
@@ -403,14 +403,14 @@ extends <a href="../../util/ResettableBuilder.html" title="interface in org.spon
 <li class="blockList">
 <h4>build</h4>
 <pre class="methodSignature"><a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a>&nbsp;build()
-        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></pre>
+        throws java.lang.IllegalStateException</pre>
 <div class="block">Creates a <a href="MapColor.html" title="interface in org.spongepowered.api.map.color"><code>MapColor</code></a> that represents the combination of this
  <a href="MapColorType.html" title="interface in org.spongepowered.api.map.color"><code>MapColorType</code></a> and <a href="MapShade.html" title="interface in org.spongepowered.api.map.color"><code>MapShade</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="MapColor.html" title="interface in org.spongepowered.api.map.color"><code>MapColor</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - if no <a href="MapColorType.html" title="interface in org.spongepowered.api.map.color"><code>MapColorType</code></a> was provided</dd>
+<dd><code>java.lang.IllegalStateException</code> - if no <a href="MapColorType.html" title="interface in org.spongepowered.api.map.color"><code>MapColorType</code></a> was provided</dd>
 </dl>
 </li>
 </ul>

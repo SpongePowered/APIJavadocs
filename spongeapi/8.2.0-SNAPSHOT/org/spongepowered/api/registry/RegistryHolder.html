@@ -149,7 +149,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;T&gt;&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRegistry(org.spongepowered.api.registry.RegistryType)">findRegistry</a></span>&#8203;(<a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a> by a <a href="RegistryType.html" title="interface in org.spongepowered.api.registry"><code>type</code></a>, if found.</div>
@@ -163,10 +163,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.stream.Stream&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#streamRegistries(org.spongepowered.api.ResourceKey)">streamRegistries</a></span>&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</code></th>
 <td class="colLast">
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
+<div class="block">Gets a <code>Stream</code> of the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
 </td>
 </tr>
 </table>
@@ -215,7 +215,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>findRegistry</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;T&gt;&gt;&nbsp;findRegistry&#8203;(<a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;type)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;T&gt;&gt;&nbsp;findRegistry&#8203;(<a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;type)</pre>
 <div class="block">Gets the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a> by a <a href="RegistryType.html" title="interface in org.spongepowered.api.registry"><code>type</code></a>, if found.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -223,7 +223,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - The type</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The registry or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+<dd>The registry or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>
@@ -233,8 +233,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>streamRegistries</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;&nbsp;streamRegistries&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</pre>
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
+<pre class="methodSignature">java.util.stream.Stream&lt;<a href="Registry.html" title="interface in org.spongepowered.api.registry">Registry</a>&lt;?&gt;&gt;&nbsp;streamRegistries&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;root)</pre>
+<div class="block">Gets a <code>Stream</code> of the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>root</code> - The root to stream registries of</dd>

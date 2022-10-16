@@ -179,50 +179,50 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#commandMapping(java.lang.String)">commandMapping</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;alias)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#commandMapping(java.lang.String)">commandMapping</a></span>&#8203;(java.lang.String&nbsp;alias)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager"><code>CommandMapping</code></a> associated with the requested alias,
  if any.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(java.lang.String)">complete</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+<td class="colFirst"><code>java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(java.lang.String)">complete</a></span>&#8203;(java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Provides possible completions based on the input argument string.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(org.spongepowered.api.service.permission.Subject,net.kyori.adventure.audience.Audience,java.lang.String)">complete</a></span>&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-        <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+        <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
+        java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Provides possible completions based on the input argument string,
  with a provided a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br>java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(T,java.lang.String)">complete</a></span>&#8203;(T&nbsp;subjectReceiver,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+        java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Provides possible completions based on the input argument string,
  with a provided object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission
- checks and a <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ checks and a <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#knownAliases()">knownAliases</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all the command aliases known to this command manager.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#knownMappings()">knownMappings</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all the <a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager"><code>mappings</code></a> known to this command
@@ -230,16 +230,16 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;org.spongepowered.plugin.PluginContainer&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;org.spongepowered.plugin.PluginContainer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#plugins()">plugins</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> of <code>PluginContainer</code>s with commands
+<div class="block">Gets a <code>Collection</code> of <code>PluginContainer</code>s with commands
  registered.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(java.lang.String)">process</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(java.lang.String)">process</a></span>&#8203;(java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Executes a command based on the provided arguments.</div>
 </td>
@@ -247,26 +247,26 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(org.spongepowered.api.service.permission.Subject,net.kyori.adventure.audience.Audience,java.lang.String)">process</a></span>&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-       <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+       <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
+       java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Executes a command based on the provided arguments, with a provided
  <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a provided
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
+<td class="colFirst"><code>&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;<br><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(T,java.lang.String)">process</a></span>&#8203;(T&nbsp;subjectReceiver,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+       java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Executes a command based on the provided arguments, with a provided
  object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registrar(io.leangen.geantyref.TypeToken)">registrar</a></span>&#8203;(io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Get a registrar that will register commands of <code>type</code> to the active
@@ -274,8 +274,8 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registrar(java.lang.Class)">registrar</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;type)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registrar(java.lang.Class)">registrar</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Get a registrar that will register commands of <code>type</code> to the active
  command manager.</div>
@@ -312,7 +312,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>registrar</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;&nbsp;registrar&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;type)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;&nbsp;registrar&#8203;(java.lang.Class&lt;T&gt;&nbsp;type)</pre>
 <div class="block">Get a registrar that will register commands of <code>type</code> to the active
  command manager.
 
@@ -339,7 +339,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>registrar</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;&nbsp;registrar&#8203;(io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;type)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="../registrar/CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;T&gt;&gt;&nbsp;registrar&#8203;(io.leangen.geantyref.TypeToken&lt;T&gt;&nbsp;type)</pre>
 <div class="block">Get a registrar that will register commands of <code>type</code> to the active
  command manager.
 
@@ -366,7 +366,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>process</h4>
-<pre class="methodSignature"><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
+<pre class="methodSignature"><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(java.lang.String&nbsp;arguments)
                throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Executes a command based on the provided arguments.</div>
 <dl>
@@ -388,17 +388,17 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>process</h4>
-<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(T&nbsp;subjectReceiver,
-                                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
+<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(T&nbsp;subjectReceiver,
+                                                     java.lang.String&nbsp;arguments)
                                               throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Executes a command based on the provided arguments, with a provided
  object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of receiver</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
+<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
 <dd><code>arguments</code> - The arguments to parse and execute</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="../CommandResult.html" title="interface in org.spongepowered.api.command"><code>CommandResult</code></a></dd>
@@ -415,16 +415,16 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <li class="blockList">
 <h4>process</h4>
 <pre class="methodSignature"><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-                      <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
+                      <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;channel,
+                      java.lang.String&nbsp;arguments)
                throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Executes a command based on the provided arguments, with a provided
  <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a provided
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>subject</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks</dd>
-<dd><code>channel</code> - The <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return messages to</dd>
+<dd><code>channel</code> - The <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return messages to</dd>
 <dd><code>arguments</code> - The arguments of the command</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="../CommandResult.html" title="interface in org.spongepowered.api.command"><code>CommandResult</code></a></dd>
@@ -440,7 +440,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(java.lang.String&nbsp;arguments)</pre>
 <div class="block">Provides possible completions based on the input argument string.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -458,16 +458,16 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(T&nbsp;subjectReceiver,
-                                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</pre>
+<pre class="methodSignature">&lt;T extends <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a> &amp; <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(T&nbsp;subjectReceiver,
+                                                                          java.lang.String&nbsp;arguments)</pre>
 <div class="block">Provides possible completions based on the input argument string,
  with a provided object that is both a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission
- checks and a <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ checks and a <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of receiver</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
+<dd><code>subjectReceiver</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> &amp; <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
 <dd><code>arguments</code> - The arguments</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The completions</dd>
@@ -480,16 +480,16 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
-                                 <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission">Subject</a>&nbsp;subject,
+                                           <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;receiver,
+                                           java.lang.String&nbsp;arguments)</pre>
 <div class="block">Provides possible completions based on the input argument string,
  with a provided a <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> for permission checks and a
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> to return command messages to.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>subject</code> - The <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a></dd>
-<dd><code>receiver</code> - The <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
+<dd><code>receiver</code> - The <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a></dd>
 <dd><code>arguments</code> - The arguments</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The completions</dd>
@@ -502,7 +502,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>knownAliases</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;knownAliases()</pre>
+<pre class="methodSignature">java.util.Set&lt;java.lang.String&gt;&nbsp;knownAliases()</pre>
 <div class="block">Gets all the command aliases known to this command manager.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -516,7 +516,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>knownMappings</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;&nbsp;knownMappings()</pre>
+<pre class="methodSignature">java.util.Set&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;&nbsp;knownMappings()</pre>
 <div class="block">Gets all the <a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager"><code>mappings</code></a> known to this command
  manager.</div>
 <dl>
@@ -531,12 +531,12 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>plugins</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;org.spongepowered.plugin.PluginContainer&gt;&nbsp;plugins()</pre>
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> of <code>PluginContainer</code>s with commands
+<pre class="methodSignature">java.util.Collection&lt;org.spongepowered.plugin.PluginContainer&gt;&nbsp;plugins()</pre>
+<div class="block">Gets a <code>Collection</code> of <code>PluginContainer</code>s with commands
  registered.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> of <code>PluginContainer</code>s.</dd>
+<dd>A <code>Collection</code> of <code>PluginContainer</code>s.</dd>
 </dl>
 </li>
 </ul>
@@ -546,7 +546,7 @@ public interface <span class="typeNameLabel">CommandManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>commandMapping</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;&nbsp;commandMapping&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;alias)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&gt;&nbsp;commandMapping&#8203;(java.lang.String&nbsp;alias)</pre>
 <div class="block">Gets the <a href="CommandMapping.html" title="interface in org.spongepowered.api.command.manager"><code>CommandMapping</code></a> associated with the requested alias,
  if any.</div>
 <dl>

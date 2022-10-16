@@ -202,7 +202,7 @@ extends <a href="../GenericEvent.html" title="interface in org.spongepowered.api
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suggest(java.util.function.Supplier)">suggest</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="ProvideServiceEvent.html" title="type parameter in ProvideServiceEvent">T</a>&gt;&nbsp;serviceFactory)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suggest(java.util.function.Supplier)">suggest</a></span>&#8203;(java.util.function.Supplier&lt;<a href="ProvideServiceEvent.html" title="type parameter in ProvideServiceEvent">T</a>&gt;&nbsp;serviceFactory)</code></th>
 <td class="colLast">
 <div class="block">Provides a suggestion for the given service.</div>
 </td>
@@ -251,12 +251,12 @@ extends <a href="../GenericEvent.html" title="interface in org.spongepowered.api
 <ul class="blockListLast">
 <li class="blockList">
 <h4>suggest</h4>
-<pre class="methodSignature">void&nbsp;suggest&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="ProvideServiceEvent.html" title="type parameter in ProvideServiceEvent">T</a>&gt;&nbsp;serviceFactory)</pre>
+<pre class="methodSignature">void&nbsp;suggest&#8203;(java.util.function.Supplier&lt;<a href="ProvideServiceEvent.html" title="type parameter in ProvideServiceEvent">T</a>&gt;&nbsp;serviceFactory)</pre>
 <div class="block">Provides a suggestion for the given service. <strong>This may only be
  called once by any given plugin for a given service and event.</strong></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>serviceFactory</code> - A <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Supplier</code></a> that can construct the service
+<dd><code>serviceFactory</code> - A <code>Supplier</code> that can construct the service
       if this service is selected</dd>
 </dl>
 </li>

@@ -154,7 +154,7 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default &lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;</code></td>
+<td class="colFirst"><code>default &lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br>java.util.concurrent.CompletableFuture&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendTo(org.spongepowered.api.entity.living.player.server.ServerPlayer,org.spongepowered.api.network.channel.packet.RequestPacket)">sendTo</a></span>&#8203;(<a href="../../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&nbsp;player,
       <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</code></th>
 <td class="colLast">
@@ -162,7 +162,7 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;</code></td>
+<td class="colFirst"><code>&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br>java.util.concurrent.CompletableFuture&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)">sendTo</a></span>&#8203;(<a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
       <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</code></th>
 <td class="colLast">
@@ -170,7 +170,7 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default &lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;</code></td>
+<td class="colFirst"><code>default &lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br>java.util.concurrent.CompletableFuture&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToServer(org.spongepowered.api.network.channel.packet.RequestPacket)">sendToServer</a></span>&#8203;(<a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</code></th>
 <td class="colLast">
 <div class="block">Sends the <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to the server using this channel.</div>
@@ -206,12 +206,12 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>sendTo</h4>
-<pre class="methodSignature">default&nbsp;&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;&nbsp;sendTo&#8203;(<a href="../../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&nbsp;player,
-                                                       <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
+<pre class="methodSignature">default&nbsp;&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;java.util.concurrent.CompletableFuture&lt;R&gt;&nbsp;sendTo&#8203;(<a href="../../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a>&nbsp;player,
+                                                                            <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
 <div class="block">Sends the <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to the player using this channel. This method returns a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> that will be accepted once the response is received.
+ <code>CompletableFuture</code> that will be accepted once the response is received.
 
- <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> may fail exceptionally by a
+ <p>The <code>CompletableFuture</code> may fail exceptionally by a
  <a href="../NoResponseException.html" title="class in org.spongepowered.api.network.channel"><code>NoResponseException</code></a> if there wasn't a valid response
  received for the given request.</p>
 
@@ -226,7 +226,7 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The completable future to handle the response packet and exceptions</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the given packet type isn't registered in this channel binding</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the given packet type isn't registered in this channel binding</dd>
 </dl>
 </li>
 </ul>
@@ -236,12 +236,12 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>sendTo</h4>
-<pre class="methodSignature">&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;&nbsp;sendTo&#8203;(<a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
-                                               <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
+<pre class="methodSignature">&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;java.util.concurrent.CompletableFuture&lt;R&gt;&nbsp;sendTo&#8203;(<a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
+                                                                    <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
 <div class="block">Sends the <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to the client using this channel. This method returns a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> that will be accepted once the response is received.
+ <code>CompletableFuture</code> that will be accepted once the response is received.
 
- <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> may fail exceptionally by a
+ <p>The <code>CompletableFuture</code> may fail exceptionally by a
  <a href="../NoResponseException.html" title="class in org.spongepowered.api.network.channel"><code>NoResponseException</code></a> if there wasn't a valid response
  received for the given request.</p>
 
@@ -256,7 +256,7 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The completable future to handle the response packet and exceptions</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the given packet type isn't registered in this channel binding</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the given packet type isn't registered in this channel binding</dd>
 </dl>
 </li>
 </ul>
@@ -266,11 +266,11 @@ extends <a href="PacketDispatcher.html" title="interface in org.spongepowered.ap
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendToServer</h4>
-<pre class="methodSignature">default&nbsp;&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;&nbsp;sendToServer&#8203;(<a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
+<pre class="methodSignature">default&nbsp;&lt;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;java.util.concurrent.CompletableFuture&lt;R&gt;&nbsp;sendToServer&#8203;(<a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
 <div class="block">Sends the <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to the server using this channel. This method returns a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> that will be accepted once the response is received.
+ <code>CompletableFuture</code> that will be accepted once the response is received.
 
- <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> may fail exceptionally by a
+ <p>The <code>CompletableFuture</code> may fail exceptionally by a
  <a href="../NoResponseException.html" title="class in org.spongepowered.api.network.channel"><code>NoResponseException</code></a> if there wasn't a valid response
  received for the given request.</p>
 

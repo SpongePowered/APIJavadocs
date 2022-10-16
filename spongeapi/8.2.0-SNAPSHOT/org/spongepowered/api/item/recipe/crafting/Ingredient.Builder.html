@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code>, <code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code>, <code><a href="../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>,&#8203;<a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&gt;</code>, <code><a href="../../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>,&#8203;<a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code>, <code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code>, <code><a href="../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>,&#8203;<a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&gt;</code>, <code><a href="../../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>,&#8203;<a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&gt;</code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
@@ -162,7 +162,7 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.util.function.Supplier...)">with</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&gt;...&nbsp;types)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.util.function.Supplier...)">with</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="../../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&gt;...&nbsp;types)</code></th>
 <td class="colLast">
 <div class="block">Sets one or more ItemTypes for matching the ingredient.</div>
 </td>
@@ -198,7 +198,7 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStack...)">with</a></span>&#8203;(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate,
+    java.util.function.Predicate&lt;<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate,
     <a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;exemplaryTypes)</code></th>
 <td class="colLast">
 <div class="block">Sets a Predicate for matching the ingredient.</div>
@@ -250,7 +250,7 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&nbsp;with&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&gt;...&nbsp;types)</pre>
+<pre class="methodSignature"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&nbsp;with&#8203;(java.util.function.Supplier&lt;? extends <a href="../../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&gt;...&nbsp;types)</pre>
 <div class="block">Sets one or more ItemTypes for matching the ingredient.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -283,7 +283,7 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <li class="blockList">
 <h4>with</h4>
 <pre class="methodSignature"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a>&nbsp;with&#8203;(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate,
+                        java.util.function.Predicate&lt;<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate,
                         <a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;exemplaryTypes)</pre>
 <div class="block">Sets a Predicate for matching the ingredient.
  <p>Exemplary types are used for the vanilla recipe book.</p>
@@ -339,9 +339,9 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <div class="block">Builds the <a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting"><code>Ingredient</code></a> with the specified items and or predicates.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.builder" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.builder" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.util" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.util" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The new Ingredient</dd>
 </dl>

@@ -194,7 +194,7 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#build(java.lang.String)">build</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;input)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#build(java.lang.String)">build</a></span>&#8203;(java.lang.String&nbsp;input)</code></th>
 <td class="colLast">
 <div class="block">Creates a <a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext</code></a>.</div>
 </td>
@@ -210,7 +210,7 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#putEntries(org.spongepowered.api.command.parameter.Parameter.Key,java.util.Collection)">putEntries</a></span>&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super T&gt;&nbsp;parameter,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;value)</code></th>
+          java.util.Collection&lt;T&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Adds a collection of parsed objects into the context, for use by commands.</div>
 </td>
@@ -218,7 +218,7 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#putEntries(org.spongepowered.api.command.parameter.Parameter.Value,java.util.Collection)">putEntries</a></span>&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;? super T&gt;&nbsp;parameter,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;value)</code></th>
+          java.util.Collection&lt;T&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Adds a collection of parsed objects into the context, for use by commands.</div>
 </td>
@@ -327,7 +327,7 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <li class="blockList">
 <h4>putEntries</h4>
 <pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;void&nbsp;putEntries&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;? super T&gt;&nbsp;parameter,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;value)</pre>
+                            java.util.Collection&lt;T&gt;&nbsp;value)</pre>
 <div class="block">Adds a collection of parsed objects into the context, for use by commands.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -345,7 +345,7 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <li class="blockList">
 <h4>putEntries</h4>
 <pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;void&nbsp;putEntries&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super T&gt;&nbsp;parameter,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;value)</pre>
+                            java.util.Collection&lt;T&gt;&nbsp;value)</pre>
 <div class="block">Adds a collection of parsed objects into the context, for use by commands.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -404,7 +404,7 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
-<pre class="methodSignature"><a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;build&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;input)</pre>
+<pre class="methodSignature"><a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;build&#8203;(java.lang.String&nbsp;input)</pre>
 <div class="block">Creates a <a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext</code></a>.
 
  <p>If <a href="CommandContext.Builder.Transaction.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext.Builder.Transaction</code></a>s are still open at this point, they will all
@@ -424,14 +424,14 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <li class="blockList">
 <h4>commit</h4>
 <pre class="methodSignature">void&nbsp;commit&#8203;(<a href="CommandContext.Builder.Transaction.html" title="interface in org.spongepowered.api.command.parameter">CommandContext.Builder.Transaction</a>&nbsp;transaction)
-     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+     throws java.lang.IllegalArgumentException</pre>
 <div class="block">Commits the specified <a href="CommandContext.Builder.Transaction.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext.Builder.Transaction</code></a> if it was the most recently
  created transaction.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>transaction</code> - The transaction to commit.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - Thrown if there are newer
+<dd><code>java.lang.IllegalArgumentException</code> - Thrown if there are newer
   transactions to commit first, if this transaction is not active, or
   if this transaction is not part of this builder.</dd>
 </dl>
@@ -444,14 +444,14 @@ extends <a href="CommandContext.html" title="interface in org.spongepowered.api.
 <li class="blockList">
 <h4>rollback</h4>
 <pre class="methodSignature">void&nbsp;rollback&#8203;(<a href="CommandContext.Builder.Transaction.html" title="interface in org.spongepowered.api.command.parameter">CommandContext.Builder.Transaction</a>&nbsp;transaction)
-       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+       throws java.lang.IllegalArgumentException</pre>
 <div class="block">Cancels the specified <a href="CommandContext.Builder.Transaction.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext.Builder.Transaction</code></a> if it was the most recently
  created transaction.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>transaction</code> - The transaction to rollback.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - Thrown if there are newer
+<dd><code>java.lang.IllegalArgumentException</code> - Thrown if there are newer
   transactions to commit first, if this transaction is not active, or
   if this transaction is not part of this builder.</dd>
 </dl>

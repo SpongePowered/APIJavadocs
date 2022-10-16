@@ -188,10 +188,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a></code></td>
+<td class="colFirst"><code>java.time.Duration</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asInGameDuration()">asInGameDuration</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> that represents in-game time from the
+<div class="block">Returns a <code>Duration</code> that represents in-game time from the
  minecraft epoch (so, for Day 2 at 12:30pm will return a duration of
  1 day, 6 hours and 30 minutes).</div>
 </td>
@@ -205,10 +205,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a></code></td>
+<td class="colFirst"><code>default java.time.Duration</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asWallClockDuration(org.spongepowered.api.Engine)">asWallClockDuration</a></span>&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> that represents wall-clock time from the
+<div class="block">Returns a <code>Duration</code> that represents wall-clock time from the
  minecraft epoch for the given <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.</div>
 </td>
 </tr>
@@ -264,7 +264,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util">MinecraftDayTime</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofInGameDuration(org.spongepowered.api.Engine,java.time.Duration)">ofInGameDuration</a></span>&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;duration)</code></th>
+                java.time.Duration&nbsp;duration)</code></th>
 <td class="colLast">
 <div class="block">Creates a <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a> based on the in-game time since the
  Minecraft epoch (6:00am on Day 1) for the given <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.</div>
@@ -273,10 +273,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util">MinecraftDayTime</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofWallClockDuration(org.spongepowered.api.Engine,java.time.Duration)">ofWallClockDuration</a></span>&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;duration)</code></th>
+                   java.time.Duration&nbsp;duration)</code></th>
 <td class="colLast">
 <div class="block">Creates a <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a> that represents the world time
- if the world has been running for the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> in
+ if the world has been running for the supplied <code>Duration</code> in
  real world time under idealised conditions for the given <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.</div>
 </td>
 </tr>
@@ -337,15 +337,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>ofInGameDuration</h4>
 <pre class="methodSignature">static&nbsp;<a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util">MinecraftDayTime</a>&nbsp;ofInGameDuration&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine,
-                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;duration)</pre>
+                                         java.time.Duration&nbsp;duration)</pre>
 <div class="block">Creates a <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a> based on the in-game time since the
  Minecraft epoch (6:00am on Day 1) for the given <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.
 
- <p>For example, if the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> was 1 day, 3 hours and
+ <p>For example, if the supplied <code>Duration</code> was 1 day, 3 hours and
  40 minutes, this would correspond to an in game time of 9:40am on Day 2.
  </p>
 
- <p>In the case where the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> does not completely
+ <p>In the case where the supplied <code>Duration</code> does not completely
  align with a valid <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a>, the nearest valid time will
  be returned.</p></div>
 <dl>
@@ -355,7 +355,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the duration is negative</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if the duration is negative</dd>
 </dl>
 </li>
 </ul>
@@ -366,17 +366,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>ofWallClockDuration</h4>
 <pre class="methodSignature">static&nbsp;<a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util">MinecraftDayTime</a>&nbsp;ofWallClockDuration&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;duration)</pre>
+                                            java.time.Duration&nbsp;duration)</pre>
 <div class="block">Creates a <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a> that represents the world time
- if the world has been running for the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> in
+ if the world has been running for the supplied <code>Duration</code> in
  real world time under idealised conditions for the given <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.
 
- <p>For example, if the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> was 1 day, 3 hours and
+ <p>For example, if the supplied <code>Duration</code> was 1 day, 3 hours and
  40 minutes and each Minecraft day lasts 20 minutes in the vanilla game,
  this would correspond to 6:00am on day 84 (1 day, 3 hours and 40 minutes
  is 1660 minutes, which is 83 20-minute chunks).</p>
 
- <p>In the case where the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> does not completely
+ <p>In the case where the supplied <code>Duration</code> does not completely
  align with a valid <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a>, the nearest valid time will
  be returned.</p></div>
 <dl>
@@ -386,7 +386,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the duration is negative</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if the duration is negative</dd>
 </dl>
 </li>
 </ul>
@@ -423,7 +423,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a>.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if any of the listed constraints are
+<dd><code>java.lang.IllegalArgumentException</code> - if any of the listed constraints are
       violated.</dd>
 </dl>
 </li>
@@ -450,7 +450,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the tick count is negative</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if the tick count is negative</dd>
 </dl>
 </li>
 </ul>
@@ -532,7 +532,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A new <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if any of the arguments are negative.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if any of the arguments are negative.</dd>
 </dl>
 </li>
 </ul>
@@ -551,7 +551,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A new <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if the result would be a negative time.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if the result would be a negative time.</dd>
 </dl>
 </li>
 </ul>
@@ -574,7 +574,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A new <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if any of the arguments are negative or
+<dd><code>java.lang.IllegalArgumentException</code> - if any of the arguments are negative or
       the result would be a negative time.</dd>
 </dl>
 </li>
@@ -585,13 +585,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>asInGameDuration</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;asInGameDuration()</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> that represents in-game time from the
+<pre class="methodSignature">java.time.Duration&nbsp;asInGameDuration()</pre>
+<div class="block">Returns a <code>Duration</code> that represents in-game time from the
  minecraft epoch (so, for Day 2 at 12:30pm will return a duration of
  1 day, 6 hours and 30 minutes).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a></dd>
+<dd>A <code>Duration</code></dd>
 </dl>
 </li>
 </ul>
@@ -601,16 +601,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>asWallClockDuration</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;asWallClockDuration&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine)</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> that represents wall-clock time from the
+<pre class="methodSignature">default&nbsp;java.time.Duration&nbsp;asWallClockDuration&#8203;(<a href="../Engine.html" title="interface in org.spongepowered.api">Engine</a>&nbsp;engine)</pre>
+<div class="block">Returns a <code>Duration</code> that represents wall-clock time from the
  minecraft epoch for the given <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>. (For example, if this
- object represents Day 2 at 12:30pm, will return a <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a> of
+ object represents Day 2 at 12:30pm, will return a <code>Duration</code> of
  25 minutes and 25 seconds for a vanilla minecraft <a href="../Server.html" title="interface in org.spongepowered.api"><code>Server</code></a>).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>engine</code> - The <a href="../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> to calculate the time for.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a></dd>
+<dd>A <code>Duration</code></dd>
 </dl>
 </li>
 </ul>

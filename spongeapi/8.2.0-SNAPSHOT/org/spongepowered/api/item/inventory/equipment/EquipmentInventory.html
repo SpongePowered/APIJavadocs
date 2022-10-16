@@ -167,19 +167,19 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Equipable.html" title="interface in org.spongepowered.api.item.inventory">Equipable</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../Equipable.html" title="interface in org.spongepowered.api.item.inventory">Equipable</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#carrier()">carrier</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the holder of this Inventory.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peek(java.util.function.Supplier)">peek</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</code></th>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peek(java.util.function.Supplier)">peek</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peek(org.spongepowered.api.item.inventory.equipment.EquipmentType)">peek</a></span>&#8203;(<a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&nbsp;equipmentType)</code></th>
 <td class="colLast">
 <div class="block">Gets without removing the stack for the specified equipment type in this
@@ -188,12 +188,12 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="../transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#poll(java.util.function.Supplier)">poll</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#poll(java.util.function.Supplier)">poll</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="../transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#poll(java.util.function.Supplier,int)">poll</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#poll(java.util.function.Supplier,int)">poll</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
     int&nbsp;limit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -216,7 +216,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default <a href="../transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.util.function.Supplier,org.spongepowered.api.item.inventory.ItemStack)">set</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.util.function.Supplier,org.spongepowered.api.item.inventory.ItemStack)">set</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
    <a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -229,12 +229,12 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slot(java.util.function.Supplier)">slot</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</code></th>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slot(java.util.function.Supplier)">slot</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slot(org.spongepowered.api.item.inventory.equipment.EquipmentType)">slot</a></span>&#8203;(<a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&nbsp;equipmentType)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory"><code>Slot</code></a> for the specified equipment type.</div>
@@ -277,7 +277,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>carrier</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Equipable.html" title="interface in org.spongepowered.api.item.inventory">Equipable</a>&gt;&nbsp;carrier()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../Equipable.html" title="interface in org.spongepowered.api.item.inventory">Equipable</a>&gt;&nbsp;carrier()</pre>
 <div class="block">Returns the holder of this Inventory. It can be an entity, block, or other object.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -310,7 +310,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>poll</h4>
-<pre class="methodSignature">default&nbsp;<a href="../transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a>&nbsp;poll&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</pre>
+<pre class="methodSignature">default&nbsp;<a href="../transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a>&nbsp;poll&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</pre>
 </li>
 </ul>
 <a id="poll(org.spongepowered.api.item.inventory.equipment.EquipmentType,int)">
@@ -340,7 +340,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>poll</h4>
-<pre class="methodSignature">default&nbsp;<a href="../transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a>&nbsp;poll&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
+<pre class="methodSignature">default&nbsp;<a href="../transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a>&nbsp;poll&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
                                              int&nbsp;limit)</pre>
 </li>
 </ul>
@@ -350,7 +350,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>peek</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;peek&#8203;(<a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&nbsp;equipmentType)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;peek&#8203;(<a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&nbsp;equipmentType)</pre>
 <div class="block">Gets without removing the stack for the specified equipment type in this
  Inventory.</div>
 <dl>
@@ -369,7 +369,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>peek</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;peek&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;peek&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</pre>
 </li>
 </ul>
 <a id="set(org.spongepowered.api.item.inventory.equipment.EquipmentType,org.spongepowered.api.item.inventory.ItemStack)">
@@ -398,7 +398,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre class="methodSignature">default&nbsp;<a href="../transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a>&nbsp;set&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
+<pre class="methodSignature">default&nbsp;<a href="../transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a>&nbsp;set&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType,
                                        <a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
@@ -408,13 +408,13 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>slot</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;&nbsp;slot&#8203;(<a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&nbsp;equipmentType)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;&nbsp;slot&#8203;(<a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&nbsp;equipmentType)</pre>
 <div class="block">Gets the <a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory"><code>Slot</code></a> for the specified equipment type.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>equipmentType</code> - Type of equipment slot to set</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>matching slot or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if no matching slot</dd>
+<dd>matching slot or <code>Optional.empty()</code> if no matching slot</dd>
 </dl>
 </li>
 </ul>
@@ -424,7 +424,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockListLast">
 <li class="blockList">
 <h4>slot</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;&nbsp;slot&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;&nbsp;slot&#8203;(java.util.function.Supplier&lt;? extends <a href="EquipmentType.html" title="interface in org.spongepowered.api.item.inventory.equipment">EquipmentType</a>&gt;&nbsp;equipmentType)</pre>
 </li>
 </ul>
 </li>

@@ -114,8 +114,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation" class="externalLink">PARAMETER</a>)
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation" class="externalLink">RUNTIME</a>)
+<pre>@Target(PARAMETER)
+@Retention(RUNTIME)
 public @interface <span class="memberNameLabel">Before</span></pre>
 <div class="block">Sets the parameter to the object before the specified class in the cause
  chain. An additional check is done to ensure that the object is of the
@@ -145,7 +145,7 @@ public @interface <span class="memberNameLabel">Before</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#value()">value</a></span></code></th>
 <td class="colLast">
 <div class="block">Gets the class to use with <a href="../../Cause.html#before(java.lang.Class)"><code>Cause.before(Class)</code></a>.</div>
@@ -178,7 +178,7 @@ public @interface <span class="memberNameLabel">Before</span></pre>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;[]</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;?&gt;[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#typeFilter()">typeFilter</a></span></code></th>
 <td class="colLast">
 <div class="block">If specified the possible type for the returned object (normally
@@ -209,7 +209,7 @@ public @interface <span class="memberNameLabel">Before</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;value</pre>
+<pre>java.lang.Class&lt;?&gt;&nbsp;value</pre>
 <div class="block">Gets the class to use with <a href="../../Cause.html#before(java.lang.Class)"><code>Cause.before(Class)</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -229,11 +229,11 @@ public @interface <span class="memberNameLabel">Before</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>typeFilter</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;[]&nbsp;typeFilter</pre>
+<pre>java.lang.Class&lt;?&gt;[]&nbsp;typeFilter</pre>
 <div class="block">If specified the possible type for the returned object (normally
  specified by the type of the annotated parameter) is restricted
  to only the specified types.
- 
+
  <p>For exampled annotating a parameter of type Monster would
  normally accept all entities extending Monster, however with the
  includes specified as Enderman and Zombie the possible Monsters returned

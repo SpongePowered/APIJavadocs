@@ -193,7 +193,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataStore(io.leangen.geantyref.TypeToken)">dataStore</a></span>&#8203;(io.leangen.geantyref.TypeToken&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</code></th>
 <td class="colLast">
 <div class="block">Gets the appropriate <a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence"><code>DataStore</code></a> for the context of the
@@ -201,15 +201,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataStore(java.lang.Class)">dataStore</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataStore(java.lang.Class)">dataStore</a></span>&#8203;(java.lang.Class&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</code></th>
 <td class="colLast">
 <div class="block">Gets the appropriate <a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence"><code>DataStore</code></a> for the context of the
  <code>TypeToken</code> that is being serialized/deserialized.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code>java.lang.Iterable&lt;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#keys()">keys</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the registered <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Keys</code></a> this controls.</div>
@@ -218,14 +218,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T,&#8203;V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;<br><a href="DataRegistration.html" title="interface in org.spongepowered.api.data">DataRegistration</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.data.Key,java.lang.Class,java.lang.Class...)">of</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;dataHolder,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;...&nbsp;dataHolders)</code></th>
+  java.lang.Class&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;dataHolder,
+  java.lang.Class&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;...&nbsp;dataHolders)</code></th>
 <td class="colLast">
 <div class="block">Creates a DataRegistration for a single key with a DataStore for given data-holders.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;,&#8203;E&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="DataProvider.html" title="interface in org.spongepowered.api.data">DataProvider</a>&lt;V,&#8203;E&gt;&gt;</code></td>
+<td class="colFirst"><code>&lt;V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;,&#8203;E&gt;<br>java.util.Collection&lt;<a href="DataProvider.html" title="interface in org.spongepowered.api.data">DataProvider</a>&lt;V,&#8203;E&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#providersFor(org.spongepowered.api.data.Key)">providersFor</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="DataProvider.html" title="interface in org.spongepowered.api.data"><code>DataProvider</code></a> for the given <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> to potentially
@@ -272,15 +272,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>providersFor</h4>
-<pre class="methodSignature">&lt;V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;,&#8203;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="DataProvider.html" title="interface in org.spongepowered.api.data">DataProvider</a>&lt;V,&#8203;E&gt;&gt;&nbsp;providersFor&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)
-                                                                       throws <a href="UnregisteredKeyException.html" title="class in org.spongepowered.api.data">UnregisteredKeyException</a></pre>
+<pre class="methodSignature">&lt;V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;,&#8203;E&gt;&nbsp;java.util.Collection&lt;<a href="DataProvider.html" title="interface in org.spongepowered.api.data">DataProvider</a>&lt;V,&#8203;E&gt;&gt;&nbsp;providersFor&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key)
+                                                                                 throws <a href="UnregisteredKeyException.html" title="class in org.spongepowered.api.data">UnregisteredKeyException</a></pre>
 <div class="block">Gets the <a href="DataProvider.html" title="interface in org.spongepowered.api.data"><code>DataProvider</code></a> for the given <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> to potentially
  get or offer <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s from any <a href="value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> provided
  that the container is supported by the <code>DataProvider</code>. If the
  <code>key</code> is not actually registered with this <a href="DataRegistration.html" title="interface in org.spongepowered.api.data"><code>DataRegistration</code></a>,
  an <a href="UnregisteredKeyException.html" title="class in org.spongepowered.api.data"><code>UnregisteredKeyException</code></a> is thrown. If there is no
  <code>DataProvider</code> registered for the particular <code>Key</code>,
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> is returned.</div>
+ <code>Optional.empty()</code> is returned.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>V</code> - The value type</dd>
@@ -301,7 +301,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>dataStore</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;&nbsp;dataStore&#8203;(io.leangen.geantyref.TypeToken&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;&nbsp;dataStore&#8203;(io.leangen.geantyref.TypeToken&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</pre>
 <div class="block">Gets the appropriate <a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence"><code>DataStore</code></a> for the context of the
  <code>TypeToken</code> that is being serialized/deserialized. It is always
  possible that there may be a <a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence"><code>DataStore</code></a> that does not support
@@ -322,11 +322,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>dataStore</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;&nbsp;dataStore&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence">DataStore</a>&gt;&nbsp;dataStore&#8203;(java.lang.Class&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;token)</pre>
 <div class="block">Gets the appropriate <a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence"><code>DataStore</code></a> for the context of the
  <code>TypeToken</code> that is being serialized/deserialized. It is always
  possible that there may be a <a href="persistence/DataStore.html" title="interface in org.spongepowered.api.data.persistence"><code>DataStore</code></a> that does not support
- the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>, while a <a href="DataProvider.html" title="interface in org.spongepowered.api.data"><code>DataProvider</code></a> may be
+ the provided <code>Class</code>, while a <a href="DataProvider.html" title="interface in org.spongepowered.api.data"><code>DataProvider</code></a> may be
  provided for a particular <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -343,7 +343,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>keys</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;&nbsp;keys()</pre>
+<pre class="methodSignature">java.lang.Iterable&lt;<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;&nbsp;keys()</pre>
 <div class="block">Gets the registered <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Keys</code></a> this controls. Note that each
  <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> can only be registered/owned by a single
  <code>PluginContainer</code>. It is possible for there to be only a single
@@ -362,10 +362,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SafeVarargs.html?is-external=true" title="class or interface in java.lang" class="externalLink">@SafeVarargs</a>
+<pre class="methodSignature">@SafeVarargs
 static&nbsp;&lt;T,&#8203;V extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;&nbsp;<a href="DataRegistration.html" title="interface in org.spongepowered.api.data">DataRegistration</a>&nbsp;of&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key,
-                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;dataHolder,
-                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;...&nbsp;dataHolders)</pre>
+                                                        java.lang.Class&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;&nbsp;dataHolder,
+                                                        java.lang.Class&lt;? extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a>&gt;...&nbsp;dataHolders)</pre>
 <div class="block">Creates a DataRegistration for a single key with a DataStore for given data-holders.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

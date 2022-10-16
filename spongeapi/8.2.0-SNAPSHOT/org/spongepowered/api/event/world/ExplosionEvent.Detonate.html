@@ -179,7 +179,7 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#affectedLocations()">affectedLocations</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the list of calculated affected locations for blocks that will
@@ -188,7 +188,7 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterAffectedLocations(java.util.function.Predicate)">filterAffectedLocations</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterAffectedLocations(java.util.function.Predicate)">filterAffectedLocations</a></span>&#8203;(java.util.function.Predicate&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Filters out <a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from
  <a href="#affectedLocations()"><code>affectedLocations()</code></a> to be affected by this event.</div>
@@ -266,7 +266,7 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>affectedLocations</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;affectedLocations()</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;affectedLocations()</pre>
 <div class="block">Gets the list of calculated affected locations for blocks that will
  be removed due to the explosion.
  This list can only be modified using <a href="#filterAffectedLocations(java.util.function.Predicate)"><code>filterAffectedLocations(Predicate)</code></a>.</div>
@@ -282,7 +282,7 @@ extends <a href="ExplosionEvent.html" title="interface in org.spongepowered.api.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filterAffectedLocations</h4>
-<pre class="methodSignature">void&nbsp;filterAffectedLocations&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">void&nbsp;filterAffectedLocations&#8203;(java.util.function.Predicate&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</pre>
 <div class="block">Filters out <a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from
  <a href="#affectedLocations()"><code>affectedLocations()</code></a> to be affected by this event.
 

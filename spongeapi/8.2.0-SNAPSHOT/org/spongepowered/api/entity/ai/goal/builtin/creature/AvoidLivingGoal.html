@@ -232,19 +232,19 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="AvoidLivingGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">AvoidLivingGoal</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTargetSelector(java.util.function.Predicate)">setTargetSelector</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTargetSelector(java.util.function.Predicate)">setTargetSelector</a></span>&#8203;(java.util.function.Predicate&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
-<div class="block">Sets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
+<div class="block">Sets the <code>Predicate</code> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
  are considered to be "avoided" by the owning <a href="../../../../living/Agent.html" title="interface in org.spongepowered.api.entity.living"><code>Agent</code></a>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.function.Predicate&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#targetSelector()">targetSelector</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
+<div class="block">Gets the <code>Predicate</code> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
  are qualified to have the owning <a href="../../../../living/Agent.html" title="interface in org.spongepowered.api.entity.living"><code>Agent</code></a> move away from the
- <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> of which the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> returns
+ <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> of which the <code>Predicate.test(Object)</code> returns
  <code>true</code>.</div>
 </td>
 </tr>
@@ -292,10 +292,10 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <ul class="blockList">
 <li class="blockList">
 <h4>targetSelector</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;&nbsp;targetSelector()</pre>
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
+<pre class="methodSignature">java.util.function.Predicate&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;&nbsp;targetSelector()</pre>
+<div class="block">Gets the <code>Predicate</code> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
  are qualified to have the owning <a href="../../../../living/Agent.html" title="interface in org.spongepowered.api.entity.living"><code>Agent</code></a> move away from the
- <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> of which the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> returns
+ <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> of which the <code>Predicate.test(Object)</code> returns
  <code>true</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -309,8 +309,8 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <ul class="blockList">
 <li class="blockList">
 <h4>setTargetSelector</h4>
-<pre class="methodSignature"><a href="AvoidLivingGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">AvoidLivingGoal</a>&nbsp;setTargetSelector&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;&nbsp;predicate)</pre>
-<div class="block">Sets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
+<pre class="methodSignature"><a href="AvoidLivingGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">AvoidLivingGoal</a>&nbsp;setTargetSelector&#8203;(java.util.function.Predicate&lt;<a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living">Living</a>&gt;&nbsp;predicate)</pre>
+<div class="block">Sets the <code>Predicate</code> for filtering which <a href="../../../../living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> instances
  are considered to be "avoided" by the owning <a href="../../../../living/Agent.html" title="interface in org.spongepowered.api.entity.living"><code>Agent</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

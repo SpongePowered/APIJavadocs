@@ -198,7 +198,7 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(org.spongepowered.api.command.parameter.ArgumentReader.Immutable,org.spongepowered.api.command.parameter.CommandContext)">complete</a></span>&#8203;(@NonNull <a href="ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
         @NonNull <a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context)</code></th>
 <td class="colLast">
@@ -220,7 +220,7 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="managed/ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameterModifier</a>&lt;<a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="managed/ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameterModifier</a>&lt;<a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifier()">modifier</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="managed/ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameterModifier</code></a> that affects this parameter,
@@ -236,29 +236,29 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParser</a>&lt;? extends <a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParser</a>&lt;? extends <a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parsers()">parsers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The <a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a>s to use when parsing an argument.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.function.Predicate&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requirement()">requirement</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> that indicates whether a given <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>
+<div class="block">Gets a <code>Predicate</code> that indicates whether a given <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>
  should parse this <a href="Parameter.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter</code></a>.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#usage(org.spongepowered.api.command.CommandCause)">usage</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Gets the usage of this parameter.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueUsage</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueUsage</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valueUsage()">valueUsage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueUsage</code></a> associated with this <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a>, if
@@ -317,13 +317,13 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <ul class="blockList">
 <li class="blockList">
 <h4>parsers</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParser</a>&lt;? extends <a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;&nbsp;parsers()</pre>
+<pre class="methodSignature">java.util.Collection&lt;<a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParser</a>&lt;? extends <a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;&nbsp;parsers()</pre>
 <div class="block">The <a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a>s to use when parsing an argument. They will be
  tried in this order.
 
  <p>There must always be at least one <a href="managed/ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a>. If this element
  is optional and has a default result, it will be the last element in the
- returned <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a>.</p></div>
+ returned <code>Collection</code>.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The parameters.</dd>
@@ -350,7 +350,7 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <ul class="blockList">
 <li class="blockList">
 <h4>modifier</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="managed/ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameterModifier</a>&lt;<a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;&nbsp;modifier()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="managed/ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameterModifier</a>&lt;<a href="Parameter.Value.html" title="type parameter in Parameter.Value">T</a>&gt;&gt;&nbsp;modifier()</pre>
 <div class="block">Gets the <a href="managed/ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameterModifier</code></a> that affects this parameter,
  if any.</div>
 <dl>
@@ -365,7 +365,7 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <ul class="blockList">
 <li class="blockList">
 <h4>valueUsage</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueUsage</a>&gt;&nbsp;valueUsage()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueUsage</a>&gt;&nbsp;valueUsage()</pre>
 <div class="block">Gets the <a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueUsage</code></a> associated with this <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a>, if
  any was set.</div>
 <dl>
@@ -380,8 +380,8 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <ul class="blockList">
 <li class="blockList">
 <h4>requirement</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement()</pre>
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> that indicates whether a given <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>
+<pre class="methodSignature">java.util.function.Predicate&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement()</pre>
+<div class="block">Gets a <code>Predicate</code> that indicates whether a given <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>
  should parse this <a href="Parameter.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -417,9 +417,9 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <ul class="blockList">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(@NonNull <a href="ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
-                                 @NonNull <a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context)
-                          throws <a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a></pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(@NonNull <a href="ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
+                                           @NonNull <a href="CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context)
+                                    throws <a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a></pre>
 <div class="block">Returns potential completions of the current tokenized argument. The
  completion will be based on <a href="ArgumentReader.html#remaining()"><code>ArgumentReader.remaining()</code></a>.</div>
 <dl>
@@ -442,7 +442,7 @@ extends <a href="Parameter.html" title="interface in org.spongepowered.api.comma
 <ul class="blockList">
 <li class="blockList">
 <h4>usage</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;usage&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause)</pre>
+<pre class="methodSignature">java.lang.String&nbsp;usage&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause)</pre>
 <div class="block">Gets the usage of this parameter.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

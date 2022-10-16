@@ -134,11 +134,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">VariableAmount</span>
 extends <a href="../../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></pre>
 <div class="block">Represents a value which may vary randomly.
- 
+
  <p>Implementors of this interface using it in a fashion in which may ever be
  serialized <strong>must</strong> implement the <a href="#toContainer()"><code>toContainer()</code></a>
  method.</p></div>
@@ -215,7 +215,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#amount(java.util.Random)">amount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#amount(java.util.Random)">amount</a></span>&#8203;(java.util.Random&nbsp;rand)</code></th>
 <td class="colLast">
 <div class="block">Gets an instance of the variable amount depending on the given random
  object.</div>
@@ -310,7 +310,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>default int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flooredAmount(java.util.Random)">flooredAmount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flooredAmount(java.util.Random)">flooredAmount</a></span>&#8203;(java.util.Random&nbsp;rand)</code></th>
 <td class="colLast">
 <div class="block">Gets the amount as if from <a href="#amount(java.util.Random)"><code>amount(Random)</code></a> but floored to the
  nearest integer equivalent.</div>
@@ -573,7 +573,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>amount</h4>
-<pre class="methodSignature">double&nbsp;amount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand)</pre>
+<pre class="methodSignature">double&nbsp;amount&#8203;(java.util.Random&nbsp;rand)</pre>
 <div class="block">Gets an instance of the variable amount depending on the given random
  object.</div>
 <dl>
@@ -590,7 +590,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>flooredAmount</h4>
-<pre class="methodSignature">default&nbsp;int&nbsp;flooredAmount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand)</pre>
+<pre class="methodSignature">default&nbsp;int&nbsp;flooredAmount&#8203;(java.util.Random&nbsp;rand)</pre>
 <div class="block">Gets the amount as if from <a href="#amount(java.util.Random)"><code>amount(Random)</code></a> but floored to the
  nearest integer equivalent.</div>
 <dl>

@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&gt;</code>, <code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&gt;</code>, <code><a href="../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;,&#8203;<a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;T&gt;&gt;</code>, <code><a href="../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;,&#8203;<a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;T&gt;&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&gt;</code>, <code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&gt;</code>, <code><a href="../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;,&#8203;<a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;T&gt;&gt;</code>, <code><a href="../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;,&#8203;<a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;T&gt;&gt;</code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
@@ -193,7 +193,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#key(java.lang.String)">key</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#key(java.lang.String)">key</a></span>&#8203;(java.lang.String&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">The key that the parameter will place parsed values into.</div>
 </td>
@@ -224,7 +224,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requiredPermission(java.lang.String)">requiredPermission</a></span>&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requiredPermission(java.lang.String)">requiredPermission</a></span>&#8203;(@Nullable java.lang.String&nbsp;permission)</code></th>
 <td class="colLast">
 <div class="block">Sets a function that determines what is required of the
  appropriate <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> in the provided <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> before
@@ -233,7 +233,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requirements(java.util.function.Predicate)">requirements</a></span>&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;executionRequirements)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requirements(java.util.function.Predicate)">requirements</a></span>&#8203;(@Nullable java.util.function.Predicate&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;executionRequirements)</code></th>
 <td class="colLast">
 <div class="block">Sets a function that determines what is required of the provided
  <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> before this parameter attempts to parse.</div>
@@ -283,7 +283,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <ul class="blockList">
 <li class="blockList">
 <h4>key</h4>
-<pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;key&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key)</pre>
+<pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;key&#8203;(java.lang.String&nbsp;key)</pre>
 <div class="block">The key that the parameter will place parsed values into.
 
  <p>This is a mandatory element.</p></div>
@@ -414,7 +414,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <li class="blockList">
 <h4>usage</h4>
 <pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;usage&#8203;(@Nullable <a href="managed/ValueUsage.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueUsage</a>&nbsp;usage)</pre>
-<div class="block">Sets the usage. The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> accepts the parameter key
+<div class="block">Sets the usage. The <code>Function</code> accepts the parameter key
  and the calling <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.
 
  <p>Optional. If this is <code>null</code> (or never set),
@@ -436,7 +436,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <ul class="blockList">
 <li class="blockList">
 <h4>requiredPermission</h4>
-<pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;requiredPermission&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission)</pre>
+<pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;requiredPermission&#8203;(@Nullable java.lang.String&nbsp;permission)</pre>
 <div class="block">Sets a function that determines what is required of the
  appropriate <a href="../../service/permission/Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> in the provided <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> before
  this parameter is parsed.
@@ -460,7 +460,7 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <ul class="blockList">
 <li class="blockList">
 <h4>requirements</h4>
-<pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;requirements&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;executionRequirements)</pre>
+<pre class="methodSignature"><a href="Parameter.Value.Builder.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;&nbsp;requirements&#8203;(@Nullable java.util.function.Predicate&lt;<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;executionRequirements)</pre>
 <div class="block">Sets a function that determines what is required of the provided
  <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> before this parameter attempts to parse.
 
@@ -567,9 +567,9 @@ extends <a href="../../util/Builder.html" title="interface in org.spongepowered.
 <div class="block">Creates a <a href="Parameter.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter</code></a> from the builder.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.builder" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.builder" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.util" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.util" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="Parameter.Value.Builder.html" title="type parameter in Parameter.Value.Builder">T</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="Parameter.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter</code></a></dd>
 </dl>

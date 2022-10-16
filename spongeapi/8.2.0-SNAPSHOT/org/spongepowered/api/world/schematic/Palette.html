@@ -135,7 +135,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Represents a mapping for types to a local identifier. Can be used for
  mapping <code>Object</code>s to <code>int</code> id's for storage purposes,
  or for converting stored information to a representable format back into
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a>s.</div>
+ <code>Object</code>s.</div>
 </li>
 </ul>
 </div>
@@ -195,20 +195,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PaletteReference.html" title="interface in org.spongepowered.api.world.schematic">PaletteReference</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;<a href="Palette.html" title="type parameter in Palette">R</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="PaletteReference.html" title="interface in org.spongepowered.api.world.schematic">PaletteReference</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;<a href="Palette.html" title="type parameter in Palette">R</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(int)">get</a></span>&#8203;(int&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Gets the <code>type</code> represented by the given identifier from the mapping.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(int,org.spongepowered.api.registry.RegistryHolder)">get</a></span>&#8203;(int&nbsp;id,
    <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a></code></td>
+<td class="colFirst"><code>java.util.OptionalInt</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(T)">get</a></span>&#8203;(<a href="Palette.html" title="type parameter in Palette">T</a>&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Gets the identifier for the given <code>type T</code> if it exists within the
@@ -223,14 +223,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.stream.Stream&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all <code>type T</code>s contained in this palette.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.stream.Stream&lt;java.util.Map.Entry&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;java.lang.Integer&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#streamWithIds()">streamWithIds</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -292,7 +292,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PaletteReference.html" title="interface in org.spongepowered.api.world.schematic">PaletteReference</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;<a href="Palette.html" title="type parameter in Palette">R</a>&gt;&gt;&nbsp;get&#8203;(int&nbsp;id)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="PaletteReference.html" title="interface in org.spongepowered.api.world.schematic">PaletteReference</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;<a href="Palette.html" title="type parameter in Palette">R</a>&gt;&gt;&nbsp;get&#8203;(int&nbsp;id)</pre>
 <div class="block">Gets the <code>type</code> represented by the given identifier from the mapping.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -308,8 +308,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;&nbsp;get&#8203;(int&nbsp;id,
-                        <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;&nbsp;get&#8203;(int&nbsp;id,
+                                  <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</pre>
 </li>
 </ul>
 <a id="get(java.lang.Object)">
@@ -320,7 +320,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html?is-external=true" title="class or interface in java.util" class="externalLink">OptionalInt</a>&nbsp;get&#8203;(<a href="Palette.html" title="type parameter in Palette">T</a>&nbsp;type)</pre>
+<pre class="methodSignature">java.util.OptionalInt&nbsp;get&#8203;(<a href="Palette.html" title="type parameter in Palette">T</a>&nbsp;type)</pre>
 <div class="block">Gets the identifier for the given <code>type T</code> if it exists within the
  mapping.</div>
 <dl>
@@ -337,7 +337,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>stream</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;&nbsp;stream()</pre>
+<pre class="methodSignature">java.util.stream.Stream&lt;<a href="Palette.html" title="type parameter in Palette">T</a>&gt;&nbsp;stream()</pre>
 <div class="block">Gets all <code>type T</code>s contained in this palette.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -351,7 +351,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>streamWithIds</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&gt;&nbsp;streamWithIds()</pre>
+<pre class="methodSignature">java.util.stream.Stream&lt;java.util.Map.Entry&lt;<a href="Palette.html" title="type parameter in Palette">T</a>,&#8203;java.lang.Integer&gt;&gt;&nbsp;streamWithIds()</pre>
 </li>
 </ul>
 <a id="asMutable(org.spongepowered.api.registry.RegistryHolder)">

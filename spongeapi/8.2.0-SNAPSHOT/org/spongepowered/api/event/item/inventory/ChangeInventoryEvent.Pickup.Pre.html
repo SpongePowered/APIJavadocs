@@ -158,14 +158,14 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;java.util.List&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#custom()">custom</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the custom set list of items to add to the inventory or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if not set.</div>
+<div class="block">Returns the custom set list of items to add to the inventory or <code>Optional.empty()</code> if not set.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#finalStacks()">finalStacks</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the proposed final list of items to add to the inventory.</div>
@@ -195,7 +195,7 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCustom(java.util.List)">setCustom</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;items)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCustom(java.util.List)">setCustom</a></span>&#8203;(java.util.List&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;items)</code></th>
 <td class="colLast">
 <div class="block">Sets the items to add to the inventory.</div>
 </td>
@@ -280,8 +280,8 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <ul class="blockList">
 <li class="blockList">
 <h4>custom</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;&nbsp;custom()</pre>
-<div class="block">Returns the custom set list of items to add to the inventory or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if not set.</div>
+<pre class="methodSignature">java.util.Optional&lt;java.util.List&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;&nbsp;custom()</pre>
+<div class="block">Returns the custom set list of items to add to the inventory or <code>Optional.empty()</code> if not set.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The custom set list</dd>
@@ -294,7 +294,7 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <ul class="blockList">
 <li class="blockList">
 <h4>setCustom</h4>
-<pre class="methodSignature">void&nbsp;setCustom&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;items)</pre>
+<pre class="methodSignature">void&nbsp;setCustom&#8203;(java.util.List&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;items)</pre>
 <div class="block">Sets the items to add to the inventory.
 
  <p>If all items do not fit the inventory this event will be
@@ -311,7 +311,7 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <ul class="blockListLast">
 <li class="blockList">
 <h4>finalStacks</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;finalStacks()</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;finalStacks()</pre>
 <div class="block">Returns the proposed final list of items to add to the inventory.
 
  <p>If a custom list was set all items have to fit the inventory

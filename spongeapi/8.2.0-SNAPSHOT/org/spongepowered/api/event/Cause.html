@@ -119,7 +119,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>org.spongepowered.api.event.Cause</li>
@@ -131,13 +131,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code></dd>
+<dd><code>java.lang.Iterable&lt;java.lang.Object&gt;</code></dd>
 </dl>
 <hr>
 <pre><a href="../util/annotation/DoNotStore.html" title="annotation in org.spongepowered.api.util.annotation">@DoNotStore</a>
 public final class <span class="typeNameLabel">Cause</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</pre>
+extends java.lang.Object
+implements java.lang.Iterable&lt;java.lang.Object&gt;</pre>
 <div class="block">A cause represents the reason or initiator of an event.
 
  <p>For example, if a block of sand is placed where it drops, the block of
@@ -194,34 +194,34 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#after(java.lang.Class)">after</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;clazz)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#after(java.lang.Class)">after</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz)</code></th>
 <td class="colLast">
 <div class="block">Gets the object immediately after the object that is an instance of the
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> passed in.</div>
+ <code>Class</code> passed in.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;java.lang.Object&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#all()">all</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of all causes within this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
+<div class="block">Gets an <code>List</code> of all causes within this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allOf(java.lang.Class)">allOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;target)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.List&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allOf(java.lang.Class)">allOf</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;target)</code></th>
 <td class="colLast">
 <div class="block">Gets an <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableList</code></a> of all objects that are instances of the
- given <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> type <code>T</code>.</div>
+ given <code>Class</code> type <code>T</code>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#before(java.lang.Class)">before</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;clazz)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#before(java.lang.Class)">before</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz)</code></th>
 <td class="colLast">
 <div class="block">Gets the object immediately before the object that is an instance of the
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> passed in.</div>
+ <code>Class</code> passed in.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -233,14 +233,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.Object)">contains</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.Object)">contains</a></span>&#8203;(java.lang.Object&nbsp;object)</code></th>
 <td class="colLast">
-<div class="block">Checks if this cause contains of any of the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a>.</div>
+<div class="block">Checks if this cause contains of any of the provided <code>Object</code>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsType(java.lang.Class)">containsType</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;target)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsType(java.lang.Class)">containsType</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;target)</code></th>
 <td class="colLast">
 <div class="block">Returns whether the target class matches any object of this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 </td>
@@ -254,12 +254,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(@Nullable java.lang.Object&nbsp;object)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#first(java.lang.Class)">first</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;target)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#first(java.lang.Class)">first</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;target)</code></th>
 <td class="colLast">
 <div class="block">Gets the first <code>T</code> object of this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>, if available.</div>
 </td>
@@ -270,30 +270,30 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Iterator&lt;java.lang.Object&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#last(java.lang.Class)">last</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;target)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#last(java.lang.Class)">last</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;target)</code></th>
 <td class="colLast">
-<div class="block">Gets the last object instance of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> of type
+<div class="block">Gets the last object instance of the <code>Class</code> of type
  <code>T</code>.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noneOf(java.lang.Class)">noneOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;ignoredClass)</code></th>
+<td class="colFirst"><code>java.util.List&lt;java.lang.Object&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#noneOf(java.lang.Class)">noneOf</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;ignoredClass)</code></th>
 <td class="colLast">
-<div class="block">Gets an immutable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> with all object causes that are not
- instances of the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+<div class="block">Gets an immutable <code>List</code> with all object causes that are not
+ instances of the provided <code>Class</code>.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.event.EventContext,java.lang.Iterable)">of</a></span>&#8203;(<a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a>&nbsp;ctx,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;iterable)</code></th>
+  java.lang.Iterable&lt;java.lang.Object&gt;&nbsp;iterable)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new cause with the specified event context and causes.</div>
 </td>
@@ -301,7 +301,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.event.EventContext,java.lang.Object)">of</a></span>&#8203;(<a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a>&nbsp;ctx,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;cause)</code></th>
+  java.lang.Object&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new cause with the specified event context and cause.</div>
 </td>
@@ -309,27 +309,27 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.event.EventContext,java.lang.Object,java.lang.Object...)">of</a></span>&#8203;(<a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a>&nbsp;ctx,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;cause,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;causes)</code></th>
+  java.lang.Object&nbsp;cause,
+  java.lang.Object...&nbsp;causes)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new cause with the specified event context and causes.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#root()">root</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the root <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a> of this cause.</div>
+<div class="block">Gets the root <code>Object</code> of this cause.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.Iterable)">with</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;iterable)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.Iterable)">with</a></span>&#8203;(java.lang.Iterable&lt;java.lang.Object&gt;&nbsp;iterable)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> where the objects are added at the end of the
  cause array of objects.</div>
@@ -337,7 +337,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.Object)">with</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;additional)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.Object)">with</a></span>&#8203;(java.lang.Object&nbsp;additional)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> where the objects are added at the end of the
  cause array of objects.</div>
@@ -345,8 +345,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.Object,java.lang.Object...)">with</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;additional,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;additionals)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.Object,java.lang.Object...)">with</a></span>&#8203;(java.lang.Object&nbsp;additional,
+    java.lang.Object...&nbsp;additionals)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> where the objects are added at the end of the
  cause array of objects.</div>
@@ -364,15 +364,15 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Iterable">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#forEach(java.util.function.Consumer)" title="class or interface in java.lang" class="externalLink">forEach</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#spliterator()" title="class or interface in java.lang" class="externalLink">spliterator</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
+<code>forEach, spliterator</code></li>
 </ul>
 </li>
 </ul>
@@ -411,7 +411,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;of&#8203;(<a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a>&nbsp;ctx,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;cause)</pre>
+                       java.lang.Object&nbsp;cause)</pre>
 <div class="block">Constructs a new cause with the specified event context and cause.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -429,8 +429,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;of&#8203;(<a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a>&nbsp;ctx,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;cause,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;causes)</pre>
+                       java.lang.Object&nbsp;cause,
+                       java.lang.Object...&nbsp;causes)</pre>
 <div class="block">Constructs a new cause with the specified event context and causes.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -449,7 +449,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">public static&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;of&#8203;(<a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a>&nbsp;ctx,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;iterable)</pre>
+                       java.lang.Iterable&lt;java.lang.Object&gt;&nbsp;iterable)</pre>
 <div class="block">Constructs a new cause with the specified event context and causes.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -480,8 +480,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>root</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;root()</pre>
-<div class="block">Gets the root <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a> of this cause.</div>
+<pre class="methodSignature">public&nbsp;java.lang.Object&nbsp;root()</pre>
+<div class="block">Gets the root <code>Object</code> of this cause.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The root object cause for this cause</dd>
@@ -494,7 +494,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>first</h4>
-<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;first&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;target)</pre>
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;first&#8203;(java.lang.Class&lt;T&gt;&nbsp;target)</pre>
 <div class="block">Gets the first <code>T</code> object of this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>, if available.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -512,8 +512,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>last</h4>
-<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;last&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;target)</pre>
-<div class="block">Gets the last object instance of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> of type
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;last&#8203;(java.lang.Class&lt;T&gt;&nbsp;target)</pre>
+<div class="block">Gets the last object instance of the <code>Class</code> of type
  <code>T</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -531,9 +531,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>before</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;?&gt;&nbsp;before&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;clazz)</pre>
+<pre class="methodSignature">public&nbsp;java.util.Optional&lt;?&gt;&nbsp;before&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz)</pre>
 <div class="block">Gets the object immediately before the object that is an instance of the
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> passed in.</div>
+ <code>Class</code> passed in.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>clazz</code> - The class of the object</dd>
@@ -548,9 +548,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>after</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;?&gt;&nbsp;after&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;clazz)</pre>
+<pre class="methodSignature">public&nbsp;java.util.Optional&lt;?&gt;&nbsp;after&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz)</pre>
 <div class="block">Gets the object immediately after the object that is an instance of the
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> passed in.</div>
+ <code>Class</code> passed in.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>clazz</code> - The class to type check</dd>
@@ -565,7 +565,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>containsType</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;containsType&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;target)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;containsType&#8203;(java.lang.Class&lt;?&gt;&nbsp;target)</pre>
 <div class="block">Returns whether the target class matches any object of this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -581,8 +581,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</pre>
-<div class="block">Checks if this cause contains of any of the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a>. This
+<pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(java.lang.Object&nbsp;object)</pre>
+<div class="block">Checks if this cause contains of any of the provided <code>Object</code>. This
  is the equivalent to checking based on <a href="#equals(java.lang.Object)"><code>equals(Object)</code></a> for each
  object in this cause.</div>
 <dl>
@@ -599,9 +599,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>allOf</h4>
-<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;T&gt;&nbsp;allOf&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;target)</pre>
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;java.util.List&lt;T&gt;&nbsp;allOf&#8203;(java.lang.Class&lt;T&gt;&nbsp;target)</pre>
 <div class="block">Gets an <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableList</code></a> of all objects that are instances of the
- given <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> type <code>T</code>.</div>
+ given <code>Class</code> type <code>T</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of objects to query for</dd>
@@ -618,9 +618,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>noneOf</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;noneOf&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;ignoredClass)</pre>
-<div class="block">Gets an immutable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> with all object causes that are not
- instances of the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;java.lang.Object&gt;&nbsp;noneOf&#8203;(java.lang.Class&lt;?&gt;&nbsp;ignoredClass)</pre>
+<div class="block">Gets an immutable <code>List</code> with all object causes that are not
+ instances of the provided <code>Class</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ignoredClass</code> - The class of object types to ignore</dd>
@@ -635,8 +635,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>all</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;all()</pre>
-<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of all causes within this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;java.lang.Object&gt;&nbsp;all()</pre>
+<div class="block">Gets an <code>List</code> of all causes within this <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An immutable list of all the causes</dd>
@@ -649,7 +649,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature">public&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;with&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;additional)</pre>
+<pre class="methodSignature">public&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;with&#8203;(java.lang.Object&nbsp;additional)</pre>
 <div class="block">Creates a new <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> where the objects are added at the end of the
  cause array of objects.</div>
 <dl>
@@ -666,8 +666,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature">public&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;with&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;additional,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>...&nbsp;additionals)</pre>
+<pre class="methodSignature">public&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;with&#8203;(java.lang.Object&nbsp;additional,
+                  java.lang.Object...&nbsp;additionals)</pre>
 <div class="block">Creates a new <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> where the objects are added at the end of the
  cause array of objects.</div>
 <dl>
@@ -685,7 +685,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature">public&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;with&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;iterable)</pre>
+<pre class="methodSignature">public&nbsp;<a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;with&#8203;(java.lang.Iterable&lt;java.lang.Object&gt;&nbsp;iterable)</pre>
 <div class="block">Creates a new <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> where the objects are added at the end of the
  cause array of objects.</div>
 <dl>
@@ -718,10 +718,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;iterator()</pre>
+<pre class="methodSignature">public&nbsp;java.util.Iterator&lt;java.lang.Object&gt;&nbsp;iterator()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator()" title="class or interface in java.lang" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code></dd>
+<dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.lang.Iterable&lt;java.lang.Object&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -731,10 +731,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(@Nullable java.lang.Object&nbsp;object)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>
@@ -747,7 +747,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>
@@ -757,10 +757,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>

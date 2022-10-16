@@ -134,7 +134,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">SeededVariableAmount&lt;T&gt;</span></pre>
 <div class="block">Represents a value which may vary depending on a seed object.</div>
 </li>
@@ -185,7 +185,7 @@ public interface <span class="typeNameLabel">SeededVariableAmount&lt;T&gt;</span
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#amount(java.util.Random,T)">amount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#amount(java.util.Random,T)">amount</a></span>&#8203;(java.util.Random&nbsp;rand,
       <a href="SeededVariableAmount.html" title="type parameter in SeededVariableAmount">T</a>&nbsp;seed)</code></th>
 <td class="colLast">
 <div class="block">Gets an instance of the variable amount depending on the given random
@@ -202,7 +202,7 @@ public interface <span class="typeNameLabel">SeededVariableAmount&lt;T&gt;</span
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flooredAmount(java.util.Random,T)">flooredAmount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flooredAmount(java.util.Random,T)">flooredAmount</a></span>&#8203;(java.util.Random&nbsp;rand,
              <a href="SeededVariableAmount.html" title="type parameter in SeededVariableAmount">T</a>&nbsp;seed)</code></th>
 <td class="colLast">
 <div class="block">Gets the amount as if from <a href="#amount(java.util.Random,T)"><code>amount(Random, Object)</code></a> but floored
@@ -280,7 +280,7 @@ public interface <span class="typeNameLabel">SeededVariableAmount&lt;T&gt;</span
 <ul class="blockList">
 <li class="blockList">
 <h4>amount</h4>
-<pre class="methodSignature">double&nbsp;amount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+<pre class="methodSignature">double&nbsp;amount&#8203;(java.util.Random&nbsp;rand,
               <a href="SeededVariableAmount.html" title="type parameter in SeededVariableAmount">T</a>&nbsp;seed)</pre>
 <div class="block">Gets an instance of the variable amount depending on the given random
  object and the seed object.</div>
@@ -301,7 +301,7 @@ public interface <span class="typeNameLabel">SeededVariableAmount&lt;T&gt;</span
 <ul class="blockListLast">
 <li class="blockList">
 <h4>flooredAmount</h4>
-<pre class="methodSignature">default&nbsp;int&nbsp;flooredAmount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+<pre class="methodSignature">default&nbsp;int&nbsp;flooredAmount&#8203;(java.util.Random&nbsp;rand,
                           <a href="SeededVariableAmount.html" title="type parameter in SeededVariableAmount">T</a>&nbsp;seed)</pre>
 <div class="block">Gets the amount as if from <a href="#amount(java.util.Random,T)"><code>amount(Random, Object)</code></a> but floored
  to the nearest integer equivalent.</div>

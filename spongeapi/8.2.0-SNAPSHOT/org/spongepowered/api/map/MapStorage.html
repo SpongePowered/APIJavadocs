@@ -147,7 +147,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allMapInfos()">allMapInfos</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get all <a href="MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a>s that exist
@@ -155,15 +155,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createNewMapInfo()">createNewMapInfo</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapInfo(java.util.UUID)">mapInfo</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapInfo(java.util.UUID)">mapInfo</a></span>&#8203;(java.util.UUID&nbsp;uuid)</code></th>
 <td class="colLast">
 <div class="block">Gets a MapInfo by its UUID.</div>
 </td>
@@ -191,7 +191,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allMapInfos</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;&nbsp;allMapInfos()</pre>
+<pre class="methodSignature">java.util.Collection&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;&nbsp;allMapInfos()</pre>
 <div class="block">Get all <a href="MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a>s that exist
  on this server.</div>
 <dl>
@@ -206,7 +206,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>mapInfo</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;&nbsp;mapInfo&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;&nbsp;mapInfo&#8203;(java.util.UUID&nbsp;uuid)</pre>
 <div class="block">Gets a MapInfo by its UUID.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -222,14 +222,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createNewMapInfo</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;&nbsp;createNewMapInfo()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="MapInfo.html" title="interface in org.spongepowered.api.map">MapInfo</a>&gt;&nbsp;createNewMapInfo()</pre>
 <div class="block">Creates a new <a href="MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a>.
 
  <p>The MapInfo will not be successfully created if
  the fired <a href="../event/action/CreateMapEvent.html" title="interface in org.spongepowered.api.event.action"><code>CreateMapEvent</code></a> is cancelled.
  This can happen due to either a plugin cancelling it, or
  running out of room for maps.
- (Max amount of maps is <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink">2147483647</a>)</p></div>
+ (Max amount of maps is 2147483647)</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><a href="MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a> the new MapInfo if available</dd>

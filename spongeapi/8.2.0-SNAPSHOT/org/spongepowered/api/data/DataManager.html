@@ -150,8 +150,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence">DataBuilder</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#builder(java.lang.Class)">builder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz)</code></th>
+<td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br>java.util.Optional&lt;<a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence">DataBuilder</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#builder(java.lang.Class)">builder</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz)</code></th>
 <td class="colLast">
 <div class="block">Attempts to retrieve the <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence"><code>DataBuilder</code></a> for the desired
  <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> class.</div>
@@ -175,8 +175,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deserialize(java.lang.Class,org.spongepowered.api.data.persistence.DataView)">deserialize</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
+<td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br>java.util.Optional&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deserialize(java.lang.Class,org.spongepowered.api.data.persistence.DataView)">deserialize</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
            <a href="persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;dataView)</code></th>
 <td class="colLast">
 <div class="block">Attempts to translate an instance of the <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> from
@@ -184,8 +184,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;B&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#immutableBuilder(java.lang.Class)">immutableBuilder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;holderClass)</code></th>
+<td class="colFirst"><code>&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;<br>java.util.Optional&lt;B&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#immutableBuilder(java.lang.Class)">immutableBuilder</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;holderClass)</code></th>
 <td class="colLast">
 <div class="block">Attempts to retrieve the builder for the given
  <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a>.</div>
@@ -193,7 +193,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#register(java.lang.Class,B)">register</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;holderClass,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#register(java.lang.Class,B)">register</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;holderClass,
         B&nbsp;builder)</code></th>
 <td class="colLast">
 <div class="block">Registers the given <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> class with it's
@@ -202,7 +202,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerBuilder(java.lang.Class,org.spongepowered.api.data.persistence.DataBuilder)">registerBuilder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerBuilder(java.lang.Class,org.spongepowered.api.data.persistence.DataBuilder)">registerBuilder</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
                <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence">DataBuilder</a>&lt;T&gt;&nbsp;builder)</code></th>
 <td class="colLast">
 <div class="block">Registers a <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence"><code>DataBuilder</code></a> that will dynamically build
@@ -211,7 +211,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerContentUpdater(java.lang.Class,org.spongepowered.api.data.persistence.DataContentUpdater)">registerContentUpdater</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerContentUpdater(java.lang.Class,org.spongepowered.api.data.persistence.DataContentUpdater)">registerContentUpdater</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
                       <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&nbsp;updater)</code></th>
 <td class="colLast">
 <div class="block">Registers a <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a> for the desired
@@ -221,7 +221,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerLegacyManipulatorIds(java.lang.String,org.spongepowered.api.ResourceKey)">registerLegacyManipulatorIds</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;legacyId,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerLegacyManipulatorIds(java.lang.String,org.spongepowered.api.ResourceKey)">registerLegacyManipulatorIds</a></span>&#8203;(java.lang.String&nbsp;legacyId,
                             <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;dataStoreKey)</code></th>
 <td class="colLast">
 <div class="block">Registers a legacy <code>id</code> that is used by a previous version of
@@ -231,22 +231,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTranslator(java.lang.Class,org.spongepowered.api.data.persistence.DataTranslator)">registerTranslator</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTranslator(java.lang.Class,org.spongepowered.api.data.persistence.DataTranslator)">registerTranslator</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;objectClass,
                   <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&nbsp;translator)</code></th>
 <td class="colLast">
 <div class="block">Registers a <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the desired class.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translator(java.lang.Class)">translator</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translator(java.lang.Class)">translator</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;objectClass)</code></th>
 <td class="colLast">
 <div class="block">Gets the desired <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the provided class.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrappedContentUpdater(java.lang.Class,int,int)">wrappedContentUpdater</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
+<td class="colFirst"><code>&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br>java.util.Optional&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrappedContentUpdater(java.lang.Class,int,int)">wrappedContentUpdater</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
                      int&nbsp;fromVersion,
                      int&nbsp;toVersion)</code></th>
 <td class="colLast">
@@ -278,7 +278,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>registerBuilder</h4>
-<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;void&nbsp;registerBuilder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
+<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;void&nbsp;registerBuilder&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
                                                   <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence">DataBuilder</a>&lt;T&gt;&nbsp;builder)</pre>
 <div class="block">Registers a <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence"><code>DataBuilder</code></a> that will dynamically build
  the given <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> from a <a href="persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a>.
@@ -302,7 +302,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>registerContentUpdater</h4>
-<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;void&nbsp;registerContentUpdater&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
+<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;void&nbsp;registerContentUpdater&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
                                                          <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&nbsp;updater)</pre>
 <div class="block">Registers a <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a> for the desired
  <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> such that any versioned data may be updated to
@@ -322,14 +322,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>wrappedContentUpdater</h4>
-<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;&nbsp;wrappedContentUpdater&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
-                                                                                int&nbsp;fromVersion,
-                                                                                int&nbsp;toVersion)</pre>
+<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;java.util.Optional&lt;<a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence">DataContentUpdater</a>&gt;&nbsp;wrappedContentUpdater&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
+                                                                                          int&nbsp;fromVersion,
+                                                                                          int&nbsp;toVersion)</pre>
 <div class="block">Gets a wrapped fake <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a> that may wrap several
  <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a>s to translate versioned data from the desired
  <code>fromVersion</code> to the <code>toVersion</code>. If the version jump is too
  great or a <a href="persistence/DataContentUpdater.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContentUpdater</code></a> has not been registered to cover
- the complete jump, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> may be returned.</div>
+ the complete jump, <code>Optional.empty()</code> may be returned.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of data serializable</dd>
@@ -348,7 +348,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>builder</h4>
-<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence">DataBuilder</a>&lt;T&gt;&gt;&nbsp;builder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz)</pre>
+<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;java.util.Optional&lt;<a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence">DataBuilder</a>&lt;T&gt;&gt;&nbsp;builder&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz)</pre>
 <div class="block">Attempts to retrieve the <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence"><code>DataBuilder</code></a> for the desired
  <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> class.
 
@@ -371,12 +371,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>deserialize</h4>
-<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;deserialize&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;clazz,
-                                                     <a href="persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;dataView)</pre>
+<pre class="methodSignature">&lt;T extends <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;deserialize&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
+                                                               <a href="persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;dataView)</pre>
 <div class="block">Attempts to translate an instance of the <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> from
  the provided <a href="persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>. If there is no <a href="persistence/DataBuilder.html" title="interface in org.spongepowered.api.data.persistence"><code>DataBuilder</code></a>
  registered for the provided <a href="persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a>, then
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> may be returned.</div>
+ <code>Optional.empty()</code> may be returned.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of data serializable</dd>
@@ -396,7 +396,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>register</h4>
-<pre class="methodSignature">&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;&nbsp;void&nbsp;register&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;holderClass,
+<pre class="methodSignature">&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;&nbsp;void&nbsp;register&#8203;(java.lang.Class&lt;T&gt;&nbsp;holderClass,
                                                                                                          B&nbsp;builder)</pre>
 <div class="block">Registers the given <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> class with it's
  associated <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolderBuilder.Immutable</code></a>. The builder can be used to
@@ -418,7 +418,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>registerLegacyManipulatorIds</h4>
-<pre class="methodSignature">void&nbsp;registerLegacyManipulatorIds&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;legacyId,
+<pre class="methodSignature">void&nbsp;registerLegacyManipulatorIds&#8203;(java.lang.String&nbsp;legacyId,
                                   <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;dataStoreKey)</pre>
 <div class="block">Registers a legacy <code>id</code> that is used by a previous version of
  <a href="DataRegistration.html" title="interface in org.spongepowered.api.data"><code>DataRegistration</code></a> from a plugin such that the custom data can
@@ -436,7 +436,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>immutableBuilder</h4>
-<pre class="methodSignature">&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;B&gt;&nbsp;immutableBuilder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;holderClass)</pre>
+<pre class="methodSignature">&lt;T extends <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;T&gt;,&#8203;B extends <a href="DataHolderBuilder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolderBuilder.Immutable</a>&lt;T,&#8203;B&gt;&gt;&nbsp;java.util.Optional&lt;B&gt;&nbsp;immutableBuilder&#8203;(java.lang.Class&lt;T&gt;&nbsp;holderClass)</pre>
 <div class="block">Attempts to retrieve the builder for the given
  <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a>.
 
@@ -459,7 +459,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>translator</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;&nbsp;translator&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&gt;&nbsp;translator&#8203;(java.lang.Class&lt;T&gt;&nbsp;objectClass)</pre>
 <div class="block">Gets the desired <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the provided class.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -477,7 +477,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>registerTranslator</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;void&nbsp;registerTranslator&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;objectClass,
+<pre class="methodSignature">&lt;T&gt;&nbsp;void&nbsp;registerTranslator&#8203;(java.lang.Class&lt;T&gt;&nbsp;objectClass,
                             <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence">DataTranslator</a>&lt;T&gt;&nbsp;translator)</pre>
 <div class="block">Registers a <a href="persistence/DataTranslator.html" title="interface in org.spongepowered.api.data.persistence"><code>DataTranslator</code></a> for the desired class.</div>
 <dl>

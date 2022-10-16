@@ -114,8 +114,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation" class="externalLink">PARAMETER</a>)
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation" class="externalLink">RUNTIME</a>)
+<pre>@Target(PARAMETER)
+@Retention(RUNTIME)
 public @interface <span class="memberNameLabel">Supports</span></pre>
 <div class="block">Filters a parameter in an event <a href="../../Listener.html" title="annotation in org.spongepowered.api.event"><code>@Listener</code></a> method to only
  one that supports certain data.
@@ -145,7 +145,7 @@ public @interface <span class="memberNameLabel">Supports</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#value()">value</a></span></code></th>
 <td class="colLast">
 <div class="block">The name of the field in <a href="#container()"><code>container()</code></a> providing this key.</div>
@@ -170,7 +170,7 @@ public @interface <span class="memberNameLabel">Supports</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#container()">container</a></span></code></th>
 <td class="colLast">
 <div class="block">The holder class to fetch keys from.</div>
@@ -207,7 +207,7 @@ public @interface <span class="memberNameLabel">Supports</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value</pre>
+<pre>java.lang.String&nbsp;value</pre>
 <div class="block">The name of the field in <a href="#container()"><code>container()</code></a> providing this key.
 
  <p>This field must be static and have a value of type <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a></p></div>
@@ -229,7 +229,7 @@ public @interface <span class="memberNameLabel">Supports</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>container</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;container</pre>
+<pre>java.lang.Class&lt;?&gt;&nbsp;container</pre>
 <div class="block">The holder class to fetch keys from.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

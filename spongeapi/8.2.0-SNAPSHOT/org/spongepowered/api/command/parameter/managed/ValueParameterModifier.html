@@ -203,24 +203,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.List&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifyCompletion(org.spongepowered.api.command.parameter.CommandContext,java.lang.String,java.util.List)">modifyCompletion</a></span>&#8203;(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currentInput,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;completions)</code></th>
+                java.lang.String&nbsp;currentInput,
+                java.util.List&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;completions)</code></th>
 <td class="colLast">
 <div class="block">Modifies the result of <a href="ValueCompleter.html#complete(org.spongepowered.api.command.parameter.CommandContext,java.lang.String)"><code>the chained parameter's completions</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default @Nullable <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifyExceptionMessage(net.kyori.adventure.text.Component)">modifyExceptionMessage</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;exceptionMessage)</code></th>
+<td class="colFirst"><code>default @Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifyExceptionMessage(net.kyori.adventure.text.Component)">modifyExceptionMessage</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;exceptionMessage)</code></th>
 <td class="colLast">
 <div class="block">Modifies the message provided in a <a href="../../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception"><code>ArgumentParseException</code></a> if the
  modified <a href="ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a> throws this exception.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;? extends <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifyResult(org.spongepowered.api.command.parameter.Parameter.Key,org.spongepowered.api.command.parameter.ArgumentReader.Immutable,org.spongepowered.api.command.parameter.CommandContext.Builder,T)">modifyResult</a></span>&#8203;(<a href="../Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;parameterKey,
             <a href="../ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
             <a href="../CommandContext.Builder.html" title="interface in org.spongepowered.api.command.parameter">CommandContext.Builder</a>&nbsp;context,
@@ -255,11 +255,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>modifyResult</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;? extends <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;modifyResult&#8203;(<a href="../Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;parameterKey,
-                                   <a href="../ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
-                                   <a href="../CommandContext.Builder.html" title="interface in org.spongepowered.api.command.parameter">CommandContext.Builder</a>&nbsp;context,
-                                   @Nullable <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&nbsp;value)
-                            throws <a href="../../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a></pre>
+<pre class="methodSignature">java.util.Optional&lt;? extends <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;modifyResult&#8203;(<a href="../Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;parameterKey,
+                                             <a href="../ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
+                                             <a href="../CommandContext.Builder.html" title="interface in org.spongepowered.api.command.parameter">CommandContext.Builder</a>&nbsp;context,
+                                             @Nullable <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&nbsp;value)
+                                      throws <a href="../../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a></pre>
 <div class="block">Modifies the result of <a href="ValueParser.html#parseValue(org.spongepowered.api.command.parameter.Parameter.Key,org.spongepowered.api.command.parameter.ArgumentReader.Mutable,org.spongepowered.api.command.parameter.CommandContext.Builder)"><code>the chained parameter's
  parse result</code></a>.</div>
 <dl>
@@ -285,9 +285,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>modifyCompletion</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;modifyCompletion&#8203;(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
-                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currentInput,
-                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;completions)</pre>
+<pre class="methodSignature">default&nbsp;java.util.List&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;modifyCompletion&#8203;(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
+                                                           java.lang.String&nbsp;currentInput,
+                                                           java.util.List&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;completions)</pre>
 <div class="block">Modifies the result of <a href="ValueCompleter.html#complete(org.spongepowered.api.command.parameter.CommandContext,java.lang.String)"><code>the chained parameter's completions</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -305,7 +305,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>modifyExceptionMessage</h4>
-<pre class="methodSignature">default&nbsp;@Nullable <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;modifyExceptionMessage&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;exceptionMessage)</pre>
+<pre class="methodSignature">default&nbsp;@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;modifyExceptionMessage&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;exceptionMessage)</pre>
 <div class="block">Modifies the message provided in a <a href="../../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception"><code>ArgumentParseException</code></a> if the
  modified <a href="ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a> throws this exception.</div>
 <dl>

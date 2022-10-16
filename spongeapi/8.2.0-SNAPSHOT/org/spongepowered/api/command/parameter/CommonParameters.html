@@ -113,7 +113,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>org.spongepowered.api.command.parameter.CommonParameters</li>
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public final class <span class="typeNameLabel">CommonParameters</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
+extends java.lang.Object</pre>
 <div class="block">Commonly used <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>parameters</code></a> that can be reused in
  multiple commands.
 
@@ -133,7 +133,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  used when creating commands and retrieving elements. A general workflow for
  defining a command with a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a> parameter may look like this:
  </p>
- 
+
  <pre> <code>
  final Parameter.Value&lt;ServerPlayer&gt; parameter = Parameter.player().setKey("player").build();
  final Command.Parameterized builder = Command.builder()
@@ -145,9 +145,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  // registration happens here.
  </code></pre>
 
- <p>While this is a totally valid approach, there are two particular 
+ <p>While this is a totally valid approach, there are two particular
  considerations that can be made:</p>
- 
+
  <ul>
      <li>Sponge provided <a href="managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a>s and, by extension,
      <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a>s are stateless and so can be reused by multiple
@@ -161,7 +161,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  </ul>
 
  <p>Given these two considerations, it generally makes sense to store one
- <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> for a given <a href="managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a> and 
+ <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> for a given <a href="managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a> and
  <a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Key</code></a> combination. Further, it is clear that plugins will
  tend to use similar, if not the same, parameter/key combinations.</p>
 
@@ -204,10 +204,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOOLEAN">BOOLEAN</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> that parses a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a> with the key name
+<div class="block">A <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> that parses a <code>Boolean</code> with the key name
  "true/false".</div>
 </td>
 </tr>
@@ -220,7 +220,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MESSAGE">MESSAGE</a></span></code></th>
 <td class="colLast">
 <div class="block">A <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> that parses the remainder of the string under
@@ -274,8 +274,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -314,8 +314,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>BOOLEAN</h4>
-<pre>public static final&nbsp;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt; BOOLEAN</pre>
-<div class="block">A <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> that parses a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a> with the key name
+<pre>public static final&nbsp;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;java.lang.Boolean&gt; BOOLEAN</pre>
+<div class="block">A <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> that parses a <code>Boolean</code> with the key name
  "true/false".</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -344,7 +344,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>MESSAGE</h4>
-<pre>public static final&nbsp;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt; MESSAGE</pre>
+<pre>public static final&nbsp;<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;java.lang.String&gt; MESSAGE</pre>
 <div class="block">A <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> that parses the remainder of the string under
  the key "message".</div>
 <dl>

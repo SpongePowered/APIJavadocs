@@ -209,7 +209,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a></code></td>
+<td class="colFirst"><code>java.nio.file.Path</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gameDirectory()">gameDirectory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the directory where the game's files are located.</div>
@@ -230,8 +230,8 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#locale(java.lang.String)">locale</a></span>&#8203;(@NonNull <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;locale)</code></th>
+<td class="colFirst"><code>java.util.Locale</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#locale(java.lang.String)">locale</a></span>&#8203;(@NonNull java.lang.String&nbsp;locale)</code></th>
 <td class="colLast">
 <div class="block">Gets a locale for the specified locale code, e.g.</div>
 </td>
@@ -332,7 +332,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <ul class="blockList">
 <li class="blockList">
 <h4>gameDirectory</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink">Path</a>&nbsp;gameDirectory()</pre>
+<pre class="methodSignature">java.nio.file.Path&nbsp;gameDirectory()</pre>
 <div class="block">Gets the directory where the game's files are located.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -367,7 +367,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The server</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - If the Server isn't currently available</dd>
+<dd><code>java.lang.IllegalStateException</code> - If the Server isn't currently available</dd>
 </dl>
 </li>
 </ul>
@@ -392,7 +392,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <ul class="blockList">
 <li class="blockList">
 <h4>locale</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale&#8203;(@NonNull <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;locale)</pre>
+<pre class="methodSignature">java.util.Locale&nbsp;locale&#8203;(@NonNull java.lang.String&nbsp;locale)</pre>
 <div class="block">Gets a locale for the specified locale code, e.g. <code>en_US</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -430,7 +430,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <dd>The client</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="UnsupportedEngineException.html" title="class in org.spongepowered.api">UnsupportedEngineException</a></code> - If the client engine is not supported</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - If the Client isn't currently available</dd>
+<dd><code>java.lang.IllegalStateException</code> - If the Client isn't currently available</dd>
 </dl>
 </li>
 </ul>
@@ -590,7 +590,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
  scoped to the lifetime of the Game.
 
  <p>The provider will not be available during plugin construction and will
- throw an <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a> if there is an attempt to access
+ throw an <code>IllegalStateException</code> if there is an attempt to access
  this before the provider is ready.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

@@ -190,14 +190,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#aliases()">aliases</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the aliases that this flag will act upon.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter">Parameter</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter">Parameter</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#associatedParameter()">associatedParameter</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter</code></a> that should be parsed if this flag is
@@ -213,7 +213,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed">Flag</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String...)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;aliases)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String...)">of</a></span>&#8203;(java.lang.String...&nbsp;aliases)</code></th>
 <td class="colLast">
 <div class="block">Create a new, parameter-less <a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>Flag</code></a> with the supplied aliases.</div>
 </td>
@@ -221,21 +221,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed">Flag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(org.spongepowered.api.command.parameter.Parameter,java.lang.String...)">of</a></span>&#8203;(<a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter">Parameter</a>&nbsp;parameter,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;aliases)</code></th>
+  java.lang.String...&nbsp;aliases)</code></th>
 <td class="colLast">
 <div class="block">Create a new <a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>Flag</code></a> with the supplied parameter and aliases.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.function.Predicate&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requirement()">requirement</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> that will be checked in order for this flag
+<div class="block">Gets the <code>Predicate</code> that will be checked in order for this flag
  to be usable by a <a href="../../CommandCause.html" title="interface in org.spongepowered.api.command"><code>CommandCause</code></a></div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unprefixedAliases()">unprefixedAliases</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the aliases that were supplied to this flag.</div>
@@ -278,7 +278,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed">Flag</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;aliases)</pre>
+<pre class="methodSignature">static&nbsp;<a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed">Flag</a>&nbsp;of&#8203;(java.lang.String...&nbsp;aliases)</pre>
 <div class="block">Create a new, parameter-less <a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>Flag</code></a> with the supplied aliases.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -295,7 +295,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed">Flag</a>&nbsp;of&#8203;(<a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter">Parameter</a>&nbsp;parameter,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;aliases)</pre>
+               java.lang.String...&nbsp;aliases)</pre>
 <div class="block">Create a new <a href="Flag.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>Flag</code></a> with the supplied parameter and aliases.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -312,7 +312,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>unprefixedAliases</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;unprefixedAliases()</pre>
+<pre class="methodSignature">java.util.Collection&lt;java.lang.String&gt;&nbsp;unprefixedAliases()</pre>
 <div class="block">Gets the aliases that were supplied to this flag.
 
  <p>Aliases returned here will <strong>not</strong> be prefixed with the
@@ -329,7 +329,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>aliases</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;aliases()</pre>
+<pre class="methodSignature">java.util.Collection&lt;java.lang.String&gt;&nbsp;aliases()</pre>
 <div class="block">Gets the aliases that this flag will act upon.
 
  <p>Aliases returned here <strong>will</strong> be prefixed with the
@@ -346,12 +346,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>requirement</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement()</pre>
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> that will be checked in order for this flag
+<pre class="methodSignature">java.util.function.Predicate&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement()</pre>
+<div class="block">Gets the <code>Predicate</code> that will be checked in order for this flag
  to be usable by a <a href="../../CommandCause.html" title="interface in org.spongepowered.api.command"><code>CommandCause</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a></dd>
+<dd>The <code>Predicate</code></dd>
 </dl>
 </li>
 </ul>
@@ -361,7 +361,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>associatedParameter</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter">Parameter</a>&gt;&nbsp;associatedParameter()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter">Parameter</a>&gt;&nbsp;associatedParameter()</pre>
 <div class="block">Gets the <a href="../Parameter.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter</code></a> that should be parsed if this flag is
  invoked.
 

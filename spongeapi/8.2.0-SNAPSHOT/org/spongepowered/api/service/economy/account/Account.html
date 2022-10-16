@@ -137,7 +137,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
  <p>Accounts come in two varieties: <a href="UniqueAccount.html" title="interface in org.spongepowered.api.service.economy.account"><code>user accounts</code></a>
  and <a href="VirtualAccount.html" title="interface in org.spongepowered.api.service.economy.account"><code>VirtualAccount</code></a> virtual accounts.
 
- Unique accounts are bound to a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>UUID</code></a>, usually of a particular
+ Unique accounts are bound to a <code>UUID</code>, usually of a particular
  <a href="../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>'s <a href="../../../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.
 
  Virtual accounts are identified by a String identifier, which may have any
@@ -165,58 +165,58 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
+<td class="colFirst"><code>default java.math.BigDecimal</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balance(org.spongepowered.api.service.economy.Currency)">balance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> representative of the balance stored
+<div class="block">Returns a <code>BigDecimal</code> representative of the balance stored
  within this <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> for the <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> given, with
  the current active cause.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
+<td class="colFirst"><code>java.math.BigDecimal</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balance(org.spongepowered.api.service.economy.Currency,java.util.Set)">balance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+       java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> representative of the balance stored within this
+<div class="block">Returns a <code>BigDecimal</code> representative of the balance stored within this
  <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> for the <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> given and the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
+<td class="colFirst"><code>java.math.BigDecimal</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balance(org.spongepowered.api.service.economy.Currency,org.spongepowered.api.event.Cause)">balance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
        <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> representative of the balance stored within this
+<div class="block">Returns a <code>BigDecimal</code> representative of the balance stored within this
  <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> for the <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> given and the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;java.math.BigDecimal&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balances()">balances</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of all currently set balances the account holds
+<div class="block">Returns a <code>Map</code> of all currently set balances the account holds
  within the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balances(java.util.Set)">balances</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;java.math.BigDecimal&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balances(java.util.Set)">balances</a></span>&#8203;(java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of all currently set balances the account holds
+<div class="block">Returns a <code>Map</code> of all currently set balances the account holds
  within the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;java.math.BigDecimal&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#balances(org.spongepowered.api.event.Cause)">balances</a></span>&#8203;(<a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of all currently set balances the account holds
+<div class="block">Returns a <code>Map</code> of all currently set balances the account holds
  within the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
+<td class="colFirst"><code>java.math.BigDecimal</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)">defaultBalance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency)</code></th>
 <td class="colLast">
 <div class="block">Gets the default balance of this account for the specified
@@ -226,7 +226,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default <a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deposit(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal)">deposit</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
+       java.math.BigDecimal&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Deposits the given amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
  this account, using the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -235,8 +235,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deposit(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,java.util.Set)">deposit</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+       java.math.BigDecimal&nbsp;amount,
+       java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Deposits the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
  this account, using the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -245,7 +245,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deposit(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)">deposit</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+       java.math.BigDecimal&nbsp;amount,
        <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Deposits the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
@@ -253,7 +253,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
+<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#displayName()">displayName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the display name for this account.</div>
@@ -270,7 +270,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasBalance(org.spongepowered.api.service.economy.Currency,java.util.Set)">hasBalance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+          java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Returns whether this account has a set balance for the specified
  <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -297,7 +297,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resetBalance(org.spongepowered.api.service.economy.Currency,java.util.Set)">resetBalance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+            java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Resets the balance for the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to its default
  value (<a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)"><code>defaultBalance(Currency)</code></a>), using
@@ -315,7 +315,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resetBalances()">resetBalances</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Resets the balances for all <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>s used on this account to
@@ -324,8 +324,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resetBalances(java.util.Set)">resetBalances</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resetBalances(java.util.Set)">resetBalances</a></span>&#8203;(java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Resets the balances for all <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>s used on this account
  to their default values (<a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)"><code>defaultBalance(Currency)</code></a>),
@@ -333,7 +333,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 </td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resetBalances(org.spongepowered.api.event.Cause)">resetBalances</a></span>&#8203;(<a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Resets the balances for all <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>s used on this account
@@ -344,7 +344,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>default <a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBalance(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal)">setBalance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
+          java.math.BigDecimal&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Sets the balance for this account to the specified amount for the
  specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -353,8 +353,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBalance(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,java.util.Set)">setBalance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+          java.math.BigDecimal&nbsp;amount,
+          java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Sets the balance for this account to the specified amount for
  the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the specified set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -363,7 +363,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBalance(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)">setBalance</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+          java.math.BigDecimal&nbsp;amount,
           <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Sets the balance for this account to the specified amount for
@@ -374,7 +374,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <td class="colFirst"><code>default <a href="../transaction/TransferResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransferResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transfer(org.spongepowered.api.service.economy.account.Account,org.spongepowered.api.service.economy.Currency,java.math.BigDecimal)">transfer</a></span>&#8203;(<a href="Account.html" title="interface in org.spongepowered.api.service.economy.account">Account</a>&nbsp;to,
         <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
+        java.math.BigDecimal&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Transfers the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>
  from this account the destination account,
@@ -385,8 +385,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <td class="colFirst"><code><a href="../transaction/TransferResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransferResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transfer(org.spongepowered.api.service.economy.account.Account,org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,java.util.Set)">transfer</a></span>&#8203;(<a href="Account.html" title="interface in org.spongepowered.api.service.economy.account">Account</a>&nbsp;to,
         <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+        java.math.BigDecimal&nbsp;amount,
+        java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Transfers the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>
  from this account the destination account,
@@ -397,7 +397,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <td class="colFirst"><code><a href="../transaction/TransferResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransferResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transfer(org.spongepowered.api.service.economy.account.Account,org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)">transfer</a></span>&#8203;(<a href="Account.html" title="interface in org.spongepowered.api.service.economy.account">Account</a>&nbsp;to,
         <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+        java.math.BigDecimal&nbsp;amount,
         <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Transfers the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>
@@ -408,7 +408,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>default <a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withdraw(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal)">withdraw</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</code></th>
+        java.math.BigDecimal&nbsp;amount)</code></th>
 <td class="colLast">
 <div class="block">Withdraws the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> from
  this account, using the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -417,8 +417,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withdraw(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,java.util.Set)">withdraw</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+        java.math.BigDecimal&nbsp;amount,
+        java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Withdraws the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> from
  this account, using the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -427,7 +427,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withdraw(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)">withdraw</a></span>&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+        java.math.BigDecimal&nbsp;amount,
         <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Withdraws the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> from
@@ -464,7 +464,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>displayName</h4>
-<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;displayName()</pre>
+<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;displayName()</pre>
 <div class="block">Gets the display name for this account.
 
  <p>This should be used by plugins to get a human-readable name for an
@@ -486,7 +486,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>defaultBalance</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;defaultBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency)</pre>
+<pre class="methodSignature">java.math.BigDecimal&nbsp;defaultBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency)</pre>
 <div class="block">Gets the default balance of this account for the specified
  <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>.
 
@@ -509,7 +509,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>hasBalance</h4>
 <pre class="methodSignature">boolean&nbsp;hasBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                   java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Returns whether this account has a set balance for the specified
  <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
@@ -582,9 +582,9 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>balance</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;balance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> representative of the balance stored within this
+<pre class="methodSignature">java.math.BigDecimal&nbsp;balance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
+                             java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<div class="block">Returns a <code>BigDecimal</code> representative of the balance stored within this
  <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> for the <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> given and the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
  <p>The default result when the account does not have a balance of the
@@ -608,9 +608,9 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>balance</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;balance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                   <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> representative of the balance stored within this
+<pre class="methodSignature">java.math.BigDecimal&nbsp;balance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
+                             <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
+<div class="block">Returns a <code>BigDecimal</code> representative of the balance stored within this
  <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> for the <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> given and the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
  <p>The default result when the account does not have a balance of the
@@ -634,8 +634,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>balance</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;balance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency)</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> representative of the balance stored
+<pre class="methodSignature">default&nbsp;java.math.BigDecimal&nbsp;balance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency)</pre>
+<div class="block">Returns a <code>BigDecimal</code> representative of the balance stored
  within this <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> for the <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> given, with
  the current active cause.
 
@@ -655,8 +655,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>balances</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;balances&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of all currently set balances the account holds
+<pre class="methodSignature">java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;java.math.BigDecimal&gt;&nbsp;balances&#8203;(java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<div class="block">Returns a <code>Map</code> of all currently set balances the account holds
  within the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
  <p>Amounts may differ depending on the <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s specified and
@@ -665,7 +665,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
  <p><a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> amounts which are 0 may or may not be included in
  the returned mapping.</p>
 
- <p>Changes to the returned <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> will not be reflected in
+ <p>Changes to the returned <code>Map</code> will not be reflected in
  the underlying <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a>. See
  <a href="#setBalance(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)"><code>setBalance(Currency, BigDecimal, Cause)</code></a>  to set values.</p></div>
 <dl>
@@ -673,7 +673,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <dd><code>contexts</code> - the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s to use with the
      specified amounts</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> amounts
+<dd>A <code>Map</code> of <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to <code>BigDecimal</code> amounts
      that this account holds</dd>
 </dl>
 </li>
@@ -684,8 +684,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>balances</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;balances&#8203;(<a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of all currently set balances the account holds
+<pre class="methodSignature">java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;java.math.BigDecimal&gt;&nbsp;balances&#8203;(<a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
+<div class="block">Returns a <code>Map</code> of all currently set balances the account holds
  within the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
  <p>Amounts may differ depending on the <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> specified and
@@ -694,7 +694,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
  <p><a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> amounts which are 0 may or may not be included in
  the returned mapping.</p>
 
- <p>Changes to the returned <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> will not be reflected in
+ <p>Changes to the returned <code>Map</code> will not be reflected in
  the underlying <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a>. See
  <a href="#setBalance(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)"><code>setBalance(Currency, BigDecimal, Cause)</code></a>  to set values.</p></div>
 <dl>
@@ -702,7 +702,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <dd><code>cause</code> - the set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s to use with the
      specified amounts</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> amounts
+<dd>A <code>Map</code> of <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to <code>BigDecimal</code> amounts
      that this account holds</dd>
 </dl>
 </li>
@@ -713,8 +713,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>balances</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&gt;&nbsp;balances()</pre>
-<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of all currently set balances the account holds
+<pre class="methodSignature">default&nbsp;java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;java.math.BigDecimal&gt;&nbsp;balances()</pre>
+<div class="block">Returns a <code>Map</code> of all currently set balances the account holds
  within the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>.
 
  <p>Amounts may differ depending on the <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s specified and
@@ -723,13 +723,13 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
  <p><a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> amounts which are 0 may or may not be included in
  the returned mapping.</p>
 
- <p>Changes to the returned <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> will not be reflected in
+ <p>Changes to the returned <code>Map</code> will not be reflected in
  the underlying <a href="Account.html" title="interface in org.spongepowered.api.service.economy.account"><code>Account</code></a> and may result in runtime exceptions
  depending on implementation. See
  <a href="#setBalance(org.spongepowered.api.service.economy.Currency,java.math.BigDecimal,org.spongepowered.api.event.Cause)"><code>setBalance(Currency, BigDecimal, Cause)</code></a>  to set values.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> of <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> amounts
+<dd>A <code>Map</code> of <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to <code>BigDecimal</code> amounts
      that this account holds</dd>
 </dl>
 </li>
@@ -741,8 +741,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>setBalance</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;setBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                             java.math.BigDecimal&nbsp;amount,
+                             java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Sets the balance for this account to the specified amount for
  the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the specified set of <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
@@ -766,7 +766,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>setBalance</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;setBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+                             java.math.BigDecimal&nbsp;amount,
                              <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block">Sets the balance for this account to the specified amount for
  the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the specified <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.
@@ -791,7 +791,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>setBalance</h4>
 <pre class="methodSignature">default&nbsp;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;setBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</pre>
+                                     java.math.BigDecimal&nbsp;amount)</pre>
 <div class="block">Sets the balance for this account to the specified amount for the
  specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>, with the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
 
@@ -812,7 +812,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>resetBalances</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;&nbsp;resetBalances&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;&nbsp;resetBalances&#8203;(java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Resets the balances for all <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>s used on this account
  to their default values (<a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)"><code>defaultBalance(Currency)</code></a>),
  using the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -831,7 +831,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>resetBalances</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;&nbsp;resetBalances&#8203;(<a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
+<pre class="methodSignature">java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;&nbsp;resetBalances&#8203;(<a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block">Resets the balances for all <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>s used on this account
  to their default values (<a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)"><code>defaultBalance(Currency)</code></a>),
  using the specified <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>s.</div>
@@ -850,7 +850,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <ul class="blockList">
 <li class="blockList">
 <h4>resetBalances</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;&nbsp;resetBalances()</pre>
+<pre class="methodSignature">default&nbsp;java.util.Map&lt;<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>,&#8203;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&gt;&nbsp;resetBalances()</pre>
 <div class="block">Resets the balances for all <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>s used on this account to
  their default values (<a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)"><code>defaultBalance(Currency)</code></a>), using
  the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>.</div>
@@ -868,7 +868,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>resetBalance</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;resetBalance&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                               java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Resets the balance for the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to its default
  value (<a href="#defaultBalance(org.spongepowered.api.service.economy.Currency)"><code>defaultBalance(Currency)</code></a>), using
  the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
@@ -927,8 +927,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>deposit</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;deposit&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                          java.math.BigDecimal&nbsp;amount,
+                          java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Deposits the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
  this account, using the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 <dl>
@@ -949,7 +949,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>deposit</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;deposit&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+                          java.math.BigDecimal&nbsp;amount,
                           <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block">Deposits the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
  this account, using the specified <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
@@ -971,7 +971,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>deposit</h4>
 <pre class="methodSignature">default&nbsp;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;deposit&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</pre>
+                                  java.math.BigDecimal&nbsp;amount)</pre>
 <div class="block">Deposits the given amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
  this account, using the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 <dl>
@@ -990,8 +990,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>withdraw</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;withdraw&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                           java.math.BigDecimal&nbsp;amount,
+                           java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Withdraws the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> from
  this account, using the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 <dl>
@@ -1012,7 +1012,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>withdraw</h4>
 <pre class="methodSignature"><a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;withdraw&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+                           java.math.BigDecimal&nbsp;amount,
                            <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block">Withdraws the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> from
  this account, using the specified <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
@@ -1034,7 +1034,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li class="blockList">
 <h4>withdraw</h4>
 <pre class="methodSignature">default&nbsp;<a href="../transaction/TransactionResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransactionResult</a>&nbsp;withdraw&#8203;(<a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</pre>
+                                   java.math.BigDecimal&nbsp;amount)</pre>
 <div class="block">Withdraws the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> from
  this account, using the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.</div>
 <dl>
@@ -1054,8 +1054,8 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <h4>transfer</h4>
 <pre class="methodSignature"><a href="../transaction/TransferResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransferResult</a>&nbsp;transfer&#8203;(<a href="Account.html" title="interface in org.spongepowered.api.service.economy.account">Account</a>&nbsp;to,
                         <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                        java.math.BigDecimal&nbsp;amount,
+                        java.util.Set&lt;<a href="../../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Transfers the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>
  from this account the destination account,
  using the specified <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.
@@ -1084,7 +1084,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <h4>transfer</h4>
 <pre class="methodSignature"><a href="../transaction/TransferResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransferResult</a>&nbsp;transfer&#8203;(<a href="Account.html" title="interface in org.spongepowered.api.service.economy.account">Account</a>&nbsp;to,
                         <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount,
+                        java.math.BigDecimal&nbsp;amount,
                         <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block">Transfers the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>
  from this account the destination account,
@@ -1114,7 +1114,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <h4>transfer</h4>
 <pre class="methodSignature">default&nbsp;<a href="../transaction/TransferResult.html" title="interface in org.spongepowered.api.service.economy.transaction">TransferResult</a>&nbsp;transfer&#8203;(<a href="Account.html" title="interface in org.spongepowered.api.service.economy.account">Account</a>&nbsp;to,
                                 <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy">Currency</a>&nbsp;currency,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a>&nbsp;amount)</pre>
+                                java.math.BigDecimal&nbsp;amount)</pre>
 <div class="block">Transfers the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a>
  from this account the destination account,
  using the current active <a href="../../context/Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s.

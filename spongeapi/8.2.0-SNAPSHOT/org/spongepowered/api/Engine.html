@@ -172,7 +172,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMainThread()">onMainThread</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Checks if the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#currentThread()" title="class or interface in java.lang" class="externalLink"><code>current thread</code></a> is the main thread of the engine.</div>
+<div class="block">Checks if the <code>current thread</code> is the main thread of the engine.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -181,7 +181,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reloadResources()">reloadResources</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Rediscovers all <a href="resource/Resource.html" title="interface in org.spongepowered.api.resource"><code>resources</code></a> within all <a href="resource/pack/Pack.html" title="interface in org.spongepowered.api.resource.pack"><code>pack's</code></a> <a href="resource/pack/PackContents.html" title="interface in org.spongepowered.api.resource.pack"><code>contents</code></a>.</div>
@@ -299,7 +299,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <li class="blockList">
 <h4>onMainThread</h4>
 <pre class="methodSignature">boolean&nbsp;onMainThread()</pre>
-<div class="block">Checks if the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#currentThread()" title="class or interface in java.lang" class="externalLink"><code>current thread</code></a> is the main thread of the engine.</div>
+<div class="block">Checks if the <code>current thread</code> is the main thread of the engine.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if main thread, <code>false</code> if not</dd>
@@ -312,7 +312,7 @@ extends <a href="registry/RegistryHolder.html" title="interface in org.spongepow
 <ul class="blockListLast">
 <li class="blockList">
 <h4>reloadResources</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;reloadResources()</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;&nbsp;reloadResources()</pre>
 <div class="block">Rediscovers all <a href="resource/Resource.html" title="interface in org.spongepowered.api.resource"><code>resources</code></a> within all <a href="resource/pack/Pack.html" title="interface in org.spongepowered.api.resource.pack"><code>pack's</code></a> <a href="resource/pack/PackContents.html" title="interface in org.spongepowered.api.resource.pack"><code>contents</code></a>.
 
  <p>On the server, the future will always be completed.</p></div>

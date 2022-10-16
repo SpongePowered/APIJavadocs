@@ -178,7 +178,7 @@ extends <a href="../util/ResettableBuilder.html" title="interface in org.spongep
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="MapCanvas.Builder.html" title="interface in org.spongepowered.api.map">MapCanvas.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromImage(java.awt.Image)">fromImage</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt" class="externalLink">Image</a>&nbsp;image)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromImage(java.awt.Image)">fromImage</a></span>&#8203;(java.awt.Image&nbsp;image)</code></th>
 <td class="colLast">
 <div class="block">Fills a canvas from an image
  This given image will be copied and thus changes to the
@@ -331,8 +331,8 @@ extends <a href="../util/ResettableBuilder.html" title="interface in org.spongep
 <ul class="blockList">
 <li class="blockList">
 <h4>fromImage</h4>
-<pre class="methodSignature"><a href="MapCanvas.Builder.html" title="interface in org.spongepowered.api.map">MapCanvas.Builder</a>&nbsp;fromImage&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt" class="externalLink">Image</a>&nbsp;image)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+<pre class="methodSignature"><a href="MapCanvas.Builder.html" title="interface in org.spongepowered.api.map">MapCanvas.Builder</a>&nbsp;fromImage&#8203;(java.awt.Image&nbsp;image)
+                     throws java.lang.IllegalArgumentException</pre>
 <div class="block">Fills a canvas from an image
  This given image will be copied and thus changes to the
  image after this is called will not be reflected.</div>
@@ -342,8 +342,8 @@ extends <a href="../util/ResettableBuilder.html" title="interface in org.spongep
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>This Builder, for chaining</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if width/height is wrong or not known yet</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if color found is not in the palette <a href="color/MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a></dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if width/height is wrong or not known yet</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if color found is not in the palette <a href="color/MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -171,7 +171,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peek(org.spongepowered.math.vector.Vector2i)">peek</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector2i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector2i</a>&nbsp;pos)</code></th>
 <td class="colLast">
 <div class="block">Gets without removing the stack at the supplied position in this
@@ -202,7 +202,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slot(org.spongepowered.math.vector.Vector2i)">slot</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector2i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector2i</a>&nbsp;pos)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory"><code>Slot</code></a> at the specified position.</div>
@@ -283,7 +283,7 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockList">
 <li class="blockList">
 <h4>peek</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;peek&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector2i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector2i</a>&nbsp;pos)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="../ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;peek&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector2i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector2i</a>&nbsp;pos)</pre>
 <div class="block">Gets without removing the stack at the supplied position in this
  Inventory.</div>
 <dl>
@@ -322,13 +322,13 @@ extends <a href="../Inventory.html" title="interface in org.spongepowered.api.it
 <ul class="blockListLast">
 <li class="blockList">
 <h4>slot</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;&nbsp;slot&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector2i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector2i</a>&nbsp;pos)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory">Slot</a>&gt;&nbsp;slot&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector2i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector2i</a>&nbsp;pos)</pre>
 <div class="block">Gets the <a href="../Slot.html" title="interface in org.spongepowered.api.item.inventory"><code>Slot</code></a> at the specified position.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>pos</code> - Slot position to retrieve</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>slot at the specified position, or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if
+<dd>slot at the specified position, or <code>Optional.empty()</code> if
       no matching slot</dd>
 </dl>
 </li>

@@ -139,7 +139,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
  is available (see <a href="#cause()"><code>cause()</code></a>. Some popular tasks that operate
  on the <a href="../CommandCause.html" title="interface in org.spongepowered.api.command"><code>CommandCause</code></a> are also directly available on this context,
  namely permission checks (via <a href="../../service/permission/SubjectProxy.html" title="interface in org.spongepowered.api.service.permission"><code>SubjectProxy</code></a>) and sending a message to
- the <a href="../CommandCause.html" title="interface in org.spongepowered.api.command"><code>CommandCause</code></a>'s <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> (via <a href="#sendMessage(net.kyori.adventure.identity.Identified,net.kyori.adventure.text.Component)"><code>sendMessage(net.kyori.adventure.identity.Identified, net.kyori.adventure.text.Component)</code></a>).</p></div>
+ the <a href="../CommandCause.html" title="interface in org.spongepowered.api.command"><code>CommandCause</code></a>'s <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a> (via <a href="#sendMessage(net.kyori.adventure.identity.Identified,net.kyori.adventure.text.Component)"><code>sendMessage(net.kyori.adventure.identity.Identified, net.kyori.adventure.text.Component)</code></a>).</p></div>
 </li>
 </ul>
 </div>
@@ -186,14 +186,14 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends T&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Collection&lt;? extends T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#all(org.spongepowered.api.command.parameter.Parameter.Key)">all</a></span>&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets all values for the given argument.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends T&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Collection&lt;? extends T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#all(org.spongepowered.api.command.parameter.Parameter.Value)">all</a></span>&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)</code></th>
 <td class="colLast">
 <div class="block">Gets all values for the given argument.</div>
@@ -207,7 +207,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Command.Parameterized.html" title="interface in org.spongepowered.api.command">Command.Parameterized</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../Command.Parameterized.html" title="interface in org.spongepowered.api.command">Command.Parameterized</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executedCommand()">executedCommand</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../Command.Parameterized.html" title="interface in org.spongepowered.api.command"><code>Command.Parameterized</code></a> that is being executed, if it
@@ -216,7 +216,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flagInvocationCount(java.lang.String)">flagInvocationCount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;flagKey)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flagInvocationCount(java.lang.String)">flagInvocationCount</a></span>&#8203;(java.lang.String&nbsp;flagKey)</code></th>
 <td class="colLast">
 <div class="block">Returns how many times a given flag was invoked for this command.</div>
 </td>
@@ -244,7 +244,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasFlag(java.lang.String)">hasFlag</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;flagAlias)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasFlag(java.lang.String)">hasFlag</a></span>&#8203;(java.lang.String&nbsp;flagAlias)</code></th>
 <td class="colLast">
 <div class="block">Gets if a flag with given alias was specified at least once.</div>
 </td>
@@ -257,14 +257,14 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#one(org.spongepowered.api.command.parameter.Parameter.Key)">one</a></span>&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the value for the given key if the key has only one value.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#one(org.spongepowered.api.command.parameter.Parameter.Value)">one</a></span>&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)</code></th>
 <td class="colLast">
 <div class="block">Gets the value for the given key if the key has only one value.</div>
@@ -275,7 +275,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireOne(org.spongepowered.api.command.parameter.Parameter.Key)">requireOne</a></span>&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the value for the given key if the key has only one value,
- otherwise, throws a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a>.</div>
+ otherwise, throws a <code>NoSuchElementException</code>.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -283,21 +283,21 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireOne(org.spongepowered.api.command.parameter.Parameter.Value)">requireOne</a></span>&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)</code></th>
 <td class="colLast">
 <div class="block">Gets the value for the given key if the key has only one value,
- otherwise, throws a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a>.</div>
+ otherwise, throws a <code>NoSuchElementException</code>.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(net.kyori.adventure.identity.Identified,net.kyori.adventure.text.Component)">sendMessage</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/identity/Identified.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identified</a>&nbsp;source,
-           <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(net.kyori.adventure.identity.Identified,net.kyori.adventure.text.Component)">sendMessage</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identified.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identified</a>&nbsp;source,
+           <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Sends a message via <a href="../CommandCause.html#audience()"><code>CommandCause.audience()</code></a></div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(net.kyori.adventure.identity.Identity,net.kyori.adventure.text.Component)">sendMessage</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a>&nbsp;source,
-           <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(net.kyori.adventure.identity.Identity,net.kyori.adventure.text.Component)">sendMessage</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a>&nbsp;source,
+           <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Sends a message via <a href="../CommandCause.html#audience()"><code>CommandCause.audience()</code></a></div>
 </td>
@@ -332,7 +332,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>executedCommand</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Command.Parameterized.html" title="interface in org.spongepowered.api.command">Command.Parameterized</a>&gt;&nbsp;executedCommand()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../Command.Parameterized.html" title="interface in org.spongepowered.api.command">Command.Parameterized</a>&gt;&nbsp;executedCommand()</pre>
 <div class="block">Gets the <a href="../Command.Parameterized.html" title="interface in org.spongepowered.api.command"><code>Command.Parameterized</code></a> that is being executed, if it
  exists.</div>
 <dl>
@@ -361,7 +361,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>hasFlag</h4>
-<pre class="methodSignature">boolean&nbsp;hasFlag&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;flagAlias)</pre>
+<pre class="methodSignature">boolean&nbsp;hasFlag&#8203;(java.lang.String&nbsp;flagAlias)</pre>
 <div class="block">Gets if a flag with given alias was specified at least once.
 
  <p>If the flag has multiple aliases, (for example, <code>-f</code> and
@@ -398,7 +398,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>flagInvocationCount</h4>
-<pre class="methodSignature">int&nbsp;flagInvocationCount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;flagKey)</pre>
+<pre class="methodSignature">int&nbsp;flagInvocationCount&#8203;(java.lang.String&nbsp;flagKey)</pre>
 <div class="block">Returns how many times a given flag was invoked for this command.
 
  <p>If the flag has multiple aliases, (for example, <code>-f</code> and
@@ -467,8 +467,8 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>one</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;one&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)
-             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;one&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)
+                       throws java.lang.IllegalArgumentException</pre>
 <div class="block">Gets the value for the given key if the key has only one value.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -478,7 +478,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the argument</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if more than one value for the key was
+<dd><code>java.lang.IllegalArgumentException</code> - if more than one value for the key was
                                   found</dd>
 </dl>
 </li>
@@ -489,8 +489,8 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>one</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;one&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)
-             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;one&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)
+                       throws java.lang.IllegalArgumentException</pre>
 <div class="block">Gets the value for the given key if the key has only one value.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -500,7 +500,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the argument</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if more than one value for the key was
+<dd><code>java.lang.IllegalArgumentException</code> - if more than one value for the key was
                                   found</dd>
 </dl>
 </li>
@@ -512,10 +512,10 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <li class="blockList">
 <h4>requireOne</h4>
 <pre class="methodSignature">&lt;T&gt;&nbsp;T&nbsp;requireOne&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)
-          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a>,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+          throws java.util.NoSuchElementException,
+                 java.lang.IllegalArgumentException</pre>
 <div class="block">Gets the value for the given key if the key has only one value,
- otherwise, throws a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a>.</div>
+ otherwise, throws a <code>NoSuchElementException</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the expected type of the argument</dd>
@@ -524,8 +524,8 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the argument</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a></code> - if no value for the key was found</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if more than one value for the key was
+<dd><code>java.util.NoSuchElementException</code> - if no value for the key was found</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if more than one value for the key was
                                   found</dd>
 </dl>
 </li>
@@ -537,10 +537,10 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <li class="blockList">
 <h4>requireOne</h4>
 <pre class="methodSignature">&lt;T&gt;&nbsp;T&nbsp;requireOne&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)
-          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a>,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+          throws java.util.NoSuchElementException,
+                 java.lang.IllegalArgumentException</pre>
 <div class="block">Gets the value for the given key if the key has only one value,
- otherwise, throws a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a>.</div>
+ otherwise, throws a <code>NoSuchElementException</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the expected type of the argument</dd>
@@ -549,8 +549,8 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the argument</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink">NoSuchElementException</a></code> - if no value for the key was found</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if more than one value for the key was
+<dd><code>java.util.NoSuchElementException</code> - if no value for the key was found</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if more than one value for the key was
                                   found</dd>
 </dl>
 </li>
@@ -561,7 +561,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>all</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends T&gt;&nbsp;all&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Collection&lt;? extends T&gt;&nbsp;all&#8203;(<a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Value</a>&lt;T&gt;&nbsp;parameter)</pre>
 <div class="block">Gets all values for the given argument. May return an empty list if no
  values are present.</div>
 <dl>
@@ -580,7 +580,7 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>all</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends T&gt;&nbsp;all&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Collection&lt;? extends T&gt;&nbsp;all&#8203;(<a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;T&gt;&nbsp;key)</pre>
 <div class="block">Gets all values for the given argument. May return an empty list if no
  values are present.</div>
 <dl>
@@ -599,15 +599,15 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre class="methodSignature">void&nbsp;sendMessage&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/identity/Identified.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identified</a>&nbsp;source,
-                 <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
+<pre class="methodSignature">void&nbsp;sendMessage&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identified.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identified</a>&nbsp;source,
+                 <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
 <div class="block">Sends a message via <a href="../CommandCause.html#audience()"><code>CommandCause.audience()</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - The <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/identity/Identified.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink"><code>Identified</code></a> that is the sender of the message</dd>
+<dd><code>source</code> - The <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identified.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink"><code>Identified</code></a> that is the sender of the message</dd>
 <dd><code>message</code> - The message to send</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true#sendMessage(net.kyori.adventure.identity.Identified,net.kyori.adventure.text.Component)" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience.sendMessage(Identified, Component)</code></a></dd>
+<dd><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true#sendMessage(net.kyori.adventure.identity.Identified,net.kyori.adventure.text.Component)" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience.sendMessage(Identified, Component)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -617,15 +617,15 @@ extends <a href="../../service/permission/SubjectProxy.html" title="interface in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre class="methodSignature">void&nbsp;sendMessage&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a>&nbsp;source,
-                 <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
+<pre class="methodSignature">void&nbsp;sendMessage&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a>&nbsp;source,
+                 <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
 <div class="block">Sends a message via <a href="../CommandCause.html#audience()"><code>CommandCause.audience()</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - The <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink"><code>Identity</code></a> of the sender of the message</dd>
+<dd><code>source</code> - The <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink"><code>Identity</code></a> of the sender of the message</dd>
 <dd><code>message</code> - The message to send</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/audience/Audience.html?is-external=true#sendMessage(net.kyori.adventure.identity.Identity,net.kyori.adventure.text.Component)" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience.sendMessage(Identity, Component)</code></a></dd>
+<dd><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true#sendMessage(net.kyori.adventure.identity.Identity,net.kyori.adventure.text.Component)" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience.sendMessage(Identity, Component)</code></a></dd>
 </dl>
 </li>
 </ul>

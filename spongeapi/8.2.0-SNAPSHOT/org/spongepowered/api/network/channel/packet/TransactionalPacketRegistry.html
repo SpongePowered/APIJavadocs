@@ -155,7 +155,7 @@ extends <a href="PacketRegistry.html" title="interface in org.spongepowered.api.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTransactional(java.lang.Class,int)">registerTransactional</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;requestPacketType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTransactional(java.lang.Class,int)">registerTransactional</a></span>&#8203;(java.lang.Class&lt;P&gt;&nbsp;requestPacketType,
                      int&nbsp;packetOpcode)</code></th>
 <td class="colLast">
 <div class="block">Register a request packet class pair to this channel.</div>
@@ -163,16 +163,16 @@ extends <a href="PacketRegistry.html" title="interface in org.spongepowered.api.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="FixedTransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">FixedTransactionalPacketBinding</a>&lt;P,&#8203;R&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTransactional(java.lang.Class,java.lang.Class,int)">registerTransactional</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;requestPacketType,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;R&gt;&nbsp;responsePacketType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerTransactional(java.lang.Class,java.lang.Class,int)">registerTransactional</a></span>&#8203;(java.lang.Class&lt;P&gt;&nbsp;requestPacketType,
+                     java.lang.Class&lt;R&gt;&nbsp;responsePacketType,
                      int&nbsp;packetOpcode)</code></th>
 <td class="colLast">
 <div class="block">Register a request/response packet class pair to this channel.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactionalBinding(java.lang.Class)">transactionalBinding</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;requestPacketType)</code></th>
+<td class="colFirst"><code>&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br>java.util.Optional&lt;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactionalBinding(java.lang.Class)">transactionalBinding</a></span>&#8203;(java.lang.Class&lt;P&gt;&nbsp;requestPacketType)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>TransactionalPacketBinding</code></a> for the given <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a> class, if
  the type is registered to this channel as a transactional binding.</div>
@@ -208,8 +208,8 @@ extends <a href="PacketRegistry.html" title="interface in org.spongepowered.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>registerTransactional</h4>
-<pre class="methodSignature">&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="FixedTransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">FixedTransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&nbsp;registerTransactional&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;requestPacketType,
-                                                                                                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;R&gt;&nbsp;responsePacketType,
+<pre class="methodSignature">&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="FixedTransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">FixedTransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&nbsp;registerTransactional&#8203;(java.lang.Class&lt;P&gt;&nbsp;requestPacketType,
+                                                                                                                     java.lang.Class&lt;R&gt;&nbsp;responsePacketType,
                                                                                                                      int&nbsp;packetOpcode)</pre>
 <div class="block">Register a request/response packet class pair to this channel. A receiving handler
  isn't required when sending the request using
@@ -235,7 +235,7 @@ extends <a href="PacketRegistry.html" title="interface in org.spongepowered.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>registerTransactional</h4>
-<pre class="methodSignature">&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&nbsp;registerTransactional&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;requestPacketType,
+<pre class="methodSignature">&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&nbsp;registerTransactional&#8203;(java.lang.Class&lt;P&gt;&nbsp;requestPacketType,
                                                                                                                 int&nbsp;packetOpcode)</pre>
 <div class="block">Register a request packet class pair to this channel. A receiving handler
  isn't required when sending the request using
@@ -262,7 +262,7 @@ extends <a href="PacketRegistry.html" title="interface in org.spongepowered.api.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>transactionalBinding</h4>
-<pre class="methodSignature">&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&gt;&nbsp;transactionalBinding&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;requestPacketType)</pre>
+<pre class="methodSignature">&lt;P extends <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;,&#8203;R extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;java.util.Optional&lt;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;P,&#8203;R&gt;&gt;&nbsp;transactionalBinding&#8203;(java.lang.Class&lt;P&gt;&nbsp;requestPacketType)</pre>
 <div class="block">Gets the <a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>TransactionalPacketBinding</code></a> for the given <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a> class, if
  the type is registered to this channel as a transactional binding.</div>
 <dl>

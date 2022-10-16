@@ -155,7 +155,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br><a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;<a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.PacketHandler)">addHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.PacketHandler)">addHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
           <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">PacketHandler</a>&lt;? super <a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>,&#8203;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Adds a <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> to handle the packets of type
@@ -181,7 +181,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br><a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;<a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.PacketHandler)">removeHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.PacketHandler)">removeHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
              <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">PacketHandler</a>&lt;? super <a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>,&#8203;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Removes the <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> for the given connection type.</div>
@@ -254,7 +254,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <ul class="blockList">
 <li class="blockList">
 <h4>addHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;<a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>&gt;&nbsp;addHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;<a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>&gt;&nbsp;addHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                          <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">PacketHandler</a>&lt;? super <a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>,&#8203;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Adds a <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> to handle the packets of type
  <a href="HandlerPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>HandlerPacketBinding</code></a>. The handler is invoked every time the packet is
@@ -314,7 +314,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <ul class="blockList">
 <li class="blockList">
 <h4>removeHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;<a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>&gt;&nbsp;removeHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;<a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>&gt;&nbsp;removeHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                             <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">PacketHandler</a>&lt;? super <a href="HandlerPacketBinding.html" title="type parameter in HandlerPacketBinding">P</a>,&#8203;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Removes the <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> for the given connection type.</div>
 <dl>

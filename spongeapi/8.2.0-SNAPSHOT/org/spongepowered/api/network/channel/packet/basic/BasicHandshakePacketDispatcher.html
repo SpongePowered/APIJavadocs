@@ -160,7 +160,7 @@ extends <a href="../TransactionalPacketDispatcher.html" title="interface in org.
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToServer(org.spongepowered.api.network.channel.packet.Packet)">sendToServer</a></span>&#8203;(<a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&nbsp;packet)</code></th>
 <td class="colLast">
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
@@ -169,7 +169,7 @@ extends <a href="../TransactionalPacketDispatcher.html" title="interface in org.
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>&lt;R extends <a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;</code></td>
+<td class="colFirst"><code>&lt;R extends <a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br>java.util.concurrent.CompletableFuture&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToServer(org.spongepowered.api.network.channel.packet.RequestPacket)">sendToServer</a></span>&#8203;(<a href="../RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</code></th>
 <td class="colLast">
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
@@ -214,7 +214,7 @@ extends <a href="../TransactionalPacketDispatcher.html" title="interface in org.
 <ul class="blockList">
 <li class="blockList">
 <h4>isSupportedBy</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
+<pre class="methodSignature">@Deprecated
 default&nbsp;boolean&nbsp;isSupportedBy&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
 <div class="deprecationComment">Is currently not supported by the basic packet channel during the handshake phase</div>
@@ -244,15 +244,15 @@ default&nbsp;boolean&nbsp;isSupportedBy&#8203;(<a href="../../../EngineConnectio
 <ul class="blockList">
 <li class="blockList">
 <h4>sendToServer</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
-&lt;R extends <a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;R&gt;&nbsp;sendToServer&#8203;(<a href="../RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
+<pre class="methodSignature">@Deprecated
+&lt;R extends <a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;java.util.concurrent.CompletableFuture&lt;R&gt;&nbsp;sendToServer&#8203;(<a href="../RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacket</a>&lt;R&gt;&nbsp;packet)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
 <div class="deprecationComment">Is currently not supported by the basic packet channel</div>
 </div>
 <div class="block">Sends the <a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> to the server using this channel. This method returns a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> that will be accepted once the response is received.
+ <code>CompletableFuture</code> that will be accepted once the response is received.
 
- <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> may fail exceptionally by a
+ <p>The <code>CompletableFuture</code> may fail exceptionally by a
  <a href="../../NoResponseException.html" title="class in org.spongepowered.api.network.channel"><code>NoResponseException</code></a> if there wasn't a valid response
  received for the given request.</p>
 
@@ -280,8 +280,8 @@ default&nbsp;boolean&nbsp;isSupportedBy&#8203;(<a href="../../../EngineConnectio
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendToServer</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang" class="externalLink">@Deprecated</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;sendToServer&#8203;(<a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&nbsp;packet)</pre>
+<pre class="methodSignature">@Deprecated
+java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;&nbsp;sendToServer&#8203;(<a href="../Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&nbsp;packet)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
 <div class="deprecationComment">Is currently not supported by the basic packet channel</div>
 </div>
@@ -289,7 +289,7 @@ default&nbsp;boolean&nbsp;isSupportedBy&#8203;(<a href="../../../EngineConnectio
 
  <p>Calling this during the login phase is currently not supported, only
  responses to <a href="../RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a>s by <a href="../RequestPacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacketHandler</code></a>s
- are. Doing so will result in a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a> when attempting
+ are. Doing so will result in a <code>IllegalStateException</code> when attempting
  to use the method.</p>
 
  <p>A exception will be thrown if the specified packet type

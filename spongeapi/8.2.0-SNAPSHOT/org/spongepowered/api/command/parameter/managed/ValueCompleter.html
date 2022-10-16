@@ -130,7 +130,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">ValueCompleter</span></pre>
 <div class="block">Defines the completions for a parameter.</div>
 </li>
@@ -154,9 +154,9 @@ public interface <span class="typeNameLabel">ValueCompleter</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(org.spongepowered.api.command.parameter.CommandContext,java.lang.String)">complete</a></span>&#8203;(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currentInput)</code></th>
+        java.lang.String&nbsp;currentInput)</code></th>
 <td class="colLast">
 <div class="block">Gets valid completions for this element, given the supplied
  <a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext</code></a> and current input for this element.</div>
@@ -185,8 +185,8 @@ public interface <span class="typeNameLabel">ValueCompleter</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;currentInput)</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
+                                           java.lang.String&nbsp;currentInput)</pre>
 <div class="block">Gets valid completions for this element, given the supplied
  <a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter"><code>CommandContext</code></a> and current input for this element.</div>
 <dl>

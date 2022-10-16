@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/key/4.10.0/net/kyori/adventure/key/Keyed.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">Keyed</a></code>, <code><a href="../../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Keyed.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">Keyed</a></code>, <code><a href="../../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -168,7 +168,7 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="crafting/Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="crafting/Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ingredients()">ingredients</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the ingredients for this recipe.</div>
@@ -190,7 +190,7 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remainingItems(org.spongepowered.api.item.inventory.Inventory)">remainingItems</a></span>&#8203;(<a href="../inventory/Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</code></th>
 <td class="colLast">
 <div class="block">The remaining items result of this recipe.</div>
@@ -204,7 +204,7 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="crafting/RecipeResult.html" title="class in org.spongepowered.api.item.recipe.crafting">RecipeResult</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="crafting/RecipeResult.html" title="class in org.spongepowered.api.item.recipe.crafting">RecipeResult</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#result(org.spongepowered.api.item.inventory.Inventory,org.spongepowered.api.world.server.ServerWorld)">result</a></span>&#8203;(<a href="../inventory/Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory,
       <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world)</code></th>
 <td class="colLast">
@@ -301,7 +301,7 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 <ul class="blockList">
 <li class="blockList">
 <h4>remainingItems</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;remainingItems&#8203;(<a href="../inventory/Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&nbsp;remainingItems&#8203;(<a href="../inventory/Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</pre>
 <div class="block">The remaining items result of this recipe.
  This method should only be called if <a href="#isValid(org.spongepowered.api.item.inventory.Inventory,org.spongepowered.api.world.server.ServerWorld)"><code>isValid(Inventory, ServerWorld)</code></a> returns <code>true</code>.
 
@@ -323,11 +323,11 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 <ul class="blockList">
 <li class="blockList">
 <h4>result</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="crafting/RecipeResult.html" title="class in org.spongepowered.api.item.recipe.crafting">RecipeResult</a>&gt;&nbsp;result&#8203;(<a href="../inventory/Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory,
-                                      <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="crafting/RecipeResult.html" title="class in org.spongepowered.api.item.recipe.crafting">RecipeResult</a>&gt;&nbsp;result&#8203;(<a href="../inventory/Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory,
+                                                <a href="../../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world)</pre>
 <div class="block">Returns the <a href="crafting/RecipeResult.html" title="class in org.spongepowered.api.item.recipe.crafting"><code>RecipeResult</code></a> for the given inventory and world.
 
- <p>Returns <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if the arguments do not satisfy
+ <p>Returns <code>Optional.empty()</code> if the arguments do not satisfy
  <a href="#isValid(org.spongepowered.api.item.inventory.Inventory,org.spongepowered.api.world.server.ServerWorld)"><code>isValid(Inventory, ServerWorld)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -336,7 +336,7 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <a href="crafting/RecipeResult.html" title="class in org.spongepowered.api.item.recipe.crafting"><code>RecipeResult</code></a> if the arguments satisfy
      <a href="#isValid(org.spongepowered.api.item.inventory.Inventory,org.spongepowered.api.world.server.ServerWorld)"><code>isValid(Inventory, ServerWorld)</code></a>, or
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if not</dd>
+     <code>Optional.empty()</code> if not</dd>
 </dl>
 </li>
 </ul>
@@ -346,7 +346,7 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 <ul class="blockList">
 <li class="blockList">
 <h4>ingredients</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="crafting/Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;&nbsp;ingredients()</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="crafting/Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient</a>&gt;&nbsp;ingredients()</pre>
 <div class="block">Gets the ingredients for this recipe.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

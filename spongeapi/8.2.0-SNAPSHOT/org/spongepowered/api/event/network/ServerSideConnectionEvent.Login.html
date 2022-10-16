@@ -141,7 +141,7 @@ extends <a href="ServerSideConnectionEvent.html" title="interface in org.spongep
 
  <p>If the registered <a href="../../service/ban/BanService.html" title="interface in org.spongepowered.api.service.ban"><code>BanService</code></a> or <a href="../../service/whitelist/WhitelistService.html" title="interface in org.spongepowered.api.service.whitelist"><code>WhitelistService</code></a>
  indicates that a player should not be allowed to join (
- <a href="../../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a> or <a href="https://docs.oracle.com/javase/8/docs/api/java/net/InetAddress.html?is-external=true" title="class or interface in java.net" class="externalLink"><code>InetAddress</code></a> has an ban, or is not on the
+ <a href="../../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a> or <code>InetAddress</code> has an ban, or is not on the
  whitelist), then this event will automatically cancelled by the
  implementation, with the proper message set through
  <a href="../message/MessageEvent.html#setMessage(net.kyori.adventure.text.Component)"><code>MessageEvent.setMessage(Component)</code></a>. No action on the part

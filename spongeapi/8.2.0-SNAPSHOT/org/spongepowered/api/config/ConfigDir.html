@@ -114,12 +114,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation" class="externalLink">RUNTIME</a>)
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>({<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation" class="externalLink">PARAMETER</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation" class="externalLink">FIELD</a>})
+<pre>@Retention(RUNTIME)
+@Target({PARAMETER,FIELD})
 public @interface <span class="memberNameLabel">ConfigDir</span></pre>
 <div class="block">Provides an convenient injection for <a href="ConfigRoot.html#directory()"><code>ConfigRoot.directory()</code></a>.
 
- <p>Use this annotation on a <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file" class="externalLink"><code>Path</code></a>. Remember that
+ <p>Use this annotation on a <code>Path</code>. Remember that
  <a href="https://google.github.io/guice/api-docs/5.0.1/javadoc/com/google/inject/Inject.html?is-external=true" title="class or interface in com.google.inject" class="externalLink"><code>Inject</code></a> is also necessary.</p></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>

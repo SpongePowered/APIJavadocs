@@ -169,17 +169,17 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
  particular object, be it an <a href="../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a>, <a href="../../world/difficulty/Difficulty.html" title="interface in org.spongepowered.api.world.difficulty"><code>Difficulty</code></a>, or
  simply an an attribute. The interesting part is that these "modifiers"
  do not just define a static value to add to the "base" damage, they
- are usually a loose form of a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> that are applied to
+ are usually a loose form of a <code>Function</code> that are applied to
  the "base" damage. Given that <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> has a unique capability of
- storing any and every <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a> willing to be passed into it, we
+ storing any and every <code>Object</code> willing to be passed into it, we
  can easily represent these "sources" of "modifiers" in a <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.
  Now, knowing the "source" will not provide enough information, so a
  <a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> is provided with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
  paint the fullest picture of "explaining" the <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> as to
  why it is present, and why it is "modifying" the "base" damage. Finally,
- we can associate a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> with a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> that is
- passed the current "damage" into <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink"><code>Function.apply(Object)</code></a>, being added
- to the current "damage". After all <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s
+ we can associate a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> with a <code>Function</code> that is
+ passed the current "damage" into <code>Function.apply(Object)</code>, being added
+ to the current "damage". After all <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> <code>Function</code>s
  are "applied", the overall "damage" is now the final damage to actually
  throw a <a href="AttackEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>AttackEntityEvent</code></a>.</p>
 
@@ -201,7 +201,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
  provided in this event.</p>
 
  <p>Coming forward, it is possible to further customize not only the "base"
- damage, but override pre-existing <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s
+ damage, but override pre-existing <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> <code>Function</code>s
  by calling <a href="#setOutputDamage(org.spongepowered.api.event.cause.entity.damage.DamageModifier,java.util.function.DoubleUnaryOperator)"><code>setOutputDamage(DamageModifier, DoubleUnaryOperator)</code></a> at which point the
  end result may be undefined. However, if a custom <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>
  that aims to alter the "final" damage based on some custom circumstances,
@@ -237,7 +237,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ABSORPTION">ABSORPTION</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -246,7 +246,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOOTS">BOOTS</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -255,7 +255,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CHESTPLATE">CHESTPLATE</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -264,7 +264,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CREATOR">CREATOR</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where the root cause is "created"
@@ -272,7 +272,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GENERAL_ARMOR">GENERAL_ARMOR</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -281,7 +281,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HARD_HAT_ARMOR">HARD_HAT_ARMOR</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -290,7 +290,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HELMET">HELMET</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -299,7 +299,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LEGGINGS">LEGGINGS</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -308,7 +308,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NOTIFIER">NOTIFIER</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> where it is either a
@@ -317,7 +317,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RESISTANCE">RESISTANCE</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
@@ -326,7 +326,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SHIELD">SHIELD</a></span></code></th>
 <td class="colLast">
 <div class="block">or use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where its type is a
@@ -335,7 +335,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SOURCE">SOURCE</a></span></code></th>
 <td class="colLast">
 <div class="block">For use with the <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> that is known as the "source"
@@ -363,23 +363,23 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addDamageModifierAfter(org.spongepowered.api.event.cause.entity.damage.DamageModifier,java.util.function.DoubleUnaryOperator,java.util.Set)">addDamageModifierAfter</a></span>&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;function,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;after)</code></th>
+                      java.util.function.DoubleUnaryOperator&nbsp;function,
+                      java.util.Set&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;after)</code></th>
 <td class="colLast">
-<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> to the list
+<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <code>Function</code> to the list
  of modifiers, such that the modifier will appear in order after any
- current modifiers whose type are included in the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
+ current modifiers whose type are included in the provided <code>Set</code>
  of <a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a>s.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addDamageModifierBefore(org.spongepowered.api.event.cause.entity.damage.DamageModifier,java.util.function.DoubleUnaryOperator,java.util.Set)">addDamageModifierBefore</a></span>&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;function,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;before)</code></th>
+                       java.util.function.DoubleUnaryOperator&nbsp;function,
+                       java.util.Set&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;before)</code></th>
 <td class="colLast">
-<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> to the
- list of modifiers, such that the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> containing
+<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <code>Function</code> to the
+ list of modifiers, such that the <code>Set</code> containing
  <a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a>s provided in <code>before</code> will appear
  after the provided damage modifier.</div>
 </td>
@@ -422,11 +422,11 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modifiers()">modifiers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets a list of simple <a href="../../util/Tuple.html" title="class in org.spongepowered.api.util"><code>Tuple</code></a>s of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> keyed to
- their representative <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s.</div>
+ their representative <code>Function</code>s.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -438,7 +438,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,&#8203;java.lang.Double&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#originalDamages()">originalDamages</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets an <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a> of all original <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s
@@ -454,11 +454,11 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#originalFunctions()">originalFunctions</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the original <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> that was originally passed into the event.</div>
+<div class="block">Gets the original <code>List</code> of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
+ <code>Function</code> that was originally passed into the event.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
@@ -492,9 +492,9 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOutputDamage(org.spongepowered.api.event.cause.entity.damage.DamageModifier,java.util.function.DoubleUnaryOperator)">setOutputDamage</a></span>&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;function)</code></th>
+               java.util.function.DoubleUnaryOperator&nbsp;function)</code></th>
 <td class="colLast">
-<div class="block">Sets the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> to be used for the given
+<div class="block">Sets the provided <code>Function</code> to be used for the given
  <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>.</div>
 </td>
 </tr>
@@ -535,7 +535,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>SOURCE</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SOURCE</pre>
+<pre>static final&nbsp;java.lang.String SOURCE</pre>
 <div class="block">For use with the <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> that is known as the "source"
  of the damage.</div>
 <dl>
@@ -550,7 +550,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>HARD_HAT_ARMOR</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> HARD_HAT_ARMOR</pre>
+<pre>static final&nbsp;java.lang.String HARD_HAT_ARMOR</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#HARD_HAT"><code>DamageModifierTypes.HARD_HAT</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>, usually a helmet.</div>
@@ -566,7 +566,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>SHIELD</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SHIELD</pre>
+<pre>static final&nbsp;java.lang.String SHIELD</pre>
 <div class="block">or use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where its type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#SHIELD"><code>DamageModifierTypes.SHIELD</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> (in Vanilla, a shield).</div>
@@ -582,7 +582,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>GENERAL_ARMOR</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> GENERAL_ARMOR</pre>
+<pre>static final&nbsp;java.lang.String GENERAL_ARMOR</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#ARMOR"><code>DamageModifierTypes.ARMOR</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>. Separate from hard hat but still
@@ -600,7 +600,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>HELMET</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> HELMET</pre>
+<pre>static final&nbsp;java.lang.String HELMET</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#ARMOR"><code>DamageModifierTypes.ARMOR</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> for a "helmet".</div>
@@ -616,7 +616,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>CHESTPLATE</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> CHESTPLATE</pre>
+<pre>static final&nbsp;java.lang.String CHESTPLATE</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#ARMOR"><code>DamageModifierTypes.ARMOR</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> for a "chestplate".</div>
@@ -632,7 +632,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>LEGGINGS</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> LEGGINGS</pre>
+<pre>static final&nbsp;java.lang.String LEGGINGS</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#ARMOR"><code>DamageModifierTypes.ARMOR</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> for "leggings".</div>
@@ -648,7 +648,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>BOOTS</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> BOOTS</pre>
+<pre>static final&nbsp;java.lang.String BOOTS</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#ARMOR"><code>DamageModifierTypes.ARMOR</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  an <a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> for "boots".</div>
@@ -664,7 +664,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>RESISTANCE</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> RESISTANCE</pre>
+<pre>static final&nbsp;java.lang.String RESISTANCE</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#HARD_HAT"><code>DamageModifierTypes.HARD_HAT</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  a <a href="../../effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a>.</div>
@@ -680,7 +680,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>ABSORPTION</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ABSORPTION</pre>
+<pre>static final&nbsp;java.lang.String ABSORPTION</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where it's type is a
  <a href="../cause/entity/damage/DamageModifierTypes.html#ABSORPTION"><code>DamageModifierTypes.ABSORPTION</code></a> and the <a href="../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> contains
  a <a href="../../effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a>.</div>
@@ -696,7 +696,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>CREATOR</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> CREATOR</pre>
+<pre>static final&nbsp;java.lang.String CREATOR</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> where the root cause is "created"
  by an object, usually the <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> or <a href="../../entity/living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> entity.</div>
 <dl>
@@ -711,7 +711,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NOTIFIER</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> NOTIFIER</pre>
+<pre>static final&nbsp;java.lang.String NOTIFIER</pre>
 <div class="block">For use with a <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> where it is either a
  <a href="../cause/entity/damage/source/BlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>BlockDamageSource</code></a> or <a href="../cause/entity/damage/source/EntityDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>EntityDamageSource</code></a> such that
  it was last "notified" by the object represented in the cause.
@@ -786,7 +786,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>originalDamages</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;originalDamages()</pre>
+<pre class="methodSignature">java.util.Map&lt;<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,&#8203;java.lang.Double&gt;&nbsp;originalDamages()</pre>
 <div class="block">Gets an <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/ImmutableMap.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink"><code>ImmutableMap</code></a> of all original <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s
  and their associated "modified" damage. Note that ordering is not
  retained.</div>
@@ -805,7 +805,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <pre class="methodSignature">double&nbsp;originalModifierDamage&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier)</pre>
 <div class="block">Gets the original damage for the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>. If
  the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> was not included in
- <a href="#originalDamages()"><code>originalDamages()</code></a>, an <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalArgumentException</code></a> is
+ <a href="#originalDamages()"><code>originalDamages()</code></a>, an <code>IllegalArgumentException</code> is
  thrown.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -821,9 +821,9 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>originalFunctions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;&nbsp;originalFunctions()</pre>
-<div class="block">Gets the original <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> that was originally passed into the event.</div>
+<pre class="methodSignature">java.util.List&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;&nbsp;originalFunctions()</pre>
+<div class="block">Gets the original <code>List</code> of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
+ <code>Function</code> that was originally passed into the event.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The list of damage modifier functions</dd>
@@ -839,7 +839,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <pre class="methodSignature">double&nbsp;baseOutputDamage()</pre>
 <div class="block">Gets the "base" damage to deal to the targeted <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>. The
  "base" damage is the original value before passing along the chain of
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s for all known <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s.</div>
+ <code>Function</code>s for all known <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The base damage</dd>
@@ -855,7 +855,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <pre class="methodSignature">void&nbsp;setBaseOutputDamage&#8203;(double&nbsp;baseDamage)</pre>
 <div class="block">Sets the "base" damage to deal to the targeted <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>. The
  "base" damage is the original value before passing along the chain of
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s for all known <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s.</div>
+ <code>Function</code>s for all known <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>baseDamage</code> - The base damage</dd>
@@ -871,9 +871,9 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <pre class="methodSignature">double&nbsp;finalOutputDamage()</pre>
 <div class="block">Gets the final damage that will be passed into the proceeding
  <a href="AttackEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>AttackEntityEvent</code></a>. The final damage is the end result of the
- <a href="#baseOutputDamage()"><code>baseOutputDamage()</code></a> being applied in <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink"><code>Function.apply(Object)</code></a>
+ <a href="#baseOutputDamage()"><code>baseOutputDamage()</code></a> being applied in <code>Function.apply(Object)</code>
  available from all the <a href="../../util/Tuple.html" title="class in org.spongepowered.api.util"><code>Tuple</code></a>s of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> in <a href="#originalFunctions()"><code>originalFunctions()</code></a>.</div>
+ <code>Function</code> in <a href="#originalFunctions()"><code>originalFunctions()</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The final damage to deal</dd>
@@ -922,13 +922,13 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <li class="blockList">
 <h4>setOutputDamage</h4>
 <pre class="methodSignature">void&nbsp;setOutputDamage&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;function)</pre>
-<div class="block">Sets the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> to be used for the given
+                     java.util.function.DoubleUnaryOperator&nbsp;function)</pre>
+<div class="block">Sets the provided <code>Function</code> to be used for the given
  <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>. If the <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> is already
- included in <a href="#modifiers()"><code>modifiers()</code></a>, the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> replaces
+ included in <a href="#modifiers()"><code>modifiers()</code></a>, the <code>Function</code> replaces
  the existing function. If there is no <a href="../../util/Tuple.html" title="class in org.spongepowered.api.util"><code>Tuple</code></a> for the
  <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>, a new one is created and added to the end
- of the list of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s to be applied to the
+ of the list of <code>Function</code>s to be applied to the
  <a href="#baseOutputDamage()"><code>baseOutputDamage()</code></a>.
 
  <p>If needing to create a custom <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> is required,
@@ -949,10 +949,10 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <li class="blockList">
 <h4>addDamageModifierBefore</h4>
 <pre class="methodSignature">void&nbsp;addDamageModifierBefore&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;function,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;before)</pre>
-<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> to the
- list of modifiers, such that the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> containing
+                             java.util.function.DoubleUnaryOperator&nbsp;function,
+                             java.util.Set&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;before)</pre>
+<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <code>Function</code> to the
+ list of modifiers, such that the <code>Set</code> containing
  <a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a>s provided in <code>before</code> will appear
  after the provided damage modifier.</div>
 <dl>
@@ -971,11 +971,11 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <li class="blockList">
 <h4>addDamageModifierAfter</h4>
 <pre class="methodSignature">void&nbsp;addDamageModifierAfter&#8203;(<a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;damageModifier,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html?is-external=true" title="class or interface in java.util.function" class="externalLink">DoubleUnaryOperator</a>&nbsp;function,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;after)</pre>
-<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> to the list
+                            java.util.function.DoubleUnaryOperator&nbsp;function,
+                            java.util.Set&lt;<a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;after)</pre>
+<div class="block">Adds the provided <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> and <code>Function</code> to the list
  of modifiers, such that the modifier will appear in order after any
- current modifiers whose type are included in the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
+ current modifiers whose type are included in the provided <code>Set</code>
  of <a href="../cause/entity/damage/DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a>s.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -991,9 +991,9 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>modifiers</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;&nbsp;modifiers()</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../cause/entity/damage/DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a>&gt;&nbsp;modifiers()</pre>
 <div class="block">Gets a list of simple <a href="../../util/Tuple.html" title="class in org.spongepowered.api.util"><code>Tuple</code></a>s of <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> keyed to
- their representative <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>s. All <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s are
+ their representative <code>Function</code>s. All <a href="../cause/entity/damage/DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s are
  applicable to the entity based on the <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> and any
  possible invulnerabilities due to the <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>.</div>
 <dl>

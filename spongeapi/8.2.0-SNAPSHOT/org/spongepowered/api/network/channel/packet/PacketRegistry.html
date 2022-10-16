@@ -151,7 +151,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#binding(int)">binding</a></span>&#8203;(int&nbsp;opcode)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketBinding</code></a> for the given packet class, if the packet
@@ -159,15 +159,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;P&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#binding(java.lang.Class)">binding</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;packetClass)</code></th>
+<td class="colFirst"><code>&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br>java.util.Optional&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;P&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#binding(java.lang.Class)">binding</a></span>&#8203;(java.lang.Class&lt;P&gt;&nbsp;packetClass)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketBinding</code></a> for the given packet class, if the packet
  type is registered to this channel.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindings()">bindings</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets a collection with all the <a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketBinding</code></a>s.</div>
@@ -175,7 +175,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;<br><a href="HandlerPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">HandlerPacketBinding</a>&lt;P&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#register(java.lang.Class,int)">register</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;packetClass,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#register(java.lang.Class,int)">register</a></span>&#8203;(java.lang.Class&lt;P&gt;&nbsp;packetClass,
         int&nbsp;packetOpcode)</code></th>
 <td class="colLast">
 <div class="block">Register a packet class to this channel without a receiving handler.</div>
@@ -204,7 +204,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>register</h4>
-<pre class="methodSignature">&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="HandlerPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">HandlerPacketBinding</a>&lt;P&gt;&nbsp;register&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;packetClass,
+<pre class="methodSignature">&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="HandlerPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">HandlerPacketBinding</a>&lt;P&gt;&nbsp;register&#8203;(java.lang.Class&lt;P&gt;&nbsp;packetClass,
                                                     int&nbsp;packetOpcode)</pre>
 <div class="block">Register a packet class to this channel without a receiving handler.
  This will only allow the packet to be sent, this channel binding
@@ -231,7 +231,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>binding</h4>
-<pre class="methodSignature">&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;P&gt;&gt;&nbsp;binding&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;packetClass)</pre>
+<pre class="methodSignature">&lt;P extends <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet">Packet</a>&gt;&nbsp;java.util.Optional&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;P&gt;&gt;&nbsp;binding&#8203;(java.lang.Class&lt;P&gt;&nbsp;packetClass)</pre>
 <div class="block">Gets the <a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketBinding</code></a> for the given packet class, if the packet
  type is registered to this channel.</div>
 <dl>
@@ -250,7 +250,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>bindings</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;&nbsp;bindings()</pre>
+<pre class="methodSignature">java.util.Collection&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;&nbsp;bindings()</pre>
 <div class="block">Gets a collection with all the <a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketBinding</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -264,7 +264,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>binding</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;&nbsp;binding&#8203;(int&nbsp;opcode)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">PacketBinding</a>&lt;?&gt;&gt;&nbsp;binding&#8203;(int&nbsp;opcode)</pre>
 <div class="block">Gets the <a href="PacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketBinding</code></a> for the given packet class, if the packet
  type is registered to this channel.</div>
 <dl>

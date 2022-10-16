@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;</code></dd>
+<dd><code><a href="Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;java.util.Map&lt;K,&#8203;V&gt;&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -131,7 +131,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">MapValue&lt;K,&#8203;V&gt;</span>
-extends <a href="Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;</pre>
+extends <a href="Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;java.util.Map&lt;K,&#8203;V&gt;&gt;</pre>
 </li>
 </ul>
 </div>
@@ -158,7 +158,7 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <td class="colLast">
 <div class="block">Represents a specialized type of <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> that is different
  from an <a href="CollectionValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>CollectionValue.Immutable</code></a> such that the "elements" are
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a>.</div>
+ <code>Map.Entry</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -167,7 +167,7 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <td class="colLast">
 <div class="block">Represents a specialized type of <a href="Value.Mutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Mutable</code></a> that is different from
  a <a href="CollectionValue.Mutable.html" title="interface in org.spongepowered.api.data.value"><code>CollectionValue.Mutable</code></a> such that the "elements" are
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a>.</div>
+ <code>Map.Entry</code>.</div>
 </td>
 </tr>
 </table>
@@ -231,17 +231,17 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>,&#8203;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;java.util.Map.Entry&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>,&#8203;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entrySet()">entrySet</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Retrieves an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a>s contained
+<div class="block">Retrieves an <code>Set</code> of the <code>Map.Entry</code>s contained
  within this map value.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;K,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#immutableOf(java.util.function.Supplier,java.util.Map)">immutableOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#immutableOf(java.util.function.Supplier,java.util.Map)">immutableOf</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
+           java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Constructs an immutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
@@ -250,7 +250,7 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#immutableOf(org.spongepowered.api.data.Key,java.util.Map)">immutableOf</a></span>&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&nbsp;key,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
+           java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Constructs an immutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
@@ -264,16 +264,16 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#keySet()">keySet</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of all keys contained in this map value.</div>
+<div class="block">Gets an <code>Set</code> of all keys contained in this map value.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="MapValue.Mutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Mutable</a>&lt;K,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mutableOf(java.util.function.Supplier,java.util.Map)">mutableOf</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mutableOf(java.util.function.Supplier,java.util.Map)">mutableOf</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
+         java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Constructs a mutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
@@ -282,7 +282,7 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br><a href="MapValue.Mutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Mutable</a>&lt;K,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mutableOf(org.spongepowered.api.data.Key,java.util.Map)">mutableOf</a></span>&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
+         java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Constructs a mutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
@@ -296,10 +296,10 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Retrieves an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> of all available values within
+<div class="block">Retrieves an <code>Collection</code> of all available values within
  this map.</div>
 </td>
 </tr>
@@ -334,7 +334,7 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <li class="blockList">
 <h4>mutableOf</h4>
 <pre class="methodSignature">static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapValue.Mutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Mutable</a>&lt;K,&#8203;V&gt;&nbsp;mutableOf&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&nbsp;key,
-                                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</pre>
+                                                         java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</pre>
 <div class="block">Constructs a mutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
 <dl>
@@ -355,8 +355,8 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <ul class="blockList">
 <li class="blockList">
 <h4>mutableOf</h4>
-<pre class="methodSignature">static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapValue.Mutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Mutable</a>&lt;K,&#8203;V&gt;&nbsp;mutableOf&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
-                                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</pre>
+<pre class="methodSignature">static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapValue.Mutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Mutable</a>&lt;K,&#8203;V&gt;&nbsp;mutableOf&#8203;(java.util.function.Supplier&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
+                                                         java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</pre>
 <div class="block">Constructs a mutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
 <dl>
@@ -378,7 +378,7 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <li class="blockList">
 <h4>immutableOf</h4>
 <pre class="methodSignature">static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;K,&#8203;V&gt;&nbsp;immutableOf&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&nbsp;key,
-                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</pre>
+                                                             java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</pre>
 <div class="block">Constructs an immutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
 <dl>
@@ -399,8 +399,8 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <ul class="blockList">
 <li class="blockList">
 <h4>immutableOf</h4>
-<pre class="methodSignature">static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;K,&#8203;V&gt;&nbsp;immutableOf&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
-                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&nbsp;element)</pre>
+<pre class="methodSignature">static&nbsp;&lt;K,&#8203;V&gt;&nbsp;<a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;K,&#8203;V&gt;&nbsp;immutableOf&#8203;(java.util.function.Supplier&lt;? extends <a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;&gt;&gt;&nbsp;key,
+                                                             java.util.Map&lt;K,&#8203;V&gt;&nbsp;element)</pre>
 <div class="block">Constructs an immutable <a href="MapValue.html" title="interface in org.spongepowered.api.data.value"><code>MapValue</code></a> of the appropriate type based
  on the given <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and the element.</div>
 <dl>
@@ -488,8 +488,8 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <ul class="blockList">
 <li class="blockList">
 <h4>keySet</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>&gt;&nbsp;keySet()</pre>
-<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of all keys contained in this map value.</div>
+<pre class="methodSignature">java.util.Set&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>&gt;&nbsp;keySet()</pre>
+<div class="block">Gets an <code>Set</code> of all keys contained in this map value.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The set of keys</dd>
@@ -502,8 +502,8 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <ul class="blockList">
 <li class="blockList">
 <h4>entrySet</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>,&#8203;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;&gt;&nbsp;entrySet()</pre>
-<div class="block">Retrieves an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a>s contained
+<pre class="methodSignature">java.util.Set&lt;java.util.Map.Entry&lt;<a href="MapValue.html" title="type parameter in MapValue">K</a>,&#8203;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;&gt;&nbsp;entrySet()</pre>
+<div class="block">Retrieves an <code>Set</code> of the <code>Map.Entry</code>s contained
  within this map value.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -517,8 +517,8 @@ extends <a href="Value.html" title="interface in org.spongepowered.api.data.valu
 <ul class="blockList">
 <li class="blockList">
 <h4>values</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;&nbsp;values()</pre>
-<div class="block">Retrieves an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> of all available values within
+<pre class="methodSignature">java.util.Collection&lt;<a href="MapValue.html" title="type parameter in MapValue">V</a>&gt;&nbsp;values()</pre>
+<div class="block">Retrieves an <code>Collection</code> of all available values within
  this map.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

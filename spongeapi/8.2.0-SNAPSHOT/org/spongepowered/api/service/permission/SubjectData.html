@@ -131,14 +131,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  available in <a href="Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a>.</p>
 
  <p>Methods which modify the state of the data return
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a>s. This allows for the time which is taken to apply
+ <code>CompletableFuture</code>s. This allows for the time which is taken to apply
  and persist the change to the implementations storage backend. These futures
  should return quickly for changes made to transient subject data, but may
  take longer to return for changes made to a subjects persistent data. Methods
  which use this data in <a href="Subject.html" title="interface in org.spongepowered.api.service.permission"><code>Subject</code></a> may not reflect the change until the
  future has returned.</p>
 
- <p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true#allOf(java.util.concurrent.CompletableFuture...)" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture.allOf(CompletableFuture[])</code></a> can be used to
+ <p><code>CompletableFuture.allOf(CompletableFuture[])</code> can be used to
  combine multiple futures into one, if the result of methods is not
  needed.</p></div>
 </li>
@@ -162,7 +162,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;</code></td>
+<td class="colFirst"><code>static java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GLOBAL_CONTEXT">GLOBAL_CONTEXT</a></span></code></th>
 <td class="colLast">
 <div class="block">A convenience constant for the global context combination (the empty
@@ -188,92 +188,92 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addParent(java.util.Set,org.spongepowered.api.service.permission.SubjectReference)">addParent</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addParent(java.util.Set,org.spongepowered.api.service.permission.SubjectReference)">addParent</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
          <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent)</code></th>
 <td class="colLast">
 <div class="block">Adds a parent in a particular context combination.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allFallbackPermissionValues()">allFallbackPermissionValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get all fallback permission values set on this subject data</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allOptions()">allOptions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return all options for all context combinations currently registered.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;? extends java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allParents()">allParents</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return all registered parent subjects for all contexts.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;java.util.Map&lt;java.lang.String,&#8203;java.lang.Boolean&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allPermissions()">allPermissions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return all permissions associated with this data object.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearFallbackPermissionValues()">clearFallbackPermissionValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Clear all fallback permission values from this subject</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearOptions()">clearOptions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Clear all options.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearOptions(java.util.Set)">clearOptions</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearOptions(java.util.Set)">clearOptions</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Clear all options in the given context combination.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearParents()">clearParents</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Remove all parents in any context combination.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearParents(java.util.Set)">clearParents</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearParents(java.util.Set)">clearParents</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Remove all parents in a given context combination.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearPermissions()">clearPermissions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Clear all permissions set in any context.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearPermissions(java.util.Set)">clearPermissions</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearPermissions(java.util.Set)">clearPermissions</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Clear all permissions set in a given context combination.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyFrom(org.spongepowered.api.service.permission.SubjectData,org.spongepowered.api.service.permission.TransferMethod)">copyFrom</a></span>&#8203;(<a href="SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a>&nbsp;other,
         <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</code></th>
 <td class="colLast">
@@ -282,7 +282,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fallbackPermissionValue(java.util.Set)">fallbackPermissionValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fallbackPermissionValue(java.util.Set)">fallbackPermissionValue</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Get the permission value that will be returned if no more specific permission setting matches.</div>
 </td>
@@ -295,7 +295,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#moveFrom(org.spongepowered.api.service.permission.SubjectData,org.spongepowered.api.service.permission.TransferMethod)">moveFrom</a></span>&#8203;(<a href="SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a>&nbsp;other,
         <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</code></th>
 <td class="colLast">
@@ -304,37 +304,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#options(java.util.Set)">options</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#options(java.util.Set)">options</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Gets options for a specific context combination.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parents(java.util.Set)">parents</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parents(java.util.Set)">parents</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Return all registered parent subjects for a given context.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissions(java.util.Set)">permissions</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>java.util.Map&lt;java.lang.String,&#8203;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissions(java.util.Set)">permissions</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Returns the list of permissions set for the given context.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeParent(java.util.Set,org.spongepowered.api.service.permission.SubjectReference)">removeParent</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeParent(java.util.Set,org.spongepowered.api.service.permission.SubjectReference)">removeParent</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
             <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent)</code></th>
 <td class="colLast">
 <div class="block">Removes a parent in a particular context combination.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFallbackPermissionValue(java.util.Set,org.spongepowered.api.util.Tristate)">setFallbackPermissionValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFallbackPermissionValue(java.util.Set,org.spongepowered.api.util.Tristate)">setFallbackPermissionValue</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
                           <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;fallback)</code></th>
 <td class="colLast">
 <div class="block">Set the permission value at the root of the node tree, that will be returned as a response
@@ -342,45 +342,45 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOption(java.util.Set,java.lang.String,java.lang.String)">setOption</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-         @Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOption(java.util.Set,java.lang.String,java.lang.String)">setOption</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+         java.lang.String&nbsp;key,
+         @Nullable java.lang.String&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Sets a specific option to a value.</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptions(java.util.Set,java.util.Map,org.spongepowered.api.service.permission.TransferMethod)">setOptions</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;options,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptions(java.util.Set,java.util.Map,org.spongepowered.api.service.permission.TransferMethod)">setOptions</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+          java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;options,
           <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</code></th>
 <td class="colLast">
 <div class="block">Sets all options in a particular context.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setParents(java.util.Set,java.util.List,org.spongepowered.api.service.permission.TransferMethod)">setParents</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setParents(java.util.Set,java.util.List,org.spongepowered.api.service.permission.TransferMethod)">setParents</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+          java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents,
           <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</code></th>
 <td class="colLast">
 <div class="block">Sets the parents in a particular context combination.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPermission(java.util.Set,java.lang.String,org.spongepowered.api.util.Tristate)">setPermission</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPermission(java.util.Set,java.lang.String,org.spongepowered.api.util.Tristate)">setPermission</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+             java.lang.String&nbsp;permission,
              <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Sets a permission to a given value.</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPermissions(java.util.Set,java.util.Map,org.spongepowered.api.service.permission.TransferMethod)">setPermissions</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;permissions,
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPermissions(java.util.Set,java.util.Map,org.spongepowered.api.service.permission.TransferMethod)">setPermissions</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+              java.util.Map&lt;java.lang.String,&#8203;java.lang.Boolean&gt;&nbsp;permissions,
               <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</code></th>
 <td class="colLast">
 <div class="block">Sets permissions in a given context combination.</div>
@@ -416,7 +416,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>GLOBAL_CONTEXT</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt; GLOBAL_CONTEXT</pre>
+<pre>static final&nbsp;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt; GLOBAL_CONTEXT</pre>
 <div class="block">A convenience constant for the global context combination (the empty
  set), if you want your code to look especially fancy.</div>
 </li>
@@ -467,7 +467,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allPermissions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&gt;&nbsp;allPermissions()</pre>
+<pre class="methodSignature">java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;java.util.Map&lt;java.lang.String,&#8203;java.lang.Boolean&gt;&gt;&nbsp;allPermissions()</pre>
 <div class="block">Return all permissions associated with this data object.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -482,7 +482,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>permissions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;permissions&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.Map&lt;java.lang.String,&#8203;java.lang.Boolean&gt;&nbsp;permissions&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Returns the list of permissions set for the given context.
 
  <p>This list is immutable and is not a live view. If no permissions have
@@ -501,9 +501,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setPermission</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;setPermission&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
-                                         <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;value)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;setPermission&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                        java.lang.String&nbsp;permission,
+                                                                        <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;value)</pre>
 <div class="block">Sets a permission to a given value.
 
  <p>Setting value as <a href="../../util/Tristate.html#UNDEFINED"><code>Tristate.UNDEFINED</code></a> unsets the permission.</p>
@@ -527,9 +527,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setPermissions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;setPermissions&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;permissions,
-                                          <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;setPermissions&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                         java.util.Map&lt;java.lang.String,&#8203;java.lang.Boolean&gt;&nbsp;permissions,
+                                                                         <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
 <div class="block">Sets permissions in a given context combination.
 
  <p>An empty set of contexts applies these permissions to the global
@@ -554,7 +554,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>fallbackPermissionValue</h4>
-<pre class="methodSignature"><a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;fallbackPermissionValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature"><a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;fallbackPermissionValue&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Get the permission value that will be returned if no more specific permission setting matches.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -570,7 +570,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allFallbackPermissionValues</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&gt;&nbsp;allFallbackPermissionValues()</pre>
+<pre class="methodSignature">java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&gt;&nbsp;allFallbackPermissionValues()</pre>
 <div class="block">Get all fallback permission values set on this subject data</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -584,8 +584,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setFallbackPermissionValue</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;setFallbackPermissionValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                                      <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;fallback)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;setFallbackPermissionValue&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                                     <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;fallback)</pre>
 <div class="block">Set the permission value at the root of the node tree, that will be returned as a response
  to permissions queries when no more specific permission matches.</div>
 <dl>
@@ -603,7 +603,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearFallbackPermissionValues</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearFallbackPermissionValues()</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearFallbackPermissionValues()</pre>
 <div class="block">Clear all fallback permission values from this subject</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -617,7 +617,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearPermissions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearPermissions()</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearPermissions()</pre>
 <div class="block">Clear all permissions set in any context.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -631,7 +631,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearPermissions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearPermissions&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearPermissions&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Clear all permissions set in a given context combination.
 
  <p>Passing an empty context set clears permissions in the global
@@ -650,7 +650,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allParents</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;? extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&gt;&nbsp;allParents()</pre>
+<pre class="methodSignature">java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;? extends java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&gt;&nbsp;allParents()</pre>
 <div class="block">Return all registered parent subjects for all contexts.
 
  <p>The returned map is immutable and not a live view. The results of this
@@ -668,7 +668,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>parents</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Return all registered parent subjects for a given context.
 
  <p>The returned list is immutable and not a live view. The results of this
@@ -688,9 +688,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setParents</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;setParents&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents,
-                                      <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;setParents&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                     java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents,
+                                                                     <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
 <div class="block">Sets the parents in a particular context combination.
 
  <p>Passing an empty context combination means the parents are set in the
@@ -713,8 +713,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>addParent</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;addParent&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                     <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;addParent&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                    <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent)</pre>
 <div class="block">Adds a parent in a particular context combination.
 
  <p>Passing an empty context combination means the parent is added in the
@@ -734,8 +734,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>removeParent</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;removeParent&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                        <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;removeParent&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                       <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent)</pre>
 <div class="block">Removes a parent in a particular context combination.
 
  <p>Passing an empty context combination means the parent is removed in
@@ -755,7 +755,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearParents</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearParents()</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearParents()</pre>
 <div class="block">Remove all parents in any context combination.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -769,7 +769,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearParents</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearParents&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearParents&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Remove all parents in a given context combination.
 
  <p>Passing an empty context set clears parents in the global
@@ -788,7 +788,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allOptions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;allOptions()</pre>
+<pre class="methodSignature">java.util.Map&lt;java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;,&#8203;java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&gt;&nbsp;allOptions()</pre>
 <div class="block">Return all options for all context combinations currently registered.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -802,7 +802,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>options</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;options&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;options&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Gets options for a specific context combination.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -818,9 +818,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setOption</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;setOption&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-                                     @Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;setOption&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                    java.lang.String&nbsp;key,
+                                                                    @Nullable java.lang.String&nbsp;value)</pre>
 <div class="block">Sets a specific option to a value.
 
  <p>Passing a null value will unset the option.</p></div>
@@ -840,9 +840,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setOptions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;setOptions&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;options,
-                                      <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;setOptions&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts,
+                                                                     java.util.Map&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;options,
+                                                                     <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
 <div class="block">Sets all options in a particular context.
 
  <p>Depending on the <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission"><code>TransferMethod</code></a> chosen, this will either
@@ -862,7 +862,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearOptions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearOptions()</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearOptions()</pre>
 <div class="block">Clear all options.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -876,7 +876,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>clearOptions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;clearOptions&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;clearOptions&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block">Clear all options in the given context combination.
 
  <p>Passing an empty context set clears options in the global
@@ -895,8 +895,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>copyFrom</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;copyFrom&#8203;(<a href="SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a>&nbsp;other,
-                                    <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;copyFrom&#8203;(<a href="SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a>&nbsp;other,
+                                                                   <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
 <div class="block">Copy all data from another subject data instance into this one, preserving the original subject.
  It is expected that the other subject data is provided by the same permissions service.
  This methods's behaviour is undefined otherwise.</div>
@@ -915,8 +915,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>moveFrom</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;moveFrom&#8203;(<a href="SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a>&nbsp;other,
-                                    <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;java.lang.Boolean&gt;&nbsp;moveFrom&#8203;(<a href="SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a>&nbsp;other,
+                                                                   <a href="TransferMethod.html" title="enum in org.spongepowered.api.service.permission">TransferMethod</a>&nbsp;method)</pre>
 <div class="block">Move all data from another subject data instance into this one, clearing the source
  It is expected that the other subject data is provided by the same permissions service.
  This methods's behaviour is undefined otherwise.</div>

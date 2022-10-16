@@ -191,15 +191,15 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier)">of</a></span>&#8203;(java.util.function.Supplier&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</code></th>
 <td class="colLast">
 <div class="block">A method to ease using <a href="MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a> enumeration.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier,java.util.function.Supplier)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier,
-  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapShade.html" title="interface in org.spongepowered.api.map.color">MapShade</a>&gt;&nbsp;mapShadeSupplier)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier,java.util.function.Supplier)">of</a></span>&#8203;(java.util.function.Supplier&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier,
+  java.util.function.Supplier&lt;<a href="MapShade.html" title="interface in org.spongepowered.api.map.color">MapShade</a>&gt;&nbsp;mapShadeSupplier)</code></th>
 <td class="colLast">
 <div class="block">A method to ease using the <a href="MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a> and <a href="MapShade.html" title="interface in org.spongepowered.api.map.color"><code>MapShade</code></a>.</div>
 </td>
@@ -296,7 +296,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</pre>
+<pre class="methodSignature">static&nbsp;<a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a>&nbsp;of&#8203;(java.util.function.Supplier&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier)</pre>
 <div class="block">A method to ease using <a href="MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a> enumeration.
  Unwraps the given supplier and calls <a href="#of(org.spongepowered.api.map.color.MapColorType)"><code>of(MapColorType)</code></a>.</div>
 <dl>
@@ -332,8 +332,8 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="MapShade.html" title="interface in org.spongepowered.api.map.color">MapShade</a>&gt;&nbsp;mapShadeSupplier)</pre>
+<pre class="methodSignature">static&nbsp;<a href="MapColor.html" title="interface in org.spongepowered.api.map.color">MapColor</a>&nbsp;of&#8203;(java.util.function.Supplier&lt;<a href="MapColorType.html" title="interface in org.spongepowered.api.map.color">MapColorType</a>&gt;&nbsp;mapColorTypeSupplier,
+                   java.util.function.Supplier&lt;<a href="MapShade.html" title="interface in org.spongepowered.api.map.color">MapShade</a>&gt;&nbsp;mapShadeSupplier)</pre>
 <div class="block">A method to ease using the <a href="MapColorTypes.html" title="class in org.spongepowered.api.map.color"><code>MapColorTypes</code></a> and <a href="MapShade.html" title="interface in org.spongepowered.api.map.color"><code>MapShade</code></a>.
  Unwraps the given suppliers and calls <a href="#of(org.spongepowered.api.map.color.MapColorType,org.spongepowered.api.map.color.MapShade)"><code>of(MapColorType, MapShade)</code></a>.</div>
 <dl>

@@ -128,8 +128,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">ArgumentReader</span></pre>
 <div class="block">An <a href="ArgumentReader.html" title="interface in org.spongepowered.api.command.parameter"><code>ArgumentReader</code></a> allows for sequential reading of an input
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>, by providing a "cursor" that advances when part
- of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> is read.
+ <code>String</code>, by providing a "cursor" that advances when part
+ of the <code>String</code> is read.
 
  <p>The base <a href="ArgumentReader.html" title="interface in org.spongepowered.api.command.parameter"><code>ArgumentReader</code></a> interface (this) only contains
  methods that get the state of the reader. The sub-interfaces,
@@ -198,7 +198,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createException(net.kyori.adventure.text.Component)">createException</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;errorMessage)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createException(net.kyori.adventure.text.Component)">createException</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;errorMessage)</code></th>
 <td class="colLast">
 <div class="block">Creates an <a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception"><code>ArgumentParseException</code></a> with the provided message,
  based on the current state of this object.</div>
@@ -212,14 +212,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#input()">input</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the argument string that is being read by this reader.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parsed()">parsed</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the substring that has already been parsed.</div>
@@ -233,7 +233,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remaining()">remaining</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the substring that has yet to be read.</div>
@@ -276,11 +276,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>input</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;input()</pre>
+<pre class="methodSignature">java.lang.String&nbsp;input()</pre>
 <div class="block">Gets the argument string that is being read by this reader.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The input <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a></dd>
+<dd>The input <code>String</code></dd>
 </dl>
 </li>
 </ul>
@@ -336,7 +336,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>parsed</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;parsed()</pre>
+<pre class="methodSignature">java.lang.String&nbsp;parsed()</pre>
 <div class="block">Gets the substring that has already been parsed.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -350,7 +350,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>remaining</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;remaining()</pre>
+<pre class="methodSignature">java.lang.String&nbsp;remaining()</pre>
 <div class="block">Gets the substring that has yet to be read.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -387,7 +387,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The next character</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - if <a href="#canRead()"><code>canRead()</code></a> is false</dd>
+<dd><code>java.lang.IllegalStateException</code> - if <a href="#canRead()"><code>canRead()</code></a> is false</dd>
 </dl>
 </li>
 </ul>
@@ -397,7 +397,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createException</h4>
-<pre class="methodSignature"><a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a>&nbsp;createException&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;errorMessage)</pre>
+<pre class="methodSignature"><a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception">ArgumentParseException</a>&nbsp;createException&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;errorMessage)</pre>
 <div class="block">Creates an <a href="../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception"><code>ArgumentParseException</code></a> with the provided message,
  based on the current state of this object.
 

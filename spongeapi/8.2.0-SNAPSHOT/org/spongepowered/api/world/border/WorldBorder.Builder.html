@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code>, <code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code>, <code><a href="../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>,&#8203;<a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&gt;</code>, <code><a href="../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>,&#8203;<a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&gt;</code>, <code><a href="../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>,&#8203;<a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code>, <code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code>, <code><a href="../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>,&#8203;<a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&gt;</code>, <code><a href="../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>,&#8203;<a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&gt;</code>, <code><a href="../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>,&#8203;<a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&gt;</code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
@@ -213,7 +213,7 @@ extends <a href="../../util/CopyableBuilder.html" title="interface in org.sponge
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#timeToTargetDiameter(java.time.Duration)">timeToTargetDiameter</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;time)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#timeToTargetDiameter(java.time.Duration)">timeToTargetDiameter</a></span>&#8203;(java.time.Duration&nbsp;time)</code></th>
 <td class="colLast">
 <div class="block">Sets how long this border will take to contract or expand from
  <a href="#initialDiameter(double)"><code>the initial diameter</code></a> to
@@ -229,7 +229,7 @@ extends <a href="../../util/CopyableBuilder.html" title="interface in org.sponge
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#warningTime(java.time.Duration)">warningTime</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;warningTime)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#warningTime(java.time.Duration)">warningTime</a></span>&#8203;(java.time.Duration&nbsp;warningTime)</code></th>
 <td class="colLast">
 <div class="block">Sets the warning time of this world border.</div>
 </td>
@@ -350,7 +350,7 @@ extends <a href="../../util/CopyableBuilder.html" title="interface in org.sponge
 <div class="block">Sets the final diameter of this world border.
 
  <p>If no <a href="#timeToTargetDiameter(java.time.Duration)"><code>timeToTargetDiameter(Duration)</code></a> is set, or it is set
- to <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true#ZERO" title="class or interface in java.time" class="externalLink"><code>Duration.ZERO</code></a>, then the <a href="#initialDiameter(double)"><code>initialDiameter(double)</code></a>
+ to <code>Duration.ZERO</code>, then the <a href="#initialDiameter(double)"><code>initialDiameter(double)</code></a>
  is ignored and this is the only diameter used.</p>
 
  <p>If this is set but <a href="#initialDiameter(double)"><code>initialDiameter(double)</code></a> has not, then
@@ -369,13 +369,13 @@ extends <a href="../../util/CopyableBuilder.html" title="interface in org.sponge
 <ul class="blockList">
 <li class="blockList">
 <h4>timeToTargetDiameter</h4>
-<pre class="methodSignature"><a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&nbsp;timeToTargetDiameter&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;time)</pre>
+<pre class="methodSignature"><a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&nbsp;timeToTargetDiameter&#8203;(java.time.Duration&nbsp;time)</pre>
 <div class="block">Sets how long this border will take to contract or expand from
  <a href="#initialDiameter(double)"><code>the initial diameter</code></a> to
  <a href="#targetDiameter(double)"><code>its target diameter</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>time</code> - The time, as a <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Duration</code></a></dd>
+<dd><code>time</code> - The time, as a <code>Duration</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The builder, for chaining.</dd>
 </dl>
@@ -420,7 +420,7 @@ extends <a href="../../util/CopyableBuilder.html" title="interface in org.sponge
 <ul class="blockList">
 <li class="blockList">
 <h4>warningTime</h4>
-<pre class="methodSignature"><a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&nbsp;warningTime&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a>&nbsp;warningTime)</pre>
+<pre class="methodSignature"><a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a>&nbsp;warningTime&#8203;(java.time.Duration&nbsp;warningTime)</pre>
 <div class="block">Sets the warning time of this world border.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -456,9 +456,9 @@ extends <a href="../../util/CopyableBuilder.html" title="interface in org.sponge
 <div class="block">Builds the world border from the information given.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.builder" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.builder" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/builder/AbstractBuilder.html?is-external=true" title="class or interface in net.kyori.adventure.builder" class="externalLink">AbstractBuilder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.util" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true#build()" title="class or interface in net.kyori.adventure.util" class="externalLink">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/Buildable.Builder.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">Buildable.Builder</a>&lt;<a href="WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The built world border</dd>
 </dl>

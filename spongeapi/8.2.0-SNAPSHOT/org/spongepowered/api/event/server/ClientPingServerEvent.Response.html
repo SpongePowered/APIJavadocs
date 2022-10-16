@@ -180,7 +180,7 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ClientPingServerEvent.Response.Players.html" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Players</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="ClientPingServerEvent.Response.Players.html" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Players</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#players()">players</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets player count and the list of players currently playing on the
@@ -189,7 +189,7 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDescription(net.kyori.adventure.text.Component)">setDescription</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;description)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDescription(net.kyori.adventure.text.Component)">setDescription</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;description)</code></th>
 <td class="colLast">
 <div class="block">Sets the description (MOTD) of the status response.</div>
 </td>
@@ -239,7 +239,7 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <ul class="blockList">
 <li class="blockList">
 <h4>setDescription</h4>
-<pre class="methodSignature">void&nbsp;setDescription&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;description)</pre>
+<pre class="methodSignature">void&nbsp;setDescription&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;description)</pre>
 <div class="block">Sets the description (MOTD) of the status response.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -253,7 +253,7 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <ul class="blockList">
 <li class="blockList">
 <h4>players</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ClientPingServerEvent.Response.Players.html" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Players</a>&gt;&nbsp;players()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="ClientPingServerEvent.Response.Players.html" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Players</a>&gt;&nbsp;players()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../network/status/StatusResponse.html#players()">StatusResponse</a></code></span></div>
 <div class="block">Gets player count and the list of players currently playing on the
  server.</div>
@@ -261,7 +261,7 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../network/status/StatusResponse.html#players()">players</a></code>&nbsp;in interface&nbsp;<code><a href="../../network/status/StatusResponse.html" title="interface in org.spongepowered.api.network.status">StatusResponse</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The player information, or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> if not
+<dd>The player information, or <code>Optional.empty()</code> if not
          available</dd>
 </dl>
 </li>
@@ -277,7 +277,7 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
  is hidden and doesn't get sent to the client. This will restore
  <a href="#players()"><code>players()</code></a> if the players were previously hidden.
 
- <p>Use <a href="#players()"><code>players()</code></a>.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#isPresent()" title="class or interface in java.util" class="externalLink"><code>isPresent()</code></a> to
+ <p>Use <a href="#players()"><code>players()</code></a>.<code>isPresent()</code> to
  check if the players are already hidden.</p>
 
  <p>In Vanilla, this will display <code>???</code> instead of the player

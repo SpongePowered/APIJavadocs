@@ -123,16 +123,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>,&#8203;<a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;</code></dd>
+<dd><code>java.util.function.BiFunction&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;java.util.Random,&#8203;<a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;</code></dd>
 </dl>
 <dl>
 <dt>Functional Interface:</dt>
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">TradeOfferGenerator</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>,&#8203;<a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;</pre>
+extends java.util.function.BiFunction&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;java.util.Random,&#8203;<a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;</pre>
 <div class="block">Represents a generator to create <a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>s with a bit of
  randomization based on <a href="../inventory/ItemStackGenerator.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackGenerator</code></a>s for populating
  <a href="../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a>s and finally generating a <a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>.
@@ -154,14 +154,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Bi
  );
  </code></pre>
  The by-product of a direct implementation is that you would be needing to
- build out functions accepting the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>random</code></a> instance to add
+ build out functions accepting the <code>random</code> instance to add
  dynamism to your generated <a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffers</code></a>. As such, a handy
  builder has been provided with <a href="#builder()"><code>builder()</code></a> and the
  related methods exposed in <a href="../inventory/ItemStackGenerator.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackGenerator</code></a>.
 
- <p>The primary use of this, and why the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Random</code></a> must be provided as
- part of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>BiFunction</code></a> signature is that during multiple world
- instances, there's different <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Random</code></a> instances instantiated, and more
+ <p>The primary use of this, and why the <code>Random</code> must be provided as
+ part of the <code>BiFunction</code> signature is that during multiple world
+ instances, there's different <code>Random</code> instances instantiated, and more
  can be provided without the necessity to change the generator. One advantage
  to using a generator is the ability to provide some "randomization" or
  "chance" on the various aspects of the generated <a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a> versus
@@ -216,7 +216,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Bi
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#apply(org.spongepowered.api.entity.Entity,java.util.Random)">apply</a></span>&#8203;(<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
+     java.util.Random&nbsp;random)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -231,8 +231,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Bi
 <li class="blockList"><a id="methods.inherited.from.class.java.util.function.BiFunction">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.function.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true#andThen(java.util.function.Function)" title="class or interface in java.util.function" class="externalLink">andThen</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.function.BiFunction</h3>
+<code>andThen</code></li>
 </ul>
 </li>
 </ul>
@@ -271,10 +271,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Bi
 <li class="blockList">
 <h4>apply</h4>
 <pre class="methodSignature"><a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&nbsp;apply&#8203;(<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</pre>
+                 java.util.Random&nbsp;random)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true#apply(T,U)" title="class or interface in java.util.function" class="externalLink">apply</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiFunction</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>,&#8203;<a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;</code></dd>
+<dd><code>apply</code>&nbsp;in interface&nbsp;<code>java.util.function.BiFunction&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>,&#8203;java.util.Random,&#8203;<a href="TradeOffer.html" title="interface in org.spongepowered.api.item.merchant">TradeOffer</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

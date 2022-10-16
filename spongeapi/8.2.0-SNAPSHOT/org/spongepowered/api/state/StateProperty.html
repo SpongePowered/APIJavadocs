@@ -115,7 +115,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <main role="main">
 <div class="header">
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">org.spongepowered.api.state</a></div>
-<h2 title="Interface StateProperty" class="title">Interface StateProperty&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;</h2>
+<h2 title="Interface StateProperty" class="title">Interface StateProperty&lt;T extends java.lang.Comparable&lt;T&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -130,18 +130,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code><a href="BooleanStateProperty.html" title="interface in org.spongepowered.api.state">BooleanStateProperty</a></code>, <code><a href="EnumStateProperty.html" title="interface in org.spongepowered.api.state">EnumStateProperty</a>&lt;E&gt;</code>, <code><a href="IntegerStateProperty.html" title="interface in org.spongepowered.api.state">IntegerStateProperty</a></code></dd>
 </dl>
 <hr>
-<pre>public interface <span class="typeNameLabel">StateProperty&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;</span>
+<pre>public interface <span class="typeNameLabel">StateProperty&lt;T extends java.lang.Comparable&lt;T&gt;&gt;</span>
 extends <a href="../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></pre>
 <div class="block">Represents a possible state property in a <a href="StateContainer.html" title="interface in org.spongepowered.api.state"><code>StateContainer</code></a>s <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a>.
- 
+
  <p>A <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a> can include zero or more <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>s. Each
  <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a> within a <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a> is mapped to a value which
  represents the current value at the time the <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a> was taken.
  </p>
- 
+
  <p>For example, a <a href="../block/BlockTypes.html#RED_BED"><code>BlockTypes.RED_BED</code></a> contains three possible
  <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>s :</p>
- 
+
  <ul>
      <li><a href="EnumStateProperties.html#RED_BED_FACING"><code>EnumStateProperties.RED_BED_FACING</code></a></li>
      <li><a href="BooleanStateProperties.html#RED_BED_OCCUPIED"><code>BooleanStateProperties.RED_BED_OCCUPIED</code></a></li>
@@ -151,7 +151,7 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
  <p>If you query a <a href="../block/BlockTypes.html#RED_BED"><code>BlockTypes.RED_BED</code></a>'s <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a> you have two
  possible outcomes for each <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>. The
  <a href="BooleanStateProperties.html#RED_BED_OCCUPIED"><code>BooleanStateProperties.RED_BED_OCCUPIED</code></a> has the following possible values:</p>
- 
+
  <ul>
      <li><code>true</code></li>
      <li><code>false</code></li>
@@ -160,12 +160,12 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
  <p>As 'OCCUPIED' is a <a href="BooleanStateProperty.html" title="interface in org.spongepowered.api.state"><code>BooleanStateProperty</code></a>, it can only be <code>true</code>
  or <code>false</code>.
  The <a href="EnumStateProperties.html#RED_BED_PART"><code>EnumStateProperties.RED_BED_PART</code></a> has the following possible values:</p>
- 
+
  <ul>
      <li><code>HEAD</code></li>
      <li><code>FOOT</code></li>
  </ul>
- 
+
  <p>To determine the current value of a <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>, you would call
  <a href="State.html#stateProperty(org.spongepowered.api.state.StateProperty)"><code>State.stateProperty(StateProperty)</code></a>. To determine all possible
  values of a <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>, you would call
@@ -194,29 +194,29 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseValue(java.lang.String)">parseValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseValue(java.lang.String)">parseValue</a></span>&#8203;(java.lang.String&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Attempts to parse the provided value as a value dictated possible by
- this state property or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> otherwise.</div>
+ this state property or <code>Optional.empty()</code> otherwise.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#possibleValues()">possibleValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets all possible values for a specific <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.function.Predicate&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#predicate()">predicate</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> used to determine valid values for this.</div>
+<div class="block">Gets the <code>Predicate</code> used to determine valid values for this.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valueClass()">valueClass</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the class type of the <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>'s values.</div>
@@ -252,10 +252,10 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>possibleValues</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;possibleValues()</pre>
+<pre class="methodSignature">java.util.Collection&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;possibleValues()</pre>
 <div class="block">Gets all possible values for a specific <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>. The
  included values may not be in any particular order. The returned
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> should be considered immutable.</div>
+ <code>Collection</code> should be considered immutable.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>All possible values</dd>
@@ -268,7 +268,7 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>valueClass</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;valueClass()</pre>
+<pre class="methodSignature">java.lang.Class&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;valueClass()</pre>
 <div class="block">Gets the class type of the <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>'s values.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -282,11 +282,11 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>predicate</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;predicate()</pre>
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> used to determine valid values for this.
+<pre class="methodSignature">java.util.function.Predicate&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;predicate()</pre>
+<div class="block">Gets the <code>Predicate</code> used to determine valid values for this.
  <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>. Any "value" that returns <code>true</code> when
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> is called is valid. The
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> is specific to this property.</div>
+ <code>Predicate.test(Object)</code> is called is valid. The
+ <code>Predicate</code> is specific to this property.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The predicate</dd>
@@ -299,9 +299,9 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
 <ul class="blockListLast">
 <li class="blockList">
 <h4>parseValue</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;parseValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="StateProperty.html" title="type parameter in StateProperty">T</a>&gt;&nbsp;parseValue&#8203;(java.lang.String&nbsp;value)</pre>
 <div class="block">Attempts to parse the provided value as a value dictated possible by
- this state property or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> otherwise.</div>
+ this state property or <code>Optional.empty()</code> otherwise.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>value</code> - The value to parse</dd>

@@ -164,24 +164,24 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities()">entities</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of entities who will be affected after event
+<div class="block">Gets the <code>List</code> of entities who will be affected after event
  resolution.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../entity/EntitySnapshot.html" title="interface in org.spongepowered.api.entity">EntitySnapshot</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../entity/EntitySnapshot.html" title="interface in org.spongepowered.api.entity">EntitySnapshot</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entitySnapshots()">entitySnapshots</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of the entity data
+<div class="block">Gets an <code>List</code> of the entity data
  un-affected by event changes.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterEntities(java.util.function.Predicate)">filterEntities</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterEntities(java.util.function.Predicate)">filterEntities</a></span>&#8203;(java.util.function.Predicate&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Filters out <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>'s from <a href="#entities()"><code>entities()</code></a>
  to be affected by this event.</div>
@@ -189,7 +189,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterEntityLocations(java.util.function.Predicate)">filterEntityLocations</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterEntityLocations(java.util.function.Predicate)">filterEntityLocations</a></span>&#8203;(java.util.function.Predicate&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Filters out <a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from
  <a href="#entities()"><code>entities()</code></a> to be affected by this event.</div>
@@ -232,20 +232,20 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>entitySnapshots</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../entity/EntitySnapshot.html" title="interface in org.spongepowered.api.entity">EntitySnapshot</a>&gt;&nbsp;entitySnapshots()
-                              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></pre>
-<div class="block">Gets an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of the entity data
+<pre class="methodSignature">java.util.List&lt;<a href="../../entity/EntitySnapshot.html" title="interface in org.spongepowered.api.entity">EntitySnapshot</a>&gt;&nbsp;entitySnapshots()
+                                        throws java.lang.IllegalStateException</pre>
+<div class="block">Gets an <code>List</code> of the entity data
  un-affected by event changes.
 
  <p>This method <b>MUST</b> be called at <a href="../Order.html#PRE"><code>Order.PRE</code></a> in order
  to be properly initialized, after which it can be called at any time.
- If it is not first called at <a href="../Order.html#PRE"><code>Order.PRE</code></a>, it will throw an <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a>
+ If it is not first called at <a href="../Order.html#PRE"><code>Order.PRE</code></a>, it will throw an <code>IllegalStateException</code>
  when invoked.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The ImmutableList</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - If the method is called after the pre order</dd>
+<dd><code>java.lang.IllegalStateException</code> - If the method is called after the pre order</dd>
 </dl>
 </li>
 </ul>
@@ -255,8 +255,8 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>entities</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;entities()</pre>
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of entities who will be affected after event
+<pre class="methodSignature">java.util.List&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;entities()</pre>
+<div class="block">Gets the <code>List</code> of entities who will be affected after event
  resolution.
  This list can only be modified using <a href="#filterEntities(java.util.function.Predicate)"><code>filterEntities(Predicate)</code></a>.</div>
 <dl>
@@ -271,7 +271,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>filterEntityLocations</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;filterEntityLocations&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;filterEntityLocations&#8203;(java.util.function.Predicate&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</pre>
 <div class="block">Filters out <a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from
  <a href="#entities()"><code>entities()</code></a> to be affected by this event.
 
@@ -289,7 +289,7 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filterEntities</h4>
-<pre class="methodSignature">void&nbsp;filterEntities&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">void&nbsp;filterEntities&#8203;(java.util.function.Predicate&lt;<a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</pre>
 <div class="block">Filters out <a href="../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>'s from <a href="#entities()"><code>entities()</code></a>
  to be affected by this event.
 

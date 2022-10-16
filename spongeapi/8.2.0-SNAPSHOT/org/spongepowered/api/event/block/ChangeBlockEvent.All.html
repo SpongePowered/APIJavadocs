@@ -170,12 +170,12 @@ extends <a href="ChangeBlockEvent.html" title="interface in org.spongepowered.ap
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#invalidate(java.util.function.Predicate)">invalidate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></th>
+<td class="colFirst"><code>default java.util.List&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#invalidate(java.util.function.Predicate)">invalidate</a></span>&#8203;(java.util.function.Predicate&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
-<div class="block">Applies the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of
+<div class="block">Applies the provided <code>Predicate</code> to the <code>List</code> of
  <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s from <a href="#transactions()"><code>transactions()</code></a> such that
- any time that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ any time that <code>Predicate.test(Object)</code> returns <code>false</code>
  on the location of the <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>, the <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a> is
  marked as "invalid" and will not apply post event.</div>
 </td>
@@ -189,17 +189,17 @@ extends <a href="ChangeBlockEvent.html" title="interface in org.spongepowered.ap
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactions()">transactions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets a list of the <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s for this event.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.stream.Stream&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactions(org.spongepowered.api.block.transaction.Operation)">transactions</a></span>&#8203;(<a href="../../block/transaction/Operation.html" title="interface in org.spongepowered.api.block.transaction">Operation</a>&nbsp;operation)</code></th>
 <td class="colLast">
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of <a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction"><code>BlockTransactions</code></a>
+<div class="block">Gets a <code>Stream</code> of <a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction"><code>BlockTransactions</code></a>
  filtered by a particular <a href="../../block/transaction/Operation.html" title="interface in org.spongepowered.api.block.transaction"><code>block operation</code></a>.</div>
 </td>
 </tr>
@@ -247,7 +247,7 @@ extends <a href="ChangeBlockEvent.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>transactions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;&nbsp;transactions()</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;&nbsp;transactions()</pre>
 <div class="block">Gets a list of the <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s for this event. If a
  transaction is requested to be marked as "invalid",
  <a href="../../data/Transaction.html#setValid(boolean)"><code>Transaction.setValid(boolean)</code></a> can be used.</div>
@@ -263,11 +263,11 @@ extends <a href="ChangeBlockEvent.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>transactions</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;&nbsp;transactions&#8203;(<a href="../../block/transaction/Operation.html" title="interface in org.spongepowered.api.block.transaction">Operation</a>&nbsp;operation)</pre>
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of <a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction"><code>BlockTransactions</code></a>
+<pre class="methodSignature">default&nbsp;java.util.stream.Stream&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;&nbsp;transactions&#8203;(<a href="../../block/transaction/Operation.html" title="interface in org.spongepowered.api.block.transaction">Operation</a>&nbsp;operation)</pre>
+<div class="block">Gets a <code>Stream</code> of <a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction"><code>BlockTransactions</code></a>
  filtered by a particular <a href="../../block/transaction/Operation.html" title="interface in org.spongepowered.api.block.transaction"><code>block operation</code></a>. The difference
  between this and <a href="#transactions()"><code>transactions()</code></a> is that while the general transactions
- is still an ordered <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a>, this is a filtered stream of that list, equally
+ is still an ordered <code>List</code>, this is a filtered stream of that list, equally
  unmodifiable. The <a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction"><code>transactions</code></a> themselves are still
  modifiable with <code>BlockTransaction#setCustom(BlockSnapshot)</code>, but altering
  the customized snapshot will <strong>NOT</strong> alter the <a href="../../block/transaction/Operation.html" title="interface in org.spongepowered.api.block.transaction"><code>Operation</code></a>
@@ -288,10 +288,10 @@ extends <a href="ChangeBlockEvent.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>invalidate</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;&nbsp;invalidate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</pre>
-<div class="block">Applies the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of
+<pre class="methodSignature">default&nbsp;java.util.List&lt;<a href="../../block/transaction/BlockTransaction.html" title="class in org.spongepowered.api.block.transaction">BlockTransaction</a>&gt;&nbsp;invalidate&#8203;(java.util.function.Predicate&lt;<a href="../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;&nbsp;predicate)</pre>
+<div class="block">Applies the provided <code>Predicate</code> to the <code>List</code> of
  <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s from <a href="#transactions()"><code>transactions()</code></a> such that
- any time that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ any time that <code>Predicate.test(Object)</code> returns <code>false</code>
  on the location of the <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>, the <a href="../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a> is
  marked as "invalid" and will not apply post event.
 

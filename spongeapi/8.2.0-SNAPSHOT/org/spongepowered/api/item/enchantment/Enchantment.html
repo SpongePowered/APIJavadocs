@@ -132,7 +132,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
  with a level.
 
  <p>The contract of enchantments is that their level will always be between
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true#MIN_VALUE" title="class or interface in java.lang" class="externalLink"><code>Short.MIN_VALUE</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink"><code>Short.MAX_VALUE</code></a>, but it is not guaranteed
+ <code>Short.MIN_VALUE</code> and <code>Short.MAX_VALUE</code>, but it is not guaranteed
  they will work properly outside of <a href="EnchantmentType.html#minimumLevel()"><code>EnchantmentType.minimumLevel()</code></a>
  and <a href="EnchantmentType.html#maximumLevel()"><code>EnchantmentType.maximumLevel()</code></a>.</p></div>
 </li>
@@ -205,7 +205,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment">Enchantment</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier,int)">of</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment">EnchantmentType</a>&gt;&nbsp;enchantmentType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.function.Supplier,int)">of</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment">EnchantmentType</a>&gt;&nbsp;enchantmentType,
   int&nbsp;level)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment"><code>Enchantment</code></a> with the provided
@@ -293,9 +293,9 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment">Enchantment</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment">EnchantmentType</a>&gt;&nbsp;enchantmentType,
+<pre class="methodSignature">static&nbsp;<a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment">Enchantment</a>&nbsp;of&#8203;(java.util.function.Supplier&lt;? extends <a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment">EnchantmentType</a>&gt;&nbsp;enchantmentType,
                       int&nbsp;level)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+               throws java.lang.IllegalArgumentException</pre>
 <div class="block">Creates a new <a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment"><code>Enchantment</code></a> with the provided
  <a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment"><code>EnchantmentType</code></a> and level.</div>
 <dl>
@@ -305,8 +305,8 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The created enchantment</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the level is smaller than
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true#MIN_VALUE" title="class or interface in java.lang" class="externalLink"><code>Short.MIN_VALUE</code></a> or larger than <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink"><code>Short.MAX_VALUE</code></a></dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the level is smaller than
+     <code>Short.MIN_VALUE</code> or larger than <code>Short.MAX_VALUE</code></dd>
 </dl>
 </li>
 </ul>
@@ -318,7 +318,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <h4>of</h4>
 <pre class="methodSignature">static&nbsp;<a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment">Enchantment</a>&nbsp;of&#8203;(<a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment">EnchantmentType</a>&nbsp;enchantmentType,
                       int&nbsp;level)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+               throws java.lang.IllegalArgumentException</pre>
 <div class="block">Creates a new <a href="Enchantment.html" title="interface in org.spongepowered.api.item.enchantment"><code>Enchantment</code></a> with the provided
  <a href="EnchantmentType.html" title="interface in org.spongepowered.api.item.enchantment"><code>EnchantmentType</code></a> and level.</div>
 <dl>
@@ -328,8 +328,8 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The created enchantment</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the level is smaller than
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true#MIN_VALUE" title="class or interface in java.lang" class="externalLink"><code>Short.MIN_VALUE</code></a> or larger than <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink"><code>Short.MAX_VALUE</code></a></dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the level is smaller than
+     <code>Short.MIN_VALUE</code> or larger than <code>Short.MAX_VALUE</code></dd>
 </dl>
 </li>
 </ul>

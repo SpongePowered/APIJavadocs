@@ -119,13 +119,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Throwable</a></li>
+<li>java.lang.Throwable</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Exception</a></li>
+<li>java.lang.Exception</li>
 <li>
 <ul class="inheritance">
 <li>org.spongepowered.api.util.ComponentMessageException</li>
@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">ComponentMessageThrowable</a></code></dd>
+<dd><code>java.io.Serializable</code>, <code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">ComponentMessageThrowable</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -149,10 +149,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ComponentMessageException</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>
-implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">ComponentMessageThrowable</a></pre>
+extends java.lang.Exception
+implements <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">ComponentMessageThrowable</a></pre>
 <div class="block">A subclass of Exception that contains a rich message that is an instance of
- <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> rather than a String. This allows formatted and localized
+ <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> rather than a String. This allows formatted and localized
  exception messages.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -184,20 +184,20 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Throwable)">ComponentMessageException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;throwable)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Throwable)">ComponentMessageException</a></span>&#8203;(java.lang.Throwable&nbsp;throwable)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new <a href="ComponentMessageException.html" title="class in org.spongepowered.api.util"><code>ComponentMessageException</code></a> with the given cause.</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.kyori.adventure.text.Component)">ComponentMessageException</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.kyori.adventure.text.Component)">ComponentMessageException</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new <a href="ComponentMessageException.html" title="class in org.spongepowered.api.util"><code>ComponentMessageException</code></a> with the given message.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.kyori.adventure.text.Component,java.lang.Throwable)">ComponentMessageException</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;throwable)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.kyori.adventure.text.Component,java.lang.Throwable)">ComponentMessageException</a></span>&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message,
+                         java.lang.Throwable&nbsp;throwable)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new <a href="ComponentMessageException.html" title="class in org.spongepowered.api.util"><code>ComponentMessageException</code></a> with the given message and
  cause.</div>
@@ -222,7 +222,7 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>@Nullable <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
+<td class="colFirst"><code>@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#componentMessage()">componentMessage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the text message for this exception, or null if nothing is
@@ -230,12 +230,12 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>@Nullable java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalizedMessage()">getLocalizedMessage</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>@Nullable java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMessage()">getMessage</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -244,15 +244,15 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Throwable">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#addSuppressed(java.lang.Throwable)" title="class or interface in java.lang" class="externalLink">addSuppressed</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#fillInStackTrace()" title="class or interface in java.lang" class="externalLink">fillInStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getCause()" title="class or interface in java.lang" class="externalLink">getCause</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getStackTrace()" title="class or interface in java.lang" class="externalLink">getStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getSuppressed()" title="class or interface in java.lang" class="externalLink">getSuppressed</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#initCause(java.lang.Throwable)" title="class or interface in java.lang" class="externalLink">initCause</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#printStackTrace()" title="class or interface in java.lang" class="externalLink">printStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#printStackTrace(java.io.PrintStream)" title="class or interface in java.lang" class="externalLink">printStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#printStackTrace(java.io.PrintWriter)" title="class or interface in java.lang" class="externalLink">printStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#setStackTrace(java.lang.StackTraceElement%5B%5D)" title="class or interface in java.lang" class="externalLink">setStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Throwable</h3>
+<code>addSuppressed, fillInStackTrace, getCause, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -286,7 +286,7 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <ul class="blockList">
 <li class="blockList">
 <h4>ComponentMessageException</h4>
-<pre>public&nbsp;ComponentMessageException&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
+<pre>public&nbsp;ComponentMessageException&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message)</pre>
 <div class="block">Constructs a new <a href="ComponentMessageException.html" title="class in org.spongepowered.api.util"><code>ComponentMessageException</code></a> with the given message.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -300,8 +300,8 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <ul class="blockList">
 <li class="blockList">
 <h4>ComponentMessageException</h4>
-<pre>public&nbsp;ComponentMessageException&#8203;(<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;throwable)</pre>
+<pre>public&nbsp;ComponentMessageException&#8203;(<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;message,
+                                 java.lang.Throwable&nbsp;throwable)</pre>
 <div class="block">Constructs a new <a href="ComponentMessageException.html" title="class in org.spongepowered.api.util"><code>ComponentMessageException</code></a> with the given message and
  cause.</div>
 <dl>
@@ -317,7 +317,7 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ComponentMessageException</h4>
-<pre>public&nbsp;ComponentMessageException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;throwable)</pre>
+<pre>public&nbsp;ComponentMessageException&#8203;(java.lang.Throwable&nbsp;throwable)</pre>
 <div class="block">Constructs a new <a href="ComponentMessageException.html" title="class in org.spongepowered.api.util"><code>ComponentMessageException</code></a> with the given cause.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -341,10 +341,10 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <ul class="blockList">
 <li class="blockList">
 <h4>getMessage</h4>
-<pre class="methodSignature">public&nbsp;@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getMessage()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable java.lang.String&nbsp;getMessage()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getMessage()" title="class or interface in java.lang" class="externalLink">getMessage</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a></code></dd>
+<dd><code>getMessage</code>&nbsp;in class&nbsp;<code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -354,12 +354,12 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <ul class="blockList">
 <li class="blockList">
 <h4>componentMessage</h4>
-<pre class="methodSignature">public&nbsp;@Nullable <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;componentMessage()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;componentMessage()</pre>
 <div class="block">Returns the text message for this exception, or null if nothing is
  present.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true#componentMessage()" title="class or interface in net.kyori.adventure.util" class="externalLink">componentMessage</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">ComponentMessageThrowable</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true#componentMessage()" title="class or interface in net.kyori.adventure.util" class="externalLink">componentMessage</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/util/ComponentMessageThrowable.html?is-external=true" title="class or interface in net.kyori.adventure.util" class="externalLink">ComponentMessageThrowable</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The text for this message</dd>
 </dl>
@@ -371,10 +371,10 @@ implements <a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventur
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getLocalizedMessage</h4>
-<pre class="methodSignature">public&nbsp;@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getLocalizedMessage()</pre>
+<pre class="methodSignature">public&nbsp;@Nullable java.lang.String&nbsp;getLocalizedMessage()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getLocalizedMessage()" title="class or interface in java.lang" class="externalLink">getLocalizedMessage</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a></code></dd>
+<dd><code>getLocalizedMessage</code>&nbsp;in class&nbsp;<code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

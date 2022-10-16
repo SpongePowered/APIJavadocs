@@ -125,10 +125,10 @@ public interface <span class="typeNameLabel">DamageType</span>
 extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></pre>
 <div class="block">A <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> is a type of "grouping" for <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s since
  a <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> instance can be inherently different from another
- <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> by virtue of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a> backing the source.
+ <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> by virtue of the <code>Object</code> backing the source.
  Furthermore, it is impossible to refer to <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s statically
  due to the nature of constructing them. It is possible however, that the
- parent <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a> being referred to as the "damage source" can damage
+ parent <code>Object</code> being referred to as the "damage source" can damage
  an <a href="../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> with varying <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a>s depending on the
  circumstances.</div>
 </li>

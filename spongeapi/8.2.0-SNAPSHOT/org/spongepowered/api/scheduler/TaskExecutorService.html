@@ -123,12 +123,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Executor</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledExecutorService</a></code></dd>
+<dd><code>java.util.concurrent.Executor</code>, <code>java.util.concurrent.ExecutorService</code>, <code>java.util.concurrent.ScheduledExecutorService</code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">TaskExecutorService</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledExecutorService</a></pre>
-<div class="block">A delegating <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>ExecutorService</code></a> that schedules all its tasks on
+extends java.util.concurrent.ScheduledExecutorService</pre>
+<div class="block">A delegating <code>ExecutorService</code> that schedules all its tasks on
  Sponge's <a href="Scheduler.html" title="interface in org.spongepowered.api.scheduler"><code>Scheduler</code></a>.
 
  <p>This class can be used to allow any libraries that support the
@@ -156,78 +156,78 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.lang.Runnable,long,java.time.temporal.TemporalUnit)">schedule</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.lang.Runnable,long,java.time.temporal.TemporalUnit)">schedule</a></span>&#8203;(java.lang.Runnable&nbsp;command,
         long&nbsp;delay,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</code></th>
+        java.time.temporal.TemporalUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)">schedule</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)">schedule</a></span>&#8203;(java.lang.Runnable&nbsp;command,
         long&nbsp;delay,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</code></th>
+        java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.util.concurrent.Callable,long,java.time.temporal.TemporalUnit)">schedule</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Callable</a>&lt;V&gt;&nbsp;callable,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.util.concurrent.Callable,long,java.time.temporal.TemporalUnit)">schedule</a></span>&#8203;(java.util.concurrent.Callable&lt;V&gt;&nbsp;callable,
         long&nbsp;delay,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</code></th>
+        java.time.temporal.TemporalUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)">schedule</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Callable</a>&lt;V&gt;&nbsp;callable,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)">schedule</a></span>&#8203;(java.util.concurrent.Callable&lt;V&gt;&nbsp;callable,
         long&nbsp;delay,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</code></th>
+        java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleAtFixedRate(java.lang.Runnable,long,long,java.time.temporal.TemporalUnit)">scheduleAtFixedRate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleAtFixedRate(java.lang.Runnable,long,long,java.time.temporal.TemporalUnit)">scheduleAtFixedRate</a></span>&#8203;(java.lang.Runnable&nbsp;command,
                    long&nbsp;initialDelay,
                    long&nbsp;period,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</code></th>
+                   java.time.temporal.TemporalUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">scheduleAtFixedRate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">scheduleAtFixedRate</a></span>&#8203;(java.lang.Runnable&nbsp;command,
                    long&nbsp;initialDelay,
                    long&nbsp;period,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</code></th>
+                   java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.time.temporal.TemporalUnit)">scheduleWithFixedDelay</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.time.temporal.TemporalUnit)">scheduleWithFixedDelay</a></span>&#8203;(java.lang.Runnable&nbsp;command,
                       long&nbsp;initialDelay,
                       long&nbsp;delay,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</code></th>
+                      java.time.temporal.TemporalUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">scheduleWithFixedDelay</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">scheduleWithFixedDelay</a></span>&#8203;(java.lang.Runnable&nbsp;command,
                       long&nbsp;initialDelay,
                       long&nbsp;delay,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</code></th>
+                      java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(java.lang.Runnable)">submit</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;task)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(java.lang.Runnable)">submit</a></span>&#8203;(java.lang.Runnable&nbsp;task)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(java.lang.Runnable,T)">submit</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;task,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(java.lang.Runnable,T)">submit</a></span>&#8203;(java.lang.Runnable&nbsp;task,
       @Nullable T&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(java.util.concurrent.Callable)">submit</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Callable</a>&lt;T&gt;&nbsp;task)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#submit(java.util.concurrent.Callable)">submit</a></span>&#8203;(java.util.concurrent.Callable&lt;T&gt;&nbsp;task)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -235,15 +235,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <li class="blockList"><a id="methods.inherited.from.class.java.util.concurrent.Executor">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.concurrent.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Executor</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true#execute(java.lang.Runnable)" title="class or interface in java.util.concurrent" class="externalLink">execute</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.concurrent.Executor</h3>
+<code>execute</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.util.concurrent.ExecutorService">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.concurrent.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#awaitTermination(long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">awaitTermination</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#invokeAll(java.util.Collection)" title="class or interface in java.util.concurrent" class="externalLink">invokeAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">invokeAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#invokeAny(java.util.Collection)" title="class or interface in java.util.concurrent" class="externalLink">invokeAny</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">invokeAny</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#isShutdown()" title="class or interface in java.util.concurrent" class="externalLink">isShutdown</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#isTerminated()" title="class or interface in java.util.concurrent" class="externalLink">isTerminated</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#shutdown()" title="class or interface in java.util.concurrent" class="externalLink">shutdown</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#shutdownNow()" title="class or interface in java.util.concurrent" class="externalLink">shutdownNow</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.util.concurrent.ExecutorService</h3>
+<code>awaitTermination, invokeAll, invokeAll, invokeAny, invokeAny, isShutdown, isTerminated, shutdown, shutdownNow</code></li>
 </ul>
 </li>
 </ul>
@@ -267,10 +267,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>submit</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;T&gt;&nbsp;submit&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Callable</a>&lt;T&gt;&nbsp;task)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;T&gt;&nbsp;submit&#8203;(java.util.concurrent.Callable&lt;T&gt;&nbsp;task)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#submit(java.util.concurrent.Callable)" title="class or interface in java.util.concurrent" class="externalLink">submit</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a></code></dd>
+<dd><code>submit</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ExecutorService</code></dd>
 </dl>
 </li>
 </ul>
@@ -280,10 +280,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>submit</h4>
-<pre class="methodSignature"><a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;?&gt;&nbsp;submit&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;task)</pre>
+<pre class="methodSignature"><a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;?&gt;&nbsp;submit&#8203;(java.lang.Runnable&nbsp;task)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#submit(java.lang.Runnable)" title="class or interface in java.util.concurrent" class="externalLink">submit</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a></code></dd>
+<dd><code>submit</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ExecutorService</code></dd>
 </dl>
 </li>
 </ul>
@@ -295,11 +295,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>submit</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;T&gt;&nbsp;submit&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;task,
+<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="TaskFuture.html" title="interface in org.spongepowered.api.scheduler">TaskFuture</a>&lt;T&gt;&nbsp;submit&#8203;(java.lang.Runnable&nbsp;task,
                          @Nullable T&nbsp;result)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true#submit(java.lang.Runnable,T)" title="class or interface in java.util.concurrent" class="externalLink">submit</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ExecutorService</a></code></dd>
+<dd><code>submit</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ExecutorService</code></dd>
 </dl>
 </li>
 </ul>
@@ -309,9 +309,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>schedule</h4>
-<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;schedule&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;schedule&#8203;(java.lang.Runnable&nbsp;command,
                                 long&nbsp;delay,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</pre>
+                                java.time.temporal.TemporalUnit&nbsp;unit)</pre>
 </li>
 </ul>
 <a id="schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)">
@@ -320,12 +320,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>schedule</h4>
-<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;schedule&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;schedule&#8203;(java.lang.Runnable&nbsp;command,
                                 long&nbsp;delay,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</pre>
+                                java.util.concurrent.TimeUnit&nbsp;unit)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">schedule</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledExecutorService</a></code></dd>
+<dd><code>schedule</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ScheduledExecutorService</code></dd>
 </dl>
 </li>
 </ul>
@@ -335,9 +335,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>schedule</h4>
-<pre class="methodSignature">&lt;V&gt;&nbsp;<a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;V&gt;&nbsp;schedule&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Callable</a>&lt;V&gt;&nbsp;callable,
+<pre class="methodSignature">&lt;V&gt;&nbsp;<a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;V&gt;&nbsp;schedule&#8203;(java.util.concurrent.Callable&lt;V&gt;&nbsp;callable,
                                     long&nbsp;delay,
-                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</pre>
+                                    java.time.temporal.TemporalUnit&nbsp;unit)</pre>
 </li>
 </ul>
 <a id="schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)">
@@ -346,12 +346,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>schedule</h4>
-<pre class="methodSignature">&lt;V&gt;&nbsp;<a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;V&gt;&nbsp;schedule&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">Callable</a>&lt;V&gt;&nbsp;callable,
+<pre class="methodSignature">&lt;V&gt;&nbsp;<a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;V&gt;&nbsp;schedule&#8203;(java.util.concurrent.Callable&lt;V&gt;&nbsp;callable,
                                     long&nbsp;delay,
-                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</pre>
+                                    java.util.concurrent.TimeUnit&nbsp;unit)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">schedule</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledExecutorService</a></code></dd>
+<dd><code>schedule</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ScheduledExecutorService</code></dd>
 </dl>
 </li>
 </ul>
@@ -361,10 +361,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>scheduleAtFixedRate</h4>
-<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleAtFixedRate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleAtFixedRate&#8203;(java.lang.Runnable&nbsp;command,
                                            long&nbsp;initialDelay,
                                            long&nbsp;period,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</pre>
+                                           java.time.temporal.TemporalUnit&nbsp;unit)</pre>
 </li>
 </ul>
 <a id="scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">
@@ -373,13 +373,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>scheduleAtFixedRate</h4>
-<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleAtFixedRate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleAtFixedRate&#8203;(java.lang.Runnable&nbsp;command,
                                            long&nbsp;initialDelay,
                                            long&nbsp;period,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</pre>
+                                           java.util.concurrent.TimeUnit&nbsp;unit)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">scheduleAtFixedRate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledExecutorService</a></code></dd>
+<dd><code>scheduleAtFixedRate</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ScheduledExecutorService</code></dd>
 </dl>
 </li>
 </ul>
@@ -389,10 +389,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockList">
 <li class="blockList">
 <h4>scheduleWithFixedDelay</h4>
-<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleWithFixedDelay&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleWithFixedDelay&#8203;(java.lang.Runnable&nbsp;command,
                                               long&nbsp;initialDelay,
                                               long&nbsp;delay,
-                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalUnit.html?is-external=true" title="class or interface in java.time.temporal" class="externalLink">TemporalUnit</a>&nbsp;unit)</pre>
+                                              java.time.temporal.TemporalUnit&nbsp;unit)</pre>
 </li>
 </ul>
 <a id="scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">
@@ -401,13 +401,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/
 <ul class="blockListLast">
 <li class="blockList">
 <h4>scheduleWithFixedDelay</h4>
-<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleWithFixedDelay&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;command,
+<pre class="methodSignature"><a href="ScheduledTaskFuture.html" title="interface in org.spongepowered.api.scheduler">ScheduledTaskFuture</a>&lt;?&gt;&nbsp;scheduleWithFixedDelay&#8203;(java.lang.Runnable&nbsp;command,
                                               long&nbsp;initialDelay,
                                               long&nbsp;delay,
-                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">TimeUnit</a>&nbsp;unit)</pre>
+                                              java.util.concurrent.TimeUnit&nbsp;unit)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)" title="class or interface in java.util.concurrent" class="externalLink">scheduleWithFixedDelay</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ScheduledExecutorService</a></code></dd>
+<dd><code>scheduleWithFixedDelay</code>&nbsp;in interface&nbsp;<code>java.util.concurrent.ScheduledExecutorService</code></dd>
 </dl>
 </li>
 </ul>

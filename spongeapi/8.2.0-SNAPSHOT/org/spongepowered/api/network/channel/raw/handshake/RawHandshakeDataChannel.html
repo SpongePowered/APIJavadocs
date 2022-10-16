@@ -153,9 +153,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendTo(org.spongepowered.api.network.EngineConnection,java.util.function.Consumer)">sendTo</a></span>&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
+      java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</code></th>
 <td class="colLast">
 <div class="block">Sends a request message <a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelBuf</code></a> to
  the <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network"><code>EngineConnection</code></a>.</div>
@@ -163,7 +163,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRequestHandler(java.lang.Class,org.spongepowered.api.network.channel.raw.handshake.RawHandshakeDataRequestHandler)">setRequestHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRequestHandler(java.lang.Class,org.spongepowered.api.network.channel.raw.handshake.RawHandshakeDataRequestHandler)">setRequestHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                  <a href="RawHandshakeDataRequestHandler.html" title="interface in org.spongepowered.api.network.channel.raw.handshake">RawHandshakeDataRequestHandler</a>&lt;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Sets the <a href="RawHandshakeDataRequestHandler.html" title="interface in org.spongepowered.api.network.channel.raw.handshake"><code>RawHandshakeDataRequestHandler</code></a> for the given connection type.</div>
@@ -240,7 +240,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setRequestHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;void&nbsp;setRequestHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;void&nbsp;setRequestHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                     <a href="RawHandshakeDataRequestHandler.html" title="interface in org.spongepowered.api.network.channel.raw.handshake">RawHandshakeDataRequestHandler</a>&lt;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Sets the <a href="RawHandshakeDataRequestHandler.html" title="interface in org.spongepowered.api.network.channel.raw.handshake"><code>RawHandshakeDataRequestHandler</code></a> for the given connection type.</div>
 <dl>
@@ -273,12 +273,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendTo</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;sendTo&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
-                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
+<pre class="methodSignature">java.util.concurrent.CompletableFuture&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;sendTo&#8203;(<a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&nbsp;connection,
+                                                          java.util.function.Consumer&lt;<a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a>&gt;&nbsp;payload)</pre>
 <div class="block">Sends a request message <a href="../../ChannelBuf.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelBuf</code></a> to
  the <a href="../../../EngineConnection.html" title="interface in org.spongepowered.api.network"><code>EngineConnection</code></a>.
 
- <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> may fail exceptionally by a
+ <p>The <code>CompletableFuture</code> may fail exceptionally by a
  <a href="../../NoResponseException.html" title="class in org.spongepowered.api.network.channel"><code>NoResponseException</code></a> if there wasn't a valid response
  received for the given request.</p></div>
 <dl>

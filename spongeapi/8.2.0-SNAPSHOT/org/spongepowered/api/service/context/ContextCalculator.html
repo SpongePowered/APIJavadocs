@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">ContextCalculator</span></pre>
 <div class="block">Calculates the <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s applicable for a <a href="Contextual.html" title="interface in org.spongepowered.api.service.context"><code>Contextual</code></a>.
 
@@ -181,7 +181,7 @@ public interface <span class="typeNameLabel">ContextCalculator</span></pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#accumulateContexts(org.spongepowered.api.event.Cause,java.util.function.Consumer)">accumulateContexts</a></span>&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;source,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;accumulator)</code></th>
+                  java.util.function.Consumer&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;accumulator)</code></th>
 <td class="colLast">
 <div class="block">Adds any <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s this calculator determines to be applicable to
  the <code>target</code> contextual.</div>
@@ -189,8 +189,8 @@ public interface <span class="typeNameLabel">ContextCalculator</span></pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="ContextCalculator.html" title="interface in org.spongepowered.api.service.context">ContextCalculator</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forSingleContext(java.lang.String,java.util.function.Function)">forSingleContext</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;valueFunction)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forSingleContext(java.lang.String,java.util.function.Function)">forSingleContext</a></span>&#8203;(java.lang.String&nbsp;key,
+                java.util.function.Function&lt;<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>,&#8203;java.lang.String&gt;&nbsp;valueFunction)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="ContextCalculator.html" title="interface in org.spongepowered.api.service.context"><code>ContextCalculator</code></a> that provides a single context.</div>
 </td>
@@ -218,8 +218,8 @@ public interface <span class="typeNameLabel">ContextCalculator</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>forSingleContext</h4>
-<pre class="methodSignature">static&nbsp;<a href="ContextCalculator.html" title="interface in org.spongepowered.api.service.context">ContextCalculator</a>&nbsp;forSingleContext&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;valueFunction)</pre>
+<pre class="methodSignature">static&nbsp;<a href="ContextCalculator.html" title="interface in org.spongepowered.api.service.context">ContextCalculator</a>&nbsp;forSingleContext&#8203;(java.lang.String&nbsp;key,
+                                          java.util.function.Function&lt;<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>,&#8203;java.lang.String&gt;&nbsp;valueFunction)</pre>
 <div class="block">Creates a new <a href="ContextCalculator.html" title="interface in org.spongepowered.api.service.context"><code>ContextCalculator</code></a> that provides a single context.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel">ContextCalculator</span></pre>
 <li class="blockList">
 <h4>accumulateContexts</h4>
 <pre class="methodSignature">void&nbsp;accumulateContexts&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;source,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;accumulator)</pre>
+                        java.util.function.Consumer&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;accumulator)</pre>
 <div class="block">Adds any <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s this calculator determines to be applicable to
  the <code>target</code> contextual.
 
@@ -253,7 +253,7 @@ public interface <span class="typeNameLabel">ContextCalculator</span></pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - The cause stack to draw from for this operation</dd>
-<dd><code>accumulator</code> - a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s this operation
+<dd><code>accumulator</code> - a <code>Set</code> of <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s this operation
                     will accumulate to.</dd>
 </dl>
 </li>

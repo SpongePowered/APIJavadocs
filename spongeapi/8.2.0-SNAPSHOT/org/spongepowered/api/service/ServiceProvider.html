@@ -182,17 +182,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#provide(java.lang.Class)">provide</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;serviceClass)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#provide(java.lang.Class)">provide</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;serviceClass)</code></th>
 <td class="colLast">
-<div class="block">Provides the service represented by the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+<div class="block">Provides the service represented by the supplied <code>Class</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service">ServiceRegistration</a>&lt;T&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registration(java.lang.Class)">registration</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;serviceClass)</code></th>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service">ServiceRegistration</a>&lt;T&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registration(java.lang.Class)">registration</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;serviceClass)</code></th>
 <td class="colLast">
-<div class="block">Provides the <a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service"><code>ServiceRegistration</code></a> for the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+<div class="block">Provides the <a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service"><code>ServiceRegistration</code></a> for the supplied <code>Class</code>.</div>
 </td>
 </tr>
 </table>
@@ -218,8 +218,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>provide</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;provide&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;serviceClass)</pre>
-<div class="block">Provides the service represented by the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;provide&#8203;(java.lang.Class&lt;T&gt;&nbsp;serviceClass)</pre>
+<div class="block">Provides the service represented by the supplied <code>Class</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of service</dd>
@@ -236,8 +236,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>registration</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service">ServiceRegistration</a>&lt;T&gt;&gt;&nbsp;registration&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;serviceClass)</pre>
-<div class="block">Provides the <a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service"><code>ServiceRegistration</code></a> for the supplied <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;<a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service">ServiceRegistration</a>&lt;T&gt;&gt;&nbsp;registration&#8203;(java.lang.Class&lt;T&gt;&nbsp;serviceClass)</pre>
+<div class="block">Provides the <a href="ServiceRegistration.html" title="interface in org.spongepowered.api.service"><code>ServiceRegistration</code></a> for the supplied <code>Class</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - The type of service</dd>

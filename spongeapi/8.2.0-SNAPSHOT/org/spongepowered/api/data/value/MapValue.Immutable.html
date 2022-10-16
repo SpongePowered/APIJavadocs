@@ -128,7 +128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;</code>, <code><a href="Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;</code>, <code><a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;</code></dd>
+<dd><code><a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;</code>, <code><a href="Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;java.util.Map&lt;K,&#8203;V&gt;&gt;</code>, <code><a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;java.util.Map&lt;K,&#8203;V&gt;&gt;</code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
@@ -136,10 +136,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public static interface <span class="typeNameLabel">MapValue.Immutable&lt;K,&#8203;V&gt;</span>
-extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;, <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;K,&#8203;V&gt;&gt;</pre>
+extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;K,&#8203;V&gt;, <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;java.util.Map&lt;K,&#8203;V&gt;&gt;</pre>
 <div class="block">Represents a specialized type of <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> that is different
  from an <a href="CollectionValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>CollectionValue.Immutable</code></a> such that the "elements" are
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a>. Usually, this type of value is used to represent
+ <code>Map.Entry</code>. Usually, this type of value is used to represent
  a particular "type" of "key" that is associated to a particular "value".</div>
 </li>
 </ul>
@@ -208,16 +208,16 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(java.util.function.Function)">transform</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;function)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(java.util.function.Function)">transform</a></span>&#8203;(java.util.function.Function&lt;java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;,&#8203;java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Retrieves the underlying value for this <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> and
- applies the given <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> onto that value, after which, the
+ applies the given <code>Function</code> onto that value, after which, the
  product is sent to a new <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> replacing this one.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.util.Map)">with</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.util.Map)">with</a></span>&#8203;(java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> with the given <code>E</code> typed
  value, such that if the owning <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> is immutable, the
@@ -235,9 +235,9 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAll(java.util.Map)">withAll</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;map)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withAll(java.util.Map)">withAll</a></span>&#8203;(java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;map)</code></th>
 <td class="colLast">
-<div class="block">Associates all provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a> along with all pre-existing
+<div class="block">Associates all provided <code>Map.Entry</code> along with all pre-existing
  map entries in a new <a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>MapValue.Immutable</code></a>.</div>
 </td>
 </tr>
@@ -251,7 +251,7 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withoutAll(java.lang.Iterable)">withoutAll</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>&gt;&nbsp;keys)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withoutAll(java.lang.Iterable)">withoutAll</a></span>&#8203;(java.lang.Iterable&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>&gt;&nbsp;keys)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>MapValue.Immutable</code></a> without the provided keys and
  their associated values.</div>
@@ -259,10 +259,10 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withoutAll(java.util.function.Predicate)">withoutAll</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withoutAll(java.util.function.Predicate)">withoutAll</a></span>&#8203;(java.util.function.Predicate&lt;java.util.Map.Entry&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>MapValue.Immutable</code></a> such that all entries are
- filtered by the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a>, any that return
+ filtered by the provided <code>Predicate</code>, any that return
  <code>true</code> are retained in the new value.</div>
 </td>
 </tr>
@@ -325,8 +325,8 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 <ul class="blockList">
 <li class="blockList">
 <h4>withAll</h4>
-<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;withAll&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;map)</pre>
-<div class="block">Associates all provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map.Entry</code></a> along with all pre-existing
+<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;withAll&#8203;(java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;map)</pre>
+<div class="block">Associates all provided <code>Map.Entry</code> along with all pre-existing
  map entries in a new <a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>MapValue.Immutable</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -361,7 +361,7 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 <ul class="blockList">
 <li class="blockList">
 <h4>withoutAll</h4>
-<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;withoutAll&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>&gt;&nbsp;keys)</pre>
+<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;withoutAll&#8203;(java.lang.Iterable&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>&gt;&nbsp;keys)</pre>
 <div class="block">Creates a new <a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>MapValue.Immutable</code></a> without the provided keys and
  their associated values.</div>
 <dl>
@@ -378,11 +378,11 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 <ul class="blockList">
 <li class="blockList">
 <h4>withoutAll</h4>
-<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;withoutAll&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;withoutAll&#8203;(java.util.function.Predicate&lt;java.util.Map.Entry&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;predicate)</pre>
 <div class="block">Creates a new <a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>MapValue.Immutable</code></a> such that all entries are
- filtered by the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a>, any that return
+ filtered by the provided <code>Predicate</code>, any that return
  <code>true</code> are retained in the new value. Elements that return
- <code>true</code> from <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> are kept, and
+ <code>true</code> from <code>Predicate.test(Object)</code> are kept, and
  those that return <code>false</code> are excluded.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -398,7 +398,7 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;with&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;value)</pre>
+<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;with&#8203;(java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;value)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Value.Immutable.html#with(E)">Value.Immutable</a></code></span></div>
 <div class="block">Creates a new <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> with the given <code>E</code> typed
  value, such that if the owning <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> is immutable, the
@@ -421,10 +421,10 @@ extends <a href="MapValue.html" title="interface in org.spongepowered.api.data.v
 <ul class="blockList">
 <li class="blockList">
 <h4>transform</h4>
-<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;transform&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;function)</pre>
+<pre class="methodSignature"><a href="MapValue.Immutable.html" title="interface in org.spongepowered.api.data.value">MapValue.Immutable</a>&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&nbsp;transform&#8203;(java.util.function.Function&lt;java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;,&#8203;java.util.Map&lt;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">K</a>,&#8203;<a href="MapValue.Immutable.html" title="type parameter in MapValue.Immutable">V</a>&gt;&gt;&nbsp;function)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Value.Immutable.html#transform(java.util.function.Function)">Value.Immutable</a></code></span></div>
 <div class="block">Retrieves the underlying value for this <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> and
- applies the given <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a> onto that value, after which, the
+ applies the given <code>Function</code> onto that value, after which, the
  product is sent to a new <a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Immutable</code></a> replacing this one.
 
  <p>If the <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a> too is immutable, a new instance of

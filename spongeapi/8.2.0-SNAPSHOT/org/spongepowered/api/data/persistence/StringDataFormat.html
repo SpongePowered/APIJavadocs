@@ -151,34 +151,34 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(java.lang.String)">read</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;input)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(java.lang.String)">read</a></span>&#8203;(java.lang.String&nbsp;input)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a> from the contents of the given
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</div>
+ <code>String</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readFrom(java.io.Reader)">readFrom</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink">Reader</a>&nbsp;input)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readFrom(java.io.Reader)">readFrom</a></span>&#8203;(java.io.Reader&nbsp;input)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a> from the contents of the given
- <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>Reader</code></a>.</div>
+ <code>Reader</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(org.spongepowered.api.data.persistence.DataView)">write</a></span>&#8203;(<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;data)</code></th>
 <td class="colLast">
-<div class="block">Serializes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> using
+<div class="block">Serializes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to a <code>String</code> using
  the format specified by this <a href="DataFormat.html" title="interface in org.spongepowered.api.data.persistence"><code>DataFormat</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTo(java.io.Writer,org.spongepowered.api.data.persistence.DataView)">writeTo</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io" class="externalLink">Writer</a>&nbsp;output,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTo(java.io.Writer,org.spongepowered.api.data.persistence.DataView)">writeTo</a></span>&#8203;(java.io.Writer&nbsp;output,
        <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;data)</code></th>
 <td class="colLast">
-<div class="block">Writes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to the given <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>Writer</code></a> using
+<div class="block">Writes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to the given <code>Writer</code> using
  the format specified by this <a href="DataFormat.html" title="interface in org.spongepowered.api.data.persistence"><code>DataFormat</code></a>.</div>
 </td>
 </tr>
@@ -219,11 +219,11 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>read</h4>
-<pre class="methodSignature"><a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a>&nbsp;read&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;input)
+<pre class="methodSignature"><a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a>&nbsp;read&#8203;(java.lang.String&nbsp;input)
             throws <a href="InvalidDataException.html" title="class in org.spongepowered.api.data.persistence">InvalidDataException</a>,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+                   java.io.IOException</pre>
 <div class="block">Creates a new <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a> from the contents of the given
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</div>
+ <code>String</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - The string to parse</dd>
@@ -232,7 +232,7 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="InvalidDataException.html" title="class in org.spongepowered.api.data.persistence">InvalidDataException</a></code> - If the data in the string was not a
          supported format</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code> - If there was an error reading from the string</dd>
+<dd><code>java.io.IOException</code> - If there was an error reading from the string</dd>
 </dl>
 </li>
 </ul>
@@ -242,11 +242,11 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>readFrom</h4>
-<pre class="methodSignature"><a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a>&nbsp;readFrom&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink">Reader</a>&nbsp;input)
+<pre class="methodSignature"><a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a>&nbsp;readFrom&#8203;(java.io.Reader&nbsp;input)
                 throws <a href="InvalidDataException.html" title="class in org.spongepowered.api.data.persistence">InvalidDataException</a>,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+                       java.io.IOException</pre>
 <div class="block">Creates a new <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a> from the contents of the given
- <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>Reader</code></a>.</div>
+ <code>Reader</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - The reader</dd>
@@ -255,7 +255,7 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="InvalidDataException.html" title="class in org.spongepowered.api.data.persistence">InvalidDataException</a></code> - If the data in the reader was not a
          supported format</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code> - If there was an error reading from the reader</dd>
+<dd><code>java.io.IOException</code> - If there was an error reading from the reader</dd>
 </dl>
 </li>
 </ul>
@@ -265,9 +265,9 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>write</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;write&#8203;(<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;data)
-      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
-<div class="block">Serializes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> using
+<pre class="methodSignature">java.lang.String&nbsp;write&#8203;(<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;data)
+                throws java.io.IOException</pre>
+<div class="block">Serializes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to a <code>String</code> using
  the format specified by this <a href="DataFormat.html" title="interface in org.spongepowered.api.data.persistence"><code>DataFormat</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -275,7 +275,7 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The serialized data view</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code> - If there was an error serializing the data</dd>
+<dd><code>java.io.IOException</code> - If there was an error serializing the data</dd>
 </dl>
 </li>
 </ul>
@@ -285,17 +285,17 @@ extends <a href="DataFormat.html" title="interface in org.spongepowered.api.data
 <ul class="blockListLast">
 <li class="blockList">
 <h4>writeTo</h4>
-<pre class="methodSignature">void&nbsp;writeTo&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io" class="externalLink">Writer</a>&nbsp;output,
+<pre class="methodSignature">void&nbsp;writeTo&#8203;(java.io.Writer&nbsp;output,
              <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;data)
-      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
-<div class="block">Writes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to the given <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>Writer</code></a> using
+      throws java.io.IOException</pre>
+<div class="block">Writes the given <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> to the given <code>Writer</code> using
  the format specified by this <a href="DataFormat.html" title="interface in org.spongepowered.api.data.persistence"><code>DataFormat</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>output</code> - The writer to write the data to</dd>
 <dd><code>data</code> - The DataView to write to the writer</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code> - If there was an error writing to the writer</dd>
+<dd><code>java.io.IOException</code> - If there was an error writing to the writer</dd>
 </dl>
 </li>
 </ul>

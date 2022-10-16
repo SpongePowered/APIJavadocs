@@ -188,18 +188,18 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#complete(org.spongepowered.api.command.CommandCause,org.spongepowered.api.command.manager.CommandMapping,java.lang.String,java.lang.String)">complete</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
         <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;command,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+        java.lang.String&nbsp;command,
+        java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Provides a list of completions associated with the provided argument
  string.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#help(org.spongepowered.api.command.CommandCause,org.spongepowered.api.command.manager.CommandMapping)">help</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
     <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</code></th>
 <td class="colLast">
@@ -210,8 +210,8 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <td class="colFirst"><code><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#process(org.spongepowered.api.command.CommandCause,org.spongepowered.api.command.manager.CommandMapping,java.lang.String,java.lang.String)">process</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
        <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;command,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)</code></th>
+       java.lang.String&nbsp;command,
+       java.lang.String&nbsp;arguments)</code></th>
 <td class="colLast">
 <div class="block">Process the provided command.</div>
 </td>
@@ -220,14 +220,14 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <td class="colFirst"><code><a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#register(org.spongepowered.plugin.PluginContainer,T,java.lang.String,java.lang.String...)">register</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;container,
         <a href="CommandRegistrar.html" title="type parameter in CommandRegistrar">T</a>&nbsp;command,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;primaryAlias,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;secondaryAliases)</code></th>
+        java.lang.String&nbsp;primaryAlias,
+        java.lang.String...&nbsp;secondaryAliases)</code></th>
 <td class="colLast">
 <div class="block">Registers a command.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shortDescription(org.spongepowered.api.command.CommandCause,org.spongepowered.api.command.manager.CommandMapping)">shortDescription</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
                 <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</code></th>
 <td class="colLast">
@@ -283,8 +283,8 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <h4>register</h4>
 <pre class="methodSignature"><a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;register&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;container,
                         <a href="CommandRegistrar.html" title="type parameter in CommandRegistrar">T</a>&nbsp;command,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;primaryAlias,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;secondaryAliases)
+                        java.lang.String&nbsp;primaryAlias,
+                        java.lang.String...&nbsp;secondaryAliases)
                  throws <a href="../manager/CommandFailedRegistrationException.html" title="class in org.spongepowered.api.command.manager">CommandFailedRegistrationException</a></pre>
 <div class="block">Registers a command.</div>
 <dl>
@@ -308,8 +308,8 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <h4>process</h4>
 <pre class="methodSignature"><a href="../CommandResult.html" title="interface in org.spongepowered.api.command">CommandResult</a>&nbsp;process&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
                       <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;command,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
+                      java.lang.String&nbsp;command,
+                      java.lang.String&nbsp;arguments)
                throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Process the provided command.
 
@@ -339,11 +339,11 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <h4>complete</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
-                                 <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;command,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;arguments)
-                          throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;complete&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
+                                           <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping,
+                                           java.lang.String&nbsp;command,
+                                           java.lang.String&nbsp;arguments)
+                                    throws <a href="../exception/CommandException.html" title="class in org.spongepowered.api.command.exception">CommandException</a></pre>
 <div class="block">Provides a list of completions associated with the provided argument
  string.
 
@@ -372,8 +372,8 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <h4>shortDescription</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;shortDescription&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
-                                             <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;shortDescription&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
+                                                       <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</pre>
 <div class="block">Returns a short description for the invoked command, if one is
  available.
 
@@ -402,8 +402,8 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <h4>help</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.10.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;help&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
-                         <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;help&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
+                                   <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</pre>
 <div class="block">Returns help text for the invoked command, if one is available.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

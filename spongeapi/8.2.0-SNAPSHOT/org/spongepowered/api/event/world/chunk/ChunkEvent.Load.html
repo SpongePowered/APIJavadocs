@@ -133,7 +133,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public static interface <span class="typeNameLabel">ChunkEvent.Load</span>
 extends <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></pre>
 <div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is loaded. This can be called
- outside the <a href="../../../world/WorldLike.html#engine()"><code>main</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Thread</code></a>. It is NOT safe
+ outside the <a href="../../../world/WorldLike.html#engine()"><code>main</code></a> <code>Thread</code>. It is NOT safe
  to perform modifications to the <a href="../../../world/World.html" title="interface in org.spongepowered.api.world"><code>World</code></a> or via
  <a href="../../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a> as this could
  result in a deadlock.</div>

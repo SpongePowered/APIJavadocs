@@ -187,7 +187,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="CommandTreeNode.Range.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Range</a>&lt;<a href="CommandTreeNode.Range.html" title="type parameter in CommandTreeNode.Range">S</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink">Number</a>&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="CommandTreeNode.Range.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Range</a>&lt;<a href="CommandTreeNode.Range.html" title="type parameter in CommandTreeNode.Range">S</a> extends java.lang.Number&gt;</span></code></th>
 <td class="colLast">
 <div class="block">A <a href="CommandTreeNode.html" title="interface in org.spongepowered.api.command.registrar.tree"><code>CommandTreeNode</code></a> that allows for a min-max range to be set.</div>
 </td>
@@ -227,7 +227,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#child(java.lang.String,org.spongepowered.api.command.registrar.tree.CommandTreeNode.Argument)">child</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#child(java.lang.String,org.spongepowered.api.command.registrar.tree.CommandTreeNode.Argument)">child</a></span>&#8203;(java.lang.String&nbsp;key,
      <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;?&gt;&nbsp;childNode)</code></th>
 <td class="colLast">
 <div class="block">Creates a child of this node with the given key that accepts a
@@ -236,9 +236,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default &lt;C extends <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;C&gt;&gt;<br><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#child(java.lang.String,org.spongepowered.api.command.registrar.tree.CommandTreeNodeType,java.util.function.Consumer)">child</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#child(java.lang.String,org.spongepowered.api.command.registrar.tree.CommandTreeNodeType,java.util.function.Consumer)">child</a></span>&#8203;(java.lang.String&nbsp;key,
      <a href="CommandTreeNodeType.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNodeType</a>&lt;C&gt;&nbsp;type,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;C&gt;&nbsp;processor)</code></th>
+     java.util.function.Consumer&lt;C&gt;&nbsp;processor)</code></th>
 <td class="colLast">
 <div class="block">Creates a child of this node with the given key that accepts a
  non-literal argument.</div>
@@ -246,9 +246,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default &lt;C extends <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;C&gt;&gt;<br><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#child(java.lang.String,org.spongepowered.api.registry.DefaultedRegistryReference,java.util.function.Consumer)">child</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#child(java.lang.String,org.spongepowered.api.registry.DefaultedRegistryReference,java.util.function.Consumer)">child</a></span>&#8203;(java.lang.String&nbsp;key,
      <a href="../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="CommandTreeNodeType.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNodeType</a>&lt;C&gt;&gt;&nbsp;type,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;C&gt;&nbsp;processor)</code></th>
+     java.util.function.Consumer&lt;C&gt;&nbsp;processor)</code></th>
 <td class="colLast">
 <div class="block">Creates a child of this node with the given key that accepts a
  non-literal argument.</div>
@@ -306,7 +306,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requires(java.util.function.Predicate)">requires</a></span>&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requires(java.util.function.Predicate)">requires</a></span>&#8203;(@Nullable java.util.function.Predicate&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement)</code></th>
 <td class="colLast">
 <div class="block">Declares that this element can only be parsed by those with the given
  requirement.</div>
@@ -382,7 +382,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>child</h4>
-<pre class="methodSignature"><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;child&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<pre class="methodSignature"><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;child&#8203;(java.lang.String&nbsp;key,
         <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;?&gt;&nbsp;childNode)</pre>
 <div class="block">Creates a child of this node with the given key that accepts a
  non-literal argument.
@@ -407,9 +407,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>child</h4>
-<pre class="methodSignature">default&nbsp;&lt;C extends <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;C&gt;&gt;&nbsp;<a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;child&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<pre class="methodSignature">default&nbsp;&lt;C extends <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;C&gt;&gt;&nbsp;<a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;child&#8203;(java.lang.String&nbsp;key,
                                                         <a href="../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="CommandTreeNodeType.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNodeType</a>&lt;C&gt;&gt;&nbsp;type,
-                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;C&gt;&nbsp;processor)</pre>
+                                                        java.util.function.Consumer&lt;C&gt;&nbsp;processor)</pre>
 <div class="block">Creates a child of this node with the given key that accepts a
  non-literal argument.
 
@@ -439,9 +439,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>child</h4>
-<pre class="methodSignature">default&nbsp;&lt;C extends <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;C&gt;&gt;&nbsp;<a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;child&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<pre class="methodSignature">default&nbsp;&lt;C extends <a href="CommandTreeNode.Argument.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Argument</a>&lt;C&gt;&gt;&nbsp;<a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;child&#8203;(java.lang.String&nbsp;key,
                                                         <a href="CommandTreeNodeType.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNodeType</a>&lt;C&gt;&nbsp;type,
-                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;C&gt;&nbsp;processor)</pre>
+                                                        java.util.function.Consumer&lt;C&gt;&nbsp;processor)</pre>
 <div class="block">Creates a child of this node with the given key that accepts a
  non-literal argument.
 
@@ -492,7 +492,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>requires</h4>
-<pre class="methodSignature"><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;requires&#8203;(@Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement)</pre>
+<pre class="methodSignature"><a href="CommandTreeNode.html" title="type parameter in CommandTreeNode">T</a>&nbsp;requires&#8203;(@Nullable java.util.function.Predicate&lt;<a href="../../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&gt;&nbsp;requirement)</pre>
 <div class="block">Declares that this element can only be parsed by those with the given
  requirement.</div>
 <dl>

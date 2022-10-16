@@ -123,11 +123,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code>, <code><a href="../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">PackContents</span>
-extends <a href="../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></pre>
+extends <a href="../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a>, java.lang.AutoCloseable</pre>
 <div class="block">Represents the container that stores <a href="../Resource.html" title="interface in org.spongepowered.api.resource"><code>resources</code></a> for retrieval.</div>
 </li>
 </ul>
@@ -163,19 +163,19 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#namespaces(org.spongepowered.api.resource.pack.PackType)">namespaces</a></span>&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type)</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>namespaces</code></a> per <a href="PackType.html" title="interface in org.spongepowered.api.resource.pack"><code>type</code></a>.</div>
+<div class="block">Gets the <code>namespaces</code> per <a href="PackType.html" title="interface in org.spongepowered.api.resource.pack"><code>type</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#paths(org.spongepowered.api.resource.pack.PackType,java.lang.String,java.lang.String,int,java.util.function.Predicate)">paths</a></span>&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;namespace,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;prefix,
+     java.lang.String&nbsp;namespace,
+     java.lang.String&nbsp;prefix,
      int&nbsp;depth,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;filter)</code></th>
+     java.util.function.Predicate&lt;java.lang.String&gt;&nbsp;filter)</code></th>
 <td class="colLast">
 <div class="block">Finds all the <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource"><code>ResourcePath</code></a>s in this pack matching the
  prefix and filter, and within the given depth.</div>
@@ -191,7 +191,7 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Resource.html" title="interface in org.spongepowered.api.resource">Resource</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../Resource.html" title="interface in org.spongepowered.api.resource">Resource</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resource(org.spongepowered.api.resource.pack.PackType,org.spongepowered.api.resource.ResourcePath)">resource</a></span>&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
         <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&nbsp;path)</code></th>
 <td class="colLast">
@@ -229,9 +229,9 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <ul class="blockList">
 <li class="blockList">
 <h4>resource</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../Resource.html" title="interface in org.spongepowered.api.resource">Resource</a>&gt;&nbsp;resource&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
-                            <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&nbsp;path)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../Resource.html" title="interface in org.spongepowered.api.resource">Resource</a>&gt;&nbsp;resource&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
+                                      <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&nbsp;path)
+                               throws java.io.IOException</pre>
 <div class="block">Gets a <a href="../Resource.html" title="interface in org.spongepowered.api.resource"><code>resource</code></a> within a <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource"><code>path</code></a> per
  <a href="PackType.html" title="interface in org.spongepowered.api.resource.pack"><code>type</code></a>.
 
@@ -244,7 +244,7 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The resource</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -256,7 +256,7 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <h4>requireResource</h4>
 <pre class="methodSignature"><a href="../Resource.html" title="interface in org.spongepowered.api.resource">Resource</a>&nbsp;requireResource&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
                          <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&nbsp;path)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+                  throws java.io.IOException</pre>
 <div class="block">Gets a <a href="../Resource.html" title="interface in org.spongepowered.api.resource"><code>resource</code></a> within a <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource"><code>path</code></a> per
  <a href="PackType.html" title="interface in org.spongepowered.api.resource.pack"><code>type</code></a>.
 
@@ -269,7 +269,7 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The resource</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -279,11 +279,11 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <ul class="blockList">
 <li class="blockList">
 <h4>paths</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&gt;&nbsp;paths&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;namespace,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;prefix,
-                               int&nbsp;depth,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;filter)</pre>
+<pre class="methodSignature">java.util.Collection&lt;<a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource">ResourcePath</a>&gt;&nbsp;paths&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type,
+                                         java.lang.String&nbsp;namespace,
+                                         java.lang.String&nbsp;prefix,
+                                         int&nbsp;depth,
+                                         java.util.function.Predicate&lt;java.lang.String&gt;&nbsp;filter)</pre>
 <div class="block">Finds all the <a href="../ResourcePath.html" title="interface in org.spongepowered.api.resource"><code>ResourcePath</code></a>s in this pack matching the
  prefix and filter, and within the given depth.</div>
 <dl>
@@ -326,8 +326,8 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <ul class="blockList">
 <li class="blockList">
 <h4>namespaces</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;namespaces&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type)</pre>
-<div class="block">Gets the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>namespaces</code></a> per <a href="PackType.html" title="interface in org.spongepowered.api.resource.pack"><code>type</code></a>.</div>
+<pre class="methodSignature">java.util.Set&lt;java.lang.String&gt;&nbsp;namespaces&#8203;(<a href="PackType.html" title="interface in org.spongepowered.api.resource.pack">PackType</a>&nbsp;type)</pre>
+<div class="block">Gets the <code>namespaces</code> per <a href="PackType.html" title="interface in org.spongepowered.api.resource.pack"><code>type</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - The type</dd>
@@ -345,7 +345,7 @@ extends <a href="../../util/Nameable.html" title="interface in org.spongepowered
 <pre class="methodSignature">void&nbsp;close()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close()" title="class or interface in java.lang" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
 </dl>
 </li>
 </ul>

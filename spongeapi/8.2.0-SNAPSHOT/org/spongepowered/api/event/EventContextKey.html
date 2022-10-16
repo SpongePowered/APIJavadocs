@@ -127,7 +127,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/key/4.10.0/net/kyori/adventure/key/Keyed.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Keyed.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
 </dl>
 <hr>
 <pre><a href="../util/annotation/CatalogedBy.html" title="annotation in org.spongepowered.api.util.annotation">@CatalogedBy</a>(<a href="EventContextKeys.html" title="class in org.spongepowered.api.event">EventContextKeys.class</a>)
@@ -178,7 +178,7 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a></code></td>
+<td class="colFirst"><code>java.lang.reflect.Type</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allowedType()">allowedType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the allowed type for the value of this key.</div>
@@ -193,14 +193,14 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="EventContextKey.html" title="type parameter in EventContextKey">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cast(java.lang.Object)">cast</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cast(java.lang.Object)">cast</a></span>&#8203;(java.lang.Object&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Cast the provided value to the value type.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInstance(java.lang.Object)">isInstance</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInstance(java.lang.Object)">isInstance</a></span>&#8203;(java.lang.Object&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Return whether the value is an instance of this key's value type.</div>
 </td>
@@ -249,7 +249,7 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>allowedType</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a>&nbsp;allowedType()</pre>
+<pre class="methodSignature">java.lang.reflect.Type&nbsp;allowedType()</pre>
 <div class="block">Gets the allowed type for the value of this key.
 
  <p>This is a concrete type equal to the parameter <code>T</code></p></div>
@@ -265,7 +265,7 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <ul class="blockList">
 <li class="blockList">
 <h4>isInstance</h4>
-<pre class="methodSignature">boolean&nbsp;isInstance&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</pre>
+<pre class="methodSignature">boolean&nbsp;isInstance&#8203;(java.lang.Object&nbsp;value)</pre>
 <div class="block">Return whether the value is an instance of this key's value type.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -281,7 +281,7 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <ul class="blockListLast">
 <li class="blockList">
 <h4>cast</h4>
-<pre class="methodSignature"><a href="EventContextKey.html" title="type parameter in EventContextKey">T</a>&nbsp;cast&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</pre>
+<pre class="methodSignature"><a href="EventContextKey.html" title="type parameter in EventContextKey">T</a>&nbsp;cast&#8203;(java.lang.Object&nbsp;value)</pre>
 <div class="block">Cast the provided value to the value type.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -289,7 +289,7 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the casted value</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ClassCastException</a></code> - if <code>value</code> is not of the correct type</dd>
+<dd><code>java.lang.ClassCastException</code> - if <code>value</code> is not of the correct type</dd>
 </dl>
 </li>
 </ul>

@@ -127,15 +127,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  services that may wish to use contexts.
 
  <p>When functionality is provided to query data based upon a given
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s, the querying code must consider which of the
+ <code>Set</code> of <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s, the querying code must consider which of the
  underlying data is "applicable" to the contexts specified in the query
  request. It is expected that implementations will deem entries of underlying
- data to be applicable if the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> of contexts defined in the query
+ data to be applicable if the <code>Set</code> of contexts defined in the query
  contain all of the <a href="Context.html" title="class in org.spongepowered.api.service.context"><code>Context</code></a>s required by the data entry.
  Mathematically, an underlying data entry is "applicable" if
  [the context of the entry] is a subset of [the context provided in the
  query], or programmatically if [the context provided in the query]
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#containsAll(java.util.Collection)" title="class or interface in java.util" class="externalLink"><code>Set.containsAll(Collection)</code></a> of [the context of the entry].</p></div>
+ <code>Set.containsAll(Collection)</code> of [the context of the entry].</p></div>
 </li>
 </ul>
 </div>
@@ -157,14 +157,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contexts()">contexts</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the active contexts from the current cause.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Set&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contextsFor(org.spongepowered.api.event.Cause)">contextsFor</a></span>&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Extract applicable contexts from the provided <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
@@ -200,7 +200,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>contexts</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts()</pre>
+<pre class="methodSignature">java.util.Set&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts()</pre>
 <div class="block">Get the active contexts from the current cause.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -214,7 +214,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>contextsFor</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contextsFor&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
+<pre class="methodSignature">java.util.Set&lt;<a href="Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contextsFor&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block">Extract applicable contexts from the provided <a href="../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

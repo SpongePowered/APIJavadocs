@@ -195,28 +195,28 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default &lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(java.util.function.Supplier,java.util.function.Function)">transform</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
+<td class="colFirst"><code>default &lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(java.util.function.Supplier,java.util.function.Function)">transform</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
+         java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Applies a transformation on the provided <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> such that
- the return value of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink"><code>Function.apply(Object)</code></a> will become the end
+ the return value of <code>Function.apply(Object)</code> will become the end
  resulting value set into the newly created <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<td class="colFirst"><code>&lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(org.spongepowered.api.data.Key,java.util.function.Function)">transform</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
+         java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Applies a transformation on the provided <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> such that
- the return value of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink"><code>Function.apply(Object)</code></a> will become the end
+ the return value of <code>Function.apply(Object)</code> will become the end
  resulting value set into the newly created <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>default &lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.util.function.Supplier,E)">with</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
+<td class="colFirst"><code>default &lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.util.function.Supplier,E)">with</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
     E&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> with the provided
@@ -224,7 +224,7 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<td class="colFirst"><code>&lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(org.spongepowered.api.data.Key,E)">with</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
     E&nbsp;value)</code></th>
 <td class="colLast">
@@ -233,7 +233,7 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(org.spongepowered.api.data.value.Value)">with</a></span>&#8203;(<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Offers the given <code>value</code> as defined by the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>
@@ -242,21 +242,21 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#without(java.util.function.Supplier)">without</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;&nbsp;key)</code></th>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#without(java.util.function.Supplier)">without</a></span>&#8203;(java.util.function.Supplier&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> without the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#without(org.spongepowered.api.data.Key)">without</a></span>&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> without the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#without(org.spongepowered.api.data.value.Value)">without</a></span>&#8203;(<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> without the key of the provided
@@ -293,10 +293,10 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>transform</h4>
-<pre class="methodSignature">&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;transform&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</pre>
+<pre class="methodSignature">&lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;transform&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
+                                    java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</pre>
 <div class="block">Applies a transformation on the provided <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> such that
- the return value of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink"><code>Function.apply(Object)</code></a> will become the end
+ the return value of <code>Function.apply(Object)</code> will become the end
  resulting value set into the newly created <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -315,10 +315,10 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>transform</h4>
-<pre class="methodSignature">default&nbsp;&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;transform&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</pre>
+<pre class="methodSignature">default&nbsp;&lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;transform&#8203;(java.util.function.Supplier&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
+                                            java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</pre>
 <div class="block">Applies a transformation on the provided <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a> such that
- the return value of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#apply(T)" title="class or interface in java.util.function" class="externalLink"><code>Function.apply(Object)</code></a> will become the end
+ the return value of <code>Function.apply(Object)</code> will become the end
  resulting value set into the newly created <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -339,8 +339,8 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature">&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;with&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-                     E&nbsp;value)</pre>
+<pre class="methodSignature">&lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;with&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
+                               E&nbsp;value)</pre>
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> with the provided
  value by <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>. If the key is supported by this value store,
  the returned value store will be present.</div>
@@ -363,8 +363,8 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature">default&nbsp;&lt;E&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;with&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-                             E&nbsp;value)</pre>
+<pre class="methodSignature">default&nbsp;&lt;E&gt;&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;with&#8203;(java.util.function.Supplier&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
+                                       E&nbsp;value)</pre>
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> with the provided
  value by <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>. If the key is supported by this value store,
  the returned value store will be present.</div>
@@ -385,7 +385,7 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>with</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;with&#8203;(<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&nbsp;value)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;with&#8203;(<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&nbsp;value)</pre>
 <div class="block">Offers the given <code>value</code> as defined by the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>
  such that if the <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> is supported, a new
  <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> is created.</div>
@@ -403,7 +403,7 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>without</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;without&#8203;(<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&nbsp;value)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;without&#8203;(<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&nbsp;value)</pre>
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> without the key of the provided
  <a href="value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>. If the key is supported by this value store,
  the returned value store will be present.</div>
@@ -421,7 +421,7 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>without</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;without&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&nbsp;key)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;without&#8203;(<a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&nbsp;key)</pre>
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> without the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>. If the
  key is supported by this value store, the returned value store will
  be present.</div>
@@ -439,7 +439,7 @@ extends <a href="DataHolder.html" title="interface in org.spongepowered.api.data
 <ul class="blockList">
 <li class="blockList">
 <h4>without</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;without&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&nbsp;without&#8203;(java.util.function.Supplier&lt;? extends <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;&nbsp;key)</pre>
 <div class="block">Creates a new <a href="DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> without the provided <a href="Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>. If the
  key is supported by this value store, the returned value store will
  be present.</div>

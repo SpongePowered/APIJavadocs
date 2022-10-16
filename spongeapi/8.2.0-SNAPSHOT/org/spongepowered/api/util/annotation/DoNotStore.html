@@ -114,9 +114,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Documented</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Inherited.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Inherited</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation" class="externalLink">TYPE</a>)
+<pre>@Documented
+@Inherited
+@Target(TYPE)
 public @interface <span class="memberNameLabel">DoNotStore</span></pre>
 <div class="block"><p>In particular, you should not:</p>
 
@@ -128,7 +128,7 @@ public @interface <span class="memberNameLabel">DoNotStore</span></pre>
  <p>Doing so may result in memory leaks and/or result in you operating on a stale object,
  meaning your operations will fail, often silently.</p>
 
- <p>Where objects have identifiers (usually a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>UUID</code></a> or name),
+ <p>Where objects have identifiers (usually a <code>UUID</code> or name),
  you should store the identifiers instead, and use these to get the required object
  from the API when needed.</p></div>
 </li>

@@ -153,18 +153,18 @@ extends <a href="AffectItemStackEvent.html" title="interface in org.spongepowere
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(java.util.function.Predicate)">filter</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate)</code></th>
+<td class="colFirst"><code>default java.util.List&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(java.util.function.Predicate)">filter</a></span>&#8203;(java.util.function.Predicate&lt;<a href="../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
-<div class="block">Applies the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of
+<div class="block">Applies the provided <code>Predicate</code> to the <code>List</code> of
  <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s from <a href="AffectItemStackEvent.html#transactions()"><code>AffectItemStackEvent.transactions()</code></a> such that
- any time that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ any time that <code>Predicate.test(Object)</code> returns <code>false</code>
  on a <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>, the <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a> is
  marked as "invalid" and will not apply post event.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactions()">transactions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets a list of the <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s for this event.</div>
@@ -207,7 +207,7 @@ extends <a href="AffectItemStackEvent.html" title="interface in org.spongepowere
 <ul class="blockList">
 <li class="blockList">
 <h4>transactions</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;&nbsp;transactions()</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;&nbsp;transactions()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="AffectItemStackEvent.html#transactions()">AffectItemStackEvent</a></code></span></div>
 <div class="block">Gets a list of the <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s for this event. If a
  transaction is requested to be marked as "invalid",
@@ -226,11 +226,11 @@ extends <a href="AffectItemStackEvent.html" title="interface in org.spongepowere
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filter</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;&nbsp;filter&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Predicate</a>&lt;<a href="../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;java.util.List&lt;<a href="../../../item/inventory/transaction/SlotTransaction.html" title="class in org.spongepowered.api.item.inventory.transaction">SlotTransaction</a>&gt;&nbsp;filter&#8203;(java.util.function.Predicate&lt;<a href="../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="AffectItemStackEvent.html#filter(java.util.function.Predicate)">AffectItemStackEvent</a></code></span></div>
-<div class="block">Applies the provided <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of
+<div class="block">Applies the provided <code>Predicate</code> to the <code>List</code> of
  <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>s from <a href="AffectItemStackEvent.html#transactions()"><code>AffectItemStackEvent.transactions()</code></a> such that
- any time that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true#test(T)" title="class or interface in java.util.function" class="externalLink"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ any time that <code>Predicate.test(Object)</code> returns <code>false</code>
  on a <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a>, the <a href="../../../data/Transaction.html" title="class in org.spongepowered.api.data"><code>Transaction</code></a> is
  marked as "invalid" and will not apply post event.
 

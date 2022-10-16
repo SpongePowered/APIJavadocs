@@ -130,7 +130,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">EventListener&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</span></pre>
 <div class="block">Represents a listener accepting <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s of a specified type.</div>
 </li>
@@ -186,13 +186,13 @@ public interface <span class="typeNameLabel">EventListener&lt;T extends <a href=
 <li class="blockList">
 <h4>handle</h4>
 <pre class="methodSignature">void&nbsp;handle&#8203;(<a href="EventListener.html" title="type parameter in EventListener">T</a>&nbsp;event)
-     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a></pre>
+     throws java.lang.Exception</pre>
 <div class="block">Called when a <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> registered to this listener is called.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>event</code> - The called event</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a></code> - If an error occurs</dd>
+<dd><code>java.lang.Exception</code> - If an error occurs</dd>
 </dl>
 </li>
 </ul>

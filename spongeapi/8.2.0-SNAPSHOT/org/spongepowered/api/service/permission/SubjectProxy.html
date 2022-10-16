@@ -159,7 +159,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;?&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#associatedObject()">associatedObject</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the game object that may be associated with this subject.</div>
@@ -187,7 +187,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#friendlyIdentifier()">friendlyIdentifier</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the friendly identifier associated with this Contextual.</div>
@@ -195,7 +195,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasPermission(java.lang.String)">hasPermission</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasPermission(java.lang.String)">hasPermission</a></span>&#8203;(java.lang.String&nbsp;permission)</code></th>
 <td class="colLast">
 <div class="block">Test whether the subject is permitted to perform an action given as the
  given permission string.</div>
@@ -203,8 +203,8 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasPermission(java.lang.String,java.util.Set)">hasPermission</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasPermission(java.lang.String,java.util.Set)">hasPermission</a></span>&#8203;(java.lang.String&nbsp;permission,
+             java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Test whether the subject is permitted to perform an action corresponding
  to the given permission string.</div>
@@ -212,7 +212,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasPermission(java.lang.String,org.spongepowered.api.event.Cause)">hasPermission</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasPermission(java.lang.String,org.spongepowered.api.event.Cause)">hasPermission</a></span>&#8203;(java.lang.String&nbsp;permission,
              <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Test whether the subject is permitted to perform an action corresponding
@@ -220,7 +220,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>default java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#identifier()">identifier</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the identifier associated with this Contextual.</div>
@@ -237,7 +237,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isChildOf(org.spongepowered.api.service.permission.SubjectReference,java.util.Set)">isChildOf</a></span>&#8203;(<a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+         java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Check if this subject is a child of the given parent in the given context
  combination, traversing inheritance.</div>
@@ -260,30 +260,30 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#option(java.lang.String)">option</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key)</code></th>
+<td class="colFirst"><code>default java.util.Optional&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#option(java.lang.String)">option</a></span>&#8203;(java.lang.String&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of a given option in the subject's current context.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#option(java.lang.String,java.util.Set)">option</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>default java.util.Optional&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#option(java.lang.String,java.util.Set)">option</a></span>&#8203;(java.lang.String&nbsp;key,
+      java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of a given option in the given context.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#option(java.lang.String,org.spongepowered.api.event.Cause)">option</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+<td class="colFirst"><code>default java.util.Optional&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#option(java.lang.String,org.spongepowered.api.event.Cause)">option</a></span>&#8203;(java.lang.String&nbsp;key,
       <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Gets the value of a given option in the given context.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parents()">parents</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return all parents that this group has in its current context
@@ -291,14 +291,14 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parents(java.util.Set)">parents</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<td class="colFirst"><code>default java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parents(java.util.Set)">parents</a></span>&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Return all parents that this group has in the given context combination.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parents(org.spongepowered.api.event.Cause)">parents</a></span>&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;causes)</code></th>
 <td class="colLast">
 <div class="block">Return all parents that this group has in the given context combination.</div>
@@ -306,22 +306,22 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>default <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissionValue(java.lang.String)">permissionValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissionValue(java.lang.String)">permissionValue</a></span>&#8203;(java.lang.String&nbsp;permission)</code></th>
 <td class="colLast">
 <div class="block">Returns the calculated value set for a given permission.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>default <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissionValue(java.lang.String,java.util.Set)">permissionValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissionValue(java.lang.String,java.util.Set)">permissionValue</a></span>&#8203;(java.lang.String&nbsp;permission,
+               java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</code></th>
 <td class="colLast">
 <div class="block">Returns the calculated value set for a given permission.</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>default <a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissionValue(java.lang.String,org.spongepowered.api.event.Cause)">permissionValue</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#permissionValue(java.lang.String,org.spongepowered.api.event.Cause)">permissionValue</a></span>&#8203;(java.lang.String&nbsp;permission,
                <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;causes)</code></th>
 <td class="colLast">
 <div class="block">Returns the calculated value set for a given permission.</div>
@@ -408,7 +408,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>friendlyIdentifier</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;friendlyIdentifier()</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;friendlyIdentifier()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../context/Contextual.html#friendlyIdentifier()">Contextual</a></code></span></div>
 <div class="block">Returns the friendly identifier associated with this Contextual.
 
@@ -416,7 +416,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
  unique.</p>
 
  <p>If the friendly identifier is equal to the normal identifier,
- this method should return <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a>.</p>
+ this method should return <code>Optional.empty()</code>.</p>
 
  <p>Contextuals which represent a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a> or a <a href="../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>
  should return the username here, if available.</p></div>
@@ -468,7 +468,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>associatedObject</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;?&gt;&nbsp;associatedObject()</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;?&gt;&nbsp;associatedObject()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#associatedObject()">Subject</a></code></span></div>
 <div class="block">Get the game object that may be associated with this subject.
 
@@ -557,8 +557,8 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>permissionValue</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;permissionValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">default&nbsp;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;permissionValue&#8203;(java.lang.String&nbsp;permission,
+                                 java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#permissionValue(java.lang.String,java.util.Set)">Subject</a></code></span></div>
 <div class="block">Returns the calculated value set for a given permission.
 
@@ -590,7 +590,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>permissionValue</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;permissionValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
+<pre class="methodSignature">default&nbsp;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;permissionValue&#8203;(java.lang.String&nbsp;permission,
                                  <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;causes)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#permissionValue(java.lang.String,org.spongepowered.api.event.Cause)">Subject</a></code></span></div>
 <div class="block">Returns the calculated value set for a given permission.
@@ -623,7 +623,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>permissionValue</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;permissionValue&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission)</pre>
+<pre class="methodSignature">default&nbsp;<a href="../../util/Tristate.html" title="enum in org.spongepowered.api.util">Tristate</a>&nbsp;permissionValue&#8203;(java.lang.String&nbsp;permission)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#permissionValue(java.lang.String)">Subject</a></code></span></div>
 <div class="block">Returns the calculated value set for a given permission.
 
@@ -655,7 +655,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <li class="blockList">
 <h4>isChildOf</h4>
 <pre class="methodSignature">default&nbsp;boolean&nbsp;isChildOf&#8203;(<a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&nbsp;parent,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+                          java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#isChildOf(org.spongepowered.api.service.permission.SubjectReference,java.util.Set)">Subject</a></code></span></div>
 <div class="block">Check if this subject is a child of the given parent in the given context
  combination, traversing inheritance.
@@ -738,7 +738,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>parents</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">default&nbsp;java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents&#8203;(java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#parents(java.util.Set)">Subject</a></code></span></div>
 <div class="block">Return all parents that this group has in the given context combination.
 
@@ -760,7 +760,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>parents</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;causes)</pre>
+<pre class="methodSignature">default&nbsp;java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents&#8203;(<a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;causes)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#parents(org.spongepowered.api.event.Cause)">Subject</a></code></span></div>
 <div class="block">Return all parents that this group has in the given context combination.
 
@@ -782,7 +782,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>parents</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents()</pre>
+<pre class="methodSignature">default&nbsp;java.util.List&lt;? extends <a href="SubjectReference.html" title="interface in org.spongepowered.api.service.permission">SubjectReference</a>&gt;&nbsp;parents()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#parents()">Subject</a></code></span></div>
 <div class="block">Return all parents that this group has in its current context
  combination.
@@ -805,8 +805,8 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>option</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;option&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;option&#8203;(java.lang.String&nbsp;key,
+                                                    java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#option(java.lang.String,java.util.Set)">Subject</a></code></span></div>
 <div class="block">Gets the value of a given option in the given context.
 
@@ -834,8 +834,8 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>option</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;option&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
-                                <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;option&#8203;(java.lang.String&nbsp;key,
+                                                    <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#option(java.lang.String,org.spongepowered.api.event.Cause)">Subject</a></code></span></div>
 <div class="block">Gets the value of a given option in the given context.
 
@@ -863,7 +863,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>option</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;option&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;option&#8203;(java.lang.String&nbsp;key)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#option(java.lang.String)">Subject</a></code></span></div>
 <div class="block">Gets the value of a given option in the subject's current context.
 
@@ -885,7 +885,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>identifier</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;identifier()</pre>
+<pre class="methodSignature">default&nbsp;java.lang.String&nbsp;identifier()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../context/Contextual.html#identifier()">Contextual</a></code></span></div>
 <div class="block">Returns the identifier associated with this Contextual.
 
@@ -908,8 +908,8 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>hasPermission</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;hasPermission&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
-                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;hasPermission&#8203;(java.lang.String&nbsp;permission,
+                              java.util.Set&lt;<a href="../context/Context.html" title="class in org.spongepowered.api.service.context">Context</a>&gt;&nbsp;contexts)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#hasPermission(java.lang.String,java.util.Set)">Subject</a></code></span></div>
 <div class="block">Test whether the subject is permitted to perform an action corresponding
  to the given permission string.
@@ -933,7 +933,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockList">
 <li class="blockList">
 <h4>hasPermission</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;hasPermission&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission,
+<pre class="methodSignature">default&nbsp;boolean&nbsp;hasPermission&#8203;(java.lang.String&nbsp;permission,
                               <a href="../../event/Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#hasPermission(java.lang.String,org.spongepowered.api.event.Cause)">Subject</a></code></span></div>
 <div class="block">Test whether the subject is permitted to perform an action corresponding
@@ -958,7 +958,7 @@ extends <a href="Subject.html" title="interface in org.spongepowered.api.service
 <ul class="blockListLast">
 <li class="blockList">
 <h4>hasPermission</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;hasPermission&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;permission)</pre>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;hasPermission&#8203;(java.lang.String&nbsp;permission)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Subject.html#hasPermission(java.lang.String)">Subject</a></code></span></div>
 <div class="block">Test whether the subject is permitted to perform an action given as the
  given permission string.

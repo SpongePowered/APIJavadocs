@@ -150,35 +150,35 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default &lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;</code></td>
+<td class="colFirst"><code>default &lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br>java.util.Optional&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findEntry(org.spongepowered.api.registry.RegistryKey)">findEntry</a></span>&#8203;(<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block"><a href="#findEntry(org.spongepowered.api.ResourceKey)"><code>findEntry(ResourceKey)</code></a>, provided for convenience when using <a href="RegistryKey.html" title="interface in org.spongepowered.api.registry"><code>RegistryKey</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;</code></td>
+<td class="colFirst"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br>java.util.Optional&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findEntry(org.spongepowered.api.ResourceKey)">findEntry</a></span>&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entry</code></a> for a particular <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>, if found.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default &lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;V&gt;</code></td>
+<td class="colFirst"><code>default &lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br>java.util.Optional&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findValue(org.spongepowered.api.registry.RegistryKey)">findValue</a></span>&#8203;(<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block"><a href="#findValue(org.spongepowered.api.ResourceKey)"><code>findValue(ResourceKey)</code></a>, provided for convenience when using <a href="RegistryKey.html" title="interface in org.spongepowered.api.registry"><code>RegistryKey</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;V&gt;</code></td>
+<td class="colFirst"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br>java.util.Optional&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findValue(org.spongepowered.api.ResourceKey)">findValue</a></span>&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>value</code></a> for a particular <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>, if found.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findValueKey(T)">findValueKey</a></span>&#8203;(<a href="Registry.html" title="type parameter in Registry">T</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> for a particular value, if found.</div>
@@ -192,7 +192,7 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;</code></td>
+<td class="colFirst"><code>&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;<br>java.util.Optional&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#register(org.spongepowered.api.ResourceKey,V)">register</a></span>&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
         V&nbsp;value)</code></th>
 <td class="colLast">
@@ -200,17 +200,17 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.stream.Stream&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of all registry values within.</div>
+<div class="block">Gets a <code>Stream</code> of all registry values within.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.stream.Stream&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#streamEntries()">streamEntries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of all <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entries</code></a> within.</div>
+<div class="block">Gets a <code>Stream</code> of all <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entries</code></a> within.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -285,7 +285,7 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 
  <p>Great care needs to be made in calling this method with any uncertainty as to
  if the key will exist. Should the value lack a key, a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a> will be thrown. Therefore, it is advised to call
+ <code>IllegalStateException</code> will be thrown. Therefore, it is advised to call
  <a href="#findValueKey(T)"><code>findValueKey(Object)</code></a> instead.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -303,7 +303,7 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>findValueKey</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;&nbsp;findValueKey&#8203;(<a href="Registry.html" title="type parameter in Registry">T</a>&nbsp;value)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;&nbsp;findValueKey&#8203;(<a href="Registry.html" title="type parameter in Registry">T</a>&nbsp;value)</pre>
 <div class="block">Gets the <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> for a particular value, if found.
 
  <p>The value must be registered within to be retrieved by key.</p></div>
@@ -311,7 +311,7 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>value</code> - The value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The key or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+<dd>The key or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>
@@ -321,7 +321,7 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>findEntry</h4>
-<pre class="methodSignature">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;&nbsp;findEntry&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</pre>
+<pre class="methodSignature">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;java.util.Optional&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;&nbsp;findEntry&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</pre>
 <div class="block">Gets the <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entry</code></a> for a particular <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>, if found.
 
  <p>The value must be registered within to be retrieved by key.</p></div>
@@ -329,7 +329,7 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - The key</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The entry or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+<dd>The entry or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>
@@ -339,13 +339,13 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>findEntry</h4>
-<pre class="methodSignature">default&nbsp;&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;&nbsp;findEntry&#8203;(<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;java.util.Optional&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;&nbsp;findEntry&#8203;(<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;key)</pre>
 <div class="block"><a href="#findEntry(org.spongepowered.api.ResourceKey)"><code>findEntry(ResourceKey)</code></a>, provided for convenience when using <a href="RegistryKey.html" title="interface in org.spongepowered.api.registry"><code>RegistryKey</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - The key</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The entry or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+<dd>The entry or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>
@@ -355,13 +355,13 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>findValue</h4>
-<pre class="methodSignature">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;V&gt;&nbsp;findValue&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</pre>
+<pre class="methodSignature">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;java.util.Optional&lt;V&gt;&nbsp;findValue&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</pre>
 <div class="block">Gets the <a href="Registry.html" title="interface in org.spongepowered.api.registry"><code>value</code></a> for a particular <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>, if found.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - The key</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The value or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+<dd>The value or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>
@@ -371,13 +371,13 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>findValue</h4>
-<pre class="methodSignature">default&nbsp;&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;V&gt;&nbsp;findValue&#8203;(<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;java.util.Optional&lt;V&gt;&nbsp;findValue&#8203;(<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;key)</pre>
 <div class="block"><a href="#findValue(org.spongepowered.api.ResourceKey)"><code>findValue(ResourceKey)</code></a>, provided for convenience when using <a href="RegistryKey.html" title="interface in org.spongepowered.api.registry"><code>RegistryKey</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - The key</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The value or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+<dd>The value or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>
@@ -424,8 +424,8 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>streamEntries</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&gt;&nbsp;streamEntries()</pre>
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of all <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entries</code></a> within.</div>
+<pre class="methodSignature">java.util.stream.Stream&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&gt;&nbsp;streamEntries()</pre>
+<div class="block">Gets a <code>Stream</code> of all <a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entries</code></a> within.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The stream</dd>
@@ -438,8 +438,8 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stream</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;stream()</pre>
-<div class="block">Gets a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of all registry values within.</div>
+<pre class="methodSignature">java.util.stream.Stream&lt;<a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;stream()</pre>
+<div class="block">Gets a <code>Stream</code> of all registry values within.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The stream</dd>
@@ -468,18 +468,18 @@ public interface <span class="typeNameLabel">Registry&lt;T&gt;</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>register</h4>
-<pre class="methodSignature">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;&nbsp;register&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
-                                                  V&nbsp;value)</pre>
+<pre class="methodSignature">&lt;V extends <a href="Registry.html" title="type parameter in Registry">T</a>&gt;&nbsp;java.util.Optional&lt;<a href="RegistryEntry.html" title="interface in org.spongepowered.api.registry">RegistryEntry</a>&lt;V&gt;&gt;&nbsp;register&#8203;(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+                                                            V&nbsp;value)</pre>
 <div class="block">Registers a new value to this registry.
 
  <p>If this registry is not <a href="#isDynamic()"><code>dynamic</code></a> or the provided key is already registered,
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> is returned instead.</p></div>
+ <code>Optional.empty()</code> is returned instead.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - The key</dd>
 <dd><code>value</code> - The value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The newly added entry, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> otherwise</dd>
+<dd>The newly added entry, <code>Optional.empty()</code> otherwise</dd>
 </dl>
 </li>
 </ul>

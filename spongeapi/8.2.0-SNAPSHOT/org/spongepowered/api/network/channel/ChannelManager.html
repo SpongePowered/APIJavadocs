@@ -146,14 +146,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Collection&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#channels()">channels</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets an immutable collection of all the channels that are registered.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(org.spongepowered.api.ResourceKey)">get</a></span>&#8203;(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;channelKey)</code></th>
 <td class="colLast">
 <div class="block">Gets a channel binding if a channel exists for the given key.</div>
@@ -162,7 +162,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;C extends <a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;<br>C</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofType(org.spongepowered.api.ResourceKey,java.lang.Class)">ofType</a></span>&#8203;(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;channelKey,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;channelType)</code></th>
+      java.lang.Class&lt;C&gt;&nbsp;channelType)</code></th>
 <td class="colLast">
 <div class="block">Gets a <a href="Channel.html" title="interface in org.spongepowered.api.network.channel"><code>Channel</code></a> by the given channel key.</div>
 </td>
@@ -190,7 +190,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;&nbsp;get&#8203;(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;channelKey)</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;&nbsp;get&#8203;(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;channelKey)</pre>
 <div class="block">Gets a channel binding if a channel exists for the given key.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -207,10 +207,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>ofType</h4>
 <pre class="methodSignature">&lt;C extends <a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;&nbsp;C&nbsp;ofType&#8203;(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;channelKey,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;channelType)</pre>
+                             java.lang.Class&lt;C&gt;&nbsp;channelType)</pre>
 <div class="block">Gets a <a href="Channel.html" title="interface in org.spongepowered.api.network.channel"><code>Channel</code></a> by the given channel key. If the channel exists
  and it matches the given channel type, it is returned. If the channel
- doesn't match a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>IllegalStateException</code></a> is thrown.</div>
+ doesn't match a <code>IllegalStateException</code> is thrown.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>channelKey</code> - The channel key</dd>
@@ -218,7 +218,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A new or existing channel binding</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - if the existing channel is not of the given type</dd>
+<dd><code>java.lang.IllegalStateException</code> - if the existing channel is not of the given type</dd>
 </dl>
 </li>
 </ul>
@@ -228,7 +228,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>channels</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;&nbsp;channels()</pre>
+<pre class="methodSignature">java.util.Collection&lt;<a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&gt;&nbsp;channels()</pre>
 <div class="block">Gets an immutable collection of all the channels that are registered.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

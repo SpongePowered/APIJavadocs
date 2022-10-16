@@ -165,7 +165,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br><a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addResponseHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.PacketHandler)">addResponseHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addResponseHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.PacketHandler)">addResponseHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                   <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">PacketHandler</a>&lt;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>,&#8203;? super C&gt;&nbsp;responseHandler)</code></th>
 <td class="colLast">
 <div class="block">Adds a <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> to handle a response <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a>
@@ -174,7 +174,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br><a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addResponseHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.ResponsePacketHandler)">addResponseHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addResponseHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.ResponsePacketHandler)">addResponseHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                   <a href="ResponsePacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">ResponsePacketHandler</a>&lt;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>,&#8203;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Adds a <a href="ResponsePacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>ResponsePacketHandler</code></a> to handle a response <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a>
@@ -222,7 +222,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>&gt;</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#packetType()">packetType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the type of the <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a>.</div>
@@ -230,7 +230,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;<br><a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRequestHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.RequestPacketHandler)">setRequestHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRequestHandler(java.lang.Class,org.spongepowered.api.network.channel.packet.RequestPacketHandler)">setRequestHandler</a></span>&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                  <a href="RequestPacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacketHandler</a>&lt;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;? extends <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>,&#8203;? super C&gt;&nbsp;handler)</code></th>
 <td class="colLast">
 <div class="block">Sets the <a href="RequestPacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacketHandler</code></a> to handle a <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a>
@@ -294,7 +294,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <ul class="blockList">
 <li class="blockList">
 <h4>packetType</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>&gt;&nbsp;packetType()</pre>
+<pre class="methodSignature">java.lang.Class&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>&gt;&nbsp;packetType()</pre>
 <div class="block">Gets the type of the <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -332,7 +332,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <ul class="blockList">
 <li class="blockList">
 <h4>setRequestHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;&nbsp;setRequestHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;&nbsp;setRequestHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                                                      <a href="RequestPacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">RequestPacketHandler</a>&lt;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;? extends <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>,&#8203;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Sets the <a href="RequestPacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacketHandler</code></a> to handle a <a href="RequestPacket.html" title="interface in org.spongepowered.api.network.channel.packet"><code>RequestPacket</code></a>
  for a specific connection type. The difference with a normal <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a>
@@ -378,7 +378,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
  on a specific connection side.
 
  <p>Binding a response <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> is completely optional. It is also
- possible to append a handler to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> returned by
+ possible to append a handler to the <code>CompletableFuture</code> returned by
  <a href="TransactionalPacketDispatcher.html#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)"><code>TransactionalPacketDispatcher.sendTo(EngineConnection, RequestPacket)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -397,13 +397,13 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <ul class="blockList">
 <li class="blockList">
 <h4>addResponseHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;&nbsp;addResponseHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;&nbsp;addResponseHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                                                       <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">PacketHandler</a>&lt;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>,&#8203;? super C&gt;&nbsp;responseHandler)</pre>
 <div class="block">Adds a <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> to handle a response <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a>
  on for a specific connection type.
 
  <p>Binding a response <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> is completely optional. It is also
- possible to append a handler to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> returned by
+ possible to append a handler to the <code>CompletableFuture</code> returned by
  <a href="TransactionalPacketDispatcher.html#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)"><code>TransactionalPacketDispatcher.sendTo(EngineConnection, RequestPacket)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -428,7 +428,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
  on a specific connection side.
 
  <p>Binding a response <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> is completely optional. It is also
- possible to append a handler to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> returned by
+ possible to append a handler to the <code>CompletableFuture</code> returned by
  <a href="TransactionalPacketDispatcher.html#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)"><code>TransactionalPacketDispatcher.sendTo(EngineConnection, RequestPacket)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -447,13 +447,13 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <ul class="blockList">
 <li class="blockList">
 <h4>addResponseHandler</h4>
-<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;&nbsp;addResponseHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;C&gt;&nbsp;connectionType,
+<pre class="methodSignature">&lt;C extends <a href="../../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;<a href="TransactionalPacketBinding.html" title="interface in org.spongepowered.api.network.channel.packet">TransactionalPacketBinding</a>&lt;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;<a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>&gt;&nbsp;addResponseHandler&#8203;(java.lang.Class&lt;C&gt;&nbsp;connectionType,
                                                                                       <a href="ResponsePacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet">ResponsePacketHandler</a>&lt;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">P</a>,&#8203;? super <a href="TransactionalPacketBinding.html" title="type parameter in TransactionalPacketBinding">R</a>,&#8203;? super C&gt;&nbsp;handler)</pre>
 <div class="block">Adds a <a href="ResponsePacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>ResponsePacketHandler</code></a> to handle a response <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a>
  for a specific connection type.
 
  <p>Binding a response <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> is completely optional. It is also
- possible to append a handler to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> returned by
+ possible to append a handler to the <code>CompletableFuture</code> returned by
  <a href="TransactionalPacketDispatcher.html#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)"><code>TransactionalPacketDispatcher.sendTo(EngineConnection, RequestPacket)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -476,7 +476,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
 <div class="block">Adds a <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> to handle a response <a href="Packet.html" title="interface in org.spongepowered.api.network.channel.packet"><code>Packet</code></a> on both platform sides.
 
  <p>Binding a response <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> is completely optional. It is also
- possible to append a handler to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> returned by
+ possible to append a handler to the <code>CompletableFuture</code> returned by
  <a href="TransactionalPacketDispatcher.html#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)"><code>TransactionalPacketDispatcher.sendTo(EngineConnection, RequestPacket)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -497,7 +497,7 @@ extends <a href="PacketBinding.html" title="interface in org.spongepowered.api.n
  on both platform sides.
 
  <p>Binding a response <a href="PacketHandler.html" title="interface in org.spongepowered.api.network.channel.packet"><code>PacketHandler</code></a> is completely optional. It is also
- possible to append a handler to the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> returned by
+ possible to append a handler to the <code>CompletableFuture</code> returned by
  <a href="TransactionalPacketDispatcher.html#sendTo(org.spongepowered.api.network.EngineConnection,org.spongepowered.api.network.channel.packet.RequestPacket)"><code>TransactionalPacketDispatcher.sendTo(EngineConnection, RequestPacket)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

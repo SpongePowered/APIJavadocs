@@ -127,11 +127,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  information for events being thrown. This allows plugins to attach more
  contextual information to events which may be triggered from their api
  interactions.
- 
+
  <p>For example a plugin may wish to push a player into the cause stack before
  spawning an entity to expose to any plugin listening for SpawnEntityEvents
  that the player is the reason that the entity was spawned.</p>
- 
+
  <p>This system will automatically handle associating a plugin with actions
  performed inside of event listeners, command executors, and scheduled
  tasks.</p></div>
@@ -180,15 +180,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addContext(java.util.function.Supplier,java.util.function.Supplier)">addContext</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends T&gt;&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addContext(java.util.function.Supplier,java.util.function.Supplier)">addContext</a></span>&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
+          java.util.function.Supplier&lt;? extends T&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Adds the given object to the current context under the given key.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addContext(java.util.function.Supplier,T)">addContext</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addContext(java.util.function.Supplier,T)">addContext</a></span>&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
           T&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Adds the given object to the current context under the given key.</div>
@@ -197,7 +197,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addContext(org.spongepowered.api.event.EventContextKey,java.util.function.Supplier)">addContext</a></span>&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends T&gt;&nbsp;value)</code></th>
+          java.util.function.Supplier&lt;? extends T&gt;&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Adds the given object to the current context under the given key.</div>
 </td>
@@ -211,14 +211,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#context(java.util.function.Supplier)">context</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</code></th>
+<td class="colFirst"><code>default &lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#context(java.util.function.Supplier)">context</a></span>&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the context value with the given key.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#context(org.spongepowered.api.event.EventContextKey)">context</a></span>&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the context value with the given key.</div>
@@ -240,14 +240,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peekCause()">peekCause</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieves but does not remove the most recently pushed cause object.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#popCause()">popCause</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Pops the most recently pushed cause object off of the stack and returns
@@ -271,7 +271,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pushCause(java.lang.Object)">pushCause</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pushCause(java.lang.Object)">pushCause</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Pushes an object to the current cause stack which will associate it with
  all events through from api actions until it is popped off again.</div>
@@ -285,14 +285,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeContext(java.util.function.Supplier)">removeContext</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</code></th>
+<td class="colFirst"><code>default &lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeContext(java.util.function.Supplier)">removeContext</a></span>&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Removes the given context key from the current context.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;</code></td>
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeContext(org.spongepowered.api.event.EventContextKey)">removeContext</a></span>&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Removes the given context key from the current context.</div>
@@ -300,7 +300,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>default &lt;T&gt;&nbsp;T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireContext(java.util.function.Supplier)">requireContext</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireContext(java.util.function.Supplier)">requireContext</a></span>&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</code></th>
 <td class="colLast">
 <div class="block">Gets the context value with the given key.</div>
 </td>
@@ -364,7 +364,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>pushCause</h4>
-<pre class="methodSignature"><a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;pushCause&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
+<pre class="methodSignature"><a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;pushCause&#8203;(java.lang.Object&nbsp;obj)</pre>
 <div class="block">Pushes an object to the current cause stack which will associate it with
  all events through from api actions until it is popped off again.</div>
 <dl>
@@ -381,7 +381,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>popCause</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;popCause()</pre>
+<pre class="methodSignature">java.lang.Object&nbsp;popCause()</pre>
 <div class="block">Pops the most recently pushed cause object off of the stack and returns
  it.</div>
 <dl>
@@ -410,7 +410,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>peekCause</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;peekCause()</pre>
+<pre class="methodSignature">java.lang.Object&nbsp;peekCause()</pre>
 <div class="block">Retrieves but does not remove the most recently pushed cause object.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -442,7 +442,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">void&nbsp;popCauseFrame&#8203;(<a href="CauseStackManager.StackFrame.html" title="interface in org.spongepowered.api.event">CauseStackManager.StackFrame</a>&nbsp;handle)</pre>
 <div class="block">Replaces the current cause stack and context with the cause frame at the
  top of the frame stack.
- 
+
  <p>The frame handle is required to ensure that frames are popped of in
  order and are not left in the stack. If an attempt is made to pop a frame
  which is not the head of the frame stack then an error will be thrown as
@@ -484,7 +484,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>addContext</h4>
 <pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;addContext&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key,
-                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends T&gt;&nbsp;value)</pre>
+                                         java.util.function.Supplier&lt;? extends T&gt;&nbsp;value)</pre>
 <div class="block">Adds the given object to the current context under the given key.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -507,7 +507,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>addContext</h4>
-<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;addContext&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
+<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;addContext&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
                                          T&nbsp;value)</pre>
 <div class="block">Adds the given object to the current context under the given key.</div>
 <dl>
@@ -529,8 +529,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>addContext</h4>
-<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;addContext&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
-                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends T&gt;&nbsp;value)</pre>
+<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a>&nbsp;addContext&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key,
+                                         java.util.function.Supplier&lt;? extends T&gt;&nbsp;value)</pre>
 <div class="block">Adds the given object to the current context under the given key.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -551,7 +551,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>context</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;context&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;context&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</pre>
 <div class="block">Gets the context value with the given key.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -569,7 +569,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>context</h4>
-<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;context&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;context&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</pre>
 <div class="block">Gets the context value with the given key.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -589,8 +589,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>requireContext</h4>
 <pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;T&nbsp;requireContext&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</pre>
 <div class="block">Gets the context value with the given key.
- 
- <p>If the key is not available, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a> will be
+
+ <p>If the key is not available, <code>NoSuchElementException</code> will be
  thrown.</p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -608,10 +608,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>requireContext</h4>
-<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;T&nbsp;requireContext&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;T&nbsp;requireContext&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</pre>
 <div class="block">Gets the context value with the given key.
 
- <p>If the key is not available, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>NoSuchElementException</code></a> will be
+ <p>If the key is not available, <code>NoSuchElementException</code> will be
  thrown.</p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -629,7 +629,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>removeContext</h4>
-<pre class="methodSignature">&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;removeContext&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</pre>
+<pre class="methodSignature">&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;removeContext&#8203;(<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&nbsp;key)</pre>
 <div class="block">Removes the given context key from the current context.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -649,7 +649,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>removeContext</h4>
-<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&nbsp;removeContext&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</pre>
+<pre class="methodSignature">default&nbsp;&lt;T&gt;&nbsp;java.util.Optional&lt;T&gt;&nbsp;removeContext&#8203;(java.util.function.Supplier&lt;<a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;&gt;&nbsp;key)</pre>
 <div class="block">Removes the given context key from the current context.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

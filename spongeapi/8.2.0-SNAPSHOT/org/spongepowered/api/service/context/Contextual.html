@@ -159,14 +159,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#friendlyIdentifier()">friendlyIdentifier</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the friendly identifier associated with this Contextual.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#identifier()">identifier</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the identifier associated with this Contextual.</div>
@@ -195,7 +195,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>identifier</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;identifier()</pre>
+<pre class="methodSignature">java.lang.String&nbsp;identifier()</pre>
 <div class="block">Returns the identifier associated with this Contextual.
 
  <p>The identifier of each distinct Contextual within a collection of
@@ -215,14 +215,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>friendlyIdentifier</h4>
-<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;friendlyIdentifier()</pre>
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;friendlyIdentifier()</pre>
 <div class="block">Returns the friendly identifier associated with this Contextual.
 
  <p>Unlike <a href="#identifier()"><code>identifier()</code></a>, this value is not guaranteed to be
  unique.</p>
 
  <p>If the friendly identifier is equal to the normal identifier,
- this method should return <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a>.</p>
+ this method should return <code>Optional.empty()</code>.</p>
 
  <p>Contextuals which represent a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a> or a <a href="../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>
  should return the username here, if available.</p></div>

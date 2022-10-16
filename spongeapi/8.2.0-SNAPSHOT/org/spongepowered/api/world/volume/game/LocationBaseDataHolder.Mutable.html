@@ -389,7 +389,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
          int&nbsp;y,
          int&nbsp;z,
          <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
+         java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
@@ -402,7 +402,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
          int&nbsp;y,
          int&nbsp;z,
          <a href="../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;? extends <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
+         java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
@@ -413,7 +413,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
 <td class="colFirst"><code>default &lt;E&gt;&nbsp;<a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.data.Key,java.util.function.Function)">transform</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
          <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
+         java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
@@ -424,7 +424,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
 <td class="colFirst"><code>default &lt;E&gt;&nbsp;<a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transform(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.registry.DefaultedRegistryReference,java.util.function.Function)">transform</a></span>&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
          <a href="../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;? extends <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
+         java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</code></th>
 <td class="colLast">
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
@@ -501,7 +501,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
 <h4>transform</h4>
 <pre class="methodSignature">default&nbsp;&lt;E&gt;&nbsp;<a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a>&nbsp;transform&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
                                             <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</pre>
+                                            java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</pre>
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
  said transformation.</div>
@@ -525,7 +525,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
 <h4>transform</h4>
 <pre class="methodSignature">default&nbsp;&lt;E&gt;&nbsp;<a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a>&nbsp;transform&#8203;(<a href="https://jd.spongepowered.org/math/2.0.1/org/spongepowered/math/vector/Vector3i.html?is-external=true" title="class or interface in org.spongepowered.math.vector" class="externalLink">Vector3i</a>&nbsp;position,
                                             <a href="../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;? extends <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</pre>
+                                            java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</pre>
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
  said transformation.</div>
@@ -551,7 +551,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
                                             int&nbsp;y,
                                             int&nbsp;z,
                                             <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&nbsp;key,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</pre>
+                                            java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</pre>
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
  said transformation.</div>
@@ -579,7 +579,7 @@ extends <a href="LocationBaseDataHolder.html" title="interface in org.spongepowe
                                             int&nbsp;y,
                                             int&nbsp;z,
                                             <a href="../../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;? extends <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;&gt;&nbsp;key,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;E,&#8203;E&gt;&nbsp;function)</pre>
+                                            java.util.function.Function&lt;E,&#8203;E&gt;&nbsp;function)</pre>
 <div class="block">Applies a transformation on the pre-existing value of the data keyed by
  the provided <a href="../../../data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> and returns a <a href="../../../data/DataTransactionResult.html" title="class in org.spongepowered.api.data"><code>DataTransactionResult</code></a> of
  said transformation.</div>

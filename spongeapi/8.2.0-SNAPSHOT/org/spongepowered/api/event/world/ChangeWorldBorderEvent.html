@@ -186,24 +186,24 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBorder()">newBorder</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the border that will be used as an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a>.</div>
+<div class="block">Gets the border that will be used as an <code>Optional</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#originalNewBorder()">originalNewBorder</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the border that was originally meant to be used as an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a>.</div>
+<div class="block">Gets the border that was originally meant to be used as an <code>Optional</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#previousBorder()">previousBorder</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the border that was previously used as an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a>.</div>
+<div class="block">Gets the border that was previously used as an <code>Optional</code>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -250,10 +250,10 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>previousBorder</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;&nbsp;previousBorder()</pre>
-<div class="block">Gets the border that was previously used as an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a>. There 
+<pre class="methodSignature">java.util.Optional&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;&nbsp;previousBorder()</pre>
+<div class="block">Gets the border that was previously used as an <code>Optional</code>. There
  may be no border set for the target (especially if it is a player), in
- which case, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> is returned.</div>
+ which case, <code>Optional.empty()</code> is returned.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The border that was previously in use, if there was one.</dd>
@@ -266,10 +266,10 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>originalNewBorder</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;&nbsp;originalNewBorder()</pre>
-<div class="block">Gets the border that was originally meant to be used as an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a>.
+<pre class="methodSignature">java.util.Optional&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;&nbsp;originalNewBorder()</pre>
+<div class="block">Gets the border that was originally meant to be used as an <code>Optional</code>.
  For some targets, the border may be unset and therefore they may not always
- have a border. It is in these instances that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> is
+ have a border. It is in these instances that <code>Optional.empty()</code> is
  returned.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -283,10 +283,10 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <ul class="blockList">
 <li class="blockList">
 <h4>newBorder</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;&nbsp;newBorder()</pre>
-<div class="block">Gets the border that will be used as an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a>. For some
+<pre class="methodSignature">java.util.Optional&lt;<a href="../../world/border/WorldBorder.html" title="interface in org.spongepowered.api.world.border">WorldBorder</a>&gt;&nbsp;newBorder()</pre>
+<div class="block">Gets the border that will be used as an <code>Optional</code>. For some
  targets, the border may be unset and therefore they may not always have a
- border. It is in these instances that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a> is
+ border. It is in these instances that <code>Optional.empty()</code> is
  returned.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

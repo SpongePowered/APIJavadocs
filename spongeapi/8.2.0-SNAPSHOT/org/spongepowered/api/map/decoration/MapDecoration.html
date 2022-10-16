@@ -138,8 +138,8 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 
  <p>The co-ordinate system used when getting or setting a decoration's
  location on a map is independent of any world a map may be based on.
- Instead, valid co-ordinates range from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true#MIN_VALUE" title="class or interface in java.lang" class="externalLink"><code>-128</code></a> to
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink"><code>127</code></a>. The bottom left corner of the map is given by the
+ Instead, valid co-ordinates range from <code>-128</code> to
+ <code>127</code>. The bottom left corner of the map is given by the
  co-ordinates (-128, -128).</p></div>
 </li>
 </ul>
@@ -234,12 +234,12 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <div class="block">Sets the position of where the MapDecoration is on Maps,
  or where it would be if applied to a <a href="../MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a>
  0,0 is the center of the map
- Ranges from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true#MIN_VALUE" title="class or interface in java.lang" class="externalLink">-128</a>-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink">127</a>.</div>
+ Ranges from -128-127.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRotation(java.util.function.Supplier)">setRotation</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="orientation/MapDecorationOrientation.html" title="interface in org.spongepowered.api.map.decoration.orientation">MapDecorationOrientation</a>&gt;&nbsp;rotSupplier)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRotation(java.util.function.Supplier)">setRotation</a></span>&#8203;(java.util.function.Supplier&lt;<a href="orientation/MapDecorationOrientation.html" title="interface in org.spongepowered.api.map.decoration.orientation">MapDecorationOrientation</a>&gt;&nbsp;rotSupplier)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -358,7 +358,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <div class="block">Sets the position of where the MapDecoration is on Maps,
  or where it would be if applied to a <a href="../MapInfo.html" title="interface in org.spongepowered.api.map"><code>MapInfo</code></a>
  0,0 is the center of the map
- Ranges from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true#MIN_VALUE" title="class or interface in java.lang" class="externalLink">-128</a>-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink">127</a>. AKA any valid byte value</div>
+ Ranges from -128-127. AKA any valid byte value</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>position</code> - Vector2i world x and y cords</dd>
@@ -385,7 +385,7 @@ extends <a href="../../data/persistence/DataSerializable.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>setRotation</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;setRotation&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="orientation/MapDecorationOrientation.html" title="interface in org.spongepowered.api.map.decoration.orientation">MapDecorationOrientation</a>&gt;&nbsp;rotSupplier)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;setRotation&#8203;(java.util.function.Supplier&lt;<a href="orientation/MapDecorationOrientation.html" title="interface in org.spongepowered.api.map.decoration.orientation">MapDecorationOrientation</a>&gt;&nbsp;rotSupplier)</pre>
 </li>
 </ul>
 <a id="rotation()">

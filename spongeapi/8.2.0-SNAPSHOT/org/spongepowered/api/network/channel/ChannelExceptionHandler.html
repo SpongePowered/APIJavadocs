@@ -130,7 +130,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
 </dl>
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang" class="externalLink">@FunctionalInterface</a>
+<pre>@FunctionalInterface
 public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extends <a href="../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;</span></pre>
 <div class="block">Represents a handler for exceptions of <a href="Channel.html" title="interface in org.spongepowered.api.network.channel"><code>Channel</code></a>s. This handler
  can be implemented by plugin developers.</div>
@@ -182,7 +182,7 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#handle(C,org.spongepowered.api.network.channel.Channel,org.spongepowered.api.network.channel.ChannelException,java.util.concurrent.CompletableFuture)">handle</a></span>&#8203;(<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&nbsp;connection,
       <a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&nbsp;channel,
       <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&nbsp;exception,
-      @Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;?&gt;&nbsp;future)</code></th>
+      @Nullable java.util.concurrent.CompletableFuture&lt;?&gt;&nbsp;future)</code></th>
 <td class="colLast">
 <div class="block">Handles a <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a> that occurred for a specific <a href="../EngineConnection.html" title="interface in org.spongepowered.api.network"><code>EngineConnection</code></a>.</div>
 </td>
@@ -197,7 +197,7 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suppress(java.lang.Class)">suppress</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suppress(java.lang.Class)">suppress</a></span>&#8203;(java.lang.Class&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</code></th>
 <td class="colLast">
 <div class="block">Returns a new <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that suppresses a certain type of
  <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a> to be handled through this exception handler.</div>
@@ -208,16 +208,16 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suppressAllIfFutureIsPresent()">suppressAllIfFutureIsPresent</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a new <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that suppresses every <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a>
- to be handled through this exception handler if a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> is applicable.</div>
+ to be handled through this exception handler if a <code>CompletableFuture</code> is applicable.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suppressIfFutureIsPresent(java.lang.Class)">suppressIfFutureIsPresent</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#suppressIfFutureIsPresent(java.lang.Class)">suppressIfFutureIsPresent</a></span>&#8203;(java.lang.Class&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</code></th>
 <td class="colLast">
 <div class="block">Returns a new <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that suppresses <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a>
  of the given type to be handled through this exception handler if a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> is applicable.</div>
+ <code>CompletableFuture</code> is applicable.</div>
 </td>
 </tr>
 </table>
@@ -245,7 +245,7 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <h4>logEverything</h4>
 <pre class="methodSignature">static&nbsp;<a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="../EngineConnection.html" title="interface in org.spongepowered.api.network">EngineConnection</a>&gt;&nbsp;logEverything()</pre>
 <div class="block">Gets the <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that will always log when a
- <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a> occurs. <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a>s will also
+ <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a> occurs. <code>CompletableFuture</code>s will also
  receive the <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a>s like expected.
 
  <p>This <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> is useful if you don't need
@@ -268,12 +268,12 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <pre class="methodSignature">void&nbsp;handle&#8203;(<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&nbsp;connection,
             <a href="Channel.html" title="interface in org.spongepowered.api.network.channel">Channel</a>&nbsp;channel,
             <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&nbsp;exception,
-            @Nullable <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;?&gt;&nbsp;future)</pre>
+            @Nullable java.util.concurrent.CompletableFuture&lt;?&gt;&nbsp;future)</pre>
 <div class="block">Handles a <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a> that occurred for a specific <a href="../EngineConnection.html" title="interface in org.spongepowered.api.network"><code>EngineConnection</code></a>. This
  includes exceptions caused by encoding or decoding payloads, handling packets, when a packet is
  send to an unsupported connection, etc.
 
- <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> is the one that was returned by one of the send operations,
+ <p>The <code>CompletableFuture</code> is the one that was returned by one of the send operations,
  this one <strong>must</strong> be completed when an exception occurs. The future is always
  null when a request packet is being handled on the other side.</p></div>
 <dl>
@@ -293,10 +293,10 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <h4>suppressAllIfFutureIsPresent</h4>
 <pre class="methodSignature">default&nbsp;<a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;&nbsp;suppressAllIfFutureIsPresent()</pre>
 <div class="block">Returns a new <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that suppresses every <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a>
- to be handled through this exception handler if a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> is applicable.
+ to be handled through this exception handler if a <code>CompletableFuture</code> is applicable.
 
  <p>This <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> is useful if you're planning to handle
- <strong>every</strong> exception of the returned <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a>s.</p></div>
+ <strong>every</strong> exception of the returned <code>CompletableFuture</code>s.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The new channel exception handler</dd>
@@ -309,13 +309,13 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <ul class="blockList">
 <li class="blockList">
 <h4>suppressIfFutureIsPresent</h4>
-<pre class="methodSignature">default&nbsp;<a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;&nbsp;suppressIfFutureIsPresent&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</pre>
+<pre class="methodSignature">default&nbsp;<a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;&nbsp;suppressIfFutureIsPresent&#8203;(java.lang.Class&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</pre>
 <div class="block">Returns a new <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that suppresses <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a>
  of the given type to be handled through this exception handler if a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a> is applicable.
+ <code>CompletableFuture</code> is applicable.
 
  <p>The returned <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> is useful if you're planning to handle
- certain exception types of the returned <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a>s.</p></div>
+ certain exception types of the returned <code>CompletableFuture</code>s.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>exceptionType</code> - The exception type to suppress</dd>
@@ -330,15 +330,15 @@ public interface <span class="typeNameLabel">ChannelExceptionHandler&lt;C extend
 <ul class="blockListLast">
 <li class="blockList">
 <h4>suppress</h4>
-<pre class="methodSignature">default&nbsp;<a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;&nbsp;suppress&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</pre>
+<pre class="methodSignature">default&nbsp;<a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel">ChannelExceptionHandler</a>&lt;<a href="ChannelExceptionHandler.html" title="type parameter in ChannelExceptionHandler">C</a>&gt;&nbsp;suppress&#8203;(java.lang.Class&lt;? extends <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel">ChannelException</a>&gt;&nbsp;exceptionType)</pre>
 <div class="block">Returns a new <a href="ChannelExceptionHandler.html" title="interface in org.spongepowered.api.network.channel"><code>ChannelExceptionHandler</code></a> that suppresses a certain type of
  <a href="ChannelException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelException</code></a> to be handled through this exception handler. The
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a>s will still receive the exception.
+ <code>CompletableFuture</code>s will still receive the exception.
 
  <p>This is useful to suppress certain exceptions from being logged. For example
  <a href="ChannelNotSupportedException.html" title="class in org.spongepowered.api.network.channel"><code>ChannelNotSupportedException</code></a> can be suppressed if you don't want to log
  the exception every time you send a payload to a connection that doesn't support
- the channel. Then you can handle this through the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>CompletableFuture</code></a>s.</p></div>
+ the channel. Then you can handle this through the <code>CompletableFuture</code>s.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>exceptionType</code> - The exception type to suppress</dd>

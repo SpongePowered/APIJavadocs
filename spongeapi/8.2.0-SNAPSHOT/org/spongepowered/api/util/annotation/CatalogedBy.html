@@ -114,11 +114,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre>@NonNull
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation" class="externalLink">TYPE</a>)
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Inherited.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Inherited</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Documented</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation" class="externalLink">RUNTIME</a>)
+<pre>@Target(TYPE)
+@Inherited
+@Documented
+@Retention(RUNTIME)
 public @interface <span class="memberNameLabel">CatalogedBy</span></pre>
 <div class="block">Annotates a class to specify a set of special catalog
  classes which act as the catalog for the annotated type. The
@@ -164,7 +163,7 @@ public @interface <span class="memberNameLabel">CatalogedBy</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;[]</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;?&gt;[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#value()">value</a></span></code></th>
 <td class="colLast">
 <div class="block">Gets the class that is the catalog for this <a href="CatalogedBy.html" title="annotation in org.spongepowered.api.util.annotation"><code>CatalogedBy</code></a> type.</div>
@@ -193,7 +192,7 @@ public @interface <span class="memberNameLabel">CatalogedBy</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;[]&nbsp;value</pre>
+<pre>java.lang.Class&lt;?&gt;[]&nbsp;value</pre>
 <div class="block">Gets the class that is the catalog for this <a href="CatalogedBy.html" title="annotation in org.spongepowered.api.util.annotation"><code>CatalogedBy</code></a> type.
  Since the type class annotated with <a href="CatalogedBy.html" title="annotation in org.spongepowered.api.util.annotation"><code>CatalogedBy</code></a> knows what the
  catalog class is, we can safely rely on the value to get all known

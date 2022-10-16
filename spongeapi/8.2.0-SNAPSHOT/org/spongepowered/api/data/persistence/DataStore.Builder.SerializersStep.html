@@ -159,7 +159,7 @@ extends <a href="DataStore.Builder.HolderStep.html" title="interface in org.spon
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default &lt;T,&#8203;V extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;<br><a href="DataStore.Builder.EndStep.html" title="interface in org.spongepowered.api.data.persistence">DataStore.Builder.EndStep</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#key(org.spongepowered.api.data.Key,java.lang.String...)">key</a></span>&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;dataQueries)</code></th>
+   java.lang.String...&nbsp;dataQueries)</code></th>
 <td class="colLast">
 <div class="block">Adds the default implemented serializers for the given key.</div>
 </td>
@@ -167,8 +167,8 @@ extends <a href="DataStore.Builder.HolderStep.html" title="interface in org.spon
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;T,&#8203;V extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;<br><a href="DataStore.Builder.EndStep.html" title="interface in org.spongepowered.api.data.persistence">DataStore.Builder.EndStep</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#key(org.spongepowered.api.data.Key,java.util.function.BiConsumer,java.util.function.Function)">key</a></span>&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiConsumer</a>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;T&gt;&nbsp;serializer,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&gt;&nbsp;deserializer)</code></th>
+   java.util.function.BiConsumer&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;T&gt;&nbsp;serializer,
+   java.util.function.Function&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;java.util.Optional&lt;T&gt;&gt;&nbsp;deserializer)</code></th>
 <td class="colLast">
 <div class="block">Adds the serializers for the given key.</div>
 </td>
@@ -246,7 +246,7 @@ extends <a href="DataStore.Builder.HolderStep.html" title="interface in org.spon
 <li class="blockList">
 <h4>key</h4>
 <pre class="methodSignature">default&nbsp;&lt;T,&#8203;V extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;&nbsp;<a href="DataStore.Builder.EndStep.html" title="interface in org.spongepowered.api.data.persistence">DataStore.Builder.EndStep</a>&nbsp;key&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key,
-                                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;dataQueries)</pre>
+                                                                   java.lang.String...&nbsp;dataQueries)</pre>
 <div class="block">Adds the default implemented serializers for the given key.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -282,8 +282,8 @@ extends <a href="DataStore.Builder.HolderStep.html" title="interface in org.spon
 <li class="blockList">
 <h4>key</h4>
 <pre class="methodSignature">&lt;T,&#8203;V extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;T&gt;&gt;&nbsp;<a href="DataStore.Builder.EndStep.html" title="interface in org.spongepowered.api.data.persistence">DataStore.Builder.EndStep</a>&nbsp;key&#8203;(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&nbsp;key,
-                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">BiConsumer</a>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;T&gt;&nbsp;serializer,
-                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;T&gt;&gt;&nbsp;deserializer)</pre>
+                                                           java.util.function.BiConsumer&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;T&gt;&nbsp;serializer,
+                                                           java.util.function.Function&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>,&#8203;java.util.Optional&lt;T&gt;&gt;&nbsp;deserializer)</pre>
 <div class="block">Adds the serializers for the given key.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

@@ -145,24 +145,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#connectionUrlFromAlias(java.lang.String)">connectionUrlFromAlias</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;alias)</code></th>
+<td class="colFirst"><code>java.util.Optional&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#connectionUrlFromAlias(java.lang.String)">connectionUrlFromAlias</a></span>&#8203;(java.lang.String&nbsp;alias)</code></th>
 <td class="colLast">
 <div class="block">Returns a possible connection URL for a given alias.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">DataSource</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataSource(java.lang.String)">dataSource</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;jdbcConnection)</code></th>
+<td class="colFirst"><code>javax.sql.DataSource</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataSource(java.lang.String)">dataSource</a></span>&#8203;(java.lang.String&nbsp;jdbcConnection)</code></th>
 <td class="colLast">
 <div class="block">Returns a data source for the provided JDBC connection string or
  an alias.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">DataSource</a></code></td>
+<td class="colFirst"><code>javax.sql.DataSource</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataSource(org.spongepowered.plugin.PluginContainer,java.lang.String)">dataSource</a></span>&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;jdbcConnection)</code></th>
+          java.lang.String&nbsp;jdbcConnection)</code></th>
 <td class="colLast">
 <div class="block">Returns a data source for the provided JDBC connection string or an
  alias.</div>
@@ -191,8 +191,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>dataSource</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">DataSource</a>&nbsp;dataSource&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;jdbcConnection)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">javax.sql.DataSource&nbsp;dataSource&#8203;(java.lang.String&nbsp;jdbcConnection)
+                         throws java.sql.SQLException</pre>
 <div class="block">Returns a data source for the provided JDBC connection string or
  an alias.
 
@@ -206,7 +206,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A data source providing connections to the given URL.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code> - if a connection to the given database could not
+<dd><code>java.sql.SQLException</code> - if a connection to the given database could not
      be established</dd>
 </dl>
 </li>
@@ -217,9 +217,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>dataSource</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">DataSource</a>&nbsp;dataSource&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;jdbcConnection)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">javax.sql.DataSource&nbsp;dataSource&#8203;(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
+                                java.lang.String&nbsp;jdbcConnection)
+                         throws java.sql.SQLException</pre>
 <div class="block">Returns a data source for the provided JDBC connection string or an
  alias.
 
@@ -236,7 +236,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A data source providing connections to the given URL.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code> - if a connection to the given database could not
+<dd><code>java.sql.SQLException</code> - if a connection to the given database could not
      be established</dd>
 </dl>
 </li>
@@ -247,14 +247,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>connectionUrlFromAlias</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;connectionUrlFromAlias&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;alias)</pre>
+<pre class="methodSignature">java.util.Optional&lt;java.lang.String&gt;&nbsp;connectionUrlFromAlias&#8203;(java.lang.String&nbsp;alias)</pre>
 <div class="block">Returns a possible connection URL for a given alias.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>alias</code> - The alias to check</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The connection url as a String if it exists,
-          or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty()" title="class or interface in java.util" class="externalLink"><code>Optional.empty()</code></a></dd>
+          or <code>Optional.empty()</code></dd>
 </dl>
 </li>
 </ul>

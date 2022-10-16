@@ -114,17 +114,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation" class="externalLink">PARAMETER</a>)
-<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation" class="externalLink">RUNTIME</a>)
+<pre>@Target(PARAMETER)
+@Retention(RUNTIME)
 public @interface <span class="memberNameLabel">Getter</span></pre>
 <div class="block">Annotates a parameter in an event listener whose value should be fetched from
  a getter on the event type with the specified name.
- 
+
  <p>For example if the event type has a method 'T getObject();' then you would
  annotate a parameter of type T with '@Getter("getObject")'.</p>
- 
+
  <p>For optional types the value of the parameter can be either
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Optional</code></a> or the type of the enclosed object. If the type is the
+ <code>Optional</code> or the type of the enclosed object. If the type is the
  enclosed type then the optional will be automatically unwrapped and if the
  optional is not present then your event listener will not be called.</p></div>
 </li>
@@ -148,7 +148,7 @@ public @interface <span class="memberNameLabel">Getter</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#value()">value</a></span></code></th>
 <td class="colLast">
 <div class="block">The name of the method to fetch the value from within the event type.</div>
@@ -177,7 +177,7 @@ public @interface <span class="memberNameLabel">Getter</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value</pre>
+<pre>java.lang.String&nbsp;value</pre>
 <div class="block">The name of the method to fetch the value from within the event type.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
