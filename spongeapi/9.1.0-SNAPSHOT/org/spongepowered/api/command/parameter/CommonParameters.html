@@ -81,7 +81,7 @@ loadScripts(document, 'script');</script>
  used when creating commands and retrieving elements. A general workflow for
  defining a command with a <a href="../../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a> parameter may look like this:
  </p>
- 
+
  <pre> <code>
  final Parameter.Value&lt;ServerPlayer&gt; parameter = Parameter.player().setKey("player").build();
  final Command.Parameterized builder = Command.builder()
@@ -93,9 +93,9 @@ loadScripts(document, 'script');</script>
  // registration happens here.
  </code></pre>
 
- <p>While this is a totally valid approach, there are two particular 
+ <p>While this is a totally valid approach, there are two particular
  considerations that can be made:</p>
- 
+
  <ul>
      <li>Sponge provided <a href="managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a>s and, by extension,
      <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a>s are stateless and so can be reused by multiple
@@ -109,7 +109,7 @@ loadScripts(document, 'script');</script>
  </ul>
 
  <p>Given these two considerations, it generally makes sense to store one
- <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> for a given <a href="managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a> and 
+ <a href="Parameter.Value.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Value</code></a> for a given <a href="managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a> and
  <a href="Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter"><code>Parameter.Key</code></a> combination. Further, it is clear that plugins will
  tend to use similar, if not the same, parameter/key combinations.</p>
 
