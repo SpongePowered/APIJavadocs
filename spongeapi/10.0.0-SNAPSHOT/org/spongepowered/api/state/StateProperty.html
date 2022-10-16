@@ -84,15 +84,15 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">StateProperty&lt;T extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;T&gt;&gt;</span><span class="extends-implements">
 extends <a href="../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></span></div>
 <div class="block">Represents a possible state property in a <a href="StateContainer.html" title="interface in org.spongepowered.api.state"><code>StateContainer</code></a>s <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a>.
- 
+
  <p>A <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a> can include zero or more <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>s. Each
  <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a> within a <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a> is mapped to a value which
  represents the current value at the time the <a href="State.html" title="interface in org.spongepowered.api.state"><code>State</code></a> was taken.
  </p>
- 
+
  <p>For example, a <a href="../block/BlockTypes.html#RED_BED"><code>BlockTypes.RED_BED</code></a> contains three possible
  <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>s :</p>
- 
+
  <ul>
      <li><a href="EnumStateProperties.html#property_FACING()"><code>EnumStateProperties.property_FACING()</code></a></li>
      <li><a href="BooleanStateProperties.html#property_OCCUPIED()"><code>BooleanStateProperties.property_OCCUPIED()</code></a></li>
@@ -102,7 +102,7 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
  <p>If you query a <a href="../block/BlockTypes.html#RED_BED"><code>BlockTypes.RED_BED</code></a>'s <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a> you have two
  possible outcomes for each <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>. The
  <a href="BooleanStateProperties.html#property_OCCUPIED()"><code>BooleanStateProperties.property_OCCUPIED()</code></a> has the following possible values:</p>
- 
+
  <ul>
      <li><code>true</code></li>
      <li><code>false</code></li>
@@ -111,12 +111,12 @@ extends <a href="../util/Nameable.html" title="interface in org.spongepowered.ap
  <p>As 'OCCUPIED' is a <a href="BooleanStateProperty.html" title="interface in org.spongepowered.api.state"><code>BooleanStateProperty</code></a>, it can only be <code>true</code>
  or <code>false</code>.
  The <a href="EnumStateProperties.html#property_BED_PART()"><code>EnumStateProperties.property_BED_PART()</code></a> has the following possible values:</p>
- 
+
  <ul>
      <li><code>HEAD</code></li>
      <li><code>FOOT</code></li>
  </ul>
- 
+
  <p>To determine the current value of a <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>, you would call
  <a href="State.html#stateProperty(org.spongepowered.api.state.StateProperty)"><code>State.stateProperty(StateProperty)</code></a>. To determine all possible
  values of a <a href="StateProperty.html" title="interface in org.spongepowered.api.state"><code>StateProperty</code></a>, you would call

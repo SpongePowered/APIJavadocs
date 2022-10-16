@@ -73,10 +73,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Filters out events which do not match the specified cancellation state
  (represented by a <a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util"><code>Tristate</code></a>). If the state is set to undefined then
  the listener will be called regardless of the cancellation state.
- 
+
  <p>If this annotation is not present then the behavior is as normal, which is
  to say that the listener is only called if the event is not cancelled.</p>
- 
+
  <p> The event type of the annotated event listener <strong>MUST</strong> be
  cancellable (eg. must extend <a href="../Cancellable.html" title="interface in org.spongepowered.api.event"><code>Cancellable</code></a>). </p></div>
 </section>

@@ -1919,7 +1919,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a></span>&nbsp;<span class="element-name">writeVarInt</span><wbr><span class="parameters">(int&nbsp;data)</span></div>
 <div class="block">Sets the specified varint at the current writerIndex and increases the
  writerIndex by the number of bytes written.
- 
+
  <p>The number of bytes written depends on the size of the value, see <a href="https://developers.google.com/protocol-buffers/docs/encoding#varints">
  https://developers.google.com/protocol-buffers/docs/encoding#varints</a>
  for a full description.</p></div>
@@ -1938,7 +1938,7 @@ loadScripts(document, 'script');</script>
  int&nbsp;data)</span></div>
 <div class="block">Sets the specified varint at the specified absolute index in this buffer.
  This method does not modify readerIndex or writerIndex of this buffer.
- 
+
  <p>The number of bytes written depends on the size of the value, see <a href="https://developers.google.com/protocol-buffers/docs/encoding#varints">
  https://developers.google.com/protocol-buffers/docs/encoding#varints</a>
  for a full description.</p></div>
@@ -1957,7 +1957,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">readVarInt</span>()</div>
 <div class="block">Gets a varint at the current readerIndex and increases the readerIndex by
  the number of bytes read.
- 
+
  <p>The number of bytes read depends on the size of the value, see <a href="https://developers.google.com/protocol-buffers/docs/encoding#varints">
  https://developers.google.com/protocol-buffers/docs/encoding#varints</a>
  for a full description.</p></div>
@@ -1972,7 +1972,7 @@ loadScripts(document, 'script');</script>
 <h3>getVarInt</h3>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">getVarInt</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Gets a varint at the specified absolute index in this buffer.
- 
+
  <p>The number of bytes read depends on the size of the value, see <a href="https://developers.google.com/protocol-buffers/docs/encoding#varints">
  https://developers.google.com/protocol-buffers/docs/encoding#varints</a>
  for a full description.</p></div>
@@ -2053,7 +2053,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a></span>&nbsp;<span class="element-name">writeString</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;data)</span></div>
 <div class="block">Sets the specified string at the current writerIndex and increases the
  writerIndex by the length of the string.
- 
+
  <p>The string will be encoded as the utf length as a varint followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2072,7 +2072,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Sets the string at the specified absolute index in this
  buffer. This method does not modify readerIndex or writerIndex
  of this buffer.
- 
+
  <p>The string will be encoded as the utf length as a varint followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2090,7 +2090,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">readString</span>()</div>
 <div class="block">Gets a string at the current readerIndex and increases the readerIndex by
  the length of a varint followed by the utf-8 bytes of the string.
- 
+
  <p>The string will be encoded as the utf length as a varint followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2104,7 +2104,7 @@ loadScripts(document, 'script');</script>
 <h3>getString</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getString</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Gets a string at the specified absolute index in this buffer.
- 
+
  <p>The string will be encoded as the utf length as a varint followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2121,7 +2121,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="ChannelBuf.html" title="interface in org.spongepowered.api.network.channel">ChannelBuf</a></span>&nbsp;<span class="element-name">writeUTF</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;data)</span></div>
 <div class="block">Sets the specified string at the current writerIndex and increases the
  writerIndex by the length of the string.
- 
+
  <p>The string will be encoded as the utf length as a short followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2140,7 +2140,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Sets the string at the specified absolute index in this
  buffer. This method does not modify readerIndex or writerIndex
  of this buffer.
- 
+
  <p>The string will be encoded as the utf length as a short followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2158,7 +2158,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">readUTF</span>()</div>
 <div class="block">Gets a string at the current readerIndex and increases the readerIndex by
  the length of a varint followed by the utf-8 bytes of the string.
- 
+
  <p>The string will be encoded as the utf length as a short followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
@@ -2172,7 +2172,7 @@ loadScripts(document, 'script');</script>
 <h3>getUTF</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUTF</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
 <div class="block">Gets a string at the specified absolute index in this buffer.
- 
+
  <p>The string will be encoded as the utf length as a short followed by
  the UTF-8 bytes of the string.</p></div>
 <dl class="notes">
