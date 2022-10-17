@@ -1,1 +1,1 @@
-moduleSearchIndex = [];updateSearchResults();
+moduleSearchIndex = [{"l":"org.spongepowered.plugin.metadata.mcmodinfo"}];updateSearchResults();
