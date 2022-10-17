@@ -1,0 +1,4 @@
+module:org.spongepowered.plugin.metadata.mcmodinfo
+org.spongepowered.plugin.meta
+org.spongepowered.plugin.meta.gson
+org.spongepowered.plugin.meta.version
