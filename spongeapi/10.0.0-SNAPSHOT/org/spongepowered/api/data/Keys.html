@@ -433,7 +433,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#CREATE_DRAGON_FIGHT" class="member-name-link">CREATE_DRAGON_FIGHT</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Whether a <a href="../world/WorldType.html" title="interface in org.spongepowered.api.world"><code>WorldType</code></a> allows the <a href="../entity/living/monster/boss/dragon/EnderDragon.html" title="interface in org.spongepowered.api.entity.living.monster.boss.dragon"><code>dragon</code></a> fight mechanic to spawn.</div>
+<div class="block">Overrides whether a <a href="../world/WorldType.html" title="interface in org.spongepowered.api.world"><code>WorldType</code></a> allows the <a href="../entity/living/monster/boss/dragon/EnderDragon.html" title="interface in org.spongepowered.api.entity.living.monster.boss.dragon"><code>dragon</code></a> fight mechanic to spawn.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#CREATOR" class="member-name-link">CREATOR</a></code></div>
@@ -3083,7 +3083,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CREATE_DRAGON_FIGHT">
 <h3>CREATE_DRAGON_FIGHT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">CREATE_DRAGON_FIGHT</span></div>
-<div class="block">Whether a <a href="../world/WorldType.html" title="interface in org.spongepowered.api.world"><code>WorldType</code></a> allows the <a href="../entity/living/monster/boss/dragon/EnderDragon.html" title="interface in org.spongepowered.api.entity.living.monster.boss.dragon"><code>dragon</code></a> fight mechanic to spawn.
+<div class="block">Overrides whether a <a href="../world/WorldType.html" title="interface in org.spongepowered.api.world"><code>WorldType</code></a> allows the <a href="../entity/living/monster/boss/dragon/EnderDragon.html" title="interface in org.spongepowered.api.entity.living.monster.boss.dragon"><code>dragon</code></a> fight mechanic to spawn.
+ <p>By default, the dragon only spawns in the <a href="../world/DefaultWorldKeys.html#THE_END"><code>DefaultWorldKeys.THE_END</code></a> world with <a href="../world/WorldTypes.html#THE_END"><code>WorldTypes.THE_END</code></a> world type.</p>
  Readonly</div>
 </section>
 </li>
