@@ -139,7 +139,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/ConfigurationNodeFactory.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">ConfigurationNodeFactory</a>&lt;<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&gt;</code>, <code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/ConfigurationLoader.html?is-external=true" title="class or interface in org.spongepowered.configurate.loader" class="externalLink">ConfigurationLoader</a>&lt;<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&gt;</code></dd>
 </dl>
 <hr>
-<pre>public final class <a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.43">YamlConfigurationLoader</a>
+<pre>public final class <a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.47">YamlConfigurationLoader</a>
 extends <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.html?is-external=true" title="class or interface in org.spongepowered.configurate.loader" class="externalLink">AbstractConfigurationLoader</a>&lt;<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&gt;</pre>
 <div class="block">A loader for YAML-formatted configurations, using the SnakeYAML library for
  parsing and generation.</div>
@@ -284,7 +284,7 @@ extends <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/or
 <ul class="blockList">
 <li class="blockList">
 <h4>builder</h4>
-<pre class="methodSignature">public static&nbsp;<a href="YamlConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.yaml">YamlConfigurationLoader.Builder</a>&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.60">builder</a>()</pre>
+<pre class="methodSignature">public static&nbsp;<a href="YamlConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.yaml">YamlConfigurationLoader.Builder</a>&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.64">builder</a>()</pre>
 <div class="block">Creates a new <a href="YamlConfigurationLoader.html" title="class in org.spongepowered.configurate.yaml"><code>YamlConfigurationLoader</code></a> builder.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -300,7 +300,7 @@ extends <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/or
 <ul class="blockList">
 <li class="blockList">
 <h4>loadInternal</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.172">loadInternal</a>&#8203;(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&nbsp;node,
+<pre class="methodSignature">protected&nbsp;void&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.181">loadInternal</a>&#8203;(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&nbsp;node,
                             java.io.BufferedReader&nbsp;reader)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -314,7 +314,7 @@ extends <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/or
 <ul class="blockList">
 <li class="blockList">
 <h4>saveInternal</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.177">saveInternal</a>&#8203;(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/ConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">ConfigurationNode</a>&nbsp;node,
+<pre class="methodSignature">protected&nbsp;void&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.186">saveInternal</a>&#8203;(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/ConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">ConfigurationNode</a>&nbsp;node,
                             java.io.Writer&nbsp;writer)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -328,7 +328,7 @@ extends <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/or
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createNode</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.182">createNode</a>&#8203;(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/ConfigurationOptions.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">ConfigurationOptions</a>&nbsp;options)</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/CommentedConfigurationNode.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">CommentedConfigurationNode</a>&nbsp;<a href="../../../../src-html/org/spongepowered/configurate/yaml/YamlConfigurationLoader.html#line.191">createNode</a>&#8203;(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/ConfigurationOptions.html?is-external=true" title="class or interface in org.spongepowered.configurate" class="externalLink">ConfigurationOptions</a>&nbsp;options)</pre>
 </li>
 </ul>
 </li>
