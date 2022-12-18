@@ -74,11 +74,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&gt;</code>, <code>net.kyori.examination.Examinable</code>, <code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></code>, <code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Namespaced.html" title="class or interface in net.kyori.adventure.key" class="external-link">Namespaced</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&gt;</code>, <code>net.kyori.examination.Examinable</code>, <code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></code>, <code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code>, <code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Namespaced.html" title="class or interface in net.kyori.adventure.key" class="external-link">Namespaced</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ResourceKey</span><span class="extends-implements">
-extends <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></span></div>
+extends <a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></span></div>
 <div class="block">An object representation of a location or pointer to resources.
  The key can be represented as a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> by <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link"><code>Object.toString()</code></a>.
 
@@ -146,6 +146,9 @@ extends <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/k
 <div class="block">The sponge namespace.</div>
 </div>
 </div>
+<div class="inherited-list">
+<h3 id="fields-inherited-from-class-net.kyori.adventure.key.Key">Fields inherited from interface&nbsp;net.kyori.adventure.key.<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></h3>
+<code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#DEFAULT_SEPARATOR" title="class or interface in net.kyori.adventure.key" class="external-link">DEFAULT_SEPARATOR</a></code></div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -173,7 +176,7 @@ extends <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/k
 <div class="block">Creates a new <a href="ResourceKey.Builder.html" title="interface in org.spongepowered.api"><code>ResourceKey.Builder</code></a> for creating <a href="ResourceKey.html" title="interface in org.spongepowered.api"><code>ResourceKey</code></a>s.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#compareTo(net.kyori.adventure.key.Key)" class="member-name-link">compareTo</a><wbr>(<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&nbsp;o)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#compareTo(net.kyori.adventure.key.Key)" class="member-name-link">compareTo</a><wbr>(<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&nbsp;o)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#formatted()" class="member-name-link">formatted</a>()</code></div>
@@ -214,8 +217,8 @@ extends <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/k
 <h3 id="methods-inherited-from-class-net.kyori.examination.Examinable">Methods inherited from interface&nbsp;net.kyori.examination.Examinable</h3>
 <code>examinableName, examine</code></div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-net.kyori.adventure.key.Key">Methods inherited from interface&nbsp;net.kyori.adventure.key.<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></h3>
-<code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html#examinableProperties()" title="class or interface in net.kyori.adventure.key" class="external-link">examinableProperties</a>, <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html#namespace()" title="class or interface in net.kyori.adventure.key" class="external-link">namespace</a>, <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html#value()" title="class or interface in net.kyori.adventure.key" class="external-link">value</a></code></div>
+<h3 id="methods-inherited-from-class-net.kyori.adventure.key.Key">Methods inherited from interface&nbsp;net.kyori.adventure.key.<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></h3>
+<code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#examinableProperties()" title="class or interface in net.kyori.adventure.key" class="external-link">examinableProperties</a>, <a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#key()" title="class or interface in net.kyori.adventure.key" class="external-link">key</a>, <a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#namespace()" title="class or interface in net.kyori.adventure.key" class="external-link">namespace</a>, <a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#value()" title="class or interface in net.kyori.adventure.key" class="external-link">value</a></code></div>
 </section>
 </li>
 </ul>
@@ -399,19 +402,19 @@ extends <a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/k
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">asString</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html#asString()" title="class or interface in net.kyori.adventure.key" class="external-link">asString</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#asString()" title="class or interface in net.kyori.adventure.key" class="external-link">asString</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></code></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="compareTo(net.kyori.adventure.key.Key)">
 <h3>compareTo</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">compareTo</span><wbr><span class="parameters">(<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&nbsp;o)</span></div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">compareTo</span><wbr><span class="parameters">(<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&nbsp;o)</span></div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo(T)" title="class or interface in java.lang" class="external-link">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a>&gt;</code></dd>
 <dt>Specified by:</dt>
-<dd><code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html#compareTo(net.kyori.adventure.key.Key)" title="class or interface in net.kyori.adventure.key" class="external-link">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html#compareTo(net.kyori.adventure.key.Key)" title="class or interface in net.kyori.adventure.key" class="external-link">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Key.html" title="class or interface in net.kyori.adventure.key" class="external-link">Key</a></code></dd>
 </dl>
 </section>
 </li>
