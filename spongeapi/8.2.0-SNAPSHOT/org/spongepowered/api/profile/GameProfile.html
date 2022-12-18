@@ -6,15 +6,16 @@
 <title>GameProfile (SpongeAPI 8.2.0-SNAPSHOT API)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -123,11 +124,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></code>, <code>net.kyori.examination.Examinable</code>, <code><a href="../util/Identifiable.html" title="interface in org.spongepowered.api.util">Identifiable</a></code>, <code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></code></dd>
+<dd><code><a href="../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></code>, <code>net.kyori.examination.Examinable</code>, <code><a href="../util/Identifiable.html" title="interface in org.spongepowered.api.util">Identifiable</a></code>, <code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">GameProfile</span>
-extends <a href="../util/Identifiable.html" title="interface in org.spongepowered.api.util">Identifiable</a>, <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a>, <a href="../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></pre>
+extends <a href="../util/Identifiable.html" title="interface in org.spongepowered.api.util">Identifiable</a>, <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a>, <a href="../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></pre>
 <div class="block">Represents a profile of a user.
 
  <p>Use the <a href="../user/UserManager.html" title="interface in org.spongepowered.api.user"><code>UserManager</code></a> service to
@@ -139,7 +140,7 @@ extends <a href="../util/Identifiable.html" title="interface in org.spongepowere
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== NESTED CLASS SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="nested.class.summary">
 <!--   -->
@@ -164,7 +165,7 @@ extends <a href="../util/Identifiable.html" title="interface in org.spongepowere
 </ul>
 </section>
 <!-- =========== FIELD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.summary">
 <!--   -->
@@ -174,14 +175,14 @@ extends <a href="../util/Identifiable.html" title="interface in org.spongepowere
 <li class="blockList"><a id="fields.inherited.from.class.net.kyori.adventure.identity.Identity">
 <!--   -->
 </a>
-<h3>Fields inherited from interface&nbsp;net.kyori.adventure.identity.<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></h3>
-<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true#DISPLAY_NAME" title="class or interface in net.kyori.adventure.identity" class="externalLink">DISPLAY_NAME</a>, <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true#LOCALE" title="class or interface in net.kyori.adventure.identity" class="externalLink">LOCALE</a>, <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true#NAME" title="class or interface in net.kyori.adventure.identity" class="externalLink">NAME</a>, <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true#UUID" title="class or interface in net.kyori.adventure.identity" class="externalLink">UUID</a></code></li>
+<h3>Fields inherited from interface&nbsp;net.kyori.adventure.identity.<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></h3>
+<code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true#DISPLAY_NAME" title="class or interface in net.kyori.adventure.identity" class="externalLink">DISPLAY_NAME</a>, <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true#LOCALE" title="class or interface in net.kyori.adventure.identity" class="externalLink">LOCALE</a>, <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true#NAME" title="class or interface in net.kyori.adventure.identity" class="externalLink">NAME</a>, <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true#UUID" title="class or interface in net.kyori.adventure.identity" class="externalLink">UUID</a></code></li>
 </ul>
 </li>
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -320,8 +321,8 @@ extends <a href="../util/Identifiable.html" title="interface in org.spongepowere
 <li class="blockList"><a id="methods.inherited.from.class.net.kyori.adventure.identity.Identity">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;net.kyori.adventure.identity.<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></h3>
-<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true#examinableProperties()" title="class or interface in net.kyori.adventure.identity" class="externalLink">examinableProperties</a></code></li>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.identity.<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></h3>
+<code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true#examinableProperties()" title="class or interface in net.kyori.adventure.identity" class="externalLink">examinableProperties</a></code></li>
 </ul>
 </li>
 </ul>
@@ -333,7 +334,7 @@ extends <a href="../util/Identifiable.html" title="interface in org.spongepowere
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -384,7 +385,7 @@ extends <a href="../util/Identifiable.html" title="interface in org.spongepowere
 <pre class="methodSignature">default&nbsp;java.util.UUID&nbsp;uuid()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true#uuid()" title="class or interface in net.kyori.adventure.identity" class="externalLink">uuid</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></code></dd>
+<dd><code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true#uuid()" title="class or interface in net.kyori.adventure.identity" class="externalLink">uuid</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/identity/Identity.html?is-external=true" title="class or interface in net.kyori.adventure.identity" class="externalLink">Identity</a></code></dd>
 </dl>
 </li>
 </ul>

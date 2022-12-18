@@ -6,15 +6,16 @@
 <title>AudienceMessageEvent (SpongeAPI 8.2.0-SNAPSHOT API)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -132,7 +133,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">AudienceMessageEvent</span>
 extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.event.message">MessageEvent</a></pre>
-<div class="block">Describes events when a involving a <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> message and <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a>s.</div>
+<div class="block">Describes events when a involving a <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>Component</code></a> message and <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink"><code>Audience</code></a>s.</div>
 </li>
 </ul>
 </div>
@@ -140,7 +141,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <ul class="blockList">
 <li class="blockList">
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -154,7 +155,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#audience()">audience</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the current audience that this message will be sent to.</div>
@@ -162,13 +163,13 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterAudience(java.util.function.Predicate)">filterAudience</a></span>&#8203;(java.util.function.Predicate&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;predicate)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterAudience(java.util.function.Predicate)">filterAudience</a></span>&#8203;(java.util.function.Predicate&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;predicate)</code></th>
 <td class="colLast">
 <div class="block">Filters the current audience with given predicate.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a></code></td>
+<td class="colFirst"><code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#originalAudience()">originalAudience</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the original audience that this message will be sent to.</div>
@@ -176,7 +177,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAudience(net.kyori.adventure.audience.Audience)">setAudience</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;audience)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAudience(net.kyori.adventure.audience.Audience)">setAudience</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;audience)</code></th>
 <td class="colLast">
 <div class="block">Sets the audience for this message to go to.</div>
 </td>
@@ -206,7 +207,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -218,7 +219,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <ul class="blockList">
 <li class="blockList">
 <h4>originalAudience</h4>
-<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;originalAudience()</pre>
+<pre class="methodSignature"><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;originalAudience()</pre>
 <div class="block">Gets the original audience that this message will be sent to.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -232,7 +233,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <ul class="blockList">
 <li class="blockList">
 <h4>audience</h4>
-<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;audience()</pre>
+<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;audience()</pre>
 <div class="block">Gets the current audience that this message will be sent to.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -246,7 +247,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <ul class="blockList">
 <li class="blockList">
 <h4>setAudience</h4>
-<pre class="methodSignature">void&nbsp;setAudience&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;audience)</pre>
+<pre class="methodSignature">void&nbsp;setAudience&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&nbsp;audience)</pre>
 <div class="block">Sets the audience for this message to go to.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -260,7 +261,7 @@ extends <a href="MessageEvent.html" title="interface in org.spongepowered.api.ev
 <ul class="blockListLast">
 <li class="blockList">
 <h4>filterAudience</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;filterAudience&#8203;(java.util.function.Predicate&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;predicate)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;filterAudience&#8203;(java.util.function.Predicate&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/audience/Audience.html?is-external=true" title="class or interface in net.kyori.adventure.audience" class="externalLink">Audience</a>&gt;&nbsp;predicate)</pre>
 <div class="block">Filters the current audience with given predicate.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

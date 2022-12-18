@@ -6,15 +6,16 @@
 <title>ServerWorldProperties (SpongeAPI 8.2.0-SNAPSHOT API)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -123,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../gamerule/GameRuleHolder.html" title="interface in org.spongepowered.api.world.gamerule">GameRuleHolder</a></code>, <code><a href="../../../util/Identifiable.html" title="interface in org.spongepowered.api.util">Identifiable</a></code>, <code><a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/Keyed.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">Keyed</a></code>, <code><a href="../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></code>, <code><a href="../../../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code>, <code><a href="../../weather/WeatherUniverse.html" title="interface in org.spongepowered.api.world.weather">WeatherUniverse</a></code>, <code><a href="../../weather/WeatherUniverse.Mutable.html" title="interface in org.spongepowered.api.world.weather">WeatherUniverse.Mutable</a></code>, <code><a href="../../storage/WorldProperties.html" title="interface in org.spongepowered.api.world.storage">WorldProperties</a></code></dd>
+<dd><code><a href="../../gamerule/GameRuleHolder.html" title="interface in org.spongepowered.api.world.gamerule">GameRuleHolder</a></code>, <code><a href="../../../util/Identifiable.html" title="interface in org.spongepowered.api.util">Identifiable</a></code>, <code><a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/Keyed.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">Keyed</a></code>, <code><a href="../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></code>, <code><a href="../../../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code>, <code><a href="../../weather/WeatherUniverse.html" title="interface in org.spongepowered.api.world.weather">WeatherUniverse</a></code>, <code><a href="../../weather/WeatherUniverse.Mutable.html" title="interface in org.spongepowered.api.world.weather">WeatherUniverse.Mutable</a></code>, <code><a href="../../storage/WorldProperties.html" title="interface in org.spongepowered.api.world.storage">WorldProperties</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">ServerWorldProperties</span>
@@ -135,7 +136,7 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== NESTED CLASS SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="nested.class.summary">
 <!--   -->
@@ -152,7 +153,7 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -173,17 +174,17 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#customBossBars()">customBossBars</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the custom <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
+<div class="block">Gets the custom <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#displayName()">displayName</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
+<div class="block">Gets the <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -237,9 +238,9 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCustomBossBars(java.util.List)">setCustomBossBars</a></span>&#8203;(@Nullable java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;&nbsp;bars)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCustomBossBars(java.util.List)">setCustomBossBars</a></span>&#8203;(@Nullable java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;&nbsp;bars)</code></th>
 <td class="colLast">
-<div class="block">Sets the custom <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
+<div class="block">Sets the custom <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -258,9 +259,9 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisplayName(net.kyori.adventure.text.Component)">setDisplayName</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisplayName(net.kyori.adventure.text.Component)">setDisplayName</a></span>&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;name)</code></th>
 <td class="colLast">
-<div class="block">Sets the <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
+<div class="block">Sets the <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
@@ -449,7 +450,7 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -479,8 +480,8 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 <ul class="blockList">
 <li class="blockList">
 <h4>displayName</h4>
-<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;displayName()</pre>
-<div class="block">Gets the <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
+<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;displayName()</pre>
+<div class="block">Gets the <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The name</dd>
@@ -493,8 +494,8 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 <ul class="blockList">
 <li class="blockList">
 <h4>setDisplayName</h4>
-<pre class="methodSignature">void&nbsp;setDisplayName&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;name)</pre>
-<div class="block">Sets the <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
+<pre class="methodSignature">void&nbsp;setDisplayName&#8203;(@Nullable <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&nbsp;name)</pre>
+<div class="block">Sets the <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink"><code>name</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - The name</dd>
@@ -885,8 +886,8 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 <ul class="blockList">
 <li class="blockList">
 <h4>customBossBars</h4>
-<pre class="methodSignature">java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;&nbsp;customBossBars()</pre>
-<div class="block">Gets the custom <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
+<pre class="methodSignature">java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;&nbsp;customBossBars()</pre>
+<div class="block">Gets the custom <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The boss bars</dd>
@@ -899,8 +900,8 @@ extends <a href="../../storage/WorldProperties.html" title="interface in org.spo
 <ul class="blockList">
 <li class="blockList">
 <h4>setCustomBossBars</h4>
-<pre class="methodSignature">void&nbsp;setCustomBossBars&#8203;(@Nullable java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.11.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;&nbsp;bars)</pre>
-<div class="block">Sets the custom <a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
+<pre class="methodSignature">void&nbsp;setCustomBossBars&#8203;(@Nullable java.util.List&lt;<a href="https://jd.adventure.kyori.net/key/4.12.0/net/kyori/adventure/key/KeyedValue.html?is-external=true" title="class or interface in net.kyori.adventure.key" class="externalLink">KeyedValue</a>&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink">BossBar</a>&gt;&gt;&nbsp;bars)</pre>
+<div class="block">Sets the custom <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/bossbar/BossBar.html?is-external=true" title="class or interface in net.kyori.adventure.bossbar" class="externalLink"><code>bars</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bars</code> - The boss bars</dd>

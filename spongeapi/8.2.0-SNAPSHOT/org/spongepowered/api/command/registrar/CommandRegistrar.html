@@ -6,15 +6,16 @@
 <title>CommandRegistrar (SpongeAPI 8.2.0-SNAPSHOT API)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -165,7 +166,7 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -199,7 +200,7 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#help(org.spongepowered.api.command.CommandCause,org.spongepowered.api.command.manager.CommandMapping)">help</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
     <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</code></th>
 <td class="colLast">
@@ -227,7 +228,7 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>default java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
+<td class="colFirst"><code>default java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shortDescription(org.spongepowered.api.command.CommandCause,org.spongepowered.api.command.manager.CommandMapping)">shortDescription</a></span>&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
                 <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</code></th>
 <td class="colLast">
@@ -253,7 +254,7 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -372,7 +373,7 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <h4>shortDescription</h4>
-<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;shortDescription&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
+<pre class="methodSignature">default&nbsp;java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;shortDescription&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
                                                        <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</pre>
 <div class="block">Returns a short description for the invoked command, if one is
  available.
@@ -402,7 +403,7 @@ public interface <span class="typeNameLabel">CommandRegistrar&lt;T&gt;</span></p
 <ul class="blockList">
 <li class="blockList">
 <h4>help</h4>
-<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.11.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;help&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
+<pre class="methodSignature">java.util.Optional&lt;<a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html?is-external=true" title="class or interface in net.kyori.adventure.text" class="externalLink">Component</a>&gt;&nbsp;help&#8203;(<a href="../CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;cause,
                                    <a href="../manager/CommandMapping.html" title="interface in org.spongepowered.api.command.manager">CommandMapping</a>&nbsp;mapping)</pre>
 <div class="block">Returns help text for the invoked command, if one is available.</div>
 <dl>
