@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.spongepowered.mij","l":"MethodInvocationInterceptor"},{"p":"org.spongepowered.mij","l":"ModLauncherExtension"},{"p":"org.spongepowered.mij","l":"SharedModLauncher"}];updateSearchResults();
