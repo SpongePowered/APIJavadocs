@@ -2078,7 +2078,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../profile/property/ProfileProperty.html" title="interface in org.spongepowered.api.profile.property">ProfileProperty</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#SKIN_PROFILE_PROPERTY" class="member-name-link">SKIN_PROFILE_PROPERTY</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The skin of a <a href="../entity/living/Humanoid.html" title="interface in org.spongepowered.api.entity.living"><code>Humanoid</code></a>.</div>
+<div class="block">The skin of a <a href="../entity/living/Humanoid.html" title="interface in org.spongepowered.api.entity.living"><code>Humanoid</code></a> or <a href="../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../util/Color.html" title="class in org.spongepowered.api.util">Color</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#SKY_COLOR" class="member-name-link">SKY_COLOR</a></code></div>
@@ -5758,12 +5758,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="SKIN_PROFILE_PROPERTY">
 <h3>SKIN_PROFILE_PROPERTY</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../profile/property/ProfileProperty.html" title="interface in org.spongepowered.api.profile.property">ProfileProperty</a>&gt;&gt;</span>&nbsp;<span class="element-name">SKIN_PROFILE_PROPERTY</span></div>
-<div class="block">The skin of a <a href="../entity/living/Humanoid.html" title="interface in org.spongepowered.api.entity.living"><code>Humanoid</code></a>.
+<div class="block">The skin of a <a href="../entity/living/Humanoid.html" title="interface in org.spongepowered.api.entity.living"><code>Humanoid</code></a> or <a href="../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server"><code>ServerPlayer</code></a>.
 
- <p>Skins can only be manipulated by supplying the UUID of a player
- having that skin. The binary skin data is signed by Mojang so fully
- customized skins are not possible.</p>
- Readonly (Player)</div>
+ <p>Usable with <a href="../profile/property/ProfileProperty.html#TEXTURES"><code>ProfileProperty.TEXTURES</code></a></p></div>
 </section>
 </li>
 <li>
