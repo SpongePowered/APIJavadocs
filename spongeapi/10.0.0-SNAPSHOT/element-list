@@ -41,6 +41,7 @@ org.spongepowered.api.entity.ai.goal.builtin.creature.horse
 org.spongepowered.api.entity.ai.goal.builtin.creature.target
 org.spongepowered.api.entity.attribute
 org.spongepowered.api.entity.attribute.type
+org.spongepowered.api.entity.display
 org.spongepowered.api.entity.explosive
 org.spongepowered.api.entity.explosive.fused
 org.spongepowered.api.entity.hanging
