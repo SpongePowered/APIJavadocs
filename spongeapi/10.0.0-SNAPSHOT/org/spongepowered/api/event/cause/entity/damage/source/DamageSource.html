@@ -72,20 +72,11 @@ loadScripts(document, 'script');</script>
 <h1 title="Interface DamageSource" class="title">Interface DamageSource</h1>
 </div>
 <section class="class-description" id="class-description">
-<dl class="notes">
-<dt>All Known Subinterfaces:</dt>
-<dd><code><a href="BlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">BlockDamageSource</a></code>, <code><a href="EntityDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">EntityDamageSource</a></code>, <code><a href="FallingBlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">FallingBlockDamageSource</a></code>, <code><a href="IndirectEntityDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">IndirectEntityDamageSource</a></code></dd>
-</dl>
-<dl class="notes">
-<dt>All Known Implementing Classes:</dt>
-<dd><code><a href="common/AbstractDamageSource.html" title="class in org.spongepowered.api.event.cause.entity.damage.source.common">AbstractDamageSource</a></code>, <code><a href="common/AbstractEntityDamageSource.html" title="class in org.spongepowered.api.event.cause.entity.damage.source.common">AbstractEntityDamageSource</a></code>, <code><a href="common/AbstractIndirectEntityDamageSource.html" title="class in org.spongepowered.api.event.cause.entity.damage.source.common">AbstractIndirectEntityDamageSource</a></code></dd>
-</dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">DamageSource</span></div>
 <div class="block">Represents a <a href="../../../../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> for damage on the <a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> being
  damaged. Usually the <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> will have different properties
- based on the source of damage, such as <a href="EntityDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>EntityDamageSource</code></a>s,
- <a href="BlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>BlockDamageSource</code></a>s, and <a href="FallingBlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>FallingBlockDamageSource</code></a>s.
+ based on the <a href="../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> and its associated <a href="../../../../../tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
 
  <p>Almost always, the <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> will be the first element in
  the <a href="../../../../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> of the event. Any additional modifiers that "aid" the
@@ -106,11 +97,8 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><code><a href="DamageSource.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.Builder</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="DamageSource.DamageSourceBuilder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.DamageSourceBuilder</a>&lt;<a href="DamageSource.DamageSourceBuilder.html" title="type parameter in DamageSource.DamageSourceBuilder">T</a> extends <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a>,<wbr><a href="DamageSource.DamageSourceBuilder.html" title="type parameter in DamageSource.DamageSourceBuilder">B</a> extends <a href="DamageSource.DamageSourceBuilder.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.DamageSourceBuilder</a>&lt;<a href="DamageSource.DamageSourceBuilder.html" title="type parameter in DamageSource.DamageSourceBuilder">T</a>,<wbr><a href="DamageSource.DamageSourceBuilder.html" title="type parameter in DamageSource.DamageSourceBuilder">B</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="DamageSource.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.Factory</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DamageSource.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.Factory</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -119,67 +107,90 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DamageSource.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#blockSnapshot()" class="member-name-link">blockSnapshot</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the <a href="../../../../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> of the source.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DamageSource.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Creates a new <a href="DamageSource.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>builder</code></a> to build a <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doesAffectCreative()" class="member-name-link">doesAffectCreative</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doesAffectCreative()" class="member-name-link">doesAffectCreative</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to damage creative, or
  otherwise "normally unharmable" players.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#exhaustion()" class="member-name-link">exhaustion</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#exhaustion()" class="member-name-link">exhaustion</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the amount of exhaustion this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> will
  add to the entity, generally only to players.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isAbsolute()" class="member-name-link">isAbsolute</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>'s damage is absolute and
- will ignore potion effects and enchantments.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isBypassingArmor()" class="member-name-link">isBypassingArmor</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#indirectSource()" class="member-name-link">indirectSource</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the <a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> that is indirectly using the <a href="#source()"><code>source()</code></a>
+ to cause damage.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#isAbsolute()" class="member-name-link">isAbsolute</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isBypassingArmor()" class="member-name-link">isBypassingArmor</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> will deal damage that
  bypasses any armor.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isExplosive()" class="member-name-link">isExplosive</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isExplosive()" class="member-name-link">isExplosive</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is an explosion.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isFire()" class="member-name-link">isFire</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isFire()" class="member-name-link">isFire</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be "fire" based,
  can be from flames or blocks that are flaming, or the entity being on fire.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isMagic()" class="member-name-link">isMagic</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isMagic()" class="member-name-link">isMagic</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be magical
  damage, such as potions, or other sources.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isScaledByDifficulty()" class="member-name-link">isScaledByDifficulty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isScaledByDifficulty()" class="member-name-link">isScaledByDifficulty</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>'s damage is scaled by
  <a href="../../../../../world/difficulty/Difficulty.html" title="interface in org.spongepowered.api.world.difficulty"><code>Difficulty</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#location()" class="member-name-link">location</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the location of the <a href="../../../../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#position()" class="member-name-link">position</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#source()" class="member-name-link">source</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the <a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> that is the source.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> of this source.</div>
 </div>
 </div>
@@ -221,7 +232,9 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="isAbsolute()">
 <h3>isAbsolute</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isAbsolute</span>()</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isAbsolute</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>'s damage is absolute and
  will ignore potion effects and enchantments.</div>
 <dl class="notes">
@@ -233,7 +246,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="isBypassingArmor()">
 <h3>isBypassingArmor</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isBypassingArmor</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isBypassingArmor</span>()</div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> will deal damage that
  bypasses any armor.</div>
 <dl class="notes">
@@ -245,7 +258,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="isScaledByDifficulty()">
 <h3>isScaledByDifficulty</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isScaledByDifficulty</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isScaledByDifficulty</span>()</div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>'s damage is scaled by
  <a href="../../../../../world/difficulty/Difficulty.html" title="interface in org.spongepowered.api.world.difficulty"><code>Difficulty</code></a>.</div>
 <dl class="notes">
@@ -257,7 +270,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="isExplosive()">
 <h3>isExplosive</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isExplosive</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isExplosive</span>()</div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is an explosion.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -268,7 +281,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="isMagic()">
 <h3>isMagic</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isMagic</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isMagic</span>()</div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be magical
  damage, such as potions, or other sources.</div>
 <dl class="notes">
@@ -283,7 +296,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">doesAffectCreative</span>()</div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to damage creative, or
  otherwise "normally unharmable" players. Usually associated with
- <a href="../DamageTypes.html#VOID"><code>DamageTypes.VOID</code></a>.</div>
+ <a href="../DamageTypes.html#OUT_OF_WORLD"><code>DamageTypes.OUT_OF_WORLD</code></a>.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>If this damage should affect creative players</dd>
@@ -293,7 +306,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="isFire()">
 <h3>isFire</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isFire</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isFire</span>()</div>
 <div class="block">Gets whether this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be "fire" based,
  can be from flames or blocks that are flaming, or the entity being on fire.
  Usually is possible to bypass or ignore this damage if the owning entity has
@@ -308,7 +321,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="exhaustion()">
 <h3>exhaustion</h3>
-<div class="member-signature"><span class="return-type">double</span>&nbsp;<span class="element-name">exhaustion</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">exhaustion</span>()</div>
 <div class="block">Gets the amount of exhaustion this <a href="DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> will
  add to the entity, generally only to players.
 
@@ -318,6 +331,67 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The increase in exhaustion</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="source()">
+<h3>source</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</span>&nbsp;<span class="element-name">source</span>()</div>
+<div class="block">Gets the <a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> that is the source.
+ <p>
+ Note that a <a href="../../../../../entity/FallingBlock.html" title="interface in org.spongepowered.api.entity"><code>falling block entity</code></a> has some
+ additional information available as data including
+ - <a href="../../../../../data/Keys.html#DAMAGE_PER_BLOCK"><code>Keys.DAMAGE_PER_BLOCK</code></a>
+ - <a href="../../../../../data/Keys.html#MAX_FALL_DAMAGE"><code>Keys.MAX_FALL_DAMAGE</code></a>
+ - <a href="../../../../../data/Keys.html#CAN_HURT_ENTITIES"><code>Keys.CAN_HURT_ENTITIES</code></a>
+ - <a href="../../../../../data/Keys.html#FALL_TIME"><code>Keys.FALL_TIME</code></a>
+ - <a href="../../../../../data/Keys.html#CAN_DROP_AS_ITEM"><code>Keys.CAN_DROP_AS_ITEM</code></a>
+ - <a href="../../../../../data/Keys.html#CAN_PLACE_AS_BLOCK"><code>Keys.CAN_PLACE_AS_BLOCK</code></a>
+ </p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The entity source</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="indirectSource()">
+<h3>indirectSource</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</span>&nbsp;<span class="element-name">indirectSource</span>()</div>
+<div class="block">Gets the <a href="../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> that is indirectly using the <a href="#source()"><code>source()</code></a>
+ to cause damage.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The indirect source</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="position()">
+<h3>position</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&gt;</span>&nbsp;<span class="element-name">position</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="location()">
+<h3>location</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server">ServerLocation</a>&gt;</span>&nbsp;<span class="element-name">location</span>()</div>
+<div class="block">Gets the location of the <a href="../../../../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The location of the block</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="blockSnapshot()">
+<h3>blockSnapshot</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../../../../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&gt;</span>&nbsp;<span class="element-name">blockSnapshot</span>()</div>
+<div class="block">Gets the <a href="../../../../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> of the source.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The block snapshot of the source</dd>
 </dl>
 </section>
 </li>

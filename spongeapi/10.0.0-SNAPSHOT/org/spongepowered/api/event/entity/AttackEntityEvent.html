@@ -237,9 +237,9 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <div class="col-first even-row-color"><code>static final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color"><code><a href="#NOTIFIER" class="member-name-link">NOTIFIER</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">For use with a <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> where it is either a
- <a href="../cause/entity/damage/source/BlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>BlockDamageSource</code></a> or <a href="../cause/entity/damage/source/EntityDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>EntityDamageSource</code></a> such that
- it was last "notified" by the object represented in the cause.</div>
+<div class="block">For use with a <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> with a <a href="../cause/entity/damage/source/DamageSource.html#source()"><code>entity</code></a> or
+ <a href="../cause/entity/damage/source/DamageSource.html#blockSnapshot()"><code>DamageSource.blockSnapshot()</code></a> such that it was last "notified" by the object
+ represented in the cause.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#RESISTANCE" class="member-name-link">RESISTANCE</a></code></div>
@@ -590,9 +590,9 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <section class="detail" id="NOTIFIER">
 <h3>NOTIFIER</h3>
 <div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">NOTIFIER</span></div>
-<div class="block">For use with a <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> where it is either a
- <a href="../cause/entity/damage/source/BlockDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>BlockDamageSource</code></a> or <a href="../cause/entity/damage/source/EntityDamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>EntityDamageSource</code></a> such that
- it was last "notified" by the object represented in the cause.
+<div class="block">For use with a <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> with a <a href="../cause/entity/damage/source/DamageSource.html#source()"><code>entity</code></a> or
+ <a href="../cause/entity/damage/source/DamageSource.html#blockSnapshot()"><code>DamageSource.blockSnapshot()</code></a> such that it was last "notified" by the object
+ represented in the cause.
 
  <p>Usually this is used where a <a href="../../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a> interacted with the
  now <a href="../cause/entity/damage/source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> such that they </p></div>

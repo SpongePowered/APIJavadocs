@@ -15,7 +15,11 @@
 <script type="text/javascript" src="../../../../../../../script-dir/jquery-ui.min.js"></script>
 </head>
 <body class="class-declaration-page">
-<script type="text/javascript">var pathtoroot = "../../../../../../../";
+<script type="text/javascript">var evenRowColor = "even-row-color";
+var oddRowColor = "odd-row-color";
+var tableTab = "table-tab";
+var activeTableTab = "active-table-tab";
+var pathtoroot = "../../../../../../../";
 loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -40,7 +44,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -70,54 +74,50 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code>, <code><a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></code></dd>
+<dd><code><a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code>, <code><a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></code>, <code><a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="annotations"><a href="../../../../util/annotation/CatalogedBy.html" title="annotation interface in org.spongepowered.api.util.annotation">@CatalogedBy</a>(<a href="DamageTypes.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageTypes.class</a>)
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">DamageType</span><span class="extends-implements">
-extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></span></div>
-<div class="block">A <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> is a type of "grouping" for <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s since
- a <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> instance can be inherently different from another
- <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> by virtue of the <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link"><code>Object</code></a> backing the source.
- Furthermore, it is impossible to refer to <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s statically
- due to the nature of constructing them. It is possible however, that the
- parent <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link"><code>Object</code></a> being referred to as the "damage source" can damage
- an <a href="../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> with varying <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a>s depending on the
- circumstances.</div>
+extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a>, <a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;</span></div>
+<div class="block">A <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> is a type of "grouping" for <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s since a <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> instance can be inherently different from
+ another <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> by virtue of the <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link"><code>Object</code></a> backing the source. Furthermore, it is impossible to refer to <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s
+ statically due to the nature of constructing them. It is possible however, that the parent <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link"><code>Object</code></a> being referred to as the "damage source"
+ can damage an <a href="../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> with varying <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a>s depending on the circumstances.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<li>
-<section class="nested-class-summary" id="nested-class-summary">
-<h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Interface</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="DamageType.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType.Builder</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">A builder to create <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a>s.</div>
-</div>
-</div>
-</section>
-</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="caption"><span>Static Methods</span></div>
-<div class="summary-table three-column-summary">
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div id="method-summary-table.tabpanel" role="tabpanel">
+<div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DamageType.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Creates a new <a href="DamageType.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>builder</code></a> to build a <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a>.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageEffect.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageEffect</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#effect()" class="member-name-link">effect</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the damage effect.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#exhaustion()" class="member-name-link">exhaustion</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the amount of exhaustion this <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> will add to the entity, generally only to players.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is</a><wbr>(<a href="../../../../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;&nbsp;tag)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks whether this damage types matches a damage type tag.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageScaling.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageScaling</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scaling()" class="member-name-link">scaling</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the damage scaling.</div>
+</div>
 </div>
 </div>
 </div>
@@ -127,6 +127,9 @@ extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interf
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.util.Nameable">Methods inherited from interface&nbsp;org.spongepowered.api.util.<a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a></h3>
 <code><a href="../../../../util/Nameable.html#name()">name</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.tag.Taggable">Methods inherited from interface&nbsp;org.spongepowered.api.tag.<a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></h3>
+<code><a href="../../../../tag/Taggable.html#registryType()">registryType</a>, <a href="../../../../tag/Taggable.html#tags()">tags</a></code></div>
 </section>
 </li>
 </ul>
@@ -139,13 +142,55 @@ extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interf
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="builder()">
-<h3>builder</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="DamageType.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType.Builder</a></span>&nbsp;<span class="element-name">builder</span>()</div>
-<div class="block">Creates a new <a href="DamageType.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>builder</code></a> to build a <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a>.</div>
+<section class="detail" id="exhaustion()">
+<h3>exhaustion</h3>
+<div class="member-signature"><span class="return-type">double</span>&nbsp;<span class="element-name">exhaustion</span>()</div>
+<div class="block">Gets the amount of exhaustion this <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> will add to the entity, generally only to players.
+ <p>
+ TODO check this facts:
+ <p>In vanilla gameplay this is set to 0.1 by default and
+ overridden to 0 if the type is set to be absolute or
+ as overriding armor.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>A new builder</dd>
+<dd>The increase in exhaustion</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="is(org.spongepowered.api.tag.Tag)">
+<h3>is</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">is</span><wbr><span class="parameters">(<a href="../../../../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;&nbsp;tag)</span></div>
+<div class="block">Checks whether this damage types matches a damage type tag.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../../tag/Taggable.html#is(org.spongepowered.api.tag.Tag)">is</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;</code></dd>
+<dt>Parameters:</dt>
+<dd><code>tag</code> - The tag to check.</dd>
+<dt>Returns:</dt>
+<dd>true if this damage type matches the damage type tag.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="scaling()">
+<h3>scaling</h3>
+<div class="member-signature"><span class="return-type"><a href="DamageScaling.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageScaling</a></span>&nbsp;<span class="element-name">scaling</span>()</div>
+<div class="block">Returns the damage scaling.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the damage scaling</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="effect()">
+<h3>effect</h3>
+<div class="member-signature"><span class="return-type"><a href="DamageEffect.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageEffect</a></span>&nbsp;<span class="element-name">effect</span>()</div>
+<div class="block">Returns the damage effect.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the damage effect</dd>
 </dl>
 </section>
 </li>

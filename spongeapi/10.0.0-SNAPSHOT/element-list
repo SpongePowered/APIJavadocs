@@ -91,7 +91,6 @@ org.spongepowered.api.event.block.entity
 org.spongepowered.api.event.cause.entity
 org.spongepowered.api.event.cause.entity.damage
 org.spongepowered.api.event.cause.entity.damage.source
-org.spongepowered.api.event.cause.entity.damage.source.common
 org.spongepowered.api.event.command
 org.spongepowered.api.event.data
 org.spongepowered.api.event.economy
