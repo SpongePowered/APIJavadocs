@@ -108,10 +108,45 @@ extends <a href="DisplayEntity.html" title="interface in org.spongepowered.api.e
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#displayedText()" class="member-name-link">displayedText</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Color.html" title="class or interface in java.awt" class="external-link">Color</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#backgroundColor()" class="member-name-link">backgroundColor</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the background color of the displayed text.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#canSeeThroughBlocks()" class="member-name-link">canSeeThroughBlocks</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Checks if the displayed text is visible through blocks.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#defaultBackground()" class="member-name-link">defaultBackground</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the background color of the displayed text.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#displayedText()" class="member-name-link">displayedText</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Returns the displayed text</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#hasShadow()" class="member-name-link">hasShadow</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Checks if the displayed text has a shadow.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#lineWidth()" class="member-name-link">lineWidth</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the maximum line width used to split lines of text.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="TextAlignment.html" title="interface in org.spongepowered.api.entity.display">TextAlignment</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#textAlignment()" class="member-name-link">textAlignment</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the alignment direction of the displayed text.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#textOpacity()" class="member-name-link">textOpacity</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the opacity of the displayed text.</div>
 </div>
 </div>
 </div>
@@ -124,7 +159,7 @@ extends <a href="DisplayEntity.html" title="interface in org.spongepowered.api.e
 <code><a href="../../data/persistence/DataSerializable.html#contentVersion()">contentVersion</a>, <a href="../../data/persistence/DataSerializable.html#toContainer()">toContainer</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.entity.display.DisplayEntity">Methods inherited from interface&nbsp;org.spongepowered.api.entity.display.<a href="DisplayEntity.html" title="interface in org.spongepowered.api.entity.display">DisplayEntity</a></h3>
-<code><a href="DisplayEntity.html#billboardType()">billboardType</a></code></div>
+<code><a href="DisplayEntity.html#billboardType()">billboardType</a>, <a href="DisplayEntity.html#blockLight()">blockLight</a>, <a href="DisplayEntity.html#skyLight()">skyLight</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.entity.Entity">Methods inherited from interface&nbsp;org.spongepowered.api.entity.<a href="../Entity.html" title="interface in org.spongepowered.api.entity">Entity</a></h3>
 <code><a href="../Entity.html#age()">age</a>, <a href="../Entity.html#asHoverEvent(java.util.function.UnaryOperator)">asHoverEvent</a>, <a href="../Entity.html#baseSize()">baseSize</a>, <a href="../Entity.html#baseVehicle()">baseVehicle</a>, <a href="../Entity.html#boundingBox()">boundingBox</a>, <a href="../Entity.html#canSee(org.spongepowered.api.entity.Entity)">canSee</a>, <a href="../Entity.html#copy()">copy</a>, <a href="../Entity.html#createArchetype()">createArchetype</a>, <a href="../Entity.html#createSnapshot()">createSnapshot</a>, <a href="../Entity.html#creator()">creator</a>, <a href="../Entity.html#customName()">customName</a>, <a href="../Entity.html#customNameVisible()">customNameVisible</a>, <a href="../Entity.html#damage(double,java.util.function.Supplier)">damage</a>, <a href="../Entity.html#damage(double,org.spongepowered.api.event.cause.entity.damage.source.DamageSource)">damage</a>, <a href="../Entity.html#direction()">direction</a>, <a href="../Entity.html#displayName()">displayName</a>, <a href="../Entity.html#eyeHeight()">eyeHeight</a>, <a href="../Entity.html#eyePosition()">eyePosition</a>, <a href="../Entity.html#fallDistance()">fallDistance</a>, <a href="../Entity.html#fireImmuneTicks()">fireImmuneTicks</a>, <a href="../Entity.html#fireTicks()">fireTicks</a>, <a href="../Entity.html#glowing()">glowing</a>, <a href="../Entity.html#gravityAffected()">gravityAffected</a>, <a href="../Entity.html#height()">height</a>, <a href="../Entity.html#invisible()">invisible</a>, <a href="../Entity.html#invulnerabilityTicks()">invulnerabilityTicks</a>, <a href="../Entity.html#invulnerable()">invulnerable</a>, <a href="../Entity.html#isLoaded()">isLoaded</a>, <a href="../Entity.html#isRemoved()">isRemoved</a>, <a href="../Entity.html#isTransient()">isTransient</a>, <a href="../Entity.html#lookAt(org.spongepowered.math.vector.Vector3d)">lookAt</a>, <a href="../Entity.html#maxAir()">maxAir</a>, <a href="../Entity.html#nearbyEntities(double)">nearbyEntities</a>, <a href="../Entity.html#nearbyEntities(double,java.util.function.Predicate)">nearbyEntities</a>, <a href="../Entity.html#notifier()">notifier</a>, <a href="../Entity.html#onGround()">onGround</a>, <a href="../Entity.html#passengers()">passengers</a>, <a href="../Entity.html#position()">position</a>, <a href="../Entity.html#remainingAir()">remainingAir</a>, <a href="../Entity.html#remove()">remove</a>, <a href="../Entity.html#rotation()">rotation</a>, <a href="../Entity.html#scale()">scale</a>, <a href="../Entity.html#scoreboardTags()">scoreboardTags</a>, <a href="../Entity.html#setLocation(org.spongepowered.api.world.server.ServerLocation)">setLocation</a>, <a href="../Entity.html#setLocationAndRotation(org.spongepowered.api.world.server.ServerLocation,org.spongepowered.math.vector.Vector3d)">setLocationAndRotation</a>, <a href="../Entity.html#setLocationAndRotation(org.spongepowered.api.world.server.ServerLocation,org.spongepowered.math.vector.Vector3d,java.util.EnumSet)">setLocationAndRotation</a>, <a href="../Entity.html#setPosition(org.spongepowered.math.vector.Vector3d)">setPosition</a>, <a href="../Entity.html#setRotation(org.spongepowered.math.vector.Vector3d)">setRotation</a>, <a href="../Entity.html#setScale(org.spongepowered.math.vector.Vector3d)">setScale</a>, <a href="../Entity.html#setTransform(org.spongepowered.api.util.Transform)">setTransform</a>, <a href="../Entity.html#silent()">silent</a>, <a href="../Entity.html#sneaking()">sneaking</a>, <a href="../Entity.html#sprinting()">sprinting</a>, <a href="../Entity.html#swiftness()">swiftness</a>, <a href="../Entity.html#transferToWorld(org.spongepowered.api.world.server.ServerWorld)">transferToWorld</a>, <a href="../Entity.html#transferToWorld(org.spongepowered.api.world.server.ServerWorld,org.spongepowered.math.vector.Vector3d)">transferToWorld</a>, <a href="../Entity.html#transform()">transform</a>, <a href="../Entity.html#type()">type</a>, <a href="../Entity.html#vanishState()">vanishState</a>, <a href="../Entity.html#vehicle()">vehicle</a>, <a href="../Entity.html#velocity()">velocity</a>, <a href="../Entity.html#wet()">wet</a></code></div>
@@ -171,6 +206,84 @@ extends <a href="DisplayEntity.html" title="interface in org.spongepowered.api.e
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the displayed text</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="lineWidth()">
+<h3>lineWidth</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">lineWidth</span>()</div>
+<div class="block">Gets the maximum line width used to split lines of text.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The maximum line width used to split lines of text</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="textOpacity()">
+<h3>textOpacity</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">textOpacity</span>()</div>
+<div class="block">Gets the opacity of the displayed text.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The opacity of the displayed text</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="canSeeThroughBlocks()">
+<h3>canSeeThroughBlocks</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canSeeThroughBlocks</span>()</div>
+<div class="block">Checks if the displayed text is visible through blocks.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if the displayed text is visible through blocks, false otherwise</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="hasShadow()">
+<h3>hasShadow</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasShadow</span>()</div>
+<div class="block">Checks if the displayed text has a shadow.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if the displayed text has a shadow, false otherwise</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="backgroundColor()">
+<h3>backgroundColor</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Color.html" title="class or interface in java.awt" class="external-link">Color</a></span>&nbsp;<span class="element-name">backgroundColor</span>()</div>
+<div class="block">Gets the background color of the displayed text.
+ Note that this supports alpha values.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The background color of the displayed text</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="defaultBackground()">
+<h3>defaultBackground</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">defaultBackground</span>()</div>
+<div class="block">Gets the background color of the displayed text.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The background color of the displayed text</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="textAlignment()">
+<h3>textAlignment</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="TextAlignment.html" title="interface in org.spongepowered.api.entity.display">TextAlignment</a></span>&nbsp;<span class="element-name">textAlignment</span>()</div>
+<div class="block">Gets the alignment direction of the displayed text.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The alignment direction of the displayed text</dd>
 </dl>
 </section>
 </li>
