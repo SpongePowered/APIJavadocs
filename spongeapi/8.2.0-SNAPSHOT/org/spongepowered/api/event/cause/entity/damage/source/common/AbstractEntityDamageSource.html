@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -259,13 +259,21 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFire()">isFire</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be "fire" based,
+ can be from flames or blocks that are flaming, or the entity being on fire.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMagic()">isMagic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be magical
  damage, such as potions, or other sources.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isScaledByDifficulty()">isScaledByDifficulty</a></span>()</code></th>
 <td class="colLast">
@@ -273,14 +281,14 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
  <a href="../../../../../../world/difficulty/Difficulty.html" title="interface in org.spongepowered.api.world.difficulty"><code>Difficulty</code></a>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#source()">source</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the <a href="../../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> that is the source.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type()">type</a></span>()</code></th>
 <td class="colLast">
@@ -294,13 +302,6 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.org.spongepowered.api.event.cause.entity.damage.source.DamageSource">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;org.spongepowered.api.event.cause.entity.damage.source.<a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a></h3>
-<code><a href="../DamageSource.html#isFire()">isFire</a></code></li>
 </ul>
 </li>
 </ul>
@@ -476,6 +477,27 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
 <dd><code><a href="../DamageSource.html#doesAffectCreative()">doesAffectCreative</a></code>&nbsp;in interface&nbsp;<code><a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>If this damage should affect creative players</dd>
+</dl>
+</li>
+</ul>
+<a id="isFire()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFire</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isFire()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../DamageSource.html#isFire()">DamageSource</a></code></span></div>
+<div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be "fire" based,
+ can be from flames or blocks that are flaming, or the entity being on fire.
+ Usually is possible to bypass or ignore this damage if the owning entity has
+ <a href="../../../../../../effect/potion/PotionEffectTypes.html#FIRE_RESISTANCE"><code>PotionEffectTypes.FIRE_RESISTANCE</code></a>
+ active.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../DamageSource.html#isFire()">isFire</a></code>&nbsp;in interface&nbsp;<code><a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>If this damage is considered fire</dd>
 </dl>
 </li>
 </ul>
