@@ -163,25 +163,31 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
 <div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is an explosion.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isMagic()" class="member-name-link">isMagic</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isFire()" class="member-name-link">isFire</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be "fire" based,
+ can be from flames or blocks that are flaming, or the entity being on fire.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isMagic()" class="member-name-link">isMagic</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be magical
  damage, such as potions, or other sources.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isScaledByDifficulty()" class="member-name-link">isScaledByDifficulty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isScaledByDifficulty()" class="member-name-link">isScaledByDifficulty</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>'s damage is scaled by
  <a href="../../../../../../world/difficulty/Difficulty.html" title="interface in org.spongepowered.api.world.difficulty"><code>Difficulty</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#source()" class="member-name-link">source</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#source()" class="member-name-link">source</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the <a href="../../../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> that is the source.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the <a href="../../DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> of this source.</div>
 </div>
 </div>
@@ -190,9 +196,6 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.spongepowered.api.event.cause.entity.damage.source.DamageSource">Methods inherited from interface&nbsp;org.spongepowered.api.event.cause.entity.damage.source.<a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a></h3>
-<code><a href="../DamageSource.html#isFire()">isFire</a></code></div>
 </section>
 </li>
 </ul>
@@ -333,6 +336,24 @@ implements <a href="../EntityDamageSource.html" title="interface in org.spongepo
 <dd><code><a href="../DamageSource.html#doesAffectCreative()">doesAffectCreative</a></code>&nbsp;in interface&nbsp;<code><a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a></code></dd>
 <dt>Returns:</dt>
 <dd>If this damage should affect creative players</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isFire()">
+<h3>isFire</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isFire</span>()</div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../DamageSource.html#isFire()">DamageSource</a></code></span></div>
+<div class="block">Gets whether this <a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> is considered to be "fire" based,
+ can be from flames or blocks that are flaming, or the entity being on fire.
+ Usually is possible to bypass or ignore this damage if the owning entity has
+ <a href="../../../../../../effect/potion/PotionEffectTypes.html#FIRE_RESISTANCE"><code>PotionEffectTypes.FIRE_RESISTANCE</code></a>
+ active.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../DamageSource.html#isFire()">isFire</a></code>&nbsp;in interface&nbsp;<code><a href="../DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source">DamageSource</a></code></dd>
+<dt>Returns:</dt>
+<dd>If this damage is considered fire</dd>
 </dl>
 </section>
 </li>
