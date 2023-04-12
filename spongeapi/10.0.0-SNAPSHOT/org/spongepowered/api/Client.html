@@ -146,12 +146,7 @@ extends <a href="Engine.html" title="interface in org.spongepowered.api">Engine<
 <h3>player</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="entity/living/player/client/LocalPlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">LocalPlayer</a>&gt;</span>&nbsp;<span class="element-name">player</span>()</div>
 <div class="block">Gets the <a href="entity/living/player/client/ClientPlayer.html" title="interface in org.spongepowered.api.entity.living.player.client"><code>player</code></a> responsible
- for controlling this client.
-
- <p>
-     A client may not always have a local player if browsing menus prior to joining a
-     world or server.
- </p></div>
+ for controlling this client.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The local player or <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> if it is not found</dd>
@@ -163,11 +158,7 @@ extends <a href="Engine.html" title="interface in org.spongepowered.api">Engine<
 <h3>server</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="client/LocalServer.html" title="interface in org.spongepowered.api.client">LocalServer</a>&gt;</span>&nbsp;<span class="element-name">server</span>()</div>
 <div class="block">Gets the <a href="client/LocalServer.html" title="interface in org.spongepowered.api.client"><code>server</code></a> that powers a local SinglePlayer game instance
- of a typical Minecraft client.
-
- <p>
-     A client will not have a local server if it is outside of SinglePlayer
- </p></div>
+ of a typical Minecraft client.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The local server or <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> if it is not found</dd>
@@ -179,11 +170,7 @@ extends <a href="Engine.html" title="interface in org.spongepowered.api">Engine<
 <h3>world</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="world/client/ClientWorld.html" title="interface in org.spongepowered.api.world.client">ClientWorld</a>&gt;</span>&nbsp;<span class="element-name">world</span>()</div>
 <div class="block">Gets the <a href="world/client/ClientWorld.html" title="interface in org.spongepowered.api.world.client"><code>world</code></a> that a typical Minecraft client will be viewing
- while in some game instance (local or remote).
-
- <p>
-     A client will not have a client world if it is browsing the main menus
- </p></div>
+ while in some game instance (local or remote).</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The client world or <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a>} if it is not found</dd>

@@ -204,11 +204,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="executionType()">
 <h3>executionType</h3>
 <div class="member-signature"><span class="return-type"><a href="Platform.Type.html" title="enum class in org.spongepowered.api">Platform.Type</a></span>&nbsp;<span class="element-name">executionType</span>()</div>
-<div class="block">Retrieves the current <a href="Platform.Type.html" title="enum class in org.spongepowered.api"><code>Platform.Type</code></a> the platform is executing on.
-
- <p>A Minecraft instance will have a client and server thread. If the
- server is executing, this will return <a href="Platform.Type.html#SERVER">Platform.Type.SERVER</a> but
- <a href="#type()"><code>type()</code></a> would return <a href="Platform.Type.html#CLIENT">Platform.Type.CLIENT</a>.</p></div>
+<div class="block">Retrieves the current <a href="Platform.Type.html" title="enum class in org.spongepowered.api"><code>Platform.Type</code></a> the platform is executing on.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The execution type</dd>
@@ -245,14 +241,9 @@ loadScripts(document, 'script');</script>
 <h3>asMap</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>&nbsp;<span class="element-name">asMap</span>()</div>
 <div class="block">Returns this platform instance, as a key-value map.
-
- <p>The returned map instance is connected directly to this platform
- instance. Existing keys like name and version are not modifiable, but
- new keys are stored in this instance and are shared between any
- references to a map obtained through the retrieved map.</p>
-
- <p>This mechanism allows for platform-specific information like Forge
- version.</p></div>
+ <p>
+ This mechanism allows for platform-specific information like Forge
+ version.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>This platform as a map</dd>

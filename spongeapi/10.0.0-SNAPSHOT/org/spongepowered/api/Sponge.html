@@ -327,11 +327,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="server()">
 <h3>server</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Server.html" title="interface in org.spongepowered.api">Server</a></span>&nbsp;<span class="element-name">server</span>()</div>
-<div class="block">Gets the <a href="Server.html" title="interface in org.spongepowered.api"><code>Server</code></a> instance from the <a href="Game.html" title="interface in org.spongepowered.api"><code>Game</code></a> instance.
-
- <p>Note: During various <a href="event/lifecycle/LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle"><code>events</code></a>, a <a href="Server.html" title="interface in org.spongepowered.api"><code>Server</code></a> instance
- may <strong>NOT</strong> be available. Calling <a href="Game.html#server()"><code>Game.server()</code></a> during one
- will throw an exception. To double check, call <a href="#isServerAvailable()"><code>isServerAvailable()</code></a></p></div>
+<div class="block">Gets the <a href="Server.html" title="interface in org.spongepowered.api"><code>Server</code></a> instance from the <a href="Game.html" title="interface in org.spongepowered.api"><code>Game</code></a> instance.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The server instance</dd>
@@ -367,10 +363,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="client()">
 <h3>client</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Client.html" title="interface in org.spongepowered.api">Client</a></span>&nbsp;<span class="element-name">client</span>()</div>
-<div class="block">Gets the <a href="Client.html" title="interface in org.spongepowered.api"><code>Client</code></a> instance from the <a href="Game.html" title="interface in org.spongepowered.api"><code>Game</code></a> instance.
-
- <p>Note: Not all implementations support a client, consult your
- vendor for further information.</p></div>
+<div class="block">Gets the <a href="Client.html" title="interface in org.spongepowered.api"><code>Client</code></a> instance from the <a href="Game.html" title="interface in org.spongepowered.api"><code>Game</code></a> instance.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The client instance</dd>
@@ -442,9 +435,9 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="service/ServiceProvider.GameScoped.html" title="interface in org.spongepowered.api.service">ServiceProvider.GameScoped</a></span>&nbsp;<span class="element-name">serviceProvider</span>()</div>
 <div class="block">Gets the <a href="Game.html" title="interface in org.spongepowered.api"><code>Game</code></a> scoped <a href="service/ServiceProvider.html" title="interface in org.spongepowered.api.service"><code>ServiceProvider</code></a> for providing
  services.
-
- <p><a href="Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> scoped services, if they exist, can be found on the
- respective engine.</p></div>
+ <p>
+ <a href="Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> scoped services, if they exist, can be found on the
+ respective engine.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The service provider.</dd>

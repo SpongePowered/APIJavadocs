@@ -131,13 +131,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/ja
 <section class="detail" id="name()">
 <h3>name</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">name</span>()</div>
-<div class="block">Gets the name of this Minecraft version.
-
- <p>
- <strong>Note:</strong> The returned name does not necessarily represent
- the name of a Minecraft version. Depending on the client and
- implementation, this may also just return a numeric value.
- </p></div>
+<div class="block">Gets the name of this Minecraft version.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The version name</dd>
@@ -151,10 +145,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/ja
 <div class="block">Returns whether this version is an older version that doesn't support
  all of the features in <a href="network/status/StatusResponse.html" title="interface in org.spongepowered.api.network.status"><code>StatusResponse</code></a>. These versions are only
  supported for the <a href="event/server/ClientPingServerEvent.html" title="interface in org.spongepowered.api.event.server"><code>ClientPingServerEvent</code></a>, normally they should not be
- able to join the server.
- <p>
- For Vanilla, this returns <code>true</code> for all clients older than 1.7.
- </p></div>
+ able to join the server.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><code>True</code> if this version is a legacy version</dd>
@@ -165,11 +156,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/ja
 <section class="detail" id="dataVersion()">
 <h3>dataVersion</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalInt.html" title="class or interface in java.util" class="external-link">OptionalInt</a></span>&nbsp;<span class="element-name">dataVersion</span>()</div>
-<div class="block">Gets the data version of this Minecraft version.
-
- <p>
-     <strong>Note:</strong> The data version will not be available in a status response.
- </p></div>
+<div class="block">Gets the data version of this Minecraft version.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The data version</dd>

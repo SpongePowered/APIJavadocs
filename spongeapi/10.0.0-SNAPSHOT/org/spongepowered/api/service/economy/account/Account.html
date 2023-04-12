@@ -87,10 +87,10 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 
  <p>Accounts come in two varieties: <a href="UniqueAccount.html" title="interface in org.spongepowered.api.service.economy.account"><code>user accounts</code></a>
  and <a href="VirtualAccount.html" title="interface in org.spongepowered.api.service.economy.account"><code>VirtualAccount</code></a> virtual accounts.
-
+ <p>
  Unique accounts are bound to a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a>, usually of a particular
  <a href="../../../entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a>'s <a href="../../../profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>.
-
+ <p>
  Virtual accounts are identified by a String identifier, which may have any
  value. They are not tied to any <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, player or otherwise. Virtual
  accounts may be used for purposes such as bank accounts, non-player
@@ -177,7 +177,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <div class="block">Deposits the specified amount of the specified <a href="../Currency.html" title="interface in org.spongepowered.api.service.economy"><code>Currency</code></a> to
  this account, using the specified <a href="../../../event/Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.advntr.dev/api/4.12.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#displayName()" class="member-name-link">displayName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the display name for this account.</div>
@@ -341,7 +341,7 @@ extends <a href="../../context/Contextual.html" title="interface in org.spongepo
 <li>
 <section class="detail" id="displayName()">
 <h3>displayName</h3>
-<div class="member-signature"><span class="return-type"><a href="https://jd.adventure.kyori.net/api/4.12.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></span>&nbsp;<span class="element-name">displayName</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="https://jd.advntr.dev/api/4.12.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></span>&nbsp;<span class="element-name">displayName</span>()</div>
 <div class="block">Gets the display name for this account.
 
  <p>This should be used by plugins to get a human-readable name for an
