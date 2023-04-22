@@ -102,6 +102,12 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <div class="block">Represents the information about the players on the server, sent
  after the <a href="ClientPingServerEvent.html" title="interface in org.spongepowered.api.event.server"><code>ClientPingServerEvent</code></a>.</div>
 </div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="ClientPingServerEvent.Response.Version.html" class="type-name-link" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Version</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Represents the information about the version of the server, sent
+ after the <a href="ClientPingServerEvent.html" title="interface in org.spongepowered.api.event.server"><code>ClientPingServerEvent</code></a>.</div>
+</div>
 </div>
 </section>
 </li>
@@ -138,12 +144,18 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <div class="block">Sets whether the player count and the list of players on this server
  is hidden and doesn't get sent to the client.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ClientPingServerEvent.Response.Version.html" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Version</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#version()" class="member-name-link">version</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the version of the server displayed when the client or the server
+ are outdated.</div>
+</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.network.status.StatusResponse">Methods inherited from interface&nbsp;org.spongepowered.api.network.status.<a href="../../network/status/StatusResponse.html" title="interface in org.spongepowered.api.network.status">StatusResponse</a></h3>
-<code><a href="../../network/status/StatusResponse.html#description()">description</a>, <a href="../../network/status/StatusResponse.html#favicon()">favicon</a>, <a href="../../network/status/StatusResponse.html#version()">version</a></code></div>
+<code><a href="../../network/status/StatusResponse.html#description()">description</a>, <a href="../../network/status/StatusResponse.html#favicon()">favicon</a></code></div>
 </section>
 </li>
 </ul>
@@ -198,6 +210,21 @@ extends <a href="../../network/status/StatusResponse.html" title="interface in o
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>hide</code> - <code>True</code> if the players should be hidden</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="version()">
+<h3>version</h3>
+<div class="member-signature"><span class="return-type"><a href="ClientPingServerEvent.Response.Version.html" title="interface in org.spongepowered.api.event.server">ClientPingServerEvent.Response.Version</a></span>&nbsp;<span class="element-name">version</span>()</div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../network/status/StatusResponse.html#version()">StatusResponse</a></code></span></div>
+<div class="block">Gets the version of the server displayed when the client or the server
+ are outdated.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../network/status/StatusResponse.html#version()">version</a></code>&nbsp;in interface&nbsp;<code><a href="../../network/status/StatusResponse.html" title="interface in org.spongepowered.api.network.status">StatusResponse</a></code></dd>
+<dt>Returns:</dt>
+<dd>The server version</dd>
 </dl>
 </section>
 </li>
