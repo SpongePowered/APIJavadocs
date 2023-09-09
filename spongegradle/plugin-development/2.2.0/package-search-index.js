@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.spongepowered.gradle.common"},{"l":"org.spongepowered.gradle.plugin"},{"l":"org.spongepowered.gradle.plugin.config"},{"l":"org.spongepowered.gradle.plugin.task"}]
