@@ -72,10 +72,15 @@ loadScripts(document, 'script');</script>
 <h1 title="Interface AdvancementTree" class="title">Interface AdvancementTree</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>All Superinterfaces:</dt>
+<dd><code><a href="AdvancementNode.html" title="interface in org.spongepowered.api.advancement">AdvancementNode</a></code>, <code><a href="https://jd.advntr.dev/key/4.12.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
+</dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">AdvancementTree</span></div>
+<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">AdvancementTree</span><span class="extends-implements">
+extends <a href="AdvancementNode.html" title="interface in org.spongepowered.api.advancement">AdvancementNode</a></span></div>
 <div class="block">Represents a <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a> tree or tab menu. The tree will become
- visible to a <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a> once the root <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a> gets achieved.</div>
+ visible to a <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player"><code>Player</code></a> once the <a href="AdvancementNode.html#rootAdvancement()"><code>root advancement</code></a> gets achieved.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -95,14 +100,35 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the background texture of this tree.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Advancement.html" title="interface in org.spongepowered.api.advancement">Advancement</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rootAdvancement()" class="member-name-link">rootAdvancement</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement">TreeLayoutElement</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#layoutElement(org.spongepowered.api.advancement.AdvancementTemplate)" class="member-name-link">layoutElement</a><wbr>(<a href="AdvancementTemplate.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate</a>&nbsp;advancement)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the root <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>.</div>
+<div class="block">Gets the <a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement"><code>TreeLayoutElement</code></a> for the specified <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> will be returned if the advancement is not present
+ in the tree or if there is no <a href="DisplayInfo.html" title="interface in org.spongepowered.api.advancement"><code>DisplayInfo</code></a> present.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement">TreeLayoutElement</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#layoutElement(org.spongepowered.api.ResourceKey)" class="member-name-link">layoutElement</a><wbr>(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;advancementKey)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the <a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement"><code>TreeLayoutElement</code></a> for the specified <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> will be returned if the advancement is not present
+ in the tree or if there is no <a href="DisplayInfo.html" title="interface in org.spongepowered.api.advancement"><code>DisplayInfo</code></a> present.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement">TreeLayoutElement</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#layoutElements()" class="member-name-link">layoutElements</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets all the <a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement"><code>TreeLayoutElement</code></a>s that are
+ present in this layout.</div>
 </div>
 </div>
 </div>
 </div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.advancement.AdvancementNode">Methods inherited from interface&nbsp;org.spongepowered.api.advancement.<a href="AdvancementNode.html" title="interface in org.spongepowered.api.advancement">AdvancementNode</a></h3>
+<code><a href="AdvancementNode.html#children()">children</a>, <a href="AdvancementNode.html#rootAdvancement()">rootAdvancement</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.ResourceKeyed">Methods inherited from interface&nbsp;org.spongepowered.api.<a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></h3>
+<code><a href="../ResourceKeyed.html#key()">key</a></code></div>
 </section>
 </li>
 </ul>
@@ -115,17 +141,6 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="rootAdvancement()">
-<h3>rootAdvancement</h3>
-<div class="member-signature"><span class="return-type"><a href="Advancement.html" title="interface in org.spongepowered.api.advancement">Advancement</a></span>&nbsp;<span class="element-name">rootAdvancement</span>()</div>
-<div class="block">Gets the root <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The root advancement</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="backgroundPath()">
 <h3>backgroundPath</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</span>&nbsp;<span class="element-name">backgroundPath</span>()</div>
@@ -133,6 +148,48 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The background texture</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="layoutElements()">
+<h3>layoutElements</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement">TreeLayoutElement</a>&gt;</span>&nbsp;<span class="element-name">layoutElements</span>()</div>
+<div class="block">Gets all the <a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement"><code>TreeLayoutElement</code></a>s that are
+ present in this layout.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The tree layout elements</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="layoutElement(org.spongepowered.api.advancement.AdvancementTemplate)">
+<h3>layoutElement</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement">TreeLayoutElement</a>&gt;</span>&nbsp;<span class="element-name">layoutElement</span><wbr><span class="parameters">(<a href="AdvancementTemplate.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate</a>&nbsp;advancement)</span></div>
+<div class="block">Gets the <a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement"><code>TreeLayoutElement</code></a> for the specified <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> will be returned if the advancement is not present
+ in the tree or if there is no <a href="DisplayInfo.html" title="interface in org.spongepowered.api.advancement"><code>DisplayInfo</code></a> present.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>advancement</code> - The advancement</dd>
+<dt>Returns:</dt>
+<dd>The tree layout element</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="layoutElement(org.spongepowered.api.ResourceKey)">
+<h3>layoutElement</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement">TreeLayoutElement</a>&gt;</span>&nbsp;<span class="element-name">layoutElement</span><wbr><span class="parameters">(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;advancementKey)</span></div>
+<div class="block">Gets the <a href="TreeLayoutElement.html" title="interface in org.spongepowered.api.advancement"><code>TreeLayoutElement</code></a> for the specified <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> will be returned if the advancement is not present
+ in the tree or if there is no <a href="DisplayInfo.html" title="interface in org.spongepowered.api.advancement"><code>DisplayInfo</code></a> present.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>advancementKey</code> - The advancement key</dd>
+<dt>Returns:</dt>
+<dd>The tree layout element</dd>
 </dl>
 </section>
 </li>

@@ -131,13 +131,18 @@ extends <a href="../util/ResourceKeyedBuilder.html" title="interface in org.spon
 <div class="block">Sets the <a href="DisplayInfo.html" title="interface in org.spongepowered.api.advancement"><code>DisplayInfo</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AdvancementTemplate.Builder.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parent(org.spongepowered.api.advancement.Advancement)" class="member-name-link">parent</a><wbr>(<a href="Advancement.html" title="interface in org.spongepowered.api.advancement">Advancement</a>&nbsp;parent)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parent(org.spongepowered.api.advancement.AdvancementTemplate)" class="member-name-link">parent</a><wbr>(<a href="AdvancementTemplate.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate</a>&nbsp;parent)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets the parent <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>.</div>
+<div class="block">Sets the parent <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a> template.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AdvancementTemplate.Builder.RootStep.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder.RootStep</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#root()" class="member-name-link">root</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AdvancementTemplate.Builder.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parent(org.spongepowered.api.ResourceKey)" class="member-name-link">parent</a><wbr>(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;parent)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the parent <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a> key.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AdvancementTemplate.Builder.RootStep.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder.RootStep</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#root()" class="member-name-link">root</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets this advancement as root.</div>
 </div>
 </div>
@@ -164,10 +169,24 @@ extends <a href="../util/ResourceKeyedBuilder.html" title="interface in org.spon
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="parent(org.spongepowered.api.advancement.Advancement)">
+<section class="detail" id="parent(org.spongepowered.api.advancement.AdvancementTemplate)">
 <h3>parent</h3>
-<div class="member-signature"><span class="return-type"><a href="AdvancementTemplate.Builder.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder</a></span>&nbsp;<span class="element-name">parent</span><wbr><span class="parameters">(<a href="Advancement.html" title="interface in org.spongepowered.api.advancement">Advancement</a>&nbsp;parent)</span></div>
-<div class="block">Sets the parent <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a>.
+<div class="member-signature"><span class="return-type"><a href="AdvancementTemplate.Builder.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder</a></span>&nbsp;<span class="element-name">parent</span><wbr><span class="parameters">(<a href="AdvancementTemplate.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate</a>&nbsp;parent)</span></div>
+<div class="block">Sets the parent <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a> template.
+ <p>For the root advancement use <a href="#root()"><code>root()</code></a></p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>parent</code> - The parent advancement</dd>
+<dt>Returns:</dt>
+<dd>This builder, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="parent(org.spongepowered.api.ResourceKey)">
+<h3>parent</h3>
+<div class="member-signature"><span class="return-type"><a href="AdvancementTemplate.Builder.html" title="interface in org.spongepowered.api.advancement">AdvancementTemplate.Builder</a></span>&nbsp;<span class="element-name">parent</span><wbr><span class="parameters">(<a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;parent)</span></div>
+<div class="block">Sets the parent <a href="Advancement.html" title="interface in org.spongepowered.api.advancement"><code>Advancement</code></a> key.
  <p>For the root advancement use <a href="#root()"><code>root()</code></a></p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
