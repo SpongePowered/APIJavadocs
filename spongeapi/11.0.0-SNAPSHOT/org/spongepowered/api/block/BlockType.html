@@ -114,28 +114,33 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <div class="block">Gets if this BlockType is set to receive random block ticks.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isAnyOf(java.util.function.Supplier...)" class="member-name-link">isAnyOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;...&nbsp;types)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasBlockEntity()" class="member-name-link">hasBlockEntity</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns true if this type is any of the given block types</div>
+<div class="block">Returns true if this type will have a block entity when placed in the world</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isAnyOf(org.spongepowered.api.block.BlockType...)" class="member-name-link">isAnyOf</a><wbr>(<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>...&nbsp;types)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isAnyOf(java.util.function.Supplier...)" class="member-name-link">isAnyOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>&gt;...&nbsp;types)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns true if this type is any of the given block types</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#item()" class="member-name-link">item</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isAnyOf(org.spongepowered.api.block.BlockType...)" class="member-name-link">isAnyOf</a><wbr>(<a href="BlockType.html" title="interface in org.spongepowered.api.block">BlockType</a>...&nbsp;types)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns true if this type is any of the given block types</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../item/ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#item()" class="member-name-link">item</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Return the <a href="../item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> that represents this block.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setUpdateRandomly(boolean)" class="member-name-link">setUpdateRandomly</a><wbr>(boolean&nbsp;updateRandomly)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setUpdateRandomly(boolean)" class="member-name-link">setUpdateRandomly</a><wbr>(boolean&nbsp;updateRandomly)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets if the BlockType should receive random block updates.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockSoundGroup.html" title="interface in org.spongepowered.api.block">BlockSoundGroup</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#soundGroup()" class="member-name-link">soundGroup</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockSoundGroup.html" title="interface in org.spongepowered.api.block">BlockSoundGroup</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#soundGroup()" class="member-name-link">soundGroup</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="BlockSoundGroup.html" title="interface in org.spongepowered.api.block"><code>BlockSoundGroup</code></a> for this block.</div>
 </div>
 </div>
@@ -241,6 +246,17 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <dd><code>types</code> - the block types to check</dd>
 <dt>Returns:</dt>
 <dd>true if this type is any of the given block types</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="hasBlockEntity()">
+<h3>hasBlockEntity</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">hasBlockEntity</span>()</div>
+<div class="block">Returns true if this type will have a block entity when placed in the world</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if this type will have a block entity when placed in the world</dd>
 </dl>
 </section>
 </li>
