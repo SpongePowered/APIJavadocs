@@ -182,7 +182,6 @@ org.spongepowered.api.service.permission
 org.spongepowered.api.service.rcon
 org.spongepowered.api.service.whitelist
 org.spongepowered.api.spawner
-org.spongepowered.api.sql
 org.spongepowered.api.state
 org.spongepowered.api.statistic
 org.spongepowered.api.tag
