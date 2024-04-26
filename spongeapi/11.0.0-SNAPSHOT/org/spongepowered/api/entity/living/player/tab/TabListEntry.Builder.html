@@ -132,8 +132,13 @@ extends <a href="../../../../util/Builder.html" title="interface in org.spongepo
 <div class="block">Sets the <a href="TabList.html" title="interface in org.spongepowered.api.entity.living.player.tab"><code>TabList</code></a> this entry is owned by.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="TabListEntry.Builder.html" title="interface in org.spongepowered.api.entity.living.player.tab">TabListEntry.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#profile(org.spongepowered.api.profile.GameProfile)" class="member-name-link">profile</a><wbr>(<a href="../../../../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#listed(boolean)" class="member-name-link">listed</a><wbr>(boolean&nbsp;listed)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets whatever this entry is listed in the tab list.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="TabListEntry.Builder.html" title="interface in org.spongepowered.api.entity.living.player.tab">TabListEntry.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#profile(org.spongepowered.api.profile.GameProfile)" class="member-name-link">profile</a><wbr>(<a href="../../../../profile/GameProfile.html" title="interface in org.spongepowered.api.profile">GameProfile</a>&nbsp;profile)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets the profile for entries created by this builder.</div>
 </div>
 </div>
@@ -237,6 +242,26 @@ extends <a href="../../../../util/Builder.html" title="interface in org.spongepo
 <dd>
 <ul class="see-list-long">
 <li><a href="TabListEntry.html#setGameMode(org.spongepowered.api.entity.living.player.gamemode.GameMode)"><code>TabListEntry.setGameMode(GameMode)</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="listed(boolean)">
+<h3>listed</h3>
+<div class="member-signature"><span class="return-type"><a href="TabListEntry.Builder.html" title="interface in org.spongepowered.api.entity.living.player.tab">TabListEntry.Builder</a></span>&nbsp;<span class="element-name">listed</span><wbr><span class="parameters">(boolean&nbsp;listed)</span></div>
+<div class="block">Sets whatever this entry is listed in the tab list.
+ The entry is still sent to the client, however.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>listed</code> - Whatever to list this entry</dd>
+<dt>Returns:</dt>
+<dd>The builder</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="TabListEntry.html#setListed(boolean)"><code>TabListEntry.setListed(boolean)</code></a></li>
 </ul>
 </dd>
 </dl>
