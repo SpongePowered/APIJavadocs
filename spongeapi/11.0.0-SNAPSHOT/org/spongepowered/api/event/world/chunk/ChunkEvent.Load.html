@@ -83,11 +83,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ChunkEvent.Load</span><span class="extends-implements">
 extends <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></span></div>
-<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is loaded. This can be called
- outside the <a href="../../../world/WorldLike.html#engine()"><code>main</code></a> <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html" title="class or interface in java.lang" class="external-link"><code>Thread</code></a>. It is NOT safe
- to perform modifications to the <a href="../../../world/World.html" title="interface in org.spongepowered.api.world"><code>World</code></a> or via
- <a href="../../../world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a> as this could
- result in a deadlock.</div>
+<div class="block">Called when a <a href="../../../world/chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk"><code>chunk</code></a> is loaded. This is called
+ from the main thread when the chunk is fully loaded and ready to tick.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -97,7 +94,7 @@ extends <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowe
 <h2>Nested Class Summary</h2>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-org.spongepowered.api.event.world.chunk.ChunkEvent">Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.event.world.chunk.<a href="ChunkEvent.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent</a></h2>
-<code><a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a>, <a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a>, <a href="ChunkEvent.Save.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Save</a>, <a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a>, <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code></div>
+<code><a href="ChunkEvent.Blocks.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Blocks</a>, <a href="ChunkEvent.Entities.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Entities</a>, <a href="ChunkEvent.Generated.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Generated</a>, <a href="ChunkEvent.Load.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Load</a>, <a href="ChunkEvent.Unload.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.Unload</a>, <a href="ChunkEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.world.chunk">ChunkEvent.WorldScoped</a></code></div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
