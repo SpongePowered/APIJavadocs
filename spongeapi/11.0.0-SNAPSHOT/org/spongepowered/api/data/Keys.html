@@ -982,16 +982,6 @@ loadScripts(document, 'script');</script>
 <div class="block">The tag to determine which <a href="../block/BlockType.html" title="interface in org.spongepowered.api.block"><code>blocks</code></a> burn infinitely in a <a href="../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> of a <a href="../world/WorldType.html" title="interface in org.spongepowered.api.world"><code>WorldType</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#INFINITE_DESPAWN_DELAY" class="member-name-link">INFINITE_DESPAWN_DELAY</a></code></div>
-<div class="col-last odd-row-color">
-<div class="block">Whether an <a href="../entity/Item.html" title="interface in org.spongepowered.api.entity"><code>Item</code></a> will not despawn for an infinite time.</div>
-</div>
-<div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#INFINITE_PICKUP_DELAY" class="member-name-link">INFINITE_PICKUP_DELAY</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">Whether an <a href="../entity/Item.html" title="interface in org.spongepowered.api.entity"><code>Item</code></a> has an infinite pickup delay.</div>
-</div>
-<div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#INITIALIZED" class="member-name-link">INITIALIZED</a></code></div>
 <div class="col-last odd-row-color">
 <div class="block">Whether a world of a <a href="../world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> was initialized.</div>
@@ -4098,20 +4088,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="INFINITE_DESPAWN_DELAY">
-<h3>INFINITE_DESPAWN_DELAY</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">INFINITE_DESPAWN_DELAY</span></div>
-<div class="block">Whether an <a href="../entity/Item.html" title="interface in org.spongepowered.api.entity"><code>Item</code></a> will not despawn for an infinite time.</div>
-</section>
-</li>
-<li>
-<section class="detail" id="INFINITE_PICKUP_DELAY">
-<h3>INFINITE_PICKUP_DELAY</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">INFINITE_PICKUP_DELAY</span></div>
-<div class="block">Whether an <a href="../entity/Item.html" title="interface in org.spongepowered.api.entity"><code>Item</code></a> has an infinite pickup delay.</div>
-</section>
-</li>
-<li>
 <section class="detail" id="INITIALIZED">
 <h3>INITIALIZED</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">INITIALIZED</span></div>
@@ -5020,8 +4996,7 @@ loadScripts(document, 'script');</script>
  <p>When this value hits 0 or lower, the Vex will receive damage and
  then the value will set back to 20 until the Vex dies.</p>
 
- <p>If the Vex was summoned by a player, this value will be pegged at 0
- and the Vex will not take any damage.</p></div>
+ <p>If the Vex was summoned by a player, this value will be <a href="../util/Ticks.html#infinite()"><code>Ticks.infinite()</code></a></p></div>
 </section>
 </li>
 <li>

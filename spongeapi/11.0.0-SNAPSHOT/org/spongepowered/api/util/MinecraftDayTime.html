@@ -339,7 +339,7 @@ loadScripts(document, 'script');</script>
 <dt>Returns:</dt>
 <dd>The <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the tick count is negative</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the tick count is negative or infinite</dd>
 </dl>
 </section>
 </li>
@@ -387,6 +387,8 @@ loadScripts(document, 'script');</script>
 <dd><code>ticks</code> - The <a href="Ticks.html" title="interface in org.spongepowered.api.util"><code>Ticks</code></a> to add.</dd>
 <dt>Returns:</dt>
 <dd>A new <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the ticks is infinite</dd>
 </dl>
 </section>
 </li>
@@ -422,7 +424,7 @@ loadScripts(document, 'script');</script>
 <dt>Returns:</dt>
 <dd>A new <a href="MinecraftDayTime.html" title="interface in org.spongepowered.api.util"><code>MinecraftDayTime</code></a></dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the result would be a negative time.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if ticks is infinite or the result would be a negative time.</dd>
 </dl>
 </section>
 </li>
