@@ -165,7 +165,6 @@ org.spongepowered.api.raid
 org.spongepowered.api.registry
 org.spongepowered.api.resource
 org.spongepowered.api.resource.pack
-org.spongepowered.api.resourcepack
 org.spongepowered.api.scheduler
 org.spongepowered.api.scoreboard
 org.spongepowered.api.scoreboard.criteria
