@@ -81,6 +81,7 @@ org.spongepowered.api.entity.projectile
 org.spongepowered.api.entity.projectile.arrow
 org.spongepowered.api.entity.projectile.explosive
 org.spongepowered.api.entity.projectile.explosive.fireball
+org.spongepowered.api.entity.projectile.windcharge
 org.spongepowered.api.entity.vehicle
 org.spongepowered.api.entity.vehicle.minecart
 org.spongepowered.api.entity.vehicle.minecart.carrier
