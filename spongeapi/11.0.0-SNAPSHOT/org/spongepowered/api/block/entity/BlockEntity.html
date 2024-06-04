@@ -154,9 +154,9 @@ extends <a href="../../data/SerializableDataHolder.Mutable.html" title="interfac
  and placing the archetype in multiple locations.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isValid()" class="member-name-link">isValid</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isRemoved()" class="member-name-link">isRemoved</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks for whether the block entity is currently valid or not.</div>
+<div class="block">Returns whether this block entity has been removed.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../world/LocatableBlock.html" title="interface in org.spongepowered.api.world">LocatableBlock</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#locatableBlock()" class="member-name-link">locatableBlock</a>()</code></div>
@@ -173,20 +173,20 @@ extends <a href="../../data/SerializableDataHolder.Mutable.html" title="interfac
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the appropriate <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> for the desired <a href="../../util/mirror/Mirror.html" title="interface in org.spongepowered.api.util.mirror"><code>Mirror</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#rotate(java.util.function.Supplier)" class="member-name-link">rotate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&gt;&nbsp;rotation)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Rotates this <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> for the desired <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rotate(org.spongepowered.api.util.rotation.Rotation)" class="member-name-link">rotate</a><wbr>(<a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Rotates this <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> for the desired <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setValid(boolean)" class="member-name-link">setValid</a><wbr>(boolean&nbsp;valid)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#remove()" class="member-name-link">remove</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Changes the validation of this block entity.</div>
+<div class="block">Removes this block entity from the world and its corresponding block.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#rotate(java.util.function.Supplier)" class="member-name-link">rotate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&gt;&nbsp;rotation)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Rotates this <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> for the desired <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rotate(org.spongepowered.api.util.rotation.Rotation)" class="member-name-link">rotate</a><wbr>(<a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation">Rotation</a>&nbsp;rotation)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Rotates this <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> for the desired <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntityType.html" title="interface in org.spongepowered.api.block.entity">BlockEntityType</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
@@ -226,38 +226,21 @@ extends <a href="../../data/SerializableDataHolder.Mutable.html" title="interfac
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="isValid()">
-<h3>isValid</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isValid</span>()</div>
-<div class="block">Checks for whether the block entity is currently valid or not.
-
- <p>Use this method to check if processing should be run on this
- <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>. If it is valid, then processing can be run on it.
- If not, then processing should wait until it becomes valid or is
- destroyed.</p></div>
+<section class="detail" id="isRemoved()">
+<h3>isRemoved</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isRemoved</span>()</div>
+<div class="block">Returns whether this block entity has been removed.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>True if the block entity is valid, false if not</dd>
+<dd>True if this block entity has been removed</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="setValid(boolean)">
-<h3>setValid</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setValid</span><wbr><span class="parameters">(boolean&nbsp;valid)</span></div>
-<div class="block">Changes the validation of this block entity.
-
- <p>If the block entity is invalid, no processing will be done on this
- <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> until it either becomes valid or is reset on the next
- tick.</p>
-
- <p>If the block entity is valid, then processing can continue and this
- <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> will not be reset on the next tick.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>valid</code> - True if the block entity should be validated, or false if
-     it should be invalidated</dd>
-</dl>
+<section class="detail" id="remove()">
+<h3>remove</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">remove</span>()</div>
+<div class="block">Removes this block entity from the world and its corresponding block.</div>
 </section>
 </li>
 <li>
