@@ -93,12 +93,12 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;</code>, <code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/Constable.html" title="class or interface in java.lang.constant" class="external-link">Constable</a></code>, <code><a href="Cycleable.html" title="interface in org.spongepowered.api.util">Cycleable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;</code>, <code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/Constable.html" title="class or interface in java.lang.constant" class="external-link">Constable</a></code>, <code><a href="../data/type/StringRepresentable.html" title="interface in org.spongepowered.api.data.type">StringRepresentable</a></code>, <code><a href="Cycleable.html" title="interface in org.spongepowered.api.util">Cycleable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">Axis</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;
-implements <a href="Cycleable.html" title="interface in org.spongepowered.api.util">Cycleable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;</span></div>
+implements <a href="Cycleable.html" title="interface in org.spongepowered.api.util">Cycleable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;, <a href="../data/type/StringRepresentable.html" title="interface in org.spongepowered.api.data.type">StringRepresentable</a></span></div>
 <div class="block">Represents a three dimensional cartesian axis.</div>
 </section>
 <section class="summary">
@@ -166,24 +166,27 @@ implements <a href="Cycleable.html" title="interface in org.spongepowered.api.ut
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns whether the given vector is along this axis.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toVector3d()" class="member-name-link">toVector3d</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#serializationString()" class="member-name-link">serializationString</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toVector3d()" class="member-name-link">toVector3d</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the Vector3d backing this axis.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toVector3dWithDirection(org.spongepowered.api.util.AxisDirection)" class="member-name-link">toVector3dWithDirection</a><wbr>(<a href="AxisDirection.html" title="enum class in org.spongepowered.api.util">AxisDirection</a>&nbsp;axisDirection)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toVector3dWithDirection(org.spongepowered.api.util.AxisDirection)" class="member-name-link">toVector3dWithDirection</a><wbr>(<a href="AxisDirection.html" title="enum class in org.spongepowered.api.util">AxisDirection</a>&nbsp;axisDirection)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the Vector3d with the given <a href="AxisDirection.html" title="enum class in org.spongepowered.api.util"><code>AxisDirection</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(java.lang.String)" class="member-name-link">valueOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(java.lang.String)" class="member-name-link">valueOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>[]</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#values()" class="member-name-link">values</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>[]</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#values()" class="member-name-link">values</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </div>
@@ -356,6 +359,16 @@ not permitted.)</div>
 <dd><code><a href="Cycleable.html#cycleNext()">cycleNext</a></code>&nbsp;in interface&nbsp;<code><a href="Cycleable.html" title="interface in org.spongepowered.api.util">Cycleable</a>&lt;<a href="Axis.html" title="enum class in org.spongepowered.api.util">Axis</a>&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>The next value</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="serializationString()">
+<h3>serializationString</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">serializationString</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../data/type/StringRepresentable.html#serializationString()">serializationString</a></code>&nbsp;in interface&nbsp;<code><a href="../data/type/StringRepresentable.html" title="interface in org.spongepowered.api.data.type">StringRepresentable</a></code></dd>
 </dl>
 </section>
 </li>
