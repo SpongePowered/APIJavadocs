@@ -49,7 +49,7 @@ loadScripts(document, 'script');</script>
 <ul>
 <li>Field</li>
 <li>Constr</li>
-<li><a href="#method-detail">Method</a></li>
+<li>Method</li>
 </ul>
 </li>
 </ul>
@@ -67,7 +67,7 @@ loadScripts(document, 'script');</script>
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method-detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <div class="nav-list-search"><a href="../../../../../../search.html">SEARCH</a>
@@ -88,7 +88,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="BrewingEvent.html" title="interface in org.spongepowered.api.event.block.entity">BrewingEvent</a></code>, <code><a href="../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code></dd>
+<dd><code><a href="../../item/inventory/AffectItemStackEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectItemStackEvent</a></code>, <code><a href="../../item/inventory/AffectSlotEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectSlotEvent</a></code>, <code><a href="BrewingEvent.html" title="interface in org.spongepowered.api.event.block.entity">BrewingEvent</a></code>, <code><a href="../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="../../Event.html" title="interface in org.spongepowered.api.event">Event</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -96,7 +96,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">BrewingEvent.Finish</span><span class="extends-implements">
-extends <a href="BrewingEvent.html" title="interface in org.spongepowered.api.event.block.entity">BrewingEvent</a></span></div>
+extends <a href="BrewingEvent.html" title="interface in org.spongepowered.api.event.block.entity">BrewingEvent</a>, <a href="../../item/inventory/AffectSlotEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectSlotEvent</a></span></div>
 <div class="block">Fires when brewing finished.</div>
 </section>
 <section class="summary">
@@ -114,52 +114,18 @@ extends <a href="BrewingEvent.html" title="interface in org.spongepowered.api.ev
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
-<div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
-<div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#brewedItemStacks()" class="member-name-link">brewedItemStacks</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets an immutable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>s that are the result
- of the brew.</div>
-</div>
-</div>
-</div>
-</div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.event.item.inventory.AffectSlotEvent">Methods inherited from interface&nbsp;org.spongepowered.api.event.item.inventory.<a href="../../item/inventory/AffectSlotEvent.html" title="interface in org.spongepowered.api.event.item.inventory">AffectSlotEvent</a></h3>
+<code><a href="../../item/inventory/AffectSlotEvent.html#filter(java.util.function.Predicate)">filter</a>, <a href="../../item/inventory/AffectSlotEvent.html#transactions()">transactions</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.block.entity.BrewingEvent">Methods inherited from interface&nbsp;org.spongepowered.api.event.block.entity.<a href="BrewingEvent.html" title="interface in org.spongepowered.api.event.block.entity">BrewingEvent</a></h3>
 <code><a href="BrewingEvent.html#brewingStand()">brewingStand</a>, <a href="BrewingEvent.html#ingredient()">ingredient</a></code></div>
 <div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.event.Cancellable">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></h3>
+<code><a href="../../Cancellable.html#isCancelled()">isCancelled</a>, <a href="../../Cancellable.html#setCancelled(boolean)">setCancelled</a></code></div>
+<div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.Event">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../../Event.html" title="interface in org.spongepowered.api.event">Event</a></h3>
 <code><a href="../../Event.html#cause()">cause</a>, <a href="../../Event.html#context()">context</a>, <a href="../../Event.html#source()">source</a></code></div>
-</section>
-</li>
-</ul>
-</section>
-<section class="details">
-<ul class="details-list">
-<!-- ============ METHOD DETAIL ========== -->
-<li>
-<section class="method-details" id="method-detail">
-<h2>Method Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="brewedItemStacks()">
-<h3>brewedItemStacks</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</span>&nbsp;<span class="element-name">brewedItemStacks</span>()</div>
-<div class="block">Gets an immutable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>s that are the result
- of the brew.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The brewed items</dd>
-</dl>
-</section>
-</li>
-</ul>
 </section>
 </li>
 </ul>
