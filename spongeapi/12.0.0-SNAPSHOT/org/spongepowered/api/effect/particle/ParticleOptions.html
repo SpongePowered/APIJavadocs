@@ -120,10 +120,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">This option will affect the delay of particles that are spawned.</div>
 </div>
-<div class="col-first odd-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Direction.html" title="enum class in org.spongepowered.api.util">Direction</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#DIRECTION" class="member-name-link">DIRECTION</a></code></div>
+<div class="col-first odd-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../world/PositionSource.html" title="interface in org.spongepowered.api.world">PositionSource</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#DESTINATION" class="member-name-link">DESTINATION</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">This option will change the direction of a particle.</div>
+<div class="block">This option will affect the destination of a particle.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#ITEM_STACK_SNAPSHOT" class="member-name-link">ITEM_STACK_SNAPSHOT</a></code></div>
@@ -135,10 +135,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">This option will affect how all the particles are spread.</div>
 </div>
-<div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../potion/PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#POTION_EFFECT_TYPE" class="member-name-link">POTION_EFFECT_TYPE</a></code></div>
+<div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#OPACITY" class="member-name-link">OPACITY</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">This option will change the potion type of a particle.</div>
+<div class="block">This option will affect the opacity of a particle.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#QUANTITY" class="member-name-link">QUANTITY</a></code></div>
@@ -213,8 +213,9 @@ loadScripts(document, 'script');</script>
 
  <ul>
    <li><a href="ParticleTypes.html#BLOCK"><code>ParticleTypes.BLOCK</code></a></li>
+   <li><a href="ParticleTypes.html#BLOCK_MARKER"><code>ParticleTypes.BLOCK_MARKER</code></a></li>
+   <li><a href="ParticleTypes.html#DUST_PILLAR"><code>ParticleTypes.DUST_PILLAR</code></a></li>
    <li><a href="ParticleTypes.html#FALLING_DUST"><code>ParticleTypes.FALLING_DUST</code></a></li>
-   <li><a href="ParticleTypes.html#ITEM"><code>ParticleTypes.ITEM</code></a></li>
  </ul></div>
 </section>
 </li>
@@ -228,6 +229,7 @@ loadScripts(document, 'script');</script>
  <ul>
    <li><a href="ParticleTypes.html#ENTITY_EFFECT"><code>ParticleTypes.ENTITY_EFFECT</code></a></li>
    <li><a href="ParticleTypes.html#DUST"><code>ParticleTypes.DUST</code></a></li>
+   <li><a href="ParticleTypes.html#DUST_COLOR_TRANSITION"><code>ParticleTypes.DUST_COLOR_TRANSITION</code></a></li>
  </ul></div>
 </section>
 </li>
@@ -236,7 +238,7 @@ loadScripts(document, 'script');</script>
 <h3>DELAY</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">DELAY</span></div>
 <div class="block">This option will affect the delay of particles that are spawned.
- The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option isn't applicable to are:
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
 
  <ul>
    <li><a href="ParticleTypes.html#SHRIEK"><code>ParticleTypes.SHRIEK</code></a></li>
@@ -244,10 +246,15 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="DIRECTION">
-<h3>DIRECTION</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Direction.html" title="enum class in org.spongepowered.api.util">Direction</a>&gt;&gt;</span>&nbsp;<span class="element-name">DIRECTION</span></div>
-<div class="block">This option will change the direction of a particle.</div>
+<section class="detail" id="DESTINATION">
+<h3>DESTINATION</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../world/PositionSource.html" title="interface in org.spongepowered.api.world">PositionSource</a>&gt;&gt;</span>&nbsp;<span class="element-name">DESTINATION</span></div>
+<div class="block">This option will affect the destination of a particle.
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
+
+ <ul>
+   <li><a href="ParticleTypes.html#VIBRATION"><code>ParticleTypes.VIBRATION</code></a></li>
+ </ul></div>
 </section>
 </li>
 <li>
@@ -255,13 +262,14 @@ loadScripts(document, 'script');</script>
 <h3>ITEM_STACK_SNAPSHOT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;</span>&nbsp;<span class="element-name">ITEM_STACK_SNAPSHOT</span></div>
 <div class="block">This option will affect the appearance of a particle. The only vanilla
- <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to are:
+ <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
 
  <ul>
-   <li><a href="ParticleTypes.html#BLOCK"><code>ParticleTypes.BLOCK</code></a></li>
-   <li><a href="ParticleTypes.html#FALLING_DUST"><code>ParticleTypes.FALLING_DUST</code></a></li>
    <li><a href="ParticleTypes.html#ITEM"><code>ParticleTypes.ITEM</code></a></li>
- </ul></div>
+ </ul>
+
+ <p>The item stack snapshot may never be empty, or a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link"><code>IllegalArgumentException</code></a>
+ will be thrown when applying</p></div>
 </section>
 </li>
 <li>
@@ -272,25 +280,25 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="POTION_EFFECT_TYPE">
-<h3>POTION_EFFECT_TYPE</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../potion/PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion">PotionEffectType</a>&gt;&gt;</span>&nbsp;<span class="element-name">POTION_EFFECT_TYPE</span></div>
-<div class="block">This option will change the potion type of a particle. The only vanilla
- <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option is applicable to is</div>
+<section class="detail" id="OPACITY">
+<h3>OPACITY</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">OPACITY</span></div>
+<div class="block">This option will affect the opacity of a particle.
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
+
+ <ul>
+   <li><a href="ParticleTypes.html#ENTITY_EFFECT"><code>ParticleTypes.ENTITY_EFFECT</code></a></li>
+ </ul>
+
+ <p>The opacity must be between 0 and 1, or a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link"><code>IllegalArgumentException</code></a>
+ will be thrown when applying.</p></div>
 </section>
 </li>
 <li>
 <section class="detail" id="QUANTITY">
 <h3>QUANTITY</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">QUANTITY</span></div>
-<div class="block">This option will affect the amount of particles that are spawned. The
- minimum amount of particles is 1. The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s
- this option isn't applicable to are:
-
- <ul>
-   <li><a href="ParticleTypes.html#BLOCK"><code>ParticleTypes.BLOCK</code></a></li>
-   <li><a href="ParticleTypes.html#FIREWORK"><code>ParticleTypes.FIREWORK</code></a></li>
- </ul>
+<div class="block">This option will affect the amount of particles that are spawned.
 
  <p>The quantity must be at least 1, or a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link"><code>IllegalArgumentException</code></a>
  will be thrown when applying.</p></div>
@@ -301,7 +309,7 @@ loadScripts(document, 'script');</script>
 <h3>ROLL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">ROLL</span></div>
 <div class="block">This option will change the roll of a particle. The only
- vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option is applicable to is:
+ vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
 
  <ul>
    <li><a href="ParticleTypes.html#SCULK_CHARGE"><code>ParticleTypes.SCULK_CHARGE</code></a></li>
@@ -313,10 +321,11 @@ loadScripts(document, 'script');</script>
 <h3>SCALE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">SCALE</span></div>
 <div class="block">This option will change the scale of a particle. The only
- vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option is applicable to is:
+ vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option is applicable to are:
 
  <ul>
    <li><a href="ParticleTypes.html#DUST"><code>ParticleTypes.DUST</code></a></li>
+   <li><a href="ParticleTypes.html#DUST_COLOR_TRANSITION"><code>ParticleTypes.DUST_COLOR_TRANSITION</code></a></li>
  </ul>
 
  <p>The scale may never be negative, or a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link"><code>IllegalArgumentException</code></a>
@@ -328,7 +337,7 @@ loadScripts(document, 'script');</script>
 <h3>TO_COLOR</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Color.html" title="class in org.spongepowered.api.util">Color</a>&gt;&gt;</span>&nbsp;<span class="element-name">TO_COLOR</span></div>
 <div class="block">This option will change the color the transition particle will change to.
- The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option is applicable to is:
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
 
  <ul>
    <li><a href="ParticleTypes.html#DUST_COLOR_TRANSITION"><code>ParticleTypes.DUST_COLOR_TRANSITION</code></a></li>
@@ -340,7 +349,7 @@ loadScripts(document, 'script');</script>
 <h3>TRAVEL_TIME</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt;</span>&nbsp;<span class="element-name">TRAVEL_TIME</span></div>
 <div class="block">This option will change the travel time of a particle.
- The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a>s this option is applicable to is:
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
 
  <ul>
    <li><a href="ParticleTypes.html#VIBRATION"><code>ParticleTypes.VIBRATION</code></a></li>
