@@ -141,6 +141,20 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
  actually exists in the <a href="../world/World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetBlockProgress(int,int,int)" class="member-name-link">resetBlockProgress</a><wbr>(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Resets the client's view of the provided position to actual
+ breaking progress.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#resetBlockProgress(org.spongepowered.math.vector.Vector3i)" class="member-name-link">resetBlockProgress</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Resets the client's view of the provided position to actual
+ breaking progress.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendBlockChange(int,int,int,org.spongepowered.api.block.BlockState)" class="member-name-link">sendBlockChange</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z,
@@ -153,6 +167,20 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
  <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&nbsp;state)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Sends a client-only block change.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendBlockProgress(int,int,int,double)" class="member-name-link">sendBlockProgress</a><wbr>(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z,
+ double&nbsp;progress)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sends a client-only block breaking progress.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#sendBlockProgress(org.spongepowered.math.vector.Vector3i,double)" class="member-name-link">sendBlockProgress</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+ double&nbsp;progress)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sends a client-only block breaking progress.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendWorldType(org.spongepowered.api.world.WorldType)" class="member-name-link">sendWorldType</a><wbr>(<a href="../world/WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;worldType)</code></div>
@@ -346,6 +374,70 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
 
  <p>This is useful for resetting what the client sees
  after sending a <a href="#sendBlockChange(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.block.BlockState)"><code>block change</code></a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - The x position</dd>
+<dd><code>y</code> - The y position</dd>
+<dd><code>z</code> - The z position</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="sendBlockProgress(org.spongepowered.math.vector.Vector3i,double)">
+<h3>sendBlockProgress</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">sendBlockProgress</span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+ double&nbsp;progress)</span></div>
+<div class="block">Sends a client-only block breaking progress.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>position</code> - The position</dd>
+<dd><code>progress</code> - The breaking progress from 0 to 1</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="sendBlockProgress(int,int,int,double)">
+<h3>sendBlockProgress</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">sendBlockProgress</span><wbr><span class="parameters">(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z,
+ double&nbsp;progress)</span></div>
+<div class="block">Sends a client-only block breaking progress.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - The x position</dd>
+<dd><code>y</code> - The y position</dd>
+<dd><code>z</code> - The z position</dd>
+<dd><code>progress</code> - The breaking progress from 0 to 1</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="resetBlockProgress(org.spongepowered.math.vector.Vector3i)">
+<h3>resetBlockProgress</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">resetBlockProgress</span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</span></div>
+<div class="block">Resets the client's view of the provided position to actual
+ breaking progress.
+
+ <p>This is useful for resetting what the client sees
+ after sending a <a href="#sendBlockProgress(org.spongepowered.math.vector.Vector3i,double)"><code>block progress</code></a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>position</code> - The position</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="resetBlockProgress(int,int,int)">
+<h3>resetBlockProgress</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">resetBlockProgress</span><wbr><span class="parameters">(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z)</span></div>
+<div class="block">Resets the client's view of the provided position to actual
+ breaking progress.
+
+ <p>This is useful for resetting what the client sees
+ after sending a <a href="#sendBlockProgress(org.spongepowered.math.vector.Vector3i,double)"><code>block progress</code></a>.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>x</code> - The x position</dd>
