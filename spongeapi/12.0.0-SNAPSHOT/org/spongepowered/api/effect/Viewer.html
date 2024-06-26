@@ -92,14 +92,14 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../entity/living/player/client/ClientPlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">ClientPlayer</a></code>, <code><a href="../world/client/ClientWorld.html" title="interface in org.spongepowered.api.world.client">ClientWorld</a></code>, <code><a href="../entity/living/player/client/LocalPlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">LocalPlayer</a></code>, <code><a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a></code>, <code><a href="../entity/living/player/client/RemotePlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">RemotePlayer</a></code>, <code><a href="../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a></code>, <code><a href="../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code>, <code><a href="../world/World.html" title="interface in org.spongepowered.api.world">World</a>&lt;W,<wbr>L&gt;</code></dd>
+<dd><code><a href="../entity/living/player/client/ClientPlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">ClientPlayer</a></code>, <code><a href="../world/client/ClientWorld.html" title="interface in org.spongepowered.api.world.client">ClientWorld</a></code>, <code><a href="ForwardingViewer.html" title="interface in org.spongepowered.api.effect">ForwardingViewer</a></code>, <code><a href="../entity/living/player/client/LocalPlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">LocalPlayer</a></code>, <code><a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a></code>, <code><a href="../entity/living/player/client/RemotePlayer.html" title="interface in org.spongepowered.api.entity.living.player.client">RemotePlayer</a></code>, <code><a href="../entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a></code>, <code><a href="../world/server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a></code>, <code><a href="../world/World.html" title="interface in org.spongepowered.api.world">World</a>&lt;W,<wbr>L&gt;</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Viewer</span><span class="extends-implements">
 extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/Audience.html" title="class or interface in net.kyori.adventure.audience" class="external-link">Audience</a></span></div>
 <div class="block">A Viewer is something that sees effects.
- The Viewer class contains methods for spawning particles and playing sound
- effects.</div>
+ E.g. the Viewer class contains methods for spawning particles and playing
+ sound effects.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -115,95 +115,111 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#playMusicDisc(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.effect.sound.music.MusicDisc)" class="member-name-link">playMusicDisc</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
- <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music">MusicDisc</a>&nbsp;musicDiscType)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#playMusicDisc(int,int,int,org.spongepowered.api.effect.sound.music.MusicDisc)" class="member-name-link">playMusicDisc</a><wbr>(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z,
+ <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music">MusicDisc</a>&nbsp;musicDisc)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Plays the given <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> at the given position.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#playSound(net.kyori.adventure.sound.Sound,org.spongepowered.math.vector.Vector3d)" class="member-name-link">playSound</a><wbr>(@NonNull <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/sound/Sound.html" title="class or interface in net.kyori.adventure.sound" class="external-link">Sound</a>&nbsp;sound,
- <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;pos)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#playMusicDisc(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.effect.sound.music.MusicDisc)" class="member-name-link">playMusicDisc</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+ <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music">MusicDisc</a>&nbsp;musicDisc)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Plays a sound.</div>
+<div class="block">Plays the given <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> at the given position.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetBlockChange(int,int,int)" class="member-name-link">resetBlockChange</a><wbr>(int&nbsp;x,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#playSound(net.kyori.adventure.sound.Sound,org.spongepowered.math.vector.Vector3d)" class="member-name-link">playSound</a><wbr>(@NonNull <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/sound/Sound.html" title="class or interface in net.kyori.adventure.sound" class="external-link">Sound</a>&nbsp;sound,
+ <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;position)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Plays the given <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/sound/Sound.html" title="class or interface in net.kyori.adventure.sound" class="external-link"><code>Sound</code></a> at the given position.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetBlockChange(int,int,int)" class="member-name-link">resetBlockChange</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Resets the client's view of the provided position to what
  actually exists in the <a href="../world/World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#resetBlockChange(org.spongepowered.math.vector.Vector3i)" class="member-name-link">resetBlockChange</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#resetBlockChange(org.spongepowered.math.vector.Vector3i)" class="member-name-link">resetBlockChange</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Resets the client's view of the provided position to what
  actually exists in the <a href="../world/World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetBlockProgress(int,int,int)" class="member-name-link">resetBlockProgress</a><wbr>(int&nbsp;x,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#resetBlockProgress(int,int,int)" class="member-name-link">resetBlockProgress</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Resets the client's view of the provided position to actual
  breaking progress.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#resetBlockProgress(org.spongepowered.math.vector.Vector3i)" class="member-name-link">resetBlockProgress</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#resetBlockProgress(org.spongepowered.math.vector.Vector3i)" class="member-name-link">resetBlockProgress</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Resets the client's view of the provided position to actual
  breaking progress.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendBlockChange(int,int,int,org.spongepowered.api.block.BlockState)" class="member-name-link">sendBlockChange</a><wbr>(int&nbsp;x,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendBlockChange(int,int,int,org.spongepowered.api.block.BlockState)" class="member-name-link">sendBlockChange</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z,
  <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&nbsp;state)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends a client-only block change.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#sendBlockChange(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.block.BlockState)" class="member-name-link">sendBlockChange</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#sendBlockChange(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.block.BlockState)" class="member-name-link">sendBlockChange</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
  <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&nbsp;state)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Sends a client-only block change.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendBlockProgress(int,int,int,double)" class="member-name-link">sendBlockProgress</a><wbr>(int&nbsp;x,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendBlockProgress(int,int,int,double)" class="member-name-link">sendBlockProgress</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z,
  double&nbsp;progress)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sends a client-only block breaking progress.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#sendBlockProgress(org.spongepowered.math.vector.Vector3i,double)" class="member-name-link">sendBlockProgress</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#sendBlockProgress(org.spongepowered.math.vector.Vector3i,double)" class="member-name-link">sendBlockProgress</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
  double&nbsp;progress)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Sends a client-only block breaking progress.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendWorldType(org.spongepowered.api.world.WorldType)" class="member-name-link">sendWorldType</a><wbr>(<a href="../world/WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;worldType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sends the effect of being in a particular Vanilla world environment, such as the Nether,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sendWorldType(org.spongepowered.api.world.WorldType)" class="member-name-link">sendWorldType</a><wbr>(<a href="../world/WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;worldType)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sends the effect of being in a particular world environment, such as the Nether,
  as an effect to the viewer.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#spawnParticles(org.spongepowered.api.effect.particle.ParticleEffect,double,double,double)" class="member-name-link">spawnParticles</a><wbr>(<a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle">ParticleEffect</a>&nbsp;particleEffect,
+ double&nbsp;x,
+ double&nbsp;y,
+ double&nbsp;z)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Spawn the given <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at the given position.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#spawnParticles(org.spongepowered.api.effect.particle.ParticleEffect,org.spongepowered.math.vector.Vector3d)" class="member-name-link">spawnParticles</a><wbr>(<a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle">ParticleEffect</a>&nbsp;particleEffect,
  <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;position)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Spawn a <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at a given position.</div>
+<div class="block">Spawn the given <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at the given position.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#spawnParticles(org.spongepowered.api.effect.particle.ParticleEffect,org.spongepowered.math.vector.Vector3d,int)" class="member-name-link">spawnParticles</a><wbr>(<a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle">ParticleEffect</a>&nbsp;particleEffect,
- <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;position,
- int&nbsp;radius)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stopMusicDisc(int,int,int)" class="member-name-link">stopMusicDisc</a><wbr>(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Spawn a <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at a given position.</div>
+<div class="block">Stops the <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> that is playing at the given position.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stopMusicDisc(org.spongepowered.math.vector.Vector3i)" class="member-name-link">stopMusicDisc</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#stopMusicDisc(org.spongepowered.math.vector.Vector3i)" class="member-name-link">stopMusicDisc</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Stops the <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> that is playing at the given position.</div>
 </div>
 </div>
@@ -230,11 +246,11 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
 <section class="detail" id="sendWorldType(org.spongepowered.api.world.WorldType)">
 <h3>sendWorldType</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">sendWorldType</span><wbr><span class="parameters">(<a href="../world/WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;worldType)</span></div>
-<div class="block">Sends the effect of being in a particular Vanilla world environment, such as the Nether,
+<div class="block">Sends the effect of being in a particular world environment, such as the Nether,
  as an effect to the viewer.
 
- <p>For example, specifying <a href="../world/WorldTypes.html#THE_NETHER"><code>WorldTypes.THE_NETHER</code></a> will create a red skybox and
- red hazy fog on the vanilla minecraft client</p></div>
+ <p>For example, specifying <a href="../world/WorldTypes.html#THE_NETHER"><code>WorldTypes.THE_NETHER</code></a> will create an empty skybox
+ and hazy fog on the vanilla minecraft client</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>worldType</code> - The world type</dd>
@@ -246,31 +262,28 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
 <h3>spawnParticles</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">spawnParticles</span><wbr><span class="parameters">(<a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle">ParticleEffect</a>&nbsp;particleEffect,
  <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;position)</span></div>
-<div class="block">Spawn a <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at a given position.
- All players within a default radius around the position will see the
- particles.</div>
+<div class="block">Spawn the given <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at the given position.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>particleEffect</code> - The particle effect to spawn</dd>
-<dd><code>position</code> - The position at which to spawn the particle effect</dd>
+<dd><code>position</code> - The position</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="spawnParticles(org.spongepowered.api.effect.particle.ParticleEffect,org.spongepowered.math.vector.Vector3d,int)">
+<section class="detail" id="spawnParticles(org.spongepowered.api.effect.particle.ParticleEffect,double,double,double)">
 <h3>spawnParticles</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">spawnParticles</span><wbr><span class="parameters">(<a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle">ParticleEffect</a>&nbsp;particleEffect,
- <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;position,
- int&nbsp;radius)</span></div>
-<div class="block">Spawn a <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at a given position.
- All players within a given radius around the position will see the
- particles.</div>
+ double&nbsp;x,
+ double&nbsp;y,
+ double&nbsp;z)</span></div>
+<div class="block">Spawn the given <a href="particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleEffect</code></a> at the given position.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>particleEffect</code> - The particle effect to spawn</dd>
-<dd><code>position</code> - The position at which to spawn the particle effect</dd>
-<dd><code>radius</code> - The radius around the position where the particles can be
-            seen by players</dd>
+<dd><code>x</code> - The x position</dd>
+<dd><code>y</code> - The y position</dd>
+<dd><code>z</code> - The z position</dd>
 </dl>
 </section>
 </li>
@@ -278,20 +291,20 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
 <section class="detail" id="playSound(net.kyori.adventure.sound.Sound,org.spongepowered.math.vector.Vector3d)">
 <h3>playSound</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">playSound</span><wbr><span class="parameters">(@NonNull <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/sound/Sound.html" title="class or interface in net.kyori.adventure.sound" class="external-link">Sound</a>&nbsp;sound,
- <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;pos)</span></div>
-<div class="block">Plays a sound.</div>
+ <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&nbsp;position)</span></div>
+<div class="block">Plays the given <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/sound/Sound.html" title="class or interface in net.kyori.adventure.sound" class="external-link"><code>Sound</code></a> at the given position.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>sound</code> - the sound</dd>
-<dd><code>pos</code> - the position to play the sound at</dd>
+<dd><code>sound</code> - The sound</dd>
+<dd><code>position</code> - The position</dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="playMusicDisc(org.spongepowered.math.vector.Vector3i,org.spongepowered.api.effect.sound.music.MusicDisc)">
 <h3>playMusicDisc</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">playMusicDisc</span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
- <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music">MusicDisc</a>&nbsp;musicDiscType)</span></div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">playMusicDisc</span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+ <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music">MusicDisc</a>&nbsp;musicDisc)</span></div>
 <div class="block">Plays the given <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> at the given position. The benefit of playing
  <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> instead of a <a href="sound/SoundType.html" title="interface in org.spongepowered.api.effect.sound"><code>SoundType</code></a> allows you to stop them through
  the <a href="#stopMusicDisc(org.spongepowered.math.vector.Vector3i)"><code>stopMusicDisc(Vector3i)</code></a>. Playing a new <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> at the same
@@ -299,18 +312,53 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/audience/A
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>position</code> - The position</dd>
-<dd><code>musicDiscType</code> - The music disc</dd>
+<dd><code>musicDisc</code> - The music disc</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="playMusicDisc(int,int,int,org.spongepowered.api.effect.sound.music.MusicDisc)">
+<h3>playMusicDisc</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">playMusicDisc</span><wbr><span class="parameters">(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z,
+ <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music">MusicDisc</a>&nbsp;musicDisc)</span></div>
+<div class="block">Plays the given <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> at the given position. The benefit of playing
+ <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> instead of a <a href="sound/SoundType.html" title="interface in org.spongepowered.api.effect.sound"><code>SoundType</code></a> allows you to stop them through
+ the <a href="#stopMusicDisc(org.spongepowered.math.vector.Vector3i)"><code>stopMusicDisc(Vector3i)</code></a>. Playing a new <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> at the same
+ position will cancel the currently playing one.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - The x position</dd>
+<dd><code>y</code> - The y position</dd>
+<dd><code>z</code> - The z position</dd>
+<dd><code>musicDisc</code> - The music disc</dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="stopMusicDisc(org.spongepowered.math.vector.Vector3i)">
 <h3>stopMusicDisc</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">stopMusicDisc</span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</span></div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">stopMusicDisc</span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position)</span></div>
 <div class="block">Stops the <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> that is playing at the given position.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>position</code> - The position</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="stopMusicDisc(int,int,int)">
+<h3>stopMusicDisc</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">stopMusicDisc</span><wbr><span class="parameters">(int&nbsp;x,
+ int&nbsp;y,
+ int&nbsp;z)</span></div>
+<div class="block">Stops the <a href="sound/music/MusicDisc.html" title="interface in org.spongepowered.api.effect.sound.music"><code>MusicDisc</code></a> that is playing at the given position.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>x</code> - The x position</dd>
+<dd><code>y</code> - The y position</dd>
+<dd><code>z</code> - The z position</dd>
 </dl>
 </section>
 </li>
