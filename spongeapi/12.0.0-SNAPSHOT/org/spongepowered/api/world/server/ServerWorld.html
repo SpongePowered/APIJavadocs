@@ -253,19 +253,24 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Instructs the world to save all data.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#triggerExplosion(org.spongepowered.api.world.explosion.Explosion)" class="member-name-link">triggerExplosion</a><wbr>(<a href="../explosion/Explosion.html" title="interface in org.spongepowered.api.world.explosion">Explosion</a>&nbsp;explosion)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#saveAndFlush()" class="member-name-link">saveAndFlush</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Instructs the world to save and flush all data immediately.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#triggerExplosion(org.spongepowered.api.world.explosion.Explosion)" class="member-name-link">triggerExplosion</a><wbr>(<a href="../explosion/Explosion.html" title="interface in org.spongepowered.api.world.explosion">Explosion</a>&nbsp;explosion)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Causes an <a href="../explosion/Explosion.html" title="interface in org.spongepowered.api.world.explosion"><code>Explosion</code></a> in a world.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#uniqueId()" class="member-name-link">uniqueId</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#uniqueId()" class="member-name-link">uniqueId</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the unique ID for this object.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unloadChunk(org.spongepowered.api.world.chunk.WorldChunk)" class="member-name-link">unloadChunk</a><wbr>(<a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&nbsp;chunk)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unloadChunk(org.spongepowered.api.world.chunk.WorldChunk)" class="member-name-link">unloadChunk</a><wbr>(<a href="../chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&nbsp;chunk)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Unloads the given chunk from the world.</div>
 </div>
 </div>
@@ -667,6 +672,35 @@ extends <a href="../World.html" title="interface in org.spongepowered.api.world"
      <a href="../SerializationBehavior.html" title="enum class in org.spongepowered.api.world"><code>SerializationBehavior</code></a> is <a href="../SerializationBehavior.html#NONE"><code>SerializationBehavior.NONE</code></a></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - If the save failed</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#saveAndFlush()"><code>saveAndFlush()</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="saveAndFlush()">
+<h3>saveAndFlush</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">saveAndFlush</span>()
+              throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block">Instructs the world to save and flush all data immediately.
+
+ <p>Note: May cause a short-term drop in server performance</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if save was successful, or false if
+     <a href="../SerializationBehavior.html" title="enum class in org.spongepowered.api.world"><code>SerializationBehavior</code></a> is <a href="../SerializationBehavior.html#NONE"><code>SerializationBehavior.NONE</code></a></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - If the save failed</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#save()"><code>save()</code></a></li>
+</ul>
+</dd>
 </dl>
 </section>
 </li>
