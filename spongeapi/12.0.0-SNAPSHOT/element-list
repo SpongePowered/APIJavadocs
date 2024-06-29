@@ -61,7 +61,6 @@ org.spongepowered.api.entity.living.monster.boss.dragon
 org.spongepowered.api.entity.living.monster.boss.dragon.phase
 org.spongepowered.api.entity.living.monster.breeze
 org.spongepowered.api.entity.living.monster.guardian
-org.spongepowered.api.entity.living.monster.hoglin
 org.spongepowered.api.entity.living.monster.piglin
 org.spongepowered.api.entity.living.monster.raider
 org.spongepowered.api.entity.living.monster.raider.illager
