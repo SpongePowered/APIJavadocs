@@ -88,11 +88,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../Goal.html" title="interface in org.spongepowered.api.entity.ai.goal">Goal</a>&lt;<a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living">Ranger</a>&gt;</code></dd>
+<dd><code><a href="../../Goal.html" title="interface in org.spongepowered.api.entity.ai.goal">Goal</a>&lt;<a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living">RangedAgent</a>&gt;</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">RangedAttackAgainstAgentGoal</span><span class="extends-implements">
-extends <a href="../../Goal.html" title="interface in org.spongepowered.api.entity.ai.goal">Goal</a>&lt;<a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living">Ranger</a>&gt;</span></div>
+extends <a href="../../Goal.html" title="interface in org.spongepowered.api.entity.ai.goal">Goal</a>&lt;<a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living">RangedAgent</a>&gt;</span></div>
 <div class="block">An <a href="../../Goal.html" title="interface in org.spongepowered.api.entity.ai.goal"><code>Goal</code></a> which uses the ranging aspect of the Ranger to attack
  the target.</div>
 </section>
@@ -127,7 +127,7 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>float</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#attackRadius()" class="member-name-link">attackRadius</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the radius of which the owning <a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living"><code>Ranger</code></a> will attempt to
+<div class="block">Gets the radius of which the owning <a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living"><code>RangedAgent</code></a> will attempt to
  attack a targeted <a href="../../../../Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="RangedAttackAgainstAgentGoal.Builder.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">RangedAttackAgainstAgentGoal.Builder</a></code></div>
@@ -150,13 +150,13 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="RangedAttackAgainstAgentGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">RangedAttackAgainstAgentGoal</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setAttackRadius(float)" class="member-name-link">setAttackRadius</a><wbr>(float&nbsp;radius)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets the radius of which the owning <a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living"><code>Ranger</code></a> will attempt to
+<div class="block">Sets the radius of which the owning <a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living"><code>RangedAgent</code></a> will attempt to
  attack a targeted <a href="../../../../Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="RangedAttackAgainstAgentGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">RangedAttackAgainstAgentGoal</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setDelayBetweenAttacks(org.spongepowered.api.util.Ticks)" class="member-name-link">setDelayBetweenAttacks</a><wbr>(<a href="../../../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;delay)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">The time, in ticks, this <a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living"><code>Ranger</code></a> will wait before attacking
+<div class="block">The time, in ticks, this <a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living"><code>RangedAgent</code></a> will wait before attacking
  again.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="RangedAttackAgainstAgentGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">RangedAttackAgainstAgentGoal</a></code></div>
@@ -235,7 +235,7 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <section class="detail" id="setDelayBetweenAttacks(org.spongepowered.api.util.Ticks)">
 <h3>setDelayBetweenAttacks</h3>
 <div class="member-signature"><span class="return-type"><a href="RangedAttackAgainstAgentGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">RangedAttackAgainstAgentGoal</a></span>&nbsp;<span class="element-name">setDelayBetweenAttacks</span><wbr><span class="parameters">(<a href="../../../../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&nbsp;delay)</span></div>
-<div class="block">The time, in ticks, this <a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living"><code>Ranger</code></a> will wait before attacking
+<div class="block">The time, in ticks, this <a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living"><code>RangedAgent</code></a> will wait before attacking
  again.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -249,7 +249,7 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <section class="detail" id="attackRadius()">
 <h3>attackRadius</h3>
 <div class="member-signature"><span class="return-type">float</span>&nbsp;<span class="element-name">attackRadius</span>()</div>
-<div class="block">Gets the radius of which the owning <a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living"><code>Ranger</code></a> will attempt to
+<div class="block">Gets the radius of which the owning <a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living"><code>RangedAgent</code></a> will attempt to
  attack a targeted <a href="../../../../Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -261,7 +261,7 @@ extends <a href="../../Goal.html" title="interface in org.spongepowered.api.enti
 <section class="detail" id="setAttackRadius(float)">
 <h3>setAttackRadius</h3>
 <div class="member-signature"><span class="return-type"><a href="RangedAttackAgainstAgentGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature">RangedAttackAgainstAgentGoal</a></span>&nbsp;<span class="element-name">setAttackRadius</span><wbr><span class="parameters">(float&nbsp;radius)</span></div>
-<div class="block">Sets the radius of which the owning <a href="../../../../living/Ranger.html" title="interface in org.spongepowered.api.entity.living"><code>Ranger</code></a> will attempt to
+<div class="block">Sets the radius of which the owning <a href="../../../../living/RangedAgent.html" title="interface in org.spongepowered.api.entity.living"><code>RangedAgent</code></a> will attempt to
  attack a targeted <a href="../../../../Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
