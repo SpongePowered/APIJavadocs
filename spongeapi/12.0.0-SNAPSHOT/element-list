@@ -66,7 +66,6 @@ org.spongepowered.api.entity.living.monster.raider
 org.spongepowered.api.entity.living.monster.raider.illager
 org.spongepowered.api.entity.living.monster.raider.illager.spellcaster
 org.spongepowered.api.entity.living.monster.skeleton
-org.spongepowered.api.entity.living.monster.slime
 org.spongepowered.api.entity.living.monster.spider
 org.spongepowered.api.entity.living.monster.zombie
 org.spongepowered.api.entity.living.player
@@ -75,6 +74,7 @@ org.spongepowered.api.entity.living.player.client
 org.spongepowered.api.entity.living.player.gamemode
 org.spongepowered.api.entity.living.player.server
 org.spongepowered.api.entity.living.player.tab
+org.spongepowered.api.entity.living.slime
 org.spongepowered.api.entity.living.trader
 org.spongepowered.api.entity.projectile
 org.spongepowered.api.entity.projectile.arrow
