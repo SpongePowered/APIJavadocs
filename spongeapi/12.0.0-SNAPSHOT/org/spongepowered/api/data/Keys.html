@@ -113,7 +113,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#ACCELERATION" class="member-name-link">ACCELERATION</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The acceleration of a <a href="../entity/projectile/DamagingProjectile.html" title="interface in org.spongepowered.api.entity.projectile"><code>DamagingProjectile</code></a>.</div>
+<div class="block">The acceleration of a <a href="../entity/projectile/AcceleratingProjectile.html" title="interface in org.spongepowered.api.entity.projectile"><code>AcceleratingProjectile</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#ACTIVE_ITEM" class="member-name-link">ACTIVE_ITEM</a></code></div>
@@ -197,7 +197,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#ATTACK_DAMAGE" class="member-name-link">ATTACK_DAMAGE</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The damage dealt by an <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a> on impact.</div>
+<div class="block">The damage dealt by an <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a> on impact.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#ATTACK_TIME" class="member-name-link">ATTACK_TIME</a></code></div>
@@ -497,7 +497,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;<a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#CUSTOM_ATTACK_DAMAGE" class="member-name-link">CUSTOM_ATTACK_DAMAGE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.</div>
+<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#CUSTOM_MODEL_DATA" class="member-name-link">CUSTOM_MODEL_DATA</a></code></div>
@@ -1582,7 +1582,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#KNOCKBACK_STRENGTH" class="member-name-link">KNOCKBACK_STRENGTH</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The custom knockback strength applied by an <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.</div>
+<div class="block">The custom knockback strength applied by an <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/PandaGene.html" title="interface in org.spongepowered.api.data.type">PandaGene</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#KNOWN_GENE" class="member-name-link">KNOWN_GENE</a></code></div>
@@ -1954,7 +1954,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/PickupRule.html" title="interface in org.spongepowered.api.data.type">PickupRule</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#PICKUP_RULE" class="member-name-link">PICKUP_RULE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The <a href="type/PickupRule.html" title="interface in org.spongepowered.api.data.type"><code>PickupRule</code></a> of an <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.</div>
+<div class="block">The <a href="type/PickupRule.html" title="interface in org.spongepowered.api.data.type"><code>PickupRule</code></a> of an <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#PIGLIN_SAFE" class="member-name-link">PIGLIN_SAFE</a></code></div>
@@ -2768,7 +2768,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ACCELERATION">
 <h3>ACCELERATION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">ACCELERATION</span></div>
-<div class="block">The acceleration of a <a href="../entity/projectile/DamagingProjectile.html" title="interface in org.spongepowered.api.entity.projectile"><code>DamagingProjectile</code></a>.</div>
+<div class="block">The acceleration of a <a href="../entity/projectile/AcceleratingProjectile.html" title="interface in org.spongepowered.api.entity.projectile"><code>AcceleratingProjectile</code></a>.</div>
 </section>
 </li>
 <li>
@@ -2909,7 +2909,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ATTACK_DAMAGE">
 <h3>ATTACK_DAMAGE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">ATTACK_DAMAGE</span></div>
-<div class="block">The damage dealt by an <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a> on impact.</div>
+<div class="block">The damage dealt by an <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a> on impact.</div>
 </section>
 </li>
 <li>
@@ -3418,11 +3418,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CUSTOM_ATTACK_DAMAGE">
 <h3>CUSTOM_ATTACK_DAMAGE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/MapValue.html" title="interface in org.spongepowered.api.data.value">MapValue</a>&lt;<a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity">EntityType</a>&lt;?&gt;,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">CUSTOM_ATTACK_DAMAGE</span></div>
-<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.
+<div class="block">The damage dealt towards entities of a specific <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> by a <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a>.
 
  <p>Note that in events, the damage defined for the provided
  <a href="../entity/EntityType.html" title="interface in org.spongepowered.api.entity"><code>EntityType</code></a> will take priority over the "default" damage as
- defined from <a href="../entity/projectile/arrow/ArrowEntity.html#attackDamage()"><code>ArrowEntity.attackDamage()</code></a>.</p>
+ defined from <a href="../entity/projectile/arrow/ArrowLike.html#attackDamage()"><code>ArrowLike.attackDamage()</code></a>.</p>
 
  <p>Types not present in this mapping will be
  dealt damage to according to <a href="#ATTACK_DAMAGE"><code>ATTACK_DAMAGE</code></a>.</p></div>
@@ -5168,7 +5168,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="KNOCKBACK_STRENGTH">
 <h3>KNOCKBACK_STRENGTH</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</span>&nbsp;<span class="element-name">KNOCKBACK_STRENGTH</span></div>
-<div class="block">The custom knockback strength applied by an <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.
+<div class="block">The custom knockback strength applied by an <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a>.
 
  <p>For the knockback provided by hits with a weapon according to the
  enchantment of the same name, see <a href="#APPLIED_ENCHANTMENTS"><code>APPLIED_ENCHANTMENTS</code></a>.</p></div>
@@ -5788,7 +5788,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="PICKUP_RULE">
 <h3>PICKUP_RULE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="type/PickupRule.html" title="interface in org.spongepowered.api.data.type">PickupRule</a>&gt;&gt;</span>&nbsp;<span class="element-name">PICKUP_RULE</span></div>
-<div class="block">The <a href="type/PickupRule.html" title="interface in org.spongepowered.api.data.type"><code>PickupRule</code></a> of an <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a>.</div>
+<div class="block">The <a href="type/PickupRule.html" title="interface in org.spongepowered.api.data.type"><code>PickupRule</code></a> of an <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a>.</div>
 </section>
 </li>
 <li>
@@ -5877,7 +5877,7 @@ loadScripts(document, 'script');</script>
 <h3>POTION_EFFECTS</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/ListValue.html" title="interface in org.spongepowered.api.data.value">ListValue</a>&lt;<a href="../effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a>&gt;&gt;</span>&nbsp;<span class="element-name">POTION_EFFECTS</span></div>
 <div class="block">The potion effects that are present on an <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>
- <p>or applied by an <a href="../entity/AreaEffectCloud.html" title="interface in org.spongepowered.api.entity"><code>AreaEffectCloud</code></a> or <a href="../entity/projectile/arrow/ArrowEntity.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowEntity</code></a></p>
+ <p>or applied by an <a href="../entity/AreaEffectCloud.html" title="interface in org.spongepowered.api.entity"><code>AreaEffectCloud</code></a> or <a href="../entity/projectile/arrow/ArrowLike.html" title="interface in org.spongepowered.api.entity.projectile.arrow"><code>ArrowLike</code></a></p>
  <p>or stored on an <a href="../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a>.</p></div>
 </section>
 </li>
