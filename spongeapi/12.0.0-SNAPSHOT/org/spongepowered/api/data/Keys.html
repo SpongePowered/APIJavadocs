@@ -167,7 +167,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#ANGER_LEVEL" class="member-name-link">ANGER_LEVEL</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The anger level of a <a href="../entity/living/monster/zombie/ZombifiedPiglin.html" title="interface in org.spongepowered.api.entity.living.monster.zombie"><code>ZombifiedPiglin</code></a>.</div>
+<div class="block">The anger level of a <a href="../entity/Angerable.html" title="interface in org.spongepowered.api.entity"><code>Angerable</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/WeightedCollectionValue.html" title="interface in org.spongepowered.api.data.value">WeightedCollectionValue</a>&lt;<a href="../effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion">PotionEffect</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#APPLICABLE_POTION_EFFECTS" class="member-name-link">APPLICABLE_POTION_EFFECTS</a></code></div>
@@ -1124,7 +1124,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#IS_ANGRY" class="member-name-link">IS_ANGRY</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Whether an entity is currently aggressive.</div>
+<div class="block">Whether a <a href="../entity/Angerable.html" title="interface in org.spongepowered.api.entity"><code>Angerable</code></a> is currently aggressive.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#IS_ATTACHED" class="member-name-link">IS_ATTACHED</a></code></div>
@@ -2856,7 +2856,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ANGER_LEVEL">
 <h3>ANGER_LEVEL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</span>&nbsp;<span class="element-name">ANGER_LEVEL</span></div>
-<div class="block">The anger level of a <a href="../entity/living/monster/zombie/ZombifiedPiglin.html" title="interface in org.spongepowered.api.entity.living.monster.zombie"><code>ZombifiedPiglin</code></a>.
+<div class="block">The anger level of a <a href="../entity/Angerable.html" title="interface in org.spongepowered.api.entity"><code>Angerable</code></a>.
 
  <p>Unlike <a href="#IS_ANGRY"><code>IS_ANGRY</code></a>, the aggressiveness represented by this key may
  fade over time and the entity will become peaceful again once its anger
@@ -4437,8 +4437,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="IS_ANGRY">
 <h3>IS_ANGRY</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">IS_ANGRY</span></div>
-<div class="block">Whether an entity is currently aggressive.
- e.g. <a href="../entity/living/animal/Wolf.html" title="interface in org.spongepowered.api.entity.living.animal"><code>wolves</code></a> or <a href="../entity/living/monster/zombie/ZombifiedPiglin.html" title="interface in org.spongepowered.api.entity.living.monster.zombie"><code>ZombifiedPiglin</code></a></div>
+<div class="block">Whether a <a href="../entity/Angerable.html" title="interface in org.spongepowered.api.entity"><code>Angerable</code></a> is currently aggressive.</div>
 </section>
 </li>
 <li>
