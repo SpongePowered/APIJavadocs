@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.spongepowered.plugin.metadata.mcmodinfo","l":"org.spongepowered.plugin.meta"},{"m":"org.spongepowered.plugin.metadata.mcmodinfo","l":"org.spongepowered.plugin.meta.gson"},{"m":"org.spongepowered.plugin.metadata.mcmodinfo","l":"org.spongepowered.plugin.meta.version"}];updateSearchResults();
