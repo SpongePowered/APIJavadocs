@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"org.spongepowered.plugin.spi"}];updateSearchResults();
