@@ -106,7 +106,7 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -122,32 +122,50 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets one or more ItemTypes for matching the ingredient.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.item.inventory.ItemStack...)" class="member-name-link">with</a><wbr>(<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;types)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets one ore more ItemStack for matching the ingredient.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#with(org.spongepowered.api.item.inventory.ItemStack...)" class="member-name-link">with</a><wbr>(<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;types)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#with(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>with(ItemStackLike...)</code></a> instead</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.item.inventory.ItemStackSnapshot...)" class="member-name-link">with</a><wbr>(<a href="../../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>...&nbsp;types)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.item.inventory.ItemStackLike...)" class="member-name-link">with</a><wbr>(<a href="../../inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>...&nbsp;types)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets one ItemStack for matching the ingredient.</div>
+<div class="block">Sets one or more ItemStackLike for matching the ingredient.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.item.ItemType...)" class="member-name-link">with</a><wbr>(<a href="../../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>...&nbsp;types)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#with(org.spongepowered.api.item.inventory.ItemStackSnapshot...)" class="member-name-link">with</a><wbr>(<a href="../../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>...&nbsp;types)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#with(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>with(ItemStackLike...)</code></a> instead</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.item.ItemType...)" class="member-name-link">with</a><wbr>(<a href="../../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a>...&nbsp;types)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets one or more ItemTypes for matching the ingredient.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.ResourceKey)" class="member-name-link">with</a><wbr>(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;itemTag)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.ResourceKey)" class="member-name-link">with</a><wbr>(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;itemTag)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets the item tag for matching the ingredient.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStack...)" class="member-name-link">with</a><wbr>(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStackLike...)" class="member-name-link">with</a><wbr>(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&gt;&nbsp;predicate,
+ <a href="../../inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>...&nbsp;exemplaryTypes)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets a Predicate for matching the ingredient.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStack...)" class="member-name-link">with</a><wbr>(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate,
  <a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;exemplaryTypes)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets a Predicate for matching the ingredient.</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStackLike...)"><code>with(ResourceKey, Predicate, ItemStackLike...)</code></a> instead.</div>
+</div>
 </div>
 </div>
 </div>
@@ -195,8 +213,18 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <li>
 <section class="detail" id="with(org.spongepowered.api.item.inventory.ItemStack...)">
 <h3>with</h3>
-<div class="member-signature"><span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;types)</span></div>
-<div class="block">Sets one ore more ItemStack for matching the ingredient.</div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;types)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#with(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>with(ItemStackLike...)</code></a> instead</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="with(org.spongepowered.api.item.inventory.ItemStackLike...)">
+<h3>with</h3>
+<div class="member-signature"><span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>...&nbsp;types)</span></div>
+<div class="block">Sets one or more ItemStackLike for matching the ingredient.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>types</code> - The items</dd>
@@ -208,9 +236,21 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <li>
 <section class="detail" id="with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStack...)">
 <h3>with</h3>
-<div class="member-signature"><span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;&nbsp;predicate,
  <a href="../../inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;exemplaryTypes)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStackLike...)"><code>with(ResourceKey, Predicate, ItemStackLike...)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="with(org.spongepowered.api.ResourceKey,java.util.function.Predicate,org.spongepowered.api.item.inventory.ItemStackLike...)">
+<h3>with</h3>
+<div class="member-signature"><span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;resourceKey,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&gt;&nbsp;predicate,
+ <a href="../../inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>...&nbsp;exemplaryTypes)</span></div>
 <div class="block">Sets a Predicate for matching the ingredient.
  <p>Exemplary types are used for the vanilla recipe book.</p>
  <p>Note: Predicate ingredients may not be fully supported for all recipe types</p></div>
@@ -226,14 +266,11 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <li>
 <section class="detail" id="with(org.spongepowered.api.item.inventory.ItemStackSnapshot...)">
 <h3>with</h3>
-<div class="member-signature"><span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>...&nbsp;types)</span></div>
-<div class="block">Sets one ItemStack for matching the ingredient.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>types</code> - The items</dd>
-<dt>Returns:</dt>
-<dd>This Builder, for chaining</dd>
-</dl>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="Ingredient.Builder.html" title="interface in org.spongepowered.api.item.recipe.crafting">Ingredient.Builder</a></span>&nbsp;<span class="element-name">with</span><wbr><span class="parameters">(<a href="../../inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>...&nbsp;types)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#with(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>with(ItemStackLike...)</code></a> instead</div>
+</div>
 </section>
 </li>
 <li>

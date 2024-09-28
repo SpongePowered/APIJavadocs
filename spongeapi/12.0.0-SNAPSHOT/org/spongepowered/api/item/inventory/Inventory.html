@@ -123,7 +123,7 @@ extends <a href="../../data/value/ValueContainer.html" title="interface in org.s
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -139,28 +139,42 @@ extends <a href="../../data/value/ValueContainer.html" title="interface in org.s
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Creates a new <a href="Inventory.Builder.html" title="interface in org.spongepowered.api.item.inventory"><code>Inventory.Builder</code></a> to build a basic <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory"><code>Inventory</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canFit(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">canFit</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#canFit(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">canFit</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#canFit(org.spongepowered.api.item.inventory.ItemStackLike)"><code>canFit(ItemStackLike)</code></a> instead.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canFit(org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">canFit</a><wbr>(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns true if the entire stack can fit in this inventory.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#capacity()" class="member-name-link">capacity</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#capacity()" class="member-name-link">capacity</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The number of slots in this inventory.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#children()" class="member-name-link">children</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#children()" class="member-name-link">children</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a list of all direct child inventories.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clear()" class="member-name-link">clear</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clear()" class="member-name-link">clear</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Clears this inventory if it is clearable.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#contains(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">contains</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#contains(org.spongepowered.api.item.inventory.ItemStackLike)"><code>contains(ItemStackLike)</code></a> instead.</div>
+</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#contains(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">contains</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#contains(org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">contains</a><wbr>(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Checks whether the stacks quantity or more of given stack is contained in this Inventory.</div>
 </div>
@@ -169,140 +183,170 @@ extends <a href="../../data/value/ValueContainer.html" title="interface in org.s
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Checks whether the given ItemType is contained in this Inventory</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containsAny(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">containsAny</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks whether the given stack is contained in this Inventory.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#containsAny(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">containsAny</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#containsAny(org.spongepowered.api.item.inventory.ItemStackLike)"><code>containsAny(ItemStackLike)</code></a> instead.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containsChild(org.spongepowered.api.item.inventory.Inventory)" class="member-name-link">containsChild</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;child)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containsAny(org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">containsAny</a><wbr>(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns true if the given inventory is a direct child of this one.</div>
+<div class="block">Checks whether the given stack is contained in this Inventory.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containsInventory(org.spongepowered.api.item.inventory.Inventory)" class="member-name-link">containsInventory</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containsChild(org.spongepowered.api.item.inventory.Inventory)" class="member-name-link">containsChild</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;child)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns true if the given inventory is a direct child of this one.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#containsInventory(org.spongepowered.api.item.inventory.Inventory)" class="member-name-link">containsInventory</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns true if the given inventory is a descendant of this one.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#freeCapacity()" class="member-name-link">freeCapacity</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#freeCapacity()" class="member-name-link">freeCapacity</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The number of empty slots in this inventory.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;V&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(org.spongepowered.api.data.Key)" class="member-name-link">get</a><wbr>(<a href="../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;V&gt;&gt;&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;V&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(org.spongepowered.api.data.Key)" class="member-name-link">get</a><wbr>(<a href="../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;V&gt;&gt;&nbsp;key)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a key defined directly on this Inventory if one is defined.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(org.spongepowered.api.item.inventory.Inventory,org.spongepowered.api.data.Key)" class="member-name-link">get</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;child,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;V&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(org.spongepowered.api.item.inventory.Inventory,org.spongepowered.api.data.Key)" class="member-name-link">get</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;child,
  <a href="../../data/Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../../data/value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;V&gt;&gt;&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the key defined in <em>this</em>
  inventory for the specified (immediate) sub-inventory.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasChildren()" class="member-name-link">hasChildren</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasChildren()" class="member-name-link">hasChildren</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns true if this Inventory contains children.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#intersect(org.spongepowered.api.item.inventory.Inventory)" class="member-name-link">intersect</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#intersect(org.spongepowered.api.item.inventory.Inventory)" class="member-name-link">intersect</a><wbr>(<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&nbsp;inventory)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Intersects the slots of both inventories.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#offer(int,org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">offer</a><wbr>(int&nbsp;index,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#offer(int,org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">offer</a><wbr>(int&nbsp;index,
  <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#offer(int,org.spongepowered.api.item.inventory.ItemStackLike)"><code>offer(int, ItemStackLike)</code></a> instead.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#offer(int,org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">offer</a><wbr>(int&nbsp;index,
+ <a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Adds an ItemStack to the slot at given index.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#offer(org.spongepowered.api.item.inventory.ItemStack...)" class="member-name-link">offer</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;stacks)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#offer(org.spongepowered.api.item.inventory.ItemStack...)" class="member-name-link">offer</a><wbr>(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;stacks)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#offer(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>offer(ItemStackLike...)</code></a> instead.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#offer(org.spongepowered.api.item.inventory.ItemStackLike...)" class="member-name-link">offer</a><wbr>(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>...&nbsp;stacks)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Adds one or more ItemStacks to this inventory.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parent()" class="member-name-link">parent</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#parent()" class="member-name-link">parent</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the parent <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory"><code>Inventory</code></a> of this <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory"><code>Inventory</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#peek()" class="member-name-link">peek</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#peek()" class="member-name-link">peek</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a copy of the first non empty stack from this Inventory.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#peekAt(int)" class="member-name-link">peekAt</a><wbr>(int&nbsp;index)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#peekAt(int)" class="member-name-link">peekAt</a><wbr>(int&nbsp;index)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a copy of the stack at given slot index.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#poll()" class="member-name-link">poll</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#poll()" class="member-name-link">poll</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets and removes the first non empty stack from this Inventory.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#poll(int)" class="member-name-link">poll</a><wbr>(int&nbsp;limit)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#poll(int)" class="member-name-link">poll</a><wbr>(int&nbsp;limit)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets and removes up to <code>limit</code> items of the type in the first
  non empty stack in this Inventory from all stacks in this Inventory.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#pollFrom(int)" class="member-name-link">pollFrom</a><wbr>(int&nbsp;index)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets and removes the stack at the supplied index in this Inventory.</div>
-</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#pollFrom(int,int)" class="member-name-link">pollFrom</a><wbr>(int&nbsp;index,
- int&nbsp;limit)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#pollFrom(int)" class="member-name-link">pollFrom</a><wbr>(int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets and removes the stack at the supplied index in this Inventory.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#query(java.lang.Class)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;inventoryType)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.Poll.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult.Poll</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#pollFrom(int,int)" class="member-name-link">pollFrom</a><wbr>(int&nbsp;index,
+ int&nbsp;limit)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets and removes the stack at the supplied index in this Inventory.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#query(java.lang.Class)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;inventoryType)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Query this inventory for a single inventory matching the supplied inventory type.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;P&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(java.util.function.Supplier,java.util.function.Supplier)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query">QueryType.OneParam</a>&lt;P&gt;&gt;&nbsp;queryType,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;P&gt;&nbsp;param)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Query this inventory with given <a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query"><code>QueryType.OneParam</code></a> and one parameter.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;P&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(java.util.function.Supplier,P)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query">QueryType.OneParam</a>&lt;P&gt;&gt;&nbsp;queryType,
- P&nbsp;param)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(java.util.function.Supplier,java.util.function.Supplier)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query">QueryType.OneParam</a>&lt;P&gt;&gt;&nbsp;queryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;P&gt;&nbsp;param)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Query this inventory with given <a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query"><code>QueryType.OneParam</code></a> and one parameter.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;P1,<wbr>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;P&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(java.util.function.Supplier,P)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query">QueryType.OneParam</a>&lt;P&gt;&gt;&nbsp;queryType,
+ P&nbsp;param)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Query this inventory with given <a href="query/QueryType.OneParam.html" title="interface in org.spongepowered.api.item.inventory.query"><code>QueryType.OneParam</code></a> and one parameter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;P1,<wbr>
 P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(java.util.function.Supplier,P1,P2)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="query/QueryType.TwoParam.html" title="interface in org.spongepowered.api.item.inventory.query">QueryType.TwoParam</a>&lt;P1,<wbr>P2&gt;&gt;&nbsp;queryType,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(java.util.function.Supplier,P1,P2)" class="member-name-link">query</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="query/QueryType.TwoParam.html" title="interface in org.spongepowered.api.item.inventory.query">QueryType.TwoParam</a>&lt;P1,<wbr>P2&gt;&gt;&nbsp;queryType,
  P1&nbsp;param1,
  P2&nbsp;param2)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Query this inventory with given <a href="query/QueryType.TwoParam.html" title="interface in org.spongepowered.api.item.inventory.query"><code>QueryType.TwoParam</code></a> and two parameters.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(org.spongepowered.api.data.KeyValueMatcher)" class="member-name-link">query</a><wbr>(<a href="../../data/KeyValueMatcher.html" title="interface in org.spongepowered.api.data">KeyValueMatcher</a>&lt;?&gt;&nbsp;matcher)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#query(org.spongepowered.api.data.KeyValueMatcher)" class="member-name-link">query</a><wbr>(<a href="../../data/KeyValueMatcher.html" title="interface in org.spongepowered.api.data">KeyValueMatcher</a>&lt;?&gt;&nbsp;matcher)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Query this inventory for inventories matching
  the supplied <a href="../../data/KeyValueMatcher.html" title="interface in org.spongepowered.api.data"><code>KeyValueMatcher</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#query(org.spongepowered.api.item.inventory.query.Query)" class="member-name-link">query</a><wbr>(<a href="query/Query.html" title="interface in org.spongepowered.api.item.inventory.query">Query</a>&nbsp;query)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#query(org.spongepowered.api.item.inventory.query.Query)" class="member-name-link">query</a><wbr>(<a href="query/Query.html" title="interface in org.spongepowered.api.item.inventory.query">Query</a>&nbsp;query)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Query this inventory with given <a href="query/Query.html" title="interface in org.spongepowered.api.item.inventory.query"><code>Query</code></a></div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#root()" class="member-name-link">root</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory">Inventory</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#root()" class="member-name-link">root</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the root <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory"><code>Inventory</code></a> of this <a href="Inventory.html" title="interface in org.spongepowered.api.item.inventory"><code>Inventory</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#set(int,org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">set</a><wbr>(int&nbsp;index,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#set(int,org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">set</a><wbr>(int&nbsp;index,
  <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#set(int,org.spongepowered.api.item.inventory.ItemStackLike)"><code>set(int, ItemStackLike)</code></a> instead.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#set(int,org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">set</a><wbr>(int&nbsp;index,
+ <a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Adds the ItemStack to the slot at given index overwriting the existing item.</div>
 </div>
@@ -473,7 +517,17 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <li>
 <section class="detail" id="offer(org.spongepowered.api.item.inventory.ItemStack...)">
 <h3>offer</h3>
-<div class="member-signature"><span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;stacks)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>...&nbsp;stacks)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#offer(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>offer(ItemStackLike...)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="offer(org.spongepowered.api.item.inventory.ItemStackLike...)">
+<h3>offer</h3>
+<div class="member-signature"><span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>...&nbsp;stacks)</span></div>
 <div class="block">Adds one or more ItemStacks to this inventory.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -487,10 +541,20 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <li>
 <section class="detail" id="canFit(org.spongepowered.api.item.inventory.ItemStack)">
 <h3>canFit</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">canFit</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canFit</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#canFit(org.spongepowered.api.item.inventory.ItemStackLike)"><code>canFit(ItemStackLike)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="canFit(org.spongepowered.api.item.inventory.ItemStackLike)">
+<h3>canFit</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">canFit</span><wbr><span class="parameters">(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</span></div>
 <div class="block">Returns true if the entire stack can fit in this inventory.
 
- <p>If this returns <code>true</code> <a href="#offer(org.spongepowered.api.item.inventory.ItemStack...)"><code>offer(ItemStack...)</code></a> should always succeed.</p></div>
+ <p>If this returns <code>true</code> <a href="#offer(org.spongepowered.api.item.inventory.ItemStackLike...)"><code>offer(ItemStackLike...)</code></a> should always succeed.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>stack</code> - The stack of items to check if it can fit in this inventory.</dd>
@@ -558,10 +622,21 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <li>
 <section class="detail" id="offer(int,org.spongepowered.api.item.inventory.ItemStack)">
 <h3>offer</h3>
-<div class="member-signature"><span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(int&nbsp;index,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(int&nbsp;index,
  <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#offer(int,org.spongepowered.api.item.inventory.ItemStackLike)"><code>offer(int, ItemStackLike)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="offer(int,org.spongepowered.api.item.inventory.ItemStackLike)">
+<h3>offer</h3>
+<div class="member-signature"><span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">offer</span><wbr><span class="parameters">(int&nbsp;index,
+ <a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</span></div>
 <div class="block">Adds an ItemStack to the slot at given index.
- Returns a <a href="transaction/InventoryTransactionResult.Type.html#SUCCESS"><code>InventoryTransactionResult.Type.SUCCESS</code></a> only if the entire <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> fits the slot.</div>
+ Returns a <a href="transaction/InventoryTransactionResult.Type.html#SUCCESS"><code>InventoryTransactionResult.Type.SUCCESS</code></a> only if the entire <a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackLike</code></a> fits the slot.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>index</code> - The slot index</dd>
@@ -575,8 +650,19 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <li>
 <section class="detail" id="set(int,org.spongepowered.api.item.inventory.ItemStack)">
 <h3>set</h3>
-<div class="member-signature"><span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(int&nbsp;index,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(int&nbsp;index,
  <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#set(int,org.spongepowered.api.item.inventory.ItemStackLike)"><code>set(int, ItemStackLike)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="set(int,org.spongepowered.api.item.inventory.ItemStackLike)">
+<h3>set</h3>
+<div class="member-signature"><span class="return-type"><a href="transaction/InventoryTransactionResult.html" title="interface in org.spongepowered.api.item.inventory.transaction">InventoryTransactionResult</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(int&nbsp;index,
+ <a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</span></div>
 <div class="block">Adds the ItemStack to the slot at given index overwriting the existing item.
 
  <p>Always returns a <a href="transaction/InventoryTransactionResult.Type.html#FAILURE"><code>InventoryTransactionResult.Type.FAILURE</code></a> when
@@ -628,7 +714,7 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <h3>totalQuantity</h3>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">totalQuantity</span>()</div>
 <div class="block">Returns the total quantity of <em>items</em> in this inventory.
- <p>This equivalent to summing <a href="ItemStack.html#quantity()"><code>ItemStack.quantity()</code></a> for all slots.</p></div>
+ <p>This equivalent to summing <a href="ItemStackLike.html#quantity()"><code>ItemStackLike.quantity()</code></a> for all slots.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the total quantity of items in this inventory</dd>
@@ -649,9 +735,19 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <li>
 <section class="detail" id="contains(org.spongepowered.api.item.inventory.ItemStack)">
 <h3>contains</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">contains</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">contains</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#contains(org.spongepowered.api.item.inventory.ItemStackLike)"><code>contains(ItemStackLike)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="contains(org.spongepowered.api.item.inventory.ItemStackLike)">
+<h3>contains</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">contains</span><wbr><span class="parameters">(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</span></div>
 <div class="block">Checks whether the stacks quantity or more of given stack is contained in this Inventory.
- To check if an inventory contains any amount use <a href="#containsAny(org.spongepowered.api.item.inventory.ItemStack)"><code>containsAny(ItemStack)</code></a>.</div>
+ To check if an inventory contains any amount use <a href="#containsAny(org.spongepowered.api.item.inventory.ItemStackLike)"><code>containsAny(ItemStackLike)</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>stack</code> - The stack to check for</dd>
@@ -676,12 +772,22 @@ P2&gt;&nbsp;<a href="Inventory.html" title="interface in org.spongepowered.api.i
 <li>
 <section class="detail" id="containsAny(org.spongepowered.api.item.inventory.ItemStack)">
 <h3>containsAny</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">containsAny</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">containsAny</span><wbr><span class="parameters">(<a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;stack)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#containsAny(org.spongepowered.api.item.inventory.ItemStackLike)"><code>containsAny(ItemStackLike)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="containsAny(org.spongepowered.api.item.inventory.ItemStackLike)">
+<h3>containsAny</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">containsAny</span><wbr><span class="parameters">(<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;stack)</span></div>
 <div class="block">Checks whether the given stack is contained in this Inventory.
  The stack size is ignored.
 
  <p>Note this will return true if any amount of the supplied stack is found.
- To check if an inventory contains at least a given quantity use <a href="#contains(org.spongepowered.api.item.inventory.ItemStack)"><code>contains(ItemStack)</code></a>.</p></div>
+ To check if an inventory contains at least a given quantity use <a href="#contains(org.spongepowered.api.item.inventory.ItemStackLike)"><code>contains(ItemStackLike)</code></a>.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>stack</code> - The stack to check for</dd>

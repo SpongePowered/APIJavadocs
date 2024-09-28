@@ -111,7 +111,7 @@ implements <a href="../../../../util/Builder.html" title="interface in org.spong
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -151,27 +151,38 @@ implements <a href="../../../../util/Builder.html" title="interface in org.spong
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#group(java.lang.String)" class="member-name-link">group</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#item(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">item</a><wbr>(<a href="../../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;itemStack)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#item(org.spongepowered.api.item.inventory.ItemStack)" class="member-name-link">item</a><wbr>(<a href="../../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;itemStack)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#item(org.spongepowered.api.item.inventory.ItemStackLike)"><code>item(ItemStackLike)</code></a> instead.</div>
+</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#item(org.spongepowered.api.item.inventory.ItemStackSnapshot)" class="member-name-link">item</a><wbr>(<a href="../../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&nbsp;snapshot)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#item(org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">item</a><wbr>(<a href="../../../../item/inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;item)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reset()" class="member-name-link">reset</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#item(org.spongepowered.api.item.inventory.ItemStackSnapshot)" class="member-name-link">item</a><wbr>(<a href="../../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&nbsp;snapshot)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#item(org.spongepowered.api.item.inventory.ItemStackLike)"><code>item(ItemStackLike)</code></a> instead.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reset()" class="member-name-link">reset</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Resets this builder to a "default" state such that there is no
  remaining data to set.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type(java.util.function.Supplier)" class="member-name-link">type</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;damageModifierType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type(java.util.function.Supplier)" class="member-name-link">type</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;damageModifierType)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
  build.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type(org.spongepowered.api.event.cause.entity.damage.DamageModifierType)" class="member-name-link">type</a><wbr>(<a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&nbsp;damageModifierType)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type(org.spongepowered.api.event.cause.entity.damage.DamageModifierType)" class="member-name-link">type</a><wbr>(<a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&nbsp;damageModifierType)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
  build.</div>
 </div>
@@ -262,13 +273,27 @@ implements <a href="../../../../util/Builder.html" title="interface in org.spong
 <li>
 <section class="detail" id="item(org.spongepowered.api.item.inventory.ItemStack)">
 <h3>item</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">item</span><wbr><span class="parameters">(<a href="../../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;itemStack)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">item</span><wbr><span class="parameters">(<a href="../../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a>&nbsp;itemStack)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#item(org.spongepowered.api.item.inventory.ItemStackLike)"><code>item(ItemStackLike)</code></a> instead.</div>
+</div>
 </section>
 </li>
 <li>
 <section class="detail" id="item(org.spongepowered.api.item.inventory.ItemStackSnapshot)">
 <h3>item</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">item</span><wbr><span class="parameters">(<a href="../../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&nbsp;snapshot)</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">item</span><wbr><span class="parameters">(<a href="../../../../item/inventory/ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&nbsp;snapshot)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="#item(org.spongepowered.api.item.inventory.ItemStackLike)"><code>item(ItemStackLike)</code></a> instead.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="item(org.spongepowered.api.item.inventory.ItemStackLike)">
+<h3>item</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">item</span><wbr><span class="parameters">(<a href="../../../../item/inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;item)</span></div>
 </section>
 </li>
 <li>

@@ -88,11 +88,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../data/CopyableDataHolder.html" title="interface in org.spongepowered.api.data">CopyableDataHolder</a></code>, <code><a href="../../data/DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a></code>, <code><a href="../../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;<a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code>, <code><a href="../../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></code>, <code><a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;<a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEvent.ShowItem.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEvent.ShowItem</a>&gt;</code>, <code><a href="../../data/SerializableDataHolder.html" title="interface in org.spongepowered.api.data">SerializableDataHolder</a></code>, <code><a href="../../data/SerializableDataHolder.Immutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;<a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code>, <code><a href="../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value">ValueContainer</a></code></dd>
+<dd><code><a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a></code>, <code><a href="../../data/CopyableDataHolder.html" title="interface in org.spongepowered.api.data">CopyableDataHolder</a></code>, <code><a href="../../data/DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a></code>, <code><a href="../../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;<a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code>, <code><a href="../../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></code>, <code><a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;<a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEvent.ShowItem.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEvent.ShowItem</a>&gt;</code>, <code><a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a></code>, <code><a href="../../data/SerializableDataHolder.html" title="interface in org.spongepowered.api.data">SerializableDataHolder</a></code>, <code><a href="../../data/SerializableDataHolder.Immutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;<a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</code>, <code><a href="../../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value">ValueContainer</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ItemStackSnapshot</span><span class="extends-implements">
-extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a>&lt;<a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEvent.ShowItem.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEvent.ShowItem</a>&gt;, <a href="../../data/SerializableDataHolder.Immutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;<a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</span></div>
+extends <a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>, <a href="../../data/SerializableDataHolder.Immutable.html" title="interface in org.spongepowered.api.data">SerializableDataHolder.Immutable</a>&lt;<a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a>&gt;</span></div>
 <div class="block">Represents a snapshot of an <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> as an
  <a href="../../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data"><code>DataHolder.Immutable</code></a> to represent all of the data associated with
  the <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> of which the snapshot was created from. Being that
@@ -127,43 +127,30 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createStack()" class="member-name-link">createStack</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Creates a new <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> with all the data currently available
- on this <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#createStack()" class="member-name-link">createStack</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="ItemStackLike.html#asMutable()"><code>ItemStackLike.asMutable()</code></a> or <a href="ItemStackLike.html#asMutableCopy()"><code>ItemStackLike.asMutableCopy()</code></a> instead.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory">ItemStackSnapshot</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#empty()" class="member-name-link">empty</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Gets a empty <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isEmpty()" class="member-name-link">isEmpty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns true if <a href="#quantity()"><code>quantity()</code></a> is zero and therefore this
- ItemStackSnapshot is empty.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#quantity()" class="member-name-link">quantity</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the quantity of items in this the <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> this
- <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> is representing.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the <a href="../ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> of this <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>.</div>
 </div>
 </div>
 </div>
-</div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-net.kyori.adventure.text.ComponentLike">Methods inherited from interface&nbsp;net.kyori.adventure.text.<a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a></h3>
+<code><a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/ComponentLike.html#asComponent()" title="class or interface in net.kyori.adventure.text" class="external-link">asComponent</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.data.DataHolder.Immutable">Methods inherited from interface&nbsp;org.spongepowered.api.data.<a href="../../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a></h3>
 <code><a href="../../data/DataHolder.Immutable.html#mergeWith(I)">mergeWith</a>, <a href="../../data/DataHolder.Immutable.html#mergeWith(I,org.spongepowered.api.data.value.MergeFunction)">mergeWith</a>, <a href="../../data/DataHolder.Immutable.html#transform(java.util.function.Supplier,java.util.function.Function)">transform</a>, <a href="../../data/DataHolder.Immutable.html#transform(org.spongepowered.api.data.Key,java.util.function.Function)">transform</a>, <a href="../../data/DataHolder.Immutable.html#with(java.util.function.Supplier,E)">with</a>, <a href="../../data/DataHolder.Immutable.html#with(org.spongepowered.api.data.Key,E)">with</a>, <a href="../../data/DataHolder.Immutable.html#with(org.spongepowered.api.data.value.Value)">with</a>, <a href="../../data/DataHolder.Immutable.html#without(java.util.function.Supplier)">without</a>, <a href="../../data/DataHolder.Immutable.html#without(org.spongepowered.api.data.Key)">without</a>, <a href="../../data/DataHolder.Immutable.html#without(org.spongepowered.api.data.value.Value)">without</a></code></div>
@@ -173,6 +160,9 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-net.kyori.adventure.text.event.HoverEventSource">Methods inherited from interface&nbsp;net.kyori.adventure.text.event.<a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEventSource.html" title="class or interface in net.kyori.adventure.text.event" class="external-link">HoverEventSource</a></h3>
 <code><a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEventSource.html#asHoverEvent()" title="class or interface in net.kyori.adventure.text.event" class="external-link">asHoverEvent</a>, <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event/HoverEventSource.html#asHoverEvent(java.util.function.UnaryOperator)" title="class or interface in net.kyori.adventure.text.event" class="external-link">asHoverEvent</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.item.inventory.ItemStackLike">Methods inherited from interface&nbsp;org.spongepowered.api.item.inventory.<a href="ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a></h3>
+<code><a href="ItemStackLike.html#asImmutable()">asImmutable</a>, <a href="ItemStackLike.html#asMutable()">asMutable</a>, <a href="ItemStackLike.html#asMutableCopy()">asMutableCopy</a>, <a href="ItemStackLike.html#attributeModifiers(java.util.function.Supplier,org.spongepowered.api.item.inventory.equipment.EquipmentType)">attributeModifiers</a>, <a href="ItemStackLike.html#attributeModifiers(java.util.function.Supplier,org.spongepowered.api.registry.DefaultedRegistryReference)">attributeModifiers</a>, <a href="ItemStackLike.html#attributeModifiers(org.spongepowered.api.entity.attribute.type.AttributeType,org.spongepowered.api.item.inventory.equipment.EquipmentType)">attributeModifiers</a>, <a href="ItemStackLike.html#attributeModifiers(org.spongepowered.api.entity.attribute.type.AttributeType,org.spongepowered.api.registry.DefaultedRegistryReference)">attributeModifiers</a>, <a href="ItemStackLike.html#copy()">copy</a>, <a href="ItemStackLike.html#isEmpty()">isEmpty</a>, <a href="ItemStackLike.html#maxStackQuantity()">maxStackQuantity</a>, <a href="ItemStackLike.html#quantity()">quantity</a>, <a href="ItemStackLike.html#type()">type</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.data.SerializableDataHolder">Methods inherited from interface&nbsp;org.spongepowered.api.data.<a href="../../data/SerializableDataHolder.html" title="interface in org.spongepowered.api.data">SerializableDataHolder</a></h3>
 <code><a href="../../data/SerializableDataHolder.html#validateRawData(org.spongepowered.api.data.persistence.DataView)">validateRawData</a></code></div>
@@ -205,51 +195,13 @@ extends <a href="https://jd.advntr.dev/api/4.17.0/net/kyori/adventure/text/event
 </section>
 </li>
 <li>
-<section class="detail" id="type()">
-<h3>type</h3>
-<div class="member-signature"><span class="return-type"><a href="../ItemType.html" title="interface in org.spongepowered.api.item">ItemType</a></span>&nbsp;<span class="element-name">type</span>()</div>
-<div class="block">Gets the <a href="../ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> of this <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>. The
- <a href="../ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a> is always available.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The item type</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="quantity()">
-<h3>quantity</h3>
-<div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">quantity</span>()</div>
-<div class="block">Gets the quantity of items in this the <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> this
- <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a> is representing.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The current stack size</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isEmpty()">
-<h3>isEmpty</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isEmpty</span>()</div>
-<div class="block">Returns true if <a href="#quantity()"><code>quantity()</code></a> is zero and therefore this
- ItemStackSnapshot is empty.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>True if this ItemStackSnapshot is empty</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="createStack()">
 <h3>createStack</h3>
-<div class="member-signature"><span class="return-type"><a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a></span>&nbsp;<span class="element-name">createStack</span>()</div>
-<div class="block">Creates a new <a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> with all the data currently available
- on this <a href="ItemStackSnapshot.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStackSnapshot</code></a>.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The newly generated item stack</dd>
-</dl>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="ItemStack.html" title="interface in org.spongepowered.api.item.inventory">ItemStack</a></span>&nbsp;<span class="element-name">createStack</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="ItemStackLike.html#asMutable()"><code>ItemStackLike.asMutable()</code></a> or <a href="ItemStackLike.html#asMutableCopy()"><code>ItemStackLike.asMutableCopy()</code></a> instead.</div>
+</div>
 </section>
 </li>
 </ul>
