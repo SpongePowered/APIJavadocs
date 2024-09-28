@@ -141,22 +141,32 @@ extends <a href="../../data/SerializableDataHolder.Mutable.html" title="interfac
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="../BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> that this <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> represents.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canTick()" class="member-name-link">canTick</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Creates a new <a href="BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> for use with <a href="../../world/schematic/Schematic.html" title="interface in org.spongepowered.api.world.schematic"><code>Schematic</code></a>s
- and placing the archetype in multiple locations.</div>
+<div class="block">Returns whether this block entity can tick.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createArchetype()" class="member-name-link">createArchetype</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity">BlockEntity</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates a new <a href="BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> for use with <a href="../../world/schematic/Schematic.html" title="interface in org.spongepowered.api.world.schematic"><code>Schematic</code></a>s
  and placing the archetype in multiple locations.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isRemoved()" class="member-name-link">isRemoved</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity">BlockEntityArchetype</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createArchetype()" class="member-name-link">createArchetype</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates a new <a href="BlockEntityArchetype.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntityArchetype</code></a> for use with <a href="../../world/schematic/Schematic.html" title="interface in org.spongepowered.api.world.schematic"><code>Schematic</code></a>s
+ and placing the archetype in multiple locations.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isRemoved()" class="member-name-link">isRemoved</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns whether this block entity has been removed.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isTicking()" class="member-name-link">isTicking</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns whether this block entity is ticking.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../world/LocatableBlock.html" title="interface in org.spongepowered.api.world">LocatableBlock</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#locatableBlock()" class="member-name-link">locatableBlock</a>()</code></div>
@@ -188,9 +198,14 @@ extends <a href="../../data/SerializableDataHolder.Mutable.html" title="interfac
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Rotates this <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> for the desired <a href="../../util/rotation/Rotation.html" title="interface in org.spongepowered.api.util.rotation"><code>Rotation</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntityType.html" title="interface in org.spongepowered.api.block.entity">BlockEntityType</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setTicking(boolean)" class="member-name-link">setTicking</a><wbr>(boolean&nbsp;ticking)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Attempts to set if this block entity will naturally tick.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockEntityType.html" title="interface in org.spongepowered.api.block.entity">BlockEntityType</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type()" class="member-name-link">type</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the type of <a href="BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> this is.</div>
 </div>
 </div>
@@ -241,6 +256,45 @@ extends <a href="../../data/SerializableDataHolder.Mutable.html" title="interfac
 <h3>remove</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">remove</span>()</div>
 <div class="block">Removes this block entity from the world and its corresponding block.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="canTick()">
+<h3>canTick</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">canTick</span>()</div>
+<div class="block">Returns whether this block entity can tick.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if this block entity can tick</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isTicking()">
+<h3>isTicking</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isTicking</span>()</div>
+<div class="block">Returns whether this block entity is ticking.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if this block entity is ticking</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setTicking(boolean)">
+<h3>setTicking</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">setTicking</span><wbr><span class="parameters">(boolean&nbsp;ticking)</span></div>
+<div class="block">Attempts to set if this block entity will naturally tick.
+
+ <p>This will return <code>false</code>
+ if <a href="#isRemoved()"><code>isRemoved()</code></a> returns <code>true</code>
+ or <a href="#canTick()"><code>canTick()</code></a> returns <code>false</code></p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>ticking</code> - The ticking state</dd>
+<dt>Returns:</dt>
+<dd>True if ticking state was successfully set</dd>
+</dl>
 </section>
 </li>
 <li>
