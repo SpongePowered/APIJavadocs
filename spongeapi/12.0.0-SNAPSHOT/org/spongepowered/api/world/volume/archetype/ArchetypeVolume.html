@@ -138,15 +138,25 @@ extends <a href="../block/BlockVolume.Modifiable.html" title="interface in org.s
  <a href="ArchetypeVolume.html" title="interface in org.spongepowered.api.world.volume.archetype"><code>volume</code></a> onto the target <a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a>
  with a relative <code>placement</code>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#logicalCenter()" class="member-name-link">logicalCenter</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#applyToWorld(org.spongepowered.api.world.server.ServerWorld,org.spongepowered.math.vector.Vector3i,java.util.function.Supplier,org.spongepowered.api.world.BlockChangeFlag)" class="member-name-link">applyToWorld</a><wbr>(<a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;target,
+ <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;placement,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../../../event/cause/entity/SpawnType.html" title="interface in org.spongepowered.api.event.cause.entity">SpawnType</a>&gt;&nbsp;spawnContext,
+ <a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Attempts to apply all of the contents of this
+ <a href="ArchetypeVolume.html" title="interface in org.spongepowered.api.world.volume.archetype"><code>volume</code></a> onto the target <a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a>
+ with a relative <code>placement</code>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#logicalCenter()" class="member-name-link">logicalCenter</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the logical center of a volume, considering the decimal coordinates,
  the block's center location would have an offset of <code>0.5</code></div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ArchetypeVolume.html" title="interface in org.spongepowered.api.world.volume.archetype">ArchetypeVolume</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#transform(org.spongepowered.api.util.transformation.Transformation)" class="member-name-link">transform</a><wbr>(<a href="../../../util/transformation/Transformation.html" title="interface in org.spongepowered.api.util.transformation">Transformation</a>&nbsp;transformation)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ArchetypeVolume.html" title="interface in org.spongepowered.api.world.volume.archetype">ArchetypeVolume</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#transform(org.spongepowered.api.util.transformation.Transformation)" class="member-name-link">transform</a><wbr>(<a href="../../../util/transformation/Transformation.html" title="interface in org.spongepowered.api.util.transformation">Transformation</a>&nbsp;transformation)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -236,6 +246,29 @@ extends <a href="../block/BlockVolume.Modifiable.html" title="interface in org.s
 <dd><code>placement</code> - The target origin, where the diff of relative position
       compared to this volume's min position as the offset</dd>
 <dd><code>spawnContext</code> - The context value used for processing spawn entities.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="applyToWorld(org.spongepowered.api.world.server.ServerWorld,org.spongepowered.math.vector.Vector3i,java.util.function.Supplier,org.spongepowered.api.world.BlockChangeFlag)">
+<h3>applyToWorld</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">applyToWorld</span><wbr><span class="parameters">(<a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;target,
+ <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;placement,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../../../event/cause/entity/SpawnType.html" title="interface in org.spongepowered.api.event.cause.entity">SpawnType</a>&gt;&nbsp;spawnContext,
+ <a href="../../BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</span></div>
+<div class="block">Attempts to apply all of the contents of this
+ <a href="ArchetypeVolume.html" title="interface in org.spongepowered.api.world.volume.archetype"><code>volume</code></a> onto the target <a href="../../server/ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a>
+ with a relative <code>placement</code>. This default implementation can be
+ used as a guide for utilizing
+ <a href="../stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream"><code>VolumeStreams</code></a>
+ and their companion types.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>target</code> - The target world</dd>
+<dd><code>placement</code> - The target origin, where the diff of relative position
+      compared to this volume's min position as the offset</dd>
+<dd><code>spawnContext</code> - The context value used for processing spawn entities.</dd>
+<dd><code>flag</code> - The various change flags controlling some interactions</dd>
 </dl>
 </section>
 </li>
