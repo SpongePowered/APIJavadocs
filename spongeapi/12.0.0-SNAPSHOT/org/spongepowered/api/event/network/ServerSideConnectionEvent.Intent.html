@@ -100,6 +100,11 @@ extends <a href="ServerSideConnectionEvent.html" title="interface in org.spongep
 <div class="block"><p>Called asynchronously when the client attempts to connect to
  the server.</p>
 
+ <p>During this event, it's possible to use the <a href="../../network/channel/raw/RawDataChannel.html" title="interface in org.spongepowered.api.network.channel.raw"><code>RawDataChannel</code></a>s to send
+ requests to the client. As long as there's requests going to the client,
+ the connection will stay in the intent phase and will not continue
+ to the <a href="ServerSideConnectionEvent.Auth.html" title="interface in org.spongepowered.api.event.network"><code>ServerSideConnectionEvent.Auth</code></a> event.</p>
+
  <p>After observing this event for particular <a href="../../network/ServerSideConnection.html" title="interface in org.spongepowered.api.network"><code>connection</code></a>
  you are guaranteed to get #Disconnect for the same connection without
  ordering issues.</p></div>
