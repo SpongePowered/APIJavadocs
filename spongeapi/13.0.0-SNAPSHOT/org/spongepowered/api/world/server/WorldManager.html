@@ -164,10 +164,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a>&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldDirectory(org.spongepowered.api.ResourceKey)" class="member-name-link">worldDirectory</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>directory</code></a> that exists for the provided <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>world key</code></a>.</div>
+<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>directory</code></a> that is used for the world's data
+ identified by <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>world key</code></a>.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldExists(org.spongepowered.api.ResourceKey)" class="member-name-link">worldExists</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
@@ -235,16 +236,15 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="worldDirectory(org.spongepowered.api.ResourceKey)">
 <h3>worldDirectory</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a>&gt;</span>&nbsp;<span class="element-name">worldDirectory</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
-<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>directory</code></a> that exists for the provided <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>world key</code></a>.
-
- <p>It is not required for the implementation to validate that the directory contains a proper world,
- only that the directory exists.</p></div>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a></span>&nbsp;<span class="element-name">worldDirectory</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
+<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>directory</code></a> that is used for the world's data
+ identified by <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>world key</code></a>. It is not guaranteed
+ the path will exist until the world is formally loaded by the game.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>key</code> - The key</dd>
+<dd><code>key</code> - The world's identifier key</dd>
 <dt>Returns:</dt>
-<dd>The directory or <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html#empty()" title="class or interface in java.util" class="external-link"><code>Optional.empty()</code></a> if not found</dd>
+<dd>The directory to be used if it doesn't exist</dd>
 </dl>
 </section>
 </li>
