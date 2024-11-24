@@ -63,20 +63,26 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-summary-item-name even-row-color"><a href="org/spongepowered/api/event/cause/entity/damage/source/DamageSource.html#isAbsolute()">org.spongepowered.api.event.cause.entity.damage.source.DamageSource.isAbsolute()</a></div>
 <div class="col-last even-row-color"></div>
-<div class="col-summary-item-name odd-row-color"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#isSupportedBy(org.spongepowered.api.network.EngineConnection)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.isSupportedBy<wbr>(EngineConnection)</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="org/spongepowered/api/event/EventManager.html#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)">org.spongepowered.api.event.EventManager.registerListeners<wbr>(PluginContainer, Object)</a></div>
 <div class="col-last odd-row-color">
+<div class="block">In order to be compatible with the JPMS, it is highly
+ recommended that plugins instead use the
+ <a href="org/spongepowered/api/event/EventManager.html#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object,java.lang.invoke.MethodHandles.Lookup)"><code>EventManager.registerListeners(PluginContainer, Object, MethodHandles.Lookup)</code></a> overload.</div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#isSupportedBy(org.spongepowered.api.network.EngineConnection)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.isSupportedBy<wbr>(EngineConnection)</a></div>
+<div class="col-last even-row-color">
 <div class="block">Is currently not supported by the basic packet channel during the handshake phase</div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#sendToServer(org.spongepowered.api.network.channel.packet.Packet)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.sendToServer<wbr>(Packet)</a></div>
-<div class="col-last even-row-color">
-<div class="block">Is currently not supported by the basic packet channel</div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#sendToServer(org.spongepowered.api.network.channel.packet.RequestPacket)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.sendToServer<wbr>(RequestPacket&lt;R&gt;)</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#sendToServer(org.spongepowered.api.network.channel.packet.Packet)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.sendToServer<wbr>(Packet)</a></div>
 <div class="col-last odd-row-color">
 <div class="block">Is currently not supported by the basic packet channel</div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="org/spongepowered/api/service/context/Context.html#setValue(java.lang.String)">org.spongepowered.api.service.context.Context.setValue<wbr>(String)</a></div>
+<div class="col-summary-item-name even-row-color"><a href="org/spongepowered/api/network/channel/packet/basic/BasicHandshakePacketDispatcher.html#sendToServer(org.spongepowered.api.network.channel.packet.RequestPacket)">org.spongepowered.api.network.channel.packet.basic.BasicHandshakePacketDispatcher.sendToServer<wbr>(RequestPacket&lt;R&gt;)</a></div>
 <div class="col-last even-row-color">
+<div class="block">Is currently not supported by the basic packet channel</div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="org/spongepowered/api/service/context/Context.html#setValue(java.lang.String)">org.spongepowered.api.service.context.Context.setValue<wbr>(String)</a></div>
+<div class="col-last odd-row-color">
 <div class="block">Context does not support changing the values</div>
 </div>
 </div>

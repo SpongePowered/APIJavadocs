@@ -88,6 +88,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">NotificationTicket</span></div>
+<div class="block">Represents a notification that is being proposed to the engine.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,25 +105,39 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#invalidate()" class="member-name-link">invalidate</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Invalidates this ticket.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../world/LocatableBlock.html" title="interface in org.spongepowered.api.world">LocatableBlock</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#notifier()" class="member-name-link">notifier</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the notifier block that scheduled this notification.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#notifierPosition()" class="member-name-link">notifierPosition</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the notifier position that scheduled this notification.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setValid(boolean)" class="member-name-link">setValid</a><wbr>(boolean&nbsp;valid)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets whether this ticket is valid or not.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#target()" class="member-name-link">target</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the target block of this notification.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#targetPosition()" class="member-name-link">targetPosition</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the target position of this notification.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#valid()" class="member-name-link">valid</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets whether this ticket is marked as valid.</div>
+</div>
 </div>
 </div>
 </div>
@@ -141,42 +156,73 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="notifier()">
 <h3>notifier</h3>
 <div class="member-signature"><span class="return-type"><a href="../../world/LocatableBlock.html" title="interface in org.spongepowered.api.world">LocatableBlock</a></span>&nbsp;<span class="element-name">notifier</span>()</div>
+<div class="block">Gets the notifier block that scheduled this notification.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The notifier block</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="notifierPosition()">
 <h3>notifierPosition</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a></span>&nbsp;<span class="element-name">notifierPosition</span>()</div>
+<div class="block">Gets the notifier position that scheduled this notification.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The notifier position</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="target()">
 <h3>target</h3>
 <div class="member-signature"><span class="return-type"><a href="../BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a></span>&nbsp;<span class="element-name">target</span>()</div>
+<div class="block">Gets the target block of this notification.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The target block</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="targetPosition()">
 <h3>targetPosition</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a></span>&nbsp;<span class="element-name">targetPosition</span>()</div>
+<div class="block">Gets the target position of this notification.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The target position</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="valid()">
 <h3>valid</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">valid</span>()</div>
+<div class="block">Gets whether this ticket is marked as valid.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The valid state of this ticket</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setValid(boolean)">
 <h3>setValid</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setValid</span><wbr><span class="parameters">(boolean&nbsp;valid)</span></div>
+<div class="block">Sets whether this ticket is valid or not.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>valid</code> - The valid state of this ticket</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="invalidate()">
 <h3>invalidate</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">invalidate</span>()</div>
+<div class="block">Invalidates this ticket.</div>
 </section>
 </li>
 </ul>

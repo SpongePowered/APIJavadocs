@@ -93,6 +93,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">NotifyNeighborBlockEvent</span><span class="extends-implements">
 extends <a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a>, <a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></span></div>
+<div class="block">Fired when a neighbour notification is being proposed to the engine.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -109,13 +110,27 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterTargetPositions(java.util.function.Predicate)" class="member-name-link">filterTargetPositions</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&gt;&nbsp;predicate)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>s from <a href="#tickets()"><code>tickets()</code></a> such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the location of the <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>, the
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a> is marked as "invalid".</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterTickets(java.util.function.Predicate)" class="member-name-link">filterTickets</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction">NotificationTicket</a>&gt;&nbsp;predicate)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>s from <a href="#tickets()"><code>tickets()</code></a> such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the location of the <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>, the
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a> is marked as "invalid".</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction">NotificationTicket</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tickets()" class="member-name-link">tickets</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets a list of the <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>s for this event.</div>
+</div>
 </div>
 </div>
 </div>
@@ -140,18 +155,45 @@ extends <a href="../Event.html" title="interface in org.spongepowered.api.event"
 <section class="detail" id="tickets()">
 <h3>tickets</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction">NotificationTicket</a>&gt;</span>&nbsp;<span class="element-name">tickets</span>()</div>
+<div class="block">Gets a list of the <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>s for this event.
+ If a ticket is requested to be marked as "invalid",
+ <a href="../../block/transaction/NotificationTicket.html#setValid(boolean)"><code>NotificationTicket.setValid(boolean)</code></a> can be used.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The unmodifiable list of tickets</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="filterTargetPositions(java.util.function.Predicate)">
 <h3>filterTargetPositions</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterTargetPositions</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&gt;&nbsp;predicate)</span></div>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>s from <a href="#tickets()"><code>tickets()</code></a> such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the location of the <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>, the
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a> is marked as "invalid".
+
+ <p><a href="../../block/transaction/NotificationTicket.html#targetPosition()"><code>NotificationTicket.targetPosition()</code></a> is used to get the <a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link"><code>Vector3i</code></a></p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>predicate</code> - The predicate to use for filtering</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="filterTickets(java.util.function.Predicate)">
 <h3>filterTickets</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterTickets</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction">NotificationTicket</a>&gt;&nbsp;predicate)</span></div>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>s from <a href="#tickets()"><code>tickets()</code></a> such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the location of the <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a>, the
+ <a href="../../block/transaction/NotificationTicket.html" title="interface in org.spongepowered.api.block.transaction"><code>NotificationTicket</code></a> is marked as "invalid".</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>predicate</code> - The predicate to use for filtering</dd>
+</dl>
 </section>
 </li>
 </ul>

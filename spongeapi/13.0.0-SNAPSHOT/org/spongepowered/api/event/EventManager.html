@@ -97,7 +97,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -113,12 +113,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Submits a new <a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event"><code>listener registration</code></a> to this manager.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)" class="member-name-link">registerListeners</a><wbr>(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)" class="member-name-link">registerListeners</a><wbr>(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;obj)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Registers <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> methods annotated with @<a href="Listener.html" title="annotation interface in org.spongepowered.api.event"><code>Listener</code></a> in the
- specified object.</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">In order to be compatible with the JPMS, it is highly
+ recommended that plugins instead use the
+ <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object,java.lang.invoke.MethodHandles.Lookup)"><code>registerListeners(PluginContainer, Object, MethodHandles.Lookup)</code></a> overload.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object,java.lang.invoke.MethodHandles.Lookup)" class="member-name-link">registerListeners</a><wbr>(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
@@ -165,8 +168,14 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object)">
 <h3>registerListeners</h3>
-<div class="member-signature"><span class="return-type"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></span>&nbsp;<span class="element-name">registerListeners</span><wbr><span class="parameters">(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#since()" title="class or interface in java.lang" class="external-link">since</a>="13")
+</span><span class="return-type"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></span>&nbsp;<span class="element-name">registerListeners</span><wbr><span class="parameters">(org.spongepowered.plugin.PluginContainer&nbsp;plugin,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;obj)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">In order to be compatible with the JPMS, it is highly
+ recommended that plugins instead use the
+ <a href="#registerListeners(org.spongepowered.plugin.PluginContainer,java.lang.Object,java.lang.invoke.MethodHandles.Lookup)"><code>registerListeners(PluginContainer, Object, MethodHandles.Lookup)</code></a> overload.</div>
+</div>
 <div class="block">Registers <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> methods annotated with @<a href="Listener.html" title="annotation interface in org.spongepowered.api.event"><code>Listener</code></a> in the
  specified object.
 
