@@ -175,6 +175,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Sets whatever this entry is listed in the tab list.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab">TabListEntry</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setWeight(int)" class="member-name-link">setWeight</a><wbr>(int&nbsp;weight)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the weight of this entry.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#weight()" class="member-name-link">weight</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the weight of this entry.</div>
+</div>
 </div>
 </div>
 </div>
@@ -357,6 +367,34 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>listed</code> - Whatever to list this entry</dd>
+<dt>Returns:</dt>
+<dd>This entry, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="weight()">
+<h3>weight</h3>
+<div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">weight</span>()</div>
+<div class="block">Gets the weight of this entry.
+ Entries are first sorted by their weight in
+ descending order.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The weight of this entry</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setWeight(int)">
+<h3>setWeight</h3>
+<div class="member-signature"><span class="return-type"><a href="TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab">TabListEntry</a></span>&nbsp;<span class="element-name">setWeight</span><wbr><span class="parameters">(int&nbsp;weight)</span></div>
+<div class="block">Sets the weight of this entry.
+ Entries are first sorted by their weight in
+ descending order.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>weight</code> - The new weight</dd>
 <dt>Returns:</dt>
 <dd>This entry, for chaining</dd>
 </dl>
