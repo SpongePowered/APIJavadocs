@@ -188,7 +188,6 @@ org.spongepowered.api.tag
 org.spongepowered.api.user
 org.spongepowered.api.util
 org.spongepowered.api.util.annotation
-org.spongepowered.api.util.annotation.eventgen
 org.spongepowered.api.util.blockray
 org.spongepowered.api.util.file
 org.spongepowered.api.util.locale

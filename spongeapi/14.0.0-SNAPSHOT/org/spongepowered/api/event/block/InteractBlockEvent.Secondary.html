@@ -88,7 +88,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></code>, <code><a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="InteractBlockEvent.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent</a></code>, <code><a href="../action/InteractEvent.html" title="interface in org.spongepowered.api.event.action">InteractEvent</a></code></dd>
+<dd><code><a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="InteractBlockEvent.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent</a></code>, <code><a href="../action/InteractEvent.html" title="interface in org.spongepowered.api.event.action">InteractEvent</a></code></dd>
+</dl>
+<dl class="notes">
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="InteractBlockEvent.Secondary.Post.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent.Secondary.Post</a></code>, <code><a href="InteractBlockEvent.Secondary.Pre.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent.Secondary.Pre</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
@@ -96,7 +100,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">InteractBlockEvent.Secondary</span><span class="extends-implements">
-extends <a href="InteractBlockEvent.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent</a>, <a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></span></div>
+extends <a href="InteractBlockEvent.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent</a></span></div>
 <div class="block">An event where the targeted block is being interacted with the client's
  "secondary" button.
 
@@ -108,6 +112,18 @@ extends <a href="InteractBlockEvent.html" title="interface in org.spongepowered.
 <li>
 <section class="nested-class-summary" id="nested-class-summary">
 <h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="InteractBlockEvent.Secondary.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.block">InteractBlockEvent.Secondary.Post</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="InteractBlockEvent.Secondary.Pre.html" class="type-name-link" title="interface in org.spongepowered.api.event.block">InteractBlockEvent.Secondary.Pre</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-org.spongepowered.api.event.block.InteractBlockEvent">Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.event.block.<a href="InteractBlockEvent.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent</a></h2>
 <code><a href="InteractBlockEvent.Primary.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent.Primary</a>, <a href="InteractBlockEvent.Secondary.html" title="interface in org.spongepowered.api.event.block">InteractBlockEvent.Secondary</a></code></div>
@@ -137,16 +153,6 @@ extends <a href="InteractBlockEvent.html" title="interface in org.spongepowered.
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util">Tristate</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#originalUseItemResult()" class="member-name-link">originalUseItemResult</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setUseBlockResult(org.spongepowered.api.util.Tristate)" class="member-name-link">setUseBlockResult</a><wbr>(<a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util">Tristate</a>&nbsp;result)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets whether the interacted <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> should be used.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setUseItemResult(org.spongepowered.api.util.Tristate)" class="member-name-link">setUseItemResult</a><wbr>(<a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util">Tristate</a>&nbsp;result)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets whether the <a href="../../item/inventory/ArmorEquipable.html#itemInHand(java.util.function.Supplier)"><code>ArmorEquipable.itemInHand(java.util.function.Supplier&lt;? extends org.spongepowered.api.data.type.HandType&gt;)</code></a> should be used.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util">Tristate</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#useBlockResult()" class="member-name-link">useBlockResult</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -160,9 +166,6 @@ extends <a href="InteractBlockEvent.html" title="interface in org.spongepowered.
 </div>
 </div>
 </div>
-<div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.spongepowered.api.event.Cancellable">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></h3>
-<code><a href="../Cancellable.html#isCancelled()">isCancelled</a>, <a href="../Cancellable.html#setCancelled(boolean)">setCancelled</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.Event">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></h3>
 <code><a href="../Event.html#cause()">cause</a>, <a href="../Event.html#context()">context</a>, <a href="../Event.html#source()">source</a></code></div>
@@ -233,46 +236,6 @@ extends <a href="InteractBlockEvent.html" title="interface in org.spongepowered.
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>Whether the interacted <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> should be used</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="setUseItemResult(org.spongepowered.api.util.Tristate)">
-<h3>setUseItemResult</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setUseItemResult</span><wbr><span class="parameters">(<a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util">Tristate</a>&nbsp;result)</span></div>
-<div class="block">Sets whether the <a href="../../item/inventory/ArmorEquipable.html#itemInHand(java.util.function.Supplier)"><code>ArmorEquipable.itemInHand(java.util.function.Supplier&lt;? extends org.spongepowered.api.data.type.HandType&gt;)</code></a> should be used.
-
- <ul>
- <li>FALSE: The <a href="../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> will never be used.</li>
- <li>UNDEFINED: The <a href="../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> will be used if the block fails.
- </li>
- <li>TRUE: The <a href="../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> will always be used.</li>
- </ul>
-
- <p>Note: These results may differ depending on implementation.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>result</code> - Whether the <a href="../../item/inventory/ArmorEquipable.html#itemInHand(java.util.function.Supplier)"><code>ArmorEquipable.itemInHand(java.util.function.Supplier&lt;? extends org.spongepowered.api.data.type.HandType&gt;)</code></a> should be used</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="setUseBlockResult(org.spongepowered.api.util.Tristate)">
-<h3>setUseBlockResult</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setUseBlockResult</span><wbr><span class="parameters">(<a href="../../util/Tristate.html" title="enum class in org.spongepowered.api.util">Tristate</a>&nbsp;result)</span></div>
-<div class="block">Sets whether the interacted <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> should be used.
-
- <ul>
- <li>FALSE: <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> will never be used.</li>
- <li>UNDEFINED: <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> will be used as normal.</li>
- <li>TRUE: <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> will always be used.</li>
- </ul>
-
- <p>Note: These results may differ depending on implementation.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>result</code> - Whether the interacted <a href="../../block/BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a> should be
-     used</dd>
 </dl>
 </section>
 </li>
