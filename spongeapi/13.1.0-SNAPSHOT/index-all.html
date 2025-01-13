@@ -34045,6 +34045,12 @@ loadScripts(document, 'script');</script>
 <div class="block">Whether spawn logic is performed on a world of a <a href="org/spongepowered/api/world/server/WorldTemplate.html" title="interface in org.spongepowered.api.world.server"><code>WorldTemplate</code></a> or <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>
  See <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html#performsSpawnLogic()"><code>ServerWorldProperties.performsSpawnLogic()</code></a>.</div>
 </dd>
+<dt><a href="org/spongepowered/api/world/BlockChangeFlag.html#performBlockDestruction()" class="member-name-link">performBlockDestruction()</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></dt>
+<dd>
+<div class="block">Gets whatever this block change is going to perform natural
+ block destruction logic, which can potentially cause other
+ side effects like block drops from a <a href="org/spongepowered/api/block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/BlockChangeFlag.html#performBlockPhysics()" class="member-name-link">performBlockPhysics()</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></dt>
 <dd>
 <div class="block">Gets whether this flag defines that a block change should
@@ -51191,6 +51197,12 @@ the order they are declared.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/BlockChangeFlag.html#withPathfindingUpdates(boolean)" class="member-name-link">withPathfindingUpdates(boolean)</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/world/BlockChangeFlag.html#withPerformBlockDestruction(boolean)" class="member-name-link">withPerformBlockDestruction(boolean)</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></dt>
+<dd>
+<div class="block">Gets the equivalent <a href="org/spongepowered/api/world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a> of this flag with all
+ other flags while having the desired <code>performBlockDestruction</code>
+ as defined by the parameter.</div>
+</dd>
 <dt><a href="org/spongepowered/api/adventure/Audiences.Factory.html#withPermission(java.lang.String)" class="member-name-link">withPermission(String)</a> - Method in interface org.spongepowered.api.adventure.<a href="org/spongepowered/api/adventure/Audiences.Factory.html" title="interface in org.spongepowered.api.adventure">Audiences.Factory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/adventure/Audiences.html#withPermission(java.lang.String)" class="member-name-link">withPermission(String)</a> - Static method in class org.spongepowered.api.adventure.<a href="org/spongepowered/api/adventure/Audiences.html" title="class in org.spongepowered.api.adventure">Audiences</a></dt>
