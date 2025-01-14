@@ -180,66 +180,80 @@ loadScripts(document, 'script');</script>
  change.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#performBlockPhysics()" class="member-name-link">performBlockPhysics</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#performBlockDestruction()" class="member-name-link">performBlockDestruction</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets whatever this block change is going to perform natural
+ block destruction logic, which can potentially cause other
+ side effects like block drops from a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#performBlockPhysics()" class="member-name-link">performBlockPhysics</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets whether this flag defines that a block change should
  perform block physics checks or not.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateLighting()" class="member-name-link">updateLighting</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateLighting()" class="member-name-link">updateLighting</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets whether this flag will queue lighting updates, different
  blocks may affect lighting in locations, which can potentially
  cause other blocks to perform side effects due to the light
  changes (like mushrooms).</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateNeighboringShapes()" class="member-name-link">updateNeighboringShapes</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateNeighboringShapes()" class="member-name-link">updateNeighboringShapes</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets whether this flag will update observer blocks, different
  from notifying neighbors in that neighbor notifications
  can cause further block notification loops (like redstone),
  whereas this focuses on <a href="../block/BlockTypes.html#OBSERVER"><code>BlockTypes.OBSERVER</code></a> blocks
  being told of updates.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateNeighbors()" class="member-name-link">updateNeighbors</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateNeighbors()" class="member-name-link">updateNeighbors</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets whether this flag defines that a block change should
  notify neighboring blocks.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withBlocksMoving(boolean)" class="member-name-link">withBlocksMoving</a><wbr>(boolean&nbsp;moving)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withForcedReRender(boolean)" class="member-name-link">withForcedReRender</a><wbr>(boolean&nbsp;forcedReRender)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withBlocksMoving(boolean)" class="member-name-link">withBlocksMoving</a><wbr>(boolean&nbsp;moving)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withIgnoreRender(boolean)" class="member-name-link">withIgnoreRender</a><wbr>(boolean&nbsp;ignoreRender)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withForcedReRender(boolean)" class="member-name-link">withForcedReRender</a><wbr>(boolean&nbsp;forcedReRender)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withLightingUpdates(boolean)" class="member-name-link">withLightingUpdates</a><wbr>(boolean&nbsp;lighting)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withIgnoreRender(boolean)" class="member-name-link">withIgnoreRender</a><wbr>(boolean&nbsp;ignoreRender)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withNeighborDropsAllowed(boolean)" class="member-name-link">withNeighborDropsAllowed</a><wbr>(boolean&nbsp;dropsAllowed)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withLightingUpdates(boolean)" class="member-name-link">withLightingUpdates</a><wbr>(boolean&nbsp;lighting)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withNotifyClients(boolean)" class="member-name-link">withNotifyClients</a><wbr>(boolean&nbsp;updateClients)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withNeighborDropsAllowed(boolean)" class="member-name-link">withNeighborDropsAllowed</a><wbr>(boolean&nbsp;dropsAllowed)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withNotifyClients(boolean)" class="member-name-link">withNotifyClients</a><wbr>(boolean&nbsp;updateClients)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the equivalent <a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a> of this flag
  with all other flags while having the desired <code>updateClients</code>
  as defined by the parameter.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withNotifyObservers(boolean)" class="member-name-link">withNotifyObservers</a><wbr>(boolean&nbsp;notifyObservers)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withNotifyObservers(boolean)" class="member-name-link">withNotifyObservers</a><wbr>(boolean&nbsp;notifyObservers)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the equivalent <a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a> of this flag with all
  other flags while having the desired <code>updateNeighboringShapes</code>
  as defined by the parameter.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withPathfindingUpdates(boolean)" class="member-name-link">withPathfindingUpdates</a><wbr>(boolean&nbsp;pathfindingUpdates)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withPathfindingUpdates(boolean)" class="member-name-link">withPathfindingUpdates</a><wbr>(boolean&nbsp;pathfindingUpdates)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withPerformBlockDestruction(boolean)" class="member-name-link">withPerformBlockDestruction</a><wbr>(boolean&nbsp;performBlockDestruction)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the equivalent <a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a> of this flag with all
+ other flags while having the desired <code>performBlockDestruction</code>
+ as defined by the parameter.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#withPhysics(boolean)" class="member-name-link">withPhysics</a><wbr>(boolean&nbsp;performBlockPhysics)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -409,6 +423,21 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="performBlockDestruction()">
+<h3>performBlockDestruction</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">performBlockDestruction</span>()</div>
+<div class="block">Gets whatever this block change is going to perform natural
+ block destruction logic, which can potentially cause other
+ side effects like block drops from a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.
+ The behaviors are dependent on the block in particular.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if the block change should perform
+ natural block destruction logic.</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="withUpdateNeighbors(boolean)">
 <h3>withUpdateNeighbors</h3>
 <div class="member-signature"><span class="return-type"><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></span>&nbsp;<span class="element-name">withUpdateNeighbors</span><wbr><span class="parameters">(boolean&nbsp;updateNeighbors)</span></div>
@@ -502,6 +531,21 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withForcedReRender(boolean)">
 <h3>withForcedReRender</h3>
 <div class="member-signature"><span class="return-type"><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></span>&nbsp;<span class="element-name">withForcedReRender</span><wbr><span class="parameters">(boolean&nbsp;forcedReRender)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="withPerformBlockDestruction(boolean)">
+<h3>withPerformBlockDestruction</h3>
+<div class="member-signature"><span class="return-type"><a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></span>&nbsp;<span class="element-name">withPerformBlockDestruction</span><wbr><span class="parameters">(boolean&nbsp;performBlockDestruction)</span></div>
+<div class="block">Gets the equivalent <a href="BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>BlockChangeFlag</code></a> of this flag with all
+ other flags while having the desired <code>performBlockDestruction</code>
+ as defined by the parameter.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>performBlockDestruction</code> - Whether to perform block destruction</dd>
+<dt>Returns:</dt>
+<dd>The relative flag with the desired perform destruction</dd>
+</dl>
 </section>
 </li>
 <li>
