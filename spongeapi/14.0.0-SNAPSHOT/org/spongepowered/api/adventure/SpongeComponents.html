@@ -133,21 +133,28 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Get a <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/flattener/ComponentFlattener.html" title="class or interface in net.kyori.adventure.text.flattener" class="external-link"><code>ComponentFlattener</code></a> with access to server-specific information</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,net.kyori.adventure.audience.Audience,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)" class="member-name-link">resolve</a><wbr>(<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;component,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/VirtualComponent.html" title="class or interface in net.kyori.adventure.text" class="external-link">VirtualComponent</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#receiverVirtualComponent(java.util.function.Function)" class="member-name-link">receiverVirtualComponent</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/audience/Audience.html" title="class or interface in net.kyori.adventure.audience" class="external-link">Audience</a>,<wbr><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>&gt;&nbsp;apply)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates a new <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/VirtualComponent.html" title="class or interface in net.kyori.adventure.text" class="external-link"><code>VirtualComponent</code></a> that will be used to
+ render each <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/audience/Audience.html" title="class or interface in net.kyori.adventure.audience" class="external-link"><code>Audience</code></a> their own version of
+ the received message.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,net.kyori.adventure.audience.Audience,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)" class="member-name-link">resolve</a><wbr>(<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;component,
  <a href="../command/CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;senderContext,
  <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/audience/Audience.html" title="class or interface in net.kyori.adventure.audience" class="external-link">Audience</a>&nbsp;viewer,
  <a href="../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResolveOperation.html" title="interface in org.spongepowered.api.adventure">ResolveOperation</a>&gt;&nbsp;resolver,
  <a href="../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResolveOperation.html" title="interface in org.spongepowered.api.adventure">ResolveOperation</a>&gt;...&nbsp;otherResolvers)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Render a component for viewer-specific context.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)" class="member-name-link">resolve</a><wbr>(<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;component,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resolve(net.kyori.adventure.text.Component,org.spongepowered.api.command.CommandCause,org.spongepowered.api.registry.DefaultedRegistryReference,org.spongepowered.api.registry.DefaultedRegistryReference...)" class="member-name-link">resolve</a><wbr>(<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;component,
  <a href="../command/CommandCause.html" title="interface in org.spongepowered.api.command">CommandCause</a>&nbsp;senderContext,
  <a href="../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResolveOperation.html" title="interface in org.spongepowered.api.adventure">ResolveOperation</a>&gt;&nbsp;resolver,
  <a href="../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ResolveOperation.html" title="interface in org.spongepowered.api.adventure">ResolveOperation</a>&gt;...&nbsp;otherResolvers)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Render a component for sender-specific context.</div>
 </div>
 </div>
@@ -241,6 +248,19 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The flattener</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="receiverVirtualComponent(java.util.function.Function)">
+<h3>receiverVirtualComponent</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/VirtualComponent.html" title="class or interface in net.kyori.adventure.text" class="external-link">VirtualComponent</a></span>&nbsp;<span class="element-name">receiverVirtualComponent</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/audience/Audience.html" title="class or interface in net.kyori.adventure.audience" class="external-link">Audience</a>,<wbr><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/ComponentLike.html" title="class or interface in net.kyori.adventure.text" class="external-link">ComponentLike</a>&gt;&nbsp;apply)</span></div>
+<div class="block">Creates a new <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/VirtualComponent.html" title="class or interface in net.kyori.adventure.text" class="external-link"><code>VirtualComponent</code></a> that will be used to
+ render each <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/audience/Audience.html" title="class or interface in net.kyori.adventure.audience" class="external-link"><code>Audience</code></a> their own version of
+ the received message.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The virtual component</dd>
 </dl>
 </section>
 </li>
