@@ -144,15 +144,27 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the content version of this <a href="../../data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;obj)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#customFlag()" class="member-name-link">customFlag</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the <a href="../../world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>flag</code></a> that is used to place
+ the custom <a href="../BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;obj)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Operation.html" title="interface in org.spongepowered.api.block.transaction">Operation</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#operation()" class="member-name-link">operation</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Operation.html" title="interface in org.spongepowered.api.block.transaction">Operation</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#operation()" class="member-name-link">operation</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustom(org.spongepowered.api.block.BlockSnapshot,org.spongepowered.api.world.BlockChangeFlag)" class="member-name-link">setCustom</a><wbr>(@Nullable <a href="../BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;custom,
+ <a href="../../world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the custom snapshot.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toContainer()" class="member-name-link">toContainer</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -210,6 +222,32 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="operation()">
 <h3>operation</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Operation.html" title="interface in org.spongepowered.api.block.transaction">Operation</a></span>&nbsp;<span class="element-name">operation</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="setCustom(org.spongepowered.api.block.BlockSnapshot,org.spongepowered.api.world.BlockChangeFlag)">
+<h3>setCustom</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCustom</span><wbr><span class="parameters">(@Nullable <a href="../BlockSnapshot.html" title="interface in org.spongepowered.api.block">BlockSnapshot</a>&nbsp;custom,
+ <a href="../../world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a>&nbsp;flag)</span></div>
+<div class="block">Sets the custom snapshot. If setting <code>null</code>, this will
+ reset to use the <a href="../../data/Transaction.html#defaultReplacement()"><code>Transaction.defaultReplacement()</code></a> snapshot.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>custom</code> - The custom snapshot</dd>
+<dd><code>flag</code> - TThe various change flags controlling some interactions</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="customFlag()">
+<h3>customFlag</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world">BlockChangeFlag</a></span>&nbsp;<span class="element-name">customFlag</span>()</div>
+<div class="block">Gets the <a href="../../world/BlockChangeFlag.html" title="interface in org.spongepowered.api.world"><code>flag</code></a> that is used to place
+ the custom <a href="../BlockSnapshot.html" title="interface in org.spongepowered.api.block"><code>BlockSnapshot</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The flag</dd>
+</dl>
 </section>
 </li>
 <li>
