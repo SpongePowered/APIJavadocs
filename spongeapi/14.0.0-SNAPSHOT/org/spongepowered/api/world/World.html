@@ -152,86 +152,97 @@ extends <a href="../effect/ForwardingViewer.html" title="interface in org.sponge
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a><wbr>&lt;? extends <a href="../effect/Viewer.html" title="interface in org.spongepowered.api.effect">Viewer</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#audiences()" class="member-name-link">audiences</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#chunk(int,int,int)" class="member-name-link">chunk</a><wbr>(int&nbsp;cx,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#causeStackManager()" class="member-name-link">causeStackManager</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event"><code>CauseStackManager</code></a> for handling the current event cause
+ stack and context information.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#chunk(int,int,int)" class="member-name-link">chunk</a><wbr>(int&nbsp;cx,
  int&nbsp;cy,
  int&nbsp;cz)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the loaded chunk at the given chunk coordinate position.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#chunk(org.spongepowered.math.vector.Vector3i)" class="member-name-link">chunk</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;chunkPos)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Gets the loaded chunk at the given chunk coordinate position.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#chunkAtBlock(int,int,int)" class="member-name-link">chunkAtBlock</a><wbr>(int&nbsp;bx,
- int&nbsp;by,
- int&nbsp;bz)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#chunk(org.spongepowered.math.vector.Vector3i)" class="member-name-link">chunk</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;chunkPos)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the loaded chunk at the given chunk coordinate position.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#chunkAtBlock(org.spongepowered.math.vector.Vector3i)" class="member-name-link">chunkAtBlock</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;blockPosition)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#chunkAtBlock(int,int,int)" class="member-name-link">chunkAtBlock</a><wbr>(int&nbsp;bx,
+ int&nbsp;by,
+ int&nbsp;bz)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the loaded chunk at the given chunk coordinate position.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#chunkAtBlock(org.spongepowered.math.vector.Vector3i)" class="member-name-link">chunkAtBlock</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;blockPosition)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the loaded chunk at the given block coordinate position.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(int,int,int,double)" class="member-name-link">closestPlayer</a><wbr>(int&nbsp;x,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(int,int,int,double)" class="member-name-link">closestPlayer</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z,
  double&nbsp;distance)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#closestPlayer(int,int,int,double,java.util.function.Predicate)" class="member-name-link">closestPlayer</a><wbr>(int&nbsp;x,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#closestPlayer(int,int,int,double,java.util.function.Predicate)" class="member-name-link">closestPlayer</a><wbr>(int&nbsp;x,
  int&nbsp;y,
  int&nbsp;z,
  double&nbsp;distance,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;&nbsp;predicate)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.api.entity.Entity,double)" class="member-name-link">closestPlayer</a><wbr>(<a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity,
- double&nbsp;distance)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.api.entity.Entity,double,java.util.function.Predicate)" class="member-name-link">closestPlayer</a><wbr>(<a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity,
- double&nbsp;distance,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;&nbsp;predicate)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.api.entity.Entity,double)" class="member-name-link">closestPlayer</a><wbr>(<a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity,
+ double&nbsp;distance)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.math.vector.Vector3i,double)" class="member-name-link">closestPlayer</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
- double&nbsp;distance)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.math.vector.Vector3i,double,java.util.function.Predicate)" class="member-name-link">closestPlayer</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.api.entity.Entity,double,java.util.function.Predicate)" class="member-name-link">closestPlayer</a><wbr>(<a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity,
  double&nbsp;distance,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;&nbsp;predicate)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.math.vector.Vector3i,double)" class="member-name-link">closestPlayer</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+ double&nbsp;distance)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isLoaded()" class="member-name-link">isLoaded</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#closestPlayer(org.spongepowered.math.vector.Vector3i,double,java.util.function.Predicate)" class="member-name-link">closestPlayer</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;position,
+ double&nbsp;distance,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;&nbsp;predicate)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isLoaded()" class="member-name-link">isLoaded</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets if this world is currently loaded.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadChunk(int,int,int,boolean)" class="member-name-link">loadChunk</a><wbr>(int&nbsp;cx,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadChunk(int,int,int,boolean)" class="member-name-link">loadChunk</a><wbr>(int&nbsp;cx,
  int&nbsp;cy,
  int&nbsp;cz,
  boolean&nbsp;shouldGenerate)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the chunk at the given chunk coordinate position if it exists or if
  <code>shouldGenerate</code> is true and the chunk is generated.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#loadChunk(org.spongepowered.math.vector.Vector3i,boolean)" class="member-name-link">loadChunk</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;chunkPosition,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#loadChunk(org.spongepowered.math.vector.Vector3i,boolean)" class="member-name-link">loadChunk</a><wbr>(<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3i.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3i</a>&nbsp;chunkPosition,
  boolean&nbsp;shouldGenerate)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the chunk at the given chunk coordinate position if it exists or if
  <code>shouldGenerate</code> is true and the chunk is generated.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a><wbr>&lt;<a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadedChunks()" class="member-name-link">loadedChunks</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a><wbr>&lt;<a href="chunk/WorldChunk.html" title="interface in org.spongepowered.api.world.chunk">WorldChunk</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadedChunks()" class="member-name-link">loadedChunks</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a Collection of all actively loaded chunks in this world.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onWorldThread()" class="member-name-link">onWorldThread</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Checks if the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Thread.html#currentThread()" title="class or interface in java.lang" class="external-link"><code>current thread</code></a> is the main thread of the world.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;? extends <a href="../entity/living/player/Player.html" title="interface in org.spongepowered.api.entity.living.player">Player</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#players()" class="member-name-link">players</a>()</code></div>
@@ -243,9 +254,14 @@ extends <a href="../effect/ForwardingViewer.html" title="interface in org.sponge
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="storage/WorldProperties.html" title="interface in org.spongepowered.api.world.storage"><code>properties</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="World.html" title="type parameter in World">W</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#world()" class="member-name-link">world</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="../scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler">Scheduler</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#scheduler()" class="member-name-link">scheduler</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the <a href="../scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler"><code>Scheduler</code></a> used to schedule sync tasks on this <a href="World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="World.html" title="type parameter in World">W</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#world()" class="member-name-link">world</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -628,6 +644,47 @@ extends <a href="../effect/ForwardingViewer.html" title="interface in org.sponge
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The loaded chunks</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="scheduler()">
+<h3>scheduler</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="../scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler">Scheduler</a></span>&nbsp;<span class="element-name">scheduler</span>()</div>
+<div class="block">Gets the <a href="../scheduler/Scheduler.html" title="interface in org.spongepowered.api.scheduler"><code>Scheduler</code></a> used to schedule sync tasks on this <a href="World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>.
+
+ <p><strong>Note:</strong> Accessing objects outside of this <a href="World.html" title="interface in org.spongepowered.api.world"><code>World</code></a>
+ from the scheduled tasks can lead to hard to diagnose problems
+ or unrecoverable crashes.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The sync scheduler</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="causeStackManager()">
+<h3>causeStackManager</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></span>&nbsp;<span class="element-name">causeStackManager</span>()</div>
+<div class="block">Gets the <a href="../event/CauseStackManager.html" title="interface in org.spongepowered.api.event"><code>CauseStackManager</code></a> for handling the current event cause
+ stack and context information.
+
+ <p><strong>Note:</strong> Accessing this outside of <a href="#onWorldThread()"><code>onWorldThread()</code></a>
+ can lead to hard to diagnose problems or unrecoverable crashes.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The cause stack manager</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="onWorldThread()">
+<h3>onWorldThread</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">onWorldThread</span>()</div>
+<div class="block">Checks if the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Thread.html#currentThread()" title="class or interface in java.lang" class="external-link"><code>current thread</code></a> is the main thread of the world.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd><code>true</code> if main thread, <code>false</code> if not</dd>
 </dl>
 </section>
 </li>
