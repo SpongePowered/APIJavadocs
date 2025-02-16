@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.spongepowered.configurate.extra.dfu.v2","l":"ConfigurateOps"}]
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.spongepowered.configurate.extra.dfu.v2","l":"ConfigurateOps"}];updateSearchResults();

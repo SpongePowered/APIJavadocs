@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.spongepowered.configurate.objectmapping.guice","l":"GuiceObjectMapperProvider"}]
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.spongepowered.configurate.objectmapping.guice","l":"GuiceObjectMapperProvider"}];updateSearchResults();
