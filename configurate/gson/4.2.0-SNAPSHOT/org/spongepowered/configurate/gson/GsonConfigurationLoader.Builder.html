@@ -49,7 +49,7 @@ loadScripts(document, 'script');</script>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -80,17 +80,15 @@ loadScripts(document, 'script');</script>
 <dd><a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public static final class </span><span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.html#line-108">GsonConfigurationLoader.Builder</a></span>
+<div class="type-signature"><span class="modifiers">public static final class </span><span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.html#line-107">GsonConfigurationLoader.Builder</a></span>
 <span class="extends-implements">extends <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">AbstractConfigurationLoader.Builder</a>&lt;<a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a>,<wbr><a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a>&gt;</span></div>
 <div class="block">Builds a <a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson"><code>GsonConfigurationLoader</code></a>.
 
  <p>This builder supports the following options:</p>
- <dl>
-     <dt>&lt;prefix&gt;.gson.lenient</dt>
-     <dd>Equivalent to <a href="#lenient(boolean)"><code>lenient(boolean)</code></a></dd>
-     <dt>&lt;prefix&gt;.gson.indent</dt>
-     <dd>Equivalent to <a href="#indent(int)"><code>indent(int)</code></a></dd>
- </dl></div>
+ <ul>
+     <li><a href="#INDENT"><code>INDENT</code></a></li>
+     <li><a href="#LENIENT"><code>LENIENT</code></a></li>
+ </ul></div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>4.0.0</dd>
@@ -102,9 +100,30 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static final net.kyori.option.Option&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#INDENT" class="member-name-link">INDENT</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The level of indentation to be used by the resulting loader.</div>
+</div>
+<div class="col-first odd-row-color"><code>static final net.kyori.option.Option&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#LENIENT" class="member-name-link">LENIENT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">If the resultant loader should parse leniently.</div>
+</div>
+<div class="col-first even-row-color"><code>static final net.kyori.option.OptionSchema</code></div>
+<div class="col-second even-row-color"><code><a href="#SCHEMA" class="member-name-link">SCHEMA</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">A schema of options available on the Gson loader.</div>
+</div>
+</div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-org.spongepowered.configurate.loader.AbstractConfigurationLoader.Builder">Fields inherited from class&nbsp;org.spongepowered.configurate.loader.<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">AbstractConfigurationLoader.Builder</a></h3>
-<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#DEFAULT_OPTIONS_SOURCE" title="class or interface in org.spongepowered.configurate.loader" class="external-link">DEFAULT_OPTIONS_SOURCE</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode" title="class or interface in org.spongepowered.configurate.loader" class="external-link">headerMode</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#sink" title="class or interface in org.spongepowered.configurate.loader" class="external-link">sink</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#source" title="class or interface in org.spongepowered.configurate.loader" class="external-link">source</a></code></div>
+<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#HEADER_MODE" title="class or interface in org.spongepowered.configurate.loader" class="external-link">HEADER_MODE</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode" title="class or interface in org.spongepowered.configurate.loader" class="external-link">headerMode</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#sink" title="class or interface in org.spongepowered.configurate.loader" class="external-link">sink</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#source" title="class or interface in org.spongepowered.configurate.loader" class="external-link">source</a></code></div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -141,15 +160,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets if the resultant loader should parse leniently.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#populate(org.spongepowered.configurate.loader.LoaderOptionSource)" class="member-name-link">populate</a><wbr>(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/LoaderOptionSource.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">LoaderOptionSource</a>&nbsp;options)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected net.kyori.option.OptionSchema</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#optionSchema()" class="member-name-link">optionSchema</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.configurate.loader.AbstractConfigurationLoader.Builder">Methods inherited from class&nbsp;org.spongepowered.configurate.loader.<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">AbstractConfigurationLoader.Builder</a></h3>
-<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#buildAndLoadString(java.lang.String)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">buildAndLoadString</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#buildAndSaveString(org.spongepowered.configurate.ConfigurationNode)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">buildAndSaveString</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions(java.util.function.UnaryOperator)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions(org.spongepowered.configurate.ConfigurationOptions)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#file(java.io.File)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">file</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#from(org.spongepowered.configurate.loader.LoaderOptionSource)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">from</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">headerMode</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode(org.spongepowered.configurate.loader.HeaderMode)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">headerMode</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#path(java.nio.file.Path)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">path</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#sink()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">sink</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#sink(java.util.concurrent.Callable)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">sink</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#source()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">source</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#source(java.util.concurrent.Callable)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">source</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#url(java.net.URL)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">url</a></code></div>
+<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#buildAndLoadString(java.lang.String)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">buildAndLoadString</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#buildAndSaveString(org.spongepowered.configurate.ConfigurationNode)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">buildAndSaveString</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions(java.util.function.UnaryOperator)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#defaultOptions(org.spongepowered.configurate.ConfigurationOptions)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">defaultOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#editOptions(java.util.function.Consumer)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">editOptions</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#file(java.io.File)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">file</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">headerMode</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode(org.spongepowered.configurate.loader.HeaderMode)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">headerMode</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionState()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">optionState</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionState(net.kyori.option.OptionState)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">optionState</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionStateBuilder()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">optionStateBuilder</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#path(java.nio.file.Path)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">path</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#sink()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">sink</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#sink(java.util.concurrent.Callable)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">sink</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#source()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">source</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#source(java.util.concurrent.Callable)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">source</a>, <a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#url(java.net.URL)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">url</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#clone--" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#finalize--" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#getClass--" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#hashCode--" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#notify--" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#notifyAll--" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#toString--" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#wait--" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#wait-long-" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#wait-long-int-" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -159,25 +178,66 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="SCHEMA">
+<h3>SCHEMA</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">net.kyori.option.OptionSchema</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-116">SCHEMA</a></span></div>
+<div class="block">A schema of options available on the Gson loader.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>4.2.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="INDENT">
+<h3>INDENT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">net.kyori.option.Option&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-123">INDENT</a></span></div>
+<div class="block">The level of indentation to be used by the resulting loader.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>4.2.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="LENIENT">
+<h3>LENIENT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">net.kyori.option.Option&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-130">LENIENT</a></span></div>
+<div class="block">If the resultant loader should parse leniently.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>4.2.0</dd>
+</dl>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ============ METHOD DETAIL ========== -->
 <li>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="populate(org.spongepowered.configurate.loader.LoaderOptionSource)">
-<h3>populate</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-117">populate</a></span><wbr><span class="parameters">(<a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/LoaderOptionSource.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">LoaderOptionSource</a>&nbsp;options)</span></div>
+<section class="detail" id="optionSchema()">
+<h3>optionSchema</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">net.kyori.option.OptionSchema</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-136">optionSchema</a></span>()</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#populate(org.spongepowered.configurate.loader.LoaderOptionSource)" title="class or interface in org.spongepowered.configurate.loader" class="external-link">populate</a></code>&nbsp;in class&nbsp;<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">AbstractConfigurationLoader.Builder</a>&lt;<a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a>,<wbr><a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a>&gt;</code></dd>
+<dd><code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionSchema()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">optionSchema</a></code>&nbsp;in class&nbsp;<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">AbstractConfigurationLoader.Builder</a>&lt;<a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a>,<wbr><a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a>&gt;</code></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="indent(int)">
 <h3>indent</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@NonNull <a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-130">indent</a></span><wbr><span class="parameters">(int&nbsp;indent)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@NonNull <a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-148">indent</a></span><wbr><span class="parameters">(int&nbsp;indent)</span></div>
 <div class="block">Sets the level of indentation the resultant loader should use.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -192,7 +252,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="indent()">
 <h3>indent</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-141">indent</a></span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-159">indent</a></span>()</div>
 <div class="block">Gets the level of indentation to be used by the resultant loader.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -205,7 +265,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="lenient(boolean)">
 <h3>lenient</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@NonNull <a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-153">lenient</a></span><wbr><span class="parameters">(boolean&nbsp;lenient)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@NonNull <a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-171">lenient</a></span><wbr><span class="parameters">(boolean&nbsp;lenient)</span></div>
 <div class="block">Sets if the resultant loader should parse leniently.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -226,7 +286,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="lenient()">
 <h3>lenient</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-164">lenient</a></span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-182">lenient</a></span>()</div>
 <div class="block">Gets if the resultant loader should parse leniently.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -239,7 +299,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="build()">
 <h3>build</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@NonNull <a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-168">build</a></span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@NonNull <a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/org/spongepowered/configurate/gson/GsonConfigurationLoader.Builder.html#line-186">build</a></span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#build()" title="class or interface in org.spongepowered.configurate.loader" class="external-link">build</a></code>&nbsp;in class&nbsp;<code><a href="https://jd.spongepowered.org/configurate/core/4.2.0-SNAPSHOT/org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class or interface in org.spongepowered.configurate.loader" class="external-link">AbstractConfigurationLoader.Builder</a>&lt;<a href="GsonConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader.Builder</a>,<wbr><a href="GsonConfigurationLoader.html" title="class in org.spongepowered.configurate.gson">GsonConfigurationLoader</a>&gt;</code></dd>

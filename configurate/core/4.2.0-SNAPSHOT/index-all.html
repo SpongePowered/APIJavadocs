@@ -493,10 +493,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Apply the intermediate data to an existing object.</div>
 </dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#composite(org.spongepowered.configurate.loader.LoaderOptionSource...)" class="member-name-link">composite(LoaderOptionSource...)</a> - Static method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Create an option source that will try the provided sources in order.</div>
-</dd>
 <dt><a href="org/spongepowered/configurate/objectmapping/ConfigSerializable.html" class="type-name-link" title="annotation in org.spongepowered.configurate.objectmapping">ConfigSerializable</a> - Annotation Type in <a href="org/spongepowered/configurate/objectmapping/package-summary.html">org.spongepowered.configurate.objectmapping</a></dt>
 <dd>
 <div class="block">Indicates that the given type is capable of being serialized and deserialized
@@ -731,8 +727,6 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:D">D</h2>
 <dl class="index">
-<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#DEFAULT_OPTIONS_SOURCE" class="member-name-link">DEFAULT_OPTIONS_SOURCE</a> - Static variable in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.html#defaultCommentHandler()" class="member-name-link">defaultCommentHandler()</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader</a></dt>
 <dd>
 <div class="block">Gets the primary <a href="org/spongepowered/configurate/loader/CommentHandler.html" title="interface in org.spongepowered.configurate.loader"><code>CommentHandler</code></a> used by this loader.</div>
@@ -853,6 +847,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#editOptions(java.util.function.Consumer)" class="member-name-link">editOptions(Consumer&lt;OptionState.Builder&gt;)</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>
+<div class="block">Modify the state of loader options set on this loader.</div>
+</dd>
 <dt><a href="org/spongepowered/configurate/serialize/AbstractListChildSerializer.html#elementType(java.lang.reflect.AnnotatedType)" class="member-name-link">elementType(AnnotatedType)</a> - Method in class org.spongepowered.configurate.serialize.<a href="org/spongepowered/configurate/serialize/AbstractListChildSerializer.html" title="class in org.spongepowered.configurate.serialize">AbstractListChildSerializer</a></dt>
 <dd>
 <div class="block">Given the type of container, provide the expected type of an element.</div>
@@ -967,14 +965,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/util/EnumLookup.html" class="type-name-link" title="class in org.spongepowered.configurate.util">EnumLookup</a> - Class in <a href="org/spongepowered/configurate/util/package-summary.html">org.spongepowered.configurate.util</a></dt>
 <dd>
 <div class="block">Utility class to cache more flexible enum lookup.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#environmentVariables()" class="member-name-link">environmentVariables()</a> - Static method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Retrieve loader options from environment variables.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#environmentVariables(java.lang.String)" class="member-name-link">environmentVariables(String)</a> - Static method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Retrieve loader options from environment variables.</div>
 </dd>
 <dt><a href="org/spongepowered/configurate/serialize/TypeSerializerCollection.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class org.spongepowered.configurate.serialize.<a href="org/spongepowered/configurate/serialize/TypeSerializerCollection.html" title="class in org.spongepowered.configurate.serialize">TypeSerializerCollection</a></dt>
 <dd>&nbsp;</dd>
@@ -1149,10 +1139,6 @@ loadScripts(document, 'script');</script>
 <div class="block">Apply all data from <code>other</code> to this node, overwriting any
  existing data.</div>
 </dd>
-<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#from(org.spongepowered.configurate.loader.LoaderOptionSource)" class="member-name-link">from(LoaderOptionSource)</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
-<dd>
-<div class="block">Populate this builder by reading options from the provided source.</div>
-</dd>
 </dl>
 <h2 class="title" id="I:G">G</h2>
 <dl class="index">
@@ -1256,10 +1242,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Get the current value associated with this node.</div>
 </dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#get(java.lang.String...)" class="member-name-link">get(String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path.</div>
-</dd>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getBoolean()" class="member-name-link">getBoolean()</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
 <div class="block">Gets the value typed using the appropriate type conversion from <a href="org/spongepowered/configurate/serialize/Scalars.html" title="class in org.spongepowered.configurate.serialize"><code>Scalars</code></a>.</div>
@@ -1268,10 +1250,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the value typed using the appropriate type conversion from <a href="org/spongepowered/configurate/serialize/Scalars.html" title="class in org.spongepowered.configurate.serialize"><code>Scalars</code></a>.</div>
 </dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#getBoolean(boolean,java.lang.String...)" class="member-name-link">getBoolean(boolean, String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path as a boolean.</div>
-</dd>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getDouble()" class="member-name-link">getDouble()</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
 <div class="block">Gets the value typed using the appropriate type conversion from <a href="org/spongepowered/configurate/serialize/Scalars.html" title="class in org.spongepowered.configurate.serialize"><code>Scalars</code></a>.</div>
@@ -1279,18 +1257,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getDouble(double)" class="member-name-link">getDouble(double)</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
 <div class="block">Gets the value typed using the appropriate type conversion from <a href="org/spongepowered/configurate/serialize/Scalars.html" title="class in org.spongepowered.configurate.serialize"><code>Scalars</code></a>.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#getDouble(double,java.lang.String...)" class="member-name-link">getDouble(double, String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path as a double.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#getEnum(java.lang.Class,java.lang.String...)" class="member-name-link">getEnum(Class&lt;T&gt;, String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path as an enum constant.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#getEnum(java.lang.Class,T,java.lang.String...)" class="member-name-link">getEnum(Class&lt;T&gt;, T, String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path as an enum constant.</div>
 </dd>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getFloat()" class="member-name-link">getFloat()</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
@@ -1307,10 +1273,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getInt(int)" class="member-name-link">getInt(int)</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
 <div class="block">Gets the value typed using the appropriate type conversion from <a href="org/spongepowered/configurate/serialize/Scalars.html" title="class in org.spongepowered.configurate.serialize"><code>Scalars</code></a>.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#getInt(int,java.lang.String...)" class="member-name-link">getInt(int, String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path as an integer.</div>
 </dd>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getList(io.leangen.geantyref.TypeToken)" class="member-name-link">getList(TypeToken&lt;V&gt;)</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
@@ -1358,10 +1320,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/configurate/serialize/SerializationException.html#getMessage()" class="member-name-link">getMessage()</a> - Method in exception org.spongepowered.configurate.serialize.<a href="org/spongepowered/configurate/serialize/SerializationException.html" title="class in org.spongepowered.configurate.serialize">SerializationException</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#getOr(java.lang.String,java.lang.String...)" class="member-name-link">getOr(String, String...)</a> - Method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Get the value at the provided path.</div>
-</dd>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#getString()" class="member-name-link">getString()</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
 <div class="block">Gets the value typed using the appropriate type conversion from <a href="org/spongepowered/configurate/serialize/Scalars.html" title="class in org.spongepowered.configurate.serialize"><code>Scalars</code></a>.</div>
@@ -1406,8 +1364,15 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a new <a href="org/spongepowered/configurate/ConfigurationOptions.html" title="class in org.spongepowered.configurate"><code>ConfigurationOptions</code></a> instance, with the specified
  header set, and all other settings copied from this instance.</div>
 </dd>
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#HEADER_MODE" class="member-name-link">HEADER_MODE</a> - Static variable in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>
+<div class="block">How to read and emit headers discovered on documents processed by
+ the created loader.</div>
+</dd>
 <dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode" class="member-name-link">headerMode</a> - Variable in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+</dd>
 <dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#headerMode()" class="member-name-link">headerMode()</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
 <dd>
 <div class="block">Gets the header mode to be used by the resultant loader.</div>
@@ -1592,10 +1557,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/reference/ConfigurationReference.html#loader()" class="member-name-link">loader()</a> - Method in interface org.spongepowered.configurate.reference.<a href="org/spongepowered/configurate/reference/ConfigurationReference.html" title="interface in org.spongepowered.configurate.reference">ConfigurationReference</a></dt>
 <dd>
 <div class="block">Get the loader this reference uses to load and save its node.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" class="type-name-link" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a> - Interface in <a href="org/spongepowered/configurate/loader/package-summary.html">org.spongepowered.configurate.loader</a></dt>
-<dd>
-<div class="block">A provider for <a href="org/spongepowered/configurate/loader/ConfigurationLoader.html" title="interface in org.spongepowered.configurate.loader"><code>ConfigurationLoader</code></a> options.</div>
 </dd>
 <dt><a href="org/spongepowered/configurate/reference/ConfigurationReference.ErrorPhase.html#LOADING" class="member-name-link">LOADING</a> - Enum constant in enum org.spongepowered.configurate.reference.<a href="org/spongepowered/configurate/reference/ConfigurationReference.ErrorPhase.html" title="enum in org.spongepowered.configurate.reference">ConfigurationReference.ErrorPhase</a></dt>
 <dd>
@@ -1803,11 +1764,6 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the node at the given (relative) path, possibly traversing multiple
  levels of nodes.</div>
 </dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#node(org.spongepowered.configurate.ConfigurationNode)" class="member-name-link">node(ConfigurationNode)</a> - Static method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Create an option source that will read from an existing
- configuration node.</div>
-</dd>
 <dt><a href="org/spongepowered/configurate/objectmapping/meta/NodeResolver.html#nodeFromParent()" class="member-name-link">nodeFromParent()</a> - Static method in interface org.spongepowered.configurate.objectmapping.meta.<a href="org/spongepowered/configurate/objectmapping/meta/NodeResolver.html" title="interface in org.spongepowered.configurate.objectmapping.meta">NodeResolver</a></dt>
 <dd>
 <div class="block">A resolver that uses the containing node of a field.</div>
@@ -1917,6 +1873,23 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/ConfigurationNode.html#options()" class="member-name-link">options()</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/ConfigurationNode.html" title="interface in org.spongepowered.configurate">ConfigurationNode</a></dt>
 <dd>
 <div class="block">Gets the options that currently apply to this node.</div>
+</dd>
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionSchema()" class="member-name-link">optionSchema()</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>
+<div class="block">Get the schema of available options that can be set on this loader.</div>
+</dd>
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionState()" class="member-name-link">optionState()</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>
+<div class="block">Compute a snapshot of the currently set options for created loaders.</div>
+</dd>
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionState(net.kyori.option.OptionState)" class="member-name-link">optionState(OptionState)</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>
+<div class="block">Set the option state for this loader to the provided state.</div>
+</dd>
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#optionStateBuilder()" class="member-name-link">optionStateBuilder()</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>
+<div class="block">Begin building an option state, initialized from the current
+ environment.</div>
 </dd>
 <dt><a href="org/spongepowered/configurate/package-summary.html">org.spongepowered.configurate</a> - package org.spongepowered.configurate</dt>
 <dd>
@@ -2041,10 +2014,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/NodePath.html#plus(org.spongepowered.configurate.NodePath)" class="member-name-link">plus(NodePath)</a> - Method in interface org.spongepowered.configurate.<a href="org/spongepowered/configurate/NodePath.html" title="interface in org.spongepowered.configurate">NodePath</a></dt>
 <dd>
 <div class="block">Create a new path from the combination of <code>this</code> and <code>other</code>.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#populate(org.spongepowered.configurate.loader.LoaderOptionSource)" class="member-name-link">populate(LoaderOptionSource)</a> - Method in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
-<dd>
-<div class="block">Populate options from the provided source.</div>
 </dd>
 <dt><a href="org/spongepowered/configurate/objectmapping/meta/PostProcessor.html#postProcess(java.lang.Object)" class="member-name-link">postProcess(Object)</a> - Method in interface org.spongepowered.configurate.objectmapping.meta.<a href="org/spongepowered/configurate/objectmapping/meta/PostProcessor.html" title="interface in org.spongepowered.configurate.objectmapping.meta">PostProcessor</a></dt>
 <dd>
@@ -2389,6 +2358,8 @@ loadScripts(document, 'script');</script>
 <div class="block">A specialization of the scalar serializer that favors
  annotated type methods over unannotated methods.</div>
 </dd>
+<dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html#SCHEMA" class="member-name-link">SCHEMA</a> - Static variable in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.Builder.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/configurate/ScopedConfigurationNode.html" class="type-name-link" title="interface in org.spongepowered.configurate">ScopedConfigurationNode</a>&lt;<a href="org/spongepowered/configurate/ScopedConfigurationNode.html" title="type parameter in ScopedConfigurationNode">N</a> extends <a href="org/spongepowered/configurate/ScopedConfigurationNode.html" title="interface in org.spongepowered.configurate">ScopedConfigurationNode</a>&lt;<a href="org/spongepowered/configurate/ScopedConfigurationNode.html" title="type parameter in ScopedConfigurationNode">N</a>&gt;&gt; - Interface in <a href="org/spongepowered/configurate/package-summary.html">org.spongepowered.configurate</a></dt>
 <dd>
 <div class="block">Intermediate node type to reduce need for casting.</div>
@@ -2726,14 +2697,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.html#SYSTEM_LINE_SEPARATOR" class="member-name-link">SYSTEM_LINE_SEPARATOR</a> - Static variable in class org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/AbstractConfigurationLoader.html" title="class in org.spongepowered.configurate.loader">AbstractConfigurationLoader</a></dt>
 <dd>
 <div class="block">The line separator used by the system.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#systemProperties()" class="member-name-link">systemProperties()</a> - Static method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Retrieve loader options from system properties.</div>
-</dd>
-<dt><a href="org/spongepowered/configurate/loader/LoaderOptionSource.html#systemProperties(java.lang.String)" class="member-name-link">systemProperties(String)</a> - Static method in interface org.spongepowered.configurate.loader.<a href="org/spongepowered/configurate/loader/LoaderOptionSource.html" title="interface in org.spongepowered.configurate.loader">LoaderOptionSource</a></dt>
-<dd>
-<div class="block">Retrieve loader options from system properties.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:T">T</h2>
