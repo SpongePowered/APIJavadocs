@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.spongepowered.configurate.objectmapping.guice","l":"GuiceObjectMapperProvider"}];updateSearchResults();
