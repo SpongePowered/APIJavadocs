@@ -3,18 +3,18 @@ on: ["pull_request", "push"]
 
 env:
   DEST_DIR: _out
-  PYTHON_VERSION: "3.10"
+  PYTHON_VERSION: "3.13"
 
 jobs:
   build:
     # Only run on PRs if the source branch is on someone else's repo
     if: "${{ github.event_name != 'pull_request' || github.repository != github.event.pull_request.head.repo.full_name }}"
-    runs-on: "ubuntu-22.04"
+    runs-on: "ubuntu-24.04"
     steps:
       - name: "checkout repository"
-        uses: "actions/checkout@v3"
+        uses: "actions/checkout@v4.2.2"
       - name: "setup python ${{ env.PYTHON_VERSION }}"
-        uses: "actions/setup-python@v4"
+        uses: "actions/setup-python@v5.4.0"
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
       - name: "install dependencies"
@@ -28,13 +28,13 @@ jobs:
           poetry run generate-jd ../$DEST_DIR --metadata ../metadata.yaml --jd-root ..
       - name: "publish"
         if: "${{ github.event_name == 'push' && github.ref == 'refs/heads/data' }}"
-        uses: "actions/upload-pages-artifact@v1"
+        uses: "actions/upload-pages-artifact@v3.0.1"
         with:
           path: "${{ env.DEST_DIR }}"
   deploy:
     if: "${{ github.event_name == 'push' && github.ref == 'refs/heads/data' }}"
     needs: "build"
-    runs-on: "ubuntu-22.04"
+    runs-on: "ubuntu-24.04"
 
     permissions:
       pages: "write"
@@ -46,6 +46,6 @@ jobs:
     steps:
       - name: "Deploy to GitHub pages"
         id: "deployment"
-        uses: "actions/deploy-pages@v1"
+        uses: "actions/deploy-pages@v4.0.5"
 
 
