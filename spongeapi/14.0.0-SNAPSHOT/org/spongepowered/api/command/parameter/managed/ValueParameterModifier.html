@@ -161,25 +161,31 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#modifyCompletion(org.spongepowered.api.command.parameter.CommandContext,java.lang.String,java.util.List)" class="member-name-link">modifyCompletion</a><wbr>(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameterModifier</a><wbr>&lt;<a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#bind(org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">bind</a><wbr>(<a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Creates a new <a href="ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameterModifier</code></a> that is bound to
+ a specific <a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#modifyCompletion(org.spongepowered.api.command.parameter.CommandContext,java.lang.String,java.util.List)" class="member-name-link">modifyCompletion</a><wbr>(<a href="../CommandContext.html" title="interface in org.spongepowered.api.command.parameter">CommandContext</a>&nbsp;context,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;currentInput,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../CommandCompletion.html" title="interface in org.spongepowered.api.command">CommandCompletion</a>&gt;&nbsp;completions)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Modifies the result of <a href="ValueCompleter.html#complete(org.spongepowered.api.command.parameter.CommandContext,java.lang.String)"><code>the chained parameter's completions</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @Nullable <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#modifyExceptionMessage(net.kyori.adventure.text.Component)" class="member-name-link">modifyExceptionMessage</a><wbr>(@Nullable <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;exceptionMessage)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default @Nullable <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#modifyExceptionMessage(net.kyori.adventure.text.Component)" class="member-name-link">modifyExceptionMessage</a><wbr>(@Nullable <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/Component.html" title="class or interface in net.kyori.adventure.text" class="external-link">Component</a>&nbsp;exceptionMessage)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Modifies the message provided in a <a href="../../exception/ArgumentParseException.html" title="class in org.spongepowered.api.command.exception"><code>ArgumentParseException</code></a> if the
  modified <a href="ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a> throws this exception.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#modifyResult(org.spongepowered.api.command.parameter.Parameter.Key,org.spongepowered.api.command.parameter.ArgumentReader.Immutable,org.spongepowered.api.command.parameter.CommandContext.Builder,T)" class="member-name-link">modifyResult</a><wbr>(<a href="../Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;parameterKey,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#modifyResult(org.spongepowered.api.command.parameter.Parameter.Key,org.spongepowered.api.command.parameter.ArgumentReader.Immutable,org.spongepowered.api.command.parameter.CommandContext.Builder,T)" class="member-name-link">modifyResult</a><wbr>(<a href="../Parameter.Key.html" title="interface in org.spongepowered.api.command.parameter">Parameter.Key</a>&lt;? super <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;&nbsp;parameterKey,
  <a href="../ArgumentReader.Immutable.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader.Immutable</a>&nbsp;reader,
  <a href="../CommandContext.Builder.html" title="interface in org.spongepowered.api.command.parameter">CommandContext.Builder</a>&nbsp;context,
  @Nullable <a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Modifies the result of <a href="ValueParser.html#parseValue(org.spongepowered.api.command.parameter.Parameter.Key,org.spongepowered.api.command.parameter.ArgumentReader.Mutable,org.spongepowered.api.command.parameter.CommandContext.Builder)"><code>the chained parameter's
  parse result</code></a>.</div>
 </div>
@@ -252,6 +258,20 @@ loadScripts(document, 'script');</script>
 <dd><code>exceptionMessage</code> - The message provided by the <a href="ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParser</code></a></dd>
 <dt>Returns:</dt>
 <dd>The modified message, or the parameter if it is not to be modified.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="bind(org.spongepowered.api.registry.RegistryHolder)">
+<h3>bind</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameterModifier</a>&lt;<a href="ValueParameterModifier.html" title="type parameter in ValueParameterModifier">T</a>&gt;</span>&nbsp;<span class="element-name">bind</span><wbr><span class="parameters">(<a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</span></div>
+<div class="block">Creates a new <a href="ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameterModifier</code></a> that is bound to
+ a specific <a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registryHolder</code> - The owning <a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</dd>
+<dt>Returns:</dt>
+<dd>The bound <a href="ValueParameterModifier.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameterModifier</code></a>.</dd>
 </dl>
 </section>
 </li>

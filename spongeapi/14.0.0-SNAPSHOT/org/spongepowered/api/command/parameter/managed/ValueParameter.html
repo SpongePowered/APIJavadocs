@@ -146,9 +146,15 @@ extends <a href="../../../registry/DefaultedRegistryValue.html" title="interface
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#usage(java.lang.String)" class="member-name-link">usage</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameter</a><wbr>&lt;<a href="ValueParameter.html" title="type parameter in ValueParameter">T</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#bind(org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">bind</a><wbr>(<a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Creates a new <a href="ValueCompleter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueCompleter</code></a> that is bound to
+ a specific <a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#usage(java.lang.String)" class="member-name-link">usage</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the usage string for the parameter.</div>
 </div>
 </div>
@@ -187,6 +193,25 @@ extends <a href="../../../registry/DefaultedRegistryValue.html" title="interface
 <dd><code>key</code> - The <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> that defines the parameter key</dd>
 <dt>Returns:</dt>
 <dd>The usage</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="bind(org.spongepowered.api.registry.RegistryHolder)">
+<h3>bind</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParameter</a>&lt;<a href="ValueParameter.html" title="type parameter in ValueParameter">T</a>&gt;</span>&nbsp;<span class="element-name">bind</span><wbr><span class="parameters">(<a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="ValueCompleter.html#bind(org.spongepowered.api.registry.RegistryHolder)">ValueCompleter</a></code></span></div>
+<div class="block">Creates a new <a href="ValueCompleter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueCompleter</code></a> that is bound to
+ a specific <a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="ValueCompleter.html#bind(org.spongepowered.api.registry.RegistryHolder)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="ValueCompleter.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueCompleter</a></code></dd>
+<dt>Specified by:</dt>
+<dd><code><a href="ValueParser.html#bind(org.spongepowered.api.registry.RegistryHolder)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="ValueParser.html" title="interface in org.spongepowered.api.command.parameter.managed">ValueParser</a>&lt;<a href="ValueParameter.html" title="type parameter in ValueParameter">T</a>&gt;</code></dd>
+<dt>Parameters:</dt>
+<dd><code>registryHolder</code> - The owning <a href="../../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</dd>
+<dt>Returns:</dt>
+<dd>The bound <a href="ValueCompleter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueCompleter</code></a>.</dd>
 </dl>
 </section>
 </li>

@@ -88,12 +88,12 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../service/context/ContextSource.html" title="interface in org.spongepowered.api.service.context">ContextSource</a></code>, <code><a href="../data/DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a></code>, <code><a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code>, <code><a href="../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value">ValueContainer</a></code>, <code><a href="WorldTypeDataFetcher.html" title="interface in org.spongepowered.api.world">WorldTypeDataFetcher</a></code></dd>
+<dd><code><a href="../service/context/ContextSource.html" title="interface in org.spongepowered.api.service.context">ContextSource</a></code>, <code><a href="../data/DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a></code>, <code><a href="../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></code>, <code><a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code>, <code><a href="../data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value">ValueContainer</a></code>, <code><a href="WorldTypeDataFetcher.html" title="interface in org.spongepowered.api.world">WorldTypeDataFetcher</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="annotations"><a href="../util/annotation/CatalogedBy.html" title="annotation interface in org.spongepowered.api.util.annotation">@CatalogedBy</a>(<a href="WorldTypes.html" title="class in org.spongepowered.api.world">WorldTypes.class</a>)
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">WorldType</span><span class="extends-implements">
-extends <a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../service/context/ContextSource.html" title="interface in org.spongepowered.api.service.context">ContextSource</a>, <a href="WorldTypeDataFetcher.html" title="interface in org.spongepowered.api.world">WorldTypeDataFetcher</a></span></div>
+extends <a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../service/context/ContextSource.html" title="interface in org.spongepowered.api.service.context">ContextSource</a>, <a href="WorldTypeDataFetcher.html" title="interface in org.spongepowered.api.world">WorldTypeDataFetcher</a>, <a href="../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></span></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -101,6 +101,15 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <li>
 <section class="nested-class-summary" id="nested-class-summary">
 <h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="WorldType.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.world">WorldType.Builder</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-org.spongepowered.api.data.DataHolder">Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.data.<a href="../data/DataHolder.html" title="interface in org.spongepowered.api.data">DataHolder</a></h2>
 <code><a href="../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;<a href="../data/DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a> extends <a href="../data/DataHolder.Immutable.html" title="interface in org.spongepowered.api.data">DataHolder.Immutable</a>&lt;<a href="../data/DataHolder.Immutable.html" title="type parameter in DataHolder.Immutable">I</a>&gt;&gt;, <a href="../data/DataHolder.Mutable.html" title="interface in org.spongepowered.api.data">DataHolder.Mutable</a></code></div>
@@ -113,6 +122,9 @@ extends <a href="../registry/DefaultedRegistryValue.html" title="interface in or
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.service.context.ContextSource">Methods inherited from interface&nbsp;org.spongepowered.api.service.context.<a href="../service/context/ContextSource.html" title="interface in org.spongepowered.api.service.context">ContextSource</a></h3>
 <code><a href="../service/context/ContextSource.html#context()">context</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.datapack.DataPackSerializable">Methods inherited from interface&nbsp;org.spongepowered.api.datapack.<a href="../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></h3>
+<code><a href="../datapack/DataPackSerializable.html#toDataPack(org.spongepowered.api.registry.RegistryHolder)">toDataPack</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.registry.DefaultedRegistryValue">Methods inherited from interface&nbsp;org.spongepowered.api.registry.<a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></h3>
 <code><a href="../registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)">asDefaultedReference</a>, <a href="../registry/DefaultedRegistryValue.html#findKey(org.spongepowered.api.registry.DefaultedRegistryType)">findKey</a>, <a href="../registry/DefaultedRegistryValue.html#key(org.spongepowered.api.registry.DefaultedRegistryType)">key</a></code></div>

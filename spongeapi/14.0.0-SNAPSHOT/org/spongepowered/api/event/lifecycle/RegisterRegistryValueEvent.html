@@ -97,6 +97,27 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">RegisterRegistryValueEvent</span><span class="extends-implements">
 extends <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a></span></div>
+<div class="block">Lifecycle event for registering entries to a <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.
+
+ <p>This event may be called multiple times for the same layer
+ as the registry is being appended and as dependencies become
+ available. Plugins should only execute code inside the consumers.</p>
+
+ <p><strong>Note:</strong> Layers might be reloadable! When a registry
+ is being reloaded, this event is fired again for the relevant registries.
+ The implementation does not keep a reference to the Consumer observed
+ in the last stage and expects plugins to fill a new set of entries.</p>
+
+ <p>Additionally, plugins may request to take a dependency on another
+ registry in order to access registered entries early to enrich its
+ own content. This can prove to be useful when both registries are in
+ the same layer and would have no access to each other otherwise.</p>
+
+ <p>The available registries and their content are not guaranteed to
+ be accessible unless they have been added as a dependency. Plugins
+ might observe registries they have not marked as a dependency due
+ to the platform having natural dependency on them or due to the
+ registries dependency graph.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -110,20 +131,17 @@ extends <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.
 <div class="table-header col-second">Interface</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="RegisterRegistryValueEvent.BuiltIn.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.BuiltIn</a>&lt;<a href="RegisterRegistryValueEvent.BuiltIn.html" title="type parameter in RegisterRegistryValueEvent.BuiltIn">T</a> extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="RegisterRegistryValueEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.EngineScoped</a>&lt;<a href="RegisterRegistryValueEvent.EngineScoped.html" title="type parameter in RegisterRegistryValueEvent.EngineScoped">E</a> extends <a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a>&gt;</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="RegisterRegistryValueEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.EngineScoped</a>&lt;<a href="RegisterRegistryValueEvent.EngineScoped.html" title="type parameter in RegisterRegistryValueEvent.EngineScoped">E</a> extends <a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="RegisterRegistryValueEvent.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.GameScoped</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="RegisterRegistryValueEvent.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.GameScoped</a></code></div>
+<div class="col-second even-row-color"><code><a href="RegisterRegistryValueEvent.RegistryStep.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;<a href="RegisterRegistryValueEvent.RegistryStep.html" title="type parameter in RegisterRegistryValueEvent.RegistryStep">T</a>&gt;</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="RegisterRegistryValueEvent.RegistryStep.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;<a href="RegisterRegistryValueEvent.RegistryStep.html" title="type parameter in RegisterRegistryValueEvent.RegistryStep">T</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="RegisterRegistryValueEvent.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.WorldScoped</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="RegisterRegistryValueEvent.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.WorldScoped</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -132,15 +150,42 @@ extends <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry(org.spongepowered.api.registry.RegistryType)" class="member-name-link">registry</a><wbr>(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#register(org.spongepowered.api.registry.RegistryRegistrationSet)" class="member-name-link">register</a><wbr>(<a href="../../registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry">RegistryRegistrationSet</a>&lt;T&gt;&nbsp;registrationSet)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#register(org.spongepowered.api.registry.RegistryRegistrationSet,org.spongepowered.api.registry.RegistryType...)" class="member-name-link">register</a><wbr>(<a href="../../registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry">RegistryRegistrationSet</a>&lt;T&gt;&nbsp;registrationSet,
+ <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;?&gt;...&nbsp;dependencies)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry(org.spongepowered.api.registry.RegistryType,java.util.function.BiConsumer)" class="member-name-link">registry</a><wbr>(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>,<wbr><a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;&gt;&nbsp;consumer)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry(org.spongepowered.api.registry.RegistryType,java.util.function.BiConsumer,org.spongepowered.api.registry.RegistryType...)" class="member-name-link">registry</a><wbr>(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>,<wbr><a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;&gt;&nbsp;consumer,
+ <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;?&gt;...&nbsp;dependencies)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#registry(org.spongepowered.api.registry.RegistryType,java.util.function.Consumer)" class="member-name-link">registry</a><wbr>(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;&gt;&nbsp;consumer)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</div>
 </div>
 </div>
 </div>
@@ -162,9 +207,85 @@ extends <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="registry(org.spongepowered.api.registry.RegistryType)">
+<section class="detail" id="registry(org.spongepowered.api.registry.RegistryType,java.util.function.Consumer)">
 <h3>registry</h3>
-<div class="member-signature"><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;</span>&nbsp;<span class="element-name">registry</span><wbr><span class="parameters">(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType)</span></div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">registry</span><wbr><span class="parameters">(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;&gt;&nbsp;consumer)</span></div>
+<div class="block"><p>Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</p>
+
+ <p>The consumer will be called if it matches the current set of
+ registries being created.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registryType</code> - The registry type to append.</dd>
+<dd><code>consumer</code> - The consumer to be called if found.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="registry(org.spongepowered.api.registry.RegistryType,java.util.function.BiConsumer)">
+<h3>registry</h3>
+<div class="member-signature"><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">registry</span><wbr><span class="parameters">(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>,<wbr><a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;&gt;&nbsp;consumer)</span></div>
+<div class="block"><p>Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</p>
+
+ <p>The consumer will be called if it matches the current set of
+ registries being created.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registryType</code> - The registry type to append.</dd>
+<dd><code>consumer</code> - The consumer to be called if found.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="registry(org.spongepowered.api.registry.RegistryType,java.util.function.BiConsumer,org.spongepowered.api.registry.RegistryType...)">
+<h3>registry</h3>
+<div class="member-signature"><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">registry</span><wbr><span class="parameters">(<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>,<wbr><a href="RegisterRegistryValueEvent.RegistryStep.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.RegistryStep</a>&lt;T&gt;&gt;&nbsp;consumer,
+ <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;?&gt;...&nbsp;dependencies)</span></div>
+<div class="block"><p>Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</p>
+
+ <p>The consumer will be called if it matches the current set of
+ registries being created.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registryType</code> - The registry type to append.</dd>
+<dd><code>consumer</code> - The consumer to be called if found.</dd>
+<dd><code>dependencies</code> - The list of registries to create before
+                     invoking the consumer.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="register(org.spongepowered.api.registry.RegistryRegistrationSet)">
+<h3>register</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">register</span><wbr><span class="parameters">(<a href="../../registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry">RegistryRegistrationSet</a>&lt;T&gt;&nbsp;registrationSet)</span></div>
+<div class="block"><p>Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</p>
+
+ <p>The <a href="../../registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry"><code>registration set</code></a> will be
+ appended if it matches the current set of registries being created.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registrationSet</code> - The registration set.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="register(org.spongepowered.api.registry.RegistryRegistrationSet,org.spongepowered.api.registry.RegistryType...)">
+<h3>register</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">register</span><wbr><span class="parameters">(<a href="../../registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry">RegistryRegistrationSet</a>&lt;T&gt;&nbsp;registrationSet,
+ <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;?&gt;...&nbsp;dependencies)</span></div>
+<div class="block"><p>Register new entries against a specific <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</p>
+
+ <p>The <a href="../../registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry"><code>registration set</code></a> will be
+ appended if it matches the current set of registries being created.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registrationSet</code> - The registration set.</dd>
+<dd><code>dependencies</code> - The list of registries to create before
+                     appending the registration set.</dd>
+</dl>
 </section>
 </li>
 </ul>

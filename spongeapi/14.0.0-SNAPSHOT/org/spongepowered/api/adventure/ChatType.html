@@ -88,12 +88,12 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType</a></code>, <code>net.kyori.examination.Examinable</code>, <code><a href="https://jd.advntr.dev/key/4.18.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code></dd>
+<dd><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType</a></code>, <code><a href="../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></code>, <code><a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code>, <code>net.kyori.examination.Examinable</code>, <code><a href="https://jd.advntr.dev/key/4.18.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="annotations"><a href="../util/annotation/CatalogedBy.html" title="annotation interface in org.spongepowered.api.util.annotation">@CatalogedBy</a>(<a href="ChatTypes.html" title="class in org.spongepowered.api.adventure">ChatTypes.class</a>)
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">ChatType</span><span class="extends-implements">
-extends <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType</a></span></div>
+extends <a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType</a>, <a href="../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></span></div>
 <div class="block">A type of chat</div>
 </section>
 <section class="summary">
@@ -102,6 +102,17 @@ extends <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatT
 <li>
 <section class="nested-class-summary" id="nested-class-summary">
 <h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="ChatType.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.adventure">ChatType.Builder</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">A builder to create <a href="ChatType.html" title="interface in org.spongepowered.api.adventure"><code>ChatType</code></a>s.</div>
+</div>
+</div>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-net.kyori.adventure.chat.ChatType">Nested classes/interfaces inherited from interface&nbsp;net.kyori.adventure.chat.<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType</a></h2>
 <code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.Bound.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType.Bound</a></code></div>
@@ -121,24 +132,41 @@ extends <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatT
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/format/Style.html" title="class or interface in net.kyori.adventure.text.format" class="external-link">Style</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#style()" class="member-name-link">style</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#translationKey()" class="member-name-link">translationKey</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ChatType.Builder.html" title="interface in org.spongepowered.api.adventure">ChatType.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates a new <a href="ChatType.Builder.html" title="interface in org.spongepowered.api.adventure"><code>ChatType.Builder</code></a> to create a <a href="ChatType.html" title="interface in org.spongepowered.api.adventure"><code>ChatType</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/format/Style.html" title="class or interface in net.kyori.adventure.text.format" class="external-link">Style</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#style()" class="member-name-link">style</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the style that would be used to
+ display the chat message.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#translationKey()" class="member-name-link">translationKey</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the translation key that would be used
+ to display the chat message.</div>
+</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-net.kyori.adventure.chat.ChatType">Methods inherited from interface&nbsp;net.kyori.adventure.chat.<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html" title="class or interface in net.kyori.adventure.chat" class="external-link">ChatType</a></h3>
 <code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html#bind(net.kyori.adventure.text.ComponentLike)" title="class or interface in net.kyori.adventure.chat" class="external-link">bind</a>, <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html#bind(net.kyori.adventure.text.ComponentLike,net.kyori.adventure.text.ComponentLike)" title="class or interface in net.kyori.adventure.chat" class="external-link">bind</a>, <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatType.html#examinableProperties()" title="class or interface in net.kyori.adventure.chat" class="external-link">examinableProperties</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.datapack.DataPackSerializable">Methods inherited from interface&nbsp;org.spongepowered.api.datapack.<a href="../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></h3>
+<code><a href="../datapack/DataPackSerializable.html#toDataPack(org.spongepowered.api.registry.RegistryHolder)">toDataPack</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.registry.DefaultedRegistryValue">Methods inherited from interface&nbsp;org.spongepowered.api.registry.<a href="../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></h3>
+<code><a href="../registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)">asDefaultedReference</a>, <a href="../registry/DefaultedRegistryValue.html#findKey(org.spongepowered.api.registry.DefaultedRegistryType)">findKey</a>, <a href="../registry/DefaultedRegistryValue.html#key(org.spongepowered.api.registry.DefaultedRegistryType)">key</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-net.kyori.examination.Examinable">Methods inherited from interface&nbsp;net.kyori.examination.Examinable</h3>
 <code>examinableName, examine</code></div>
@@ -157,15 +185,38 @@ extends <a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/chat/ChatT
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="builder()">
+<h3>builder</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ChatType.Builder.html" title="interface in org.spongepowered.api.adventure">ChatType.Builder</a></span>&nbsp;<span class="element-name">builder</span>()</div>
+<div class="block">Creates a new <a href="ChatType.Builder.html" title="interface in org.spongepowered.api.adventure"><code>ChatType.Builder</code></a> to create a <a href="ChatType.html" title="interface in org.spongepowered.api.adventure"><code>ChatType</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The new builder</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="translationKey()">
 <h3>translationKey</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">translationKey</span>()</div>
+<div class="block">Gets the translation key that would be used
+ to display the chat message.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The translation key</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="style()">
 <h3>style</h3>
 <div class="member-signature"><span class="return-type"><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/text/format/Style.html" title="class or interface in net.kyori.adventure.text.format" class="external-link">Style</a></span>&nbsp;<span class="element-name">style</span>()</div>
+<div class="block">Gets the style that would be used to
+ display the chat message.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The style</dd>
+</dl>
 </section>
 </li>
 </ul>

@@ -113,86 +113,95 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Deletes world data under the provided <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadProperties(org.spongepowered.api.ResourceKey)" class="member-name-link">loadProperties</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Loads an offline <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#loadProperties(org.spongepowered.api.ResourceKey)" class="member-name-link">loadProperties</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Loads the <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadWorld(org.spongepowered.api.ResourceKey)" class="member-name-link">loadWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadProperties(org.spongepowered.api.ResourceKey,org.spongepowered.api.world.server.storage.ServerWorldProperties.LoadOptions)" class="member-name-link">loadProperties</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a>&nbsp;propertiesLoadOptions)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Loads the <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a> with
+ the provided <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>load options</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#loadWorld(org.spongepowered.api.ResourceKey)" class="member-name-link">loadWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Loads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadWorld(org.spongepowered.api.world.server.WorldTemplate)" class="member-name-link">loadWorld</a><wbr>(<a href="WorldTemplate.html" title="interface in org.spongepowered.api.world.server">WorldTemplate</a>&nbsp;template)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Loads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> from a <a href="WorldTemplate.html" title="interface in org.spongepowered.api.world.server"><code>template</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveWorld(org.spongepowered.api.ResourceKey,org.spongepowered.api.ResourceKey)" class="member-name-link">moveWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
- <a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;moveKey)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadWorld(org.spongepowered.api.ResourceKey,org.spongepowered.api.world.server.storage.ServerWorldProperties.LoadOptions)" class="member-name-link">loadWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a>&nbsp;propertiesLoadOptions)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Moves world data under the provided <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> to another key.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#offlineWorldKeys()" class="member-name-link">offlineWorldKeys</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Gets the <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>keys</code></a> of offline <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#saveProperties(org.spongepowered.api.world.server.storage.ServerWorldProperties)" class="member-name-link">saveProperties</a><wbr>(<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&nbsp;properties)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Saves a <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../Server.html" title="interface in org.spongepowered.api">Server</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#server()" class="member-name-link">server</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the <a href="../../Server.html" title="interface in org.spongepowered.api"><code>Server</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unloadWorld(org.spongepowered.api.ResourceKey)" class="member-name-link">unloadWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Unloads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.</div>
+<div class="block">Loads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>
+ with the provided <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>load options</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unloadWorld(org.spongepowered.api.world.server.ServerWorld)" class="member-name-link">unloadWorld</a><wbr>(<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveWorld(org.spongepowered.api.ResourceKey,org.spongepowered.api.ResourceKey)" class="member-name-link">moveWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;moveKey)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Moves world data under the provided <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> to another key.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#offlineWorldKeys()" class="member-name-link">offlineWorldKeys</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>keys</code></a> of offline <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#saveProperties(org.spongepowered.api.world.server.storage.ServerWorldProperties)" class="member-name-link">saveProperties</a><wbr>(<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&nbsp;properties)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Saves a <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../Server.html" title="interface in org.spongepowered.api">Server</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#server()" class="member-name-link">server</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the <a href="../../Server.html" title="interface in org.spongepowered.api"><code>Server</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unloadWorld(org.spongepowered.api.ResourceKey)" class="member-name-link">unloadWorld</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Unloads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unloadWorld(org.spongepowered.api.world.server.ServerWorld)" class="member-name-link">unloadWorld</a><wbr>(<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&nbsp;world)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Unloads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#world(org.spongepowered.api.ResourceKey)" class="member-name-link">world</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#world(org.spongepowered.api.ResourceKey)" class="member-name-link">world</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldDirectory(org.spongepowered.api.ResourceKey)" class="member-name-link">worldDirectory</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link">Path</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldDirectory(org.spongepowered.api.ResourceKey)" class="member-name-link">worldDirectory</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html" title="class or interface in java.nio.file" class="external-link"><code>directory</code></a> that is used for the world's data
  identified by <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>world key</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldExists(org.spongepowered.api.ResourceKey)" class="member-name-link">worldExists</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldExists(org.spongepowered.api.ResourceKey)" class="member-name-link">worldExists</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets if a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> exists as an actual world, offline or online.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldKey(java.util.UUID)" class="member-name-link">worldKey</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldKey(java.util.UUID)" class="member-name-link">worldKey</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uniqueId)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> by <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>unique id</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldKeys()" class="member-name-link">worldKeys</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldKeys()" class="member-name-link">worldKeys</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>keys</code></a> of both online and offline <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worlds()" class="member-name-link">worlds</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets all currently loaded <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldsOfType(org.spongepowered.api.world.WorldType)" class="member-name-link">worldsOfType</a><wbr>(<a href="../WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;type)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#worldsOfType(org.spongepowered.api.world.WorldType)" class="member-name-link">worldsOfType</a><wbr>(<a href="../WorldType.html" title="interface in org.spongepowered.api.world">WorldType</a>&nbsp;type)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Retrieves all <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>worlds</code></a> that are of a particular <a href="../WorldType.html" title="interface in org.spongepowered.api.world"><code>type</code></a>.</div>
 </div>
 </div>
@@ -325,33 +334,33 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="loadWorld(org.spongepowered.api.world.server.WorldTemplate)">
-<h3>loadWorld</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</span>&nbsp;<span class="element-name">loadWorld</span><wbr><span class="parameters">(<a href="WorldTemplate.html" title="interface in org.spongepowered.api.world.server">WorldTemplate</a>&nbsp;template)</span></div>
-<div class="block">Loads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> from a <a href="WorldTemplate.html" title="interface in org.spongepowered.api.world.server"><code>template</code></a>.
-
- <p>If a world is already loaded by the <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> of the template,
- the world will be returned instead.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>template</code> - The template</dd>
-<dt>Returns:</dt>
-<dd>The world</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="loadWorld(org.spongepowered.api.ResourceKey)">
 <h3>loadWorld</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;</span>&nbsp;<span class="element-name">loadWorld</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;&gt;</span>&nbsp;<span class="element-name">loadWorld</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
 <div class="block">Loads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>.
 
- <p>If a world with the given name is already loaded then it is returned instead.</p></div>
+ <p>If a world with the given name is already loaded, the operation fails.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>key</code> - The key</dd>
 <dt>Returns:</dt>
-<dd>The world</dd>
+<dd>The world, if loaded.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="loadWorld(org.spongepowered.api.ResourceKey,org.spongepowered.api.world.server.storage.ServerWorldProperties.LoadOptions)">
+<h3>loadWorld</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server">ServerWorld</a>&gt;&gt;</span>&nbsp;<span class="element-name">loadWorld</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a>&nbsp;propertiesLoadOptions)</span></div>
+<div class="block">Loads a <a href="ServerWorld.html" title="interface in org.spongepowered.api.world.server"><code>world</code></a> by a <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a>
+ with the provided <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>load options</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key</dd>
+<dd><code>propertiesLoadOptions</code> - The options used to load the <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.</dd>
+<dt>Returns:</dt>
+<dd>The world, if found.</dd>
 </dl>
 </section>
 </li>
@@ -390,13 +399,29 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="loadProperties(org.spongepowered.api.ResourceKey)">
 <h3>loadProperties</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&gt;</span>&nbsp;<span class="element-name">loadProperties</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
-<div class="block">Loads an offline <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&gt;</span>&nbsp;<span class="element-name">loadProperties</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
+<div class="block">Loads the <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.
 
  <p>It is left up to the implementation on what conditions cause a failure of loading properties.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>key</code> - The key</dd>
+<dt>Returns:</dt>
+<dd>The properties</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="loadProperties(org.spongepowered.api.ResourceKey,org.spongepowered.api.world.server.storage.ServerWorldProperties.LoadOptions)">
+<h3>loadProperties</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&gt;</span>&nbsp;<span class="element-name">loadProperties</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a>&nbsp;propertiesLoadOptions)</span></div>
+<div class="block">Loads the <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a> with
+ the provided <a href="storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>load options</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key</dd>
+<dd><code>propertiesLoadOptions</code> - The options used to load the <a href="storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>properties</code></a>.</dd>
 <dt>Returns:</dt>
 <dd>The properties</dd>
 </dl>

@@ -38,7 +38,7 @@ loadScripts(document, 'script');</script>
 <li>
 <p>Summary:</p>
 <ul>
-<li>Nested</li>
+<li><a href="#nested-class-summary">Nested</a></li>
 <li>Field</li>
 <li>Constr</li>
 <li><a href="#method-summary">Method</a></li>
@@ -58,7 +58,7 @@ loadScripts(document, 'script');</script>
 <div id="navbar-sub-list">
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -88,16 +88,33 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../ChunkGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">ChunkGeneratorConfig</a></code></dd>
+<dd><code><a href="../ChunkGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">ChunkGeneratorConfig</a></code>, <code><a href="../../../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></code>, <code><a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="annotations"><a href="../../../../util/annotation/CatalogedBy.html" title="annotation interface in org.spongepowered.api.util.annotation">@CatalogedBy</a>(<a href="NoiseGeneratorConfigs.html" title="class in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfigs.class</a>)
 </span><span class="modifiers">public interface </span><span class="element-name type-name-label">NoiseGeneratorConfig</span><span class="extends-implements">
-extends <a href="../ChunkGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">ChunkGeneratorConfig</a></span></div>
+extends <a href="../ChunkGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config">ChunkGeneratorConfig</a>, <a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../../../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></span></div>
 <div class="block">Noise generator config used in <a href="../../ConfigurableChunkGenerator.html" title="interface in org.spongepowered.api.world.generation"><code>configurable chunk generators</code></a>.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Interface</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="NoiseGeneratorConfig.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfig.Builder</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">A builder to create <a href="NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config.noise"><code>NoiseGeneratorConfig</code></a>s.</div>
+</div>
+</div>
+</section>
+</li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
@@ -114,9 +131,11 @@ extends <a href="../ChunkGeneratorConfig.html" title="interface in org.spongepow
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Whether aquifers are generated.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="NoiseGeneratorConfigTemplate.Builder.html" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfigTemplate.Builder</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="NoiseGeneratorConfig.Builder.html" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfig.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates a new <a href="NoiseGeneratorConfig.Builder.html" title="interface in org.spongepowered.api.world.generation.config.noise"><code>NoiseGeneratorConfig.Builder</code></a> to create a <a href="NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config.noise"><code>NoiseGeneratorConfig</code></a>.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#defaultBlock()" class="member-name-link">defaultBlock</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -170,6 +189,12 @@ extends <a href="../ChunkGeneratorConfig.html" title="interface in org.spongepow
 </div>
 </div>
 </div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.datapack.DataPackSerializable">Methods inherited from interface&nbsp;org.spongepowered.api.datapack.<a href="../../../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></h3>
+<code><a href="../../../../datapack/DataPackSerializable.html#toDataPack(org.spongepowered.api.registry.RegistryHolder)">toDataPack</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.registry.DefaultedRegistryValue">Methods inherited from interface&nbsp;org.spongepowered.api.registry.<a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></h3>
+<code><a href="../../../../registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)">asDefaultedReference</a>, <a href="../../../../registry/DefaultedRegistryValue.html#findKey(org.spongepowered.api.registry.DefaultedRegistryType)">findKey</a>, <a href="../../../../registry/DefaultedRegistryValue.html#key(org.spongepowered.api.registry.DefaultedRegistryType)">key</a></code></div>
 </section>
 </li>
 </ul>
@@ -184,7 +209,12 @@ extends <a href="../ChunkGeneratorConfig.html" title="interface in org.spongepow
 <li>
 <section class="detail" id="builder()">
 <h3>builder</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="NoiseGeneratorConfigTemplate.Builder.html" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfigTemplate.Builder</a></span>&nbsp;<span class="element-name">builder</span>()</div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="NoiseGeneratorConfig.Builder.html" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfig.Builder</a></span>&nbsp;<span class="element-name">builder</span>()</div>
+<div class="block">Creates a new <a href="NoiseGeneratorConfig.Builder.html" title="interface in org.spongepowered.api.world.generation.config.noise"><code>NoiseGeneratorConfig.Builder</code></a> to create a <a href="NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config.noise"><code>NoiseGeneratorConfig</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The new builder</dd>
+</dl>
 </section>
 </li>
 <li>

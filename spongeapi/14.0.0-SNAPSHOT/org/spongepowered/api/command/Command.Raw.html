@@ -123,7 +123,7 @@ extends <a href="Command.html" title="interface in org.spongepowered.api.command
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="registrar/tree/CommandTreeNode.Root.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Root</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#commandTree()" class="member-name-link">commandTree</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#commandTree(org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">commandTree</a><wbr>(<a href="../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the <a href="registrar/tree/CommandTreeNode.html" title="interface in org.spongepowered.api.command.registrar.tree"><code>CommandTreeNode</code></a> that represents the argument
  pattern for this command.</div>
@@ -146,15 +146,17 @@ extends <a href="Command.html" title="interface in org.spongepowered.api.command
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="commandTree()">
+<section class="detail" id="commandTree(org.spongepowered.api.registry.RegistryHolder)">
 <h3>commandTree</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="registrar/tree/CommandTreeNode.Root.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Root</a></span>&nbsp;<span class="element-name">commandTree</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="registrar/tree/CommandTreeNode.Root.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode.Root</a></span>&nbsp;<span class="element-name">commandTree</span><wbr><span class="parameters">(<a href="../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</span></div>
 <div class="block">Gets the <a href="registrar/tree/CommandTreeNode.html" title="interface in org.spongepowered.api.command.registrar.tree"><code>CommandTreeNode</code></a> that represents the argument
  pattern for this command.
 
  <p>Defaults to a command with an optional string argument string that
  is greedy.</p></div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>registryHolder</code> - The owning <a href="../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</dd>
 <dt>Returns:</dt>
 <dd>The tree.</dd>
 </dl>

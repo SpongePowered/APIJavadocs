@@ -87,11 +87,16 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
+<dt>All Superinterfaces:</dt>
+<dd><code><a href="../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></code>, <code><a href="../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></code></dd>
+</dl>
+<dl class="notes">
 <dt>All Known Subinterfaces:</dt>
 <dd><code><a href="cooking/CookingRecipe.html" title="interface in org.spongepowered.api.item.recipe.cooking">CookingRecipe</a></code>, <code><a href="crafting/CraftingRecipe.html" title="interface in org.spongepowered.api.item.recipe.crafting">CraftingRecipe</a></code>, <code><a href="crafting/ShapedCraftingRecipe.html" title="interface in org.spongepowered.api.item.recipe.crafting">ShapedCraftingRecipe</a></code>, <code><a href="crafting/ShapelessCraftingRecipe.html" title="interface in org.spongepowered.api.item.recipe.crafting">ShapelessCraftingRecipe</a></code>, <code><a href="smithing/SmithingRecipe.html" title="interface in org.spongepowered.api.item.recipe.smithing">SmithingRecipe</a></code>, <code><a href="crafting/SpecialCraftingRecipe.html" title="interface in org.spongepowered.api.item.recipe.crafting">SpecialCraftingRecipe</a></code>, <code><a href="single/StoneCutterRecipe.html" title="interface in org.spongepowered.api.item.recipe.single">StoneCutterRecipe</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Recipe&lt;T extends <a href="crafting/RecipeInput.html" title="interface in org.spongepowered.api.item.recipe.crafting">RecipeInput</a>&gt;</span></div>
+<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Recipe&lt;T extends <a href="crafting/RecipeInput.html" title="interface in org.spongepowered.api.item.recipe.crafting">RecipeInput</a>&gt;</span><span class="extends-implements">
+extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, <a href="../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></span></div>
 <div class="block">A general interface for recipes.
  <p>Currently supported recipe types are:</p>
  <p><a href="crafting/ShapelessCraftingRecipe.html" title="interface in org.spongepowered.api.item.recipe.crafting"><code>ShapelessCraftingRecipe</code></a> for recipes with simple ingredients/result without pattern in a <a href="../inventory/crafting/CraftingInventory.html" title="interface in org.spongepowered.api.item.inventory.crafting"><code>CraftingInventory</code></a></p>
@@ -154,6 +159,12 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 </div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.datapack.DataPackSerializable">Methods inherited from interface&nbsp;org.spongepowered.api.datapack.<a href="../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a></h3>
+<code><a href="../../datapack/DataPackSerializable.html#toDataPack(org.spongepowered.api.registry.RegistryHolder)">toDataPack</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.registry.DefaultedRegistryValue">Methods inherited from interface&nbsp;org.spongepowered.api.registry.<a href="../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></h3>
+<code><a href="../../registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)">asDefaultedReference</a>, <a href="../../registry/DefaultedRegistryValue.html#findKey(org.spongepowered.api.registry.DefaultedRegistryType)">findKey</a>, <a href="../../registry/DefaultedRegistryValue.html#key(org.spongepowered.api.registry.DefaultedRegistryType)">key</a></code></div>
 </section>
 </li>
 </ul>

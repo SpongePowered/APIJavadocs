@@ -139,10 +139,18 @@ extends <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.
 <div class="block">Registers a new <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#register(org.spongepowered.api.ResourceKey,boolean,java.util.function.Supplier)" class="member-name-link">register</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#register(org.spongepowered.api.ResourceKey,boolean,java.util.function.Function,org.spongepowered.api.registry.RegistryType...)" class="member-name-link">register</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ boolean&nbsp;isDynamic,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>,<wbr>T&gt;&gt;&nbsp;defaultValues,
+ <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;?&gt;...&nbsp;dependencies)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Registers a new <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#register(org.spongepowered.api.ResourceKey,boolean,java.util.function.Supplier)" class="member-name-link">register</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
  boolean&nbsp;isDynamic,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>,<wbr>T&gt;&gt;&nbsp;defaultValues)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Registers a new <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
 </div>
 </div>
@@ -187,6 +195,25 @@ extends <a href="LifecycleEvent.html" title="interface in org.spongepowered.api.
 <div class="member-signature"><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;</span>&nbsp;<span class="element-name">register</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
  boolean&nbsp;isDynamic,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>,<wbr>T&gt;&gt;&nbsp;defaultValues)</span>
+                      throws <span class="exceptions"><a href="../../registry/DuplicateRegistrationException.html" title="class in org.spongepowered.api.registry">DuplicateRegistrationException</a></span></div>
+<div class="block">Registers a new <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key for the registry</dd>
+<dd><code>isDynamic</code> - If this registry will support additional registrations after the lifecycle</dd>
+<dd><code>defaultValues</code> - The values to populate the registry with</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../registry/DuplicateRegistrationException.html" title="class in org.spongepowered.api.registry">DuplicateRegistrationException</a></code> - If the type is already registered</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="register(org.spongepowered.api.ResourceKey,boolean,java.util.function.Function,org.spongepowered.api.registry.RegistryType...)">
+<h3>register</h3>
+<div class="member-signature"><span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;</span>&nbsp;<span class="element-name">register</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ boolean&nbsp;isDynamic,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>,<wbr>T&gt;&gt;&nbsp;defaultValues,
+ <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;?&gt;...&nbsp;dependencies)</span>
                       throws <span class="exceptions"><a href="../../registry/DuplicateRegistrationException.html" title="class in org.spongepowered.api.registry">DuplicateRegistrationException</a></span></div>
 <div class="block">Registers a new <a href="../../registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
 <dl class="notes">

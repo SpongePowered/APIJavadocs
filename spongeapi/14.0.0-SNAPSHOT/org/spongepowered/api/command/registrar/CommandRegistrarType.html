@@ -116,7 +116,8 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a><wbr>&lt;<a href="CommandRegistrarType.html" title="type parameter in CommandRegistrarType">T</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#create(org.spongepowered.api.command.manager.CommandManager.Mutable)" class="member-name-link">create</a><wbr>(<a href="../manager/CommandManager.Mutable.html" title="interface in org.spongepowered.api.command.manager">CommandManager.Mutable</a>&nbsp;manager)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#create(org.spongepowered.api.command.manager.CommandManager.Mutable,org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">create</a><wbr>(<a href="../manager/CommandManager.Mutable.html" title="interface in org.spongepowered.api.command.manager">CommandManager.Mutable</a>&nbsp;manager,
+ <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Create a new registrar of this type.</div>
 </div>
@@ -154,14 +155,16 @@ extends <a href="../../registry/DefaultedRegistryValue.html" title="interface in
 </section>
 </li>
 <li>
-<section class="detail" id="create(org.spongepowered.api.command.manager.CommandManager.Mutable)">
+<section class="detail" id="create(org.spongepowered.api.command.manager.CommandManager.Mutable,org.spongepowered.api.registry.RegistryHolder)">
 <h3>create</h3>
-<div class="member-signature"><span class="return-type"><a href="CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;<a href="CommandRegistrarType.html" title="type parameter in CommandRegistrarType">T</a>&gt;</span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(<a href="../manager/CommandManager.Mutable.html" title="interface in org.spongepowered.api.command.manager">CommandManager.Mutable</a>&nbsp;manager)</span></div>
+<div class="member-signature"><span class="return-type"><a href="CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar">CommandRegistrar</a>&lt;<a href="CommandRegistrarType.html" title="type parameter in CommandRegistrarType">T</a>&gt;</span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(<a href="../manager/CommandManager.Mutable.html" title="interface in org.spongepowered.api.command.manager">CommandManager.Mutable</a>&nbsp;manager,
+ <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;registryHolder)</span></div>
 <div class="block">Create a new registrar of this type.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>manager</code> - The <a href="../manager/CommandManager.html" title="interface in org.spongepowered.api.command.manager"><code>CommandManager</code></a> that has requested the creation
                 of the <a href="CommandRegistrar.html" title="interface in org.spongepowered.api.command.registrar"><code>CommandRegistrar</code></a> associated with this type</dd>
+<dd><code>registryHolder</code> - The owning <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</dd>
 <dt>Returns:</dt>
 <dd>the newly created registrar</dd>
 </dl>
