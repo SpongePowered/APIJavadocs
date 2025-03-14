@@ -22996,6 +22996,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/ItemTypes.html#HOGLIN_SPAWN_EGG" class="member-name-link">HOGLIN_SPAWN_EGG</a> - Static variable in class org.spongepowered.api.item.<a href="org/spongepowered/api/item/ItemTypes.html" title="class in org.spongepowered.api.item">ItemTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html#holder()" class="member-name-link">holder()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a></dt>
+<dd>
+<div class="block">Gets the built <a href="org/spongepowered/api/registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/persistence/DataStore.Builder.HolderStep.html#holder(io.leangen.geantyref.TypeToken...)" class="member-name-link">holder(TypeToken&lt;? extends DataHolder&gt;...)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataStore.Builder.HolderStep.html" title="interface in org.spongepowered.api.data.persistence">DataStore.Builder.HolderStep</a></dt>
 <dd>
 <div class="block">Adds one or more allowed dataHolder types</div>
@@ -38151,6 +38155,19 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/event/lifecycle/RegisterFactoryEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFactoryEvent</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>
+<div class="block">Fired after a layer has established its registries
+ and is no longer accepting any type of modifications.</div>
+</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.EngineScoped&lt;E&gt;</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.GameScoped</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.WorldScoped</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/inventory/menu/InventoryMenu.html#registerHandler(org.spongepowered.api.item.inventory.menu.handler.InventoryCallbackHandler)" class="member-name-link">registerHandler(InventoryCallbackHandler)</a> - Method in interface org.spongepowered.api.item.inventory.menu.<a href="org/spongepowered/api/item/inventory/menu/InventoryMenu.html" title="interface in org.spongepowered.api.item.inventory.menu">InventoryMenu</a></dt>
 <dd>
 <div class="block">Registers click callbacks.</div>
@@ -38589,6 +38606,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/event/lifecycle/RegisterRegistryValueEvent.html#registry(org.spongepowered.api.registry.RegistryType,java.util.function.Consumer)" class="member-name-link">registry(RegistryType&lt;T&gt;, Consumer&lt;RegisterRegistryValueEvent.RegistryStep&lt;T&gt;&gt;)</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterRegistryValueEvent.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent</a></dt>
 <dd>
 <div class="block">Register new entries against a specific <a href="org/spongepowered/api/registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html#registry(org.spongepowered.api.registry.RegistryType,java.util.function.Consumer)" class="member-name-link">registry(RegistryType&lt;T&gt;, Consumer&lt;Registry&lt;T&gt;&gt;)</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a></dt>
+<dd>
+<div class="block">Fetch a registry by its type.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/type/WolfVariants.html#registry(org.spongepowered.api.world.server.ServerWorld)" class="member-name-link">registry(ServerWorld)</a> - Static method in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/WolfVariants.html" title="class in org.spongepowered.api.data.type">WolfVariants</a></dt>
 <dd>&nbsp;</dd>
@@ -52074,6 +52095,8 @@ the order they are declared.</div>
 <dd>
 <div class="block">Gets the world <a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> of this User.</div>
 </dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.WorldScoped.html#worldKey()" class="member-name-link">worldKey()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.WorldScoped.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.WorldScoped</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/lifecycle/RegisterRegistryEvent.WorldScoped.html#worldKey()" class="member-name-link">worldKey()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterRegistryEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryEvent.WorldScoped</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/lifecycle/RegisterRegistryValueEvent.WorldScoped.html#worldKey()" class="member-name-link">worldKey()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterRegistryValueEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.WorldScoped</a></dt>
