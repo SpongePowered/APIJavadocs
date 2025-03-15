@@ -68,6 +68,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="StoppingEngineEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">StoppingEngineEvent</a>&lt;E&gt;</li>
 </ul>
 </li>
+<li class="circle">org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post</a>)</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="ProvideServiceEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a>&lt;T&gt; (also extends org.spongepowered.api.event.lifecycle.<a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a>)
 <ul>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="ProvideServiceEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;T&gt;</li>
@@ -75,7 +76,6 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterCommandEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterCommandEvent</a>&lt;C&gt; (also extends org.spongepowered.api.event.lifecycle.<a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a>)</li>
-<li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a>)</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterRegistryEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryEvent.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.lifecycle.<a href="RegisterRegistryEvent.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryEvent</a>)</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterRegistryValueEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.lifecycle.<a href="RegisterRegistryValueEvent.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryValueEvent</a>)</li>
 </ul>
@@ -88,6 +88,17 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="StartedEngineEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">StartedEngineEvent</a>&lt;E&gt;</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="StartingEngineEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">StartingEngineEvent</a>&lt;E&gt;</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="StoppingEngineEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">StoppingEngineEvent</a>&lt;E&gt;</li>
+</ul>
+</li>
+<li class="circle">org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent</a>
+<ul>
+<li class="circle">org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post</a>
+<ul>
+<li class="circle">org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.<a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;)</li>
+<li class="circle">org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.Post.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.GameScoped</a></li>
+<li class="circle">org.spongepowered.api.event.lifecycle.<a href="FreezeRegistryEvent.Post.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.WorldScoped</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="LoadedGameEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">LoadedGameEvent</a></li>
@@ -103,17 +114,6 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterCommandEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterCommandEvent</a>&lt;C&gt; (also extends org.spongepowered.api.event.<a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;)</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterDataEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterDataEvent</a></li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFactoryEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFactoryEvent</a></li>
-<li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent</a>
-<ul>
-<li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a>
-<ul>
-<li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.<a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;)</li>
-<li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.Post.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.GameScoped</a></li>
-<li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterFreezeEvent.Post.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.WorldScoped</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterRegistryEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryEvent</a>
 <ul>
 <li class="circle">org.spongepowered.api.event.lifecycle.<a href="RegisterRegistryEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryEvent.EngineScoped</a>&lt;E&gt; (also extends org.spongepowered.api.event.<a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;)</li>

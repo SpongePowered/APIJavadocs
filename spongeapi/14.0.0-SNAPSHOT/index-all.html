@@ -10672,6 +10672,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the associated <a href="org/spongepowered/api/network/ServerSideConnection.html" title="interface in org.spongepowered.api.network"><code>connection</code></a> for
  this connection state.</div>
 </dd>
+<dt><a href="org/spongepowered/api/entity/living/player/server/ServerPlayer.html#connectionState()" class="member-name-link">connectionState()</a> - Method in interface org.spongepowered.api.entity.living.player.server.<a href="org/spongepowered/api/entity/living/player/server/ServerPlayer.html" title="interface in org.spongepowered.api.entity.living.player.server">ServerPlayer</a></dt>
+<dd>
+<div class="block">Gets the appropriate <a href="org/spongepowered/api/network/ServerConnectionState.Game.html" title="interface in org.spongepowered.api.network"><code>ServerConnectionState.Game</code></a> linking this player to a
+ connection state.</div>
+</dd>
 <dt><a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html#CONSTRUCT_BEACON" class="member-name-link">CONSTRUCT_BEACON</a> - Static variable in class org.spongepowered.api.advancement.criteria.trigger.<a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html" title="class in org.spongepowered.api.advancement.criteria.trigger">Triggers</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/entity/ConstructEntityEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.entity">ConstructEntityEvent</a> - Interface in <a href="org/spongepowered/api/event/entity/package-summary.html">org.spongepowered.api.event.entity</a></dt>
@@ -20130,6 +20135,19 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/generation/feature/PlacedFeatures.html#FREEZE_TOP_LAYER" class="member-name-link">FREEZE_TOP_LAYER</a> - Static variable in class org.spongepowered.api.world.generation.feature.<a href="org/spongepowered/api/world/generation/feature/PlacedFeatures.html" title="class in org.spongepowered.api.world.generation.feature">PlacedFeatures</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>
+<div class="block">Fired after a layer has established its registries
+ and is no longer accepting any type of modifications.</div>
+</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.EngineScoped&lt;E&gt;</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.GameScoped</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.WorldScoped</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/cause/entity/damage/DamageEffects.html#FREEZING" class="member-name-link">FREEZING</a> - Static variable in class org.spongepowered.api.event.cause.entity.damage.<a href="org/spongepowered/api/event/cause/entity/damage/DamageEffects.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageEffects</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/cause/entity/damage/DamageModifierTypes.html#FREEZING_BONUS" class="member-name-link">FREEZING_BONUS</a> - Static variable in class org.spongepowered.api.event.cause.entity.damage.<a href="org/spongepowered/api/event/cause/entity/damage/DamageModifierTypes.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifierTypes</a></dt>
@@ -22996,7 +23014,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/ItemTypes.html#HOGLIN_SPAWN_EGG" class="member-name-link">HOGLIN_SPAWN_EGG</a> - Static variable in class org.spongepowered.api.item.<a href="org/spongepowered/api/item/ItemTypes.html" title="class in org.spongepowered.api.item">ItemTypes</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html#holder()" class="member-name-link">holder()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a></dt>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.html#holder()" class="member-name-link">holder()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post</a></dt>
 <dd>
 <div class="block">Gets the built <a href="org/spongepowered/api/registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>registry holder</code></a>.</div>
 </dd>
@@ -38155,19 +38173,6 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/event/lifecycle/RegisterFactoryEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFactoryEvent</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
-<dd>
-<div class="block">Fired after a layer has established its registries
- and is no longer accepting any type of modifications.</div>
-</dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.EngineScoped&lt;E&gt;</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.GameScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.GameScoped</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.WorldScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.WorldScoped</a> - Interface in <a href="org/spongepowered/api/event/lifecycle/package-summary.html">org.spongepowered.api.event.lifecycle</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/inventory/menu/InventoryMenu.html#registerHandler(org.spongepowered.api.item.inventory.menu.handler.InventoryCallbackHandler)" class="member-name-link">registerHandler(InventoryCallbackHandler)</a> - Method in interface org.spongepowered.api.item.inventory.menu.<a href="org/spongepowered/api/item/inventory/menu/InventoryMenu.html" title="interface in org.spongepowered.api.item.inventory.menu">InventoryMenu</a></dt>
 <dd>
 <div class="block">Registers click callbacks.</div>
@@ -38607,7 +38612,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Register new entries against a specific <a href="org/spongepowered/api/registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>Registry</code></a>.</div>
 </dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html#registry(org.spongepowered.api.registry.RegistryType,java.util.function.Consumer)" class="member-name-link">registry(RegistryType&lt;T&gt;, Consumer&lt;Registry&lt;T&gt;&gt;)</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post</a></dt>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.html#registry(org.spongepowered.api.registry.RegistryType,java.util.function.Consumer)" class="member-name-link">registry(RegistryType&lt;T&gt;, Consumer&lt;Registry&lt;T&gt;&gt;)</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.html" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post</a></dt>
 <dd>
 <div class="block">Fetch a registry by its type.</div>
 </dd>
@@ -52095,7 +52100,7 @@ the order they are declared.</div>
 <dd>
 <div class="block">Gets the world <a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> of this User.</div>
 </dd>
-<dt><a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.WorldScoped.html#worldKey()" class="member-name-link">worldKey()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterFreezeEvent.Post.WorldScoped.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterFreezeEvent.Post.WorldScoped</a></dt>
+<dt><a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.WorldScoped.html#worldKey()" class="member-name-link">worldKey()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/FreezeRegistryEvent.Post.WorldScoped.html" title="interface in org.spongepowered.api.event.lifecycle">FreezeRegistryEvent.Post.WorldScoped</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/lifecycle/RegisterRegistryEvent.WorldScoped.html#worldKey()" class="member-name-link">worldKey()</a> - Method in interface org.spongepowered.api.event.lifecycle.<a href="org/spongepowered/api/event/lifecycle/RegisterRegistryEvent.WorldScoped.html" title="interface in org.spongepowered.api.event.lifecycle">RegisterRegistryEvent.WorldScoped</a></dt>
 <dd>&nbsp;</dd>
