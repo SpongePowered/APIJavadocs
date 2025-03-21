@@ -12055,7 +12055,9 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createInteractBlockEventSecondaryPre(org.spongepowered.api.event.Cause,org.spongepowered.api.util.Tristate,org.spongepowered.api.util.Tristate,org.spongepowered.api.util.Tristate,org.spongepowered.api.util.Tristate,org.spongepowered.api.block.BlockSnapshot,org.spongepowered.math.vector.Vector3d,org.spongepowered.api.util.Direction)" class="member-name-link">createInteractBlockEventSecondaryPre(Cause, Tristate, Tristate, Tristate, Tristate, BlockSnapshot, Vector3d, Direction)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createInteractContainerEventClose(org.spongepowered.api.event.Cause,org.spongepowered.api.item.inventory.Container,org.spongepowered.api.data.Transaction,org.spongepowered.api.item.inventory.Inventory,java.util.List)" class="member-name-link">createInteractContainerEventClose(Cause, Container, Transaction&lt;ItemStackSnapshot&gt;, Inventory, List&lt;SlotTransaction&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
+<dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createInteractContainerEventClosePost(org.spongepowered.api.event.Cause,org.spongepowered.api.item.inventory.Container,org.spongepowered.api.data.Transaction,org.spongepowered.api.item.inventory.Inventory,java.util.List)" class="member-name-link">createInteractContainerEventClosePost(Cause, Container, Transaction&lt;ItemStackSnapshot&gt;, Inventory, List&lt;SlotTransaction&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createInteractContainerEventClosePre(org.spongepowered.api.event.Cause,org.spongepowered.api.item.inventory.Container,org.spongepowered.api.data.Transaction)" class="member-name-link">createInteractContainerEventClosePre(Cause, Container, Transaction&lt;ItemStackSnapshot&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createInteractContainerEventOpen(org.spongepowered.api.event.Cause,org.spongepowered.api.item.inventory.Container,org.spongepowered.api.data.Transaction)" class="member-name-link">createInteractContainerEventOpen(Cause, Container, Transaction&lt;ItemStackSnapshot&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -24042,7 +24044,15 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/event/item/inventory/container/InteractContainerEvent.Close.html" class="type-name-link" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent.Close</a> - Interface in <a href="org/spongepowered/api/event/item/inventory/container/package-summary.html">org.spongepowered.api.event.item.inventory.container</a></dt>
 <dd>
-<div class="block">The target container was closed.</div>
+<div class="block">Base event when a <a href="org/spongepowered/api/item/inventory/Container.html" title="interface in org.spongepowered.api.item.inventory"><code>Container</code></a> is closed.</div>
+</dd>
+<dt><a href="org/spongepowered/api/event/item/inventory/container/InteractContainerEvent.Close.Post.html" class="type-name-link" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent.Close.Post</a> - Interface in <a href="org/spongepowered/api/event/item/inventory/container/package-summary.html">org.spongepowered.api.event.item.inventory.container</a></dt>
+<dd>
+<div class="block">Fired after the <a href="org/spongepowered/api/item/inventory/Container.html" title="interface in org.spongepowered.api.item.inventory"><code>Container</code></a> was closed.</div>
+</dd>
+<dt><a href="org/spongepowered/api/event/item/inventory/container/InteractContainerEvent.Close.Pre.html" class="type-name-link" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent.Close.Pre</a> - Interface in <a href="org/spongepowered/api/event/item/inventory/container/package-summary.html">org.spongepowered.api.event.item.inventory.container</a></dt>
+<dd>
+<div class="block">Fired before the <a href="org/spongepowered/api/item/inventory/Container.html" title="interface in org.spongepowered.api.item.inventory"><code>Container</code></a> is closed.</div>
 </dd>
 <dt><a href="org/spongepowered/api/event/item/inventory/container/InteractContainerEvent.Open.html" class="type-name-link" title="interface in org.spongepowered.api.event.item.inventory.container">InteractContainerEvent.Open</a> - Interface in <a href="org/spongepowered/api/event/item/inventory/container/package-summary.html">org.spongepowered.api.event.item.inventory.container</a></dt>
 <dd>
