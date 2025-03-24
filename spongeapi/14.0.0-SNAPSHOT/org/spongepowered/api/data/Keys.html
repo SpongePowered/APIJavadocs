@@ -298,7 +298,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#BLOCK_STATE" class="member-name-link">BLOCK_STATE</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> of a <a href="../entity/vehicle/minecart/BlockOccupiedMinecart.html" title="interface in org.spongepowered.api.entity.vehicle.minecart"><code>BlockOccupiedMinecart</code></a> or <a href="../entity/FallingBlock.html" title="interface in org.spongepowered.api.entity"><code>FallingBlock</code></a>.</div>
+<div class="block">The <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> of a <a href="../entity/vehicle/minecart/BlockOccupiedMinecart.html" title="interface in org.spongepowered.api.entity.vehicle.minecart"><code>BlockOccupiedMinecart</code></a>, <a href="../entity/FallingBlock.html" title="interface in org.spongepowered.api.entity"><code>FallingBlock</code></a> or <a href="../block/entity/Piston.html" title="interface in org.spongepowered.api.block.entity"><code>moving Piston</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#BLOCK_TEMPERATURE" class="member-name-link">BLOCK_TEMPERATURE</a></code></div>
@@ -1286,7 +1286,8 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#IS_EXTENDED" class="member-name-link">IS_EXTENDED</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Whether a piston <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> is currently extended.</div>
+<div class="block">Whether a piston <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> is currently extended or
+ <a href="../block/entity/Piston.html" title="interface in org.spongepowered.api.block.entity"><code>moving Piston</code></a> is extending.</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="Key.html" title="interface in org.spongepowered.api.data">Key</a><wbr>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#IS_FACEPLANTED" class="member-name-link">IS_FACEPLANTED</a></code></div>
@@ -3203,7 +3204,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="BLOCK_STATE">
 <h3>BLOCK_STATE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="../block/BlockState.html" title="interface in org.spongepowered.api.block">BlockState</a>&gt;&gt;</span>&nbsp;<span class="element-name">BLOCK_STATE</span></div>
-<div class="block">The <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> of a <a href="../entity/vehicle/minecart/BlockOccupiedMinecart.html" title="interface in org.spongepowered.api.entity.vehicle.minecart"><code>BlockOccupiedMinecart</code></a> or <a href="../entity/FallingBlock.html" title="interface in org.spongepowered.api.entity"><code>FallingBlock</code></a>.</div>
+<div class="block">The <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> of a <a href="../entity/vehicle/minecart/BlockOccupiedMinecart.html" title="interface in org.spongepowered.api.entity.vehicle.minecart"><code>BlockOccupiedMinecart</code></a>, <a href="../entity/FallingBlock.html" title="interface in org.spongepowered.api.entity"><code>FallingBlock</code></a> or <a href="../block/entity/Piston.html" title="interface in org.spongepowered.api.block.entity"><code>moving Piston</code></a>.</div>
 </section>
 </li>
 <li>
@@ -4839,8 +4840,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="IS_EXTENDED">
 <h3>IS_EXTENDED</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;<a href="value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</span>&nbsp;<span class="element-name">IS_EXTENDED</span></div>
-<div class="block">Whether a piston <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> is currently extended.
- TODO <a href="../block/entity/Piston.html" title="interface in org.spongepowered.api.block.entity"><code>Piston</code></a>?</div>
+<div class="block">Whether a piston <a href="../block/BlockState.html" title="interface in org.spongepowered.api.block"><code>BlockState</code></a> is currently extended or
+ <a href="../block/entity/Piston.html" title="interface in org.spongepowered.api.block.entity"><code>moving Piston</code></a> is extending.</div>
 </section>
 </li>
 <li>
