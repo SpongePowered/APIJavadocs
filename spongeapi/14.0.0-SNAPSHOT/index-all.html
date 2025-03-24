@@ -18946,6 +18946,28 @@ loadScripts(document, 'script');</script>
 <div class="block">The default <a href="org/spongepowered/api/advancement/criteria/trigger/FilteredTriggerConfiguration.html" title="interface in org.spongepowered.api.advancement.criteria.trigger"><code>FilteredTriggerConfiguration</code></a> type for all
  the constructed <a href="org/spongepowered/api/advancement/criteria/trigger/Trigger.html" title="interface in org.spongepowered.api.advancement.criteria.trigger"><code>Trigger</code></a>s.</div>
 </dd>
+<dt><a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html#filterEntities(java.lang.Class,org.spongepowered.api.util.AABB)" class="member-name-link">filterEntities(Class&lt;? extends T&gt;, AABB)</a> - Method in interface org.spongepowered.api.world.volume.entity.<a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a></dt>
+<dd>
+<div class="block">Performs implementation dependant removal of all
+ the <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that match the given type
+ and intersect the bounding box.</div>
+</dd>
+<dt><a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html#filterEntities(java.lang.Class,org.spongepowered.api.util.AABB,java.util.function.Predicate)" class="member-name-link">filterEntities(Class&lt;? extends T&gt;, AABB, Predicate&lt;? super T&gt;)</a> - Method in interface org.spongepowered.api.world.volume.entity.<a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a></dt>
+<dd>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a>
+ that match the given type and intersect the bounding box such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+</dd>
+<dt><a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html#filterEntities(java.util.function.Predicate)" class="member-name-link">filterEntities(Predicate&lt;? super Entity&gt;)</a> - Method in interface org.spongepowered.api.world.volume.entity.<a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a></dt>
+<dd>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the
+ <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> such that any time that
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code> on the
+ <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+</dd>
 <dt><a href="org/spongepowered/api/event/entity/AffectEntityEvent.html#filterEntities(java.util.function.Predicate)" class="member-name-link">filterEntities(Predicate&lt;Entity&gt;)</a> - Method in interface org.spongepowered.api.event.entity.<a href="org/spongepowered/api/event/entity/AffectEntityEvent.html" title="interface in org.spongepowered.api.event.entity">AffectEntityEvent</a></dt>
 <dd>
 <div class="block">Filters out <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>'s from <a href="org/spongepowered/api/event/entity/AffectEntityEvent.html#entities()"><code>AffectEntityEvent.entities()</code></a>
@@ -18953,6 +18975,20 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/event/impl/entity/AbstractAffectEntityEvent.html#filterEntities(java.util.function.Predicate)" class="member-name-link">filterEntities(Predicate&lt;Entity&gt;)</a> - Method in class org.spongepowered.api.event.impl.entity.<a href="org/spongepowered/api/event/impl/entity/AbstractAffectEntityEvent.html" title="class in org.spongepowered.api.event.impl.entity">AbstractAffectEntityEvent</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html#filterEntities(org.spongepowered.api.util.AABB)" class="member-name-link">filterEntities(AABB)</a> - Method in interface org.spongepowered.api.world.volume.entity.<a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a></dt>
+<dd>
+<div class="block">Performs implementation dependant removal of all
+ the <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that intersect the
+ bounding box.</div>
+</dd>
+<dt><a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html#filterEntities(org.spongepowered.api.util.AABB,java.util.function.Predicate)" class="member-name-link">filterEntities(AABB, Predicate&lt;? super Entity&gt;)</a> - Method in interface org.spongepowered.api.world.volume.entity.<a href="org/spongepowered/api/world/volume/entity/EntityVolume.Modifiable.html" title="interface in org.spongepowered.api.world.volume.entity">EntityVolume.Modifiable</a></dt>
+<dd>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a>
+ that intersect the bounding box such that any time that
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code> on the
+ <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+</dd>
 <dt><a href="org/spongepowered/api/event/entity/AffectEntityEvent.html#filterEntityLocations(java.util.function.Predicate)" class="member-name-link">filterEntityLocations(Predicate&lt;ServerLocation&gt;)</a> - Method in interface org.spongepowered.api.event.entity.<a href="org/spongepowered/api/event/entity/AffectEntityEvent.html" title="interface in org.spongepowered.api.event.entity">AffectEntityEvent</a></dt>
 <dd>
 <div class="block">Filters out <a href="org/spongepowered/api/world/server/ServerLocation.html" title="interface in org.spongepowered.api.world.server"><code>ServerLocation</code></a>'s from

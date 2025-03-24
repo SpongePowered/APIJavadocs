@@ -187,15 +187,60 @@ extends <a href="EntityVolume.Streamable.html" title="interface in org.spongepow
 <div class="block">Create an entity instance at the given position with the default
  equipment.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#spawnEntities(java.lang.Iterable)" class="member-name-link">spawnEntities</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;entities)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterEntities(java.lang.Class,org.spongepowered.api.util.AABB)" class="member-name-link">filterEntities</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
+ <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Performs implementation dependant removal of all
+ the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that match the given type
+ and intersect the bounding box.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;<br>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterEntities(java.lang.Class,org.spongepowered.api.util.AABB,java.util.function.Predicate)" class="member-name-link">filterEntities</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
+ <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super T&gt;&nbsp;predicate)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a>
+ that match the given type and intersect the bounding box such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterEntities(java.util.function.Predicate)" class="member-name-link">filterEntities</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> such that any time that
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code> on the
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterEntities(org.spongepowered.api.util.AABB)" class="member-name-link">filterEntities</a><wbr>(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Performs implementation dependant removal of all
+ the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that intersect the
+ bounding box.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#filterEntities(org.spongepowered.api.util.AABB,java.util.function.Predicate)" class="member-name-link">filterEntities</a><wbr>(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a>
+ that intersect the bounding box such that any time that
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code> on the
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#spawnEntities(java.lang.Iterable)" class="member-name-link">spawnEntities</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;? extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;entities)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Similar to <a href="#spawnEntity(org.spongepowered.api.entity.Entity)"><code>spawnEntity(Entity)</code></a> except where multiple entities
  can be attempted to be spawned.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#spawnEntity(org.spongepowered.api.entity.Entity)" class="member-name-link">spawnEntity</a><wbr>(<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#spawnEntity(org.spongepowered.api.entity.Entity)" class="member-name-link">spawnEntity</a><wbr>(<a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&nbsp;entity)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Spawns an <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> using the already set properties (extent,
  position, rotation) and applicable <a href="../../../data/value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s for spawning
  the entity.</div>
@@ -527,6 +572,85 @@ extends <a href="EntityVolume.Streamable.html" title="interface in org.spongepow
 <dd><code>entities</code> - The created entities you wish to spawn</dd>
 <dt>Returns:</dt>
 <dd>The entities which spawned correctly, or empty if none</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="filterEntities(java.util.function.Predicate)">
+<h3>filterEntities</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterEntities</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</span></div>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> such that any time that
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code> on the
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>predicate</code> - The predicate to use for filtering</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="filterEntities(org.spongepowered.api.util.AABB)">
+<h3>filterEntities</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterEntities</span><wbr><span class="parameters">(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</span></div>
+<div class="block">Performs implementation dependant removal of all
+ the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that intersect the
+ bounding box.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>box</code> - The intersection box</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="filterEntities(org.spongepowered.api.util.AABB,java.util.function.Predicate)">
+<h3>filterEntities</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterEntities</span><wbr><span class="parameters">(<a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;&nbsp;predicate)</span></div>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a>
+ that intersect the bounding box such that any time that
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code> on the
+ <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>box</code> - The intersection box</dd>
+<dd><code>predicate</code> - The predicate to use for filtering</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="filterEntities(java.lang.Class,org.spongepowered.api.util.AABB)">
+<h3>filterEntities</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterEntities</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
+ <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box)</span></div>
+<div class="block">Performs implementation dependant removal of all
+ the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> that match the given type
+ and intersect the bounding box.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>entityClass</code> - The entity type</dd>
+<dd><code>box</code> - The intersection box</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="filterEntities(java.lang.Class,org.spongepowered.api.util.AABB,java.util.function.Predicate)">
+<h3>filterEntities</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="type-parameters">&lt;T extends <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a>&gt;</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">filterEntities</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;entityClass,
+ <a href="../../../util/AABB.html" title="interface in org.spongepowered.api.util">AABB</a>&nbsp;box,
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;? super T&gt;&nbsp;predicate)</span></div>
+<div class="block">Applies the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link"><code>Predicate</code></a> to the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a>
+ that match the given type and intersect the bounding box such that
+ any time that <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html#test(T)" title="class or interface in java.util.function" class="external-link"><code>Predicate.test(Object)</code></a> returns <code>false</code>
+ on the <a href="../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>, the storage performs implementation dependant
+ removal of it.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>entityClass</code> - The entity type</dd>
+<dd><code>box</code> - The intersection box</dd>
+<dd><code>predicate</code> - The predicate to use for filtering</dd>
 </dl>
 </section>
 </li>
