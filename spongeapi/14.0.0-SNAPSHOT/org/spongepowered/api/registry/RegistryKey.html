@@ -138,18 +138,23 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Generates a utility <a href="RegistryReference.html" title="interface in org.spongepowered.api.registry"><code>reference</code></a> used to assist in querying a value from this key</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#location()" class="member-name-link">location</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;V extends <a href="RegistryKey.html" title="type parameter in RegistryKey">T</a>&gt;<br><a href="DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;V&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#asScopedReference()" class="member-name-link">asScopedReference</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Generates a utility <a href="DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry"><code>reference</code></a> used to assist in querying a value from this key.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#location()" class="member-name-link">location</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> defining the id.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T&gt;&nbsp;<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.registry.RegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of</a><wbr>(<a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registry,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T&gt;&nbsp;<a href="RegistryKey.html" title="interface in org.spongepowered.api.registry">RegistryKey</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.registry.RegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of</a><wbr>(<a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registry,
  <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;location)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a><wbr>&lt;<a href="RegistryKey.html" title="type parameter in RegistryKey">T</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a><wbr>&lt;<a href="RegistryKey.html" title="type parameter in RegistryKey">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="RegistryType.html" title="interface in org.spongepowered.api.registry"><code>location</code></a> defining the parent registry.</div>
 </div>
 </div>
@@ -212,6 +217,18 @@ loadScripts(document, 'script');</script>
 <h3>asDefaultedReference</h3>
 <div class="member-signature"><span class="type-parameters">&lt;V extends <a href="RegistryKey.html" title="type parameter in RegistryKey">T</a>&gt;</span>&nbsp;<span class="return-type"><a href="DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;V&gt;</span>&nbsp;<span class="element-name">asDefaultedReference</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&gt;&nbsp;defaultHolder)</span></div>
 <div class="block">Generates a utility <a href="DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry"><code>reference</code></a> used to assist in querying a value from this key</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The reference</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="asScopedReference()">
+<h3>asScopedReference</h3>
+<div class="member-signature"><span class="type-parameters">&lt;V extends <a href="RegistryKey.html" title="type parameter in RegistryKey">T</a>&gt;</span>&nbsp;<span class="return-type"><a href="DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;V&gt;</span>&nbsp;<span class="element-name">asScopedReference</span>()</div>
+<div class="block">Generates a utility <a href="DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry"><code>reference</code></a> used to assist in querying a value from this key.
+ This uses the current Cause to determine the <a href="RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>RegistryHolder</code></a></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The reference</dd>
