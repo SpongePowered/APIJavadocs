@@ -184,7 +184,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets whatever this block change is going to perform natural
  block destruction logic, which can potentially cause other
- side effects like block drops from a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.</div>
+ side effects like block drops from a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>,
+ like a <a href="../block/entity/carrier/chest/Chest.html" title="interface in org.spongepowered.api.block.entity.carrier.chest"><code>chest</code></a> dropping its contents.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#performBlockPhysics()" class="member-name-link">performBlockPhysics</a>()</code></div>
@@ -383,9 +384,8 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">movingBlocks</span>()</div>
 <div class="block">Gets whether this flag is considering that blocks are being moved
  in the world, much like how pistons will move blocks. This has some
- effect on <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> creation
- reaction or drop delays. The behaviors are dependent on the block in
- particular.</div>
+ effect on <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a> creation reaction or drop delays. The
+ behaviors are dependent on the block in particular.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>True if the flag is considering blocks are moving</dd>
@@ -428,7 +428,8 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">performBlockDestruction</span>()</div>
 <div class="block">Gets whatever this block change is going to perform natural
  block destruction logic, which can potentially cause other
- side effects like block drops from a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>.
+ side effects like block drops from a <a href="../block/entity/BlockEntity.html" title="interface in org.spongepowered.api.block.entity"><code>BlockEntity</code></a>,
+ like a <a href="../block/entity/carrier/chest/Chest.html" title="interface in org.spongepowered.api.block.entity.carrier.chest"><code>chest</code></a> dropping its contents.
  The behaviors are dependent on the block in particular.</div>
 <dl class="notes">
 <dt>Returns:</dt>

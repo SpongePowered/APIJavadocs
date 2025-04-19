@@ -95,8 +95,14 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="living/animal/horse/Camel.html" title="interface in org.spongepowered.api.entity.living.animal.horse">Camel</a></code>, <code><a href="living/animal/horse/Donkey.html" title="interface in org.spongepowered.api.entity.living.animal.horse">Donkey</a></code>, <code><a href="living/animal/horse/Horse.html" title="interface in org.spongepowered.api.entity.living.animal.horse">Horse</a></code>, <code><a href="living/animal/horse/HorseLike.html" title="interface in org.spongepowered.api.entity.living.animal.horse">HorseLike</a></code>, <code><a href="living/animal/horse/llama/Llama.html" title="interface in org.spongepowered.api.entity.living.animal.horse.llama">Llama</a></code>, <code><a href="living/animal/horse/Mule.html" title="interface in org.spongepowered.api.entity.living.animal.horse">Mule</a></code>, <code><a href="living/animal/horse/PackHorse.html" title="interface in org.spongepowered.api.entity.living.animal.horse">PackHorse</a></code>, <code><a href="living/animal/Pig.html" title="interface in org.spongepowered.api.entity.living.animal">Pig</a></code>, <code><a href="living/animal/horse/SkeletonHorse.html" title="interface in org.spongepowered.api.entity.living.animal.horse">SkeletonHorse</a></code>, <code><a href="living/animal/Strider.html" title="interface in org.spongepowered.api.entity.living.animal">Strider</a></code>, <code><a href="living/animal/horse/llama/TraderLlama.html" title="interface in org.spongepowered.api.entity.living.animal.horse.llama">TraderLlama</a></code>, <code><a href="living/animal/horse/ZombieHorse.html" title="interface in org.spongepowered.api.entity.living.animal.horse">ZombieHorse</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Saddleable</span><span class="extends-implements">
+<div class="type-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true,
+            <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#since()" title="class or interface in java.lang" class="external-link">since</a>="15")
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">Saddleable</span><span class="extends-implements">
 extends <a href="Entity.html" title="interface in org.spongepowered.api.entity">Entity</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="../tag/Taggable.html#is(org.spongepowered.api.tag.Tag)"><code>EntityType.is</code></a> <a href="../tag/EntityTypeTags.html#CAN_EQUIP_SADDLE"><code>EntityTypeTags.CAN_EQUIP_SADDLE</code></a> as
+      other <a href="Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> may be now saddled based on the tag definition</div>
+</div>
 <div class="block">Represents an <a href="Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> which can be saddled.</div>
 </section>
 <section class="summary">
@@ -121,15 +127,16 @@ extends <a href="Entity.html" title="interface in org.spongepowered.api.entity">
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#saddled()" class="member-name-link">saddled</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#saddled()" class="member-name-link">saddled</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <div class="block"><a href="../data/Keys.html#IS_SADDLED"><code>Keys.IS_SADDLED</code></a></div>
 </div>
 </div>
@@ -186,6 +193,7 @@ extends <a href="Entity.html" title="interface in org.spongepowered.api.entity">
 <section class="detail" id="saddled()">
 <h3>saddled</h3>
 <div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="../data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value">Value.Mutable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">saddled</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 <div class="block"><a href="../data/Keys.html#IS_SADDLED"><code>Keys.IS_SADDLED</code></a></div>
 <dl class="notes">
 <dt>Returns:</dt>
