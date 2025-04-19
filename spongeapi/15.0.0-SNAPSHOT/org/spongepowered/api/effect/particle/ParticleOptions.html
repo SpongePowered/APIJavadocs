@@ -155,19 +155,29 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">This option will change the scale of a particle.</div>
 </div>
-<div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Color.html" title="class in org.spongepowered.api.util">Color</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#TO_COLOR" class="member-name-link">TO_COLOR</a></code></div>
+<div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#TARGET" class="member-name-link">TARGET</a></code></div>
 <div class="col-last even-row-color">
+<div class="block">This option will affect the target of a particle
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
+
+ 
+   <a href="ParticleTypes.html#TRAIL"><code>ParticleTypes.TRAIL</code></a>
+ </div>
+</div>
+<div class="col-first odd-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Color.html" title="class in org.spongepowered.api.util">Color</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#TO_COLOR" class="member-name-link">TO_COLOR</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">This option will change the color the transition particle will change to.</div>
 </div>
-<div class="col-first odd-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#TRAVEL_TIME" class="member-name-link">TRAVEL_TIME</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#TRAVEL_TIME" class="member-name-link">TRAVEL_TIME</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">This option will change the travel time of a particle.</div>
 </div>
-<div class="col-first even-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#VELOCITY" class="member-name-link">VELOCITY</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code>static final <a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a><wbr>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#VELOCITY" class="member-name-link">VELOCITY</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">This option will affect how most particles are moving.</div>
 </div>
 </div>
@@ -216,6 +226,7 @@ loadScripts(document, 'script');</script>
    <li><a href="ParticleTypes.html#BLOCK_MARKER"><code>ParticleTypes.BLOCK_MARKER</code></a></li>
    <li><a href="ParticleTypes.html#DUST_PILLAR"><code>ParticleTypes.DUST_PILLAR</code></a></li>
    <li><a href="ParticleTypes.html#FALLING_DUST"><code>ParticleTypes.FALLING_DUST</code></a></li>
+   <li><a href="ParticleTypes.html#BLOCK_CRUMBLE"><code>ParticleTypes.BLOCK_CRUMBLE</code></a></li>
  </ul></div>
 </section>
 </li>
@@ -230,6 +241,7 @@ loadScripts(document, 'script');</script>
    <li><a href="ParticleTypes.html#ENTITY_EFFECT"><code>ParticleTypes.ENTITY_EFFECT</code></a></li>
    <li><a href="ParticleTypes.html#DUST"><code>ParticleTypes.DUST</code></a></li>
    <li><a href="ParticleTypes.html#DUST_COLOR_TRANSITION"><code>ParticleTypes.DUST_COLOR_TRANSITION</code></a></li>
+   <li><a href="ParticleTypes.html#TRAIL"><code>ParticleTypes.TRAIL</code></a></li>
  </ul></div>
 </section>
 </li>
@@ -333,6 +345,18 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="TARGET">
+<h3>TARGET</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="https://jd.spongepowered.org/math/2.0.1/org.spongepowered.math/org/spongepowered/math/vector/Vector3d.html" title="class or interface in org.spongepowered.math.vector" class="external-link">Vector3d</a>&gt;&gt;</span>&nbsp;<span class="element-name">TARGET</span></div>
+<div class="block">This option will affect the target of a particle
+ The only vanilla <a href="ParticleType.html" title="interface in org.spongepowered.api.effect.particle"><code>ParticleType</code></a> this option is applicable to is:
+
+ <ul>
+   <li><a href="ParticleTypes.html#TRAIL"><code>ParticleTypes.TRAIL</code></a></li>
+ </ul></div>
+</section>
+</li>
+<li>
 <section class="detail" id="TO_COLOR">
 <h3>TO_COLOR</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="../../registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a>&lt;<a href="ParticleOption.html" title="interface in org.spongepowered.api.effect.particle">ParticleOption</a>&lt;<a href="../../util/Color.html" title="class in org.spongepowered.api.util">Color</a>&gt;&gt;</span>&nbsp;<span class="element-name">TO_COLOR</span></div>
@@ -353,6 +377,7 @@ loadScripts(document, 'script');</script>
 
  <ul>
    <li><a href="ParticleTypes.html#VIBRATION"><code>ParticleTypes.VIBRATION</code></a></li>
+   <li><a href="ParticleTypes.html#TRAIL"><code>ParticleTypes.TRAIL</code></a></li>
  </ul></div>
 </section>
 </li>

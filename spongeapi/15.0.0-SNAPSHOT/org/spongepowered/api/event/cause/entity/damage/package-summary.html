@@ -87,7 +87,7 @@ loadScripts(document, 'script');</script>
 </li>
 <li>
 <div id="class-summary">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="class-summary-tab0" role="tab" aria-selected="true" aria-controls="class-summary.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary', 2)" class="active-table-tab">All Classes and Interfaces</button><button id="class-summary-tab1" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab1', 2)" class="table-tab">Interfaces</button><button id="class-summary-tab2" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab2', 2)" class="table-tab">Classes</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="class-summary-tab0" role="tab" aria-selected="true" aria-controls="class-summary.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary', 2)" class="active-table-tab">All Classes and Interfaces</button><button id="class-summary-tab1" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab1', 2)" class="table-tab">Interfaces</button><button id="class-summary-tab2" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab2', 2)" class="table-tab">Classes</button><button id="class-summary-tab3" role="tab" aria-selected="false" aria-controls="class-summary.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('class-summary', 'class-summary-tab3', 2)" class="table-tab">Enum Classes</button></div>
 <div id="class-summary.tabpanel" role="tabpanel" aria-labelledby="class-summary-tab0">
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
@@ -96,31 +96,42 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="DamageEffects.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageEffects</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2"></div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="DamageFunction.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a></div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">A damage modifier that will create a <a href="DamageStep.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageStep</code></a>.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">Represents a modifier that will apply a function on a damage value to deal
- towards an entity such that the raw damage is the input of a
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleUnaryOperator.html" title="class or interface in java.util.function" class="external-link"><code>DoubleUnaryOperator</code></a> such that the output will be the final damage
- applied to the <a href="../../../../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>.</div>
+<div class="block">A builder to create <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A builder that creates <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s, for use in both plugin and
- implementation requirements.</div>
-</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">A type of <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> that can apply a "grouping" so to speak
- for the damage modifier.</div>
-</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="DamageModifierTypes.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifierTypes</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="DamageModifier.Function.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Function</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageScaling.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageScaling</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="DamageScalings.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageScalings</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2"></div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageStep.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStep</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">A step represent an operation made by the platform (vanilla and mods) or modifiers added by plugins.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="DamageStep.Part.html" title="enum class in org.spongepowered.api.event.cause.entity.damage">DamageStep.Part</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="block">The parts composing a step.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageStepHistory.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepHistory</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">Captures the root steps occurring during a damage calculation.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="DamageStepType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepType</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">Represents a type of <a href="DamageStep.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageStep</code></a>.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageStepType.Factory.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepType.Factory</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">A factory to create <a href="DamageStepType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageStepType</code></a>s.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="DamageStepTypes.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageStepTypes</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">A <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> is a type of "grouping" for <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a>s since a <a href="source/DamageSource.html" title="interface in org.spongepowered.api.event.cause.entity.damage.source"><code>DamageSource</code></a> instance can be inherently different from
@@ -132,12 +143,6 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="DamageTypes.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageTypes</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2"></div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="ModifierFunction.html" title="interface in org.spongepowered.api.event.cause.entity.damage">ModifierFunction</a>&lt;M&gt;</div>
-<div class="col-last even-row-color class-summary class-summary-tab1">
-<div class="block">A function associating a
- <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> with a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleUnaryOperator.html" title="class or interface in java.util.function" class="external-link"><code>DoubleUnaryOperator</code></a> of the resultant
- effect.</div>
-</div>
 </div>
 </div>
 </div>
