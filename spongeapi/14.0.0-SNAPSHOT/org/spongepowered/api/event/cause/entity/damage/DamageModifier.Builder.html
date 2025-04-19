@@ -5,7 +5,7 @@
 <title>DamageModifier.Builder (SpongeAPI 14.0.0-SNAPSHOT API)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="declaration: package: org.spongepowered.api.event.cause.entity.damage, interface: DamageModifier, class: Builder">
+<meta name="description" content="declaration: package: org.spongepowered.api.event.cause.entity.damage, interface: DamageModifier, interface: Builder">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -83,26 +83,21 @@ loadScripts(document, 'script');</script>
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">org.spongepowered.api.event.cause.entity.damage</a></div>
-<h1 title="Class DamageModifier.Builder" class="title">Class DamageModifier.Builder</h1>
-</div>
-<div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">org.spongepowered.api.event.cause.entity.damage.DamageModifier.Builder</div>
+<h1 title="Interface DamageModifier.Builder" class="title">Interface DamageModifier.Builder</h1>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html" title="class or interface in net.kyori.adventure.builder" class="external-link">AbstractBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&gt;</code>, <code><a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code>, <code><a href="../../../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code>, <code><a href="../../../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code></dd>
+<dt>All Superinterfaces:</dt>
+<dd><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html" title="class or interface in net.kyori.adventure.builder" class="external-link">AbstractBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&gt;</code>, <code><a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code>, <code><a href="../../../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
 <dd><code><a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public static final class </span><span class="element-name type-name-label">DamageModifier.Builder</span>
-<span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
-implements <a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;, <a href="../../../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</span></div>
-<div class="block">A builder that creates <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s, for use in both plugin and
- implementation requirements.</div>
+<div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">DamageModifier.Builder</span><span class="extends-implements">
+extends <a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</span></div>
+<div class="block">A builder to create <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a>s.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -111,73 +106,36 @@ implements <a href="../../../../util/Builder.html" title="interface in org.spong
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#attackDamageGroup()" class="member-name-link">attackDamageGroup</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The main attack damage calculated for an <a href="../../../entity/AttackEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>AttackEntityEvent</code></a></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#damageFunction(org.spongepowered.api.event.cause.entity.damage.DamageModifier.Function)" class="member-name-link">damageFunction</a><wbr>(<a href="DamageModifier.Function.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Function</a>&nbsp;function)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the <a href="DamageModifier.Function.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier.Function</code></a> for this modifier.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#attackEnchantmentGroup()" class="member-name-link">attackEnchantmentGroup</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The enchantment attack damage calculated for an <a href="../../../entity/AttackEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>AttackEntityEvent</code></a></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#frameModifier(java.util.function.Consumer)" class="member-name-link">frameModifier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="../../../CauseStackManager.StackFrame.html" title="interface in org.spongepowered.api.event">CauseStackManager.StackFrame</a>&gt;&nbsp;frameModifier)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the cause frame modifier.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Creates a new <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> with this builder's provided
- <a href="../../../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> and <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cause(org.spongepowered.api.event.Cause)" class="member-name-link">cause</a><wbr>(<a href="../../../Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the <a href="../../../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to build.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#damageReductionGroup()" class="member-name-link">damageReductionGroup</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The damage calculated for an <a href="../../../entity/DamageEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>DamageEntityEvent</code></a></div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#from(org.spongepowered.api.event.cause.entity.damage.DamageModifier)" class="member-name-link">from</a><wbr>(<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Resets this builder to the values of the given built object.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#group(java.lang.String)" class="member-name-link">group</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#item(org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">item</a><wbr>(<a href="../../../../item/inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;item)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reset()" class="member-name-link">reset</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Resets this builder to a "default" state such that there is no
- remaining data to set.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type(java.util.function.Supplier)" class="member-name-link">type</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;damageModifierType)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- build.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#type(org.spongepowered.api.event.cause.entity.damage.DamageModifierType)" class="member-name-link">type</a><wbr>(<a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&nbsp;damageModifierType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- build.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type(org.spongepowered.api.event.cause.entity.damage.DamageStepType)" class="member-name-link">type</a><wbr>(<a href="DamageStepType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepType</a>&nbsp;type)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the <a href="DamageStepType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageStepType</code></a> for this modifier.</div>
 </div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
-<code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
+<h3 id="methods-inherited-from-class-net.kyori.adventure.builder.AbstractBuilder">Methods inherited from interface&nbsp;net.kyori.adventure.builder.<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html" title="class or interface in net.kyori.adventure.builder" class="external-link">AbstractBuilder</a></h3>
+<code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html#build()" title="class or interface in net.kyori.adventure.builder" class="external-link">build</a></code></div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.util.Builder">Methods inherited from interface&nbsp;org.spongepowered.api.util.<a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a></h3>
+<code><a href="../../../../util/Builder.html#reset()">reset</a></code></div>
 </section>
 </li>
 </ul>
@@ -190,136 +148,41 @@ implements <a href="../../../../util/Builder.html" title="interface in org.spong
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="type(java.util.function.Supplier)">
+<section class="detail" id="type(org.spongepowered.api.event.cause.entity.damage.DamageStepType)">
 <h3>type</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">type</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&gt;&nbsp;damageModifierType)</span></div>
-<div class="block">Sets the <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- build.</div>
+<div class="member-signature"><span class="return-type"><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">type</span><wbr><span class="parameters">(<a href="DamageStepType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepType</a>&nbsp;type)</span></div>
+<div class="block">Sets the <a href="DamageStepType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageStepType</code></a> for this modifier.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>damageModifierType</code> - The damage modifier type</dd>
+<dd><code>type</code> - The damage step type</dd>
 <dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
+<dd>this builder for chaining</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="type(org.spongepowered.api.event.cause.entity.damage.DamageModifierType)">
-<h3>type</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">type</span><wbr><span class="parameters">(<a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a>&nbsp;damageModifierType)</span></div>
-<div class="block">Sets the <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to
- build.</div>
+<section class="detail" id="frameModifier(java.util.function.Consumer)">
+<h3>frameModifier</h3>
+<div class="member-signature"><span class="return-type"><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">frameModifier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="../../../CauseStackManager.StackFrame.html" title="interface in org.spongepowered.api.event">CauseStackManager.StackFrame</a>&gt;&nbsp;frameModifier)</span></div>
+<div class="block">Sets the cause frame modifier.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>damageModifierType</code> - The damage modifier type</dd>
+<dd><code>frameModifier</code> - The frame modifier</dd>
 <dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
+<dd>this builder for chaining</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="attackDamageGroup()">
-<h3>attackDamageGroup</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">attackDamageGroup</span>()</div>
-<div class="block">The main attack damage calculated for an <a href="../../../entity/AttackEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>AttackEntityEvent</code></a></div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="attackEnchantmentGroup()">
-<h3>attackEnchantmentGroup</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">attackEnchantmentGroup</span>()</div>
-<div class="block">The enchantment attack damage calculated for an <a href="../../../entity/AttackEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>AttackEntityEvent</code></a></div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="damageReductionGroup()">
-<h3>damageReductionGroup</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">damageReductionGroup</span>()</div>
-<div class="block">The damage calculated for an <a href="../../../entity/DamageEntityEvent.html" title="interface in org.spongepowered.api.event.entity"><code>DamageEntityEvent</code></a></div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="group(java.lang.String)">
-<h3>group</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">group</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="item(org.spongepowered.api.item.inventory.ItemStackLike)">
-<h3>item</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">item</span><wbr><span class="parameters">(<a href="../../../../item/inventory/ItemStackLike.html" title="interface in org.spongepowered.api.item.inventory">ItemStackLike</a>&nbsp;item)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="cause(org.spongepowered.api.event.Cause)">
-<h3>cause</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">cause</span><wbr><span class="parameters">(<a href="../../../Cause.html" title="class in org.spongepowered.api.event">Cause</a>&nbsp;cause)</span></div>
-<div class="block">Sets the <a href="../../../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> for the <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> to build.</div>
+<section class="detail" id="damageFunction(org.spongepowered.api.event.cause.entity.damage.DamageModifier.Function)">
+<h3>damageFunction</h3>
+<div class="member-signature"><span class="return-type"><a href="DamageModifier.Builder.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">damageFunction</span><wbr><span class="parameters">(<a href="DamageModifier.Function.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Function</a>&nbsp;function)</span></div>
+<div class="block">Sets the <a href="DamageModifier.Function.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier.Function</code></a> for this modifier.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>cause</code> - The cause for the damage modifier</dd>
+<dd><code>function</code> - The damage function</dd>
 <dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="build()">
-<h3>build</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a></span>&nbsp;<span class="element-name">build</span>()</div>
-<div class="block">Creates a new <a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifier</code></a> with this builder's provided
- <a href="../../../Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a> and <a href="DamageModifierType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageModifierType</code></a>.</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html#build()" title="class or interface in net.kyori.adventure.builder" class="external-link">build</a></code>&nbsp;in interface&nbsp;<code><a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html" title="class or interface in net.kyori.adventure.builder" class="external-link">AbstractBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&gt;</code></dd>
-<dt>Returns:</dt>
-<dd>The newly created damage modifier</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="from(org.spongepowered.api.event.cause.entity.damage.DamageModifier)">
-<h3>from</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">from</span><wbr><span class="parameters">(<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>&nbsp;value)</span></div>
-<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../../util/CopyableBuilder.html#from(T)">CopyableBuilder</a></code></span></div>
-<div class="block">Resets this builder to the values of the given built object.</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../../../util/CopyableBuilder.html#from(T)">from</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code></dd>
-<dt>Parameters:</dt>
-<dd><code>value</code> - The built object</dd>
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="reset()">
-<h3>reset</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></span>&nbsp;<span class="element-name">reset</span>()</div>
-<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../../../util/Builder.html#reset()">Builder</a></code></span></div>
-<div class="block">Resets this builder to a "default" state such that there is no
- remaining data to set. This is to be the presumed "default"
- state.</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../../../util/Builder.html#reset()">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code></dd>
-<dt>Specified by:</dt>
-<dd><code><a href="../../../../util/ResettableBuilder.html#reset()">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;<a href="DamageModifier.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a>,<wbr><a href="DamageModifier.Builder.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a>&gt;</code></dd>
-<dt>Returns:</dt>
-<dd>This builder, for chaining</dd>
+<dd>this builder for chaining</dd>
 </dl>
 </section>
 </li>

@@ -60,10 +60,8 @@ loadScripts(document, 'script');</script>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" class="type-name-link external-link" title="class or interface in java.lang">Object</a>
 <ul>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageEffects.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageEffects</a></li>
-<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageFunction.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageFunction</a> (implements org.spongepowered.api.event.cause.entity.damage.<a href="ModifierFunction.html" title="interface in org.spongepowered.api.event.cause.entity.damage">ModifierFunction</a>&lt;M&gt;)</li>
-<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifier.Builder.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a> (implements org.spongepowered.api.util.<a href="../../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;T,<wbr>B&gt;, org.spongepowered.api.util.<a href="../../../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;T,<wbr>B&gt;)</li>
-<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifierTypes.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageModifierTypes</a></li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageScalings.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageScalings</a></li>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageStepTypes.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageStepTypes</a></li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageTypes.html" class="type-name-link" title="class in org.spongepowered.api.event.cause.entity.damage">DamageTypes</a></li>
 </ul>
 </li>
@@ -76,6 +74,7 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">org.spongepowered.api.util.<a href="../../../../util/Builder.html" class="type-name-link" title="interface in org.spongepowered.api.util">Builder</a>&lt;T,<wbr>B&gt; (also extends org.spongepowered.api.util.<a href="../../../../util/ResettableBuilder.html" title="interface in org.spongepowered.api.util">ResettableBuilder</a>&lt;T,<wbr>B&gt;)
 <ul>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifier.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageType.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType.Builder</a> (also extends org.spongepowered.api.util.<a href="../../../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;T,<wbr>B&gt;)</li>
 </ul>
 </li>
@@ -87,6 +86,10 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifier.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier</a></li>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifier.Function.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Function</a></li>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageStep.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStep</a></li>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageStepHistory.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepHistory</a></li>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageStepType.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepType.Factory</a></li>
 <li class="circle">org.spongepowered.api.datapack.<a href="../../../../datapack/DataPackSerializable.html" class="type-name-link" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a>
 <ul>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageType.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a> (also extends org.spongepowered.api.registry.<a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, org.spongepowered.api.util.<a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a>, org.spongepowered.api.tag.<a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;)</li>
@@ -95,8 +98,8 @@ loadScripts(document, 'script');</script>
 <li class="circle">org.spongepowered.api.registry.<a href="../../../../registry/DefaultedRegistryValue.html" class="type-name-link" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>
 <ul>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageEffect.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageEffect</a></li>
-<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifierType.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifierType</a></li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageScaling.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageScaling</a></li>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageStepType.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageStepType</a></li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageType.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a> (also extends org.spongepowered.api.datapack.<a href="../../../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a>, org.spongepowered.api.util.<a href="../../../../util/Nameable.html" title="interface in org.spongepowered.api.util">Nameable</a>, org.spongepowered.api.tag.<a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;)</li>
 <li class="circle">org.spongepowered.api.tag.<a href="../../../../tag/Taggable.html" class="type-name-link" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;
 <ul>
@@ -105,7 +108,6 @@ loadScripts(document, 'script');</script>
 </li>
 </ul>
 </li>
-<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="ModifierFunction.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">ModifierFunction</a>&lt;M&gt;</li>
 <li class="circle">org.spongepowered.api.util.<a href="../../../../util/Nameable.html" class="type-name-link" title="interface in org.spongepowered.api.util">Nameable</a>
 <ul>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageType.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a> (also extends org.spongepowered.api.datapack.<a href="../../../../datapack/DataPackSerializable.html" title="interface in org.spongepowered.api.datapack">DataPackSerializable</a>, org.spongepowered.api.registry.<a href="../../../../registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a>, org.spongepowered.api.tag.<a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;T&gt;)</li>
@@ -115,7 +117,22 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">org.spongepowered.api.util.<a href="../../../../util/Builder.html" class="type-name-link" title="interface in org.spongepowered.api.util">Builder</a>&lt;T,<wbr>B&gt; (also extends net.kyori.adventure.builder.<a href="https://jd.advntr.dev/api/4.18.0/net/kyori/adventure/builder/AbstractBuilder.html" title="class or interface in net.kyori.adventure.builder" class="external-link">AbstractBuilder</a>&lt;R&gt;)
 <ul>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageModifier.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageModifier.Builder</a></li>
 <li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageType.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType.Builder</a> (also extends org.spongepowered.api.util.<a href="../../../../util/CopyableBuilder.html" title="interface in org.spongepowered.api.util">CopyableBuilder</a>&lt;T,<wbr>B&gt;)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="hierarchy">
+<h2 title="Enum Class Hierarchy">Enum Class Hierarchy</h2>
+<ul>
+<li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" class="type-name-link external-link" title="class or interface in java.lang">Object</a>
+<ul>
+<li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html" class="type-name-link external-link" title="class or interface in java.lang">Enum</a>&lt;E&gt; (implements java.lang.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;T&gt;, java.lang.constant.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/Constable.html" title="class or interface in java.lang.constant" class="external-link">Constable</a>, java.io.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a>)
+<ul>
+<li class="circle">org.spongepowered.api.event.cause.entity.damage.<a href="DamageStep.Part.html" class="type-name-link" title="enum class in org.spongepowered.api.event.cause.entity.damage">DamageStep.Part</a></li>
 </ul>
 </li>
 </ul>
