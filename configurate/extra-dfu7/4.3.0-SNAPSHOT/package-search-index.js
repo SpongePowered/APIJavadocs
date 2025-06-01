@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.spongepowered.configurate.extra.dfu.v7"}];updateSearchResults();
