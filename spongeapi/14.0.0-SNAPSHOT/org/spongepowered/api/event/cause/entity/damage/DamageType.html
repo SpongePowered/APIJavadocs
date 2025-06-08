@@ -144,14 +144,9 @@ extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interf
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the amount of exhaustion this <a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage"><code>DamageType</code></a> will add to the entity, generally only to players.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is</a><wbr>(<a href="../../../../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;&nbsp;tag)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageScaling.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageScaling</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scaling()" class="member-name-link">scaling</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks whether this damage types matches a damage type tag.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DamageScaling.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageScaling</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#scaling()" class="member-name-link">scaling</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the damage scaling.</div>
 </div>
 </div>
@@ -168,7 +163,7 @@ extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interf
 <code><a href="../../../../util/Nameable.html#name()">name</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.tag.Taggable">Methods inherited from interface&nbsp;org.spongepowered.api.tag.<a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></h3>
-<code><a href="../../../../tag/Taggable.html#registryType()">registryType</a>, <a href="../../../../tag/Taggable.html#tags()">tags</a></code></div>
+<code><a href="../../../../tag/Taggable.html#is(org.spongepowered.api.tag.DefaultedTag)">is</a>, <a href="../../../../tag/Taggable.html#tags(org.spongepowered.api.registry.DefaultedRegistryType)">tags</a></code></div>
 </section>
 </li>
 </ul>
@@ -204,21 +199,6 @@ extends <a href="../../../../registry/DefaultedRegistryValue.html" title="interf
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The increase in exhaustion</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="is(org.spongepowered.api.tag.Tag)">
-<h3>is</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">is</span><wbr><span class="parameters">(<a href="../../../../tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;&nbsp;tag)</span></div>
-<div class="block">Checks whether this damage types matches a damage type tag.</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../../../tag/Taggable.html#is(org.spongepowered.api.tag.Tag)">is</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a>&lt;<a href="DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a>&gt;</code></dd>
-<dt>Parameters:</dt>
-<dd><code>tag</code> - The tag to check.</dd>
-<dt>Returns:</dt>
-<dd>true if this damage type matches the damage type tag.</dd>
 </dl>
 </section>
 </li>

@@ -2225,6 +2225,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)" class="member-name-link">asDefaultedReference(DefaultedRegistryType&lt;T&gt;)</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/tag/Tag.html#asDefaultedTag(java.util.function.Supplier)" class="member-name-link">asDefaultedTag(Supplier&lt;RegistryHolder&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.html#asDefaultedType(java.util.function.Supplier)" class="member-name-link">asDefaultedType(Supplier&lt;RegistryHolder&gt;)</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a></dt>
 <dd>
 <div class="block">Gets a utility <a href="org/spongepowered/api/registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry"><code>defaulted type</code></a> for easier querying of the intention of where the registry is contained.</div>
@@ -2478,6 +2480,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Generates a utility <a href="org/spongepowered/api/registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry"><code>reference</code></a> used to assist in querying a value from this key.</div>
 </dd>
+<dt><a href="org/spongepowered/api/tag/Tag.html#asScopedTag()" class="member-name-link">asScopedTag()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.html#asScopedType()" class="member-name-link">asScopedType()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/ArtType.Builder.html#asset(org.spongepowered.api.ResourceKey)" class="member-name-link">asset(ResourceKey)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ArtType.Builder.html" title="interface in org.spongepowered.api.data.type">ArtType.Builder</a></dt>
@@ -10777,6 +10781,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns true if the supplied co-ordinate is valid within this
  volume.</div>
 </dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#contains(T)" class="member-name-link">contains(T)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
+<dd>
+<div class="block">Returns whether this tag is associated with the given value.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/value/CollectionValue.html#containsAll(java.lang.Iterable)" class="member-name-link">containsAll(Iterable&lt;E&gt;)</a> - Method in interface org.spongepowered.api.data.value.<a href="org/spongepowered/api/data/value/CollectionValue.html" title="interface in org.spongepowered.api.data.value">CollectionValue</a></dt>
 <dd>
 <div class="block">Checks if all of the given elements in the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link"><code>Iterable</code></a> are
@@ -13875,6 +13883,10 @@ loadScripts(document, 'script');</script>
 <div class="block">A Utility marker that assists in getting a <a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api"><code>ResourceKey</code></a> for values that generally can be
  within a <a href="org/spongepowered/api/registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry"><code>defaulted registry</code></a>.</div>
 </dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html" class="type-name-link" title="interface in org.spongepowered.api.tag">DefaultedTag&lt;T&gt;</a> - Interface in <a href="org/spongepowered/api/tag/package-summary.html">org.spongepowered.api.tag</a></dt>
+<dd>
+<div class="block">A <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>Tag</code></a> paired with the <a href="org/spongepowered/api/registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>RegistryHolder</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/generation/config/noise/NoiseGeneratorConfig.html#defaultFluid()" class="member-name-link">defaultFluid()</a> - Method in interface org.spongepowered.api.world.generation.config.noise.<a href="org/spongepowered/api/world/generation/config/noise/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfig</a></dt>
 <dd>
 <div class="block">The default fluid used for seas and lakes.</div>
@@ -13891,6 +13903,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryReference.html#defaultHolder()" class="member-name-link">defaultHolder()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryType.html#defaultHolder()" class="member-name-link">defaultHolder()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#defaultHolder()" class="member-name-link">defaultHolder()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/LightType.html#defaultLightValue()" class="member-name-link">defaultLightValue()</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/LightType.html" title="interface in org.spongepowered.api.world">LightType</a></dt>
 <dd>
@@ -19264,6 +19278,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the <a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> for a particular value, if found.</div>
 </dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#findValues()" class="member-name-link">findValues()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
+<dd>
+<div class="block">Returns the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of values tagged by this tag in the holder
+ if it contains this tag's <a href="org/spongepowered/api/tag/Tag.html#registry()"><code>Tag.registry()</code></a>, or <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html#empty()" title="class or interface in java.util.stream" class="external-link"><code>Stream.empty()</code></a> otherwise.</div>
+</dd>
 <dt><a href="org/spongepowered/api/scheduler/ScheduledUpdate.State.html#FINISHED" class="member-name-link">FINISHED</a> - Enum constant in enum class org.spongepowered.api.scheduler.<a href="org/spongepowered/api/scheduler/ScheduledUpdate.State.html" title="enum class in org.spongepowered.api.scheduler">ScheduledUpdate.State</a></dt>
 <dd>
 <div class="block">The scheduled update is performed.</div>
@@ -24575,13 +24594,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Represents an Iron Golem.</div>
 </dd>
-<dt><a href="org/spongepowered/api/event/cause/entity/damage/DamageType.html#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is(Tag&lt;DamageType&gt;)</a> - Method in interface org.spongepowered.api.event.cause.entity.damage.<a href="org/spongepowered/api/event/cause/entity/damage/DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></dt>
+<dt><a href="org/spongepowered/api/tag/Taggable.html#is(org.spongepowered.api.tag.DefaultedTag)" class="member-name-link">is(DefaultedTag&lt;T&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
 <dd>
-<div class="block">Checks whether this damage types matches a damage type tag.</div>
-</dd>
-<dt><a href="org/spongepowered/api/tag/Taggable.html#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is(Tag&lt;T&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
-<dd>
-<div class="block">Returns true when given tag is associated with this object</div>
+<div class="block">Returns whether the given tag is associated with this object.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#IS_ADULT" class="member-name-link">IS_ADULT</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
@@ -31498,9 +31513,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new <a href="org/spongepowered/api/item/recipe/crafting/Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting"><code>Ingredient</code></a> for the provided <a href="org/spongepowered/api/item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a>s.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/Tag.Factory.html#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of(DefaultedRegistryType&lt;T&gt;, ResourceKey)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.Factory.html" title="interface in org.spongepowered.api.tag">Tag.Factory</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/Tag.html#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of(DefaultedRegistryType&lt;T&gt;, ResourceKey)</a> - Static method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a></dt>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of(DefaultedRegistryType&lt;T&gt;, ResourceKey)</a> - Static method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/biome/AttributedBiome.Factory.html#of(org.spongepowered.api.registry.RegistryReference,org.spongepowered.api.world.biome.BiomeAttributes)" class="member-name-link">of(RegistryReference&lt;Biome&gt;, BiomeAttributes)</a> - Method in interface org.spongepowered.api.world.biome.<a href="org/spongepowered/api/world/biome/AttributedBiome.Factory.html" title="interface in org.spongepowered.api.world.biome">AttributedBiome.Factory</a></dt>
 <dd>&nbsp;</dd>
@@ -38591,11 +38604,6 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/registry/RegistryRegistrationSet.html#registryType()" class="member-name-link">registryType()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry">RegistryRegistrationSet</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/Taggable.html#registryType()" class="member-name-link">registryType()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
-<dd>
-<div class="block">Gets the <a href="org/spongepowered/api/registry/RegistryType.html" title="interface in org.spongepowered.api.registry"><code>RegistryType</code></a> that holds the types of <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
- that can be associated with this object.</div>
-</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.html" class="type-name-link" title="interface in org.spongepowered.api.registry">RegistryType&lt;T&gt;</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.registry">RegistryType.Factory</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
@@ -45935,9 +45943,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the tags associated with this registry.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/Taggable.html#tags()" class="member-name-link">tags()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
+<dt><a href="org/spongepowered/api/tag/Taggable.html#tags(org.spongepowered.api.registry.DefaultedRegistryType)" class="member-name-link">tags(DefaultedRegistryType&lt;T&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
 <dd>
-<div class="block">Gets all <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a> that have been associated with this object.</div>
+<div class="block">Gets all <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>Tag</code></a>s that have been associated with this object in the given registry.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/type/VillagerTypes.html#TAIGA" class="member-name-link">TAIGA</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/VillagerTypes.html" title="class in org.spongepowered.api.data.type">VillagerTypes</a></dt>
 <dd>&nbsp;</dd>
@@ -49407,6 +49415,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
+</dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#values()" class="member-name-link">values()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
+<dd>
+<div class="block">Returns the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of values tagged by this tag.</div>
 </dd>
 <dt><a href="org/spongepowered/api/util/Axis.html#values()" class="member-name-link">values()</a> - Static method in enum class org.spongepowered.api.util.<a href="org/spongepowered/api/util/Axis.html" title="enum class in org.spongepowered.api.util">Axis</a></dt>
 <dd>
