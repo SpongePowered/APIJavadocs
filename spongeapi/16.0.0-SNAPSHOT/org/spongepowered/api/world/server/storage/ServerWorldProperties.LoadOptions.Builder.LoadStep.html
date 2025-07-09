@@ -121,8 +121,20 @@ extends <a href="ServerWorldProperties.LoadOptions.Builder.html" title="interfac
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadCallback(java.util.function.Consumer)" class="member-name-link">loadCallback</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#fallbackWorldArchetype(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">fallbackWorldArchetype</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a> that will be used as fallback
+ in case no valid archetype could be determined.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadCallback(java.util.function.Consumer)" class="member-name-link">loadCallback</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#overrideWorldArchetype(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">overrideWorldArchetype</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a> to use instead of the
+ one that was persisted on the disk.</div>
+</div>
 </div>
 </div>
 </div>
@@ -146,6 +158,42 @@ extends <a href="ServerWorldProperties.LoadOptions.Builder.html" title="interfac
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="overrideWorldArchetype(org.spongepowered.api.world.server.WorldArchetype)">
+<h3>overrideWorldArchetype</h3>
+<div class="member-signature"><span class="return-type"><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></span>&nbsp;<span class="element-name">overrideWorldArchetype</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</span></div>
+<div class="block">Sets the <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a> to use instead of the
+ one that was persisted on the disk.
+
+ <p><strong>Note:</strong> This may impact world generation,
+ causing new terrain to not blend seamlessly with existing terrain.
+ Additionally, the world will be saved with the new <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>worldArchetype</code> - The new archetype</dd>
+<dt>Returns:</dt>
+<dd>This builder, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="fallbackWorldArchetype(org.spongepowered.api.world.server.WorldArchetype)">
+<h3>fallbackWorldArchetype</h3>
+<div class="member-signature"><span class="return-type"><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></span>&nbsp;<span class="element-name">fallbackWorldArchetype</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</span></div>
+<div class="block">Sets the <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a> that will be used as fallback
+ in case no valid archetype could be determined.
+
+ <p><strong>Note:</strong> This may impact world generation,
+ causing new terrain to not blend seamlessly with existing terrain.
+ Additionally, the world will be saved with the new <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>worldArchetype</code> - The archetype to use as fallback</dd>
+<dt>Returns:</dt>
+<dd>This builder, for chaining</dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="loadCallback(java.util.function.Consumer)">
 <h3>loadCallback</h3>

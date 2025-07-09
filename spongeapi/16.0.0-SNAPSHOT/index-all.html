@@ -2229,6 +2229,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryValue.html#asDefaultedReference(org.spongepowered.api.registry.DefaultedRegistryType)" class="member-name-link">asDefaultedReference(DefaultedRegistryType&lt;T&gt;)</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/DefaultedRegistryValue.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/tag/Tag.html#asDefaultedTag(java.util.function.Supplier)" class="member-name-link">asDefaultedTag(Supplier&lt;RegistryHolder&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.html#asDefaultedType(java.util.function.Supplier)" class="member-name-link">asDefaultedType(Supplier&lt;RegistryHolder&gt;)</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a></dt>
 <dd>
 <div class="block">Gets a utility <a href="org/spongepowered/api/registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry"><code>defaulted type</code></a> for easier querying of the intention of where the registry is contained.</div>
@@ -2482,6 +2484,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Generates a utility <a href="org/spongepowered/api/registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry"><code>reference</code></a> used to assist in querying a value from this key.</div>
 </dd>
+<dt><a href="org/spongepowered/api/tag/Tag.html#asScopedTag()" class="member-name-link">asScopedTag()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.html#asScopedType()" class="member-name-link">asScopedType()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/ArtType.Builder.html#asset(org.spongepowered.api.ResourceKey)" class="member-name-link">asset(ResourceKey)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ArtType.Builder.html" title="interface in org.spongepowered.api.data.type">ArtType.Builder</a></dt>
@@ -8865,7 +8869,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/data/type/ChickenVariant.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ChickenVariant</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/ChickenVariants.html" class="type-name-link" title="class in org.spongepowered.api.data.type">ChickenVariants</a> - Class in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/command/registrar/tree/CommandTreeNode.html#child(java.lang.String,org.spongepowered.api.command.registrar.tree.CommandTreeNode.Argument)" class="member-name-link">child(String, CommandTreeNode.Argument&lt;? extends Object&gt;)</a> - Method in interface org.spongepowered.api.command.registrar.tree.<a href="org/spongepowered/api/command/registrar/tree/CommandTreeNode.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode</a></dt>
 <dd>
 <div class="block">Creates a child of this node with the given key that accepts a
@@ -10885,6 +10888,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns true if the supplied co-ordinate is valid within this
  volume.</div>
 </dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#contains(T)" class="member-name-link">contains(T)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
+<dd>
+<div class="block">Returns whether this tag is associated with the given value.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/value/CollectionValue.html#containsAll(java.lang.Iterable)" class="member-name-link">containsAll(Iterable&lt;E&gt;)</a> - Method in interface org.spongepowered.api.data.value.<a href="org/spongepowered/api/data/value/CollectionValue.html" title="interface in org.spongepowered.api.data.value">CollectionValue</a></dt>
 <dd>
 <div class="block">Checks if all of the given elements in the provided <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link"><code>Iterable</code></a> are
@@ -11683,9 +11690,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/data/type/CreakingHeartState.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">CreakingHeartState</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/CreakingHeartStates.html" class="type-name-link" title="class in org.spongepowered.api.data.type">CreakingHeartStates</a> - Class in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
-<dd>
-<div class="block">An enumeration of vanilla <a href="org/spongepowered/api/data/type/CreakingHeartState.html" title="interface in org.spongepowered.api.data.type"><code>CreakingHeartState</code></a>s.</div>
-</dd>
 <dt><a href="org/spongepowered/api/data/type/HorseColors.html#CREAMY" class="member-name-link">CREAMY</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/HorseColors.html" title="class in org.spongepowered.api.data.type">HorseColors</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/LlamaTypes.html#CREAMY" class="member-name-link">CREAMY</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/LlamaTypes.html" title="class in org.spongepowered.api.data.type">LlamaTypes</a></dt>
@@ -11738,7 +11742,11 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/world/server/ServerLocation.Factory.html#create(org.spongepowered.api.world.server.ServerWorld,org.spongepowered.math.vector.Vector3i)" class="member-name-link">create(ServerWorld, Vector3i)</a> - Method in interface org.spongepowered.api.world.server.<a href="org/spongepowered/api/world/server/ServerLocation.Factory.html" title="interface in org.spongepowered.api.world.server">ServerLocation.Factory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html#create(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">create(WorldArchetype)</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Appends a create operation to this option
+ which will attempt to create a new world
+ with the given <a href="org/spongepowered/api/world/server/WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#create(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">create(WorldArchetype)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
 <dd>
 <div class="block">Create a new <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> with the given
@@ -12827,7 +12835,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the current <a href="org/spongepowered/api/raid/RaidWave.html" title="interface in org.spongepowered.api.raid"><code>RaidWave</code></a> of this raid.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#CURSE" class="member-name-link">CURSE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#CURSE" class="member-name-link">CURSE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/command/parameter/ArgumentReader.html#cursor()" class="member-name-link">cursor()</a> - Method in interface org.spongepowered.api.command.parameter.<a href="org/spongepowered/api/command/parameter/ArgumentReader.html" title="interface in org.spongepowered.api.command.parameter">ArgumentReader</a></dt>
 <dd>
@@ -13999,10 +14007,14 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryType.html" class="type-name-link" title="interface in org.spongepowered.api.registry">DefaultedRegistryType&lt;T&gt;</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/registry/DefaultedRegistryValue.html" class="type-name-link" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
+<dt><a href="org/spongepowered/api/registry/DefaultedRegistryValue.html" class="type-name-link" title="interface in org.spongepowered.api.registry">DefaultedRegistryValue&lt;T&gt;</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
 <dd>
 <div class="block">A Utility marker that assists in getting a <a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api"><code>ResourceKey</code></a> for values that generally can be
  within a <a href="org/spongepowered/api/registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry"><code>defaulted registry</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html" class="type-name-link" title="interface in org.spongepowered.api.tag">DefaultedTag&lt;T&gt;</a> - Interface in <a href="org/spongepowered/api/tag/package-summary.html">org.spongepowered.api.tag</a></dt>
+<dd>
+<div class="block">A <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>Tag</code></a> paired with the <a href="org/spongepowered/api/registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry"><code>RegistryHolder</code></a>.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/generation/config/noise/NoiseGeneratorConfig.html#defaultFluid()" class="member-name-link">defaultFluid()</a> - Method in interface org.spongepowered.api.world.generation.config.noise.<a href="org/spongepowered/api/world/generation/config/noise/NoiseGeneratorConfig.html" title="interface in org.spongepowered.api.world.generation.config.noise">NoiseGeneratorConfig</a></dt>
 <dd>
@@ -14020,6 +14032,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryReference.html#defaultHolder()" class="member-name-link">defaultHolder()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/DefaultedRegistryReference.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryReference</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/DefaultedRegistryType.html#defaultHolder()" class="member-name-link">defaultHolder()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#defaultHolder()" class="member-name-link">defaultHolder()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/LightType.html#defaultLightValue()" class="member-name-link">defaultLightValue()</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/LightType.html" title="interface in org.spongepowered.api.world">LightType</a></dt>
 <dd>
@@ -14223,6 +14237,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Generates a rule for preventing drops for given block type tag.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ArtTypes.html#DENNIS" class="member-name-link">DENNIS</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ArtTypes.html" title="class in org.spongepowered.api.data.type">ArtTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/enchantment/EnchantmentTypes.html#DENSITY" class="member-name-link">DENSITY</a> - Static variable in class org.spongepowered.api.item.enchantment.<a href="org/spongepowered/api/item/enchantment/EnchantmentTypes.html" title="class in org.spongepowered.api.item.enchantment">EnchantmentTypes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryTypes.html#DENSITY_FUNCTION" class="member-name-link">DENSITY_FUNCTION</a> - Static variable in class org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryTypes.html" title="class in org.spongepowered.api.registry">RegistryTypes</a></dt>
@@ -14957,7 +14973,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Collects as much items of the same type as possible to the cursor.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#DOUBLE_TRADE_PRICE" class="member-name-link">DOUBLE_TRADE_PRICE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#DOUBLE_TRADE_PRICE" class="member-name-link">DOUBLE_TRADE_PRICE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/BellAttachmentTypes.html#DOUBLE_WALL" class="member-name-link">DOUBLE_WALL</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/BellAttachmentTypes.html" title="class in org.spongepowered.api.data.type">BellAttachmentTypes</a></dt>
 <dd>&nbsp;</dd>
@@ -15839,7 +15855,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Represents a modifier on an item that has various effects.</div>
 </dd>
 <dt><a href="org/spongepowered/api/item/enchantment/EnchantmentTypes.html" class="type-name-link" title="class in org.spongepowered.api.item.enchantment">EnchantmentTypes</a> - Class in <a href="org/spongepowered/api/item/enchantment/package-summary.html">org.spongepowered.api.item.enchantment</a></dt>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" class="type-name-link" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a> - Class in <a href="org/spongepowered/api/tag/package-summary.html">org.spongepowered.api.tag</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" class="type-name-link" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a> - Class in <a href="org/spongepowered/api/tag/package-summary.html">org.spongepowered.api.tag</a></dt>
 <dt><a href="org/spongepowered/api/world/biome/provider/BiomeProvider.html#end()" class="member-name-link">end()</a> - Static method in interface org.spongepowered.api.world.biome.provider.<a href="org/spongepowered/api/world/biome/provider/BiomeProvider.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider</a></dt>
 <dd>
 <div class="block">Returns the vanilla end biome provider.</div>
@@ -18300,19 +18316,19 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Matches when the key is excluded from the matcher value.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_ARMOR" class="member-name-link">EXCLUSIVE_SET_ARMOR</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_ARMOR" class="member-name-link">EXCLUSIVE_SET_ARMOR</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_BOOTS" class="member-name-link">EXCLUSIVE_SET_BOOTS</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_BOOTS" class="member-name-link">EXCLUSIVE_SET_BOOTS</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_BOW" class="member-name-link">EXCLUSIVE_SET_BOW</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_BOW" class="member-name-link">EXCLUSIVE_SET_BOW</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_CROSSBOW" class="member-name-link">EXCLUSIVE_SET_CROSSBOW</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_CROSSBOW" class="member-name-link">EXCLUSIVE_SET_CROSSBOW</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_DAMAGE" class="member-name-link">EXCLUSIVE_SET_DAMAGE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_DAMAGE" class="member-name-link">EXCLUSIVE_SET_DAMAGE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_MINING" class="member-name-link">EXCLUSIVE_SET_MINING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_MINING" class="member-name-link">EXCLUSIVE_SET_MINING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#EXCLUSIVE_SET_RIPTIDE" class="member-name-link">EXCLUSIVE_SET_RIPTIDE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#EXCLUSIVE_SET_RIPTIDE" class="member-name-link">EXCLUSIVE_SET_RIPTIDE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/command/registrar/tree/CommandTreeNode.html#executable()" class="member-name-link">executable()</a> - Method in interface org.spongepowered.api.command.registrar.tree.<a href="org/spongepowered/api/command/registrar/tree/CommandTreeNode.html" title="interface in org.spongepowered.api.command.registrar.tree">CommandTreeNode</a></dt>
 <dd>
@@ -18883,6 +18899,13 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/service/permission/SubjectData.html#fallbackPermissionValue(java.util.Set)" class="member-name-link">fallbackPermissionValue(Set&lt;Context&gt;)</a> - Method in interface org.spongepowered.api.service.permission.<a href="org/spongepowered/api/service/permission/SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a></dt>
 <dd>
 <div class="block">Get the permission value that will be returned if no more specific permission setting matches.</div>
+</dd>
+<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.LoadOperation.html#fallbackWorldArchetype()" class="member-name-link">fallbackWorldArchetype()</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.LoadOperation.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.LoadOperation</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.LoadStep.html#fallbackWorldArchetype(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">fallbackWorldArchetype(WorldArchetype)</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></dt>
+<dd>
+<div class="block">Sets the <a href="org/spongepowered/api/world/server/WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a> that will be used as fallback
+ in case no valid archetype could be determined.</div>
 </dd>
 <dt><a href="org/spongepowered/api/entity/Entity.html#fallDistance()" class="member-name-link">fallDistance()</a> - Method in interface org.spongepowered.api.entity.<a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity">Entity</a></dt>
 <dd>
@@ -19522,6 +19545,11 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/registry/Registry.html#findValueKey(T)" class="member-name-link">findValueKey(T)</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/Registry.html" title="interface in org.spongepowered.api.registry">Registry</a></dt>
 <dd>
 <div class="block">Gets the <a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> for a particular value, if found.</div>
+</dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#findValues()" class="member-name-link">findValues()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
+<dd>
+<div class="block">Returns the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of values tagged by this tag in the holder
+ if it contains this tag's <a href="org/spongepowered/api/tag/Tag.html#registry()"><code>Tag.registry()</code></a>, or <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html#empty()" title="class or interface in java.util.stream" class="external-link"><code>Stream.empty()</code></a> otherwise.</div>
 </dd>
 <dt><a href="org/spongepowered/api/scheduler/ScheduledUpdate.State.html#FINISHED" class="member-name-link">FINISHED</a> - Enum constant in enum class org.spongepowered.api.scheduler.<a href="org/spongepowered/api/scheduler/ScheduledUpdate.State.html" title="enum class in org.spongepowered.api.scheduler">ScheduledUpdate.State</a></dt>
 <dd>
@@ -21165,7 +21193,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the entry contained in this entry.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html#get()" class="member-name-link">get()</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Appends a get operation to this option
+ which will attempt to find an already
+ loaded instance.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#get()" class="member-name-link">get()</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
 <dd>
 <div class="block">Get the already loaded <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>
@@ -21484,21 +21516,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/data/persistence/DataView.html#getList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getList(DataQuery)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
 <dd>
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of something by path, if available.</div>
-</dd>
-<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#getLoadOrCreate(java.util.function.Consumer,java.util.function.Consumer,org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">getLoadOrCreate(Consumer&lt;ServerWorldProperties&gt;, Consumer&lt;ServerWorldProperties&gt;, WorldArchetype, Consumer&lt;ServerWorldProperties&gt;)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
-<dd>
-<div class="block">Get the already loaded <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk.</div>
-</dd>
-<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#getLoadOrCreate(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">getLoadOrCreate(WorldArchetype)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
-<dd>
-<div class="block">Get the already loaded <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk.</div>
-</dd>
-<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#getLoadOrCreate(org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">getLoadOrCreate(WorldArchetype, Consumer&lt;ServerWorldProperties&gt;)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
-<dd>
-<div class="block">Get the already loaded <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk.</div>
 </dd>
 <dt><a href="org/spongepowered/api/util/ComponentMessageException.html#getLocalizedMessage()" class="member-name-link">getLocalizedMessage()</a> - Method in exception class org.spongepowered.api.util.<a href="org/spongepowered/api/util/ComponentMessageException.html" title="class in org.spongepowered.api.util">ComponentMessageException</a></dt>
 <dd>&nbsp;</dd>
@@ -23881,7 +23898,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html#IMPOSSIBLE" class="member-name-link">IMPOSSIBLE</a> - Static variable in class org.spongepowered.api.advancement.criteria.trigger.<a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html" title="class in org.spongepowered.api.advancement.criteria.trigger">Triggers</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#IN_ENCHANTING_TABLE" class="member-name-link">IN_ENCHANTING_TABLE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#IN_ENCHANTING_TABLE" class="member-name-link">IN_ENCHANTING_TABLE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/cause/entity/damage/DamageTypes.html#IN_FIRE" class="member-name-link">IN_FIRE</a> - Static variable in class org.spongepowered.api.event.cause.entity.damage.<a href="org/spongepowered/api/event/cause/entity/damage/DamageTypes.html" title="class in org.spongepowered.api.event.cause.entity.damage">DamageTypes</a></dt>
 <dd>&nbsp;</dd>
@@ -24868,13 +24885,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Represents an Iron Golem.</div>
 </dd>
-<dt><a href="org/spongepowered/api/event/cause/entity/damage/DamageType.html#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is(Tag&lt;DamageType&gt;)</a> - Method in interface org.spongepowered.api.event.cause.entity.damage.<a href="org/spongepowered/api/event/cause/entity/damage/DamageType.html" title="interface in org.spongepowered.api.event.cause.entity.damage">DamageType</a></dt>
+<dt><a href="org/spongepowered/api/tag/Taggable.html#is(org.spongepowered.api.tag.DefaultedTag)" class="member-name-link">is(DefaultedTag&lt;T&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
 <dd>
-<div class="block">Checks whether this damage types matches a damage type tag.</div>
-</dd>
-<dt><a href="org/spongepowered/api/tag/Taggable.html#is(org.spongepowered.api.tag.Tag)" class="member-name-link">is(Tag&lt;T&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
-<dd>
-<div class="block">Returns true when given tag is associated with this object</div>
+<div class="block">Returns whether the given tag is associated with this object.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#IS_ADULT" class="member-name-link">IS_ADULT</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
@@ -27117,6 +27130,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/block/BlockTypes.html#LAVA_CAULDRON" class="member-name-link">LAVA_CAULDRON</a> - Static variable in class org.spongepowered.api.block.<a href="org/spongepowered/api/block/BlockTypes.html" title="class in org.spongepowered.api.block">BlockTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/effect/sound/music/MusicDiscs.html#LAVA_CHICKEN" class="member-name-link">LAVA_CHICKEN</a> - Static variable in class org.spongepowered.api.effect.sound.music.<a href="org/spongepowered/api/effect/sound/music/MusicDiscs.html" title="class in org.spongepowered.api.effect.sound.music">MusicDiscs</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/tag/BlockTypeTags.html#LAVA_POOL_STONE_CANNOT_REPLACE" class="member-name-link">LAVA_POOL_STONE_CANNOT_REPLACE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/BlockTypeTags.html" title="class in org.spongepowered.api.tag">BlockTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/gamerule/GameRules.html#LAVA_SOURCE_CONVERSION" class="member-name-link">LAVA_SOURCE_CONVERSION</a> - Static variable in class org.spongepowered.api.world.gamerule.<a href="org/spongepowered/api/world/gamerule/GameRules.html" title="class in org.spongepowered.api.world.gamerule">GameRules</a></dt>
@@ -27881,7 +27896,11 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/LlamaTypes.html" class="type-name-link" title="class in org.spongepowered.api.data.type">LlamaTypes</a> - Class in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html#load()" class="member-name-link">load()</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Appends a load operation to this option
+ which will attempt to load an existing
+ world from the disk.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#load()" class="member-name-link">load()</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
 <dd>
 <div class="block">Load a new <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
@@ -28004,24 +28023,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.LoadOperation.html" title="interface in org.spongepowered.api.world.server.storage"><code>load operation</code></a> for this option.</div>
 </dd>
-<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#loadOrCreate(java.util.function.Consumer,org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">loadOrCreate(Consumer&lt;ServerWorldProperties&gt;, WorldArchetype, Consumer&lt;ServerWorldProperties&gt;)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
-<dd>
-<div class="block">Load a new <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="org/spongepowered/api/world/server/WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-</dd>
 <dt><a href="org/spongepowered/api/user/UserManager.html#loadOrCreate(java.util.UUID)" class="member-name-link">loadOrCreate(UUID)</a> - Method in interface org.spongepowered.api.user.<a href="org/spongepowered/api/user/UserManager.html" title="interface in org.spongepowered.api.user">UserManager</a></dt>
 <dd>
 <div class="block">Gets or creates a persistent <a href="org/spongepowered/api/entity/living/player/User.html" title="interface in org.spongepowered.api.entity.living.player"><code>User</code></a> with the given UUID.</div>
-</dd>
-<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#loadOrCreate(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">loadOrCreate(WorldArchetype)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
-<dd>
-<div class="block">Load a new <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="org/spongepowered/api/world/server/WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-</dd>
-<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html#loadOrCreate(org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">loadOrCreate(WorldArchetype, Consumer&lt;ServerWorldProperties&gt;)</a> - Static method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></dt>
-<dd>
-<div class="block">Load a new <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="org/spongepowered/api/world/server/WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/server/WorldManager.html#loadProperties(org.spongepowered.api.ResourceKey)" class="member-name-link">loadProperties(ResourceKey)</a> - Method in interface org.spongepowered.api.world.server.<a href="org/spongepowered/api/world/server/WorldManager.html" title="interface in org.spongepowered.api.world.server">WorldManager</a></dt>
 <dd>
@@ -30030,6 +30034,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/ItemTypes.html#MUSIC_DISC_FAR" class="member-name-link">MUSIC_DISC_FAR</a> - Static variable in class org.spongepowered.api.item.<a href="org/spongepowered/api/item/ItemTypes.html" title="class in org.spongepowered.api.item">ItemTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/effect/sound/SoundTypes.html#MUSIC_DISC_LAVA_CHICKEN" class="member-name-link">MUSIC_DISC_LAVA_CHICKEN</a> - Static variable in class org.spongepowered.api.effect.sound.<a href="org/spongepowered/api/effect/sound/SoundTypes.html" title="class in org.spongepowered.api.effect.sound">SoundTypes</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/item/ItemTypes.html#MUSIC_DISC_LAVA_CHICKEN" class="member-name-link">MUSIC_DISC_LAVA_CHICKEN</a> - Static variable in class org.spongepowered.api.item.<a href="org/spongepowered/api/item/ItemTypes.html" title="class in org.spongepowered.api.item">ItemTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/effect/sound/SoundTypes.html#MUSIC_DISC_MALL" class="member-name-link">MUSIC_DISC_MALL</a> - Static variable in class org.spongepowered.api.effect.sound.<a href="org/spongepowered/api/effect/sound/SoundTypes.html" title="class in org.spongepowered.api.effect.sound">SoundTypes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/ItemTypes.html#MUSIC_DISC_MALL" class="member-name-link">MUSIC_DISC_MALL</a> - Static variable in class org.spongepowered.api.item.<a href="org/spongepowered/api/item/ItemTypes.html" title="class in org.spongepowered.api.item">ItemTypes</a></dt>
@@ -30864,7 +30872,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/tag/ItemTypeTags.html#NON_FLAMMABLE_WOOD" class="member-name-link">NON_FLAMMABLE_WOOD</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/ItemTypeTags.html" title="class in org.spongepowered.api.tag">ItemTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#NON_TREASURE" class="member-name-link">NON_TREASURE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#NON_TREASURE" class="member-name-link">NON_TREASURE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/util/blockray/RayTrace.html#nonAir()" class="member-name-link">nonAir()</a> - Static method in interface org.spongepowered.api.util.blockray.<a href="org/spongepowered/api/util/blockray/RayTrace.html" title="interface in org.spongepowered.api.util.blockray">RayTrace</a></dt>
 <dd>
@@ -31833,9 +31841,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new <a href="org/spongepowered/api/item/recipe/crafting/Ingredient.html" title="interface in org.spongepowered.api.item.recipe.crafting"><code>Ingredient</code></a> for the provided <a href="org/spongepowered/api/item/ItemType.html" title="interface in org.spongepowered.api.item"><code>ItemType</code></a>s.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/Tag.Factory.html#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of(DefaultedRegistryType&lt;T&gt;, ResourceKey)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.Factory.html" title="interface in org.spongepowered.api.tag">Tag.Factory</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/Tag.html#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of(DefaultedRegistryType&lt;T&gt;, ResourceKey)</a> - Static method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag">Tag</a></dt>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of(DefaultedRegistryType&lt;T&gt;, ResourceKey)</a> - Static method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/biome/AttributedBiome.Factory.html#of(org.spongepowered.api.registry.RegistryReference,org.spongepowered.api.world.biome.BiomeAttributes)" class="member-name-link">of(RegistryReference&lt;Biome&gt;, BiomeAttributes)</a> - Method in interface org.spongepowered.api.world.biome.<a href="org/spongepowered/api/world/biome/AttributedBiome.Factory.html" title="interface in org.spongepowered.api.world.biome">AttributedBiome.Factory</a></dt>
 <dd>&nbsp;</dd>
@@ -32261,11 +32267,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Whether an <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> is currently considered to be on the ground.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#ON_MOB_SPAWN_EQUIPMENT" class="member-name-link">ON_MOB_SPAWN_EQUIPMENT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#ON_MOB_SPAWN_EQUIPMENT" class="member-name-link">ON_MOB_SPAWN_EQUIPMENT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#ON_RANDOM_LOOT" class="member-name-link">ON_RANDOM_LOOT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#ON_RANDOM_LOOT" class="member-name-link">ON_RANDOM_LOOT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#ON_TRADED_EQUIPMENT" class="member-name-link">ON_TRADED_EQUIPMENT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#ON_TRADED_EQUIPMENT" class="member-name-link">ON_TRADED_EQUIPMENT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/generation/config/SurfaceRule.Factory.html#onCeiling()" class="member-name-link">onCeiling()</a> - Method in interface org.spongepowered.api.world.generation.config.<a href="org/spongepowered/api/world/generation/config/SurfaceRule.Factory.html" title="interface in org.spongepowered.api.world.generation.config">SurfaceRule.Factory</a></dt>
 <dd>
@@ -33571,6 +33577,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/data/type/ToolRule.html#overrideSpeed(org.spongepowered.api.tag.Tag,double)" class="member-name-link">overrideSpeed(Tag&lt;BlockType&gt;, double)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ToolRule.html" title="interface in org.spongepowered.api.data.type">ToolRule</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.LoadOperation.html#overrideWorldArchetype()" class="member-name-link">overrideWorldArchetype()</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.LoadOperation.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.LoadOperation</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.LoadStep.html#overrideWorldArchetype(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">overrideWorldArchetype(WorldArchetype)</a> - Method in interface org.spongepowered.api.world.server.storage.<a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></dt>
+<dd>
+<div class="block">Sets the <a href="org/spongepowered/api/world/server/WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a> to use instead of the
+ one that was persisted on the disk.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/biome/provider/BiomeProvider.Factory.html#overworld()" class="member-name-link">overworld()</a> - Method in interface org.spongepowered.api.world.biome.provider.<a href="org/spongepowered/api/world/biome/provider/BiomeProvider.Factory.html" title="interface in org.spongepowered.api.world.biome.provider">BiomeProvider.Factory</a></dt>
 <dd>
 <div class="block">Returns the vanilla overworld biome provider.</div>
@@ -36441,13 +36454,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/tag/BlockTypeTags.html#PREVENT_MOB_SPAWNING_INSIDE" class="member-name-link">PREVENT_MOB_SPAWNING_INSIDE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/BlockTypeTags.html" title="class in org.spongepowered.api.tag">BlockTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#PREVENTS_BEE_SPAWNS_WHEN_MINING" class="member-name-link">PREVENTS_BEE_SPAWNS_WHEN_MINING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#PREVENTS_BEE_SPAWNS_WHEN_MINING" class="member-name-link">PREVENTS_BEE_SPAWNS_WHEN_MINING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#PREVENTS_DECORATED_POT_SHATTERING" class="member-name-link">PREVENTS_DECORATED_POT_SHATTERING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#PREVENTS_DECORATED_POT_SHATTERING" class="member-name-link">PREVENTS_DECORATED_POT_SHATTERING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#PREVENTS_ICE_MELTING" class="member-name-link">PREVENTS_ICE_MELTING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#PREVENTS_ICE_MELTING" class="member-name-link">PREVENTS_ICE_MELTING</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#PREVENTS_INFESTED_SPAWNS" class="member-name-link">PREVENTS_INFESTED_SPAWNS</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#PREVENTS_INFESTED_SPAWNS" class="member-name-link">PREVENTS_INFESTED_SPAWNS</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/item/inventory/CraftItemEvent.Preview.html#preview()" class="member-name-link">preview()</a> - Method in interface org.spongepowered.api.event.item.inventory.<a href="org/spongepowered/api/event/item/inventory/CraftItemEvent.Preview.html" title="interface in org.spongepowered.api.event.item.inventory">CraftItemEvent.Preview</a></dt>
 <dd>
@@ -38991,11 +39004,6 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/registry/RegistryRegistrationSet.html#registryType()" class="member-name-link">registryType()</a> - Method in interface org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryRegistrationSet.html" title="interface in org.spongepowered.api.registry">RegistryRegistrationSet</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/Taggable.html#registryType()" class="member-name-link">registryType()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
-<dd>
-<div class="block">Gets the <a href="org/spongepowered/api/registry/RegistryType.html" title="interface in org.spongepowered.api.registry"><code>RegistryType</code></a> that holds the types of <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a>
- that can be associated with this object.</div>
-</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.html" class="type-name-link" title="interface in org.spongepowered.api.registry">RegistryType&lt;T&gt;</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/registry/RegistryType.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.registry">RegistryType.Factory</a> - Interface in <a href="org/spongepowered/api/registry/package-summary.html">org.spongepowered.api.registry</a></dt>
@@ -40590,7 +40598,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/entity/Saddleable.html" class="type-name-link" title="interface in org.spongepowered.api.entity">Saddleable</a> - Interface in <a href="org/spongepowered/api/entity/package-summary.html">org.spongepowered.api.entity</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
-<div class="deprecation-comment">Use <a href="org/spongepowered/api/tag/Taggable.html#is(org.spongepowered.api.tag.Tag)"><code>EntityType.is</code></a> <a href="org/spongepowered/api/tag/EntityTypeTags.html#CAN_EQUIP_SADDLE"><code>EntityTypeTags.CAN_EQUIP_SADDLE</code></a> as
+<div class="deprecation-comment">Use <a href="org/spongepowered/api/tag/Taggable.html#is(org.spongepowered.api.tag.DefaultedTag)"><code>EntityType.is</code></a> <a href="org/spongepowered/api/tag/EntityTypeTags.html#CAN_EQUIP_SADDLE"><code>EntityTypeTags.CAN_EQUIP_SADDLE</code></a> as
       other <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>entities</code></a> may be now saddled based on the tag definition</div>
 </div>
 </dd>
@@ -41753,7 +41761,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Customize the load process of a <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder</a> - Interface in <a href="org/spongepowered/api/world/server/storage/package-summary.html">org.spongepowered.api.world.server.storage</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A builder to create <a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties.LoadOptions</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.CreateStep.html" class="type-name-link" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.CreateStep</a> - Interface in <a href="org/spongepowered/api/world/server/storage/package-summary.html">org.spongepowered.api.world.server.storage</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/server/storage/ServerWorldProperties.LoadOptions.Builder.GetStep.html" class="type-name-link" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.GetStep</a> - Interface in <a href="org/spongepowered/api/world/server/storage/package-summary.html">org.spongepowered.api.world.server.storage</a></dt>
@@ -43924,7 +43934,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/item/recipe/RecipeTypes.html#SMELTING" class="member-name-link">SMELTING</a> - Static variable in class org.spongepowered.api.item.recipe.<a href="org/spongepowered/api/item/recipe/RecipeTypes.html" title="class in org.spongepowered.api.item.recipe">RecipeTypes</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#SMELTS_LOOT" class="member-name-link">SMELTS_LOOT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#SMELTS_LOOT" class="member-name-link">SMELTS_LOOT</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/tag/BlockTypeTags.html#SMELTS_TO_GLASS" class="member-name-link">SMELTS_TO_GLASS</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/BlockTypeTags.html" title="class in org.spongepowered.api.tag">BlockTypeTags</a></dt>
 <dd>&nbsp;</dd>
@@ -46367,9 +46377,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the tags associated with this registry.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/Taggable.html#tags()" class="member-name-link">tags()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
+<dt><a href="org/spongepowered/api/tag/Taggable.html#tags(org.spongepowered.api.registry.DefaultedRegistryType)" class="member-name-link">tags(DefaultedRegistryType&lt;T&gt;)</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/Taggable.html" title="interface in org.spongepowered.api.tag">Taggable</a></dt>
 <dd>
-<div class="block">Gets all <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>tags</code></a> that have been associated with this object.</div>
+<div class="block">Gets all <a href="org/spongepowered/api/tag/Tag.html" title="interface in org.spongepowered.api.tag"><code>Tag</code></a>s that have been associated with this object in the given registry.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/type/VillagerTypes.html#TAIGA" class="member-name-link">TAIGA</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/VillagerTypes.html" title="class in org.spongepowered.api.data.type">VillagerTypes</a></dt>
 <dd>&nbsp;</dd>
@@ -47406,7 +47416,7 @@ loadScripts(document, 'script');</script>
 <div class="block">The tooltip that may be displayed by the client when hovering over this
  completion.</div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#TOOLTIP_ORDER" class="member-name-link">TOOLTIP_ORDER</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#TOOLTIP_ORDER" class="member-name-link">TOOLTIP_ORDER</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/generation/config/SurfaceRule.Factory.html#top()" class="member-name-link">top()</a> - Method in interface org.spongepowered.api.world.generation.config.<a href="org/spongepowered/api/world/generation/config/SurfaceRule.Factory.html" title="interface in org.spongepowered.api.world.generation.config">SurfaceRule.Factory</a></dt>
 <dd>
@@ -47592,7 +47602,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The <a href="org/spongepowered/api/item/merchant/TradeOffer.html" title="interface in org.spongepowered.api.item.merchant"><code>TradeOffer</code></a>s offered by a <a href="org/spongepowered/api/item/merchant/Merchant.html" title="interface in org.spongepowered.api.item.merchant"><code>Merchant</code></a> or a <a href="org/spongepowered/api/item/inventory/type/ViewableInventory.Custom.html" title="interface in org.spongepowered.api.item.inventory.type"><code>ViewableInventory.Custom</code></a></div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#TRADEABLE" class="member-name-link">TRADEABLE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#TRADEABLE" class="member-name-link">TRADEABLE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/statistic/Statistics.html#TRADED_WITH_VILLAGER" class="member-name-link">TRADED_WITH_VILLAGER</a> - Static variable in class org.spongepowered.api.statistic.<a href="org/spongepowered/api/statistic/Statistics.html" title="class in org.spongepowered.api.statistic">Statistics</a></dt>
 <dd>&nbsp;</dd>
@@ -48067,7 +48077,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block"><a href="org/spongepowered/api/data/Keys.html#TARGET_POSITION"><code>Keys.TARGET_POSITION</code></a></div>
 </dd>
-<dt><a href="org/spongepowered/api/tag/EnchantmenTypeTags.html#TREASURE" class="member-name-link">TREASURE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmenTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmenTypeTags</a></dt>
+<dt><a href="org/spongepowered/api/tag/EnchantmentTypeTags.html#TREASURE" class="member-name-link">TREASURE</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/EnchantmentTypeTags.html" title="class in org.spongepowered.api.tag">EnchantmentTypeTags</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/generation/structure/jigsaw/ProcessorLists.html#TREASURE_ROOMS" class="member-name-link">TREASURE_ROOMS</a> - Static variable in class org.spongepowered.api.world.generation.structure.jigsaw.<a href="org/spongepowered/api/world/generation/structure/jigsaw/ProcessorLists.html" title="class in org.spongepowered.api.world.generation.structure.jigsaw">ProcessorLists</a></dt>
 <dd>&nbsp;</dd>
@@ -48391,11 +48401,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/item/recipe/smithing/TrimMaterial.html" class="type-name-link" title="interface in org.spongepowered.api.item.recipe.smithing">TrimMaterial</a> - Interface in <a href="org/spongepowered/api/item/recipe/smithing/package-summary.html">org.spongepowered.api.item.recipe.smithing</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/recipe/smithing/TrimMaterials.html" class="type-name-link" title="class in org.spongepowered.api.item.recipe.smithing">TrimMaterials</a> - Class in <a href="org/spongepowered/api/item/recipe/smithing/package-summary.html">org.spongepowered.api.item.recipe.smithing</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/recipe/smithing/TrimPattern.html" class="type-name-link" title="interface in org.spongepowered.api.item.recipe.smithing">TrimPattern</a> - Interface in <a href="org/spongepowered/api/item/recipe/smithing/package-summary.html">org.spongepowered.api.item.recipe.smithing</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/recipe/smithing/TrimPatterns.html" class="type-name-link" title="class in org.spongepowered.api.item.recipe.smithing">TrimPatterns</a> - Class in <a href="org/spongepowered/api/item/recipe/smithing/package-summary.html">org.spongepowered.api.item.recipe.smithing</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/block/BlockTypes.html#TRIPWIRE" class="member-name-link">TRIPWIRE</a> - Static variable in class org.spongepowered.api.block.<a href="org/spongepowered/api/block/BlockTypes.html" title="class in org.spongepowered.api.block">BlockTypes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/block/BlockTypes.html#TRIPWIRE_HOOK" class="member-name-link">TRIPWIRE_HOOK</a> - Static variable in class org.spongepowered.api.block.<a href="org/spongepowered/api/block/BlockTypes.html" title="class in org.spongepowered.api.block">BlockTypes</a></dt>
@@ -49890,6 +49898,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
+</dd>
+<dt><a href="org/spongepowered/api/tag/DefaultedTag.html#values()" class="member-name-link">values()</a> - Method in interface org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a></dt>
+<dd>
+<div class="block">Returns the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of values tagged by this tag.</div>
 </dd>
 <dt><a href="org/spongepowered/api/util/Axis.html#values()" class="member-name-link">values()</a> - Static method in enum class org.spongepowered.api.util.<a href="org/spongepowered/api/util/Axis.html" title="enum class in org.spongepowered.api.util">Axis</a></dt>
 <dd>
@@ -52187,7 +52199,6 @@ the order they are declared.</div>
 <dt><a href="org/spongepowered/api/data/type/WolfSoundVariant.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">WolfSoundVariant</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/WolfSoundVariants.html" class="type-name-link" title="class in org.spongepowered.api.data.type">WolfSoundVariants</a> - Class in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/WolfVariant.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">WolfVariant</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/WolfVariants.html" class="type-name-link" title="class in org.spongepowered.api.data.type">WolfVariants</a> - Class in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>

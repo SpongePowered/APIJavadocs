@@ -101,6 +101,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ServerWorldProperties.LoadOptions.Builder</span><span class="extends-implements">
 extends <a href="../../../util/Builder.html" title="interface in org.spongepowered.api.util">Builder</a>&lt;<a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a>,<wbr><a href="ServerWorldProperties.LoadOptions.Builder.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder</a>&gt;</span></div>
+<div class="block">A builder to create <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties.LoadOptions</code></a>.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -138,13 +139,25 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorldProperties.LoadOptions.Builder.CreateStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.CreateStep</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#create(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">create</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Appends a create operation to this option
+ which will attempt to create a new world
+ with the given <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorldProperties.LoadOptions.Builder.GetStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.GetStep</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get()" class="member-name-link">get</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Appends a get operation to this option
+ which will attempt to find an already
+ loaded instance.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#load()" class="member-name-link">load</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Appends a load operation to this option
+ which will attempt to load an existing
+ world from the disk.</div>
+</div>
 </div>
 </div>
 </div>
@@ -169,18 +182,41 @@ extends <a href="../../../util/Builder.html" title="interface in org.spongepower
 <section class="detail" id="get()">
 <h3>get</h3>
 <div class="member-signature"><span class="return-type"><a href="ServerWorldProperties.LoadOptions.Builder.GetStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.GetStep</a></span>&nbsp;<span class="element-name">get</span>()</div>
+<div class="block">Appends a get operation to this option
+ which will attempt to find an already
+ loaded instance.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>This builder, for chaining</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="load()">
 <h3>load</h3>
 <div class="member-signature"><span class="return-type"><a href="ServerWorldProperties.LoadOptions.Builder.LoadStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.LoadStep</a></span>&nbsp;<span class="element-name">load</span>()</div>
+<div class="block">Appends a load operation to this option
+ which will attempt to load an existing
+ world from the disk.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>This builder, for chaining</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="create(org.spongepowered.api.world.server.WorldArchetype)">
 <h3>create</h3>
 <div class="member-signature"><span class="return-type"><a href="ServerWorldProperties.LoadOptions.Builder.CreateStep.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder.CreateStep</a></span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</span></div>
+<div class="block">Appends a create operation to this option
+ which will attempt to create a new world
+ with the given <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>worldArchetype</code> - The archetype to use for world creation</dd>
+<dt>Returns:</dt>
+<dd>This builder, for chaining</dd>
+</dl>
 </section>
 </li>
 </ul>
