@@ -88,7 +88,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="https://jd.advntr.dev/key/4.18.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
+<dd><code><a href="https://jd.advntr.dev/key/4.21.0/net/kyori/adventure/key/Keyed.html" title="class or interface in net.kyori.adventure.key" class="external-link">Keyed</a></code>, <code><a href="../ResourceKeyed.html" title="interface in org.spongepowered.api">ResourceKeyed</a></code></dd>
+</dl>
+<dl class="notes">
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a>&lt;T&gt;</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Tag&lt;T&gt;</span><span class="extends-implements">
@@ -136,17 +140,19 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a><wbr>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#asDefaultedTag(java.util.function.Supplier)" class="member-name-link">asDefaultedTag</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&gt;&nbsp;holder)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a><wbr>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#asScopedTag()" class="member-name-link">asScopedTag</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T&gt;&nbsp;<a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of</a><wbr>(<a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;T&gt;&nbsp;registryType,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.registry.RegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of</a><wbr>(<a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
  <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;T&gt;&nbsp;<a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.registry.RegistryType,org.spongepowered.api.ResourceKey)" class="member-name-link">of</a><wbr>(<a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
- <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a><wbr>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a><wbr>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registry()" class="member-name-link">registry</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry"><code>location</code></a> defining the parent registry.</div>
 </div>
 </div>
@@ -167,6 +173,13 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="of(org.spongepowered.api.registry.RegistryType,org.spongepowered.api.ResourceKey)">
+<h3>of</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;T&gt;</span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
+ <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="registry()">
 <h3>registry</h3>
 <div class="member-signature"><span class="return-type"><a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</span>&nbsp;<span class="element-name">registry</span>()</div>
@@ -178,17 +191,15 @@ extends <a href="../ResourceKeyed.html" title="interface in org.spongepowered.ap
 </section>
 </li>
 <li>
-<section class="detail" id="of(org.spongepowered.api.registry.DefaultedRegistryType,org.spongepowered.api.ResourceKey)">
-<h3>of</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;T&gt;</span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../registry/DefaultedRegistryType.html" title="interface in org.spongepowered.api.registry">DefaultedRegistryType</a>&lt;T&gt;&nbsp;registryType,
- <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
+<section class="detail" id="asDefaultedTag(java.util.function.Supplier)">
+<h3>asDefaultedTag</h3>
+<div class="member-signature"><span class="return-type"><a href="DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</span>&nbsp;<span class="element-name">asDefaultedTag</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&gt;&nbsp;holder)</span></div>
 </section>
 </li>
 <li>
-<section class="detail" id="of(org.spongepowered.api.registry.RegistryType,org.spongepowered.api.ResourceKey)">
-<h3>of</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type"><a href="Tag.html" title="interface in org.spongepowered.api.tag">Tag</a>&lt;T&gt;</span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
- <a href="../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key)</span></div>
+<section class="detail" id="asScopedTag()">
+<h3>asScopedTag</h3>
+<div class="member-signature"><span class="return-type"><a href="DefaultedTag.html" title="interface in org.spongepowered.api.tag">DefaultedTag</a>&lt;<a href="Tag.html" title="type parameter in Tag">T</a>&gt;</span>&nbsp;<span class="element-name">asScopedTag</span>()</div>
 </section>
 </li>
 </ul>

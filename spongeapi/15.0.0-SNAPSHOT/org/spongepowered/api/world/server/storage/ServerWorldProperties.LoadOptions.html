@@ -92,7 +92,18 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ServerWorldProperties.LoadOptions</span></div>
-<div class="block">Customize the load process of a <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>.</div>
+<div class="block">Customize the load process of a <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>.
+
+ <p>Each <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>load options</code></a> can define
+ multiple operations at once that will be exhausted
+ until one of them succeeds.</p>
+
+ <p>The operations will be consumed in the following order:</p>
+ <ul>
+     <li>Get</li>
+     <li>Load</li>
+     <li>Create</li>
+ </ul></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -107,7 +118,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="ServerWorldProperties.LoadOptions.Builder.html" class="type-name-link" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.Builder</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">A builder to create <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties.LoadOptions</code></a>.</div>
+</div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="ServerWorldProperties.LoadOptions.CreateOperation.html" class="type-name-link" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.CreateOperation</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -168,85 +181,42 @@ loadScripts(document, 'script');</script>
  instance but do not attempt load it from the disk
  or create it.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getLoadOrCreate(java.util.function.Consumer,java.util.function.Consumer,org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">getLoadOrCreate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;getCallback,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback,
- <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getLoadOrCreate(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">getLoadOrCreate</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getLoadOrCreate(org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">getLoadOrCreate</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ServerWorldProperties.LoadOptions.GetOperation.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.GetOperation</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOperation()" class="member-name-link">getOperation</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ServerWorldProperties.LoadOptions.GetOperation.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.GetOperation</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOperation()" class="member-name-link">getOperation</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="ServerWorldProperties.LoadOptions.GetOperation.html" title="interface in org.spongepowered.api.world.server.storage"><code>get operation</code></a> for this option.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getOrLoad()" class="member-name-link">getOrLoad</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getOrLoad()" class="member-name-link">getOrLoad</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>
  or attempt to load it from disk but do not create a new one.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getOrLoad(java.util.function.Consumer,java.util.function.Consumer)" class="member-name-link">getOrLoad</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;getCallback,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getOrLoad(java.util.function.Consumer,java.util.function.Consumer)" class="member-name-link">getOrLoad</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;getCallback,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a>
  or attempt to load it from disk but do not create a new one.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#load()" class="member-name-link">load</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- but do not attempt to use the already loaded instance
- or to create a new one.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#load(java.util.function.Consumer)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#load()" class="member-name-link">load</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
  but do not attempt to use the already loaded instance
  or to create a new one.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ServerWorldProperties.LoadOptions.LoadOperation.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.LoadOperation</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadOperation()" class="member-name-link">loadOperation</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#load(java.util.function.Consumer)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
+ but do not attempt to use the already loaded instance
+ or to create a new one.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="ServerWorldProperties.LoadOptions.LoadOperation.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions.LoadOperation</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#loadOperation()" class="member-name-link">loadOperation</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="ServerWorldProperties.LoadOptions.LoadOperation.html" title="interface in org.spongepowered.api.world.server.storage"><code>load operation</code></a> for this option.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#loadOrCreate(java.util.function.Consumer,org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">loadOrCreate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback,
- <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#loadOrCreate(org.spongepowered.api.world.server.WorldArchetype)" class="member-name-link">loadOrCreate</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#loadOrCreate(org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)" class="member-name-link">loadOrCreate</a><wbr>(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
 </div>
 </div>
 </div>
@@ -367,123 +337,6 @@ loadScripts(document, 'script');</script>
                     get operation for additional configuration.</dd>
 <dd><code>loadCallback</code> - The consumer to call after successful
                      load operation for additional configuration.</dd>
-<dt>Returns:</dt>
-<dd>The load options.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="loadOrCreate(org.spongepowered.api.world.server.WorldArchetype)">
-<h3>loadOrCreate</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></span>&nbsp;<span class="element-name">loadOrCreate</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</span></div>
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.
- Do not attempt to use the already loaded instance.
-
- <p>This operation fails if properties were already loaded.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>worldArchetype</code> - The archetype to use for creation.</dd>
-<dt>Returns:</dt>
-<dd>The load options.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="loadOrCreate(org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)">
-<h3>loadOrCreate</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></span>&nbsp;<span class="element-name">loadOrCreate</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</span></div>
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.
- Do not attempt to use the already loaded instance.
-
- <p>This operation fails if properties were already loaded.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>worldArchetype</code> - The archetype to use for creation.</dd>
-<dd><code>createCallback</code> - The consumer to call after successful
-                       creation for additional configuration.</dd>
-<dt>Returns:</dt>
-<dd>The load options.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="loadOrCreate(java.util.function.Consumer,org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)">
-<h3>loadOrCreate</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></span>&nbsp;<span class="element-name">loadOrCreate</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback,
- <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</span></div>
-<div class="block">Load a new <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> from disk
- or create a new one with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.
- Do not attempt to use the already loaded instance.
-
- <p>This operation fails if properties were already loaded.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>loadCallback</code> - The consumer to call after successful
-                     load operation for additional configuration.</dd>
-<dd><code>worldArchetype</code> - The archetype to use for creation.</dd>
-<dd><code>createCallback</code> - The consumer to call after successful
-                       creation for additional configuration.</dd>
-<dt>Returns:</dt>
-<dd>The load options.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getLoadOrCreate(org.spongepowered.api.world.server.WorldArchetype)">
-<h3>getLoadOrCreate</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></span>&nbsp;<span class="element-name">getLoadOrCreate</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype)</span></div>
-<div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk. If not found, create a new one
- with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>worldArchetype</code> - The archetype to use for creation.</dd>
-<dt>Returns:</dt>
-<dd>The load options.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getLoadOrCreate(org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)">
-<h3>getLoadOrCreate</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></span>&nbsp;<span class="element-name">getLoadOrCreate</span><wbr><span class="parameters">(<a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</span></div>
-<div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk. If not found, create a new one
- with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>worldArchetype</code> - The archetype to use for creation.</dd>
-<dd><code>createCallback</code> - The consumer to call after successful
-                       creation for additional configuration.</dd>
-<dt>Returns:</dt>
-<dd>The load options.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getLoadOrCreate(java.util.function.Consumer,java.util.function.Consumer,org.spongepowered.api.world.server.WorldArchetype,java.util.function.Consumer)">
-<h3>getLoadOrCreate</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="ServerWorldProperties.LoadOptions.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties.LoadOptions</a></span>&nbsp;<span class="element-name">getLoadOrCreate</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;getCallback,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;loadCallback,
- <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server">WorldArchetype</a>&nbsp;worldArchetype,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage">ServerWorldProperties</a>&gt;&nbsp;createCallback)</span></div>
-<div class="block">Get the already loaded <a href="ServerWorldProperties.html" title="interface in org.spongepowered.api.world.server.storage"><code>ServerWorldProperties</code></a> or
- attempt to load it from disk. If not found, create a new one
- with the provided <a href="../WorldArchetype.html" title="interface in org.spongepowered.api.world.server"><code>WorldArchetype</code></a>.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>getCallback</code> - The consumer to call after successful
-                    get operation for additional configuration.</dd>
-<dd><code>loadCallback</code> - The consumer to call after successful
-                     load operation for additional configuration.</dd>
-<dd><code>worldArchetype</code> - The archetype to use for creation.</dd>
-<dd><code>createCallback</code> - The consumer to call after successful
-                       creation for additional configuration.</dd>
 <dt>Returns:</dt>
 <dd>The load options.</dd>
 </dl>
