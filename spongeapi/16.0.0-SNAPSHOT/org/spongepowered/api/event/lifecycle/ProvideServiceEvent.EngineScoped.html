@@ -49,7 +49,7 @@ loadScripts(document, 'script');</script>
 <ul>
 <li>Field</li>
 <li>Constr</li>
-<li><a href="#method-detail">Method</a></li>
+<li>Method</li>
 </ul>
 </li>
 </ul>
@@ -67,7 +67,7 @@ loadScripts(document, 'script');</script>
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method-detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <div class="nav-list-search"><a href="../../../../../search.html">SEARCH</a>
@@ -83,24 +83,25 @@ loadScripts(document, 'script');</script>
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">org.spongepowered.api.event.lifecycle</a></div>
-<h1 title="Interface ProvideServiceEvent.EngineScoped" class="title">Interface ProvideServiceEvent.EngineScoped&lt;T&gt;</h1>
+<h1 title="Interface ProvideServiceEvent.EngineScoped" class="title">Interface ProvideServiceEvent.EngineScoped&lt;T,<wbr>E extends <a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a>&gt;</h1>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>Type Parameters:</dt>
 <dd><code>T</code> - The service to provide.</dd>
+<dd><code>E</code> - The target engine.</dd>
 </dl>
 <dl class="notes">
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;</code>, <code><a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a></code>, <code><a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a>&lt;T&gt;</code></dd>
+<dd><code><a href="../BiGenericEvent.html" title="interface in org.spongepowered.api.event">BiGenericEvent</a>&lt;T,<wbr>E&gt;</code>, <code><a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></code>, <code><a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;</code>, <code><a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a></code>, <code><a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a>&lt;T&gt;</code></dd>
 </dl>
 <dl class="notes">
 <dt>Enclosing interface:</dt>
 <dd><code><a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a>&lt;<a href="ProvideServiceEvent.html" title="type parameter in ProvideServiceEvent">T</a>&gt;</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ProvideServiceEvent.EngineScoped&lt;T&gt;</span><span class="extends-implements">
-extends <a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a>&lt;T&gt;</span></div>
+<div class="type-signature"><span class="modifiers">public static interface </span><span class="element-name type-name-label">ProvideServiceEvent.EngineScoped&lt;T,<wbr>E extends <a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a>&gt;</span><span class="extends-implements">
+extends <a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a>&lt;T&gt;, <a href="../BiGenericEvent.html" title="interface in org.spongepowered.api.event">BiGenericEvent</a>&lt;T,<wbr>E&gt;</span></div>
 <div class="block">Supplies a service that is scoped to the given <a href="../../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.
 
  <p>Engine scoped services have a lifetime of the attached Engine. If the
@@ -109,7 +110,7 @@ extends <a href="ProvideServiceEvent.html" title="interface in org.spongepowered
  <p>It is up to the provider to determine which engine a service is to be
  supplied for. Services that are engine scoped may not support all
  engines. Plugins can check to see what <a href="../../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> the service will
- be provided for via the <a href="#engine()"><code>engine()</code></a> method, and can choose to
+ be provided for via the <a href="ProvideServiceEvent.EngineScoped.html" title="interface in org.spongepowered.api.event.lifecycle"><code>ProvideServiceEvent.EngineScoped</code></a> type parameter, and can choose to
  forgo providing a service based on this information.</p></div>
 </section>
 <section class="summary">
@@ -120,28 +121,16 @@ extends <a href="ProvideServiceEvent.html" title="interface in org.spongepowered
 <h2>Nested Class Summary</h2>
 <div class="inherited-list">
 <h2 id="nested-classes-inherited-from-class-org.spongepowered.api.event.lifecycle.ProvideServiceEvent">Nested classes/interfaces inherited from interface&nbsp;org.spongepowered.api.event.lifecycle.<a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a></h2>
-<code><a href="ProvideServiceEvent.EngineScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;<a href="ProvideServiceEvent.EngineScoped.html" title="type parameter in ProvideServiceEvent.EngineScoped">T</a>&gt;, <a href="ProvideServiceEvent.GameScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.GameScoped</a>&lt;<a href="ProvideServiceEvent.GameScoped.html" title="type parameter in ProvideServiceEvent.GameScoped">T</a>&gt;</code></div>
+<code><a href="ProvideServiceEvent.EngineScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;<a href="ProvideServiceEvent.EngineScoped.html" title="type parameter in ProvideServiceEvent.EngineScoped">T</a>,<wbr><a href="ProvideServiceEvent.EngineScoped.html" title="type parameter in ProvideServiceEvent.EngineScoped">E</a> extends <a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a>&gt;, <a href="ProvideServiceEvent.GameScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.GameScoped</a>&lt;<a href="ProvideServiceEvent.GameScoped.html" title="type parameter in ProvideServiceEvent.GameScoped">T</a>&gt;</code></div>
 </section>
 </li>
 <!-- ========== METHOD SUMMARY =========== -->
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
-<div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
-<div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Method</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#engine()" class="member-name-link">engine</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the <a href="../../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> that is associated with this event.</div>
-</div>
-</div>
-</div>
-</div>
+<div class="inherited-list">
+<h3 id="methods-inherited-from-class-org.spongepowered.api.event.BiGenericEvent">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../BiGenericEvent.html" title="interface in org.spongepowered.api.event">BiGenericEvent</a></h3>
+<code><a href="../BiGenericEvent.html#paramTypes()">paramTypes</a>, <a href="../BiGenericEvent.html#secondaryParamType()">secondaryParamType</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.Event">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../Event.html" title="interface in org.spongepowered.api.event">Event</a></h3>
 <code><a href="../Event.html#cause()">cause</a>, <a href="../Event.html#context()">context</a>, <a href="../Event.html#source()">source</a></code></div>
@@ -154,29 +143,6 @@ extends <a href="ProvideServiceEvent.html" title="interface in org.spongepowered
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.lifecycle.ProvideServiceEvent">Methods inherited from interface&nbsp;org.spongepowered.api.event.lifecycle.<a href="ProvideServiceEvent.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent</a></h3>
 <code><a href="ProvideServiceEvent.html#suggest(java.util.function.Supplier)">suggest</a></code></div>
-</section>
-</li>
-</ul>
-</section>
-<section class="details">
-<ul class="details-list">
-<!-- ============ METHOD DETAIL ========== -->
-<li>
-<section class="method-details" id="method-detail">
-<h2>Method Details</h2>
-<ul class="member-list">
-<li>
-<section class="detail" id="engine()">
-<h3>engine</h3>
-<div class="member-signature"><span class="return-type"><a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a></span>&nbsp;<span class="element-name">engine</span>()</div>
-<div class="block">Gets the <a href="../../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a> that is associated with this event.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The engine.</dd>
-</dl>
-</section>
-</li>
-</ul>
 </section>
 </li>
 </ul>

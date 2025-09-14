@@ -129,88 +129,92 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="BiGenericEvent.html" title="interface in org.spongepowered.api.event">BiGenericEvent</a>&lt;T,<wbr>U&gt;</div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block"><a href="GenericEvent.html" title="interface in org.spongepowered.api.event"><code>GenericEvent</code></a> that requires two type parameters.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Cancellable.html" title="interface in org.spongepowered.api.event">Cancellable</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">Represents an event that can be cancelled.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="Cause.html" title="class in org.spongepowered.api.event">Cause</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">A cause represents the reason or initiator of an event.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="Cause.Builder.html" title="class in org.spongepowered.api.event">Cause.Builder</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Cause.Builder.html" title="class in org.spongepowered.api.event">Cause.Builder</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="CauseStackManager.html" title="interface in org.spongepowered.api.event">CauseStackManager</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Provides an interface into the system managing the cause and contextual
  information for events being thrown.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="CauseStackManager.StackFrame.html" title="interface in org.spongepowered.api.event">CauseStackManager.StackFrame</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="CompositeEvent.html" title="interface in org.spongepowered.api.event">CompositeEvent</a>&lt;E extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="CauseStackManager.StackFrame.html" title="interface in org.spongepowered.api.event">CauseStackManager.StackFrame</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="CompositeEvent.html" title="interface in org.spongepowered.api.event">CompositeEvent</a>&lt;E extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">A <a href="CompositeEvent.html" title="interface in org.spongepowered.api.event"><code>CompositeEvent</code></a> is an <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a> that contains multiple
  side effectual <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Events</code></a>, which may have their own side effects
  and may be <a href="Cancellable.html" title="interface in org.spongepowered.api.event"><code>Cancellable</code></a>.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Event.html" title="interface in org.spongepowered.api.event">Event</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Event.html" title="interface in org.spongepowered.api.event">Event</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">An event called within Sponge.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="EventContext.html" title="class in org.spongepowered.api.event">EventContext</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Provides context for an event outside of the direct chain of causes present
  in the event's <a href="Cause.html" title="class in org.spongepowered.api.event"><code>Cause</code></a>.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="EventContext.Builder.html" title="class in org.spongepowered.api.event">EventContext.Builder</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;</div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="EventContext.Builder.html" title="class in org.spongepowered.api.event">EventContext.Builder</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventContextKey.html" title="interface in org.spongepowered.api.event">EventContextKey</a>&lt;T&gt;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">A key for values in the <a href="EventContext.html" title="class in org.spongepowered.api.event"><code>EventContext</code></a>.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventContextKey.Builder.html" title="interface in org.spongepowered.api.event">EventContextKey.Builder</a>&lt;T&gt;</div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="EventContextKeys.html" title="class in org.spongepowered.api.event">EventContextKeys</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventContextKey.Builder.html" title="interface in org.spongepowered.api.event">EventContextKey.Builder</a>&lt;T&gt;</div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="EventContextKeys.html" title="class in org.spongepowered.api.event">EventContextKeys</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Standard keys for use within <a href="EventContext.html" title="class in org.spongepowered.api.event"><code>EventContext</code></a>s.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
-<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventListener.html" title="interface in org.spongepowered.api.event">EventListener</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">Represents a listener accepting <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s of a specified type.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event">EventListenerRegistration</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventListenerRegistration.html" title="interface in org.spongepowered.api.event">EventListenerRegistration</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Represents the composition of a <a href="EventListener.html" title="interface in org.spongepowered.api.event"><code>listener</code></a> and the attributes that define it
  to the system.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventListenerRegistration.Builder.html" title="interface in org.spongepowered.api.event">EventListenerRegistration.Builder</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventListenerRegistration.Factory.html" title="interface in org.spongepowered.api.event">EventListenerRegistration.Factory</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventListenerRegistration.Builder.html" title="interface in org.spongepowered.api.event">EventListenerRegistration.Builder</a>&lt;T extends <a href="Event.html" title="interface in org.spongepowered.api.event">Event</a>&gt;</div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="EventListenerRegistration.Factory.html" title="interface in org.spongepowered.api.event">EventListenerRegistration.Factory</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="EventManager.html" title="interface in org.spongepowered.api.event">EventManager</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">Manages the registration of event listeners and the dispatching of events.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;</div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a>&lt;T&gt;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">All <a href="Event.html" title="interface in org.spongepowered.api.event"><code>Event</code></a>s that require a generic type should implement this
  interface.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab6"><a href="Listener.html" title="annotation interface in org.spongepowered.api.event">Listener</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab6">
+<div class="col-first odd-row-color class-summary class-summary-tab6"><a href="Listener.html" title="annotation interface in org.spongepowered.api.event">Listener</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab6">
 <div class="block">Used to annotate a method as an <a href="EventListener.html" title="interface in org.spongepowered.api.event"><code>EventListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="Order.html" title="enum class in org.spongepowered.api.event">Order</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab3">
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="Order.html" title="enum class in org.spongepowered.api.event">Order</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
 <div class="block">Order that <a href="Listener.html" title="annotation interface in org.spongepowered.api.event"><code>Listener</code></a>d methods may be registered at.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="TristateResult.html" title="interface in org.spongepowered.api.event">TristateResult</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="TristateResult.html" title="interface in org.spongepowered.api.event">TristateResult</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Used for events that require a tri-state <a href="TristateResult.Result.html" title="enum class in org.spongepowered.api.event"><code>TristateResult.Result</code></a>.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab3"><a href="TristateResult.Result.html" title="enum class in org.spongepowered.api.event">TristateResult.Result</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab3">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="TristateResult.Result.html" title="enum class in org.spongepowered.api.event">TristateResult.Result</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab3">&nbsp;</div>
 </div>
 </div>
 </div>

@@ -96,7 +96,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="ProvideServiceEvent.EngineScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;T&gt;</code>, <code><a href="ProvideServiceEvent.GameScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.GameScoped</a>&lt;T&gt;</code></dd>
+<dd><code><a href="ProvideServiceEvent.EngineScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;T,<wbr>E&gt;</code>, <code><a href="ProvideServiceEvent.GameScoped.html" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.GameScoped</a>&lt;T&gt;</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ProvideServiceEvent&lt;T&gt;</span><span class="extends-implements">
@@ -128,7 +128,7 @@ extends <a href="../GenericEvent.html" title="interface in org.spongepowered.api
 <div class="table-header col-second">Interface</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="ProvideServiceEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;<a href="ProvideServiceEvent.EngineScoped.html" title="type parameter in ProvideServiceEvent.EngineScoped">T</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="ProvideServiceEvent.EngineScoped.html" class="type-name-link" title="interface in org.spongepowered.api.event.lifecycle">ProvideServiceEvent.EngineScoped</a>&lt;<a href="ProvideServiceEvent.EngineScoped.html" title="type parameter in ProvideServiceEvent.EngineScoped">T</a>,<wbr><a href="ProvideServiceEvent.EngineScoped.html" title="type parameter in ProvideServiceEvent.EngineScoped">E</a> extends <a href="../../Engine.html" title="interface in org.spongepowered.api">Engine</a>&gt;</code></div>
 <div class="col-last even-row-color">
 <div class="block">Supplies a service that is scoped to the given <a href="../../Engine.html" title="interface in org.spongepowered.api"><code>Engine</code></a>.</div>
 </div>
@@ -162,7 +162,7 @@ extends <a href="../GenericEvent.html" title="interface in org.spongepowered.api
 <code><a href="../Event.html#cause()">cause</a>, <a href="../Event.html#context()">context</a>, <a href="../Event.html#source()">source</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.GenericEvent">Methods inherited from interface&nbsp;org.spongepowered.api.event.<a href="../GenericEvent.html" title="interface in org.spongepowered.api.event">GenericEvent</a></h3>
-<code><a href="../GenericEvent.html#paramType()">paramType</a></code></div>
+<code><a href="../GenericEvent.html#paramType()">paramType</a>, <a href="../GenericEvent.html#paramTypes()">paramTypes</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.spongepowered.api.event.lifecycle.LifecycleEvent">Methods inherited from interface&nbsp;org.spongepowered.api.event.lifecycle.<a href="LifecycleEvent.html" title="interface in org.spongepowered.api.event.lifecycle">LifecycleEvent</a></h3>
 <code><a href="LifecycleEvent.html#game()">game</a></code></div>
