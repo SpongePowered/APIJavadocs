@@ -1867,6 +1867,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/item/merchant/TradeOfferGenerator.html#apply(org.spongepowered.api.entity.Entity,org.spongepowered.api.util.RandomProvider.Source)" class="member-name-link">apply(Entity, RandomProvider.Source)</a> - Method in interface org.spongepowered.api.item.merchant.<a href="org/spongepowered/api/item/merchant/TradeOfferGenerator.html" title="interface in org.spongepowered.api.item.merchant">TradeOfferGenerator</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#apply(org.spongepowered.api.entity.living.Living)" class="member-name-link">apply(Living)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>
+<div class="block">Applies this effect with <a href="org/spongepowered/api/item/inventory/ItemStack.html#empty()"><code>ItemStack.empty()</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#apply(org.spongepowered.api.entity.living.Living,org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">apply(Living, ItemStackLike)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>
+<div class="block">Tries to apply this effect and returns whether it was successfully applied.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/Archetype.html#apply(org.spongepowered.api.world.server.ServerLocation)" class="member-name-link">apply(ServerLocation)</a> - Method in interface org.spongepowered.api.world.<a href="org/spongepowered/api/world/Archetype.html" title="interface in org.spongepowered.api.world">Archetype</a></dt>
 <dd>
 <div class="block">Creates a new instance based on this archetype at the given location.</div>
@@ -1874,6 +1882,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeStream.html#apply(org.spongepowered.api.world.volume.stream.VolumeCollector)" class="member-name-link">apply(VolumeCollector&lt;W, T, ?&gt;)</a> - Method in interface org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeStream.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeStream</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumePositionTranslator.html#apply(org.spongepowered.api.world.volume.stream.VolumeElement)" class="member-name-link">apply(VolumeElement&lt;V, T&gt;)</a> - Method in interface org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumePositionTranslator.html" title="interface in org.spongepowered.api.world.volume.stream">VolumePositionTranslator</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html#APPLY_EFFECTS" class="member-name-link">APPLY_EFFECTS</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemActionTypes.html" title="class in org.spongepowered.api.data.type">ItemActionTypes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeApplicators.html#applyBiomes()" class="member-name-link">applyBiomes()</a> - Static method in class org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeApplicators.html" title="class in org.spongepowered.api.world.volume.stream">VolumeApplicators</a></dt>
 <dd>
@@ -1917,6 +1927,16 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeCollectors.html#applyBlocksToWorld(W)" class="member-name-link">applyBlocksToWorld(W)</a> - Static method in class org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeCollectors.html" title="class in org.spongepowered.api.world.volume.stream">VolumeCollectors</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeCollectors.html#applyBlocksToWorld(W,org.spongepowered.api.world.BlockChangeFlag)" class="member-name-link">applyBlocksToWorld(W, BlockChangeFlag)</a> - Static method in class org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeCollectors.html" title="class in org.spongepowered.api.world.volume.stream">VolumeCollectors</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#applyEffects(double,java.util.Collection)" class="member-name-link">applyEffects(double, Collection&lt;PotionEffect&gt;)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html#applyEffects(double,java.util.List)" class="member-name-link">applyEffects(double, List&lt;PotionEffect&gt;)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.Factory.html" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#applyEffects(double,org.spongepowered.api.effect.potion.PotionEffect...)" class="member-name-link">applyEffects(double, PotionEffect...)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#applyEffects(java.util.Collection)" class="member-name-link">applyEffects(Collection&lt;PotionEffect&gt;)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#applyEffects(org.spongepowered.api.effect.potion.PotionEffect...)" class="member-name-link">applyEffects(PotionEffect...)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeApplicators.html#applyEntities()" class="member-name-link">applyEntities()</a> - Static method in class org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeApplicators.html" title="class in org.spongepowered.api.world.volume.stream">VolumeApplicators</a></dt>
 <dd>
@@ -8390,6 +8410,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Represents the challenge completion advancement type.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.ApplyEffects.html#chance()" class="member-name-link">chance()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.ApplyEffects.html" title="interface in org.spongepowered.api.data.type">ItemAction.ApplyEffects</a></dt>
+<dd>
+<div class="block">Returns the probability for effects to be applied.</div>
+</dd>
 <dt><a href="org/spongepowered/api/entity/ai/goal/builtin/creature/target/FindNearestAttackableTargetGoal.html#chance()" class="member-name-link">chance()</a> - Method in interface org.spongepowered.api.entity.ai.goal.builtin.creature.target.<a href="org/spongepowered/api/entity/ai/goal/builtin/creature/target/FindNearestAttackableTargetGoal.html" title="interface in org.spongepowered.api.entity.ai.goal.builtin.creature.target">FindNearestAttackableTargetGoal</a></dt>
 <dd>
 <div class="block">Gets the chance that this task will go through and attempt to find a
@@ -9324,6 +9348,12 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/util/weighted/WeightedTable.html#clear()" class="member-name-link">clear()</a> - Method in class org.spongepowered.api.util.weighted.<a href="org/spongepowered/api/util/weighted/WeightedTable.html" title="class in org.spongepowered.api.util.weighted">WeightedTable</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/weather/WeatherTypes.html#CLEAR" class="member-name-link">CLEAR</a> - Static variable in class org.spongepowered.api.world.weather.<a href="org/spongepowered/api/world/weather/WeatherTypes.html" title="class in org.spongepowered.api.world.weather">WeatherTypes</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html#CLEAR_ALL_EFFECTS" class="member-name-link">CLEAR_ALL_EFFECTS</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemActionTypes.html" title="class in org.spongepowered.api.data.type">ItemActionTypes</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#clearEffects()" class="member-name-link">clearEffects()</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html#clearEffects()" class="member-name-link">clearEffects()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.Factory.html" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/service/permission/SubjectData.html#clearFallbackPermissionValues()" class="member-name-link">clearFallbackPermissionValues()</a> - Method in interface org.spongepowered.api.service.permission.<a href="org/spongepowered/api/service/permission/SubjectData.html" title="interface in org.spongepowered.api.service.permission">SubjectData</a></dt>
 <dd>
@@ -10751,6 +10781,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeConsumer.html#consume(V,T,int,int,int)" class="member-name-link">consume(V, T, int, int, int)</a> - Method in interface org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeConsumer.html" title="interface in org.spongepowered.api.world.volume.stream">VolumeConsumer</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#CONSUME_ACTIONS" class="member-name-link">CONSUME_ACTIONS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">The <a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type"><code>ItemAction</code></a>s an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> will apply when consumed.</div>
+</dd>
 <dt><a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html#CONSUME_ITEM" class="member-name-link">CONSUME_ITEM</a> - Static variable in class org.spongepowered.api.advancement.criteria.trigger.<a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html" title="class in org.spongepowered.api.advancement.criteria.trigger">Triggers</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/command/parameter/managed/standard/VariableValueParameters.TextBuilder.html#consumeAllArguments(boolean)" class="member-name-link">consumeAllArguments(boolean)</a> - Method in interface org.spongepowered.api.command.parameter.managed.standard.<a href="org/spongepowered/api/command/parameter/managed/standard/VariableValueParameters.TextBuilder.html" title="interface in org.spongepowered.api.command.parameter.managed.standard">VariableValueParameters.TextBuilder</a></dt>
@@ -13758,6 +13792,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Represents a <a href="org/spongepowered/api/scoreboard/criteria/Criterion.html" title="interface in org.spongepowered.api.scoreboard.criteria"><code>Criterion</code></a> which causes an <a href="org/spongepowered/api/scoreboard/objective/Objective.html" title="interface in org.spongepowered.api.scoreboard.objective"><code>Objective</code></a>
  to have a score for a player incremented when they die.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#DEATH_PROTECTION_ACTIONS" class="member-name-link">DEATH_PROTECTION_ACTIONS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">The <a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type"><code>ItemAction</code></a>s an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> will apply on death.</div>
+</dd>
 <dt><a href="org/spongepowered/api/scoreboard/Team.html#deathMessageVisibility()" class="member-name-link">deathMessageVisibility()</a> - Method in interface org.spongepowered.api.scoreboard.<a href="org/spongepowered/api/scoreboard/Team.html" title="interface in org.spongepowered.api.scoreboard">Team</a></dt>
 <dd>
 <div class="block">Gets the <a href="org/spongepowered/api/scoreboard/Visibility.html" title="interface in org.spongepowered.api.scoreboard"><code>Visibility</code></a> which controls who death Texts
@@ -14790,6 +14828,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the <a href="org/spongepowered/api/entity/display/ItemDisplayType.html" title="interface in org.spongepowered.api.entity.display"><code>display type</code></a>.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.TeleportRandomly.html#distance()" class="member-name-link">distance()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.TeleportRandomly.html" title="interface in org.spongepowered.api.data.type">ItemAction.TeleportRandomly</a></dt>
+<dd>
+<div class="block">Returns the maximum distance entity can be teleported.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/volume/EntityHit.html#distance()" class="member-name-link">distance()</a> - Method in class org.spongepowered.api.world.volume.<a href="org/spongepowered/api/world/volume/EntityHit.html" title="class in org.spongepowered.api.world.volume">EntityHit</a></dt>
 <dd>
 <div class="block">Gets the distance from the start to the intersection.</div>
@@ -15433,6 +15475,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block"><a href="org/spongepowered/api/data/Keys.html#IS_EFFECT_ONLY"><code>Keys.IS_EFFECT_ONLY</code></a></div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.ApplyEffects.html#effects()" class="member-name-link">effects()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.ApplyEffects.html" title="interface in org.spongepowered.api.data.type">ItemAction.ApplyEffects</a></dt>
+<dd>
+<div class="block">Returns <a href="org/spongepowered/api/effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a>s that will be applied.</div>
+</dd>
 <dt><a href="org/spongepowered/api/entity/AreaEffectCloud.html#effects()" class="member-name-link">effects()</a> - Method in interface org.spongepowered.api.entity.<a href="org/spongepowered/api/entity/AreaEffectCloud.html" title="interface in org.spongepowered.api.entity">AreaEffectCloud</a></dt>
 <dd>
 <div class="block"><a href="org/spongepowered/api/data/Keys.html#POTION_EFFECTS"><code>Keys.POTION_EFFECTS</code></a></div>
@@ -15449,6 +15495,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html#EFFECTS_CHANGED" class="member-name-link">EFFECTS_CHANGED</a> - Static variable in class org.spongepowered.api.advancement.criteria.trigger.<a href="org/spongepowered/api/advancement/criteria/trigger/Triggers.html" title="class in org.spongepowered.api.advancement.criteria.trigger">Triggers</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.RemoveEffects.html#effectTypes()" class="member-name-link">effectTypes()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.RemoveEffects.html" title="interface in org.spongepowered.api.data.type">ItemAction.RemoveEffects</a></dt>
+<dd>
+<div class="block">Returns <a href="org/spongepowered/api/effect/potion/PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>s that will be removed.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#EFFICIENCY" class="member-name-link">EFFICIENCY</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
 <div class="block">The efficiency of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> tool.</div>
@@ -25932,6 +25982,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/entity/EntityTypes.html#ITEM" class="member-name-link">ITEM</a> - Static variable in class org.spongepowered.api.entity.<a href="org/spongepowered/api/entity/EntityTypes.html" title="class in org.spongepowered.api.entity">EntityTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/registry/RegistryTypes.html#ITEM_ACTION_TYPE" class="member-name-link">ITEM_ACTION_TYPE</a> - Static variable in class org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryTypes.html" title="class in org.spongepowered.api.registry">RegistryTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/effect/sound/SoundTypes.html#ITEM_ARMOR_EQUIP_CHAIN" class="member-name-link">ITEM_ARMOR_EQUIP_CHAIN</a> - Static variable in class org.spongepowered.api.effect.sound.<a href="org/spongepowered/api/effect/sound/SoundTypes.html" title="class in org.spongepowered.api.effect.sound">SoundTypes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/effect/sound/SoundTypes.html#ITEM_ARMOR_EQUIP_DIAMOND" class="member-name-link">ITEM_ARMOR_EQUIP_DIAMOND</a> - Static variable in class org.spongepowered.api.effect.sound.<a href="org/spongepowered/api/effect/sound/SoundTypes.html" title="class in org.spongepowered.api.effect.sound">SoundTypes</a></dt>
@@ -26201,6 +26253,37 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/effect/sound/SoundTypes.html#ITEM_WOLF_ARMOR_REPAIR" class="member-name-link">ITEM_WOLF_ARMOR_REPAIR</a> - Static variable in class org.spongepowered.api.effect.sound.<a href="org/spongepowered/api/effect/sound/SoundTypes.html" title="class in org.spongepowered.api.effect.sound">SoundTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Represents an action an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> can apply to <a href="org/spongepowered/api/entity/living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> in different circumstances.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.ApplyEffects.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction.ApplyEffects</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Applies <a href="org/spongepowered/api/effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a>s with chance.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.ClearEffects.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction.ClearEffects</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Clears all <a href="org/spongepowered/api/effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a>s.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.PlaySound.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction.PlaySound</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Plays <a href="org/spongepowered/api/effect/sound/SoundType.html" title="interface in org.spongepowered.api.effect.sound"><code>SoundType</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.RemoveEffects.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction.RemoveEffects</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Removes <a href="org/spongepowered/api/effect/potion/PotionEffect.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffect</code></a>s with matching <a href="org/spongepowered/api/effect/potion/PotionEffectType.html" title="interface in org.spongepowered.api.effect.potion"><code>PotionEffectType</code></a>s.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.TeleportRandomly.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemAction.TeleportRandomly</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Teleports randomly within maximum distance.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionType.html" class="type-name-link" title="interface in org.spongepowered.api.data.type">ItemActionType</a> - Interface in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
+<dd>
+<div class="block">Represents a possible type of <a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type"><code>ItemAction</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html" class="type-name-link" title="class in org.spongepowered.api.data.type">ItemActionTypes</a> - Class in <a href="org/spongepowered/api/data/type/package-summary.html">org.spongepowered.api.data.type</a></dt>
 <dt><a href="org/spongepowered/api/entity/display/ItemDisplay.html" class="type-name-link" title="interface in org.spongepowered.api.entity.display">ItemDisplay</a> - Interface in <a href="org/spongepowered/api/entity/display/package-summary.html">org.spongepowered.api.entity.display</a></dt>
 <dd>
 <div class="block">A ItemDisplay is an entity that displays a single item in the world.</div>
@@ -35269,6 +35352,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/statistic/Statistics.html#PLAY_RECORD" class="member-name-link">PLAY_RECORD</a> - Static variable in class org.spongepowered.api.statistic.<a href="org/spongepowered/api/statistic/Statistics.html" title="class in org.spongepowered.api.statistic">Statistics</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html#PLAY_SOUND" class="member-name-link">PLAY_SOUND</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemActionTypes.html" title="class in org.spongepowered.api.data.type">ItemActionTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/statistic/Statistics.html#PLAY_TIME" class="member-name-link">PLAY_TIME</a> - Static variable in class org.spongepowered.api.statistic.<a href="org/spongepowered/api/statistic/Statistics.html" title="class in org.spongepowered.api.statistic">Statistics</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/Client.html#player()" class="member-name-link">player()</a> - Method in interface org.spongepowered.api.<a href="org/spongepowered/api/Client.html" title="interface in org.spongepowered.api">Client</a></dt>
@@ -35510,10 +35595,16 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/tag/BiomeTags.html#PLAYS_UNDERWATER_MUSIC" class="member-name-link">PLAYS_UNDERWATER_MUSIC</a> - Static variable in class org.spongepowered.api.tag.<a href="org/spongepowered/api/tag/BiomeTags.html" title="class in org.spongepowered.api.tag">BiomeTags</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#playSound(java.util.function.Supplier)" class="member-name-link">playSound(Supplier&lt;SoundType&gt;)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/effect/Viewer.html#playSound(net.kyori.adventure.sound.Sound,org.spongepowered.math.vector.Vector3d)" class="member-name-link">playSound(Sound, Vector3d)</a> - Method in interface org.spongepowered.api.effect.<a href="org/spongepowered/api/effect/Viewer.html" title="interface in org.spongepowered.api.effect">Viewer</a></dt>
 <dd>
 <div class="block">Plays the given <a href="https://jd.advntr.dev/api/4.21.0/net/kyori/adventure/sound/Sound.html" title="class or interface in net.kyori.adventure.sound" class="external-link"><code>Sound</code></a> at the given position.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html#playSound(org.spongepowered.api.effect.sound.SoundType)" class="member-name-link">playSound(SoundType)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.Factory.html" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#playSound(org.spongepowered.api.effect.sound.SoundType)" class="member-name-link">playSound(SoundType)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/sound/PlaySoundEvent.html" class="type-name-link" title="interface in org.spongepowered.api.event.sound">PlaySoundEvent</a> - Interface in <a href="org/spongepowered/api/event/sound/package-summary.html">org.spongepowered.api.event.sound</a></dt>
 <dd>
 <div class="block">An umbrella event that fires when in-game sounds, such as
@@ -35542,6 +35633,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/event/sound/PlaySoundEvent.NoteBlock.html" class="type-name-link" title="interface in org.spongepowered.api.event.sound">PlaySoundEvent.NoteBlock</a> - Interface in <a href="org/spongepowered/api/event/sound/package-summary.html">org.spongepowered.api.event.sound</a></dt>
 <dd>
 <div class="block">Fired when a noteblock is triggered</div>
+</dd>
+<dt><a href="org/spongepowered/api/effect/Viewer.html#playTotemOfUndyingEffect(org.spongepowered.api.item.inventory.ItemStackLike)" class="member-name-link">playTotemOfUndyingEffect(ItemStackLike)</a> - Method in interface org.spongepowered.api.effect.<a href="org/spongepowered/api/effect/Viewer.html" title="interface in org.spongepowered.api.effect">Viewer</a></dt>
+<dd>
+<div class="block">Plays the totem of undying effect with the texture of the given item.</div>
 </dd>
 <dt><a href="org/spongepowered/api/item/ItemTypes.html#PLENTY_POTTERY_SHERD" class="member-name-link">PLENTY_POTTERY_SHERD</a> - Static variable in class org.spongepowered.api.item.<a href="org/spongepowered/api/item/ItemTypes.html" title="class in org.spongepowered.api.item">ItemTypes</a></dt>
 <dd>&nbsp;</dd>
@@ -38587,6 +38682,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/InstrumentTypes.html#registry()" class="member-name-link">registry()</a> - Static method in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/InstrumentTypes.html" title="class in org.spongepowered.api.data.type">InstrumentTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html#registry()" class="member-name-link">registry()</a> - Static method in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemActionTypes.html" title="class in org.spongepowered.api.data.type">ItemActionTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/ItemTiers.html#registry()" class="member-name-link">registry()</a> - Static method in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemTiers.html" title="class in org.spongepowered.api.data.type">ItemTiers</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/JigsawBlockOrientations.html#registry()" class="member-name-link">registry()</a> - Static method in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/JigsawBlockOrientations.html" title="class in org.spongepowered.api.data.type">JigsawBlockOrientations</a></dt>
@@ -39225,6 +39322,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Attempts to remove the data associated with the provided <a href="org/spongepowered/api/data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a> from
  the block at the provided location.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html#REMOVE_EFFECTS" class="member-name-link">REMOVE_EFFECTS</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemActionTypes.html" title="class in org.spongepowered.api.data.type">ItemActionTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/value/CollectionValue.Mutable.html#removeAll(java.lang.Iterable)" class="member-name-link">removeAll(Iterable&lt;E&gt;)</a> - Method in interface org.spongepowered.api.data.value.<a href="org/spongepowered/api/data/value/CollectionValue.Mutable.html" title="interface in org.spongepowered.api.data.value">CollectionValue.Mutable</a></dt>
 <dd>
 <div class="block">Removes all elements from the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link"><code>Iterable</code></a> from the backed
@@ -39311,6 +39410,18 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes the given context key from the current context.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#removeEffects(java.util.Collection)" class="member-name-link">removeEffects(Collection&lt;PotionEffectType&gt;)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#removeEffects(java.util.function.Supplier...)" class="member-name-link">removeEffects(Supplier&lt;PotionEffectType&gt;...)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html#removeEffects(java.util.Set)" class="member-name-link">removeEffects(Set&lt;PotionEffectType&gt;)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.Factory.html" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#removeEffects(org.spongepowered.api.effect.potion.PotionEffectType...)" class="member-name-link">removeEffects(PotionEffectType...)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html#removeEffects(org.spongepowered.api.tag.Tag)" class="member-name-link">removeEffects(Tag&lt;PotionEffectType&gt;)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.Factory.html" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#removeEffects(org.spongepowered.api.tag.Tag)" class="member-name-link">removeEffects(Tag&lt;PotionEffectType&gt;)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/entity/living/player/tab/TabList.html#removeEntry(java.util.UUID)" class="member-name-link">removeEntry(UUID)</a> - Method in interface org.spongepowered.api.entity.living.player.tab.<a href="org/spongepowered/api/entity/living/player/tab/TabList.html" title="interface in org.spongepowered.api.entity.living.player.tab">TabList</a></dt>
 <dd>
 <div class="block">Removes an entry from the list.</div>
@@ -44221,6 +44332,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the <a href="https://jd.advntr.dev/api/4.21.0/net/kyori/adventure/sound/Sound.Source.html" title="class or interface in net.kyori.adventure.sound" class="external-link"><code>Sound.Source</code></a> for the sound being played.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.PlaySound.html#soundType()" class="member-name-link">soundType()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.PlaySound.html" title="interface in org.spongepowered.api.data.type">ItemAction.PlaySound</a></dt>
+<dd>
+<div class="block">Returns the <a href="org/spongepowered/api/effect/sound/SoundType.html" title="interface in org.spongepowered.api.effect.sound"><code>SoundType</code></a> to be played.</div>
+</dd>
 <dt><a href="org/spongepowered/api/event/sound/PlaySoundEvent.html#soundType()" class="member-name-link">soundType()</a> - Method in interface org.spongepowered.api.event.sound.<a href="org/spongepowered/api/event/sound/PlaySoundEvent.html" title="interface in org.spongepowered.api.event.sound">PlaySoundEvent</a></dt>
 <dd>
 <div class="block">Gets the <a href="org/spongepowered/api/effect/sound/SoundType.html" title="interface in org.spongepowered.api.effect.sound"><code>SoundType</code></a> for the sound being played.</div>
@@ -46703,6 +46818,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/registry/RegistryTypes.html#TELEPORT_HELPER_FILTER" class="member-name-link">TELEPORT_HELPER_FILTER</a> - Static variable in class org.spongepowered.api.registry.<a href="org/spongepowered/api/registry/RegistryTypes.html" title="class in org.spongepowered.api.registry">RegistryTypes</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemActionTypes.html#TELEPORT_RANDOMLY" class="member-name-link">TELEPORT_RANDOMLY</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemActionTypes.html" title="class in org.spongepowered.api.data.type">ItemActionTypes</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/entity/display/DisplayEntity.html#teleportDuration()" class="member-name-link">teleportDuration()</a> - Method in interface org.spongepowered.api.entity.display.<a href="org/spongepowered/api/entity/display/DisplayEntity.html" title="interface in org.spongepowered.api.entity.display">DisplayEntity</a></dt>
 <dd>
 <div class="block">Returns the duration of the teleportation</div>
@@ -46722,6 +46839,10 @@ loadScripts(document, 'script');</script>
  location is a suitable candidate for teleporting to safely.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/teleport/TeleportHelperFilters.html" class="type-name-link" title="class in org.spongepowered.api.world.teleport">TeleportHelperFilters</a> - Class in <a href="org/spongepowered/api/world/teleport/package-summary.html">org.spongepowered.api.world.teleport</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.Factory.html#teleportRandomly(double)" class="member-name-link">teleportRandomly(double)</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.Factory.html" title="interface in org.spongepowered.api.data.type">ItemAction.Factory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#teleportRandomly(double)" class="member-name-link">teleportRandomly(double)</a> - Static method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/type/ChickenVariants.html#TEMPERATE" class="member-name-link">TEMPERATE</a> - Static variable in class org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ChickenVariants.html" title="class in org.spongepowered.api.data.type">ChickenVariants</a></dt>
 <dd>&nbsp;</dd>
@@ -48573,6 +48694,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/data/DataTransactionResult.html#type()" class="member-name-link">type()</a> - Method in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/DataTransactionResult.html" title="class in org.spongepowered.api.data">DataTransactionResult</a></dt>
 <dd>
 <div class="block">Gets the type of result.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/type/ItemAction.html#type()" class="member-name-link">type()</a> - Method in interface org.spongepowered.api.data.type.<a href="org/spongepowered/api/data/type/ItemAction.html" title="interface in org.spongepowered.api.data.type">ItemAction</a></dt>
+<dd>
+<div class="block">Returns the type of this effect.</div>
 </dd>
 <dt><a href="org/spongepowered/api/effect/particle/ParticleEffect.html#type()" class="member-name-link">type()</a> - Method in interface org.spongepowered.api.effect.particle.<a href="org/spongepowered/api/effect/particle/ParticleEffect.html" title="interface in org.spongepowered.api.effect.particle">ParticleEffect</a></dt>
 <dd>
