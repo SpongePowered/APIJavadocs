@@ -138,6 +138,20 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Creates a new <a href="AttributeModifier.Builder.html" title="interface in org.spongepowered.api.entity.attribute"><code>AttributeModifier.Builder</code></a> to create an <a href="AttributeModifier.html" title="interface in org.spongepowered.api.entity.attribute"><code>AttributeModifier</code></a>.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="AttributeModifier.html" title="interface in org.spongepowered.api.entity.attribute">AttributeModifier</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.ResourceKey,java.util.function.Supplier,double)" class="member-name-link">of</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="AttributeOperation.html" title="interface in org.spongepowered.api.entity.attribute">AttributeOperation</a>&gt;&nbsp;operation,
+ double&nbsp;amount)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates an attribute modifier with the given values.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="AttributeModifier.html" title="interface in org.spongepowered.api.entity.attribute">AttributeModifier</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.spongepowered.api.ResourceKey,org.spongepowered.api.entity.attribute.AttributeOperation,double)" class="member-name-link">of</a><wbr>(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="AttributeOperation.html" title="interface in org.spongepowered.api.entity.attribute">AttributeOperation</a>&nbsp;operation,
+ double&nbsp;amount)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates an attribute modifier with the given values.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AttributeOperation.html" title="interface in org.spongepowered.api.entity.attribute">AttributeOperation</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#operation()" class="member-name-link">operation</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -160,6 +174,40 @@ extends <a href="../../ResourceKeyed.html" title="interface in org.spongepowered
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="of(org.spongepowered.api.ResourceKey,java.util.function.Supplier,double)">
+<h3>of</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="AttributeModifier.html" title="interface in org.spongepowered.api.entity.attribute">AttributeModifier</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;? extends <a href="AttributeOperation.html" title="interface in org.spongepowered.api.entity.attribute">AttributeOperation</a>&gt;&nbsp;operation,
+ double&nbsp;amount)</span></div>
+<div class="block">Creates an attribute modifier with the given values.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The resource key</dd>
+<dd><code>operation</code> - The attribute operation</dd>
+<dd><code>amount</code> - The amount</dd>
+<dt>Returns:</dt>
+<dd>The attribute modifier</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="of(org.spongepowered.api.ResourceKey,org.spongepowered.api.entity.attribute.AttributeOperation,double)">
+<h3>of</h3>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="AttributeModifier.html" title="interface in org.spongepowered.api.entity.attribute">AttributeModifier</a></span>&nbsp;<span class="element-name">of</span><wbr><span class="parameters">(<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&nbsp;key,
+ <a href="AttributeOperation.html" title="interface in org.spongepowered.api.entity.attribute">AttributeOperation</a>&nbsp;operation,
+ double&nbsp;amount)</span></div>
+<div class="block">Creates an attribute modifier with the given values.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The resource key</dd>
+<dd><code>operation</code> - The attribute operation</dd>
+<dd><code>amount</code> - The amount</dd>
+<dt>Returns:</dt>
+<dd>The attribute modifier</dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="builder()">
 <h3>builder</h3>
