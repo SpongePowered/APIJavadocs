@@ -108,7 +108,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab3" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab3', 3)" class="table-tab">Abstract Methods</button><button id="method-summary-table-tab5" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab5', 3)" class="table-tab">Default Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -123,6 +123,13 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#toContainer()" class="member-name-link">toContainer</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Serializes this object into a comprehensible <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#toView(org.spongepowered.api.data.persistence.DataView)" class="member-name-link">toView</a><wbr>(<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;container)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Serializes this object and applies the provided
+ data to the provided <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> instead of creating
+ a new <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a>, reducing nested information.</div>
 </div>
 </div>
 </div>
@@ -163,6 +170,21 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>A newly created DataContainer</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="toView(org.spongepowered.api.data.persistence.DataView)">
+<h3>toView</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">toView</span><wbr><span class="parameters">(<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&nbsp;container)</span></div>
+<div class="block">Serializes this object and applies the provided
+ data to the provided <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> instead of creating
+ a new <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a>, reducing nested information.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>container</code> - The data view to serialize to</dd>
+<dt>Returns:</dt>
+<dd>The provided data view, for chaining</dd>
 </dl>
 </section>
 </li>
