@@ -155,199 +155,209 @@ loadScripts(document, 'script');</script>
 <div class="block">Copies this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> and all of it's contents into a new
  <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a> with the given safety mode.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createView(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">createView</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Creates a new <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> at the desired path.</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#createView(java.lang.String)" class="member-name-link">createView</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Creates a new <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> at the desired key.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createView(org.spongepowered.api.data.persistence.DataQuery,java.util.Map)" class="member-name-link">createView</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;?,<wbr>?&gt;&nbsp;map)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createView(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">createView</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Creates a new <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> at the desired path.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createView(org.spongepowered.api.data.persistence.DataQuery,java.util.Map)" class="member-name-link">createView</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;?,<wbr>?&gt;&nbsp;map)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates a new <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> with the given data at the desired
  path.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#currentPath()" class="member-name-link">currentPath</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#currentPath()" class="member-name-link">currentPath</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the current path of this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> from its root
  <a href="DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">get</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">get</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets an object from the desired path.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getBoolean(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getBoolean</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getBoolean(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getBoolean</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link"><code>Boolean</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getBooleanList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getBooleanList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getBooleanList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getBooleanList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link"><code>Boolean</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getByte(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getByte</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getByte(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getByte</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link"><code>Byte</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getByteList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getByteList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getByteList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getByteList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link"><code>Byte</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getCharacterList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getCharacterList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getCharacterList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getCharacterList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link"><code>Character</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;E,<wbr>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;E,<wbr>
 V extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;E&gt;&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;V&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDataKey(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDataKey</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDataKey(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDataKey</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>key</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&gt;&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDataKeyList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDataKeyList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;? extends <a href="../value/Value.html" title="interface in org.spongepowered.api.data.value">Value</a>&lt;?&gt;&gt;&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDataKeyList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDataKeyList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>values</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDouble(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDouble</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDouble(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDouble</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link"><code>Double</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDoubleList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDoubleList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDoubleList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getDoubleList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link"><code>Double</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getFloat(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getFloat</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getFloat(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getFloat</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link"><code>Float</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getFloatList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getFloatList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getFloatList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getFloatList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link"><code>Float</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getInt(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getInt</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getInt(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getInt</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link"><code>Integer</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getIntegerList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getIntegerList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getIntegerList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getIntegerList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link"><code>Integer</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;?&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of something by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLong(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getLong</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLong(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getLong</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link"><code>Long</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLongList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getLongList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLongList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getLongList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link"><code>Long</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;?,<wbr>?&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMap(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getMap</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;?,<wbr>?&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMap(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getMap</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the underlying <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link"><code>Map</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;?,<wbr>?&gt;&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMapList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getMapList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;?,<wbr>?&gt;&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMapList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getMapList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link"><code>Map</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getObject(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getObject</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getObject(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getObject</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;objectClass)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link"><code>Object</code></a> object by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getObjectList(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getObjectList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getObjectList(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getObjectList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;objectClass)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getRegistryValue(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType)" class="member-name-link">getRegistryValue</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getRegistryValue(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType)" class="member-name-link">getRegistryValue</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>value</code></a> by path, if available, from the global registry.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRegistryValue(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType,org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">getRegistryValue</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRegistryValue(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType,org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">getRegistryValue</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
  <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>value</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getRegistryValueList(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType)" class="member-name-link">getRegistryValueList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getRegistryValueList(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType)" class="member-name-link">getRegistryValueList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>values</code></a> by path, if available, from the global registry.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRegistryValueList(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType,org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">getRegistryValueList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRegistryValueList(org.spongepowered.api.data.persistence.DataQuery,org.spongepowered.api.registry.RegistryType,org.spongepowered.api.registry.RegistryHolder)" class="member-name-link">getRegistryValueList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="../../registry/RegistryType.html" title="interface in org.spongepowered.api.registry">RegistryType</a>&lt;T&gt;&nbsp;registryType,
  <a href="../../registry/RegistryHolder.html" title="interface in org.spongepowered.api.registry">RegistryHolder</a>&nbsp;holder)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>values</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getResourceKey(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getResourceKey</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getResourceKey(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getResourceKey</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>key</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getResourceKeyList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getResourceKeyList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getResourceKeyList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getResourceKeyList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="../../ResourceKey.html" title="interface in org.spongepowered.api"><code>keys</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSerializable(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getSerializable</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;T&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSerializable(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getSerializable</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;clazz)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> object by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSerializableList(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getSerializableList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;T extends <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a>&gt;<br><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;T&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSerializableList(org.spongepowered.api.data.persistence.DataQuery,java.lang.Class)" class="member-name-link">getSerializableList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;clazz)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="DataSerializable.html" title="interface in org.spongepowered.api.data.persistence"><code>DataSerializable</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html" title="class or interface in java.lang" class="external-link">Short</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShort(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getShort</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html" title="class or interface in java.lang" class="external-link">Short</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShort(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getShort</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html" title="class or interface in java.lang" class="external-link"><code>Short</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html" title="class or interface in java.lang" class="external-link">Short</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShortList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getShortList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html" title="class or interface in java.lang" class="external-link">Short</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShortList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getShortList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Short.html" title="class or interface in java.lang" class="external-link"><code>Short</code></a> by path, if available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getString(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getString</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getString(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getString</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> by path, if available.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getStringList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getStringList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getStringList(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getStringList</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link"><code>String</code></a> by path, if available.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getView(java.lang.String)" class="member-name-link">getView</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets the <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> by key, if available.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getView(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getView</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</code></div>
@@ -390,6 +400,109 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the <a href="DataView.SafetyMode.html" title="enum class in org.spongepowered.api.data.persistence"><code>DataView.SafetyMode</code></a> of this data view.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,boolean)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ boolean&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given boolean value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,byte)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ byte&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given byte value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,double)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ double&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given double value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,float)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ float&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given float value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,int)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ int&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given int value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,long)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ long&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given long value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,short)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ short&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given short value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,java.lang.Object)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given Object value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(java.lang.String,java.lang.String)" class="member-name-link">set</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given String value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,boolean)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ boolean&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given boolean value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,byte)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ byte&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given byte value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,double)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ double&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given double value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,float)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ float&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given float value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,int)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ int&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given int value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,long)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ long&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given long value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,short)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ short&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given short value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,java.lang.Object)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
@@ -397,9 +510,26 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 <div class="block">Sets the given Object value according to the given path relative to
  this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#values(boolean)" class="member-name-link">values</a><wbr>(boolean&nbsp;deep)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#set(org.spongepowered.api.data.persistence.DataQuery,java.lang.String)" class="member-name-link">set</a><wbr>(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Sets the given String value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#streamRootKeys()" class="member-name-link">streamRootKeys</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets a Stream containing all root keys for this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.Entry.html" title="class or interface in java.util" class="external-link">Map.Entry</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#streamRootValues()" class="member-name-link">streamRootValues</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets a Stream containing all root keys and their values for this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#values(boolean)" class="member-name-link">values</a><wbr>(boolean&nbsp;deep)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets a Map containing all keys and their values for this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
 </div>
 </div>
@@ -498,6 +628,17 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 </section>
 </li>
 <li>
+<section class="detail" id="streamRootKeys()">
+<h3>streamRootKeys</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">streamRootKeys</span>()</div>
+<div class="block">Gets a Stream containing all root keys for this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Stream of root keys of this container</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="values(boolean)">
 <h3>values</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>&nbsp;<span class="element-name">values</span><wbr><span class="parameters">(boolean&nbsp;deep)</span></div>
@@ -514,6 +655,17 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 <dd><code>deep</code> - Whether or not to get a deep list of all children or not</dd>
 <dt>Returns:</dt>
 <dd>Map of keys and values of this container</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="streamRootValues()">
+<h3>streamRootValues</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.Entry.html" title="class or interface in java.util" class="external-link">Map.Entry</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&gt;</span>&nbsp;<span class="element-name">streamRootValues</span>()</div>
+<div class="block">Gets a Stream containing all root keys and their values for this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Stream of root keys and values of this container</dd>
 </dl>
 </section>
 </li>
@@ -577,6 +729,269 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 </section>
 </li>
 <li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,java.lang.String)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">Sets the given String value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the string to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,boolean)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ boolean&nbsp;value)</span></div>
+<div class="block">Sets the given boolean value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the boolean to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,byte)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ byte&nbsp;value)</span></div>
+<div class="block">Sets the given byte value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the byte to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,short)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ short&nbsp;value)</span></div>
+<div class="block">Sets the given short value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the short to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,int)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ int&nbsp;value)</span></div>
+<div class="block">Sets the given int value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the int to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,long)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ long&nbsp;value)</span></div>
+<div class="block">Sets the given long value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the long to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,float)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ float&nbsp;value)</span></div>
+<div class="block">Sets the given float value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the float to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(org.spongepowered.api.data.persistence.DataQuery,double)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path,
+ double&nbsp;value)</span></div>
+<div class="block">Sets the given double value according to the given path relative to
+ this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>path</code> - The path of the double to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,java.lang.Object)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</span></div>
+<div class="block">Sets the given Object value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,java.lang.String)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">Sets the given String value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,boolean)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ boolean&nbsp;value)</span></div>
+<div class="block">Sets the given boolean value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,byte)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ byte&nbsp;value)</span></div>
+<div class="block">Sets the given byte value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,short)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ short&nbsp;value)</span></div>
+<div class="block">Sets the given short value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,int)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ int&nbsp;value)</span></div>
+<div class="block">Sets the given int value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,long)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ long&nbsp;value)</span></div>
+<div class="block">Sets the given long value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,float)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ float&nbsp;value)</span></div>
+<div class="block">Sets the given float value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="set(java.lang.String,double)">
+<h3>set</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">set</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ double&nbsp;value)</span></div>
+<div class="block">Sets the given double value to this <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the object to set</dd>
+<dd><code>value</code> - The value of the data</dd>
+<dt>Returns:</dt>
+<dd>This view, for chaining</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="remove(org.spongepowered.api.data.persistence.DataQuery)">
 <h3>remove</h3>
 <div class="member-signature"><span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">remove</span><wbr><span class="parameters">(<a href="DataQuery.html" title="class in org.spongepowered.api.data.persistence">DataQuery</a>&nbsp;path)</span></div>
@@ -602,6 +1017,21 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>path</code> - The path of the new view</dd>
+<dt>Returns:</dt>
+<dd>The newly created view</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="createView(java.lang.String)">
+<h3>createView</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></span>&nbsp;<span class="element-name">createView</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</span></div>
+<div class="block">Creates a new <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> at the desired key.
+ <p>If any data existed at the given path, that data will be
+ overwritten with the newly constructed <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the new view</dd>
 <dt>Returns:</dt>
 <dd>The newly created view</dd>
 </dl>
@@ -638,6 +1068,23 @@ V extends <a href="../value/Value.html" title="interface in org.spongepowered.ap
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>path</code> - The path of the value to get</dd>
+<dt>Returns:</dt>
+<dd>The data view, if available</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getView(java.lang.String)">
+<h3>getView</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a>&gt;</span>&nbsp;<span class="element-name">getView</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</span></div>
+<div class="block">Gets the <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> by key, if available.
+
+ <p>If a <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> does not exist, or the data residing at
+ the path is not an instance of a <a href="DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>, an absent is
+ returned.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key of the value to get</dd>
 <dt>Returns:</dt>
 <dd>The data view, if available</dd>
 </dl>
