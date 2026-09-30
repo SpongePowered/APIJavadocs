@@ -182,6 +182,17 @@ V extends <a href="Value.html" title="interface in org.spongepowered.api.data.va
 <div class="block">Attempts to get the underlying value backed by a <a href="Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>
  linked to the provided <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#streamKeys()" class="member-name-link">streamKeys</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets all applicable <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>s for this <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a><wbr>&lt;<a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#streamValues()" class="member-name-link">streamValues</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Gets all applicable <a href="Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s associated with this
+ <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#supports(org.spongepowered.api.data.Key)" class="member-name-link">supports</a><wbr>(<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&nbsp;key)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -416,6 +427,17 @@ V extends <a href="Value.html" title="interface in org.spongepowered.api.data.va
 </section>
 </li>
 <li>
+<section class="detail" id="streamKeys()">
+<h3>streamKeys</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="../Key.html" title="interface in org.spongepowered.api.data">Key</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">streamKeys</span>()</div>
+<div class="block">Gets all applicable <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>s for this <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A stream of known <a href="../Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>s</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="getValues()">
 <h3>getValues</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">getValues</span>()</div>
@@ -426,6 +448,20 @@ V extends <a href="Value.html" title="interface in org.spongepowered.api.data.va
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>An immutable set of copied values</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="streamValues()">
+<h3>streamValues</h3>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link">Stream</a>&lt;<a href="Value.Immutable.html" title="interface in org.spongepowered.api.data.value">Value.Immutable</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">streamValues</span>()</div>
+<div class="block">Gets all applicable <a href="Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s associated with this
+ <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>. As the data backed by the values are copied,
+ any modifications to the <a href="Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s will not be reflected onto
+ this <a href="ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A stream of copied values</dd>
 </dl>
 </section>
 </li>

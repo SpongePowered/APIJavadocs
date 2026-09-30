@@ -163,10 +163,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the target diameter the world border is expanding or contracting to.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#timeUntilTargetDiameter()" class="member-name-link">timeUntilTargetDiameter</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the time remaining until the world border stops expanding or
+<div class="block">Gets the remaining transition time in ticks until the world border stops expanding or
  contracting to the <a href="#targetDiameter()"><code>targetDiameter()</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="WorldBorder.Builder.html" title="interface in org.spongepowered.api.world.border">WorldBorder.Builder</a></code></div>
@@ -181,11 +181,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the distance when a contracting world border will warn a player for
  whom the world border is <code>distance</code> away.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#warningTime()" class="member-name-link">warningTime</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the time when a contracting world border will warn a player for whom
- the world border will reach in <code>time</code> seconds.</div>
+ the world border will reach in <code>time</code> ticks.</div>
 </div>
 </div>
 </div>
@@ -282,15 +282,15 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="timeUntilTargetDiameter()">
 <h3>timeUntilTargetDiameter</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></span>&nbsp;<span class="element-name">timeUntilTargetDiameter</span>()</div>
-<div class="block">Gets the time remaining until the world border stops expanding or
+<div class="member-signature"><span class="return-type"><a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a></span>&nbsp;<span class="element-name">timeUntilTargetDiameter</span>()</div>
+<div class="block">Gets the remaining transition time in ticks until the world border stops expanding or
  contracting to the <a href="#targetDiameter()"><code>targetDiameter()</code></a>.
 
  <p>If <a href="#diameter()"><code>diameter()</code></a> and <a href="#targetDiameter()"><code>targetDiameter()</code></a> are the same,
- this will be <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html#ZERO" title="class or interface in java.time" class="external-link"><code>Duration.ZERO</code></a>.</p></div>
+ this will be <a href="../../util/Ticks.html#zero()"><code>Ticks.zero()</code></a>.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>The time remaining</dd>
+<dd>The ticks remaining</dd>
 </dl>
 </section>
 </li>
@@ -321,9 +321,9 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="warningTime()">
 <h3>warningTime</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></span>&nbsp;<span class="element-name">warningTime</span>()</div>
+<div class="member-signature"><span class="return-type"><a href="../../util/Ticks.html" title="interface in org.spongepowered.api.util">Ticks</a></span>&nbsp;<span class="element-name">warningTime</span>()</div>
 <div class="block">Gets the time when a contracting world border will warn a player for whom
- the world border will reach in <code>time</code> seconds.
+ the world border will reach in <code>time</code> ticks.
 
  <p>In Minecraft, the warning is displayed in the form of a reddish
  tint.</p></div>
