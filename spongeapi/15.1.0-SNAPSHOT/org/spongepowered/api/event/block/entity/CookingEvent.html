@@ -92,7 +92,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <dl class="notes">
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="CookingEvent.ConsumeFuel.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.ConsumeFuel</a></code>, <code><a href="CookingEvent.Finish.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Finish</a></code>, <code><a href="CookingEvent.Interrupt.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Interrupt</a></code>, <code><a href="CookingEvent.Start.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Start</a></code>, <code><a href="CookingEvent.Tick.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Tick</a></code></dd>
+<dd><code><a href="CookingEvent.ConsumeFuel.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.ConsumeFuel</a></code>, <code><a href="CookingEvent.Finish.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Finish</a></code>, <code><a href="CookingEvent.Interrupt.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Interrupt</a></code>, <code><a href="CookingEvent.Recipe.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe</a></code>, <code><a href="CookingEvent.Recipe.All.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe.All</a></code>, <code><a href="CookingEvent.Recipe.Single.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe.Single</a></code>, <code><a href="CookingEvent.Start.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Start</a></code>, <code><a href="CookingEvent.Tick.html" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Tick</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">CookingEvent</span><span class="extends-implements">
@@ -125,13 +125,19 @@ extends <a href="../../Event.html" title="interface in org.spongepowered.api.eve
 <div class="block">Fires when the cooking is interrupted causing the current cooking time to reset to 0.</div>
 </div>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="CookingEvent.Start.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Start</a></code></div>
+<div class="col-second odd-row-color"><code><a href="CookingEvent.Recipe.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The first tick of an item cooking.</div>
+<div class="block">Called when a <a href="../../../item/recipe/cooking/CookingRecipe.html" title="interface in org.spongepowered.api.item.recipe.cooking"><code>CookingRecipe</code></a> is used to place an
+ <a href="../../../item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> into an <a href="../../../item/inventory/slot/FuelSlot.html" title="interface in org.spongepowered.api.item.inventory.slot"><code>FuelSlot</code></a></div>
 </div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="CookingEvent.Tick.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Tick</a></code></div>
+<div class="col-second even-row-color"><code><a href="CookingEvent.Start.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Start</a></code></div>
 <div class="col-last even-row-color">
+<div class="block">The first tick of an item cooking.</div>
+</div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="CookingEvent.Tick.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Tick</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">The cooking timer ticking up or down.</div>
 </div>
 </div>
