@@ -158,6 +158,19 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets if the <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> will produce sounds from various actions that
  occur while <a href="#invisible()"><code>invisible()</code></a> is <code>true</code>.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hidesTabListEntry()" class="member-name-link">hidesTabListEntry</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets if the <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>'s associated <a href="../entity/living/player/tab/TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab"><code>TabListEntry</code></a>
+ should be hidden while invisible.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hideTabListEntry(boolean)" class="member-name-link">hideTabListEntry</a><wbr>(boolean&nbsp;hideTabListEntry)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">If <a href="#invisible()"><code>invisible()</code></a> returns true, this will return the
+ <a href="VanishState.html" title="interface in org.spongepowered.api.effect"><code>VanishState</code></a> with the desired flag replacing
+ <a href="#hidesTabListEntry()"><code>hidesTabListEntry()</code></a>.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#ignoreCollisions(boolean)" class="member-name-link">ignoreCollisions</a><wbr>(boolean&nbsp;ignoresCollisions)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -501,6 +514,35 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>triggerVibrations</code> - Whether the <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a> will trigger
      vibrations while invisible</dd>
+<dt>Returns:</dt>
+<dd>The new VanishState</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="hidesTabListEntry()">
+<h3>hidesTabListEntry</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">hidesTabListEntry</span>()</div>
+<div class="block">Gets if the <a href="../entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>'s associated <a href="../entity/living/player/tab/TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab"><code>TabListEntry</code></a>
+ should be hidden while invisible.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Whatever the associated <a href="../entity/living/player/tab/TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab"><code>TabListEntry</code></a>
+ should be hidden while invisible</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="hideTabListEntry(boolean)">
+<h3>hideTabListEntry</h3>
+<div class="member-signature"><span class="return-type"><a href="VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></span>&nbsp;<span class="element-name">hideTabListEntry</span><wbr><span class="parameters">(boolean&nbsp;hideTabListEntry)</span></div>
+<div class="block">If <a href="#invisible()"><code>invisible()</code></a> returns true, this will return the
+ <a href="VanishState.html" title="interface in org.spongepowered.api.effect"><code>VanishState</code></a> with the desired flag replacing
+ <a href="#hidesTabListEntry()"><code>hidesTabListEntry()</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>hideTabListEntry</code> - Whatever the associated <a href="../entity/living/player/tab/TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab"><code>TabListEntry</code></a>
+     is hidden while invisible</dd>
 <dt>Returns:</dt>
 <dd>The new VanishState</dd>
 </dl>

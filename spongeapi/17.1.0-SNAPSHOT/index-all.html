@@ -8003,6 +8003,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Whether a <a href="org/spongepowered/api/entity/vehicle/Boat.html" title="interface in org.spongepowered.api.entity.vehicle"><code>Boat</code></a> can move on land.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#CAN_PICK_UP_LOOT" class="member-name-link">CAN_PICK_UP_LOOT</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether a <a href="org/spongepowered/api/entity/living/Living.html" title="interface in org.spongepowered.api.entity.living"><code>Living</code></a> can pick up loot.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#CAN_PLACE_AS_BLOCK" class="member-name-link">CAN_PLACE_AS_BLOCK</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
 <div class="block">Whether a <a href="org/spongepowered/api/entity/FallingBlock.html" title="interface in org.spongepowered.api.entity"><code>FallingBlock</code></a> will place itself upon landing.</div>
@@ -11306,6 +11310,19 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Fires when the cooking is interrupted causing the current cooking time to reset to 0.</div>
 </dd>
+<dt><a href="org/spongepowered/api/event/block/entity/CookingEvent.Recipe.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe</a> - Interface in <a href="org/spongepowered/api/event/block/entity/package-summary.html">org.spongepowered.api.event.block.entity</a></dt>
+<dd>
+<div class="block">Called when a <a href="org/spongepowered/api/item/recipe/cooking/CookingRecipe.html" title="interface in org.spongepowered.api.item.recipe.cooking"><code>CookingRecipe</code></a> is used to place an
+ <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> into an <a href="org/spongepowered/api/item/inventory/slot/FuelSlot.html" title="interface in org.spongepowered.api.item.inventory.slot"><code>FuelSlot</code></a></div>
+</dd>
+<dt><a href="org/spongepowered/api/event/block/entity/CookingEvent.Recipe.All.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe.All</a> - Interface in <a href="org/spongepowered/api/event/block/entity/package-summary.html">org.spongepowered.api.event.block.entity</a></dt>
+<dd>
+<div class="block">Fires when the client requests a recipe to be cooking as much as possible.</div>
+</dd>
+<dt><a href="org/spongepowered/api/event/block/entity/CookingEvent.Recipe.Single.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Recipe.Single</a> - Interface in <a href="org/spongepowered/api/event/block/entity/package-summary.html">org.spongepowered.api.event.block.entity</a></dt>
+<dd>
+<div class="block">Fires when the Client requests a recipe to be smelted once.</div>
+</dd>
 <dt><a href="org/spongepowered/api/event/block/entity/CookingEvent.Start.html" class="type-name-link" title="interface in org.spongepowered.api.event.block.entity">CookingEvent.Start</a> - Interface in <a href="org/spongepowered/api/event/block/entity/package-summary.html">org.spongepowered.api.event.block.entity</a></dt>
 <dd>
 <div class="block">The first tick of an item cooking.</div>
@@ -12205,6 +12222,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createCookingEventInterrupt(org.spongepowered.api.event.Cause,org.spongepowered.api.block.entity.BlockEntity,java.util.Optional,java.util.Optional,java.util.Optional)" class="member-name-link">createCookingEventInterrupt(Cause, BlockEntity, Optional&lt;ItemStackSnapshot&gt;, Optional&lt;CookingRecipe&gt;, Optional&lt;ResourceKey&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createCookingEventRecipeAll(org.spongepowered.api.event.Cause,org.spongepowered.api.block.entity.BlockEntity,org.spongepowered.api.item.inventory.Container,org.spongepowered.api.data.Transaction,java.util.Optional,java.util.Optional,java.util.Optional,java.util.Optional,java.util.List)" class="member-name-link">createCookingEventRecipeAll(Cause, BlockEntity, Container, Transaction&lt;ItemStackSnapshot&gt;, Optional&lt;ItemStackSnapshot&gt;, Optional&lt;CookingRecipe&gt;, Optional&lt;ResourceKey&gt;, Optional&lt;Slot&gt;, List&lt;SlotTransaction&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createCookingEventRecipeSingle(org.spongepowered.api.event.Cause,org.spongepowered.api.block.entity.BlockEntity,org.spongepowered.api.item.inventory.Container,org.spongepowered.api.data.Transaction,java.util.Optional,java.util.Optional,java.util.Optional,java.util.Optional,java.util.List)" class="member-name-link">createCookingEventRecipeSingle(Cause, BlockEntity, Container, Transaction&lt;ItemStackSnapshot&gt;, Optional&lt;ItemStackSnapshot&gt;, Optional&lt;CookingRecipe&gt;, Optional&lt;ResourceKey&gt;, Optional&lt;Slot&gt;, List&lt;SlotTransaction&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createCookingEventStart(org.spongepowered.api.event.Cause,org.spongepowered.api.block.entity.BlockEntity,java.util.Optional,java.util.Optional,java.util.Optional)" class="member-name-link">createCookingEventStart(Cause, BlockEntity, Optional&lt;ItemStackSnapshot&gt;, Optional&lt;CookingRecipe&gt;, Optional&lt;ResourceKey&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/event/SpongeEventFactory.html#createCookingEventTick(org.spongepowered.api.event.Cause,org.spongepowered.api.block.entity.BlockEntity,org.spongepowered.api.item.inventory.ItemStackSnapshot,java.util.Optional,java.util.Optional,java.util.Optional)" class="member-name-link">createCookingEventTick(Cause, BlockEntity, ItemStackSnapshot, Optional&lt;ItemStackSnapshot&gt;, Optional&lt;CookingRecipe&gt;, Optional&lt;ResourceKey&gt;)</a> - Static method in class org.spongepowered.api.event.<a href="org/spongepowered/api/event/SpongeEventFactory.html" title="class in org.spongepowered.api.event">SpongeEventFactory</a></dt>
@@ -12688,6 +12709,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a <a href="org/spongepowered/api/command/parameter/managed/ValueParameter.html" title="interface in org.spongepowered.api.command.parameter.managed"><code>ValueParameter</code></a> that validates its input against
  a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html" title="class or interface in java.util.regex" class="external-link"><code>Pattern</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#createView(java.lang.String)" class="member-name-link">createView(String)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Creates a new <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> at the desired key.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/persistence/DataView.html#createView(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">createView(DataQuery)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
 <dd>
@@ -14219,6 +14244,16 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/world/teleport/TeleportHelper.html#DEFAULT_WIDTH" class="member-name-link">DEFAULT_WIDTH</a> - Static variable in interface org.spongepowered.api.world.teleport.<a href="org/spongepowered/api/world/teleport/TeleportHelper.html" title="interface in org.spongepowered.api.world.teleport">TeleportHelper</a></dt>
 <dd>
 <div class="block">The default width radius to scan for safe locations.</div>
+</dd>
+<dt><a href="org/spongepowered/api/entity/attribute/AttributeHolder.html#defaultAttribute(java.util.function.Supplier)" class="member-name-link">defaultAttribute(Supplier&lt;? extends AttributeType&gt;)</a> - Method in interface org.spongepowered.api.entity.attribute.<a href="org/spongepowered/api/entity/attribute/AttributeHolder.html" title="interface in org.spongepowered.api.entity.attribute">AttributeHolder</a></dt>
+<dd>
+<div class="block">Gets an immutable copy of the default <a href="org/spongepowered/api/entity/attribute/Attribute.html" title="interface in org.spongepowered.api.entity.attribute"><code>Attribute</code></a>
+ from this entity.</div>
+</dd>
+<dt><a href="org/spongepowered/api/entity/attribute/AttributeHolder.html#defaultAttribute(org.spongepowered.api.entity.attribute.type.AttributeType)" class="member-name-link">defaultAttribute(AttributeType)</a> - Method in interface org.spongepowered.api.entity.attribute.<a href="org/spongepowered/api/entity/attribute/AttributeHolder.html" title="interface in org.spongepowered.api.entity.attribute">AttributeHolder</a></dt>
+<dd>
+<div class="block">Gets an immutable copy of the default <a href="org/spongepowered/api/entity/attribute/Attribute.html" title="interface in org.spongepowered.api.entity.attribute"><code>Attribute</code></a>
+ from this entity.</div>
 </dd>
 <dt><a href="org/spongepowered/api/world/biome/BiomeAttributes.html#defaultAttributes(org.spongepowered.api.registry.RegistryReference)" class="member-name-link">defaultAttributes(RegistryReference&lt;Biome&gt;)</a> - Static method in interface org.spongepowered.api.world.biome.<a href="org/spongepowered/api/world/biome/BiomeAttributes.html" title="interface in org.spongepowered.api.world.biome">BiomeAttributes</a></dt>
 <dd>&nbsp;</dd>
@@ -22119,6 +22154,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets a varlong at the specified absolute index in this buffer.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#getView(java.lang.String)" class="member-name-link">getView(String)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Gets the <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> by key, if available.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/persistence/DataView.html#getView(org.spongepowered.api.data.persistence.DataQuery)" class="member-name-link">getView(DataQuery)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
 <dd>
 <div class="block">Gets the <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> by path, if available.</div>
@@ -23578,9 +23617,21 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block"><a href="org/spongepowered/api/data/Keys.html#HIDDEN_GENE"><code>Keys.HIDDEN_GENE</code></a></div>
 </dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_ARMOR_TRIM" class="member-name-link">HIDE_ARMOR_TRIM</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the <a href="org/spongepowered/api/data/Keys.html#ARMOR_TRIM"><code>Keys.ARMOR_TRIM</code></a> of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> is hidden.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_ATTRIBUTES" class="member-name-link">HIDE_ATTRIBUTES</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
 <div class="block">Whether the attributes of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> are hidden.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_BANNER_PATTERNS" class="member-name-link">HIDE_BANNER_PATTERNS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the <a href="org/spongepowered/api/data/Keys.html#BANNER_PATTERN_LAYERS"><code>Keys.BANNER_PATTERN_LAYERS</code></a> of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> are hidden in the item description.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_BUNDLE_CONTENTS" class="member-name-link">HIDE_BUNDLE_CONTENTS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the bundle contents of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> are hidden.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_CAN_DESTROY" class="member-name-link">HIDE_CAN_DESTROY</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
@@ -23589,6 +23640,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_CAN_PLACE" class="member-name-link">HIDE_CAN_PLACE</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
 <div class="block">Whether the <a href="org/spongepowered/api/data/Keys.html#PLACEABLE_BLOCK_TYPES"><code>Keys.PLACEABLE_BLOCK_TYPES</code></a> of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> are hidden.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_COLOR" class="member-name-link">HIDE_COLOR</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the <a href="org/spongepowered/api/data/Keys.html#COLOR"><code>Keys.COLOR</code></a> of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> is hidden in the item description.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_ENCHANTMENTS" class="member-name-link">HIDE_ENCHANTMENTS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
@@ -23606,9 +23661,21 @@ loadScripts(document, 'script');</script>
  visible, but death messages or nametags for members of the same team
  will not be visible.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_INSTRUMENT" class="member-name-link">HIDE_INSTRUMENT</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the instrument of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> (e.g.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_MISCELLANEOUS" class="member-name-link">HIDE_MISCELLANEOUS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
 <div class="block">Whether miscellaneous values of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> are hidden.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_MUSIC_DISC" class="member-name-link">HIDE_MUSIC_DISC</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the <a href="org/spongepowered/api/data/Keys.html#MUSIC_DISC"><code>Keys.MUSIC_DISC</code></a> of and <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> is hidden in the item description.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/Keys.html#HIDE_POTION_EFFECTS" class="member-name-link">HIDE_POTION_EFFECTS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
+<dd>
+<div class="block">Whether the potion effects (e.g.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_STORED_ENCHANTMENTS" class="member-name-link">HIDE_STORED_ENCHANTMENTS</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
@@ -23621,6 +23688,17 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/spongepowered/api/data/Keys.html#HIDE_UNBREAKABLE" class="member-name-link">HIDE_UNBREAKABLE</a> - Static variable in class org.spongepowered.api.data.<a href="org/spongepowered/api/data/Keys.html" title="class in org.spongepowered.api.data">Keys</a></dt>
 <dd>
 <div class="block">Whether <a href="org/spongepowered/api/data/Keys.html#IS_UNBREAKABLE"><code>Keys.IS_UNBREAKABLE</code></a> state of an <a href="org/spongepowered/api/item/inventory/ItemStack.html" title="interface in org.spongepowered.api.item.inventory"><code>ItemStack</code></a> is hidden.</div>
+</dd>
+<dt><a href="org/spongepowered/api/effect/VanishState.html#hidesTabListEntry()" class="member-name-link">hidesTabListEntry()</a> - Method in interface org.spongepowered.api.effect.<a href="org/spongepowered/api/effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></dt>
+<dd>
+<div class="block">Gets if the <a href="org/spongepowered/api/entity/Entity.html" title="interface in org.spongepowered.api.entity"><code>Entity</code></a>'s associated <a href="org/spongepowered/api/entity/living/player/tab/TabListEntry.html" title="interface in org.spongepowered.api.entity.living.player.tab"><code>TabListEntry</code></a>
+ should be hidden while invisible.</div>
+</dd>
+<dt><a href="org/spongepowered/api/effect/VanishState.html#hideTabListEntry(boolean)" class="member-name-link">hideTabListEntry(boolean)</a> - Method in interface org.spongepowered.api.effect.<a href="org/spongepowered/api/effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></dt>
+<dd>
+<div class="block">If <a href="org/spongepowered/api/effect/VanishState.html#invisible()"><code>VanishState.invisible()</code></a> returns true, this will return the
+ <a href="org/spongepowered/api/effect/VanishState.html" title="interface in org.spongepowered.api.effect"><code>VanishState</code></a> with the desired flag replacing
+ <a href="org/spongepowered/api/effect/VanishState.html#hidesTabListEntry()"><code>VanishState.hidesTabListEntry()</code></a>.</div>
 </dd>
 <dt><a href="org/spongepowered/api/scheduler/TaskPriorities.html#HIGH" class="member-name-link">HIGH</a> - Static variable in class org.spongepowered.api.scheduler.<a href="org/spongepowered/api/scheduler/TaskPriorities.html" title="class in org.spongepowered.api.scheduler">TaskPriorities</a></dt>
 <dd>&nbsp;</dd>
@@ -32142,6 +32220,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/spongepowered/api/world/volume/stream/VolumeCollectors.html#of(M,org.spongepowered.api.world.volume.stream.VolumePositionTranslator,org.spongepowered.api.world.volume.stream.VolumeApplicator)" class="member-name-link">of(M, VolumePositionTranslator&lt;M, T&gt;, VolumeApplicator&lt;M, T, R&gt;)</a> - Static method in class org.spongepowered.api.world.volume.stream.<a href="org/spongepowered/api/world/volume/stream/VolumeCollectors.html" title="class in org.spongepowered.api.world.volume.stream">VolumeCollectors</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/ResourceKey.html#of(net.kyori.adventure.key.Key)" class="member-name-link">of(Key)</a> - Static method in interface org.spongepowered.api.<a href="org/spongepowered/api/ResourceKey.html" title="interface in org.spongepowered.api">ResourceKey</a></dt>
+<dd>
+<div class="block">Creates a resource key.</div>
+</dd>
 <dt><a href="org/spongepowered/api/advancement/criteria/AndCriterion.Factory.html#of(org.spongepowered.api.advancement.criteria.AdvancementCriterion...)" class="member-name-link">of(AdvancementCriterion...)</a> - Method in interface org.spongepowered.api.advancement.criteria.<a href="org/spongepowered/api/advancement/criteria/AndCriterion.Factory.html" title="interface in org.spongepowered.api.advancement.criteria">AndCriterion.Factory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/advancement/criteria/AndCriterion.html#of(org.spongepowered.api.advancement.criteria.AdvancementCriterion...)" class="member-name-link">of(AdvancementCriterion...)</a> - Static method in interface org.spongepowered.api.advancement.criteria.<a href="org/spongepowered/api/advancement/criteria/AndCriterion.html" title="interface in org.spongepowered.api.advancement.criteria">AndCriterion</a></dt>
@@ -42518,6 +42600,60 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets the supported <a href="org/spongepowered/api/data/value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s onto this <a href="org/spongepowered/api/data/DataManipulator.Mutable.html" title="interface in org.spongepowered.api.data"><code>DataManipulator.Mutable</code></a>.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,boolean)" class="member-name-link">set(String, boolean)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,boolean)" class="member-name-link">set(String, boolean)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given boolean value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,byte)" class="member-name-link">set(String, byte)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,byte)" class="member-name-link">set(String, byte)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given byte value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,double)" class="member-name-link">set(String, double)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,double)" class="member-name-link">set(String, double)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given double value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,float)" class="member-name-link">set(String, float)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,float)" class="member-name-link">set(String, float)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given float value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,int)" class="member-name-link">set(String, int)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,int)" class="member-name-link">set(String, int)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given int value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,long)" class="member-name-link">set(String, long)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,long)" class="member-name-link">set(String, long)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given long value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,short)" class="member-name-link">set(String, short)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,short)" class="member-name-link">set(String, short)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given short value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,java.lang.Object)" class="member-name-link">set(String, Object)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,java.lang.Object)" class="member-name-link">set(String, Object)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given Object value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(java.lang.String,java.lang.String)" class="member-name-link">set(String, String)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(java.lang.String,java.lang.String)" class="member-name-link">set(String, String)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given String value to this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s key.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/MutableDataProviderBuilder.html#set(java.util.function.BiConsumer)" class="member-name-link">set(BiConsumer&lt;H, E&gt;)</a> - Method in interface org.spongepowered.api.data.<a href="org/spongepowered/api/data/MutableDataProviderBuilder.html" title="interface in org.spongepowered.api.data">MutableDataProviderBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/ImmutableDataProviderBuilder.html#set(java.util.function.BiFunction)" class="member-name-link">set(BiFunction&lt;H, E, H&gt;)</a> - Method in interface org.spongepowered.api.data.<a href="org/spongepowered/api/data/ImmutableDataProviderBuilder.html" title="interface in org.spongepowered.api.data">ImmutableDataProviderBuilder</a></dt>
@@ -42536,11 +42672,67 @@ loadScripts(document, 'script');</script>
  this <a href="org/spongepowered/api/data/DataManipulator.Mutable.html" title="interface in org.spongepowered.api.data"><code>DataManipulator.Mutable</code></a> without having to directly set the
  <a href="org/spongepowered/api/data/value/Value.Mutable.html" title="interface in org.spongepowered.api.data.value"><code>Value.Mutable</code></a> and <a href="org/spongepowered/api/data/DataManipulator.Mutable.html#set(org.spongepowered.api.data.value.Value)"><code>DataManipulator.Mutable.set(Value)</code></a> afterwards.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,boolean)" class="member-name-link">set(DataQuery, boolean)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,boolean)" class="member-name-link">set(DataQuery, boolean)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given boolean value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,byte)" class="member-name-link">set(DataQuery, byte)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,byte)" class="member-name-link">set(DataQuery, byte)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given byte value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,double)" class="member-name-link">set(DataQuery, double)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,double)" class="member-name-link">set(DataQuery, double)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given double value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,float)" class="member-name-link">set(DataQuery, float)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,float)" class="member-name-link">set(DataQuery, float)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given float value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,int)" class="member-name-link">set(DataQuery, int)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,int)" class="member-name-link">set(DataQuery, int)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given int value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,long)" class="member-name-link">set(DataQuery, long)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,long)" class="member-name-link">set(DataQuery, long)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given long value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,short)" class="member-name-link">set(DataQuery, short)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,short)" class="member-name-link">set(DataQuery, short)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given short value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
 <dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,java.lang.Object)" class="member-name-link">set(DataQuery, Object)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,java.lang.Object)" class="member-name-link">set(DataQuery, Object)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
 <dd>
 <div class="block">Sets the given Object value according to the given path relative to
+ this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataContainer.html#set(org.spongepowered.api.data.persistence.DataQuery,java.lang.String)" class="member-name-link">set(DataQuery, String)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence">DataContainer</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#set(org.spongepowered.api.data.persistence.DataQuery,java.lang.String)" class="member-name-link">set(DataQuery, String)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Sets the given String value according to the given path relative to
  this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>'s path.</div>
 </dd>
 <dt><a href="org/spongepowered/api/data/DataManipulator.Mutable.html#set(org.spongepowered.api.data.value.Value)" class="member-name-link">set(Value&lt;?&gt;)</a> - Method in interface org.spongepowered.api.data.<a href="org/spongepowered/api/data/DataManipulator.Mutable.html" title="interface in org.spongepowered.api.data">DataManipulator.Mutable</a></dt>
@@ -46091,6 +46283,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of all <a href="org/spongepowered/api/registry/RegistryEntry.html" title="interface in org.spongepowered.api.registry"><code>entries</code></a> within.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/value/ValueContainer.html#streamKeys()" class="member-name-link">streamKeys()</a> - Method in interface org.spongepowered.api.data.value.<a href="org/spongepowered/api/data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value">ValueContainer</a></dt>
+<dd>
+<div class="block">Gets all applicable <a href="org/spongepowered/api/data/Key.html" title="interface in org.spongepowered.api.data"><code>Key</code></a>s for this <a href="org/spongepowered/api/data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/profile/GameProfileCache.html#streamOfMatches(java.lang.String)" class="member-name-link">streamOfMatches(String)</a> - Method in interface org.spongepowered.api.profile.<a href="org/spongepowered/api/profile/GameProfileCache.html" title="interface in org.spongepowered.api.profile">GameProfileCache</a></dt>
 <dd>
 <div class="block">Returns a stream of matching cached <a href="org/spongepowered/api/profile/GameProfile.html" title="interface in org.spongepowered.api.profile"><code>GameProfile</code></a>s whose last
@@ -46120,9 +46316,22 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of the <a href="org/spongepowered/api/registry/Registry.html" title="interface in org.spongepowered.api.registry"><code>registries</code></a> in this holder within a root.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#streamRootKeys()" class="member-name-link">streamRootKeys()</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Gets a Stream containing all root keys for this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataView.html#streamRootValues()" class="member-name-link">streamRootValues()</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence">DataView</a></dt>
+<dd>
+<div class="block">Gets a Stream containing all root keys and their values for this <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a>.</div>
+</dd>
 <dt><a href="org/spongepowered/api/service/economy/EconomyService.html#streamUniqueAccounts()" class="member-name-link">streamUniqueAccounts()</a> - Method in interface org.spongepowered.api.service.economy.<a href="org/spongepowered/api/service/economy/EconomyService.html" title="interface in org.spongepowered.api.service.economy">EconomyService</a></dt>
 <dd>
 <div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html" title="class or interface in java.util.stream" class="external-link"><code>Stream</code></a> of all available <a href="org/spongepowered/api/service/economy/account/UniqueAccount.html" title="interface in org.spongepowered.api.service.economy.account"><code>UniqueAccount</code></a>s.</div>
+</dd>
+<dt><a href="org/spongepowered/api/data/value/ValueContainer.html#streamValues()" class="member-name-link">streamValues()</a> - Method in interface org.spongepowered.api.data.value.<a href="org/spongepowered/api/data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value">ValueContainer</a></dt>
+<dd>
+<div class="block">Gets all applicable <a href="org/spongepowered/api/data/value/Value.html" title="interface in org.spongepowered.api.data.value"><code>Value</code></a>s associated with this
+ <a href="org/spongepowered/api/data/value/ValueContainer.html" title="interface in org.spongepowered.api.data.value"><code>ValueContainer</code></a>.</div>
 </dd>
 <dt><a href="org/spongepowered/api/service/economy/EconomyService.html#streamVirtualAccounts()" class="member-name-link">streamVirtualAccounts()</a> - Method in interface org.spongepowered.api.service.economy.<a href="org/spongepowered/api/service/economy/EconomyService.html" title="interface in org.spongepowered.api.service.economy">EconomyService</a></dt>
 <dd>
@@ -48362,6 +48571,12 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the Vector3d with the given <a href="org/spongepowered/api/util/AxisDirection.html" title="enum class in org.spongepowered.api.util"><code>AxisDirection</code></a>.</div>
 </dd>
+<dt><a href="org/spongepowered/api/data/persistence/DataSerializable.html#toView(org.spongepowered.api.data.persistence.DataView)" class="member-name-link">toView(DataView)</a> - Method in interface org.spongepowered.api.data.persistence.<a href="org/spongepowered/api/data/persistence/DataSerializable.html" title="interface in org.spongepowered.api.data.persistence">DataSerializable</a></dt>
+<dd>
+<div class="block">Serializes this object and applies the provided
+ data to the provided <a href="org/spongepowered/api/data/persistence/DataView.html" title="interface in org.spongepowered.api.data.persistence"><code>DataView</code></a> instead of creating
+ a new <a href="org/spongepowered/api/data/persistence/DataContainer.html" title="interface in org.spongepowered.api.data.persistence"><code>DataContainer</code></a>, reducing nested information.</div>
+</dd>
 <dt><a href="org/spongepowered/api/world/storage/ChunkLayout.html#toWorld(int,int,int)" class="member-name-link">toWorld(int, int, int)</a> - Method in interface org.spongepowered.api.world.storage.<a href="org/spongepowered/api/world/storage/ChunkLayout.html" title="interface in org.spongepowered.api.world.storage">ChunkLayout</a></dt>
 <dd>
 <div class="block">Converts chunk coordinates to world coordinates.</div>
@@ -50037,6 +50252,7 @@ loadScripts(document, 'script');</script>
      <a href="org/spongepowered/api/effect/VanishState.html#createsSounds()"><code>VanishState.createsSounds()</code></a> = <code>true</code>
      <a href="org/spongepowered/api/effect/VanishState.html#createsParticles()"><code>VanishState.createsParticles()</code></a> = <code>true</code>
      <a href="org/spongepowered/api/effect/VanishState.html#triggerVibrations()"><code>VanishState.triggerVibrations()</code></a> = <code>false</code>
+     <a href="org/spongepowered/api/effect/VanishState.html#hidesTabListEntry()"><code>VanishState.hidesTabListEntry()</code></a> = <code>false</code>
  </div>
 </dd>
 <dt><a href="org/spongepowered/api/effect/VanishState.html#unvanished()" class="member-name-link">unvanished()</a> - Static method in interface org.spongepowered.api.effect.<a href="org/spongepowered/api/effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></dt>
@@ -50813,6 +51029,7 @@ the order they are declared.</div>
      <a href="org/spongepowered/api/effect/VanishState.html#createsSounds()"><code>VanishState.createsSounds()</code></a> = <code>false</code>
      <a href="org/spongepowered/api/effect/VanishState.html#createsParticles()"><code>VanishState.createsParticles()</code></a> = <code>false</code>
      <a href="org/spongepowered/api/effect/VanishState.html#triggerVibrations()"><code>VanishState.triggerVibrations()</code></a> = <code>false</code>
+     <a href="org/spongepowered/api/effect/VanishState.html#hidesTabListEntry()"><code>VanishState.hidesTabListEntry()</code></a> = <code>true</code>
  </div>
 </dd>
 <dt><a href="org/spongepowered/api/effect/VanishState.html#vanished()" class="member-name-link">vanished()</a> - Static method in interface org.spongepowered.api.effect.<a href="org/spongepowered/api/effect/VanishState.html" title="interface in org.spongepowered.api.effect">VanishState</a></dt>
