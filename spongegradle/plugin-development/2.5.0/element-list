@@ -1,0 +1,4 @@
+org.spongepowered.gradle.common
+org.spongepowered.gradle.plugin
+org.spongepowered.gradle.plugin.config
+org.spongepowered.gradle.plugin.task
