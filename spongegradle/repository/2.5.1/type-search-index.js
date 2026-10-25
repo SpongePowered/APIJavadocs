@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.spongepowered.gradle.repository","l":"RepositoryPlugin"},{"p":"org.spongepowered.gradle.repository","l":"SpongeRepositoryExtension"}];updateSearchResults();
